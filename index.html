@@ -4,28 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Fishers · The Daily Cast, a Bible trivia game</title>
-  <meta name="description" content="Fishers is a daily Bible trivia game. Seven prompts a day, many right answers each, and the rarer your answer, the deeper your net sinks.">
+  <meta name="description" content="A daily Bible trivia game. Name the rare answers and sink the net deeper. Seven prompts a day, the same for everyone.">
+  <!-- For friends for now: remove this line to let search engines list the game. -->
+  <meta name="robots" content="noindex">
   <meta name="theme-color" content="#123a5c">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Fishers">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Fishers">
-  <meta property="og:title" content="Fishers · The Daily Cast">
-  <meta property="og:description" content="A daily Bible trivia game. The rarer your answer, the deeper your net sinks.">
-  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:title" content="Fishers — the Daily Cast">
+  <meta property="og:description" content="A daily Bible trivia game. Name the rare answers and sink the net deeper.">
+  <meta property="og:url" content="__SITE_URL__">
+  <meta property="og:image" content="__SITE_URL__assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Fishers: a wooden fishing boat on the Sea of Galilee at dawn, with the ichthys fish symbol.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fishers — the Daily Cast">
+  <meta name="twitter:description" content="A daily Bible trivia game. Name the rare answers and sink the net deeper.">
+  <meta name="twitter:image" content="__SITE_URL__assets/og-image.png">
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/world.css">
   <link rel="stylesheet" href="css/hud.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- The number font loads without holding up the first paint; numbers fall back to the system monospace font until it arrives. -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" media="print" onload="this.media='all'">
 </head>
 <body class="view-home">
   <a class="skip-link" href="#app">Skip to the game</a>
@@ -151,5 +160,6 @@
   <script defer src="js/sound.js"></script>
   <script defer src="js/telemetry.js"></script>
   <script defer src="js/game.js"></script>
+  <script defer src="js/pwa.js"></script>
 </body>
 </html>

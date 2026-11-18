@@ -34,7 +34,7 @@
   function fmt(n) { return Scene.fmt(n); }
   function today() { return D.dateKey(new Date()); }
   function yesterday() { return D.addDays(today(), -1); }
-  function tierDef(t) { return tiers[t - 1]; }
+  function tierDef(t) { return (tiers || EARLY_TIERS)[t - 1]; }
   function say(text) { live.textContent = ''; setTimeout(function () { live.textContent = text; }, 60); }
   function comp(p) { return compiled[p.id] || (compiled[p.id] = M.compile(p)); }
   function total(results) { return results.reduce(function (n, r) { return n + r.points; }, 0); }
@@ -874,6 +874,7 @@
           '<button type="button" class="btn' + (navigator.share ? '' : ' primary') + '" id="copy">Copy result</button>' +
         '</div>' +
         '<p class="small" id="share-note" role="status"></p>' +
+        '<div class="install-box" id="install-box" hidden></div>' +
         '<h3 class="sec">The catch</h3><p class="small">Tap a cast to see its whole net.</p>' + catchList(s) +
         (isToday ? '<p class="next-cast">' + (streak > 0 ? '<span aria-hidden="true">\u{1F525}</span> ' + streak + (streak === 1 ? ' day' : ' days') + ' · ' : '') +
           'next cast in <span id="until" class="mono"></span></p>' : '') +
@@ -885,6 +886,7 @@
         '<button type="button" class="btn quiet" id="shore">Back to shore</button>' +
       '</section>', '#end-title', 'sheet');
     document.body.classList.add('end-view');
+    if (window.FSHPwa) window.FSHPwa.installOffer(document.getElementById('install-box'));
 
     say('Pull up the net: ' + score + ' of ' + MAX + ' points, ' + fmt(depth) + ' metres. ' + band(score) + '.');
 

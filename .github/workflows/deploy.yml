@@ -1,0 +1,75 @@
+# Test, build and deploy Fishers to GitHub Pages.
+# Based on GitHub's static-site Pages starter workflow.
+name: Deploy to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; never cancel a deployment in progress.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+      - name: Install
+        run: npm ci
+      - name: Matcher, date and content tests
+        run: npm test
+      - name: Scripture verification and game-rule validation
+        run: npm run verify
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+      - name: Set up Pages
+        id: pages
+        uses: actions/configure-pages@v6
+      - name: Build the site (allowlist only, version stamped)
+        env:
+          BUILD_VERSION: ${{ github.sha }}
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          BUILD_VERSION="${BUILD_VERSION:0:7}" node tools/build-site.js --list
+      - name: Check the artifact holds only the game
+        run: |
+          set -e
+          if find _site -type f | grep -Ei 'krillion|reports/|tests/|node_modules|\.env|PROGRESS|CLAUDE|\.webm|trace\.zip|vpl'; then
+            echo "Unexpected file in the site artifact"; exit 1
+          fi
+          if grep -rIl -i 'krillion' _site; then echo "Reference-game text in the artifact"; exit 1; fi
+          grep -q 'og:image" content="https://' _site/index.html
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
