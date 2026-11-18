@@ -12,14 +12,16 @@
     return lines.join('\n');
   }
 
-  // Tries the phone's share sheet, then the clipboard. Resolves to
-  // 'shared', 'copied', or 'manual' (caller should show the text to copy).
-  function share(text) {
-    if (navigator.share && /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
-      return navigator.share({ text: text }).then(function () { return 'shared'; })
-        .catch(function () { return copy(text); });
-    }
-    return copy(text);
+  // Opens the device's share sheet (phones, and some desktop browsers).
+  // Resolves to 'shared', 'cancelled' (the player closed the sheet), or
+  // 'failed' (no share sheet, or it refused: the caller copies instead).
+  function share(text, url) {
+    if (!navigator.share) return Promise.resolve('failed');
+    var data = url ? { text: text, url: url } : { text: text };
+    if (navigator.canShare && !navigator.canShare(data)) return Promise.resolve('failed');
+    return navigator.share(data).then(function () { return 'shared'; }, function (err) {
+      return err && err.name === 'AbortError' ? 'cancelled' : 'failed';
+    });
   }
 
   function copy(text) {
