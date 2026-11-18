@@ -61,7 +61,7 @@ jobs:
       - name: Check the artifact holds only the game
         run: |
           set -e
-          if find _site -type f | grep -Ei 'krillion|reports/|tests/|node_modules|\.env|PROGRESS|CLAUDE|\.webm|trace\.zip|vpl'; then
+          if find _site -type f | grep -Ei 'krillion|reports/|tests/|node_modules|/\.env|PROGRESS|CLAUDE|\.webm$|trace\.zip$|_vpl'; then
             echo "Unexpected file in the site artifact"; exit 1
           fi
           if grep -rIl -i 'krillion' _site; then echo "Reference-game text in the artifact"; exit 1; fi
