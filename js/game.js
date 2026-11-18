@@ -684,7 +684,7 @@
     } else drop();
 
     function drop() {
-    var trail = reduceMotion ? null : setInterval(function () { var f = Scene.fishPoint(); Scene.burst(f.x + 4, f.y + 8, 2, 26); }, 110);
+    var trail = reduceMotion ? null : setInterval(function () { var f = Scene.fishPoint(); Scene.burst(f.x + 4, f.y + 8, 1, 26); }, 110);
     Scene.scatter(p.x, p.y);
     Sound.whoosh(Scene.sinkMs(dist) / 1000);
     say('Landed: ' + a.name + '. Sinking ' + fmt(dist) + ' metres.');

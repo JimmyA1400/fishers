@@ -221,6 +221,7 @@
       MASCOT +
       '<div class="layer veil"></div>';
     ['water', 'rays', 'kelp-layer', 'world', 'ambient', 'front', 'dim', 'line', 'veil', 'marks'].forEach(function (k) { layers[k] = el.querySelector('.' + k); });
+    layers.sky = el.querySelector('.sky');
     layers.rope = el.querySelector('.rope');
     layers.ropeShadow = el.querySelector('.rope-shadow');
     layers.mascot = el.querySelector('.mascot');
@@ -282,10 +283,20 @@
     // Light shafts start at the waterline and fade out by ~800 m.
     var waterY = SKY - top;
     layers.rays.style.transform = 'translate3d(0,' + Math.max(0, waterY).toFixed(1) + 'px,0)';
-    layers.rays.style.opacity = clamp(1 - shown / 800, 0, 1).toFixed(3);
+    // The sky and its drifting clouds, once the camera is well below them.
+    var skyVis = top > SKY + 40 ? 'hidden' : '';
+    if (layers.sky && layers.sky.style.visibility !== skyVis) layers.sky.style.visibility = skyVis;
+    var rayOp = clamp(1 - shown / 800, 0, 1);
+    layers.rays.style.opacity = rayOp.toFixed(3);
+    // Layers that have faded out are taken off the page, so they cost nothing per frame.
+    var rayVis = rayOp > 0 ? '' : 'hidden';
+    if (layers.rays.style.visibility !== rayVis) layers.rays.style.visibility = rayVis;
 
     // Darkness gathers below 3,000 m; only the fish keeps its glow.
-    layers.dim.style.opacity = clamp((shown - 3000) / 3500, 0, 0.62).toFixed(3);
+    var dimOp = clamp((shown - 3000) / 3500, 0, 0.62);
+    layers.dim.style.opacity = dimOp.toFixed(3);
+    var dimVis = dimOp > 0 ? '' : 'hidden';
+    if (layers.dim.style.visibility !== dimVis) layers.dim.style.visibility = dimVis;
 
     // The fish, the YOU marker, and the rope.
     var fishY = fishScreenY(), fishX = W / 2;
@@ -294,7 +305,10 @@
     var boatX = W / 2 + 22, boatY = SKY - top - 18;
     var sway = Math.sin((t || 0) / 1400) * Math.min(26, 6 + (fishY - boatY) * 0.02);
     var midY = (boatY + fishY) / 2;
-    var d = 'M' + boatX.toFixed(1) + ' ' + boatY.toFixed(1) + ' Q ' + (boatX - 20 + sway).toFixed(1) + ' ' + midY.toFixed(1) + ' ' + (fishX + 22).toFixed(1) + ' ' + (fishY - 4).toFixed(1);
+    // The rope's SVG is a narrow strip down the middle (see .line), so its
+    // x coordinates are relative to that strip, not to the screen.
+    var ox = W / 2 - ROPE_HALF;
+    var d = 'M' + (boatX - ox).toFixed(1) + ' ' + boatY.toFixed(1) + ' Q ' + (boatX - 20 + sway - ox).toFixed(1) + ' ' + midY.toFixed(1) + ' ' + (fishX + 22 - ox).toFixed(1) + ' ' + (fishY - 4).toFixed(1);
     layers.rope.setAttribute('d', d);
     layers.ropeShadow.setAttribute('d', d);
     if (frameFn) frameFn(Math.max(0, shown), fishY);
@@ -303,7 +317,11 @@
   function easeInOut(x) { return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; }
   function easeOut(x) { return 1 - Math.pow(1 - x, 3); }
 
+  var ROPE_HALF = 90, moving = false;
   function loop(t) {
+    // While the camera moves, the page drops effects that must be redrawn
+    // every frame over moving water (see .cam-moving in the CSS).
+    if (!!tween !== moving) { moving = !!tween; document.documentElement.classList.toggle('cam-moving', moving); }
     if (tween) {
       if (!tween.start) tween.start = t;
       var k = clamp((t - tween.start) / tween.dur, 0, 1), e = tween.ease(k);
