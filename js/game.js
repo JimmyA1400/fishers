@@ -38,7 +38,45 @@
   function say(text) { live.textContent = ''; setTimeout(function () { live.textContent = text; }, 60); }
   function comp(p) { return compiled[p.id] || (compiled[p.id] = M.compile(p)); }
   function total(results) { return results.reduce(function (n, r) { return n + r.points; }, 0); }
-  function stopTimer() { if (tick) { clearInterval(tick); tick = null; } }
+  // A small message at the bottom of the screen. With an action it stays
+  // until tapped (used for "new version available").
+  var toastTimer = null;
+  function toast(msg, action, onAction) {
+    var el = document.getElementById('toast');
+    if (!el) return;
+    clearTimeout(toastTimer);
+    el.innerHTML = '';
+    var span = document.createElement('span'); span.textContent = msg; el.appendChild(span);
+    if (action) {
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'toast-btn'; b.textContent = action;
+      b.onclick = function () { el.hidden = true; onAction(); };
+      el.appendChild(b);
+    } else {
+      toastTimer = setTimeout(function () { el.hidden = true; }, 2200);
+    }
+    el.classList.toggle('has-action', !!action);
+    el.hidden = false;
+  }
+  window.FSHToast = toast;
+
+  // The round clock. Deadlines are measured with performance.now(), which
+  // can't jump when the device clock is changed; Date.now() is the floor, so
+  // time spent asleep or in a background tab still counts (some phones pause
+  // the monotonic clock while suspended). Start times are stored as wall-clock
+  // milliseconds so a reload can resume the round.
+  var wall0 = Date.now(), perf0 = (window.performance && performance.now) ? performance.now() : 0;
+  function nowMs() {
+    var mono = window.performance && performance.now ? wall0 + (performance.now() - perf0) : 0;
+    return Math.max(mono, Date.now());
+  }
+  // Short buzzes on Android when an answer lands or misses. iOS has no
+  // vibration API and simply ignores this.
+  function buzz(pattern) {
+    try { if (navigator.vibrate && !reduceMotion) navigator.vibrate(pattern); } catch (e) { /* not supported */ }
+  }
+  var onVisible = null;
+  document.addEventListener('visibilitychange', function () { if (!document.hidden && tick && onVisible) onVisible(); });
+  function stopTimer() { if (tick) { clearInterval(tick); tick = null; } onVisible = null; }
   function stopCountdown() { if (countdown) { clearInterval(countdown); countdown = null; } }
   function castNumber(key) { return D.dayNumber(key, CFG.epoch) + 1; }
   function later(fn, ms) { var id = setTimeout(fn, reduceMotion ? Math.min(ms, 30) : ms); pending.push(id); return id; }
@@ -337,7 +375,7 @@
     var prompt = cur.prompt;
     var limit = CFG.secondsPerPrompt * 1000;
     var resuming = cur.timed && cur.startedAt;
-    if (resuming && Date.now() >= cur.startedAt + limit) return finishRound(prompt, { type: 'timeout', points: 0, tier: 0 }, 0);
+    if (resuming && nowMs() >= cur.startedAt + limit) return finishRound(prompt, { type: 'timeout', points: 0, tier: 0 }, 0);
 
     var label = (mode === 'practice' ? 'Practice Waters' : 'Cast ' + cur.n + ' of ' + cur.of) + ' · ' + prompt.category;
     show(
@@ -359,8 +397,8 @@
               '<span id="secs" aria-hidden="true">' + (cur.timed ? CFG.secondsPerPrompt : '∞') + '</span></div>' +
             '<label class="sr-only" for="answer">Your answer</label>' +
             '<div class="ta-wrap"><div class="ta-ghost" aria-hidden="true"><span class="ta-typed"></span><span class="ta-rest"></span></div>' +
-            '<input id="answer" name="answer" type="text" maxlength="60" placeholder="type one answer…" autocomplete="off" autocorrect="off" ' +
-              'autocapitalize="words" spellcheck="false" enterkeyhint="send" aria-describedby="feedback"></div>' +
+            '<input id="answer" name="answer" type="text" inputmode="text" maxlength="60" placeholder="type one answer…" autocomplete="off" autocorrect="off" ' +
+              'autocapitalize="off" spellcheck="false" enterkeyhint="go" aria-describedby="feedback"></div>' +
             '<button type="submit" class="cast-btn" id="cast">Cast</button>' +
           '</div>' +
           (cur.timed ? '<div class="drain" id="drain" aria-hidden="true"><i id="fill"></i></div>' : '') +
@@ -424,7 +462,7 @@
       var fill = document.getElementById('fill'), drain = document.getElementById('drain');
       var secs = document.getElementById('secs'), said = {}, lastS = -1;
       function paint() {
-        var now = Date.now(), over = round.tick(now);
+        var now = nowMs(), over = round.tick(now);
         if (over) { finishRound(prompt, over, guesses); return; }
         var left = round.remaining(now), k = left / limit, s = Math.ceil(left / 1000);
         fg.style.strokeDashoffset = (-RING * (1 - k)).toFixed(2);   // drains clockwise from the top
@@ -439,6 +477,9 @@
       }
       paint();
       tick = setInterval(paint, 50);
+      // Background tabs throttle timers; repaint the moment the page is back
+      // so a round whose time ran out resolves as a timeout straight away.
+      onVisible = paint;
     }
 
     form.onsubmit = function (e) {
@@ -450,7 +491,7 @@
       var box = row.getBoundingClientRect();
       Scene.burst(box.left + box.width / 2, box.top, 9);
       Sound.plop();
-      var r = round.cast(text, Date.now());
+      var r = round.cast(text, nowMs());
       if (mode === 'cast' && session.kind === 'daily') {
         Tele.log(prompt.id, r.type === 'accept' ? r.answer.name : M.tokens(text).join(' '), r.type === 'accept');
       }
@@ -470,6 +511,7 @@
         feedback.textContent = '“' + text + '”: not in the net. cast again';
         if (!reduceMotion) restart_(row, 'shake');
         Sound.thud();
+        buzz([12, 60, 12]);
       }
       restart_(feedback, 'fresh');
       input.focus();
@@ -491,7 +533,7 @@
       return;
     }
     if (!cur.timed) {
-      later(function () { form.classList.remove('pre'); begin(Date.now()); }, tBar);
+      later(function () { form.classList.remove('pre'); begin(nowMs()); }, tBar);
       return;
     }
 
@@ -502,7 +544,7 @@
       form.classList.remove('pre');
       var n = 3, num = document.getElementById('cd-n');
       function step() {
-        if (n === 0) { var t = Date.now(); cur.start(t); begin(t); return; }
+        if (n === 0) { var t = nowMs(); cur.start(t); begin(t); return; }
         num.textContent = n;
         restart_(num, 'pulse');
         n--;
@@ -514,6 +556,10 @@
 
   function finishRound(prompt, r, guesses) {
     stopTimer(); clearPending();
+    // Drop the keyboard so the sink and the result are in view.
+    var inp = document.getElementById('answer');
+    if (inp && document.activeElement === inp) inp.blur();
+    if (r.type === 'accept') buzz(25);
     var before = total(currentResults());
     var rec = { id: prompt.id, outcome: r.type === 'accept' ? 'answer' : 'timeout', tier: 0, points: 0, guesses: guesses };
     if (r.type === 'accept') { rec.a = r.index; rec.name = r.answer.name; rec.tier = r.answer.tier; rec.points = r.points; }
@@ -687,13 +733,14 @@
   }
 
   // ---------- pull up the net -------------------------------------------------
-  function shareText(s) {
+  function siteUrl() { return /^https?:$/.test(location.protocol) ? location.origin + location.pathname.replace(/index\.html$/, '') : ''; }
+  function shareText(s, withUrl) {
     return Share.cardText({
       number: s.kind === 'endless' ? s.number : castNumber(s.date),
       label: s.kind === 'endless' ? 'Fishers Endless' : 'Fishers',
       tiers: s.results.map(function (r) { return r.tier; }),
       score: total(s.results), tierDefs: tiers,
-      url: /^https?:$/.test(location.protocol) ? location.origin + location.pathname.replace(/index\.html$/, '') : ''
+      url: withUrl === false ? '' : siteUrl()
     });
   }
 
@@ -823,8 +870,8 @@
         '<h3 class="sec">The bearing</h3>' + bearingHtml(score) +
         '<pre class="share-card" id="share-card" aria-label="Shareable result, with no answers shown">' + esc(shareText(s)) + '</pre>' +
         '<div class="actions">' +
-          '<button type="button" class="btn primary" id="copy">Copy result</button>' +
-          (navigator.share ? '<button type="button" class="btn" id="share">Share</button>' : '') +
+          (navigator.share ? '<button type="button" class="btn primary" id="share">Share</button>' : '') +
+          '<button type="button" class="btn' + (navigator.share ? '' : ' primary') + '" id="copy">Copy result</button>' +
         '</div>' +
         '<p class="small" id="share-note" role="status"></p>' +
         '<h3 class="sec">The catch</h3><p class="small">Tap a cast to see its whole net.</p>' + catchList(s) +
@@ -842,11 +889,12 @@
     say('Pull up the net: ' + score + ' of ' + MAX + ' points, ' + fmt(depth) + ' metres. ' + band(score) + '.');
 
     var note = document.getElementById('share-note'), copyBtn = document.getElementById('copy');
-    copyBtn.onclick = function () {
+    function copyResult() {
       Share.copy(shareText(s)).then(function (how) {
         if (how === 'copied') {
           copyBtn.textContent = 'copied ✓';
           note.textContent = 'Copied. Paste it anywhere.';
+          toast('Copied ✓');
           later(function () { copyBtn.textContent = 'Copy result'; }, 2200);
         } else {
           note.textContent = 'Select the card above and copy it.';
@@ -855,9 +903,15 @@
           var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
         }
       });
-    };
+    }
+    copyBtn.onclick = copyResult;
     var shareBtn = document.getElementById('share');
-    if (shareBtn) shareBtn.onclick = function () { navigator.share({ text: shareText(s) }).catch(function () {}); };
+    if (shareBtn) shareBtn.onclick = function () {
+      Share.share(shareText(s, false), siteUrl()).then(function (how) {
+        if (how === 'shared') note.textContent = 'Shared.';
+        else if (how === 'failed') copyResult();   // no share sheet after all: copy instead
+      });
+    };
 
     app.querySelectorAll('.catch-row').forEach(function (b) {
       b.onclick = function () {
