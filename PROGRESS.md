@@ -3,10 +3,10 @@
 **Live URL:** https://jimmya1400.github.io/fishers/  (repo: https://github.com/JimmyA1400/fishers)
 
 ## Current step
-8. Release gate on the live URL
+10. After launch: phone issues first (branch `fix/back-button`: Android back gesture leaves the game)
 
 ## Next action
-Finish the update test (tests/playthrough/update-check.js), rerun the live gate and Lighthouse, write RELEASE_CHECKLIST.md.
+On `fix/back-button`: add history entries (home → round → results) so Back returns to home instead of leaving; test, merge, push, smoke-test live.
 
 ## Checklist
 
@@ -50,14 +50,14 @@ Finish the update test (tests/playthrough/update-check.js), rerun the live gate 
 - [x] Focus kept after Cast; blur on round end
 - [x] performance.now() deadline timer, visibilitychange
 - [x] Audio after tap, mute remembered; haptics
-- [ ] Landscape usable; reduced motion; 60 fps at 4× CPU
+- [~] Landscape usable; reduced motion; 60 fps at 4× CPU (measured 46–59 fps in headless software rendering; water repaint fix applied)
 - [x] navigator.share + clipboard fallback
 
 ### 6. PWA and link previews
 - [x] manifest.webmanifest, icons 192/512/maskable, apple-touch-icon, favicons
 - [x] sw.js (versioned precache, network-first data, cleanup, update toast)
 - [x] Install hints (Android prompt, iOS tip)
-- [ ] OG/Twitter tags + 1200×630 og:image (absolute URL after first deploy)
+- [x] OG/Twitter tags + 1200×630 og:image (absolute URL after first deploy)
 - [x] Self-hosted font, no third-party requests, robots noindex
 
 ### 7. Deployment
@@ -68,16 +68,17 @@ Finish the update test (tests/playthrough/update-check.js), rerun the live gate 
 - [x] Green run, URL recorded, HTTPS
 
 ### 8. Release gate
-- [ ] All items in RELEASE_CHECKLIST.md pass on the live URL
+- [x] All items in RELEASE_CHECKLIST.md pass on the live URL (2026-11-18, build 3349ed9; frame rate under 4× throttle is a known limit)
 
 ### 9. Hand-off message
-- [ ] Sent
+- [x] Sent (2026-11-18)
 
 ### 10. After launch
-- [ ] Phone issues
+- [ ] Phone issues: Back gesture leaves the game (F-04); sink frame rate under throttle
+- [ ] Descent leftovers: tier line at a zone's depth overlaps that zone's label
 - [ ] Descent redesign leftovers
 - [ ] Categories / bank (nothing waiting for review)
-- [ ] Remaining backlog
+- [ ] Remaining backlog: verse refs in The Catch (#6), Lost Sheep suspense beat (#9), Learn-more drawer (#14), 52+ alias-overlap warnings (#15), reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
