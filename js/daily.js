@@ -46,9 +46,40 @@
 
   // ---------- dates ------------------------------------------------------
   function pad(n) { return (n < 10 ? '0' : '') + n; }
+  // Every player shares one calendar: the date in New York (US Eastern),
+  // whatever the device's own time zone. A new cast starts at midnight Eastern.
+  var TZ = 'America/New_York';
+  var fmtCache = null;
+  function parts(d) {
+    if (!fmtCache) {
+      fmtCache = new Intl.DateTimeFormat('en-US', {
+        timeZone: TZ, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit'
+      });
+    }
+    var out = {};
+    fmtCache.formatToParts(d).forEach(function (p) { if (p.type !== 'literal') out[p.type] = Number(p.value); });
+    if (out.hour === 24) out.hour = 0;
+    return out;
+  }
   function dateKey(d) {
-    d = d || new Date();
-    return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+    var p = parts(d || new Date());
+    return p.year + '-' + pad(p.month) + '-' + pad(p.day);
+  }
+  // Milliseconds from `now` until the next midnight in New York. Days are
+  // 23 or 25 hours long when the clocks change, so this finds the actual
+  // instant rather than counting 24 hours.
+  function offsetMs(d) {              // Eastern wall clock minus UTC, at instant d
+    var p = parts(d);
+    return Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute, p.second) - Math.floor(d.getTime() / 1000) * 1000;
+  }
+  function msToNextCast(now) {
+    now = now || new Date();
+    var k = dateKey(now).split('-').map(Number);
+    var wall = Date.UTC(k[0], k[1] - 1, k[2] + 1);   // tomorrow 00:00 on the Eastern clock
+    var t = wall - offsetMs(now);
+    t = wall - offsetMs(new Date(t));
+    return Math.max(0, t - now.getTime());
   }
   function toUTC(key) {
     var p = key.split('-').map(Number);
@@ -164,7 +195,7 @@
   }
 
   var api = {
-    hash: hash, rng: rng, shuffled: shuffled, dateKey: dateKey, dayNumber: dayNumber,
+    hash: hash, rng: rng, shuffled: shuffled, dateKey: dateKey, dayNumber: dayNumber, msToNextCast: msToNextCast, TZ: TZ,
     addDays: addDays, pickCast: pickCast, pickDaily: pickDaily, pickEndless: pickEndless
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

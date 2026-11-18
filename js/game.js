@@ -890,8 +890,7 @@
       var until = document.getElementById('until');
       var paint = function () {
         if (today() !== s.date) { renderHome(); return; }
-        var now = new Date(), next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
-        var sec = Math.max(0, Math.floor((next - now) / 1000));
+        var sec = Math.ceil(D.msToNextCast(new Date()) / 1000);
         var two = function (n) { return (n < 10 ? '0' : '') + n; };
         until.textContent = two(Math.floor(sec / 3600)) + ':' + two(Math.floor(sec / 60) % 60) + ':' + two(sec % 60);
       };
