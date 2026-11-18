@@ -6,7 +6,7 @@
 10. After launch: remaining backlog
 
 ## Next action
-Branch `fix/alias-overlaps`: review the alias-overlap warnings from validate.js (backlog #15), then deploy and smoke-test.
+Branch `fix/reduced-motion-veil`: fix the dropped frames in the reduced-motion veil (F-06), then deploy and smoke-test.
 
 ## Checklist
 
@@ -81,7 +81,8 @@ Branch `fix/alias-overlaps`: review the alias-overlap warnings from validate.js 
 - [x] Verse refs in The Catch (#6): live in 5925f2e, smoke OK
 - [x] Lost Sheep suspense beat (#9): live in faa0320, smoke OK
 - [x] Learn-more drawer (#14): live in 7ac965c, smoke OK; passages are WEB text, checked by `npm run verify`
-- [ ] Remaining backlog: 52+ alias-overlap warnings (#15), reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
+- [x] Alias overlaps (#15): live in 14e6077, smoke OK; 5 bad aliases dropped via NOT_ALIAS in tools/derive.js, Thaddaeus and Simon the Zealot no longer take "Judas"/"Simon"; 10 genuinely shared KJV spellings marked reviewed (SHARED_OK in validate.js); warnings 58 -> 10 (the rest are tier-balance notes)
+- [ ] Remaining backlog: reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
