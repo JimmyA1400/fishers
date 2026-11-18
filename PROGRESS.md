@@ -1,12 +1,12 @@
 # Fishers: launch progress
 
-**Live URL:** not deployed yet
+**Live URL:** https://jimmya1400.github.io/fishers/  (repo: https://github.com/JimmyA1400/fishers)
 
 ## Current step
-7. Deployment (local release gate running on the built site under /fishers/)
+8. Release gate on the live URL
 
 ## Next action
-Fix anything the local gate (`node tests/playthrough/release-gate.js --url http://localhost:8790/fishers/`) reports, merge `feat/pwa`, then `gh repo create fishers --public --source=. --remote=origin --push`.
+`cd tests/playthrough && node release-gate.js --url https://jimmya1400.github.io/fishers/`, then Lighthouse on the live URL, the update-toast test, and RELEASE_CHECKLIST.md.
 
 ## Checklist
 
@@ -62,10 +62,10 @@ Fix anything the local gate (`node tests/playthrough/release-gate.js --url http:
 
 ### 7. Deployment
 - [x] Prerequisites (git, gh auth, user.name/email)
-- [ ] Public repo `fishers`, push main
-- [ ] `.github/workflows/deploy.yml` (test → build → deploy)
-- [ ] Enable Pages (build_type=workflow)
-- [ ] Green run, URL recorded, HTTPS
+- [x] Public repo `fishers`, push main
+- [x] `.github/workflows/deploy.yml` (test → build → deploy)
+- [x] Enable Pages (build_type=workflow)
+- [x] Green run, URL recorded, HTTPS
 
 ### 8. Release gate
 - [ ] All items in RELEASE_CHECKLIST.md pass on the live URL

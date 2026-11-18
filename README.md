@@ -10,6 +10,8 @@ The whole game happens inside one painted world: a tall strip from the dawn sky,
 
 ## Play
 
+**Live:** https://jimmya1400.github.io/fishers/
+
 - **From disk:** double-click `index.html`.
 - **On the web:** every push to `main` runs `.github/workflows/deploy.yml`: the tests and the Scripture check run first, then `tools/build-site.js` copies only the game files into `_site/`, stamps the version (commit SHA) into the service worker and the About screen, and deploys to GitHub Pages. Players with the game open get a "New version available" toast.
 - **Test the built site locally under a sub-path:** `node tools/build-site.js && node tools/serve-subpath.js`, then open http://localhost:8790/fishers/.
