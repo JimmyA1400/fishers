@@ -134,9 +134,18 @@
   font: 600 .75rem/1.2 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: rgba(255, 255, 255, .85);
   text-shadow: 0 1px 4px rgba(0, 20, 40, .7);
 }
+.home-foot {
+  position: absolute; right: .4rem; bottom: max(.2rem, calc(env(safe-area-inset-bottom) - .5rem)); margin: 0;
+  display: flex; align-items: center; gap: .2rem;
+  font: 500 .75rem/1.2 var(--sans); color: rgba(255, 255, 255, .8); text-shadow: 0 1px 4px rgba(0, 20, 40, .7);
+}
+.home-foot .link-btn { font-size: .6875rem; letter-spacing: .08em; }
+@media (max-width: 520px) { .home-foot .foot-src { display: none; } }
+.credit-list { padding-left: 1.1rem; }
+.credit-list li { margin: .35rem 0; }
 .home-castno .streak { margin-left: .6rem; color: var(--gold-2); }
 
-.home.leaving .home-top, .home.leaving .home-bottom, .home.leaving .home-castno {
+.home.leaving .home-top, .home.leaving .home-bottom, .home.leaving .home-castno, .home.leaving .home-foot {
   opacity: 0; transform: translateY(-28px); transition: opacity .3s ease, transform .3s ease;
 }
 

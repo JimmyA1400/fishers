@@ -1,5 +1,8 @@
 /* Fishers: settings you can change without touching the game code. */
 window.FSH_CONFIG = {
+  // Stamped with the commit SHA by tools/build-site.js at deploy time.
+  version: 'dev',
+
   promptsPerDay: 7,
   secondsPerPrompt: 25,
   metresPerPoint: 10,

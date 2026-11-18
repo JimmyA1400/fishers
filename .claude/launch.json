@@ -1,6 +1,25 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "fishers", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "8765"], "port": 8765 }
+    {
+      "name": "fishers",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765"
+      ],
+      "port": 8765
+    },
+    {
+      "name": "fishers-subpath",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tools/serve-subpath.js",
+        "8790"
+      ],
+      "port": 8790,
+      "url": "http://localhost:8790"
+    }
   ]
 }
