@@ -6,7 +6,7 @@
 10. After launch: remaining backlog
 
 ## Next action
-Branch `feat/catch-verses`: show each answer's verse reference in The Catch (backlog #6), then deploy and smoke-test.
+Branch `feat/lost-sheep-beat`: a short suspense pause before a Lost Sheep sinks (backlog #9), then deploy and smoke-test.
 
 ## Checklist
 
@@ -78,7 +78,8 @@ Branch `feat/catch-verses`: show each answer's verse reference in The Catch (bac
 - [x] Descent leftovers: tier line at a zone's depth no longer runs through the zone label
 - [ ] Descent redesign leftovers
 - [ ] Categories / bank (nothing waiting for review)
-- [ ] Remaining backlog: verse refs in The Catch (#6), Lost Sheep suspense beat (#9), Learn-more drawer (#14), 52+ alias-overlap warnings (#15), reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
+- [x] Verse refs in The Catch (#6): live in 5925f2e, smoke OK
+- [ ] Remaining backlog: Lost Sheep suspense beat (#9), Learn-more drawer (#14), 52+ alias-overlap warnings (#15), reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
