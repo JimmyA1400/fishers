@@ -194,7 +194,34 @@
     return pickCast(data, 'endless|' + n, 5000 + n * 3, (config && config.promptsPerDay) || 7);
   }
 
+  // ---------- theme of the week -----------------------------------------
+  // A new theme every Monday (Eastern). Themes with at least a full cast of
+  // prompts take turns in a fixed shuffled order; the week's seven prompts
+  // are a seeded pick from that theme, so every player gets the same cast.
+  var THEME_CAST = 7;
+  function weekStart(key) {
+    var dow = new Date(toUTC(key)).getUTCDay();          // 0 = Sunday
+    return addDays(key, -mod(dow - 1, 7));
+  }
+  function themeRotation(data) {
+    var count = {};
+    data.prompts.forEach(function (p) { count[p.theme] = (count[p.theme] || 0) + 1; });
+    var names = Object.keys(data.themes || {}).filter(function (t) { return (count[t] || 0) >= THEME_CAST; }).sort();
+    return shuffled(names.length, 'themes').map(function (i) { return names[i]; });
+  }
+  function pickThemeWeek(data, key, config) {
+    var epoch = (config && config.epoch) || '2026-11-17';
+    var week = weekStart(key), n = Math.round(dayNumber(week, weekStart(epoch)) / 7);
+    var rot = themeRotation(data);
+    if (!rot.length) return null;
+    var theme = rot[mod(n, rot.length)];
+    var pool = data.prompts.filter(function (p) { return p.theme === theme; });
+    var picks = shuffled(pool.length, 'theme|' + week).slice(0, THEME_CAST).map(function (i) { return pool[i]; });
+    return { week: week, number: n + 1, theme: theme, prompts: picks };
+  }
+
   var api = {
+    weekStart: weekStart, themeRotation: themeRotation, pickThemeWeek: pickThemeWeek,
     hash: hash, rng: rng, shuffled: shuffled, dateKey: dateKey, dayNumber: dayNumber, msToNextCast: msToNextCast, TZ: TZ,
     addDays: addDays, pickCast: pickCast, pickDaily: pickDaily, pickEndless: pickEndless
   };
