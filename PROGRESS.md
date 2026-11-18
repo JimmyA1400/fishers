@@ -6,7 +6,7 @@
 10. After launch: remaining backlog
 
 ## Next action
-Branch `fix/reduced-motion-veil`: fix the dropped frames in the reduced-motion veil (F-06), then deploy and smoke-test.
+Desktop sink fps (backlog #13): measure the sink on a desktop profile, fix if under target, then deploy and smoke-test.
 
 ## Checklist
 
@@ -82,7 +82,8 @@ Branch `fix/reduced-motion-veil`: fix the dropped frames in the reduced-motion v
 - [x] Lost Sheep suspense beat (#9): live in faa0320, smoke OK
 - [x] Learn-more drawer (#14): live in 7ac965c, smoke OK; passages are WEB text, checked by `npm run verify`
 - [x] Alias overlaps (#15): live in 14e6077, smoke OK; 5 bad aliases dropped via NOT_ALIAS in tools/derive.js, Thaddaeus and Simon the Zealot no longer take "Judas"/"Simon"; 10 genuinely shared KJV spellings marked reviewed (SHARED_OK in validate.js); warnings 58 -> 10 (the rest are tier-balance notes)
-- [ ] Remaining backlog: reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
+- [x] Reduced-motion veil frames (F-06): re-measured 2026-11-18, Practice, reduced motion, Pixel 7, 6 sinks: at 1x 0-1 frame over 50 ms per sink (56-60 ms), was 3 per sink (worst 167 ms). Fixed by the quantized water repaint (launch week). Left: a one-off first-reveal layout (~40 ms real; 145-257 ms at 4x CPU); later reveals 13-26 ms at 4x. No code change
+- [ ] Remaining backlog: desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
