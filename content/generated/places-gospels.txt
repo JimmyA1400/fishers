@@ -47,16 +47,15 @@ Golgotha; Place of a Skull; Skull; The Place of a Skull; The Skull | Matt 27:33;
   tier: 3
 Gomorrah; Gomorrha | Matt 10:15 | A town or city named in Matthew 10:15.
 Holy Place | Matt 24:15 | A place named in Matthew 24:15.
-  forms: Holiest of All
 Idumaea | Mk 3:8 | A land or region named in Mark 3:8.
 Ituraea | Lk 3:1 | A land or region named in Luke 3:1.
 Jericho | Matt 20:29 | A town or city named in Matthew 20:29.
   tier: 3
-Jerusalem; Jews; Judah | Matt 1:2; Matt 2:1; Jn 1:19 | A town or city named in Matthew 2:1.
+Jerusalem | Matt 1:2; Matt 2:1; Jn 1:19 | A town or city named in Matthew 2:1.
   tier: 1
 Jordan | Matt 3:5 | A river named in Matthew 3:5.
   tier: 1
-Judea; Jewry; Jews; Juda; Judaea; Judah | Matt 2:1; Mk 1:5; Lk 1:39; Lk 23:5; Lk 23:51 | A land or region named in Matthew 2:1.
+Judea; Jewry; Juda; Judaea; Judah | Matt 2:1; Mk 1:5; Lk 1:39; Lk 23:5; Lk 23:51 | A land or region named in Matthew 2:1.
 Kidron; Cedron | Jn 18:1 | A river named in John 18:1.
 Magdala | Matt 15:39 | Jesus came there by boat after feeding the four thousand.
   forms: Magadan

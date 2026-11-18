@@ -145,7 +145,7 @@ Beth-haccherem; Beth Haccerem | Neh 3:14 | A town or city named in Nehemiah 3:14
 Beth-haram; Beth Haran; Beth-aram | Num 32:36; Josh 13:27 | A town or city named in Numbers 32:36.
 Beth-hoglah; Beth-hogla | Josh 15:6 | A town or city named in Joshua 15:6.
 Beth-horon | Josh 10:10 | A town or city named in Joshua 10:10.
-Beth-horon the nether; Lower | Josh 16:3 | A town or city named in Joshua 16:3.
+Beth-horon the nether | Josh 16:3 | A town or city named in Joshua 16:3.
 Beth-horon the upper | Josh 16:5 | A town or city named in Joshua 16:5.
 Beth-jeshimoth; Beth Jesimoth | Num 33:49 | A town or city named in Numbers 33:49.
 Beth-lebaoth | Josh 19:6 | A town or city named in Joshua 19:6.
@@ -425,7 +425,7 @@ Jehovah-jireh; Yahweh will provide | Gen 22:14 | A town or city named in Genesis
 Jehud | Josh 19:45 | A town or city named in Joshua 19:45.
 Jericho | Num 22:1 | A town or city named in Numbers 22:1.
   tier: 1
-Jerusalem; Jews; Judah | Josh 10:1; Josh 15:63; 2 Chr 32:18 | A town or city named in Joshua 10:1.
+Jerusalem | Josh 10:1; Josh 15:63; 2 Chr 32:18 | A town or city named in Joshua 10:1.
   tier: 1
 Jeshanah | 2 Chr 13:19 | A town or city named in 2 Chronicles 13:19.
 Jeshua | Neh 11:26 | A town or city named in Nehemiah 11:26.

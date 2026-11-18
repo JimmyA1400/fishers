@@ -130,7 +130,7 @@ Jattir | 1 Sam 30:27 | A town or city named in 1 Samuel 30:27.
 Jazer; Jaazer | Num 21:32; 2 Sam 24:5 | A town or city named in 2 Samuel 24:5.
 Jebus; Jebusi | Josh 18:16; Judg 19:10 | A town or city named in Judges 19:10.
 Jericho | 2 Sam 10:5 | A town or city named in 2 Samuel 10:5.
-Jerusalem; Jews; Judah | Judg 1:7; Judg 1:8; 2 Kgs 16:6 | A town or city named in Judges 1:7.
+Jerusalem | Judg 1:7; Judg 1:8; 2 Kgs 16:6 | A town or city named in Judges 1:7.
   tier: 1
 Jeshimon | 1 Sam 23:19 | A land or region named in 1 Samuel 23:19.
 Jezreel; Jezreelitess | Judg 6:33; 1 Sam 27:3 | A town or city named in 1 Samuel 25:43.
