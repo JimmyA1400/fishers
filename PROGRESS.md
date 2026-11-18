@@ -6,7 +6,7 @@
 10. After launch: remaining backlog
 
 ## Next action
-Branch `feat/learn-more`: a "Learn more" drawer on the Lost Sheep fact with the passage text (backlog #14), then deploy and smoke-test.
+Branch `fix/alias-overlaps`: review the alias-overlap warnings from validate.js (backlog #15), then deploy and smoke-test.
 
 ## Checklist
 
@@ -80,7 +80,8 @@ Branch `feat/learn-more`: a "Learn more" drawer on the Lost Sheep fact with the 
 - [ ] Categories / bank (nothing waiting for review)
 - [x] Verse refs in The Catch (#6): live in 5925f2e, smoke OK
 - [x] Lost Sheep suspense beat (#9): live in faa0320, smoke OK
-- [ ] Remaining backlog: Learn-more drawer (#14), 52+ alias-overlap warnings (#15), reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
+- [x] Learn-more drawer (#14): live in 7ac965c, smoke OK; passages are WEB text, checked by `npm run verify`
+- [ ] Remaining backlog: 52+ alias-overlap warnings (#15), reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
