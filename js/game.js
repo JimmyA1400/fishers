@@ -230,7 +230,10 @@
 
   function themeLinkHtml() {
     var w = data && themeWeek();
-    return w ? '<button type="button" class="link-btn theme-link" id="theme">This week: <strong>' + esc(themeLabel(w.theme)) + '</strong> ▸</button>' : '';
+    // Before the bank arrives the link holds its place (hidden), so the
+    // buttons under it don't jump when it fills in.
+    if (!w) return '<button type="button" class="link-btn theme-link" id="theme" data-held aria-hidden="true" tabindex="-1" style="visibility:hidden">This week: <strong>…</strong> ▸</button>';
+    return '<button type="button" class="link-btn theme-link" id="theme">This week: <strong>' + esc(themeLabel(w.theme)) + '</strong> ▸</button>';
   }
 
   function restart(s) { s.results = []; s.startedAt = null; s.done = false; Store.save(); }
@@ -1298,8 +1301,8 @@
     if (JSON.stringify(tiers) !== JSON.stringify(EARLY_TIERS)) drawHelpTiers(tiers);
     if (document.body.classList.contains('view-home') && document.getElementById('go')) {
       session = dailySession();
-      var nav = app.querySelector('.home-modes');
-      if (nav && !document.getElementById('theme')) nav.insertAdjacentHTML('beforebegin', themeLinkHtml());
+      var held = document.getElementById('theme');
+      if (held && held.hasAttribute('data-held')) held.outerHTML = themeLinkHtml();
       wireHome();
       var invited = groupFromUrl();
       if (invited) { pendingHome = null; renderGroup(invited); }
