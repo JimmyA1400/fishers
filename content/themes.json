@@ -1,0 +1,198 @@
+{
+ "faithfulness": [
+  {
+   "ref": "Lamentations 3:22–23",
+   "text": "It is because of Yahweh’s loving kindnesses that we are not consumed, because his mercies don’t fail. They are new every morning. Great is your faithfulness.",
+   "translation": "WEB",
+   "question": "Where have you seen a mercy that was new this morning?"
+  },
+  {
+   "ref": "Hebrews 11:1",
+   "text": "Now faith is assurance of things hoped for, proof of things not seen.",
+   "translation": "WEB",
+   "question": "What are you trusting God for that you cannot yet see?"
+  }
+ ],
+ "kingdom": [
+  {
+   "ref": "Matthew 6:33",
+   "text": "But seek first God’s Kingdom, and his righteousness; and all these things will be given to you as well.",
+   "translation": "WEB",
+   "question": "What would seeking his kingdom first look like tomorrow?"
+  },
+  {
+   "ref": "Psalm 145:13",
+   "text": "Your kingdom is an everlasting kingdom. Your dominion endures throughout all generations. Yahweh is faithful in all his words, and loving in all his deeds.",
+   "translation": "WEB",
+   "question": "Which earthly power feels largest to you right now, and how does this verse resize it?"
+  }
+ ],
+ "courage": [
+  {
+   "ref": "Joshua 1:9",
+   "text": "Haven’t I commanded you? Be strong and courageous. Don’t be afraid. Don’t be dismayed, for Yahweh your God is with you wherever you go.",
+   "translation": "WEB",
+   "question": "Where do you most need courage this week?"
+  },
+  {
+   "ref": "Isaiah 41:10",
+   "text": "Don’t you be afraid, for I am with you. Don’t be dismayed, for I am your God. I will strengthen you. Yes, I will help you. Yes, I will uphold you with the right hand of my righteousness.",
+   "translation": "WEB",
+   "question": "What would you attempt if you were sure God was holding you up?"
+  }
+ ],
+ "mercy": [
+  {
+   "ref": "Micah 6:8",
+   "text": "He has shown you, O man, what is good. What does Yahweh require of you, but to act justly, to love mercy, and to walk humbly with your God?",
+   "translation": "WEB",
+   "question": "Which of the three, justice, mercy, or humility, is hardest for you today?"
+  },
+  {
+   "ref": "Luke 6:36",
+   "text": "Therefore be merciful, even as your Father is also merciful.",
+   "translation": "WEB",
+   "question": "Who needs mercy from you that they have not earned?"
+  }
+ ],
+ "word": [
+  {
+   "ref": "Psalm 119:105",
+   "text": "Your word is a lamp to my feet, and a light for my path.",
+   "translation": "WEB",
+   "question": "What is the next step this lamp is lighting for you?"
+  },
+  {
+   "ref": "Isaiah 40:8",
+   "text": "The grass withers, the flower fades; but the word of our God stands forever.",
+   "translation": "WEB",
+   "question": "What have you been treating as permanent that is really grass?"
+  }
+ ],
+ "calling": [
+  {
+   "ref": "Matthew 4:19",
+   "text": "He said to them, “Come after me, and I will make you fishers for men.”",
+   "translation": "WEB",
+   "question": "What might you need to leave on the shore in order to follow?"
+  },
+  {
+   "ref": "John 15:16",
+   "text": "You didn’t choose me, but I chose you, and appointed you, that you should go and bear fruit, and that your fruit should remain; that whatever you will ask of the Father in my name, he may give it to you.",
+   "translation": "WEB",
+   "question": "How does being chosen first change how you see your work?"
+  }
+ ],
+ "church": [
+  {
+   "ref": "Psalm 133:1",
+   "text": "See how good and how pleasant it is for brothers to live together in unity!",
+   "translation": "WEB",
+   "question": "Who in your church could you move toward this week?"
+  },
+  {
+   "ref": "Romans 12:5",
+   "text": "so we, who are many, are one body in Christ, and individually members of one another.",
+   "translation": "WEB",
+   "question": "Whom do you belong to, and who belongs to you?"
+  }
+ ],
+ "mission": [
+  {
+   "ref": "Isaiah 6:8",
+   "text": "I heard the Lord’s voice, saying, “Whom shall I send, and who will go for us?” Then I said, “Here I am. Send me!”",
+   "translation": "WEB",
+   "question": "Where might God be asking, \"Whom shall I send?\" in your own neighbourhood?"
+  },
+  {
+   "ref": "Acts 1:8",
+   "text": "But you will receive power when the Holy Spirit has come upon you. You will be witnesses to me in Jerusalem, in all Judea and Samaria, and to the uttermost parts of the earth.",
+   "translation": "WEB",
+   "question": "Where is your Jerusalem, the place nearest to hand?"
+  }
+ ],
+ "worship": [
+  {
+   "ref": "Psalm 95:6",
+   "text": "Oh come, let’s worship and bow down. Let’s kneel before Yahweh, our Maker,",
+   "translation": "WEB",
+   "question": "When did you last stop and simply kneel?"
+  },
+  {
+   "ref": "John 4:24",
+   "text": "God is spirit, and those who worship him must worship in spirit and truth.",
+   "translation": "WEB",
+   "question": "What would worship in spirit and truth look like on an ordinary weekday?"
+  }
+ ],
+ "deep": [
+  {
+   "ref": "Luke 5:4",
+   "text": "When he had finished speaking, he said to Simon, “Put out into the deep, and let down your nets for a catch.”",
+   "translation": "WEB",
+   "question": "Where is Jesus asking you to let down the net one more time?"
+  },
+  {
+   "ref": "Psalm 42:7",
+   "text": "Deep calls to deep at the noise of your waterfalls. All your waves and your billows have swept over me.",
+   "translation": "WEB",
+   "question": "What deep in you is calling out to God today?"
+  }
+ ],
+ "wisdom": [
+  {
+   "ref": "Proverbs 9:10",
+   "text": "The fear of Yahweh is the beginning of wisdom. The knowledge of the Holy One is understanding.",
+   "translation": "WEB",
+   "question": "What decision in front of you needs to begin with reverence?"
+  },
+  {
+   "ref": "James 1:5",
+   "text": "But if any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach; and it will be given to him.",
+   "translation": "WEB",
+   "question": "What wisdom do you need to ask for, plainly, today?"
+  }
+ ],
+ "prayer": [
+  {
+   "ref": "Philippians 4:6",
+   "text": "In nothing be anxious, but in everything, by prayer and petition with thanksgiving, let your requests be made known to God.",
+   "translation": "WEB",
+   "question": "What worry could you turn into a request right now?"
+  },
+  {
+   "ref": "Psalm 145:18",
+   "text": "Yahweh is near to all those who call on him, to all who call on him in truth.",
+   "translation": "WEB",
+   "question": "What would you say if you believed he was this near?"
+  }
+ ],
+ "remembrance": [
+  {
+   "ref": "Psalm 77:11",
+   "text": "I will remember Yah’s deeds; for I will remember your wonders of old.",
+   "translation": "WEB",
+   "question": "Which of God’s past deeds do you most need to remember today?"
+  },
+  {
+   "ref": "Psalm 103:2",
+   "text": "Praise Yahweh, my soul, and don’t forget all his benefits;",
+   "translation": "WEB",
+   "question": "Name three benefits you would rather not forget."
+  }
+ ],
+ "light": [
+  {
+   "ref": "John 1:5",
+   "text": "The light shines in the darkness, and the darkness hasn’t overcome it.",
+   "translation": "WEB",
+   "question": "Where does the darkness seem strongest, and what does this verse say about it?"
+  },
+  {
+   "ref": "Isaiah 9:2",
+   "text": "The people who walked in darkness have seen a great light. The light has shined on those who lived in the land of the shadow of death.",
+   "translation": "WEB",
+   "question": "Who do you know who is still waiting for light?"
+  }
+ ]
+}

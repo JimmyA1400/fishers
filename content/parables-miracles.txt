@@ -1,0 +1,229 @@
+# Parables and miracles of Jesus. Names are labels; each answer's anchor word
+# must appear in its cited passage.
+@ parables-miracles | Parables & Miracles | Name a parable or miracle of Jesus. | kingdom | described phrase ignore=parable,miracle,jesus,healing,healed,heals,man,woman,he,his,with,in,at,to,from,by,who,was,for
+
+Prodigal Son; prodigal; lost son; forgiving father | Luke 15:11-32 | A father runs to welcome his returning son.
+  anchor: younger son
+  tier: 1
+Good Samaritan; samaritan | Luke 10:25-37 | Told in answer to the question, who is my neighbor?
+  anchor: Samaritan
+  tier: 1
+Feeding of the 5,000; 5000; five thousand; loaves and fishes; loaves and fish; five loaves | Matt 14:13-21; John 6:1-14 | Five loaves and two fish feed a crowd; told in all four Gospels.
+  anchor: five loaves
+  tier: 1
+Water into wine; wine; wedding at Cana; Cana | John 2:1-11 | The first of his signs, at a wedding in Cana.
+  anchor: Cana
+  tier: 1
+Walking on water; walk water; walking on the sea | Matt 14:22-33; John 6:16-21 | He came to the disciples across the sea at night.
+  anchor: walking on the sea
+  tier: 1
+Lost Sheep; ninety-nine; 99 sheep; hundred sheep | Luke 15:3-7; Matt 18:12-14 | A shepherd leaves ninety-nine to find one.
+  tier: 3
+  anchor: ninety-nine
+Sower; four soils; soils; sower and the seed | Matt 13:1-23; Luke 8:4-15 | Seed falls on four kinds of ground.
+  tier: 3
+  anchor: sower
+Raising of Lazarus; Lazarus; raised Lazarus | John 11:1-44 | Called out of the tomb after four days.
+  tier: 1
+  anchor: Lazarus
+Calming the storm; storm; stilling the storm; calmed the sea; peace be still | Mark 4:35-41; Luke 8:22-25 | He rebuked the wind and the sea.
+  tier: 3
+  anchor: wind
+Mustard Seed; mustard | Matt 13:31-32; Mark 4:30-32 | The smallest seed becomes a tree.
+  tier: 3
+  anchor: mustard
+Talents; bags of gold | Matt 25:14-30 | Servants are entrusted with their master's money.
+  tier: 3
+  anchor: talents
+Lost Coin; coin; lost silver | Luke 15:8-10 | A woman sweeps the house until she finds it.
+  tier: 4
+  anchor: drachma; coin
+Wise and Foolish Builders; house on the rock; rock and sand; two builders | Matt 7:24-27; Luke 6:46-49 | One house stands on rock, the other falls on sand.
+  tier: 4
+  anchor: rock
+Wheat and Weeds; weeds; tares; wheat and tares | Matt 13:24-30, 36-43 | Both grow together until the harvest.
+  tier: 4
+  anchor: darnel; tares
+Ten Virgins; virgins; bridesmaids; ten bridesmaids | Matt 25:1-13 | Five were ready when the bridegroom came.
+  tier: 4
+  anchor: virgins
+Blind Bartimaeus; Bartimaeus; blind beggar | Mark 10:46-52 | A blind beggar at Jericho receives his sight.
+  tier: 4
+  anchor: Bartimaeus
+Ten lepers; 10 lepers | Luke 17:11-19 | Ten are cleansed; one, a Samaritan, returns to give thanks.
+  tier: 4
+  anchor: ten men
+Jairus's daughter; Jairus; Jairus daughter; talitha | Mark 5:21-24, 35-43 | A twelve-year-old girl is raised to life.
+  tier: 4
+  anchor: Jairus
+Paralytic through the roof; paralytic; lowered through the roof; roof | Mark 2:1-12; Luke 5:17-26 | Four friends lower him to Jesus.
+  tier: 4
+  anchor: roof
+Pearl of Great Price; pearl | Matt 13:45-46 | A merchant sells everything to buy one pearl.
+  tier: 4
+  anchor: pearl
+Hidden Treasure; treasure in a field | Matt 13:44 | A man sells all he has to buy the field.
+  anchor: treasure
+Unforgiving Servant; unmerciful servant | Matt 18:21-35 | Forgiven a great debt, he refused to forgive a small one.
+  tier: 4
+  anchor: ten thousand talents
+Workers in the Vineyard; laborers in the vineyard; labourers; eleventh hour | Matt 20:1-16 | Those hired last are paid the same as the first.
+  anchor: vineyard
+Rich Fool; bigger barns; barns | Luke 12:13-21 | He stored up treasure for himself and was not rich toward God.
+  anchor: barns
+Pharisee and Tax Collector; Pharisee and publican; publican | Luke 18:9-14 | Two men went up to the temple to pray.
+  anchor: Pharisee
+Rich Man and Lazarus; rich man; Dives | Luke 16:19-31 | Some interpreters read this as a parable, others as a teaching or prophetic scene.
+  tier: 4
+  anchor: rich man
+Sheep and Goats; sheep and the goats; goats | Matt 25:31-46 | Some interpreters read this as a parable, others as a teaching or prophetic scene.
+  tier: 4
+  anchor: goats
+Woman with the issue of blood; issue of blood; flow of blood; touched his garment; hem of his garment | Mark 5:25-34; Luke 8:43-48 | Healed when she touched his clothing.
+  tier: 4
+  anchor: blood
+Miraculous catch of fish; catch of fish; great catch; 153 fish; nets full | Luke 5:1-11; John 21:1-14 | The nets fill at his word.
+  tier: 4
+  anchor: net
+Feeding of the 4,000; 4000; four thousand; seven loaves | Matt 15:32-39; Mark 8:1-10 | Seven loaves feed a second crowd.
+  tier: 4
+  anchor: seven loaves
+Legion; Gerasene demoniac; Gadarene; demoniac; pigs; swine | Mark 5:1-20; Luke 8:26-39 | The unclean spirits enter a herd of pigs.
+  tier: 4
+  anchor: Legion
+Centurion's servant; centurion | Matt 8:5-13; Luke 7:1-10 | Healed at a distance, at a word.
+  anchor: centurion
+Man born blind; born blind; pool of Siloam; mud on his eyes | John 9:1-12 | Sent to wash in the pool of Siloam.
+  tier: 4
+  anchor: Siloam
+Persistent Widow; unjust judge; widow and the judge | Luke 18:1-8 | Told so that people would always pray and not give up.
+  anchor: judge
+Leaven; yeast | Matt 13:33; Luke 13:20-21 | A little leaven works through the whole batch.
+  anchor: yeast; leaven
+Wicked Tenants; tenants; wicked husbandmen; husbandmen | Mark 12:1-12; Luke 20:9-19 | The tenants reject the owner's servants and then his son.
+  anchor: vineyard
+Great Banquet; great supper; banquet | Luke 14:15-24 | The invited guests make excuses.
+  anchor: supper; dinner
+Wedding Feast; wedding banquet; marriage feast; wedding garment | Matt 22:1-14 | A king gives a feast for his son.
+  anchor: wedding
+Widow's son at Nain; Nain; widow of Nain | Luke 7:11-17 | A young man is raised on the way to his burial.
+  anchor: Nain
+Pool of Bethesda; Bethesda; thirty-eight years | John 5:1-9 | An invalid of thirty-eight years takes up his mat and walks.
+  anchor: thirty-eight
+Withered hand | Mark 3:1-6; Luke 6:6-11 | Healed in the synagogue on the Sabbath.
+  anchor: withered
+Peter's mother-in-law; mother-in-law; Peter's mother in law; fever | Mark 1:29-31; Luke 4:38-39 | The fever left her and she served them.
+  anchor: fever
+Cleansing a leper; leper; leprosy | Mark 1:40-45; Luke 5:12-16 | He touched a man with leprosy and made him clean.
+  anchor: leprosy
+Cursing the fig tree; fig tree; withered fig tree | Mark 11:12-14, 20-21; Matt 21:18-22 | A leafy tree without fruit withers.
+  anchor: fig tree
+  seat: Mark tells it in two parts, either side of the cleansing of the temple (Mark 11:12-21).
+Malchus's ear; Malchus; servant's ear | Luke 22:50-51; John 18:10 | He restored the ear cut off at his arrest.
+  anchor: ear
+Unclean spirit in the synagogue; Capernaum synagogue | Mark 1:21-28; Luke 4:31-37 | A spirit is cast out as he teaches in Capernaum.
+  anchor: unclean spirit
+Coin in the fish's mouth; coin in the fish; temple tax; fish's mouth | Matt 17:24-27 | Peter finds the temple tax in a fish.
+  anchor: mouth
+  sheep: Jesus sent Peter, a fisherman, to cast a hook and find the temple tax in the mouth of the first fish he caught (Matthew 17:27).
+Deaf man; Ephphatha; deaf and mute | Mark 7:31-37 | He said Ephphatha, be opened.
+  anchor: Ephphatha
+Syrophoenician woman's daughter; Syrophoenician; Canaanite woman | Mark 7:24-30; Matt 15:21-28 | A Gentile mother's faith is answered.
+  anchor: daughter
+Blind man at Bethsaida; Bethsaida; trees walking | Mark 8:22-26 | Healed in two stages.
+  anchor: Bethsaida
+Official's son; nobleman's son; royal official | John 4:46-54 | Healed at a distance, the second sign in John.
+  anchor: son
+Boy with an unclean spirit; epileptic boy; help my unbelief | Mark 9:14-29; Matt 17:14-20 | His father said, I believe; help my unbelief.
+  anchor: unbelief
+Woman bent over; bent over; eighteen years | Luke 13:10-17 | Straightened on the Sabbath after eighteen years.
+  anchor: eighteen years
+Man with dropsy; dropsy | Luke 14:1-6 | Healed on the Sabbath at a Pharisee's table.
+  anchor: dropsy
+Two blind men; blind men | Matt 9:27-31; 20:29-34 | Two blind men follow him crying, Son of David.
+  anchor: two blind men
+Mute demoniac; mute; dumb man | Matt 9:32-34; Luke 11:14 | The crowd marveled when the mute man spoke.
+  anchor: mute; dumb
+Two Sons | Matt 21:28-32 | One son said no and went; the other said yes and did not.
+  anchor: two sons
+Friend at Midnight; friend at night; three loaves | Luke 11:5-8 | A neighbor keeps knocking for bread.
+  anchor: midnight
+Barren Fig Tree; fruitless fig tree | Luke 13:6-9 | The gardener asks for one more year.
+  anchor: vinedresser; dresser of his vineyard
+Net; dragnet | Matt 13:47-50 | A net gathers fish of every kind.
+  anchor: dragnet; net
+Growing Seed; seed growing secretly | Mark 4:26-29 | The seed grows though the farmer does not know how; found only in Mark.
+  anchor: seed
+Two Debtors; moneylender | Luke 7:41-43 | Told to Simon the Pharisee.
+  anchor: debtors
+Dishonest Manager; unjust steward; shrewd manager; steward | Luke 16:1-13 | A manager about to lose his position acts shrewdly.
+  anchor: manager; steward
+Ten Minas; minas; pounds | Luke 19:11-27 | A nobleman entrusts money to ten servants.
+  anchor: mina; pound
+Budding Fig Tree; lesson of the fig tree | Matt 24:32-35 | When its leaves appear, summer is near.
+  anchor: summer
+New Wine in Old Wineskins; wineskins; new wine; old bottles | Luke 5:36-39; Matt 9:16-17 | New wine needs fresh wineskins.
+  anchor: new wine
+Lowest Seat; place of honor; seats at the feast; wedding guests | Luke 14:7-11 | Take the lowest place when you are invited.
+  anchor: lowest
+Lamp under a basket; lamp; light under a bushel; bushel | Mark 4:21-22; Luke 8:16 | No one lights a lamp to hide it.
+  anchor: lamp; candle
+Strong man; binding the strong man | Mark 3:27; Matt 12:29 | No one can plunder a strong man's house without first binding him.
+  anchor: strong man
+Watchful servants; servants waiting; faithful servant | Luke 12:35-48 | Blessed are the servants the master finds awake.
+  anchor: watching; watch
+Good Shepherd; shepherd | John 10:1-18 | John calls this a figure of speech; the shepherd lays down his life for the sheep.
+  anchor: shepherd
+  tier: 4
+
+Children in the marketplace; children playing; children in the market | Matt 11:16-19; Luke 7:31-35 | "We played the flute for you, and you didn't dance."
+  anchor: marketplace; markets; market
+  tier: 5
+New patch on an old garment; patch; new cloth; old garment | Mark 2:21; Matt 9:16; Luke 5:36 | Unshrunk cloth tears away from the old.
+  anchor: garment
+  tier: 4
+Tower builder; counting the cost; building a tower; tower | Luke 14:28-30 | Sit down first and count the cost.
+  anchor: tower
+  tier: 5
+King going to war; king going to battle; ten thousand | Luke 14:31-33 | Can he meet twenty thousand with ten thousand?
+  anchor: war
+  tier: 5
+Unprofitable servants; unworthy servants; servant's duty | Luke 17:7-10 | "We are unworthy servants. We have done our duty."
+  anchor: unworthy; unprofitable
+  tier: 5
+Householder's treasure; new and old; treasures new and old; scribe | Matt 13:52 | Brings out of his treasure things new and old.
+  anchor: new and old
+  tier: 5
+Blind leading the blind; blind guides; blind lead the blind | Luke 6:39; Matt 15:14 | Will they not both fall into a pit?
+  anchor: blind
+  tier: 4
+Good and bad trees; tree and its fruit; good tree; bad fruit; known by its fruit | Luke 6:43-45; Matt 7:15-20 | Each tree is known by its own fruit.
+  anchor: fruit
+  tier: 4
+Return of the unclean spirit; empty house; seven other spirits; swept house | Matt 12:43-45; Luke 11:24-26 | The house swept and put in order.
+  anchor: swept
+  tier: 5
+Bridegroom's guests; bridegroom; sons of the bridechamber | Mark 2:19-20; Matt 9:15 | They can't fast while the bridegroom is with them.
+  anchor: bridegroom
+  tier: 5
+Lamp on a stand; lamp under a bushel | Mark 4:21; Luke 8:16 | Nobody lights a lamp to hide it.
+  anchor: lamp
+  tier: 4
+Blind and mute demoniac; blind and dumb; blind and mute | Matt 12:22 | He healed him, so that he both spoke and saw.
+  anchor: blind
+  tier: 5
+Two demoniacs; demoniacs of Gadara; two possessed men | Matt 8:28-34 | The demons went into a herd of pigs.
+  anchor: two
+  tier: 5
+Healing at Gennesaret; fringe of his garment; Gennesaret | Matt 14:34-36; Mark 6:53-56 | As many as touched the fringe of his garment were made whole.
+  anchor: Gennesaret
+  tier: 5
+
+? Vine and Branches; true vine | One of the I am sayings (John 15:1-8), usually listed apart from the parables.
+? Ewe Lamb; Nathan | That is a parable, but Nathan told it to David (2 Samuel 12:1-4).
+? Resurrection; his resurrection; empty tomb; Easter | The greatest sign of all, but this prompt covers the miracles Jesus worked during his ministry.
+? Transfiguration; transfigured | A revelation of his glory (Matthew 17:1-8), usually listed apart from his miracles.
+? Virgin birth; ascension | A wonder of his life, but not a miracle he worked during his ministry.
+? Red Sea; manna; burning bush; plagues | That belongs to the story of Moses.
+? Pentecost; tongues of fire | That came after his ascension (Acts 2).
+? healed the sick; raised the dead; miracles | That covers many miracles. Which one do you have in mind?

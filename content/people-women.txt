@@ -1,0 +1,204 @@
+# Women named in the Bible. One answer per name: every woman called Mary is "Mary".
+@ women | People | Name a woman named in the Bible. | faithfulness
+
+Mary | Matt 1:16; Luke 1:27; 8:2; 10:39; John 19:25; Acts 12:12; Rom 16:6 | Several women share the name: the mother of Jesus, Mary Magdalene, Mary of Bethany, and others.
+  forms: Mary Magdalene; Mary of Bethany; Virgin Mary; Mary the mother of Jesus; Mary mother of Jesus; Mary the mother of James; Mary the wife of Clopas; Mary the mother of Mark
+  tier: 1
+Eve | Gen 3:20; 4:1; 2 Cor 11:3; 1 Tim 2:13 | Named by Adam as the mother of all the living.
+  tier: 1
+Sarah; Sarai; Sara | Gen 11:29; 17:15; Heb 11:11 | Abraham's wife and the mother of Isaac.
+  tier: 1
+Ruth | Ruth 1:4, 16 | A Moabite who would not leave her mother-in-law Naomi.
+  tier: 1
+Esther; Hadassah | Esth 2:7 | Her Hebrew name was Hadassah.
+  tier: 1
+Rachel; Rahel | Gen 29:6; Jer 31:15 | Jacob's wife, the mother of Joseph and Benjamin.
+  tier: 3
+Leah | Gen 29:16 | Jacob's first wife, the mother of six of his sons.
+  tier: 3
+Rebekah; Rebecca | Gen 24:15; Rom 9:10 | Isaac's wife, the mother of Esau and Jacob.
+  tier: 3
+Martha | Luke 10:38-41; John 11:1 | Mary's sister, who welcomed Jesus into her home.
+  tier: 3
+Miriam | Ex 15:20 | The prophetess, sister of Aaron, who led the women in song.
+  tier: 3
+Naomi; Mara | Ruth 1:2, 20 | Asked to be called Mara, meaning bitter, after her losses.
+  tier: 3
+Hannah | 1 Sam 1:2, 20 | Prayed for a son and named him Samuel.
+  tier: 3
+Elizabeth; Elisabeth | Luke 1:5, 57 | The mother of John the Baptist.
+  tier: 3
+Bathsheba; Bathshua | 2 Sam 11:3; 1 Chr 3:5 | The mother of Solomon; Chronicles calls her Bathshua.
+  tier: 3
+Jezebel | 1 Kgs 16:31; Rev 2:20 | Ahab's queen; Revelation also uses the name for a false teacher at Thyatira.
+  tier: 3
+Hagar; Agar | Gen 16:1; Gal 4:24 | Sarai's servant and the mother of Ishmael.
+  tier: 4
+Delilah | Judg 16:4 | Samson's betrayer in the valley of Sorek.
+  tier: 3
+Rahab; Rachab | Josh 2:1; Matt 1:5 | Hid the spies at Jericho and is named in the line of David.
+  tier: 3
+Deborah | Gen 35:8; Judg 4:4 | A prophetess who judged Israel; also the name of Rebekah's nurse.
+  seat: Deborah judged Israel from under a palm tree between Ramah and Bethel (Judges 4:4-5).
+Michal | 1 Sam 18:20 | Saul's daughter, given to David as his wife.
+  tier: 4
+Abigail | 1 Sam 25:3; 1 Chr 2:16 | Nabal's wise wife, who later married David; also David's sister.
+  tier: 4
+Lydia | Acts 16:14 | A seller of purple from Thyatira, baptized at Philippi.
+  tier: 4
+Priscilla; Prisca | Acts 18:2; Rom 16:3 | With her husband Aquila, a tentmaker and teacher of Apollos.
+  tier: 4
+Tamar; Thamar | Gen 38:6; 2 Sam 13:1; 14:27; Matt 1:3 | Judah's daughter-in-law, and later David's daughter and Absalom's daughter.
+  tier: 4
+Dinah | Gen 30:21 | The daughter of Jacob and Leah.
+  tier: 4
+Zipporah | Ex 2:21 | The wife of Moses.
+  tier: 4
+Anna | Luke 2:36 | A prophetess who gave thanks over the infant Jesus in the temple.
+  tier: 4
+Dorcas; Tabitha | Acts 9:36 | A disciple at Joppa, raised to life through Peter.
+  tier: 4
+Jael | Judg 4:17 | The wife of Heber the Kenite, who killed Sisera.
+  tier: 4
+Phoebe; Phebe | Rom 16:1 | A servant of the church at Cenchreae.
+  tier: 4
+Salome | Mark 15:40; 16:1 | A follower of Jesus who came to the tomb.
+  tier: 4
+Sapphira | Acts 5:1 | The wife of Ananias.
+  tier: 4
+Herodias | Mark 6:17 | The wife of Herod Antipas.
+  tier: 4
+Lois | 2 Tim 1:5 | Timothy's grandmother.
+  tier: 4
+Eunice | 2 Tim 1:5 | Timothy's mother.
+  tier: 4
+Joanna | Luke 8:3; 24:10 | The wife of Chuza, Herod's steward.
+Susanna | Luke 8:3 | One of the women who provided for Jesus from their means.
+Rhoda | Acts 12:13 | The servant girl who left Peter standing at the gate.
+  tier: 4
+Vashti | Esth 1:9 | The queen who refused the king's summons.
+  tier: 4
+Orpah | Ruth 1:4 | Naomi's other daughter-in-law, who returned to Moab.
+  tier: 4
+Bilhah | Gen 29:29; 30:3 | Rachel's servant, the mother of Dan and Naphtali.
+Zilpah | Gen 29:24; 30:9 | Leah's servant, the mother of Gad and Asher.
+Keturah | Gen 25:1 | Abraham's wife after Sarah.
+Athaliah | 2 Kgs 11:1 | The only queen to rule Judah in her own name.
+  tier: 4
+Huldah | 2 Kgs 22:14 | The prophetess consulted when the Book of the Law was found.
+Rizpah | 2 Sam 3:7; 21:8-10 | Saul's concubine, who guarded the bodies of her sons.
+Abishag | 1 Kgs 1:3 | The Shunammite who cared for David in his old age.
+Jochebed | Ex 6:20; Num 26:59 | The mother of Moses, Aaron and Miriam.
+  tier: 4
+Asenath | Gen 41:45 | Joseph's Egyptian wife.
+Peninnah | 1 Sam 1:2 | Elkanah's other wife, who provoked Hannah.
+Gomer | Hos 1:3 | Hosea's wife.
+Damaris | Acts 17:34 | A woman of Athens who believed.
+Drusilla | Acts 24:24 | The wife of the governor Felix.
+Bernice | Acts 25:13 | Came with Agrippa to hear Paul.
+Chloe | 1 Cor 1:11 | Her household brought Paul news from Corinth.
+Euodia; Euodias | Phil 4:2 | A worker in the gospel at Philippi.
+Syntyche | Phil 4:2 | A worker in the gospel at Philippi.
+Candace | Acts 8:27 | Queen of the Ethiopians.
+Zeresh | Esth 5:10 | Haman's wife.
+Merab | 1 Sam 14:49; 18:17 | Saul's older daughter.
+Ahinoam | 1 Sam 14:50; 25:43 | Saul's wife; also David's wife from Jezreel.
+Maacah; Maachah | 2 Sam 3:3; 1 Kgs 15:10 | Absalom's mother; also a queen mother removed by Asa.
+  tier: 4
+Haggith | 2 Sam 3:4 | The mother of Adonijah.
+Abital | 2 Sam 3:4 | A wife of David.
+Eglah | 2 Sam 3:5 | A wife of David.
+Shiphrah | Ex 1:15 | A Hebrew midwife who feared God and spared the boys.
+Puah | Ex 1:15 | A Hebrew midwife who feared God and spared the boys.
+Elisheba | Ex 6:23 | Aaron's wife.
+Cozbi | Num 25:15 | A Midianite woman killed by Phinehas.
+Mahlah | Num 26:33; 27:1 | A daughter of Zelophehad.
+Hoglah | Num 26:33; 27:1 | A daughter of Zelophehad.
+  tier: 5
+Milcah | Gen 11:29; Num 26:33 | Nahor's wife; also a daughter of Zelophehad.
+  tier: 5
+Tirzah | Num 26:33; 27:1 | A daughter of Zelophehad.
+  tier: 5
+Noah | Num 26:33; 27:1 | A daughter of Zelophehad.
+  sheep: Noah was also a woman's name: she and her four sisters asked Moses for their father's inheritance and received it (Numbers 27:1-7).
+Achsah | Josh 15:16-17; 1 Chr 2:49 | Caleb's daughter, who asked her father for springs of water.
+Adah | Gen 4:19; 36:2 | A wife of Lamech; also a wife of Esau.
+Zillah | Gen 4:19 | A wife of Lamech, the mother of Tubal-cain.
+Naamah | Gen 4:22; 1 Kgs 14:21 | Tubal-cain's sister; also an Ammonite, the mother of Rehoboam.
+Iscah | Gen 11:29 | The daughter of Haran.
+Reumah | Gen 22:24 | Nahor's concubine.
+Judith | Gen 26:34 | A wife of Esau, daughter of Beeri the Hittite.
+Basemath; Bashemath; Basmath | Gen 26:34; 36:3; 1 Kgs 4:15 | A wife of Esau; also a daughter of Solomon.
+  tier: 5
+Mahalath | Gen 28:9; 2 Chr 11:18 | A wife of Esau; also a wife of Rehoboam.
+Oholibamah; Aholibamah | Gen 36:2 | A wife of Esau.
+  tier: 5
+Timna | Gen 36:12 | A concubine of Eliphaz, the mother of Amalek.
+Mehetabel | Gen 36:39 | The wife of the Edomite king Hadar.
+Serah | Gen 46:17; Num 26:46 | Asher's daughter, who went down to Egypt.
+Shelomith | Lev 24:11 | Her son was stoned for blasphemy.
+  tier: 5
+Zeruiah | 2 Sam 2:18; 1 Chr 2:16 | David's sister, the mother of Joab, Abishai and Asahel.
+  tier: 4
+Abihail | 2 Chr 11:18 | The mother of Rehoboam's wife Mahalath.
+  tier: 5
+Taphath | 1 Kgs 4:11 | A daughter of Solomon.
+Tahpenes | 1 Kgs 11:19 | A queen of Egypt.
+Zeruah | 1 Kgs 11:26 | The mother of Jeroboam.
+Azubah | 1 Kgs 22:42; 1 Chr 2:18 | The mother of Jehoshaphat; also a wife of Caleb.
+Zibiah | 2 Kgs 12:1 | The mother of King Joash.
+Jehoaddin; Jehoaddan | 2 Kgs 14:2; 2 Chr 25:1 | The mother of King Amaziah.
+Jecoliah; Jecholiah | 2 Kgs 15:2; 2 Chr 26:3 | The mother of King Uzziah.
+Jerusha; Jerushah | 2 Kgs 15:33; 2 Chr 27:1 | The mother of King Jotham.
+Abi; Abijah | 2 Kgs 18:2; 2 Chr 29:1 | The mother of King Hezekiah.
+  tier: 5
+Hephzibah | 2 Kgs 21:1 | The mother of King Manasseh.
+Meshullemeth | 2 Kgs 21:19 | The mother of King Amon.
+Jedidah | 2 Kgs 22:1 | The mother of King Josiah.
+Hamutal | 2 Kgs 23:31; 24:18 | The mother of Kings Jehoahaz and Zedekiah.
+Zebidah; Zebudah | 2 Kgs 23:36 | The mother of King Jehoiakim.
+Nehushta | 2 Kgs 24:8 | The mother of King Jehoiachin.
+Jehosheba; Jehoshabeath | 2 Kgs 11:2; 2 Chr 22:11 | Hid the infant Joash from Athaliah.
+Shimeath | 2 Kgs 12:21; 2 Chr 24:26 | An Ammonite woman whose son killed King Joash.
+Shimrith | 2 Chr 24:26 | A Moabite woman whose son killed King Joash.
+Noadiah | Neh 6:14 | A prophetess who tried to frighten Nehemiah.
+Jemimah; Jemima | Job 42:14 | Job's first daughter after his restoration.
+Keziah; Kezia | Job 42:14 | Job's second daughter after his restoration.
+Keren-happuch; Kerenhappuch | Job 42:14 | Job's third daughter after his restoration.
+Lo-ruhamah; Loruhamah | Hos 1:6 | Hosea's daughter; her name means not pitied.
+Jerioth | 1 Chr 2:18 | A wife of Caleb.
+Ephrath; Ephrathah | 1 Chr 2:19, 50 | A wife of Caleb.
+  tier: 5
+Atarah | 1 Chr 2:26 | A wife of Jerahmeel.
+Ephah | 1 Chr 2:46 | Caleb's concubine.
+  tier: 5
+Hazzelelponi; Hazelelponi | 1 Chr 4:3 | A sister in the line of Judah.
+Helah | 1 Chr 4:5 | A wife of Ashhur.
+Naarah | 1 Chr 4:5 | A wife of Ashhur.
+Bithiah | 1 Chr 4:18 | Pharaoh's daughter, married to Mered.
+Hammoleketh; Hammolecheth | 1 Chr 7:18 | A sister of Gilead.
+Sheerah; Sherah | 1 Chr 7:24 | She built the two Beth Horons.
+Shua | 1 Chr 7:32 | A daughter of Heber in the line of Asher.
+  tier: 5
+Hushim | 1 Chr 8:8 | A wife of Shaharaim.
+Baara | 1 Chr 8:8 | A wife of Shaharaim.
+Hodesh | 1 Chr 8:9 | A wife of Shaharaim.
+Junia | Rom 16:7 | A relative of Paul and a fellow prisoner.
+Tryphaena; Tryphena | Rom 16:12 | A worker in the Lord at Rome.
+Tryphosa | Rom 16:12 | A worker in the Lord at Rome.
+Persis | Rom 16:12 | She worked hard in the Lord.
+Julia | Rom 16:15 | Greeted among the saints at Rome.
+Apphia | Philem 2 | Greeted at the head of the letter to Philemon.
+Claudia | 2 Tim 4:21 | Sends greetings to Timothy.
+
+? Lot's wife; Lots wife | She looked back and became a pillar of salt (Genesis 19:26), but Scripture never gives her name.
+? Potiphar's wife; Potiphars wife | She is in Genesis 39:7, but the text never gives her name.
+? Noah's wife; Noahs wife | She went into the ark (Genesis 7:13), but Genesis never names her.
+? Job's wife; Jobs wife | She speaks in Job 2:9, but is never named.
+? Samaritan woman; woman at the well | One of the best-known women in the Gospels, but John never gives her name (John 4:7).
+? Veronica | A name from later tradition. The Gospels do not name a Veronica.
+? Queen of Sheba | She visited Solomon (1 Kings 10:1), but Scripture gives her title, not her name.
+? Pilate's wife; Pilates wife; Claudia Procula; Procula | She sent Pilate a warning (Matthew 27:19), but the Gospel does not name her.
+? Mary Magdalene the prostitute; Magdalene prostitute; prostitute | Scripture says seven demons had gone out of Mary Magdalene (Luke 8:2). It never calls her a prostitute.
+? Oholah; Aholah; Oholibah; Aholibah | Ezekiel's names for Samaria and Jerusalem in a parable (Ezekiel 23:4), not women who lived.
+? Lilith | Not a woman in Scripture. Isaiah 34:14 has a word some translations render "night creature".

@@ -1,0 +1,207 @@
+# The 66 books. A closed set; tiers here are a manual estimate because book names
+# never appear in the text, so there is no verse count to rank them by.
+@ books | Books of the Bible | Name a book of the Bible. | word | books closed ignore=book,gospel,epistle,letter,to,according,of
+
+Genesis | Gen 1:1 | In the beginning, God created the heavens and the earth.
+  tier: 1
+  short: Gen; Gn
+Exodus | Ex 1:1 | The rescue from Egypt and the giving of the law.
+  tier: 1
+  short: Ex; Exod
+Psalms; Psalm | Ps 1:1 | One hundred and fifty songs and prayers.
+  tier: 1
+  short: Ps; Psa; Pss
+Matthew | Matt 1:1 | The first book of the New Testament.
+  tier: 1
+  short: Matt; Mt
+John | John 1:1 | In the beginning was the Word.
+  tier: 1
+  short: Jn; Jhn
+Revelation; Revelations; Apocalypse | Rev 1:1 | John's visions on Patmos.
+  tier: 1
+  short: Rev; Rv
+Proverbs | Prov 1:1 | Sayings of wisdom.
+  tier: 3
+  short: Prov; Prv
+Romans | Rom 1:1 | Paul's letter to the church at Rome.
+  tier: 3
+  short: Rom; Rm
+Mark | Mark 1:1 | The shortest of the four Gospels.
+  tier: 3
+  short: Mk; Mrk
+Luke | Luke 1:1 | An orderly account written for Theophilus.
+  tier: 3
+  short: Lk; Luk
+Acts; Acts of the Apostles | Acts 1:1 | The gospel goes from Jerusalem to Rome.
+  tier: 3
+  short: Ac
+Isaiah | Isa 1:1 | The first of the major prophets.
+  tier: 4
+  short: Isa
+Job | Job 1:1 | A blameless man tested by suffering.
+  tier: 4
+Daniel | Dan 1:1 | Faithfulness in exile, and visions of kingdoms.
+  tier: 4
+  short: Dan; Dn
+Ruth | Ruth 1:1 | A Moabite widow's loyalty, set in the days of the judges.
+  tier: 4
+  short: Rth
+Esther | Esth 1:1 | A Jewish queen in Persia.
+  tier: 4
+  short: Esth; Est
+Jonah | Jonah 1:1 | The prophet who ran from Nineveh.
+  tier: 4
+  short: Jon; Jnh
+Leviticus | Lev 1:1 | Laws of sacrifice and holiness.
+  tier: 4
+  short: Lev; Lv
+Numbers | Num 1:1 | The wilderness years, framed by two censuses.
+  tier: 4
+  short: Num; Nm
+Deuteronomy | Deut 1:1 | Moses' farewell on the plains of Moab.
+  tier: 4
+  short: Deut; Dt
+Joshua | Josh 1:1 | The entry into the promised land.
+  tier: 4
+  short: Josh
+Judges | Judg 1:1 | Deliverers in the days before Israel had a king.
+  tier: 4
+  short: Judg; Jdg
+1 Corinthians | 1 Cor 1:1 | Holds the love chapter and the resurrection chapter.
+  tier: 4
+  short: 1 Cor
+Ephesians | Eph 1:1 | Saved by grace through faith.
+  tier: 4
+  short: Eph
+Galatians | Gal 1:1 | Freedom in Christ.
+  tier: 4
+  short: Gal
+Hebrews | Heb 1:1 | Christ the great high priest; the author is not named.
+  tier: 4
+  short: Heb
+James | Jas 1:1 | Be doers of the word.
+  tier: 4
+  short: Jas; Jm
+Philippians | Phil 1:1 | Rejoice in the Lord always.
+  tier: 4
+  short: Phil; Php
+Jeremiah | Jer 1:1 | The weeping prophet of Jerusalem's last days.
+  tier: 5
+  short: Jer
+Ezekiel | Ezek 1:1 | Visions by the river Chebar.
+  tier: 5
+  short: Ezek; Ezk
+Ecclesiastes | Eccl 1:1 | Vanity of vanities, says the Preacher.
+  tier: 5
+  short: Eccl; Eccles; Qoh
+Song of Solomon; Song of Songs; Canticles | Song 1:1 | The song of songs, which is Solomon's.
+  tier: 5
+  short: Song; SOS
+Lamentations | Lam 1:1 | Five poems of grief over fallen Jerusalem.
+  tier: 5
+  short: Lam
+1 Samuel | 1 Sam 1:1 | Samuel, Saul, and the young David.
+  tier: 5
+  short: 1 Sam; 1 Sm
+2 Samuel | 2 Sam 1:1 | The reign of David.
+  tier: 5
+  short: 2 Sam; 2 Sm
+1 Kings | 1 Kgs 1:1 | Solomon, the divided kingdom, and Elijah.
+  tier: 5
+  short: 1 Kgs; 1 Ki
+2 Kings | 2 Kgs 1:1 | From Elisha to the exile.
+  tier: 5
+  short: 2 Kgs; 2 Ki
+1 Chronicles | 1 Chr 1:1 | Opens with a genealogy from Adam.
+  tier: 5
+  short: 1 Chr; 1 Chron
+2 Chronicles | 2 Chr 1:1 | From Solomon to Cyrus's decree.
+  tier: 5
+  short: 2 Chr; 2 Chron
+Ezra | Ezra 1:1 | The return from exile.
+  tier: 5
+  short: Ezr
+Nehemiah | Neh 1:1 | Rebuilding Jerusalem's walls.
+  tier: 5
+  short: Neh
+Hosea | Hos 1:1 | God's faithful love for an unfaithful people.
+  tier: 5
+  short: Hos
+Joel | Joel 1:1 | Locusts, and the promised Spirit.
+  tier: 5
+  short: Jl
+Amos | Amos 1:1 | A herdsman from Tekoa calls for justice.
+  tier: 5
+  short: Am
+Obadiah | Obad 1 | The shortest book of the Old Testament.
+  tier: 5
+  short: Obad; Ob
+Micah | Mic 1:1 | What does the LORD require of you?
+  tier: 5
+  short: Mic
+Nahum | Nah 1:1 | An oracle about Nineveh.
+  tier: 5
+  short: Nah
+Habakkuk | Hab 1:1 | The righteous will live by faith.
+  seat: Habakkuk asks God how long the wicked will prosper, and ends by rejoicing even if the fig tree does not blossom (Habakkuk 1:2; 3:17-18).
+  short: Hab
+Zephaniah | Zeph 1:1 | The great day of the LORD is near.
+  tier: 5
+  short: Zeph; Zep
+Haggai | Hag 1:1 | A call to rebuild the temple.
+  tier: 5
+  short: Hag
+Zechariah | Zech 1:1 | Night visions for the returned exiles.
+  tier: 5
+  short: Zech; Zec
+Malachi | Mal 1:1 | The last book of the Old Testament.
+  tier: 5
+  short: Mal
+2 Corinthians | 2 Cor 1:1 | My grace is sufficient for you.
+  tier: 5
+  short: 2 Cor
+Colossians | Col 1:1 | The supremacy of Christ.
+  tier: 5
+  short: Col
+1 Thessalonians | 1 Thess 1:1 | Comfort about those who have died.
+  tier: 5
+  short: 1 Thess; 1 Thes
+2 Thessalonians | 2 Thess 1:1 | Do not grow weary in doing good.
+  tier: 5
+  short: 2 Thess; 2 Thes
+1 Timothy | 1 Tim 1:1 | Counsel to a young pastor.
+  tier: 5
+  short: 1 Tim
+2 Timothy | 2 Tim 1:1 | I have fought the good fight.
+  tier: 5
+  short: 2 Tim
+Titus | Titus 1:1 | Written to Titus in Crete.
+  tier: 5
+  short: Tit
+Philemon | Philem 1 | An appeal for Onesimus.
+  tier: 5
+  short: Phlm; Philem
+1 Peter | 1 Pet 1:1 | To believers scattered through five provinces.
+  tier: 5
+  short: 1 Pet; 1 Pt
+2 Peter | 2 Pet 1:1 | Mentions the letters of Paul.
+  tier: 5
+  short: 2 Pet; 2 Pt
+1 John | 1 John 1:1 | God is love.
+  tier: 5
+  short: 1 Jn
+2 John | 2 John 1 | To a chosen lady and her children.
+  tier: 5
+  short: 2 Jn
+3 John | 3 John 1 | To Gaius.
+  sheep: 3 John is the shortest book in the Bible by word count, a letter of about 220 words in Greek, written by the elder to Gaius (3 John 1).
+  short: 3 Jn
+Jude | Jude 1 | Contend for the faith.
+  tier: 5
+  short: Jud
+
+? Tobit; Judith; Sirach; Ecclesiasticus; Wisdom; Wisdom of Solomon; Baruch; Maccabees; 1 Maccabees; 2 Maccabees | Received as Scripture by Catholic and Orthodox Christians, but outside the 66-book canon this game uses.
+? Enoch; 1 Enoch; Jubilees; Jasher | An ancient book, but not part of the 66-book canon.
+? Gospel of Thomas; Thomas; Gospel of Judas; Didache | An early writing outside the Bible.
+? 3 Corinthians; 3 Kings; 4 Kings; 3 Peter; 4 John | No such book in the Bible.
+? Laodiceans | Paul mentions a letter from Laodicea (Colossians 4:16), but it is not in the Bible.

@@ -1,0 +1,10 @@
+[
+ { "depth": 0, "name": "Sunlit shallows" },
+ { "depth": 300, "name": "Out past the boats", "ref": "Luke 5:4", "translation": "WEB", "text": "Put out into the deep" },
+ { "depth": 1000, "name": "The deep", "ref": "Psalm 107:24", "translation": "WEB", "text": "his wonders in the deep" },
+ { "depth": 1530, "name": "153", "ref": "John 21:11", "translation": "WEB", "text": "one hundred fifty-three great fish", "egg": true },
+ { "depth": 2000, "name": "Deep calls to deep", "ref": "Psalm 42:7", "translation": "WEB", "text": "Deep calls to deep" },
+ { "depth": 3800, "name": "The heart of the seas", "ref": "Jonah 2:3", "translation": "WEB", "text": "in the heart of the seas" },
+ { "depth": 5500, "name": "The springs of the sea", "ref": "Job 38:16", "translation": "WEB", "text": "the springs of the sea" },
+ { "depth": 7000, "name": "The depths of the sea", "ref": "Micah 7:19", "translation": "WEB", "text": "into the depths of the sea", "sub": "a perfect cast ends here" }
+]

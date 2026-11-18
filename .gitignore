@@ -1,0 +1,28 @@
+# dependencies and build output
+node_modules/
+_site/
+dist/
+
+# test output and media (never published)
+reports/
+tests/playthrough/results/
+test-results/
+playwright-report/
+*.webm
+*.trace.zip
+
+# The reference game is not ours to publish: its comparison scripts and the agent
+# notes that describe it stay on this machine only.
+tests/playthrough/krillion*.js
+.claude/agents/game-tester.md
+
+# raw source datasets and scratch work
+tools/.cache/
+tools/.scratch/
+
+# secrets and OS junk
+.env
+.env.*
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,599 @@
+# Hand-written people, carried over from the earlier prompt lists. tools/derive.js merges
+# these into the generated people prompts: they add people Easton lacks and supply
+# the notes and aliases. Every name is still checked against the text.
+
+@ judah-kings | People | Name a ruler of the southern kingdom of Judah after the kingdom divided. | kingdom
+Hezekiah; Ezekias | 2 Kings 18:1–7; 20:1–6 | Trusted the LORD through the Assyrian siege; fifteen years were added to his life.
+Josiah; Josias | 2 Kings 22:1–2; 23:1–3 | King at eight; the Book of the Law was found in his reign and he renewed the covenant.
+Rehoboam | 1 Kings 12:1–17; 14:21 | Solomon's son; the kingdom divided under him.
+Jehoshaphat; Josaphat | 1 Kings 22:41–43; 2 Chronicles 20:1–30 | Saw Judah delivered after prayer and singing.
+Uzziah; Azariah; Ozias | 2 Kings 15:1–7; 2 Chronicles 26:16–21 | Reigned fifty-two years; struck with leprosy after burning incense in the temple.
+Manasseh | 2 Kings 21:1–18; 2 Chronicles 33:10–13 | Reigned fifty-five years; Chronicles records his repentance.
+Asa | 1 Kings 15:9–24 | Removed idols from the land.
+Ahaz | 2 Kings 16:1–20; Isaiah 7:10–14 | Isaiah gave the Immanuel sign in his reign.
+Zedekiah; Mattaniah | 2 Kings 24:17–20; 25:1–7 | Judah's last king; Jerusalem fell to Babylon.
+Joash; Jehoash | 2 Kings 11:1–3, 21; 12:4–16 | Hidden as an infant, crowned at seven, and repaired the temple.
+Athaliah | 2 Kings 11:1–16 | The only queen to rule Judah; she held the throne six years.
+Jehoiakim; Eliakim | 2 Kings 23:34–37; Jeremiah 36:20–26 | Burned Jeremiah's scroll.
+Jehoiachin; Jeconiah; Coniah; Jechoniah | 2 Kings 24:8–15; 25:27–30 | Reigned three months, was exiled, and was later released in Babylon.
+Amaziah | 2 Kings 14:1–20 | Defeated Edom, then lost to Jehoash of Israel.
+Jotham | 2 Kings 15:32–38 | Uzziah's son; built the upper gate of the temple.
+Amon | 2 Kings 21:19–26 | Reigned two years; killed by his own servants.
+Abijah; Abijam | 1 Kings 15:1–8; 2 Chronicles 13:1–2 | Rehoboam's son; reigned three years.
+Jehoram; Joram | 2 Kings 8:16–24 | Married a daughter of Ahab.
+Ahaziah | 2 Kings 8:25–29; 9:27 | Reigned one year; died in Jehu's uprising.
+Jehoahaz; Shallum | 2 Kings 23:31–34 | Reigned three months before Pharaoh Necoh removed him.
+
+@ israel-kings | People | Name a king of the northern kingdom of Israel after the kingdom divided. | kingdom
+Ahab | 1 Kings 16:29–33; 18:17–19 | Omri's son, opposed by the prophet Elijah.
+Jeroboam; Jeroboam I; Jeroboam son of Nebat | 1 Kings 12:20, 28–30 | The first northern king; set up golden calves at Bethel and Dan.
+Jehu | 2 Kings 9:1–13; 10:28 | Anointed at Elisha's direction; ended the house of Ahab.
+Omri | 1 Kings 16:23–28 | Bought the hill of Samaria and built his capital there.
+Hoshea | 2 Kings 17:1–6 | The last northern king; Samaria fell to Assyria.
+Jeroboam II; Jeroboam 2; Jeroboam the second; Jeroboam son of Joash | 2 Kings 14:23–29 | Reigned forty-one years; Jonah son of Amittai prophesied in his time.
+Ahaziah | 1 Kings 22:51–53; 2 Kings 1:2–17 | Ahab's son; Elijah foretold his death after a fall.
+Joram; Jehoram | 2 Kings 3:1–3; 9:24 | Ahab's son; killed by Jehu.
+Baasha | 1 Kings 15:27–34 | Overthrew Nadab and reigned twenty-four years at Tirzah.
+Jehoash; Joash | 2 Kings 13:10–19 | Visited the dying Elisha and struck the ground with arrows three times.
+Nadab | 1 Kings 15:25–28 | Jeroboam's son; reigned two years.
+Zimri | 1 Kings 16:9–20 | Reigned seven days.
+Menahem | 2 Kings 15:14–22 | Paid tribute to Pul, king of Assyria.
+Pekah | 2 Kings 15:25–31; Isaiah 7:1 | Joined Rezin of Syria against Judah.
+Jehoahaz | 2 Kings 13:1–9 | Jehu's son; reigned seventeen years.
+Elah | 1 Kings 16:8–10 | Baasha's son; killed by Zimri.
+Zechariah; Zachariah | 2 Kings 15:8–12 | Reigned six months; the last king of Jehu's line.
+Shallum | 2 Kings 15:13–15 | Reigned one month.
+Pekahiah | 2 Kings 15:23–26 | Menahem's son; reigned two years.
+
+@ judges-people | People | Name a person named in the book of Judges. | courage
+Samson | Judges 13:24; 16:28–31 | A Nazirite of great strength who judged Israel twenty years.
+Gideon; Jerubbaal | Judges 6:11–16; 7:7 | Defeated Midian with three hundred men.
+Deborah | Judges 4:4–5 | A prophetess who judged Israel beneath a palm tree.
+Delilah | Judges 16:4–20 | Learned the secret of Samson's strength.
+Jephthah | Judges 11:1, 29–33 | The Gileadite who defeated the Ammonites.
+Barak | Judges 4:6–16 | Led Israel's army alongside Deborah.
+Jael | Judges 4:17–22 | Wife of Heber the Kenite; she killed Sisera.
+Sisera | Judges 4:2–3 | Commander of Jabin's army, with nine hundred iron chariots.
+Ehud | Judges 3:15–30 | The left-handed Benjamite who delivered Israel from Moab.
+Othniel | Judges 3:9–11 | The first judge; a kinsman of Caleb.
+Abimelech | Judges 9:1–6, 53 | Gideon's son, who made himself king at Shechem.
+Eglon | Judges 3:12–25 | King of Moab.
+Manoah | Judges 13:2–21 | Samson's father.
+Shamgar | Judges 3:31 | Struck down six hundred Philistines with an ox goad.
+Micah | Judges 17:1–13 | An Ephraimite who set up a shrine and hired a Levite.
+Jotham | Judges 9:5–21 | Gideon's youngest son, who told the fable of the trees.
+Caleb | Judges 1:12–15, 20 | Gave his daughter Achsah to Othniel.
+Joshua | Judges 2:6–9 | His death is recorded near the start of the book.
+Jabin | Judges 4:2, 23–24 | King of Canaan, who reigned in Hazor.
+Tola | Judges 10:1–2 | Judged Israel twenty-three years.
+Jair | Judges 10:3–5 | Judged twenty-two years; his thirty sons rode thirty donkeys.
+Ibzan | Judges 12:8–10 | Of Bethlehem; judged seven years.
+Elon | Judges 12:11–12 | The Zebulunite; judged ten years.
+Abdon | Judges 12:13–15 | Judged eight years.
+Achsah | Judges 1:12–15 | Caleb's daughter, who asked her father for springs of water.
+Adoni-bezek | Judges 1:5–7 | A Canaanite king defeated by Judah.
+Cushan-rishathaim; Cushan | Judges 3:8–10 | King of Mesopotamia, defeated by Othniel.
+Heber | Judges 4:11, 17 | The Kenite, husband of Jael.
+Joash | Judges 6:11, 29–32 | Gideon's father.
+Purah | Judges 7:10–11 | Gideon's servant, who went with him to the Midianite camp.
+Oreb | Judges 7:25 | A prince of Midian.
+Zeeb | Judges 7:25 | A prince of Midian.
+Zebah | Judges 8:5–21 | A king of Midian.
+Zalmunna | Judges 8:5–21 | A king of Midian.
+Gaal | Judges 9:26–41 | Stirred up Shechem against Abimelech.
+Zebul | Judges 9:28–41 | Ruler of the city of Shechem under Abimelech.
+Phinehas | Judges 20:28 | Aaron's grandson, serving before the ark.
+Lappidoth | Judges 4:4 | Deborah's husband.
+Abinoam | Judges 4:6 | Barak's father.
+
+@ david-family | People | Name a wife or child of David named in Scripture. | mercy
+Solomon | 2 Samuel 12:24 | Son of David and Bathsheba, and his successor.
+Bathsheba; Bathshua | 2 Samuel 11:27; 12:24 | Mother of Solomon.
+Absalom | 2 Samuel 3:3; 15:1–6 | The son who led a revolt against his father.
+Michal | 1 Samuel 18:27 | Saul's daughter and David's first wife.
+Abigail | 1 Samuel 25:39–42 | Widow of Nabal of Carmel.
+Amnon | 2 Samuel 3:2 | David's firstborn.
+Tamar | 2 Samuel 13:1 | David's daughter and Absalom's sister.
+Adonijah | 2 Samuel 3:4; 1 Kings 1:5 | Tried to claim the throne in David's old age.
+Ahinoam | 1 Samuel 25:43; 2 Samuel 3:2 | Of Jezreel; mother of Amnon.
+Nathan | 2 Samuel 5:14; Luke 3:31 | A son born in Jerusalem; Luke's genealogy runs through him.
+Maacah | 2 Samuel 3:3 | Daughter of Talmai king of Geshur; mother of Absalom.
+Haggith | 2 Samuel 3:4 | Mother of Adonijah.
+Chileab; Daniel | 2 Samuel 3:3; 1 Chronicles 3:1 | Abigail's son, called Daniel in Chronicles.
+Shephatiah | 2 Samuel 3:4 | Son of Abital.
+Abital | 2 Samuel 3:4 | Mother of Shephatiah.
+Eglah | 2 Samuel 3:5 | Mother of Ithream.
+Ithream | 2 Samuel 3:5 | Son of Eglah, born at Hebron.
+Shammua; Shimea | 2 Samuel 5:14 | A son born in Jerusalem.
+Shobab | 2 Samuel 5:14 | A son born in Jerusalem.
+Ibhar | 2 Samuel 5:15 | A son born in Jerusalem.
+Elishua | 2 Samuel 5:15 | A son born in Jerusalem.
+Nepheg | 2 Samuel 5:15 | A son born in Jerusalem.
+Japhia | 2 Samuel 5:15 | A son born in Jerusalem.
+Elishama | 2 Samuel 5:16 | A son born in Jerusalem.
+Eliada | 2 Samuel 5:16 | A son born in Jerusalem.
+Eliphelet | 2 Samuel 5:16 | A son born in Jerusalem.
+Jerimoth | 2 Chronicles 11:18 | A son of David whose daughter married Rehoboam.
+
+@ ot-prophets | People | Name a prophet or prophetess of the LORD named in the Old Testament. | word
+Isaiah; Esaias | Isaiah 1:1; 6:8 | Saw the Lord in the temple and answered his call.
+Elijah; Elias | 1 Kings 18:19–20, 36–39 | Called down fire on Mount Carmel.
+Jeremiah; Jeremias | Jeremiah 1:1, 4–10 | Called before his birth to be a prophet to the nations.
+Moses | Deuteronomy 34:10 | No prophet like him arose again in Israel.
+Daniel | Daniel 7:1; Matthew 24:15 | Exile in Babylon; Jesus calls him Daniel the prophet.
+Elisha; Eliseus | 2 Kings 2:9–15 | Received Elijah's mantle.
+Ezekiel | Ezekiel 1:1–3 | A priest who saw visions by the river Chebar.
+Jonah; Jonas | Jonah 1:1–3; 2 Kings 14:25 | Sent to Nineveh.
+Samuel | 1 Samuel 3:19–20 | Known from Dan to Beersheba as a prophet of the LORD.
+Hosea; Osee | Hosea 1:1–2 | Prophet to the northern kingdom.
+Amos | Amos 7:14–15 | A herdsman called from following the flock.
+Micah | Micah 1:1; 5:2 | Foretold a ruler from Bethlehem.
+Joel | Joel 1:1; 2:28–29 | Foretold the outpouring of the Spirit.
+Malachi | Malachi 1:1 | The last book of the Old Testament bears his name.
+Nathan | 2 Samuel 7:2–17; 12:1–7 | Brought God's word to David.
+Zechariah; Zacharias | Zechariah 1:1 | Prophesied as the temple was being rebuilt.
+Habakkuk | Habakkuk 1:1; 2:4 | Wrote that the righteous will live by faith.
+Haggai | Haggai 1:1–8 | Urged the returned exiles to rebuild the temple.
+Obadiah | Obadiah 1 | His one-chapter vision concerns Edom.
+Nahum | Nahum 1:1 | His oracle concerns Nineveh.
+Zephaniah | Zephaniah 1:1 | Prophesied in the days of Josiah.
+Deborah | Judges 4:4 | A prophetess who judged Israel.
+Miriam | Exodus 15:20 | The prophetess, sister of Aaron.
+Abraham | Genesis 20:1–7 | The first person the Bible calls a prophet.
+Aaron | Exodus 7:1 | Appointed as Moses' prophet before Pharaoh.
+Gad | 1 Samuel 22:5; 2 Samuel 24:11 | David's seer.
+Huldah | 2 Kings 22:14–20 | The prophetess consulted when the Book of the Law was found.
+Micaiah | 1 Kings 22:8–28 | Stood alone against four hundred prophets before Ahab.
+Ahijah | 1 Kings 11:29–31 | The Shilonite who tore a garment into twelve pieces.
+Iddo | 2 Chronicles 12:15; 13:22 | A seer whose writings Chronicles cites.
+Shemaiah | 1 Kings 12:22; 2 Chronicles 12:5 | Told Rehoboam not to fight the northern tribes.
+Jehu; Jehu son of Hanani | 1 Kings 16:1, 7 | Brought the LORD's word against Baasha.
+Hanani | 2 Chronicles 16:7 | The seer who rebuked King Asa.
+Azariah; Azariah son of Oded | 2 Chronicles 15:1–8 | Encouraged King Asa's reforms.
+Oded | 2 Chronicles 28:9–15 | Persuaded Israel's army to release its captives from Judah.
+Uriah; Urijah | Jeremiah 26:20–23 | Prophesied in Jeremiah's day and was killed by Jehoiakim.
+Eldad | Numbers 11:26–29 | Prophesied in the camp in Moses' day.
+Medad | Numbers 11:26–29 | Prophesied in the camp in Moses' day.
+Asaph | 2 Chronicles 29:30 | Called Asaph the seer.
+Heman | 1 Chronicles 25:5 | Called the king's seer.
+Jeduthun | 2 Chronicles 35:15 | Called the king's seer.
+
+@ esther-people | People | Name a person named in the book of Esther. | courage
+Esther; Hadassah | Esther 2:7 | Her Hebrew name was Hadassah.
+Mordecai | Esther 2:5–7 | Esther's cousin, who raised her.
+Haman | Esther 3:1–6 | The king's chief official, who plotted against the Jews.
+Ahasuerus; Xerxes | Esther 1:1 | King of Persia, ruling from India to Ethiopia.
+Vashti | Esther 1:9–12 | The queen who refused the king's summons.
+Zeresh | Esther 5:10, 14 | Haman's wife.
+Hegai | Esther 2:8–9 | Keeper of the women, who favoured Esther.
+Bigthan; Bigthana | Esther 2:21–23 | One of two doorkeepers who plotted against the king.
+Teresh | Esther 2:21–23 | One of two doorkeepers who plotted against the king.
+Hathach; Hatach | Esther 4:5–9 | Carried messages between Esther and Mordecai.
+Harbona; Harbonah | Esther 1:10; 7:9 | The attendant who pointed out Haman's gallows.
+Memucan | Esther 1:14–21 | The prince who advised the king about Vashti.
+Abihail | Esther 2:15; 9:29 | Esther's father.
+Hammedatha | Esther 3:1 | Haman's father.
+Shaashgaz | Esther 2:14 | Keeper of the concubines.
+Mehuman | Esther 1:10 | One of the seven attendants sent for Vashti.
+Biztha | Esther 1:10 | One of the seven attendants sent for Vashti.
+Bigtha | Esther 1:10 | One of the seven attendants sent for Vashti.
+Abagtha | Esther 1:10 | One of the seven attendants sent for Vashti.
+Zethar | Esther 1:10 | One of the seven attendants sent for Vashti.
+Carcas | Esther 1:10 | One of the seven attendants sent for Vashti.
+Carshena | Esther 1:14 | One of the seven princes of Persia and Media.
+Shethar | Esther 1:14 | One of the seven princes of Persia and Media.
+Admatha | Esther 1:14 | One of the seven princes of Persia and Media.
+Tarshish | Esther 1:14 | One of the seven princes of Persia and Media.
+Meres | Esther 1:14 | One of the seven princes of Persia and Media.
+Marsena | Esther 1:14 | One of the seven princes of Persia and Media.
+Kish | Esther 2:5 | An ancestor of Mordecai.
+Shimei | Esther 2:5 | An ancestor of Mordecai.
+Jair | Esther 2:5 | Mordecai's father.
+Parshandatha | Esther 9:7–9 | One of Haman's ten sons.
+Dalphon | Esther 9:7–9 | One of Haman's ten sons.
+Aspatha | Esther 9:7–9 | One of Haman's ten sons.
+Poratha | Esther 9:7–9 | One of Haman's ten sons.
+Adalia | Esther 9:7–9 | One of Haman's ten sons.
+Aridatha | Esther 9:7–9 | One of Haman's ten sons.
+Parmashta | Esther 9:7–9 | One of Haman's ten sons.
+Arisai | Esther 9:7–9 | One of Haman's ten sons.
+Aridai | Esther 9:7–9 | One of Haman's ten sons.
+Vaizatha; Vajezatha | Esther 9:7–9 | One of Haman's ten sons.
+
+@ hebrews11 | People | Name a person commended by name in Hebrews 11, the faith chapter. | faithfulness
+Abraham | Hebrews 11:8–10, 17 | Obeyed and went out, not knowing where he was going.
+Noah | Hebrews 11:7 | Built an ark to save his household.
+Moses | Hebrews 11:23–28 | Chose to share the hardship of God's people.
+Abel | Hebrews 11:4 | Offered a more excellent sacrifice than Cain.
+Sarah | Hebrews 11:11 | Received power to conceive when she was past age.
+Isaac | Hebrews 11:20 | Blessed Jacob and Esau concerning things to come.
+Jacob | Hebrews 11:21 | Blessed Joseph's sons as he was dying.
+Joseph | Hebrews 11:22 | Spoke of the exodus and gave instructions about his bones.
+David | Hebrews 11:32 | Named in the closing list of the faithful.
+Enoch | Hebrews 11:5 | Taken away so that he did not see death.
+Rahab | Hebrews 11:31 | Welcomed the spies in peace.
+Samson | Hebrews 11:32 | Named in the closing list of the faithful.
+Gideon | Hebrews 11:32 | Named in the closing list of the faithful.
+Samuel | Hebrews 11:32 | Named in the closing list of the faithful.
+Barak | Hebrews 11:32 | Named in the closing list of the faithful.
+Jephthah | Hebrews 11:32 | Named in the closing list of the faithful.
+
+@ apostles | People | Name someone the New Testament calls an apostle. | calling
+Peter; Simon; Simon Peter; Cephas | Matthew 10:2; John 1:42 | The fisherman Jesus named Cephas, which means Peter.
+John; John son of Zebedee | Matthew 10:2 | Son of Zebedee and brother of James.
+Paul; Saul; Saul of Tarsus | Romans 1:1; 1 Corinthians 15:8–9 | Called to be an apostle after the resurrection.
+James; James son of Zebedee | Matthew 10:2; Acts 12:2 | John's brother; killed by Herod.
+Matthew; Levi | Matthew 10:3; Mark 2:14 | The tax collector.
+Thomas; Didymus | John 20:24–28 | Also called Didymus.
+Andrew | Matthew 10:2; John 1:40–41 | Peter's brother, who brought him to Jesus.
+Judas Iscariot; Judas | Matthew 10:4 | One of the Twelve, who betrayed Jesus.
+Philip | Matthew 10:3; John 1:43–45 | From Bethsaida; brought Nathanael to Jesus.
+Bartholomew | Matthew 10:3 | Listed among the Twelve.
+Thaddaeus; Judas son of James; Lebbaeus; Jude; Judas | Matthew 10:3; Luke 6:16 | Luke's lists call him Judas the son of James.
+Simon the Zealot; Simon the Cananaean; Simon the Canaanite; Simon Zelotes; Simon | Luke 6:15 | The other Simon among the Twelve.
+James son of Alphaeus; James the son of Alphaeus; James | Matthew 10:3 | The second James among the Twelve.
+Matthias | Acts 1:23–26 | Chosen by lot to take Judas's place.
+Barnabas | Acts 14:14 | Luke calls Barnabas and Paul apostles.
+Jesus; Jesus Christ; Christ | Hebrews 3:1 | Hebrews calls him the Apostle and High Priest of our confession.
+
+@ paul-coworkers | People | Name a companion, co-worker, or host of Paul named in Acts or his letters. | church
+Timothy | Acts 16:1–3; Philippians 2:19–22 | Joined Paul at Lystra and is named in many of his letters.
+Barnabas | Acts 13:2–3 | Set apart with Paul for the first journey.
+Silas; Silvanus | Acts 15:40; 16:25 | Travelled with Paul and sang with him in the Philippian jail.
+Luke | Colossians 4:14; 2 Timothy 4:11 | The beloved physician; the only one with Paul at the end.
+Titus | Galatians 2:1–3; Titus 1:4–5 | Left in Crete to set things in order.
+Priscilla; Prisca | Acts 18:2–3, 26; Romans 16:3 | A tentmaker who, with her husband, hosted and worked with Paul.
+Aquila | Acts 18:2–3, 26; Romans 16:3 | A tentmaker from Pontus who worked alongside Paul.
+Mark; John Mark | Acts 12:25; 15:37–39; 2 Timothy 4:11 | Left the first journey, yet Paul later called him useful.
+Apollos | Acts 18:24–28; 1 Corinthians 3:5–6 | An eloquent teacher from Alexandria.
+Lydia | Acts 16:14–15, 40 | A seller of purple who opened her home in Philippi.
+Onesimus | Philemon 10–16; Colossians 4:9 | Sent back to Philemon as a beloved brother.
+Philemon | Philemon 1–2, 22 | Paul asked him to prepare a guest room.
+Epaphroditus | Philippians 2:25–30 | Carried the Philippians' gift and nearly died in the work.
+Phoebe | Romans 16:1–2 | A servant of the church at Cenchreae and a helper of many.
+Tychicus | Ephesians 6:21–22; Colossians 4:7–8 | Carried Paul's letters and news.
+Demas | Colossians 4:14; 2 Timothy 4:10 | A fellow worker who later left Paul.
+Epaphras | Colossians 1:7; 4:12 | Brought the gospel to Colossae.
+Aristarchus | Acts 19:29; 27:2; Colossians 4:10 | A Macedonian who sailed with Paul toward Rome.
+Trophimus | Acts 20:4; 21:29; 2 Timothy 4:20 | An Ephesian whom Paul left sick at Miletus.
+Erastus | Acts 19:22; Romans 16:23 | Sent ahead into Macedonia with Timothy.
+Onesiphorus | 2 Timothy 1:16–18 | Often refreshed Paul and was not ashamed of his chains.
+Sosthenes | 1 Corinthians 1:1 | Named with Paul at the head of 1 Corinthians.
+Tertius | Romans 16:22 | The scribe who wrote down Romans.
+Archippus | Colossians 4:17; Philemon 2 | Called a fellow soldier.
+Crescens | 2 Timothy 4:10 | Went to Galatia.
+Gaius | Romans 16:23 | Host to Paul and to the whole church.
+Sopater | Acts 20:4 | Of Beroea; travelled with Paul.
+Secundus | Acts 20:4 | A Thessalonian who travelled with Paul.
+Stephanas | 1 Corinthians 1:16; 16:15–17 | His household were the first converts in Achaia.
+Fortunatus | 1 Corinthians 16:17 | Visited Paul from Corinth.
+Achaicus | 1 Corinthians 16:17 | Visited Paul from Corinth.
+Urbanus | Romans 16:9 | Called a fellow worker in Christ.
+Clement | Philippians 4:3 | A fellow worker at Philippi.
+Euodia | Philippians 4:2–3 | Laboured with Paul in the gospel.
+Syntyche | Philippians 4:2–3 | Laboured with Paul in the gospel.
+Justus; Jesus called Justus; Jesus Justus | Colossians 4:11 | A fellow worker who was a comfort to Paul.
+Artemas | Titus 3:12 | Paul planned to send him to Crete.
+Zenas | Titus 3:13 | The lawyer.
+Jason | Acts 17:5–9 | Paul's host in Thessalonica.
+Andronicus | Romans 16:7 | A kinsman and fellow prisoner.
+Junia; Junias | Romans 16:7 | A relative and fellow prisoner; some translations read Junias.
+Mnason | Acts 21:16 | An early disciple from Cyprus who lodged Paul.
+Titius Justus; Justus | Acts 18:7 | Opened his house beside the synagogue in Corinth.
+Carpus | 2 Timothy 4:13 | Paul left his cloak with him at Troas.
+Publius | Acts 28:7 | The chief man of Malta, who hosted Paul three days.
+
+@ matthew-genealogy | People | Name a person in the genealogy of Jesus in Matthew 1. | faithfulness
+Abraham | Matthew 1:1–2 | The genealogy begins with him.
+David | Matthew 1:1, 6 | Called David the king.
+Mary | Matthew 1:16 | Of whom Jesus was born.
+Joseph | Matthew 1:16 | The husband of Mary.
+Isaac | Matthew 1:2 | Son of Abraham.
+Jacob | Matthew 1:2 | Father of Judah and his brothers; Joseph's father also bears the name (Matthew 1:16).
+Solomon | Matthew 1:6–7 | Son of David.
+Ruth | Matthew 1:5 | Mother of Obed.
+Judah; Judas | Matthew 1:2–3 | Father of Perez and Zerah by Tamar.
+Boaz; Booz | Matthew 1:5 | Father of Obed by Ruth.
+Rahab; Rachab | Matthew 1:5 | Mother of Boaz.
+Jesse | Matthew 1:5–6 | Father of David.
+Hezekiah; Ezekias | Matthew 1:9–10 | Son of Ahaz.
+Tamar; Thamar | Matthew 1:3 | Mother of Perez and Zerah.
+Josiah; Josias | Matthew 1:10–11 | Father of Jechoniah at the time of the exile.
+Obed | Matthew 1:5 | Father of Jesse.
+Rehoboam; Roboam | Matthew 1:7 | Son of Solomon.
+Uriah; Urias | Matthew 1:6 | Solomon's mother is identified as the one who had been his wife.
+Zerubbabel; Zorobabel | Matthew 1:12–13 | Son of Shealtiel, in the generations after the exile.
+Perez; Phares | Matthew 1:3 | Son of Judah and Tamar.
+Jehoshaphat; Josaphat | Matthew 1:8 | Son of Asa.
+Uzziah; Ozias | Matthew 1:8–9 | Father of Jotham.
+Manasseh; Manasses | Matthew 1:10 | Son of Hezekiah.
+Ahaz; Achaz | Matthew 1:9 | Father of Hezekiah.
+Asa; Asaph | Matthew 1:7–8 | Father of Jehoshaphat.
+Jechoniah; Jeconiah; Jehoiachin; Jechonias | Matthew 1:11–12 | Named at the exile to Babylon.
+Jotham; Joatham | Matthew 1:9 | Son of Uzziah.
+Abijah; Abia | Matthew 1:7 | Son of Rehoboam.
+Joram; Jehoram | Matthew 1:8 | Son of Jehoshaphat.
+Amon; Amos | Matthew 1:10 | Son of Manasseh.
+Zerah; Zara | Matthew 1:3 | Twin brother of Perez.
+Hezron; Esrom | Matthew 1:3 | Son of Perez.
+Ram; Aram | Matthew 1:3–4 | Son of Hezron.
+Amminadab; Aminadab | Matthew 1:4 | Father of Nahshon.
+Nahshon; Naasson | Matthew 1:4 | Father of Salmon.
+Salmon | Matthew 1:4–5 | Father of Boaz by Rahab.
+Shealtiel; Salathiel | Matthew 1:12 | Father of Zerubbabel.
+Abiud; Abihud | Matthew 1:13 | Son of Zerubbabel.
+Eliakim | Matthew 1:13 | Named in the generations after the exile.
+Azor | Matthew 1:13–14 | Named in the generations after the exile.
+Zadok; Sadoc | Matthew 1:14 | Named in the generations after the exile.
+Achim | Matthew 1:14 | Named in the generations after the exile.
+Eliud | Matthew 1:14–15 | Named in the generations after the exile.
+Eleazar | Matthew 1:15 | Named in the generations after the exile.
+Matthan | Matthew 1:15 | Grandfather of Joseph.
+
+@ nt-women | People | Name a woman of New Testament times who is named in the New Testament. | calling
+Mary; Mary the mother of Jesus; Virgin Mary; Mary mother of Jesus | Luke 1:26–38 | The mother of Jesus.
+Mary Magdalene; Magdalene; Mary | Luke 8:2; John 20:1–18 | The first to see the risen Jesus in John's Gospel.
+Martha | Luke 10:38–42; John 11:20–27 | Sister of Mary and Lazarus.
+Elizabeth; Elisabeth | Luke 1:5–7, 39–45 | Mother of John the Baptist.
+Mary of Bethany; Mary sister of Martha; Mary | John 11:1–2; 12:3 | Anointed Jesus' feet.
+Priscilla; Prisca | Acts 18:2, 26 | With Aquila, taught Apollos more accurately.
+Lydia | Acts 16:14–15 | A seller of purple, baptized at Philippi.
+Anna | Luke 2:36–38 | A prophetess who saw the infant Jesus in the temple.
+Dorcas; Tabitha | Acts 9:36–41 | A disciple at Joppa, raised to life through Peter.
+Sapphira | Acts 5:1–10 | Wife of Ananias.
+Phoebe | Romans 16:1–2 | A servant of the church at Cenchreae.
+Salome | Mark 15:40; 16:1 | A follower of Jesus who went to the tomb.
+Joanna | Luke 8:3; 24:10 | Wife of Chuzas, Herod's steward.
+Eunice | 2 Timothy 1:5 | Timothy's mother.
+Lois | 2 Timothy 1:5 | Timothy's grandmother.
+Herodias | Mark 6:17–24 | Wife of Herod Antipas.
+Rhoda | Acts 12:13–15 | The servant girl who left Peter standing at the gate.
+Susanna | Luke 8:3 | One of the women who provided for Jesus and the Twelve.
+Euodia | Philippians 4:2 | A worker in the gospel at Philippi.
+Syntyche | Philippians 4:2 | A worker in the gospel at Philippi.
+Junia; Junias | Romans 16:7 | A relative of Paul and fellow prisoner; some translations read Junias.
+Chloe | 1 Corinthians 1:11 | Her people brought Paul news from Corinth.
+Bernice; Berenice | Acts 25:13, 23 | Came with Agrippa to hear Paul.
+Drusilla | Acts 24:24 | Wife of the governor Felix.
+Damaris | Acts 17:34 | Believed at Athens.
+Apphia | Philemon 2 | Greeted at the head of Philemon.
+Claudia | 2 Timothy 4:21 | Sends greetings to Timothy.
+Persis | Romans 16:12 | Worked hard in the Lord.
+Tryphaena; Tryphena | Romans 16:12 | A worker in the Lord at Rome.
+Tryphosa | Romans 16:12 | A worker in the Lord at Rome.
+Julia | Romans 16:15 | Greeted among the saints at Rome.
+Mary the mother of John Mark; Mary mother of Mark; Mary | Acts 12:12 | The church met to pray in her house.
+Mary the wife of Clopas; Mary of Clopas; Mary | John 19:25 | Stood by the cross.
+Mary the mother of James and Joses; Mary mother of James; Mary | Mark 15:40, 47 | Watched the crucifixion and saw the tomb.
+Candace | Acts 8:27 | Queen of the Ethiopians; the name was probably a royal title.
+
+@ nt-rulers | People | Name a ruler, governor, or official named in the New Testament. | kingdom
+Pontius Pilate; Pilate | Matthew 27:2; Luke 3:1 | Governor of Judea.
+Herod; Herod the Great | Matthew 2:1–3 | King when Jesus was born.
+Augustus; Caesar Augustus | Luke 2:1 | His decree brought Joseph and Mary to Bethlehem.
+Herod Antipas; Antipas; Herod the tetrarch | Mark 6:14–28; Luke 3:1; 23:7–12 | Tetrarch of Galilee, who beheaded John the Baptist.
+Caiaphas | Matthew 26:57; John 11:49–51 | High priest at Jesus' trial.
+Nicodemus | John 3:1 | A Pharisee and a ruler of the Jews.
+Felix | Acts 23:24; 24:24–27 | Governor who kept Paul in custody two years.
+Festus; Porcius Festus | Acts 24:27; 25:1–12 | Governor before whom Paul appealed to Caesar.
+Agrippa; King Agrippa; Herod Agrippa II; Agrippa II | Acts 25:13; 26:27–28 | Heard Paul's defence at Caesarea.
+Tiberius; Tiberius Caesar | Luke 3:1 | John began preaching in his fifteenth year.
+Annas | Luke 3:2; John 18:13 | High priest and father-in-law of Caiaphas.
+Cornelius | Acts 10:1–2 | Centurion of the Italian Regiment.
+Joseph of Arimathea | Mark 15:43 | A prominent council member who asked for Jesus' body.
+Herod Agrippa I; Herod Agrippa; Agrippa I; Agrippa | Acts 12:1–4, 20–23 | Called Herod in Acts 12; killed James and imprisoned Peter.
+Claudius; Claudius Caesar | Acts 11:28; 18:2 | Emperor who ordered Jews to leave Rome.
+Quirinius; Cyrenius | Luke 2:2 | Governor of Syria at the enrolment.
+Gallio | Acts 18:12–17 | Proconsul of Achaia.
+Archelaus | Matthew 2:22 | Reigned over Judea after his father Herod.
+Jairus | Mark 5:22 | A ruler of the synagogue.
+Sergius Paulus | Acts 13:7–12 | Proconsul of Cyprus, who believed.
+Philip; Philip the tetrarch; Herod Philip | Luke 3:1 | Tetrarch of Iturea and Trachonitis.
+Ananias | Acts 23:2; 24:1 | High priest at Paul's hearing.
+Candace | Acts 8:27 | Queen of the Ethiopians.
+Julius | Acts 27:1–3 | The centurion who escorted Paul toward Rome.
+Claudius Lysias; Lysias; Claudius | Acts 23:26–27 | The commanding officer who rescued Paul in Jerusalem.
+Lysanias | Luke 3:1 | Tetrarch of Abilene.
+Aretas | 2 Corinthians 11:32 | The king whose governor guarded Damascus.
+Publius | Acts 28:7 | The chief man of Malta.
+Erastus | Romans 16:23 | The city treasurer.
+Blastus | Acts 12:20 | The king's personal aide.
+Crispus | Acts 18:8 | Ruler of the synagogue at Corinth, who believed.
+Sosthenes | Acts 18:17 | Ruler of the synagogue at Corinth.
+Dionysius; Dionysius the Areopagite | Acts 17:34 | A member of the Areopagus, who believed.
+
+@ nativity | People | Name a person or group who appears in the accounts of Jesus' birth and childhood (Matthew 1–2; Luke 1–2). | light
+Mary; Virgin Mary | Luke 1:26–38; 2:4–7 | The mother of Jesus.
+Joseph | Matthew 1:18–25 | Took Mary as his wife after an angel spoke to him in a dream.
+Jesus; Christ; Christ child; Immanuel; Emmanuel | Luke 2:6–7 | Born in Bethlehem and laid in a manger.
+Herod; Herod the Great | Matthew 2:1–8, 16 | The king who was troubled at the news.
+Gabriel | Luke 1:19, 26 | Sent to Zacharias and then to Mary.
+Elizabeth; Elisabeth | Luke 1:5–7, 39–45 | Mary's relative and the mother of John.
+Zechariah; Zacharias; Zachariah | Luke 1:5–23, 67 | The priest, father of John the Baptist.
+John the Baptist; John | Luke 1:13, 57–63 | His birth is told alongside the birth of Jesus.
+Simeon | Luke 2:25–35 | Took the child in his arms in the temple.
+Anna | Luke 2:36–38 | The prophetess who gave thanks in the temple.
+Caesar Augustus; Augustus; Caesar | Luke 2:1 | His decree ordered the enrolment.
+Quirinius; Cyrenius | Luke 2:2 | Governor of Syria at the enrolment.
+Archelaus | Matthew 2:22 | Herod's son, who ruled Judea when the family returned.
+
+@ passion-people | People | Name a person named in the Gospel accounts of Jesus' arrest, trial, death, burial, or resurrection. | mercy
+Pilate; Pontius Pilate | Matthew 27:11–26 | The governor who handed Jesus over to be crucified.
+Judas; Judas Iscariot | Matthew 26:47–50 | Betrayed Jesus with a kiss.
+Peter; Simon Peter; Simon; Cephas | Luke 22:54–62 | Denied Jesus three times; later ran to the tomb.
+Mary Magdalene; Magdalene; Mary | John 20:1–18 | Came to the tomb while it was still dark.
+Barabbas | Mark 15:6–15 | The prisoner released in place of Jesus.
+Thomas; Didymus | John 20:24–29 | Would not believe until he saw.
+Caiaphas | Matthew 26:57–66 | The high priest who questioned Jesus.
+Joseph of Arimathea; Joseph | Mark 15:42–46 | Laid the body in a tomb cut out of rock.
+Simon of Cyrene; Simon the Cyrenian | Mark 15:21 | Compelled to carry the cross.
+Nicodemus | John 19:39 | Brought myrrh and aloes for the burial.
+John | Mark 14:33 | Taken with Peter and James further into Gethsemane.
+Herod; Herod Antipas | Luke 23:7–12 | Questioned Jesus and sent him back to Pilate.
+Annas | John 18:13, 24 | Jesus was led to him first.
+Malchus | John 18:10 | The high priest's servant whose ear was cut off.
+Cleopas | Luke 24:13–18 | One of the two on the road to Emmaus.
+James | Mark 14:33 | Taken with Peter and John further into Gethsemane.
+Salome | Mark 15:40; 16:1 | Watched from a distance and came to the tomb.
+Joanna | Luke 24:10 | One of the women who reported the empty tomb.
+Mary the wife of Clopas; Mary of Clopas | John 19:25 | Stood by the cross.
+Mary the mother of James; Mary the mother of James and Joses; Mary mother of James | Mark 15:40, 47; 16:1 | Saw where the body was laid.
+Alexander | Mark 15:21 | A son of Simon of Cyrene.
+Rufus | Mark 15:21 | A son of Simon of Cyrene.
+Nathanael | John 21:2 | Among the seven at the Sea of Tiberias after the resurrection.
+Clopas | John 19:25 | Named as the husband of one of the Marys at the cross.
+Zebedee | Matthew 27:56; John 21:2 | Named through his wife and sons.
+Elijah; Elias | Matthew 27:46–49 | Bystanders thought Jesus was calling for him.
+
+@ romans16 | People | Name a person Paul names in Romans 16. | church
+Phoebe; Phebe | Romans 16:1–2 | Commended to the church as a helper of many.
+Priscilla; Prisca | Romans 16:3–5 | Risked her neck for Paul's life.
+Aquila | Romans 16:3–5 | A church met in his and Prisca's house.
+Timothy; Timotheus | Romans 16:21 | Paul's fellow worker sends greetings.
+Tertius | Romans 16:22 | Wrote the letter down and adds his own greeting.
+Junia; Junias | Romans 16:7 | A relative of Paul and fellow prisoner; some translations read Junias.
+Andronicus | Romans 16:7 | A relative of Paul and fellow prisoner.
+Gaius | Romans 16:23 | Host to Paul and to the whole church.
+Erastus | Romans 16:23 | The city treasurer.
+Rufus | Romans 16:13 | Greeted along with his mother.
+Epaenetus; Epenetus | Romans 16:5 | Paul calls him his beloved.
+Urbanus; Urbane | Romans 16:9 | A fellow worker in Christ.
+Mary | Romans 16:6 | Paul says she laboured much.
+Jason | Romans 16:21 | A relative of Paul who sends greetings.
+Lucius | Romans 16:21 | A relative of Paul who sends greetings.
+Ampliatus; Amplias | Romans 16:8 | Beloved in the Lord.
+Stachys | Romans 16:9 | Paul's beloved.
+Apelles | Romans 16:10 | Approved in Christ.
+Aristobulus | Romans 16:10 | Paul greets those of his household.
+Herodion | Romans 16:11 | A relative of Paul.
+Narcissus | Romans 16:11 | Paul greets those of his household who are in the Lord.
+Tryphaena; Tryphena | Romans 16:12 | A worker in the Lord.
+Tryphosa | Romans 16:12 | A worker in the Lord.
+Persis | Romans 16:12 | Worked hard in the Lord.
+Asyncritus | Romans 16:14 | Greeted with the brothers who are with him.
+Phlegon | Romans 16:14 | Greeted with the brothers who are with him.
+Hermes | Romans 16:14 | Greeted with the brothers who are with him.
+Patrobas | Romans 16:14 | Greeted with the brothers who are with him.
+Hermas | Romans 16:14 | Greeted with the brothers who are with him.
+Philologus | Romans 16:15 | Greeted with the saints who are with him.
+Julia | Romans 16:15 | Greeted with the saints who are with her.
+Nereus | Romans 16:15 | Greeted along with his sister.
+Olympas | Romans 16:15 | Greeted with the saints who are with him.
+Sosipater | Romans 16:21 | A relative of Paul who sends greetings.
+Quartus | Romans 16:23 | Called simply the brother.
+
+@ priests | People | Name a priest named in the Bible. | prayer
+Aaron | Exodus 28:1 | Israel's first high priest.
+Melchizedek | Genesis 14:18 | King of Salem and priest of God Most High.
+Eli | 1 Samuel 1:9 | Priest at Shiloh when Samuel was a boy.
+Zechariah; Zacharias | Luke 1:5 | Father of John the Baptist, of the division of Abijah.
+Caiaphas | Matthew 26:57 | High priest at the trial of Jesus.
+Ezra | Ezra 7:1–5, 11 | A priest and scribe descended from Aaron.
+Zadok | 2 Samuel 15:24; 1 Kings 1:39 | Anointed Solomon king.
+Annas | Luke 3:2; John 18:13 | High priest and father-in-law of Caiaphas.
+Jethro; Reuel | Exodus 3:1 | Priest of Midian and Moses' father-in-law.
+Eleazar | Numbers 20:25–28 | Aaron's son, who succeeded him.
+Jesus; Christ | Hebrews 4:14 | Hebrews calls him our great high priest.
+Phinehas | Numbers 25:7–11 | Aaron's grandson.
+Abiathar | 1 Samuel 22:20; 23:9 | Escaped from Nob and served David.
+Hilkiah | 2 Kings 22:8 | Found the Book of the Law in the temple.
+Jehoiada | 2 Kings 11:4, 17 | Protected the young Joash and made him king.
+Nadab | Leviticus 10:1–2 | Aaron's son, who offered unauthorized fire.
+Abihu | Leviticus 10:1–2 | Aaron's son, who offered unauthorized fire.
+Jeremiah | Jeremiah 1:1 | Of the priests who were in Anathoth.
+Ezekiel | Ezekiel 1:3 | Called Ezekiel the priest.
+Ahimelech | 1 Samuel 21:1–6 | Gave David the holy bread at Nob.
+Ithamar | Exodus 28:1; 38:21 | A son of Aaron, named with his brothers.
+Hophni | 1 Samuel 1:3 | Son of Eli.
+Joshua the high priest; Jeshua; Joshua son of Jehozadak; Joshua | Haggai 1:1; Zechariah 3:1 | High priest after the return from exile.
+Ananias | Acts 23:2 | High priest at Paul's hearing.
+Uriah; Urijah | 2 Kings 16:10–11 | Priest in the days of Ahaz.
+Azariah | 2 Chronicles 26:17 | Confronted King Uzziah in the temple.
+Seraiah | 2 Kings 25:18 | Chief priest when Jerusalem fell.
+Pashhur; Pashur | Jeremiah 20:1 | The priest who put Jeremiah in the stocks.
+Eliashib | Nehemiah 3:1 | High priest who helped rebuild the Sheep Gate.
+Ahijah; Ahiah | 1 Samuel 14:3 | Wore the ephod in Saul's camp.
+Sceva | Acts 19:14 | A Jewish chief priest whose seven sons are mentioned at Ephesus.
+Potiphera; Potipherah | Genesis 41:45 | Priest of On and Joseph's father-in-law.
+Mattan | 2 Kings 11:18 | Priest of Baal.
+Amaziah | Amos 7:10 | Priest of Bethel, who opposed Amos.
+Zephaniah | 2 Kings 25:18 | The second priest when Jerusalem fell.
+
+@ altar-builders | People | Name a person who built, rebuilt, or repaired an altar to the LORD in Scripture. | worship
+Noah | Genesis 8:20 | The first altar named in Scripture, built after the flood.
+Abraham; Abram | Genesis 12:7–8; 13:18; 22:9 | Built altars at Shechem, Bethel, Hebron, and Moriah.
+Elijah | 1 Kings 18:30–32 | Repaired the altar on Carmel with twelve stones.
+Moses | Exodus 17:15; 24:4 | Named one altar, The LORD is my Banner.
+Jacob; Israel | Genesis 33:20; 35:7 | Built altars at Shechem and Bethel.
+David | 2 Samuel 24:25 | Built on the threshing floor he bought from Araunah.
+Isaac | Genesis 26:25 | Built an altar at Beersheba.
+Solomon | 1 Kings 9:25; 2 Chronicles 4:1 | Made the great bronze altar of the temple.
+Gideon | Judges 6:24–26 | Called his altar, The LORD is Peace.
+Joshua | Joshua 8:30–31 | Built on Mount Ebal of uncut stones.
+Samuel | 1 Samuel 7:15–17 | Built an altar at his home in Ramah.
+Saul | 1 Samuel 14:35 | The first altar he built to the LORD.
+Bezalel; Bezaleel | Exodus 38:1, 22 | Made the altar of burnt offering for the tabernacle.
+Zerubbabel | Ezra 3:2 | Rebuilt the altar on its site after the exile.
+Jeshua; Joshua the son of Jozadak; Jeshua the high priest | Ezra 3:2 | The priest who rebuilt the altar with Zerubbabel.
+Manasseh | 2 Chronicles 33:13, 16 | Restored the altar of the LORD after his repentance.
+Asa | 2 Chronicles 15:8 | Renewed the altar before the temple porch.
+
+@ dreams-visions | People | Name a person who has a dream or vision recorded in Scripture. | calling
+Joseph; Joseph son of Jacob | Genesis 37:5–9 | Dreamed of sheaves and stars bowing down.
+Daniel | Daniel 7:1 | Saw four beasts rising from the sea.
+John | Revelation 1:9–11 | Saw his visions on the island of Patmos.
+Jacob | Genesis 28:10–12 | Dreamed of a stairway reaching to heaven.
+Nebuchadnezzar | Daniel 2:1; 4:5 | Dreamed of a great image, and later of a great tree.
+Peter | Acts 10:9–17 | Saw a sheet let down from heaven.
+Paul; Saul | Acts 16:9 | Saw a man of Macedonia asking for help.
+Joseph the husband of Mary; Joseph of Nazareth; Joseph husband of Mary | Matthew 1:20; 2:13 | Warned and guided in dreams four times.
+Isaiah | Isaiah 6:1 | Saw the Lord high and lifted up.
+Ezekiel | Ezekiel 1:1–3 | Saw visions of God by the river Chebar.
+Solomon | 1 Kings 3:5 | The LORD appeared to him in a dream at Gibeon.
+Abraham; Abram | Genesis 15:1, 12 | The word of the LORD came to him in a vision.
+Samuel | 1 Samuel 3:10–15 | Heard the LORD call in the night as a boy.
+Pilate's wife | Matthew 27:19 | Suffered in a dream because of Jesus.
+Cornelius | Acts 10:3 | Saw an angel in a vision at about the ninth hour.
+Zechariah; Zechariah the prophet | Zechariah 1:7–8 | Saw a man riding a red horse.
+Ananias | Acts 9:10 | Sent in a vision to Saul.
+Stephen | Acts 7:55–56 | Saw the heavens opened as he died.
+Zechariah the priest; Zacharias; Zechariah father of John | Luke 1:11–13, 22 | The people understood he had seen a vision in the temple.
+Amos | Amos 7:1–9 | Shown locusts, fire, and a plumb line.
+Abimelech | Genesis 20:3 | God came to him in a dream about Sarah.
+Laban | Genesis 31:24 | Warned in a dream as he pursued Jacob.
+Eliphaz | Job 4:1, 12–16 | Describes a vision in the night.
+Balaam | Numbers 24:3–4, 15–16 | Speaks of seeing the vision of the Almighty.
+Obadiah | Obadiah 1 | His book opens, the vision of Obadiah.
+Nahum | Nahum 1:1 | His book is called the vision of Nahum.
+Habakkuk | Habakkuk 1:1; 2:2 | Told to write the vision plainly.
+Jeremiah | Jeremiah 1:11–13 | Shown an almond branch and a boiling pot.
+Micaiah | 1 Kings 22:19 | Saw the LORD on his throne with the host of heaven.
+Iddo | 2 Chronicles 9:29 | Chronicles cites the visions of Iddo the seer.
+Nathan | 2 Samuel 7:17 | Reported his vision to David.
+
+@ angel-visits | People | Name a person or group an angel appears to or speaks to in Scripture. | courage
+Mary; Virgin Mary | Luke 1:26–38 | Gabriel announced the birth of Jesus.
+Joseph | Matthew 1:20 | An angel of the Lord spoke to him in a dream.
+Zechariah; Zacharias; Zechariah the priest | Luke 1:11–20 | Gabriel appeared beside the altar of incense.
+Abraham | Genesis 22:11–12 | The angel of the LORD called from heaven to stay his hand.
+Mary Magdalene; Magdalene | Matthew 28:1–7; John 20:11–13 | Told at the tomb that he had risen.
+Daniel | Daniel 6:22; 9:21 | Gabriel came to him; an angel shut the lions' mouths.
+Gideon | Judges 6:11–12 | Greeted under the oak at Ophrah.
+Lot | Genesis 19:1 | Two angels came to Sodom in the evening.
+Hagar | Genesis 16:7–11 | The angel of the LORD found her by a spring.
+Peter | Acts 12:7–10 | Led out of prison by an angel.
+Jacob | Genesis 31:11; 32:1 | The angels of God met him on his way.
+John | Revelation 1:1; 22:8 | His revelation was sent by an angel.
+Moses | Exodus 3:1–2 | The angel of the LORD appeared in a flame from the bush.
+Balaam | Numbers 22:31–35 | His eyes were opened to see the angel in the road.
+Elijah | 1 Kings 19:2–7 | An angel touched him and gave him food.
+Cornelius | Acts 10:3–6 | Told to send for Peter.
+Philip | Acts 8:26 | Told to go toward the Gaza road.
+Paul | Acts 27:23–24 | An angel stood by him in the storm.
+Manoah; Manoah's wife; Samson's mother; Samson's parents; Manoah and his wife | Judges 13:3, 11–20 | Told of Samson's birth; the angel ascended in the altar flame.
+Jesus | Matthew 4:11; Luke 22:43 | Angels served him in the wilderness and strengthened him in Gethsemane.
+David | 1 Chronicles 21:16 | Saw the angel with a drawn sword over Jerusalem.
+Zechariah the prophet | Zechariah 1:7–9 | An angel explained his visions.
+Joshua the high priest; Jeshua | Zechariah 3:1–6 | Stood before the angel of the LORD.
+Isaiah | Isaiah 6:6–7 | A seraph touched his lips with a coal.
+Ornan; Araunah | 1 Chronicles 21:20 | Turned from threshing and saw the angel.

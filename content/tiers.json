@@ -1,0 +1,52 @@
+[
+ {
+  "id": 1,
+  "name": "Mustard Seed",
+  "points": 10,
+  "emoji": "🌱",
+  "blurb": "the answer everyone gives",
+  "flavor": "The first answer in every net. Small, but it counts."
+ },
+ {
+  "id": 2,
+  "name": "Best Seat",
+  "points": 15,
+  "emoji": "🪑",
+  "blurb": "you thought it was the place of honor",
+  "flavor": "You went for the place of honor. So did everyone else.",
+  "ref": "Luke 14:8–10"
+ },
+ {
+  "id": 3,
+  "name": "Five Loaves",
+  "points": 30,
+  "emoji": "🍞",
+  "blurb": "a common answer",
+  "flavor": "A good, honest catch. Enough to share."
+ },
+ {
+  "id": 4,
+  "name": "Lost Coin",
+  "points": 60,
+  "emoji": "🪙",
+  "blurb": "genuinely uncommon",
+  "flavor": "Worth lighting a lamp and sweeping the house for."
+ },
+ {
+  "id": 5,
+  "name": "Hidden Treasure",
+  "points": 85,
+  "emoji": "💎",
+  "blurb": "a deep cut",
+  "flavor": "Few people dig this deep."
+ },
+ {
+  "id": 6,
+  "name": "The Lost Sheep",
+  "points": 100,
+  "emoji": "🐑",
+  "blurb": "the one out of a hundred",
+  "flavor": "The one out of a hundred. Worth leaving the ninety-nine for.",
+  "ref": "Luke 15:4"
+ }
+]

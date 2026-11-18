@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fishers · The Daily Cast, a Bible trivia game</title>
+  <meta name="description" content="Fishers is a daily Bible trivia game. Seven prompts a day, many right answers each, and the rarer your answer, the deeper your net sinks.">
+  <meta name="theme-color" content="#123a5c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fishers">
+  <meta property="og:title" content="Fishers · The Daily Cast">
+  <meta property="og:description" content="A daily Bible trivia game. The rarer your answer, the deeper your net sinks.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fishers: a wooden fishing boat on the Sea of Galilee at dawn, with the ichthys fish symbol.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/world.css">
+  <link rel="stylesheet" href="css/hud.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- The number font loads without holding up the first paint; numbers fall back to the system monospace font until it arrives. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" media="print" onload="this.media='all'">
+</head>
+<body class="view-home">
+  <a class="skip-link" href="#app">Skip to the game</a>
+
+  <!-- The ichthys, drawn once and reused everywhere it appears. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="ichthys" viewBox="0 0 40 24">
+      <path d="M3 12Q19-4 37 18M3 12Q19 28 37 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <!-- Decorative scene. Depth is also given in text, so it is hidden from screen readers. -->
+  <section id="scene" class="scene" aria-hidden="true"></section>
+
+  <nav class="corner" id="corner" aria-label="Menu and settings">
+    <button type="button" class="icon-btn" id="btn-menu" aria-label="Menu" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <span class="corner-gap"></span>
+    <button type="button" class="icon-btn" id="btn-sound" aria-label="Sound" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path class="on" d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/><path class="off" d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+    </button>
+    <button type="button" class="icon-btn" id="btn-settings" aria-label="Settings" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v2.6M12 18.6v2.6M2.8 12h2.6M18.6 12h2.6M5.5 5.5l1.8 1.8M16.7 16.7l1.8 1.8M5.5 18.5l1.8-1.8M16.7 7.3l1.8-1.8"/></svg>
+    </button>
+  </nav>
+
+  <!-- The score panel: depth, round progress, score. -->
+  <aside class="hud" id="hud" aria-label="Depth and score">
+    <div class="glass hud-depth">
+      <span class="hud-label">Depth</span>
+      <strong class="mono" id="hud-m">0 m</strong>
+      <span class="hud-zone" id="hud-zone">Sunlit shallows</span>
+    </div>
+    <div class="glass hud-prog">
+      <ol class="squares" id="hud-sq" aria-hidden="true"></ol>
+      <span class="hud-label" id="hud-cast">Cast 1 of 7</span>
+    </div>
+    <div class="glass hud-score">
+      <span class="hud-label">Score</span>
+      <strong class="mono" id="hud-score">0</strong>
+    </div>
+    <button type="button" class="icon-btn glass hud-menu" id="hud-menu" aria-label="Menu" aria-haspopup="dialog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </aside>
+
+  <main id="app" class="app" tabindex="-1">
+    <p class="loading">Mending the nets&hellip;</p>
+  </main>
+
+  <div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <dialog id="dlg-help" class="dlg" aria-labelledby="help-title">
+    <h2 id="help-title" tabindex="-1" autofocus>How to fish</h2>
+    <p class="tagline">&ldquo;Follow me, and I will make you fishers of men.&rdquo; <span class="ref">Matthew 4:19 (KJV)</span></p>
+    <ol class="rules">
+      <li>Each day brings one <strong>Daily Cast</strong>: seven prompts from the Bible, the same for everyone.</li>
+      <li>You have <strong>25 seconds</strong> per prompt. Type an answer and press <strong>Cast</strong>. Wrong guesses cost nothing: keep casting until something lands.</li>
+      <li>Close spellings get a <strong>did you mean</strong>. Cast again to confirm, or edit.</li>
+      <li>Every prompt has many right answers. The <strong>rarer</strong> your answer, the more it scores.</li>
+      <li>Each point sinks the net 10 metres. A perfect day reaches 7,000 m.</li>
+      <li>If the clock runs out first, nothing landed: +0, and on to the next cast.</li>
+    </ol>
+    <h3>The six tiers</h3>
+    <ul class="tier-list" id="help-tiers"></ul>
+    <p class="small">Spelling variants, King James spellings, and small typos are all welcome.</p>
+    <form method="dialog"><button class="btn">Back to the boat</button></form>
+  </dialog>
+
+  <dialog id="dlg-stats" class="dlg" aria-labelledby="stats-title">
+    <h2 id="stats-title" tabindex="-1" autofocus>Your logbook</h2>
+    <div id="stats-body"></div>
+    <form method="dialog"><button class="btn">Back to the boat</button></form>
+  </dialog>
+
+  <dialog id="dlg-menu" class="dlg" aria-labelledby="menu-title">
+    <h2 id="menu-title" tabindex="-1" autofocus>Fishers</h2>
+    <div class="menu-list">
+      <button type="button" class="btn" id="menu-help">How to play</button>
+      <button type="button" class="btn" id="menu-stats">Your logbook</button>
+      <button type="button" class="btn" id="menu-shore">Back to shore</button>
+    </div>
+    <p class="small credits">Scripture quotations are from the World English Bible (WEB) and the King James Version (KJV), both in the public domain. Place data from <a href="https://www.openbible.info/geo/">OpenBible.info</a> (CC BY 4.0). Rarity tiers are estimates until real answer data exists.</p>
+    <form method="dialog"><button class="btn">Back to the boat</button></form>
+  </dialog>
+
+  <dialog id="dlg-settings" class="dlg" aria-labelledby="settings-title">
+    <h2 id="settings-title" tabindex="-1" autofocus>Settings</h2>
+    <label class="check"><input type="checkbox" id="set-sound"> Sound effects</label>
+    <label class="check"><input type="checkbox" id="set-typeahead"> Spelling help while typing</label>
+    <p class="small">Sounds are made in your browser; nothing is downloaded. Settings are kept on this device.</p>
+    <form method="dialog"><button class="btn">Done</button></form>
+  </dialog>
+
+  <script defer src="js/config.js"></script>
+  <script defer src="js/data-loader.js"></script>
+  <script defer src="js/matcher.js"></script>
+  <script defer src="js/round.js"></script>
+  <script defer src="js/typeahead.js"></script>
+  <script defer src="js/daily.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/scene.js"></script>
+  <script defer src="js/icons.js"></script>
+  <script defer src="js/share.js"></script>
+  <script defer src="js/sound.js"></script>
+  <script defer src="js/telemetry.js"></script>
+  <script defer src="js/game.js"></script>
+</body>
+</html>

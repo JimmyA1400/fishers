@@ -1,0 +1,169 @@
+# Creatures named in the WEB or KJV. Where the two translations differ, either word lands.
+@ creatures | Creatures | Name an animal, bird, or creature mentioned in the Bible. | deep | nouns
+
+Lion | Judg 14:5-6; Dan 6:22 | Samson tore one apart; Daniel was kept safe among them.
+  tier: 1
+Sheep | Ps 23:1; John 10:11 | The Good Shepherd lays down his life for them.
+  tier: 1
+Lamb | Ex 12:3; John 1:29 | John the Baptist called Jesus the Lamb of God.
+  tier: 1
+Donkey; Ass | Num 22:28; Zech 9:9 | Balaam's donkey spoke; the king comes riding on one.
+  tier: 1
+Snake; Serpent | Gen 3:1; Ex 4:3; Num 21:8-9 | The serpent in Eden; Moses' bronze serpent.
+  tier: 1
+Dove | Gen 8:8; Matt 3:16 | Noah sent one from the ark; the Spirit descended like one.
+  tier: 1
+Camel | Matt 19:24 | Easier for one to go through the eye of a needle.
+  tier: 1
+Fish | Jonah 1:17; John 21:6 | A great fish swallowed Jonah; the disciples hauled in 153.
+  tier: 1
+Ox | Deut 25:4 | Do not muzzle it while it treads the grain.
+  tier: 4
+Horse | Ex 15:1; Rev 6:2 | Pharaoh's were thrown into the sea; four ride out in Revelation.
+  tier: 3
+Goat | Lev 16:8-10 | One was sent into the wilderness on the Day of Atonement.
+  tier: 3
+Ram | Gen 22:13 | Caught in a thicket by its horns in Isaac's place.
+  tier: 3
+Raven | Gen 8:7; 1 Kgs 17:6 | Noah's first messenger; Elijah's providers.
+  tier: 3
+Eagle | Isa 40:31 | Those who wait on the LORD will mount up with wings like them.
+  tier: 3
+Wolf | Matt 7:15; John 10:12 | False prophets come as wolves in sheep's clothing.
+  tier: 3
+Bear | 2 Kgs 2:24 | Two came out of the woods near Bethel.
+  tier: 3
+Locust | Ex 10:4; Matt 3:4 | The eighth plague; John the Baptist's food.
+  tier: 3
+Frog | Ex 8:2 | The second plague.
+  tier: 3
+Pig; Swine | Matt 7:6; Mark 5:13 | Do not throw your pearls before them.
+  tier: 3
+Dog | Luke 16:21; Matt 15:27 | The dogs licked Lazarus's sores.
+  tier: 3
+Calf | Ex 32:4; Luke 15:23 | The golden calf; the fattened calf for the prodigal.
+  tier: 4
+Sparrow | Matt 10:29 | Not one falls to the ground apart from the Father.
+  tier: 4
+Fox | Judg 15:4; Luke 13:32 | Samson's three hundred; Jesus' name for Herod.
+  tier: 4
+Bull; Bullock | Ps 22:12; Lev 4:3 | Strong bulls of Bashan surrounded the psalmist.
+  tier: 3
+Cattle | Gen 1:24; Ps 50:10 | The cattle on a thousand hills belong to God.
+  tier: 4
+Scorpion | Luke 10:19; 11:12 | Power to tread on serpents and scorpions.
+  tier: 4
+Leopard | Jer 13:23; Isa 11:6 | Can a leopard change its spots?
+  tier: 4
+Ant | Prov 6:6 | Go to the ant, you sluggard.
+  tier: 4
+Bee | Judg 14:8 | Samson found honey in a lion's carcass.
+  tier: 4
+Quail | Ex 16:13; Num 11:31 | Meat in the wilderness.
+  tier: 4
+Mule | 2 Sam 18:9 | Absalom's mule went out from under him.
+Vulture | Lev 11:13; Matt 24:28 | Gathered wherever the carcass is.
+Gnat | Matt 23:24; Ex 8:16 | Straining out a gnat and swallowing a camel.
+Moth | Matt 6:19 | Where moth and rust destroy.
+Worm | Jonah 4:7; Mark 9:48 | A worm attacked Jonah's vine.
+Rooster; Cock | Matt 26:34, 74 | Crowed after Peter's third denial.
+  tier: 4
+Hen; Chicken | Matt 23:37 | As a hen gathers her chicks under her wings.
+Colt | Zech 9:9; Mark 11:2 | The colt Jesus rode into Jerusalem.
+Heifer | Num 19:2 | The red heifer.
+Kid | Gen 27:9; Luke 15:29 | The elder brother was never given one.
+Ewe | 2 Sam 12:3 | Nathan's parable of the poor man's one little lamb.
+Pigeon | Lev 12:8; Luke 2:24 | A pair was offered for Jesus at the temple.
+Turtledove; Turtle | Lev 12:8; Song 2:12; Luke 2:24 | The voice of the turtledove is heard in the land.
+Partridge | 1 Sam 26:20 | David like a partridge hunted on the mountains.
+Owl | Lev 11:16-17; Ps 102:6 | Like an owl of the waste places.
+Stork | Ps 104:17; Jer 8:7 | Makes its home in the fir trees.
+Ostrich | Job 39:13; Lam 4:3 | Leaves her eggs on the ground.
+Peacock | 1 Kgs 10:22 | Brought to Solomon by the ships of Tarshish.
+Ape | 1 Kgs 10:22 | Brought to Solomon by the ships of Tarshish.
+Deer; Hart | Ps 42:1 | As the deer pants for the water brooks.
+Hind | Hab 3:19; Ps 18:33 | Makes my feet like hinds' feet.
+Gazelle; Roe | Song 2:9; Prov 6:5 | My beloved is like a gazelle.
+Unicorn; Wild ox | Num 23:22; Job 39:9 | The KJV reads unicorn where the WEB reads wild ox.
+  sheep: The King James Version mentions the unicorn nine times; the Hebrew word is a wild ox, which is how the WEB translates it (Numbers 23:22).
+Leviathan | Job 41:1; Ps 104:26; Isa 27:1 | The great sea creature God made to play in the sea.
+  seat: Leviathan appears in Job 41, Psalm 74:14, Psalm 104:26 and Isaiah 27:1.
+Behemoth | Job 40:15 | The first of the ways of God, which eats grass like an ox.
+Whale | Gen 1:21; Matt 12:40 | The KJV's word for the great sea creatures, and for Jonah's fish.
+  tier: 3
+Dragon | Rev 12:3, 9 | The great red dragon of Revelation.
+Viper | Acts 28:3; Matt 3:7 | Fastened on Paul's hand on Malta.
+Adder | Ps 58:4; Ps 91:13 | Like the deaf adder that stops its ear.
+Cobra | Isa 11:8 | A nursing child will play near its hole.
+Asp | Isa 11:8; Rom 3:13 | The KJV's word in Isaiah's peaceable kingdom.
+Cockatrice | Isa 11:8; 59:5 | The KJV's word for a venomous snake.
+Lizard | Lev 11:30; Prov 30:28 | Small, yet found in kings' palaces.
+Chameleon | Lev 11:30 | Listed among the unclean creeping things.
+Gecko | Lev 11:30 | Listed among the unclean creeping things.
+Tortoise | Lev 11:29 | The KJV's word in the list of creeping things.
+Weasel | Lev 11:29 | Listed among the unclean creeping things.
+Mouse | Lev 11:29; 1 Sam 6:4 | The Philistines sent five golden mice.
+Mole | Lev 11:30; Isa 2:20 | Idols thrown to the moles and the bats.
+Bat | Lev 11:19; Isa 2:20 | Listed among the unclean birds.
+Hare | Lev 11:6 | Chews the cud but does not part the hoof.
+Hyrax; Coney | Lev 11:5; Prov 30:26 | A feeble folk that makes its home in the rocks.
+Badger | Ex 25:5 | The KJV's word for the tabernacle's outer covering.
+Sea cow | Ex 25:5 | The WEB's word for the tabernacle's outer covering.
+Jackal | Isa 13:22; 34:13 | Will howl in the palaces of fallen Babylon.
+Wild donkey; Wild ass | Job 39:5; Gen 16:12 | Who has set it free?
+Wild goat | 1 Sam 24:2; Job 39:1 | David hid among the rocks of the wild goats.
+Antelope | Deut 14:5 | Listed among the clean animals.
+Ibex | Deut 14:5 | Listed among the clean animals.
+Chamois | Deut 14:5 | The KJV's word in the list of clean animals.
+Roebuck | Deut 14:5; 1 Kgs 4:23 | Served at Solomon's table.
+Pygarg | Deut 14:5 | The KJV's word in the list of clean animals.
+Fallow deer | Deut 14:5; 1 Kgs 4:23 | Served at Solomon's table.
+Hawk | Lev 11:16; Job 39:26 | Does it fly by your wisdom?
+Falcon | Deut 14:13; Job 28:7 | No falcon's eye has seen the path to wisdom.
+Kite | Lev 11:14 | Listed among the unclean birds.
+Osprey; Ospray | Lev 11:13, 18 | Listed among the unclean birds.
+Ossifrage | Lev 11:13 | The KJV's word in the list of unclean birds.
+Cormorant | Lev 11:17 | Listed among the unclean birds.
+Pelican | Lev 11:18; Ps 102:6 | Like a pelican of the wilderness.
+Swan | Lev 11:18 | The KJV's word in the list of unclean birds.
+Heron | Lev 11:19 | Listed among the unclean birds.
+Hoopoe | Lev 11:19 | The WEB's word in the list of unclean birds.
+Lapwing | Lev 11:19 | The KJV's word in the list of unclean birds.
+Cuckow | Lev 11:16 | The KJV's word in the list of unclean birds.
+  forms: cuckoo
+Gull | Lev 11:16 | The WEB's word in the list of unclean birds.
+  forms: seagull; sea gull
+Night hawk | Lev 11:16 | The KJV's word in the list of unclean birds.
+  forms: nighthawk
+Glede | Deut 14:13 | The KJV's word for a bird of prey.
+Crane | Isa 38:14; Jer 8:7 | Like a crane, so I chattered.
+Swallow | Ps 84:3; Prov 26:2 | Has found a nest beside your altars.
+Bittern | Isa 14:23; Zeph 2:14 | The KJV's word for a bird of desolate places.
+Porcupine | Isa 14:23; Zeph 2:14 | The WEB's word for a creature of desolate places.
+Grasshopper | Num 13:33; Isa 40:22 | The spies felt like grasshoppers.
+Cricket | Lev 11:22 | Clean to eat, along with the locust.
+Katydid | Lev 11:22 | Clean to eat, along with the locust.
+Beetle | Lev 11:22 | The KJV's word in the list of clean insects.
+Hornet | Ex 23:28; Josh 24:12 | Sent ahead to drive out Israel's enemies.
+Fly | Eccl 10:1; Ex 8:21 | Dead flies make the perfumer's oil stink.
+Flea | 1 Sam 24:14; 26:20 | David called himself a single flea.
+Lice | Ex 8:16 | The third plague.
+  forms: louse
+Spider | Prov 30:28; Job 8:14 | Its web is the hope of the godless.
+Snail | Ps 58:8 | Melts away as it goes.
+Leech; Horseleach | Prov 30:15 | Has two daughters: Give, give.
+Maggot | Job 25:6; Isa 14:11 | Man, who is a maggot.
+Caterpillar | Ps 78:46; Joel 1:4 | Sent on Egypt's harvest.
+Palmerworm | Joel 1:4 | The KJV's word in Joel's plague.
+Cankerworm | Joel 1:4; Nah 3:15 | The KJV's word in Joel's plague.
+Dromedary | Isa 60:6; Esth 8:10 | Young camels from Midian and Ephah.
+Greyhound | Prov 30:31 | The KJV's word for something stately in its stride.
+Sea monster | Job 7:12; Ps 74:13; Lam 4:3 | Am I a sea, or a sea monster, that you put a guard over me?
+
+? Cat; cats | The cat appears only in the Letter of Jeremiah (Baruch 6:22), which is outside the 66 books.
+? Elephant; elephants | Ivory is mentioned (1 Kings 10:22), but the elephant itself is not named.
+? Rabbit; rabbits; bunny | Close: Scripture's word is hare (Leviticus 11:6).
+? Dinosaur; dinosaurs; T rex; brontosaurus | The Bible does not use that word. Job 40-41 describes behemoth and leviathan.
+? Cherub; cherubim; seraph; seraphim | Heavenly beings rather than animals (Ezekiel 10:1; Isaiah 6:2).
+? Penguin; kangaroo; tiger; zebra; giraffe; panda | A real animal, but not one named in the Bible.
+? Apple | A fruit, not a creature.

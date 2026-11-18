@@ -1,0 +1,188 @@
+# Foods and drinks named in the WEB or KJV.
+@ food | Food & Plants | Name a food or drink mentioned in the Bible. | remembrance | nouns
+
+Bread | Matt 6:11; John 6:35 | Give us today our daily bread.
+  tier: 1
+Wine | John 2:3, 9-10 | Jesus turned water into wine at Cana.
+  tier: 1
+Water | John 4:7, 14 | Jesus asked a Samaritan woman for a drink.
+  tier: 1
+Fish | John 6:9; 21:9 | Five loaves and two fish.
+  tier: 1
+Milk | Ex 3:8 | A land flowing with milk and honey.
+  tier: 3
+Honey | Ex 3:8; Matt 3:4 | A land flowing with milk and honey.
+  tier: 1
+Manna | Ex 16:31; John 6:31 | Bread from heaven in the wilderness.
+  seat: Manna was white like coriander seed and tasted like wafers made with honey (Exodus 16:31).
+Lamb | Ex 12:3-8 | The Passover meal, roasted with fire.
+  tier: 3
+Locusts | Matt 3:4; Lev 11:22 | John the Baptist's food, with wild honey.
+  tier: 3
+Figs | Jer 24:1-2; Mark 11:13 | Jeremiah's two baskets of figs.
+  tier: 3
+Grapes | Num 13:23; Matt 7:16 | The spies carried one cluster on a pole.
+  tier: 3
+Olive oil; Oil | Ex 27:20; 1 Kgs 17:12 | The widow of Zarephath's jar did not run dry.
+  tier: 4
+Pomegranate | Num 13:20, 23; Deut 8:8 | Brought back by the spies from Canaan.
+  tier: 4
+Barley | Ruth 2:17; John 6:9 | Ruth gleaned it; the boy's loaves were made of it.
+  tier: 4
+Wheat | Ruth 2:23; John 12:24 | Unless a grain of wheat falls into the earth and dies.
+  tier: 4
+Lentils | Gen 25:34; 2 Sam 17:28 | Esau sold his birthright for bread and lentil stew.
+  tier: 4
+Stew; Pottage | Gen 25:29-30 | The red stew Jacob cooked.
+Unleavened bread | Ex 12:8; Matt 26:17 | Eaten at Passover.
+  tier: 3
+Quail | Ex 16:13; Num 11:31 | Meat in the wilderness.
+  tier: 4
+Salt | Matt 5:13; Lev 2:13 | You are the salt of the earth.
+  tier: 4
+Vinegar | Ps 69:21; Matt 27:48 | Offered to Jesus on the cross.
+  tier: 4
+Butter | Gen 18:8; Prov 30:33 | Abraham served it to his three visitors.
+  forms: curds
+Cheese | 1 Sam 17:18; 2 Sam 17:29 | David carried ten cheeses to the captain.
+Raisins | 1 Sam 25:18; 30:12 | Abigail brought a hundred clusters to David.
+Almonds | Gen 43:11; Num 17:8 | A gift for Joseph; Aaron's rod bore them.
+Nuts | Gen 43:11; Song 6:11 | Part of Jacob's gift to Joseph.
+  forms: pistachio; pistachios; pistachio nuts
+Cucumbers | Num 11:5; Isa 1:8 | Remembered from Egypt.
+  sheep: In the wilderness the Israelites grumbled that they missed Egypt's cucumbers, melons, leeks, onions and garlic (Numbers 11:5).
+Melons | Num 11:5 | Remembered from Egypt.
+Leeks | Num 11:5 | Remembered from Egypt.
+Onions | Num 11:5 | Remembered from Egypt.
+Garlic | Num 11:5 | Remembered from Egypt.
+Beans | 2 Sam 17:28; Ezek 4:9 | Brought to David at Mahanaim.
+Millet | Ezek 4:9 | One grain in Ezekiel's bread.
+Spelt; Fitches | Ezek 4:9 | One grain in Ezekiel's bread.
+Eggs; Egg | Luke 11:12; Deut 22:6 | If he asks for an egg, will he give him a scorpion?
+Mint | Matt 23:23; Luke 11:42 | The Pharisees tithed it.
+Dill; Anise | Matt 23:23 | The Pharisees tithed it.
+Cumin; Cummin | Matt 23:23; Isa 28:25 | The Pharisees tithed it.
+Rue | Luke 11:42 | The Pharisees tithed it.
+Coriander | Ex 16:31; Num 11:7 | Manna was like its seed.
+Bitter herbs | Ex 12:8; Num 9:11 | Eaten with the Passover lamb.
+Flour; Meal | Ex 29:2; 1 Kgs 17:12 | A handful of flour in a jar.
+  tier: 4
+Cakes; Cake | 1 Kgs 17:13; Gen 18:6 | Elijah asked the widow for a small cake first.
+Calf | Gen 18:7; Luke 15:23 | Kill the fattened calf, and let us eat.
+Goat; Kid | Judg 6:19; Luke 15:29 | Gideon prepared a young goat.
+  tier: 5
+Venison | Gen 25:28; 27:3 | Isaac loved Esau's game.
+Meat; Flesh | 1 Kgs 17:6; Num 11:4 | Ravens brought Elijah bread and meat.
+  tier: 3
+Grain; Corn | Ruth 2:14; Mark 2:23 | Ruth ate roasted grain.
+Parched grain; Parched corn | Ruth 2:14; Lev 23:14 | Ruth ate roasted grain at Boaz's table.
+Honeycomb | Luke 24:42; Ps 19:10 | Sweeter than honey and the honeycomb.
+New wine | Matt 9:17; Joel 1:5 | Put into fresh wineskins.
+Strong drink | Prov 20:1; Luke 1:15 | John the Baptist would not drink it.
+Apples; Apple | Song 2:5; Prov 25:11 | Refresh me with apples.
+  tier: 4
+Dates; Date | 2 Sam 6:19; 1 Chr 16:3 | David gave every Israelite a cake of dates.
+Pods; Husks | Luke 15:16 | The prodigal longed to eat what the pigs ate.
+Juice | Song 8:2 | The juice of my pomegranate.
+Mustard | Matt 13:31 | A seed that becomes a tree.
+Sycamore figs; Sycomore fruit | Amos 7:14 | Amos tended sycamore fig trees.
+Olives | Deut 24:20; Jas 3:12 | Can a fig tree produce olives?
+  tier: 4
+Swine's flesh; Pig's meat | Isa 65:4; 66:17 | Isaiah condemns those who eat it.
+  forms: pork; bacon; ham
+Fat | Lev 3:16; Neh 8:10 | Eat the fat and drink the sweet.
+  tier: 5
+Firstfruits; First fruits | Ex 23:19; Lev 23:10 | The first of the harvest.
+  tier: 4
+Juice of grapes; Liquor of grapes | Num 6:3 | A Nazirite may not drink it.
+  forms: grape juice
+  tier: 5
+Sheep | 2 Sam 17:29 | Brought to David with honey and cheese.
+  tier: 5
+Show bread; Shewbread | 1 Sam 21:6; Matt 12:4 | David ate it when he was hungry.
+  forms: showbread; bread of the presence; holy bread
+Wafers | Ex 16:31; 29:23 | Manna tasted like wafers made with honey.
+
+Oxen | 1 Kgs 4:23; Matt 22:4 | Solomon's table took ten fat oxen a day.
+  tier: 4
+Deer; Hart | Deut 12:15; 1 Kgs 4:23 | Clean meat that could be eaten anywhere in the land.
+  tier: 5
+Gazelle; Roebuck | Deut 12:15; 1 Kgs 4:23 | On Solomon's table with deer and fatted fowl.
+  tier: 5
+Fowl; Fatted fowl | 1 Kgs 4:23; Neh 5:18 | Part of the daily provision for Solomon's household.
+  tier: 5
+Yeast; Leaven | Exod 12:15; Matt 13:33 | Removed from Israel's houses for the Feast of Unleavened Bread.
+  tier: 3
+Mixed wine; Spiced wine | Prov 9:2; Song 8:2 | Wisdom mixed her wine and set her table.
+  tier: 5
+Wines on the lees | Isa 25:6 | On the menu of the feast the LORD will make for all peoples.
+  forms: wine on the lees; aged wine
+  tier: 5
+Marrow | Isa 25:6; Ps 63:5 | "A feast of choice pieces full of marrow."
+  tier: 5
+Broth | Judg 6:19-20 | Gideon brought the angel meat, bread and broth.
+  tier: 5
+Gourds; Wild gourds | 2 Kgs 4:39-41 | "There is death in the pot!" Elisha healed the stew with flour.
+  tier: 5
+Cakes of figs; Cake of figs | 1 Sam 25:18; 30:12 | Abigail brought two hundred of them to David.
+  forms: fig cakes; pressed figs
+  tier: 5
+Grasshopper | Lev 11:22 | One of the insects Israel was allowed to eat.
+  tier: 5
+Cricket | Lev 11:22 | The WEB names it among the clean insects.
+  tier: 5
+Beetle | Lev 11:22 | The KJV names it among the clean insects.
+  tier: 5
+Vegetables; Pulse | Dan 1:12, 16 | Daniel asked for vegetables and water for ten days.
+  tier: 4
+Herbs | Rom 14:2; Prov 15:17 | "Better is a dinner of herbs where love is."
+  tier: 5
+Rie | Exod 9:32 | The KJV's grain, spared by the hail because it hadn't come up.
+  forms: rye
+  tier: 5
+Dough | Exod 12:34, 39 | Israel carried it unleavened out of Egypt.
+  tier: 5
+Cracknels | 1 Kgs 14:3 | Jeroboam's wife took them to the prophet Ahijah.
+  forms: biscuits
+  tier: 5
+Pomegranate juice; Juice of my pomegranate | Song 8:2 | "I would have given you spiced wine to drink."
+  tier: 5
+Mallows; Salt herbs | Job 30:4 | Gathered by the desperate in the wilderness.
+  tier: 5
+Broom roots; Juniper roots | Job 30:4 | Eaten by those driven out of society.
+  tier: 5
+Ears of grain; Ears of corn | Matt 12:1; Deut 23:25 | The disciples picked and ate them on the Sabbath.
+  tier: 4
+Barley loaves; Barley bread | John 6:9, 13; Judg 7:13 | The boy's five barley loaves fed five thousand.
+  tier: 4
+Fatted calf | Luke 15:23, 27 | Killed for the prodigal son's return.
+  tier: 3
+Broiled fish | Luke 24:42-43 | The risen Jesus ate a piece in front of the disciples.
+  tier: 4
+Wild honey | Matt 3:4; Mark 1:6 | John the Baptist ate locusts and wild honey.
+  tier: 3
+Goats' milk | Prov 27:27 | "There will be plenty of goats' milk for your food."
+  tier: 5
+Fine flour | Lev 2:1; Ezek 16:13 | Used for the grain offering.
+  tier: 4
+Cinnamon | Prov 7:17; Rev 18:13 | Among the luxury goods of Babylon in Revelation.
+  tier: 5
+Lentil stew; Red stew; Red pottage | Gen 25:30, 34 | Esau sold his birthright for it.
+  tier: 3
+
+Katydid | Lev 11:22 | One of the clean insects in the WEB.
+  tier: 5
+Bald locust | Lev 11:22 | One of the clean insects in the KJV.
+  tier: 5
+Sweet wine | Isa 49:26; Amos 9:13 | "The mountains will drip sweet wine."
+  tier: 5
+Crumbs | Matt 15:27; Luke 16:21 | "Even the dogs eat the crumbs which fall from their masters' table."
+  tier: 4
+Gall | Matt 27:34; Ps 69:21 | Offered to Jesus mixed with wine; he tasted it and would not drink.
+  tier: 5
+Wine mixed with myrrh | Mark 15:23 | Offered to Jesus before the crucifixion; he did not take it.
+  tier: 5
+
+? Forbidden fruit; fruit of the tree; tree of knowledge | Genesis never names the fruit (Genesis 3:6). It is not called an apple.
+? Chocolate; coffee; tea; potato; potatoes; tomato; corn on the cob; rice | Not found in the Bible.
+? Locust bean; carob | Close: Luke 15:16 has pods (KJV husks); the carob identification is a later explanation.

@@ -1,0 +1,1341 @@
+# Fishers: batch 2, Bible-only sets (sample of five for review).
+# Description prompts (described phrase): names are labels, anchors are checked
+# against the cited verses. Other prompts: every name and alias must appear in
+# the WEB or KJV at a cited verse; "forms:" holds accepted labels that do not.
+
+@ raised-from-dead | Signs & Wonders | Name a person raised from the dead in the Bible. | faithfulness | closed described phrase ignore=raised,raising,rose,from,the,dead,a,an,of,by,who,was,in,at,into
+Jesus; Christ; Jesus Christ; the Lord; resurrection | Matt 28:5-7; Luke 24:5-6 | "He is not here, for he has risen."
+  anchor: risen
+  tier: 1
+Lazarus; Lazarus of Bethany | John 11:38-44 | Called out of the tomb after four days.
+  anchor: Lazarus
+  tier: 1
+Jairus' daughter; Jairus; daughter of Jairus; synagogue ruler's daughter; ruler's daughter; talitha cumi | Mark 5:22-24, 35-43; Luke 8:41-42, 49-56 | "Little girl, I tell you, get up!" She was twelve.
+  anchor: Jairus
+  tier: 3
+Tabitha; Dorcas | Acts 9:36-41 | A disciple at Joppa, full of good works; Peter said, "Tabitha, get up!"
+  anchor: Tabitha
+  tier: 3
+Widow of Nain's son; Nain; son of the widow of Nain; widow's son at Nain | Luke 7:11-15 | Jesus touched the bier, and the young man sat up and began to speak.
+  anchor: Nain
+  tier: 4
+Eutychus | Acts 20:9-12 | Fell from a third-story window while Paul preached late; he was taken up dead and brought back alive.
+  anchor: Eutychus
+  tier: 4
+Shunammite woman's son; Shunammite; Shunammite's son; son of the Shunammite; Shunem | 2 Kgs 4:8, 32-37 | Elisha stretched himself on the child, who sneezed seven times and opened his eyes.
+  anchor: Shunammite; sneezed
+  tier: 4
+Widow of Zarephath's son; Zarephath; son of the widow of Zarephath; widow's son at Zarephath | 1 Kgs 17:9, 17-24 | Elijah cried to the LORD, and the child's life came back into him.
+  anchor: Zarephath; revived
+  tier: 5
+Saints who came out of the tombs; saints; many saints; bodies of the saints | Matt 27:51-53 | At Jesus' death the tombs were opened, and many saints were raised.
+  anchor: saints
+  tier: 5
+Two witnesses; witnesses; two prophets | Rev 11:3, 7-11 | In John's vision, the breath of life from God entered them after three and a half days.
+  anchor: witnesses; breath of life
+  tier: 5
+Man thrown into Elisha's grave; Elisha's bones; Elisha's grave; Elisha's tomb; man in Elisha's grave; Elisha's sepulchre | 2 Kgs 13:20-21 | Thrown into Elisha's tomb in a hurry, he touched Elisha's bones and stood up.
+  anchor: Elisha
+  sheep: He is the only person in Scripture raised by touching a dead prophet's bones: he revived and stood up when his body touched Elisha's (2 Kings 13:21).
+? Widow's son; son of a widow; widow | Two widows' sons were raised: at Zarephath through Elijah (1 Kings 17:22) and at Nain by Jesus (Luke 7:15). Name the town and cast again.
+? Elijah | Elijah never died: he went up to heaven in a whirlwind (2 Kings 2:11).
+? Enoch | Enoch never died: "he was not found, because God took him" (Genesis 5:24; Hebrews 11:5).
+? Samuel; Samuel at Endor; witch of Endor | At Endor the medium saw Samuel come up (1 Samuel 28:11–14), but he was not raised to life again.
+
+@ new-names | Names & Titles | Name a person in the Bible who was given a new name or also went by another name. | calling | closed
+Abraham; Abram | Gen 17:5 | "Your name will no more be called Abram, but your name will be Abraham."
+Jacob; Israel | Gen 32:28; 35:10 | Renamed after he wrestled through the night at Peniel.
+Peter; Simon; Cephas; Simon Peter | John 1:40-42; Matt 16:18 | Jesus said, "You shall be called Cephas," which means Peter.
+  tier: 1
+Paul; Saul | Acts 13:9 | Known first as Saul of Tarsus.
+  seat: There is no renaming scene on the Damascus road: Acts 13:9 simply says "Saul, who is also called Paul," and Luke uses Paul from then on.
+Sarah; Sarai | Gen 17:15 | Renamed when God promised she would be a mother of nations.
+  tier: 3
+Joseph; Zaphenath-paneah; Zaphnath-paaneah | Gen 41:45 | Pharaoh gave him an Egyptian name when he made him ruler over Egypt.
+  tier: 4
+Esther; Hadassah | Esth 2:7 | Mordecai's cousin, also called Hadassah.
+  tier: 3
+Daniel; Belteshazzar | Dan 1:7; 2:26 | The chief of the eunuchs gave him a Babylonian name.
+  tier: 3
+Solomon; Jedidiah | 2 Sam 12:24-25 | The LORD sent word through Nathan to name him Jedidiah, "beloved of the LORD."
+  tier: 4
+Gideon; Jerubbaal; Jerubbesheth | Judg 6:32; 7:1; 2 Sam 11:21 | Called Jerubbaal after he tore down Baal's altar.
+  tier: 4
+Joshua; Hoshea; Oshea; Jehoshua | Num 13:16 | Moses called Hoshea the son of Nun Joshua.
+Naomi; Mara | Ruth 1:20 | "Don't call me Naomi. Call me Mara, for the Almighty has dealt very bitterly with me."
+  tier: 4
+Esau; Edom | Gen 25:30; 36:1 | Called Edom, "red," after the red stew.
+Benjamin; Ben-oni; Benoni | Gen 35:18 | Rachel named him Ben-oni as she died; Jacob called him Benjamin.
+  tier: 5
+Shadrach; Hananiah | Dan 1:6-7 | One of Daniel's three friends.
+  tier: 4
+Meshach; Mishael | Dan 1:6-7 | One of Daniel's three friends.
+  tier: 4
+Abednego; Azariah; Abed-nego | Dan 1:6-7 | One of Daniel's three friends.
+  tier: 4
+Thomas; Didymus | John 11:16 | "Thomas, who is called Didymus," the Twin.
+Barnabas; Joses | Acts 4:36 | The apostles called Joses Barnabas, Son of Encouragement.
+Tabitha; Dorcas | Acts 9:36 | A disciple at Joppa; both names mean gazelle.
+James and John; Boanerges; Sons of Thunder | Mark 3:17 | Jesus called the brothers Boanerges, Sons of Thunder.
+Mark; John Mark | Acts 12:12, 25 | "John who was called Mark."
+  forms: John Mark
+Zedekiah; Mattaniah | 2 Kgs 24:17 | The king of Babylon renamed the last king of Judah.
+  tier: 5
+Jehoiakim; Eliakim | 2 Kgs 23:34 | Pharaoh Necho made Eliakim king and renamed him.
+Jehoiachin; Jeconiah; Coniah; Jechoniah; Jechonias | 2 Kgs 24:6; 1 Chr 3:16; Jer 22:24; Matt 1:11-12 | Jeremiah calls him Coniah; Chronicles and Matthew call him Jeconiah.
+Reuel; Jethro; Raguel | Exod 2:18; 3:1; Num 10:29 | Moses' father-in-law, the priest of Midian, is called Reuel and Jethro.
+Thaddaeus; Lebbaeus | Matt 10:3 | "Lebbaeus, who was also called Thaddaeus," one of the Twelve.
+Barsabbas; Justus; Barsabas | Acts 1:23 | "Joseph called Barsabbas, who was also called Justus," put forward to replace Judas.
+Niger; Simeon called Niger | Acts 13:1 | One of the prophets and teachers at Antioch.
+  forms: Simeon called Niger
+Pashhur; Magor-missabib; Magormissabib; Pashur | Jer 20:1-3 | The priest who put Jeremiah in the stocks.
+  sheep: Jeremiah told him the LORD had renamed him Magor-missabib, "terror on every side," because he would become a terror to himself and his friends (Jeremiah 20:3–4).
+? Levi; Matthew | Mark 2:14 and Luke 5:27 call the tax collector Levi, and Matthew 9:9 tells the same call with the name Matthew, but no verse says he was "also called," so he isn't counted here.
+? Nathanael; Bartholomew | Nathanael (John 1:45) and Bartholomew (Matthew 10:3) are never said in the text to be the same man.
+? Immanuel; Emmanuel | Immanuel is a title given to Jesus (Matthew 1:23); try titles of Jesus in another round.
+
+@ i-am-sayings | Words of Jesus | Name one of Jesus' "I am" sayings in John. | light | closed described phrase ignore=i,am,the,a,an,of,and,jesus,said,says,he,is,it
+Light of the world; light; light of the world | John 8:12; 9:5 | "He who follows me will not walk in the darkness."
+  anchor: light of the world
+  tier: 1
+Bread of life; bread; living bread; bread from heaven | John 6:35, 48-51 | "He who comes to me will not be hungry."
+  anchor: bread of life
+  tier: 1
+Good shepherd; shepherd | John 10:11, 14 | "The good shepherd lays down his life for the sheep."
+  anchor: good shepherd
+  tier: 3
+Way, the truth, and the life; way; truth; the way | John 14:6 | "No one comes to the Father, except through me."
+  anchor: the way
+  tier: 3
+Resurrection and the life; resurrection | John 11:25 | Said to Martha before he raised Lazarus.
+  anchor: resurrection
+  tier: 4
+True vine; vine | John 15:1, 5 | "I am the vine. You are the branches."
+  anchor: vine
+  tier: 4
+Door; gate; door of the sheep; sheep gate | John 10:7, 9 | "If anyone enters in by me, he will be saved."
+  anchor: door
+  tier: 5
+Before Abraham was, I am; before Abraham | John 8:58 | Said in the temple; the crowd took up stones to throw at him.
+  anchor: Abraham
+  sheep: It is the one "I am" saying with no picture attached: "Before Abraham came into existence, I AM" (John 8:58), and the crowd picked up stones (8:59).
+? Life | Three sayings use it: the bread of life (6:35), the resurrection and the life (11:25), and the way, the truth, and the life (14:6). Name one.
+? Alpha and Omega; alpha; omega | "I am the Alpha and the Omega" is in Revelation (1:8; 22:13), not in John's Gospel.
+? Lamb of God; lamb | John the Baptist called Jesus the Lamb of God (John 1:29); Jesus doesn't say it of himself.
+
+@ cross-sayings | Words of Jesus | Name something Jesus said from the cross. | mercy | closed described phrase ignore=jesus,said,says,he,the,a,an,o,oh
+It is finished; finished | John 19:30 | His last word in John's Gospel before he gave up his spirit.
+  anchor: finished
+  tier: 1
+Father, forgive them; forgive; forgive them; father forgive them | Luke 23:34 | "Father, forgive them, for they don't know what they are doing."
+  anchor: forgive
+  tier: 1
+My God, my God, why have you forsaken me; forsaken; why have you forsaken me; Eli Eli lama sabachthani; Eloi Eloi lama sabachthani; Eli; Eloi; sabachthani; lama sabachthani | Matt 27:46; Mark 15:34 | Words of Psalm 22:1, cried out about the ninth hour.
+  anchor: forsaken
+  tier: 3
+Today you will be with me in Paradise; paradise; today | Luke 23:43 | Said to one of the criminals crucified with him.
+  anchor: Paradise
+  tier: 3
+I thirst; thirst; thirsty; I am thirsty | John 19:28 | Said "that the Scripture might be fulfilled"; they gave him sour wine on hyssop.
+  anchor: thirst
+  tier: 4
+Father, into your hands I commit my spirit; into your hands; hands; commit my spirit; commend my spirit; into thy hands | Luke 23:46 | Words of Psalm 31:5, his last words in Luke.
+  anchor: hands
+  tier: 5
+Woman, behold your son; behold your son; behold your mother; your mother; woman | John 19:26-27 | Said to his mother and to the disciple whom he loved.
+  anchor: woman
+  sheep: With these words he entrusted his mother to the disciple whom he loved, who took her into his own home from that hour (John 19:26–27).
+? Remember me; remember me when you come into your kingdom | Those were the words of the criminal beside him (Luke 23:42); Jesus answered, "Today you will be with me in Paradise."
+? Not my will; not my will but yours | That was his prayer in Gethsemane the night before (Luke 22:42), not from the cross.
+? Truly this was the Son of God; son of god | The centurion said that when Jesus died (Matthew 27:54).
+
+@ giants | People | Name a giant, or a people of giants, in the Bible. | courage | closed
+Goliath | 1 Sam 17:4; 2 Sam 21:19 | The champion of Gath, six cubits and a span tall.
+  tier: 1
+Og | Deut 3:11; Josh 12:4 | King of Bashan, the last of the Rephaim.
+  seat: Og's iron bedstead was nine cubits long and four wide, and Moses notes it could still be seen in Rabbah of the Ammonites (Deuteronomy 3:11).
+Anakim; Anakims; sons of Anak | Num 13:33; Deut 1:28; 2:10-11; Josh 11:21-22 | The spies felt like grasshoppers beside them.
+  tier: 3
+  forms: children of Anak
+Nephilim | Gen 6:4; Num 13:33 | "The Nephilim were on the earth in those days."
+  tier: 1
+Anak | Num 13:22, 28, 33; Josh 15:13 | The ancestor of the Anakim, after whom his sons were named.
+Rephaim | Deut 2:11, 20; 3:11, 13 | An ancient people counted as giants, of whom Og was the last.
+  tier: 4
+Emim; Emims | Deut 2:10-11 | Moab's name for the giants who once lived in its land.
+Zamzummim; Zamzummims | Deut 2:20-21 | The Ammonites' name for the giants who once lived in their land.
+Arba | Josh 14:15; 15:13 | The greatest man among the Anakim; Hebron was once called Kiriath Arba after him.
+Ahiman | Num 13:22; Josh 15:14; Judg 1:10 | One of the three sons of Anak living at Hebron.
+Sheshai | Num 13:22; Josh 15:14; Judg 1:10 | One of the three sons of Anak living at Hebron.
+Talmai | Num 13:22; Josh 15:14; Judg 1:10 | One of the three sons of Anak living at Hebron.
+Lahmi | 1 Chr 20:5 | Goliath's brother, killed by Elhanan.
+Saph; Sippai | 2 Sam 21:18; 1 Chr 20:4 | Of the sons of the giant, killed by Sibbecai.
+Six fingers | 2 Sam 21:20; 1 Chr 20:6 | Six fingers on each hand and six toes on each foot; killed by Jonathan, David's nephew.
+  forms: six-fingered man of Gath; six fingers; six-fingered man; man with six fingers
+Egyptian | 2 Sam 23:21; 1 Chr 11:23 | A man five cubits tall with a spear like a weaver's beam; Benaiah took it from him.
+  tier: 5
+  forms: the Egyptian Benaiah killed; Egyptian giant
+Ishbi-benob; Ishbibenob | 2 Sam 21:16-17 | Of the sons of the giant; he set out to kill David.
+  sheep: His bronze spear weighed three hundred shekels, and he nearly killed a weary David before Abishai struck him down (2 Samuel 21:16–17).
+? Giant; the giant; giants | Name one. (Where the KJV says "giants" in Genesis 6:4, the WEB says Nephilim.)
+? Samson | Samson was strong, but the Bible never calls him a giant (Judges 16).
+? Saul | Saul stood head and shoulders above everyone (1 Samuel 9:2), but he isn't called a giant.
+
+@ plagues | Signs & Wonders | Name one of the ten plagues of Egypt. | remembrance | closed described phrase nouns ignore=the,of,a,an,plague,plagues,death,dead,dying,all,egypt,on,in,river,nile,into,turned,water
+Blood; water into blood; river of blood | Exod 7:17-21 | The water of the Nile turned to blood, and the fish died.
+  anchor: blood
+  tier: 1
+Frogs; frog | Exod 8:2-6 | Frogs came up and covered the land of Egypt.
+  anchor: frogs
+  tier: 1
+Locusts; locust; grasshoppers | Exod 10:4-15 | An east wind brought them, and they ate every green thing.
+  anchor: locusts
+  tier: 3
+Darkness; dark | Exod 10:21-23 | Three days of darkness that could be felt; Israel had light.
+  anchor: darkness
+  tier: 3
+Death of the firstborn; firstborn; first born; first-born | Exod 11:4-5; 12:29 | At midnight; the Passover blood marked Israel's doors.
+  anchor: firstborn
+  tier: 3
+Hail; hailstones; hail and fire | Exod 9:18-26 | Fire ran along the ground with the hail.
+  anchor: hail
+  tier: 4
+Boils; boil; sores | Exod 9:8-11 | Ashes from a furnace became boils on people and animals.
+  anchor: boils
+  tier: 4
+Flies; swarms of flies; fly; swarms | Exod 8:21-24 | Swarms filled Egypt but not the land of Goshen.
+  anchor: flies
+  tier: 4
+Lice; gnats; louse; gnat | Exod 8:16-18 | The dust of the earth became lice; the magicians said, "This is God's finger."
+  anchor: lice
+  tier: 5
+Death of livestock; livestock; cattle; murrain; pestilence; animals; disease on livestock | Exod 9:1-7 | A severe pestilence on Egypt's livestock in the field.
+  anchor: pestilence; murrain
+  sheep: The KJV calls it "a very grievous murrain"; Pharaoh sent to check, and not one of Israel's animals had died (Exodus 9:3–7).
+? Serpent; snake; staff; rod; Aaron's staff; Aaron's rod | Aaron's staff becoming a serpent was a sign before Pharaoh (Exodus 7:10), not one of the ten plagues.
+? Red Sea; parting of the Red Sea | The Red Sea crossing came after the plagues, when Israel had left Egypt (Exodus 14).
+
+@ fruit-of-the-spirit | Words & Virtues | Name a fruit of the Spirit (Galatians 5:22–23). | light | closed ignore=fruit,of,the,spirit,is
+Love | Gal 5:22 | First in Paul's list.
+  tier: 1
+Joy | Gal 5:22 | "The fruit of the Spirit is love, joy, peace…"
+  tier: 1
+Peace | Gal 5:22 | Third in Paul's list.
+  tier: 1
+Patience; longsuffering; long-suffering | Gal 5:22 | The KJV reads longsuffering.
+  tier: 3
+Kindness | Gal 5:22 | The WEB's kindness is the KJV's gentleness in verse 22.
+  tier: 3
+Faith | Gal 5:22 | Both the WEB and the KJV read faith here; many modern versions say faithfulness.
+  forms: Faithfulness
+  tier: 4
+Gentleness; meekness | Gal 5:22-23 | The WEB's gentleness (verse 23) is the KJV's meekness; the KJV's "gentleness" is in verse 22, so either way it counts.
+  tier: 4
+Self-control; self control; temperance | Gal 5:23 | Last in the list; the KJV reads temperance.
+  tier: 5
+Goodness | Gal 5:22; Eph 5:9 | Sixth in the list.
+  sheep: Goodness is the one fruit Paul names again in Ephesians: "the fruit of the Spirit is in all goodness and righteousness and truth" (Ephesians 5:9).
+? Hope | Hope abides with faith and love (1 Corinthians 13:13), but it isn't in the Galatians list.
+? Grace; mercy; humility; forgiveness; obedience | A good gift, but not one of the nine in Galatians 5:22–23.
+
+@ armor-of-god | Words & Virtues | Name a piece of the armor of God (Ephesians 6:14–17). | courage | closed described phrase ignore=the,of,a,an,your,with,armor,armour,piece,god,whole,full,put,on,take,up
+Sword of the Spirit; sword; word of God | Eph 6:17 | "Which is the word of God."
+  anchor: sword
+  tier: 1
+Shield of faith; shield; faith | Eph 6:16 | It quenches all the fiery darts of the evil one.
+  anchor: shield
+  tier: 1
+Helmet of salvation; helmet; salvation | Eph 6:17 | Isaiah 59:17 pictures God himself wearing it.
+  anchor: helmet
+  tier: 3
+Breastplate of righteousness; breastplate; righteousness | Eph 6:14 | Also in Isaiah 59:17 and 1 Thessalonians 5:8.
+  anchor: breastplate
+  tier: 4
+Belt of truth; belt; truth; girdle; girdle of truth; loins girded | Eph 6:14 | Truth buckled around the waist.
+  anchor: truth
+  tier: 5
+Shoes of the gospel of peace; shoes; feet; gospel of peace; sandals; boots; preparation of the gospel; readiness | Eph 6:15 | Feet fitted with the preparation of the Good News of peace.
+  anchor: feet
+  sheep: Neither the WEB nor the KJV actually says "shoes" here: the feet are "shod" (KJV) or "fitted" (WEB) "with the preparation of the gospel of peace" (Ephesians 6:15).
+? Prayer; praying | Prayer follows the list in Ephesians 6:18, but Paul doesn't make it a piece of armor.
+? Spear; lance; javelin; bow; arrows | Not in Paul's list of the armor of God (Ephesians 6:14–17).
+
+@ seven-churches | Places | Name one of the seven churches of Revelation. | church | closed ignore=church,of,the,in,at
+Ephesus | Rev 1:11; 2:1-7 | The church that had left its first love.
+  tier: 1
+Laodicea | Rev 1:11; 3:14-22 | Neither hot nor cold, but lukewarm.
+  tier: 3
+Philadelphia | Rev 1:11; 3:7-13 | Given an open door that no one can shut.
+  tier: 3
+Smyrna | Rev 1:11; 2:8-11 | "Be faithful to death, and I will give you the crown of life."
+  tier: 4
+Sardis | Rev 1:11; 3:1-6 | "You have a reputation of being alive, but you are dead."
+  tier: 4
+Pergamum; Pergamos | Rev 1:11; 2:12-17 | "Where Satan's throne is"; the KJV spells it Pergamos.
+  tier: 5
+Thyatira | Rev 1:11; 2:18-29 | Praised for its love and service, warned about "Jezebel."
+  sheep: Lydia, the seller of purple whom Paul met at Philippi, came from Thyatira (Acts 16:14).
+? Colossae; Colosse; Corinth; Rome; Galatia; Philippi; Thessalonica; Antioch; Jerusalem | Paul's letters or travels went there, but it isn't one of the seven churches of Revelation 2–3.
+
+@ cities-of-refuge | Places | Name a city of refuge. | mercy | closed ignore=city,of,the,in,refuge
+Hebron; Kiriath Arba; Kirjath-arba | Josh 20:7 | In the hill country of Judah.
+  tier: 1
+Shechem | Josh 20:7 | In the hill country of Ephraim.
+  tier: 3
+Kedesh | Josh 20:7; 21:32 | In Galilee, in the hill country of Naphtali.
+  tier: 4
+Ramoth; Ramoth Gilead; Ramoth-gilead | Josh 20:8; Deut 4:43 | East of the Jordan, for the tribe of Gad.
+  forms: Ramoth in Gilead
+  tier: 4
+Golan | Josh 20:8; Deut 4:43 | East of the Jordan, in Bashan, for Manasseh.
+  tier: 5
+Bezer | Josh 20:8; Deut 4:43 | In the wilderness, on the plain, for Reuben.
+  sheep: Bezer was one of the three refuge cities Moses set apart east of the Jordan before Israel crossed (Deuteronomy 4:41–43).
+? Jerusalem; Bethlehem; Jericho; Shiloh | Not one of the six cities of refuge (Joshua 20:7–8).
+
+@ psalm-writers | Books of the Bible | Name someone a psalm's title credits. | worship | closed ignore=the,son,sons,of,by,king,ezrahite
+David | Ps 3:1; 23:1; 51:1 | Named in the titles of more psalms than anyone else.
+  tier: 1
+Solomon | Ps 72:1; 127:1 | Two psalms are credited to him.
+  tier: 3
+Moses | Ps 90:1 | "A Prayer by Moses, the man of God."
+  tier: 3
+Asaph | Ps 50:1; 73:1; 83:1 | Psalm 50 and Psalms 73–83.
+  tier: 4
+Korah; sons of Korah | Ps 42:1; 84:1; 88:1 | Credited with eleven psalms, including "As the deer pants."
+  tier: 4
+Heman | Ps 88:1 | Psalm 88, the darkest of the psalms.
+  tier: 5
+Ethan | Ps 89:1 | Psalm 89, on God's covenant with David.
+  sheep: Ethan the Ezrahite was so famous for wisdom that Solomon's is measured against him: Solomon "was wiser than all men; than Ethan the Ezrahite" (1 Kings 4:31).
+? Jeduthun | Jeduthun is named in the titles of Psalms 39, 62 and 77 as a musician, not as the writer.
+? Chief musician; chief director | The "chief musician" in many titles is a musician, not a named writer.
+
+@ eden | Places | Name a person, thing, or place in the Garden of Eden account (Genesis 2–3). | wisdom | closed nouns ignore=the,a,an,of,and,in,garden,eden
+Adam | Gen 2:19-20; 3:17 | Formed from the dust of the ground.
+  tier: 1
+Eve; woman | Gen 2:22-23; 3:20 | "She will be called 'woman'"; Adam named her Eve, mother of all living.
+  tier: 1
+Serpent | Gen 3:1, 14 | "More subtle than any animal of the field."
+  forms: snake
+  tier: 1
+Tree of the knowledge of good and evil; tree of knowledge; knowledge of good and evil | Gen 2:9, 17; 3:3 | The one tree whose fruit they were not to eat.
+  forms: forbidden tree; forbidden fruit
+  tier: 1
+Tree of life | Gen 2:9; 3:22, 24 | Guarded after they were sent out of the garden.
+  tier: 3
+Fruit | Gen 3:2-6 | She saw that it was good for food and pleasant to the eyes.
+  tier: 3
+Fig leaves; fig leaf; fig | Gen 3:7 | Sewn together to cover themselves.
+  tier: 3
+Rib | Gen 2:21-22 | Taken from Adam while he slept, to make the woman.
+  tier: 3
+God; Yahweh God; LORD God | Gen 2:7-8; 3:8-9 | Planted the garden and walked in it in the cool of the day.
+  tier: 3
+Cherubim; cherubims | Gen 3:24 | Placed at the east of the garden to guard the way.
+  tier: 4
+Flaming sword; sword | Gen 3:24 | "A flaming sword which turned every way."
+  tier: 4
+Dust | Gen 2:7; 3:14, 19 | "For you are dust, and to dust you shall return."
+  tier: 4
+Thorns | Gen 3:18 | The ground would bring them out after the curse.
+  tier: 4
+Thistles | Gen 3:18 | "Thorns also and thistles it will bring out to you."
+  tier: 5
+Euphrates | Gen 2:14 | The fourth river.
+  tier: 4
+Hiddekel | Gen 2:14 | The third river, the Tigris; both the WEB and the KJV say Hiddekel.
+  forms: Tigris
+  tier: 5
+Pishon; Pison | Gen 2:11 | The first river, flowing around Havilah.
+  tier: 5
+Gihon | Gen 2:13 | The second river, flowing around Cush.
+  tier: 5
+Havilah | Gen 2:11 | A land of gold.
+  tier: 5
+Cush; Ethiopia | Gen 2:13 | The Gihon flows around it; the KJV says Ethiopia.
+  tier: 5
+Assyria | Gen 2:14 | The Tigris flows east of it.
+  tier: 5
+Gold | Gen 2:11-12 | "The gold of that land is good."
+  tier: 5
+Onyx; onyx stone | Gen 2:12 | Found in Havilah.
+  tier: 5
+River; rivers | Gen 2:10 | A river went out of Eden and parted into four heads.
+  tier: 4
+Garments of skins; skins; coats of skins | Gen 3:21 | God made them and clothed Adam and Eve.
+  tier: 5
+Livestock; cattle; birds; animal; beast | Gen 2:19-20 | Brought to the man to see what he would call them.
+  tier: 4
+Mist | Gen 2:6 | Went up from the earth and watered the ground.
+  tier: 5
+Deep sleep; sleep | Gen 2:21 | God caused it to fall on the man.
+  tier: 5
+Breath of life; breath | Gen 2:7 | Breathed into the man's nostrils.
+  tier: 5
+Heel | Gen 3:15 | "He will bruise your head, and you will bruise his heel."
+  tier: 5
+Sweat | Gen 3:19 | "By the sweat of your face you will eat bread."
+  tier: 5
+Bdellium | Gen 2:12 | Found in Havilah with gold and onyx.
+  sheep: Bdellium appears once more in Scripture: manna looked like it (Numbers 11:7).
+? Apple; apples | Genesis never names the fruit of that tree (Genesis 3:6).
+? Lucifer; Satan; devil | Genesis 3 says "the serpent"; Revelation 12:9 later calls the devil "the old serpent." Try "serpent."
+? Eden; garden; garden of Eden | That's the setting. Name something in it.
+
+@ from-heaven | Signs & Wonders | Name something that came down from heaven or the sky in the Bible. | faithfulness | closed nouns ignore=the,a,an,of,from,heaven,sky,down,came,fell,on,like
+Manna; bread from heaven | Exod 16:4, 14-15; John 6:31 | Bread rained from heaven for forty years.
+  tier: 1
+Fire | Lev 9:24; 1 Kgs 18:38; 2 Kgs 1:10; 2 Chr 7:1 | Fire from the LORD consumed Elijah's sacrifice on Carmel.
+  tier: 1
+Dove; Spirit like a dove; Holy Spirit | Matt 3:16; Luke 3:22 | The Spirit descended on Jesus at his baptism.
+  tier: 1
+Rain | Gen 7:11-12; 1 Kgs 18:45 | The windows of heaven opened for forty days and nights.
+  forms: flood; flood rains
+  tier: 3
+Hail; hailstones | Exod 9:23; Rev 16:21 | The seventh plague, and the great hail of Revelation 16.
+  tier: 3
+Brimstone; sulfur; fire and brimstone | Gen 19:24 | Rained on Sodom and Gomorrah.
+  tier: 3
+Angel | Matt 28:2; Rev 10:1; 20:1 | An angel came down and rolled away the stone.
+  tier: 3
+Jesus; Son of Man; Lord | John 3:13; 6:35, 38; 1 Thess 4:16 | "I have come down from heaven."
+  tier: 4
+Voice; a voice from heaven | Matt 3:17; John 12:28 | "This is my beloved Son."
+  tier: 4
+New Jerusalem; holy city | Rev 21:2, 10 | Coming down out of heaven from God, prepared like a bride.
+  tier: 4
+Sheet | Acts 10:11; 11:5 | Let down by its four corners, full of animals, in Peter's vision.
+  tier: 4
+Tongues of fire; tongues | Acts 2:2-3 | A sound from heaven like a rushing wind at Pentecost.
+  tier: 4
+Light | Acts 9:3; 22:6 | A light from the sky shone around Saul near Damascus.
+  tier: 5
+Stars; star | Rev 6:13; 8:10 | The stars fell to the earth like unripe figs.
+  tier: 5
+Wormwood | Rev 8:10-11 | A great star burning like a torch, making the waters bitter.
+  tier: 5
+Dew | Gen 27:28; Deut 33:13 | The dew of heaven, part of Isaac's blessing.
+  tier: 5
+Snow | Isa 55:10 | "As the rain comes down and the snow from the sky."
+  tier: 5
+Satan; devil; dragon | Luke 10:18; Rev 12:9 | "I saw Satan having fallen like lightning from heaven."
+  tier: 5
+Great stones; stones | Josh 10:11 | Hurled down on the Amorites fleeing Gibeon.
+  forms: large stones
+  sheep: More of the Amorites died from the stones that fell from the sky than the Israelites killed with the sword (Joshua 10:11).
+? Chariot of fire; chariot; Elijah; whirlwind | Elijah's chariot went up, not down (2 Kings 2:11).
+? Quail; quails | The quail were brought by a wind from the sea (Numbers 11:31), not said to fall from heaven.
+? Ladder; Jacob's ladder; stairway | The ladder stood on the earth with its top reaching heaven (Genesis 28:12); try the angels on it.
+
+@ kingdom-is-like | Parables & Miracles | Name something Jesus says the kingdom of heaven (or of God) is like. | kingdom | closed described phrase nouns ignore=the,a,an,of,kingdom,heaven,god,is,like,in,parable,who,which,that,to,his,her
+Mustard seed; mustard; grain of mustard seed | Matt 13:31-32; Mark 4:30-32; Luke 13:18-19 | The smallest of seeds grows into a tree.
+  anchor: mustard
+  tier: 1
+Treasure hidden in a field; treasure; hidden treasure; buried treasure | Matt 13:44 | A man sold all he had to buy that field.
+  anchor: treasure
+  tier: 3
+Pearl; pearl of great price; merchant seeking pearls; merchant; pearls | Matt 13:45-46 | He sold everything to buy one pearl of great price.
+  anchor: pearl
+  tier: 3
+Yeast; leaven | Matt 13:33; Luke 13:20-21 | Hidden in three measures of meal until all was leavened.
+  anchor: yeast; leaven
+  tier: 3
+Ten virgins; virgins; bridesmaids; wise and foolish virgins; lamps | Matt 25:1-13 | Five were wise and took oil for their lamps.
+  anchor: virgins
+  tier: 4
+Wedding feast; marriage feast; wedding banquet; wedding; king's wedding; marriage of the king's son | Matt 22:1-14 | A king made a wedding feast for his son.
+  anchor: wedding; marriage
+  tier: 4
+Net; dragnet; fishing net | Matt 13:47-50 | Cast into the sea, gathering fish of every kind.
+  anchor: net
+  tier: 4
+Wheat and tares; tares; weeds; darnel; good seed; man who sowed good seed | Matt 13:24-30 | An enemy sowed weeds among the wheat.
+  anchor: good seed
+  tier: 4
+Laborers in the vineyard; laborers; workers in the vineyard; landowner; vineyard; householder hiring laborers | Matt 20:1-16 | The last were paid the same as the first.
+  anchor: vineyard
+  tier: 5
+King settling accounts; unforgiving servant; unmerciful servant; king and his servants; settling accounts | Matt 18:23-35 | Forgiven a huge debt, the servant would not forgive a small one.
+  anchor: servants
+  tier: 5
+Talents; man going on a journey; bags of gold; man traveling | Matt 25:14-30 | Servants entrusted with talents while their master was away.
+  anchor: talents
+  tier: 5
+Seed growing by itself; seed growing secretly; growing seed; seed | Mark 4:26-29 | The seed sprouts and grows; the sower doesn't know how.
+  anchor: seed
+  tier: 5
+Householder; master of a house; owner of a house; new and old; treasures new and old | Matt 13:52 | Brings out of his treasure things new and old.
+  anchor: new and old
+  sheep: Jesus says every scribe instructed in the kingdom of heaven is like a householder who brings out of his treasure things new and old (Matthew 13:52).
+? Sower; parable of the sower; four soils | The sower explains "the word of the Kingdom" (Matthew 13:19), but Jesus doesn't open it with "the kingdom is like."
+? Little child; children; child | Jesus says the kingdom belongs to such as these (Matthew 19:14), not that it is like them.
+
+@ revelation | Books of the Bible | Name a creature, figure, or object in the book of Revelation. | light | nouns ignore=the,a,an,of,in,revelation
+Lamb | Rev 5:6; 21:22-23 | Standing as though it had been slain, in the midst of the throne.
+  tier: 1
+Dragon | Rev 12:3, 9 | A great red dragon with seven heads and ten horns, called the old serpent.
+  tier: 1
+Beast | Rev 13:1, 11 | One beast rises from the sea and another from the earth.
+  forms: beast from the sea; beast from the earth; beast out of the sea; beast out of the earth
+  tier: 1
+Mark of the beast; mark | Rev 13:16-17; 16:2 | Received on the right hand or on the forehead.
+  tier: 1
+Six hundred sixty-six; six hundred threescore and six | Rev 13:18 | "His number is six hundred sixty-six."
+  forms: 666
+  tier: 1
+New Jerusalem; holy city | Rev 3:12; 21:2 | Coming down out of heaven from God.
+  tier: 3
+White horse | Rev 6:2; 19:11 | Its rider "came forth conquering, and to conquer."
+  tier: 3
+Red horse | Rev 6:4 | Its rider was given power to take peace from the earth.
+  tier: 4
+Black horse | Rev 6:5 | Its rider held a balance in his hand.
+  tier: 4
+Pale horse | Rev 6:8 | Its rider's name was Death.
+  tier: 3
+Death; Hades; hell | Rev 6:8; 20:13-14 | Death rode the pale horse, and Hades followed.
+  tier: 4
+Seven seals; seals; seal; book | Rev 5:1-5; 6:1 | A scroll sealed with seven seals that only the Lamb could open.
+  tier: 3
+Seven trumpets; trumpets; trumpet | Rev 8:2, 6 | Given to the seven angels who stand before God.
+  tier: 3
+Seven bowls; bowls; vials; bowl | Rev 15:7; 16:1 | Full of the wrath of God; the KJV says vials.
+  tier: 4
+Seven golden lamp stands; lamp stands; candlesticks; golden candlesticks; seven golden candlesticks | Rev 1:12, 20 | The seven churches.
+  forms: lampstands; seven lampstands; golden lampstands
+  tier: 4
+Seven stars; stars | Rev 1:16, 20 | Held in his right hand: the angels of the seven churches.
+  tier: 4
+Twenty-four elders; elders; four and twenty elders | Rev 4:4, 10 | Seated on thrones, casting their crowns before the throne.
+  tier: 3
+Four living creatures; living creatures; four beasts | Rev 4:6-8 | Full of eyes, crying "Holy, holy, holy."
+  tier: 3
+Throne; great white throne; white throne | Rev 4:2; 20:11 | One sat on it, and a rainbow was around it.
+  tier: 3
+Rainbow | Rev 4:3; 10:1 | Around the throne, like an emerald to look at.
+  tier: 4
+Sea of glass | Rev 4:6; 15:2 | Before the throne, like crystal.
+  tier: 4
+One hundred forty-four thousand; hundred and forty and four thousand | Rev 7:4; 14:1 | Sealed from every tribe of Israel.
+  forms: 144000; 144,000
+  tier: 3
+Great multitude; multitude | Rev 7:9 | From every nation, tribe, people and language, which no one could count.
+  tier: 4
+Two witnesses; witnesses | Rev 11:3 | They prophesy for 1,260 days, clothed in sackcloth.
+  tier: 4
+Locusts | Rev 9:3, 7 | Out of the smoke of the abyss, shaped like horses prepared for war.
+  tier: 4
+Abaddon; Apollyon | Rev 9:11 | The angel of the abyss, their king.
+  tier: 5
+Woman clothed with the sun; woman | Rev 12:1 | With the moon under her feet and a crown of twelve stars.
+  tier: 4
+Michael | Rev 12:7 | He and his angels made war on the dragon.
+  tier: 4
+Satan; devil; serpent; old serpent | Rev 12:9; 20:2 | Thrown down to the earth.
+  tier: 3
+False prophet | Rev 16:13; 19:20; 20:10 | Thrown into the lake of fire with the beast.
+  tier: 4
+Babylon; Babylon the great | Rev 14:8; 17:5; 18:2 | "Fallen, fallen is Babylon the great."
+  tier: 3
+Prostitute; harlot; great prostitute; whore; great whore | Rev 17:1, 5 | She sits on many waters.
+  tier: 4
+Armageddon; Har-Magedon | Rev 16:16 | Where the kings of the whole world are gathered.
+  tier: 3
+Thousand years | Rev 20:2-7 | Satan is bound, and they reign with Christ.
+  forms: millennium
+  tier: 4
+Gog; Magog; Gog and Magog | Rev 20:8 | The nations gathered for battle at the end of the thousand years.
+  tier: 5
+Book of life; Lamb's book of life | Rev 3:5; 20:12, 15; 21:27 | Whoever was not found written in it was cast into the lake of fire.
+  tier: 4
+Lake of fire | Rev 19:20; 20:10, 14-15 | The second death.
+  tier: 3
+Tree of life | Rev 2:7; 22:2 | Bearing twelve kinds of fruit, its leaves for the healing of the nations.
+  tier: 4
+River of the water of life; river; water of life | Rev 22:1 | Clear as crystal, flowing from the throne of God and of the Lamb.
+  tier: 4
+Alpha and Omega; Alpha; Omega | Rev 1:8; 21:6; 22:13 | The beginning and the end.
+  tier: 3
+Lion of the tribe of Judah; Lion | Rev 5:5 | "The Root of David has overcome."
+  tier: 4
+Son of Man | Rev 1:13; 14:14 | Among the lampstands, with eyes like a flame of fire.
+  tier: 5
+Faithful and True | Rev 19:11 | The rider on the white horse.
+  tier: 5
+King of kings; Lord of lords | Rev 17:14; 19:16 | Written on his garment and on his thigh.
+  tier: 4
+Bride; wife | Rev 19:7; 21:2, 9 | The Lamb's wife, made ready.
+  tier: 4
+Marriage supper; wedding supper; marriage of the Lamb | Rev 19:7-9 | "Blessed are those who are invited."
+  tier: 5
+Golden altar; altar | Rev 8:3; 9:13 | Where an angel offered incense with the prayers of the saints.
+  tier: 5
+Censer; golden censer | Rev 8:3, 5 | Filled with fire from the altar and thrown to the earth.
+  tier: 5
+Incense | Rev 5:8; 8:3-4 | The prayers of the saints.
+  tier: 5
+Little book | Rev 10:2, 9-10 | Sweet as honey in John's mouth, bitter in his stomach.
+  forms: little scroll
+  tier: 5
+Reed | Rev 11:1; 21:15 | A measuring reed, used for the temple and later the city.
+  forms: measuring rod; measuring reed
+  tier: 5
+Ark of the covenant; ark | Rev 11:19 | Seen in God's temple in heaven.
+  tier: 5
+Abyss; bottomless pit | Rev 9:1-2; 20:1-3 | The beast comes up out of it; Satan is shut in it.
+  tier: 4
+Key; keys | Rev 1:18; 9:1; 20:1 | The keys of Death and of Hades.
+  tier: 5
+Sickle | Rev 14:14-19 | The harvest of the earth.
+  tier: 5
+Winepress | Rev 14:19-20; 19:15 | The great winepress of the wrath of God.
+  tier: 5
+Frogs | Rev 16:13 | Three unclean spirits like frogs.
+  tier: 5
+Eagle | Rev 8:13; 12:14 | Flying in mid heaven, crying "Woe, woe, woe."
+  tier: 5
+Euphrates | Rev 9:14; 16:12 | Dried up to prepare the way for the kings from the east.
+  tier: 5
+Patmos | Rev 1:9 | The island where John received the revelation.
+  tier: 3
+John | Rev 1:1, 4, 9; 22:8 | "I, John, your brother."
+  tier: 3
+Hidden manna; manna | Rev 2:17 | Promised to the one who overcomes at Pergamum.
+  tier: 5
+White stone | Rev 2:17 | With a new name written on it that no one knows.
+  tier: 5
+Morning star | Rev 2:28; 22:16 | "I am the root and the offspring of David, the bright and morning star."
+  tier: 5
+Key of David | Rev 3:7 | He opens and no one can shut.
+  tier: 5
+Nicolaitans | Rev 2:6, 15 | Their works the church at Ephesus hated.
+  tier: 5
+Jezebel | Rev 2:20 | The self-styled prophetess at Thyatira.
+  tier: 5
+Balaam | Rev 2:14 | His teaching was held by some at Pergamum.
+  tier: 5
+Antipas | Rev 2:13 | "My faithful witness, who was killed among you."
+  tier: 5
+Gates of pearl; pearl; pearls; twelve gates | Rev 21:12, 21 | Each gate was made of a single pearl.
+  tier: 4
+Street of gold; gold | Rev 21:18, 21 | Pure gold, like transparent glass.
+  tier: 4
+Jasper | Rev 4:3; 21:11, 18-19 | The city's light was like a jasper stone.
+  tier: 5
+Wormwood | Rev 8:10-11 | A great star, burning like a torch, fell on the rivers and springs.
+  sheep: When the star called Wormwood fell, a third of the waters became wormwood, and many people died from the bitter water (Revelation 8:11).
+? Antichrist | The word "antichrist" is in 1 and 2 John (1 John 2:18; 2 John 7), not in Revelation.
+? Rapture | "Rapture" is not a word used in Revelation.
+? Four horses; four horsemen; horsemen; four horsemen of the apocalypse | Name a rider or a horse: white, red, black, or pale (Revelation 6).
+
+@ prisoners | People | Name a person put in prison, a pit, a cistern, or a den in the Bible. | courage | closed ignore=the,a,an,of,king,prophet,chief,seer,apostle
+Joseph | Gen 37:24; 39:20 | Thrown into a pit by his brothers, then into Pharaoh's prison.
+  tier: 1
+Daniel | Dan 6:16-23 | Thrown into the lions' den; God shut the lions' mouths.
+  tier: 1
+Paul | Acts 16:23-26; 28:16, 30 | Prayed and sang in the Philippi jail at midnight.
+  tier: 1
+Peter | Acts 12:4-10 | Led out of prison by an angel the night before his trial.
+  tier: 3
+Silas | Acts 16:23-25 | Sang hymns with Paul in the stocks at Philippi.
+  tier: 3
+John; John the Baptist | Matt 14:3; Mark 6:17; Matthew 14:2 | Herod put him in prison for speaking about Herodias.
+  tier: 3
+Jeremiah | Jer 37:15-16; 38:6 | Let down by ropes into a muddy cistern.
+  tier: 3
+Barabbas | Mark 15:7; Luke 23:19 | In prison for insurrection and murder; released instead of Jesus.
+  tier: 3
+Samson | Judg 16:21, 25 | Blinded and set to grind grain in the prison at Gaza.
+  tier: 4
+Cupbearer; butler; chief butler | Gen 40:1-3; Genesis 40:9 | Joseph interpreted his dream in prison.
+  forms: chief cupbearer
+  tier: 4
+Baker; chief baker | Gen 40:1-3 | Joseph interpreted his dream too, with a darker ending.
+  tier: 4
+Apostles | Acts 5:18-19 | An angel opened the prison doors by night.
+  tier: 4
+Simeon | Gen 42:24 | Kept bound in Egypt until his brothers brought Benjamin.
+  tier: 5
+Zedekiah | Jer 52:11 | Blinded and kept in prison in Babylon until he died.
+  tier: 5
+Jehoiachin | 2 Kgs 25:27-29; Jer 52:31 | Released from prison after thirty-seven years and given a seat at the king's table.
+  forms: Jeconiah
+  tier: 5
+Hoshea | 2 Kgs 17:4 | The last king of Israel, imprisoned by the king of Assyria.
+  tier: 5
+Micaiah | 1 Kgs 22:26-27 | Fed "bread of affliction" in prison for prophesying against Ahab.
+  tier: 5
+Aristarchus | Col 4:10 | Paul's "fellow prisoner."
+  tier: 5
+Epaphras | Phlm 23 | "My fellow prisoner in Christ Jesus."
+  tier: 5
+Andronicus | Rom 16:7 | Paul's relative and fellow prisoner.
+  tier: 5
+Junia | Rom 16:7 | Paul's relative and fellow prisoner, with Andronicus.
+  forms: Junias
+  tier: 5
+Hanani | 2 Chr 16:7-10 | The seer who rebuked King Asa.
+  sheep: When Hanani rebuked Asa for relying on the king of Syria instead of the LORD, the king put him in the prison house in a rage (2 Chronicles 16:10).
+? Shadrach; Meshach; Abednego | They were thrown into a fiery furnace (Daniel 3), not a prison.
+? Jonah | Jonah was swallowed by a great fish (Jonah 1:17), not imprisoned.
+
+@ who-wept | People | Name a person the Bible says wept or cried. | mercy | closed ignore=the,a,an,of,king,prophet,son,daughter
+Jesus | John 11:35; Luke 19:41 | "Jesus wept."
+  seat: "Jesus wept" (John 11:35) is the shortest verse in most English Bibles, but Jesus also wept over Jerusalem (Luke 19:41) and with loud cries and tears (Hebrews 5:7).
+Peter | Matt 26:75; Luke 22:62 | He went out and wept bitterly after denying Jesus.
+  tier: 1
+David | 1 Sam 20:41; 2 Sam 18:33 | "O my son Absalom!"
+  tier: 1
+Hannah | 1 Sam 1:7, 10; 1 Samuel 1:8 | She wept and would not eat, praying for a son.
+  tier: 3
+Mary Magdalene; Mary | John 20:11; John 20:18 | She stood outside the tomb weeping.
+  tier: 3
+Jacob | Gen 29:11; 33:4 | He kissed Rachel and wept.
+  tier: 3
+Joseph | Gen 42:24; 45:2; 50:1 | He wept so loudly that the Egyptians heard.
+  tier: 3
+Esau | Gen 27:38 | "Bless me, even me also, my father!"
+  tier: 4
+Hagar | Gen 21:16; Genesis 21:17 | She sat apart so she would not watch the child die.
+  tier: 4
+Abraham | Gen 23:2 | Came to mourn and weep for Sarah.
+  tier: 4
+Ruth | Ruth 1:9, 14 | They lifted up their voices and wept.
+  tier: 4
+Orpah | Ruth 1:14 | She kissed Naomi goodbye.
+  tier: 5
+Naomi | Ruth 1:9; Ruth 1:8 | Wept with her daughters-in-law on the road to Judah.
+  tier: 5
+Jonathan | 1 Sam 20:41; 1 Samuel 20:40 | He and David kissed one another and wept.
+  tier: 5
+Saul | 1 Sam 24:16 | Lifted up his voice and wept when David spared him.
+  tier: 5
+Hezekiah | 2 Kgs 20:3; Isa 38:3 | Wept bitterly when told he would die.
+  tier: 4
+Josiah | 2 Kgs 22:1, 19 | He tore his clothes and wept when the Law was read.
+  tier: 5
+Ezra | Ezra 10:1 | Weeping and casting himself down before the house of God.
+  tier: 5
+Nehemiah | Neh 1:4; Nehemiah 1:1 | Sat down and wept when he heard Jerusalem's walls were broken.
+  tier: 4
+Esther | Esth 8:3 | Fell at the king's feet and begged him with tears.
+  tier: 5
+Jeremiah | Jer 1:1; 9:1; 13:17 | "Oh that my head were waters, and my eyes a spring of tears."
+  tier: 4
+Job | Job 16:1, 16, 20 | "My face is red with weeping."
+  tier: 5
+Elisha | 2 Kgs 8:11-12; 2 Kings 8:10 | Wept over the harm Hazael would do to Israel.
+  tier: 5
+Benjamin | Gen 45:14 | Wept on Joseph's neck.
+  tier: 5
+Rachel | Jer 31:15; Matt 2:18 | "Rachel weeping for her children."
+  tier: 5
+Tamar | 2 Sam 13:19 | Went away crying aloud.
+  tier: 5
+Paul | Acts 20:19, 31; Phil 3:18; Acts 20:16 | He warned the Ephesians night and day with tears.
+  tier: 5
+Timothy | 2 Tim 1:4; 2 Timothy 1:2 | Paul remembered his tears.
+  tier: 5
+John | Rev 1:9; 5:4 | Wept much because no one was worthy to open the scroll.
+  tier: 5
+Elders of Ephesus; elders | Acts 20:17, 37 | They all wept and fell on Paul's neck.
+  forms: Ephesian elders
+  tier: 5
+Widows | Acts 9:39 | Stood weeping and showing the garments Dorcas had made.
+  forms: widows of Joppa
+  tier: 5
+Moses | Exod 2:6; Exodus 2:10 | Pharaoh's daughter opened the basket, and the baby cried.
+  tier: 5
+Joash | 2 Kgs 13:14 | The king of Israel wept over Elisha in his last illness.
+  sheep: King Joash wept over the dying Elisha and cried, "My father, my father, the chariots of Israel and its horsemen!" (2 Kings 13:14), the words Elisha had once cried over Elijah.
+? Jesus wept | Just the name: Jesus. (The verse is John 11:35.)
+
+@ who-ran | People | Name a person the Bible says ran. | calling | closed ignore=the,a,an,of,king,son
+Zacchaeus | Luke 19:4; Luke 19:5 | Ran ahead and climbed a sycamore tree to see Jesus.
+  tier: 1
+Peter | John 20:4; Luke 24:12 | Ran to the tomb, but the other disciple outran him.
+  tier: 1
+David | 1 Sam 17:48, 51 | Ran toward the battle line to meet Goliath.
+  tier: 1
+Mary Magdalene; Mary | John 20:1-2 | Ran to tell Peter that the stone had been taken away.
+  tier: 3
+Abraham | Gen 18:2; Genesis 18:6 | Ran from the tent door to meet three visitors.
+  tier: 3
+Esau | Gen 33:4 | Ran to meet Jacob and embraced him.
+  tier: 3
+Samuel | 1 Sam 3:5; 1 Samuel 3:4 | Ran to Eli: "Here I am; for you called me."
+  tier: 4
+Rebekah | Gen 24:15, 20, 28 | Ran to draw water for all the camels.
+  tier: 4
+Laban | Gen 24:29 | Ran out to the man at the spring.
+  tier: 5
+Aaron | Num 16:47 | Ran into the assembly with incense as the plague began.
+  tier: 5
+Asahel | 2 Sam 2:18-19 | "As light of foot as a wild gazelle."
+  tier: 5
+Ahimaaz | 2 Sam 18:19-23 | Outran the Cushite to bring David news.
+  tier: 5
+Cushite; Cushi | 2 Sam 18:21-23 | Sent to tell David of the battle.
+  tier: 5
+Elisha | 1 Kgs 19:20 | Left the oxen and ran after Elijah.
+  tier: 5
+Gehazi | 2 Kgs 5:20-21 | Ran after Naaman to take a gift.
+  tier: 5
+Philip | Acts 8:30 | Ran to the Ethiopian's chariot.
+  tier: 4
+Rhoda | Acts 12:14; Acts 12:13 | Ran in to say Peter was at the gate, and forgot to open it.
+  tier: 4
+Disciple whom Jesus loved; other disciple | John 20:2-4 | Outran Peter to the tomb.
+  forms: beloved disciple
+  tier: 4
+Women | Matt 28:8; Matthew 28:5 | Ran to bring the disciples word.
+  forms: women at the tomb
+  tier: 4
+Father | Luke 15:20 | Saw his son a great way off and ran.
+  forms: father of the prodigal son; prodigal son's father; prodigal's father
+  tier: 3
+Elijah | 1 Kgs 18:46 | Ran ahead of Ahab's chariot to Jezreel.
+  sheep: With the hand of the LORD on him, Elijah tucked up his cloak and ran ahead of Ahab's chariot all the way to Jezreel (1 Kings 18:46).
+? Jonah | Jonah fled toward Tarshish by ship (Jonah 1:3); the text doesn't say he ran.
+
+@ who-fasted | People | Name a person or group the Bible says fasted. | prayer | closed ignore=the,a,an,of,king,men,people
+Jesus | Matt 4:2; Luke 4:2; Matthew 4:1 | Fasted forty days and forty nights in the wilderness.
+  tier: 1
+Moses | Exod 34:28; Deut 9:9, 18; Exodus 34:27 | Forty days on the mountain without bread or water.
+  tier: 1
+Esther | Esth 4:16; Esther 4:15 | "Fast for me… I and my maidens will also fast."
+  tier: 1
+Daniel | Dan 9:3; 10:2-3 | Sought the Lord with prayer and fasting, sackcloth and ashes.
+  tier: 3
+David | 2 Sam 12:16; 1:12 | Fasted and lay on the ground while his child was sick.
+  tier: 3
+Nineveh; people of Nineveh | Jonah 3:5 | Believed God and proclaimed a fast.
+  forms: Ninevites
+  tier: 3
+Nehemiah | Neh 1:4; Nehemiah 1:1 | Fasted and prayed when he heard of Jerusalem.
+  tier: 4
+Ezra | Ezra 8:21-23; 10:6 | Proclaimed a fast at the river Ahava.
+  tier: 4
+Anna | Luke 2:37; Luke 2:36 | Served God with fastings and prayers night and day.
+  tier: 4
+Paul; Saul | Acts 13:2-3; 14:23; 2 Cor 11:27; Acts 13:9 | "In fastings often."
+  tier: 4
+Barnabas | Acts 13:2-3; 14:23 | With prayer and fasting they appointed elders.
+  tier: 5
+Ahab | 1 Kgs 21:27 | Fasted in sackcloth after Elijah's rebuke.
+  tier: 5
+Jehoshaphat | 2 Chr 20:3 | Proclaimed a fast throughout all Judah.
+  tier: 5
+Darius | Dan 6:18; Daniel 6:25 | Passed the night fasting while Daniel was in the den.
+  tier: 5
+Cornelius | Acts 10:30 | In the KJV he was fasting until the ninth hour.
+  tier: 5
+Pharisee | Luke 18:12; Luke 18:11 | "I fast twice a week."
+  tier: 5
+John's disciples; disciples of John | Mark 2:18 | They fasted, and asked why Jesus' disciples didn't.
+  tier: 5
+Israelites; Israel; children of Israel | Judg 20:26; 1 Sam 7:6; Judges 20:21 | Fasted at Bethel and at Mizpah.
+  tier: 4
+Jews | Esth 4:3 | Great mourning, fasting and weeping in every province.
+  tier: 5
+Jabesh Gilead; Jabesh-gilead; Jabesh | 1 Sam 31:11-13 | They recovered the bodies of Saul and his sons.
+  forms: men of Jabesh-gilead; men of Jabesh Gilead
+  sheep: The men of Jabesh Gilead walked all night to take Saul's body from the wall of Beth Shan, buried his bones under a tamarisk tree, and fasted seven days (1 Samuel 31:11–13).
+? Elijah | 1 Kings 19:8 says Elijah went forty days in the strength of the food the angel gave him, not that he fasted.
+? Jezebel | Jezebel proclaimed a fast to frame Naboth (1 Kings 21:9); the text doesn't say she fasted.
+
+@ shepherds | Trades & Callings | Name a person the Bible describes as a shepherd or keeper of flocks. | calling | closed ignore=the,a,an,of,king,shepherd,shepherds
+David | 1 Sam 16:11; 17:34-35 | Kept his father's sheep and fought a lion and a bear.
+  tier: 1
+Jesus | John 10:11, 14; John 10:7 | "I am the good shepherd."
+  tier: 1
+Shepherds of Bethlehem; shepherds in the field | Luke 2:8, 15 | Keeping watch over their flock by night.
+  forms: Bethlehem shepherds
+  tier: 1
+Moses | Exod 3:1 | Keeping the flock of Jethro his father-in-law when he saw the bush.
+  tier: 3
+Abel | Gen 4:2 | "Abel was a keeper of sheep."
+  tier: 3
+LORD; Yahweh; God | Ps 23:1; 80:1; Psalms 80:3 | "The LORD is my shepherd."
+  tier: 3
+Jacob | Gen 30:31; 31:38-40 | Kept Laban's flocks for twenty years.
+  tier: 4
+Rachel | Gen 29:9 | She kept her father's sheep.
+  tier: 4
+Joseph | Gen 37:2 | At seventeen he was feeding the flock with his brothers.
+  tier: 4
+Amos | Amos 1:1; 7:14-15 | Among the herdsmen of Tekoa when the LORD took him.
+  tier: 4
+Cyrus | Isa 44:28 | "He is my shepherd, and shall perform all my pleasure."
+  tier: 5
+Doeg | 1 Sam 21:7 | The Edomite, chief of Saul's herdsmen.
+  tier: 5
+Zipporah | Exod 2:16-21 | One of the seven daughters of the priest of Midian who watered their father's flock.
+  forms: daughters of Reuel; Reuel's daughters; Jethro's daughters
+  tier: 5
+Jacob's sons; Joseph's brothers; brothers | Gen 37:12; 46:32-34; Genesis 46:27; Genesis 37:13 | "Your servants are shepherds, both we and our fathers."
+  tier: 5
+Zechariah | Zech 1:1; 11:4-7 | "So I fed the flock of slaughter."
+  tier: 5
+Mesha | 2 Kgs 3:4 | King of Moab.
+  sheep: Mesha king of Moab was a sheep breeder who paid Israel a hundred thousand lambs and the wool of a hundred thousand rams (2 Kings 3:4).
+? Peter | Jesus told Peter, "Tend my sheep" (John 21:16), but Peter isn't called a shepherd of flocks.
+? Abraham; Lot | Abram and Lot had flocks and herdsmen (Genesis 13:5–7), but the text doesn't call them shepherds.
+
+@ blindness | Signs & Wonders | Name a person struck blind, healed of blindness, or whose eyes failed in the Bible. | light | closed ignore=the,a,an,of,man,men,king,blind
+Bartimaeus | Mark 10:46-52 | "Son of David, have mercy on me!"
+  tier: 1
+Man born blind | John 9:1-7 | Washed in the pool of Siloam and came back seeing.
+  tier: 1
+Saul | Acts 9:8-9, 17-18 | Blind three days after the light on the Damascus road.
+  forms: Paul
+  tier: 1
+Samson | Judg 16:21; Judges 16:20 | The Philistines put out his eyes.
+  tier: 3
+Isaac | Gen 27:1 | His eyes were so dim he could not see.
+  tier: 3
+Two blind men | Matt 9:27-30; 20:30-34 | Followed Jesus crying, "Have mercy on us, son of David!"
+  tier: 3
+Blind man of Bethsaida; Bethsaida | Mark 8:22-25 | Saw "men like trees walking" before seeing clearly.
+  tier: 4
+Elymas; Bar-Jesus; Bar Jesus | Acts 13:6-11 | The sorcerer struck blind for a season.
+  tier: 4
+Men of Sodom; Sodom | Gen 19:11; Genesis 19:4 | Struck with blindness at Lot's door.
+  tier: 4
+Eli | 1 Sam 3:2; 4:15 | Ninety-eight years old, his eyes set so he could not see.
+  tier: 4
+Zedekiah | 2 Kgs 25:7; Jer 52:11 | The Babylonians put out his eyes.
+  tier: 5
+Syrians; army | 2 Kgs 6:18-20; 2 Kings 6:9; 2 Kings 6:15 | Struck with blindness at Elisha's prayer and led into Samaria.
+  forms: Syrian army; Arameans; Aramean army
+  tier: 5
+Jacob; Israel | Gen 48:10; Genesis 48:3 | His eyes were dim with age when he blessed Joseph's sons.
+  tier: 5
+Ahijah | 1 Kgs 14:4-6 | The prophet at Shiloh.
+  sheep: Ahijah was blind with age, yet he knew Jeroboam's disguised wife the moment she came to his door, because the LORD had told him (1 Kings 14:4–6).
+? Moses | Moses was the opposite: at 120, "his eye was not dim" (Deuteronomy 34:7).
+? Leah | Leah's eyes were "weak" or "tender" (Genesis 29:17), but she wasn't blind.
+? Tobit | Tobit's blindness is told in the book of Tobit, which isn't one of the 66 books.
+
+@ names-of-god | Names & Titles | Name a name or title of God in the Old Testament. | worship | closed ignore=the,a,an,o
+LORD; Yahweh; Jehovah | Exod 3:15; 6:3; Ps 83:18 | The covenant name; the KJV prints it LORD, and Jehovah four times.
+  tier: 1
+God | Gen 1:1 | "In the beginning, God created the heavens and the earth."
+  forms: Elohim
+  tier: 1
+I AM; I AM WHO I AM; I AM THAT I AM | Exod 3:14 | God's answer to Moses at the burning bush.
+  tier: 1
+God Almighty; Almighty; Almighty God | Gen 17:1; 35:11 | Said to Abram at ninety-nine.
+  forms: El Shaddai; Shaddai
+  tier: 3
+Most High; God Most High; most high God | Gen 14:18-20; Ps 91:1 | Melchizedek was his priest.
+  forms: El Elyon
+  tier: 3
+Yahweh Will Provide; Jehovah-jireh; Jehovahjireh | Gen 22:14 | Abraham's name for the mountain where the ram was caught.
+  forms: Yahweh Jireh; the LORD will provide; Jehovah Jireh
+  tier: 3
+Rock | Deut 32:4; Ps 18:2 | "The Rock: his work is perfect."
+  tier: 3
+Shepherd | Ps 23:1; 80:1 | "Yahweh is my shepherd."
+  tier: 3
+Ancient of Days | Dan 7:9, 13, 22 | Seated on a throne of fiery flames.
+  tier: 3
+Mighty God | Isa 9:6 | One of the names given to the promised child.
+  tier: 4
+Everlasting Father | Isa 9:6 | One of the names given to the promised child.
+  tier: 4
+Prince of Peace | Isa 9:6 | One of the names given to the promised child.
+  tier: 4
+Wonderful Counselor; Wonderful; Counselor | Isa 9:6 | One of the names given to the promised child.
+  tier: 4
+Immanuel | Isa 7:14; 8:8 | "God with us": the sign given to Ahaz.
+  forms: Emmanuel
+  tier: 4
+Holy One of Israel; Holy One | Isa 1:4; 41:14 | Isaiah's favorite name for God.
+  tier: 4
+Everlasting God | Gen 21:33; Isa 40:28 | Abraham called on him at Beersheba.
+  forms: El Olam
+  tier: 4
+God who sees; Thou God seest me | Gen 16:13 | Hagar's name for the God who spoke to her in the wilderness.
+  forms: El Roi; God who sees me
+  tier: 4
+LORD of hosts; Yahweh of Armies | 1 Sam 1:3; Isa 6:3 | "Holy, holy, holy, is Yahweh of Armies!"
+  forms: Lord of Sabaoth; LORD of Armies
+  tier: 4
+Redeemer | Job 19:25; Isa 41:14 | "I know that my Redeemer lives."
+  tier: 4
+Creator | Eccl 12:1; Isa 40:28 | "Remember also your Creator in the days of your youth."
+  tier: 4
+King of glory | Ps 24:7-10 | "Who is this King of glory? Yahweh of Armies."
+  tier: 4
+Father | Isa 63:16; 64:8 | "But now, Yahweh, you are our Father."
+  tier: 4
+Judge of all the earth; Judge | Gen 18:25 | "Shouldn't the Judge of all the earth do right?"
+  tier: 5
+Yahweh our Banner; Jehovah-nissi; Jehovahnissi | Exod 17:15 | Moses' name for the altar after the victory over Amalek.
+  forms: Jehovah Nissi; Yahweh Nissi; the LORD is my banner; the LORD our banner
+  tier: 5
+Yahweh is Peace; Jehovah-shalom; Jehovahshalom | Judg 6:24 | Gideon's name for his altar at Ophrah.
+  forms: Jehovah Shalom; Yahweh Shalom; the LORD is peace
+  tier: 5
+Yahweh our righteousness; THE LORD OUR RIGHTEOUSNESS | Jer 23:6; 33:16 | The name of the righteous Branch from David.
+  forms: Jehovah Tsidkenu
+  tier: 5
+Yahweh is there; The LORD is there | Ezek 48:35 | The name of the city in Ezekiel's vision.
+  forms: Jehovah Shammah; Jehovah-shammah
+  tier: 5
+Living God | Deut 5:26; Jer 10:10 | "He is the living God, and an everlasting King."
+  tier: 5
+Fortress | Ps 18:2; 91:2 | "Yahweh is my rock, my fortress, and my deliverer."
+  tier: 5
+Deliverer | Ps 18:2; 144:2 | "My rock, my fortress, and my deliverer."
+  tier: 5
+Shield | Gen 15:1; Ps 84:11 | "I am your shield, your exceedingly great reward."
+  tier: 5
+Refuge | Ps 46:1; 91:2 | "God is our refuge and strength."
+  tier: 5
+Keeper | Ps 121:5 | "Yahweh is your keeper."
+  tier: 5
+Maker | Ps 95:6; Isa 54:5 | "Let's kneel before Yahweh, our Maker."
+  tier: 5
+Potter | Isa 64:8 | "We are the clay, and you our potter."
+  tier: 5
+Light | Ps 27:1 | "Yahweh is my light and my salvation."
+  tier: 5
+God of gods; Lord of lords | Deut 10:17 | "The great God, the mighty, and the awesome."
+  tier: 5
+Mighty One of Jacob; Mighty One of Israel | Gen 49:24; Isa 1:24; 49:26 | Jacob's blessing on Joseph names him.
+  tier: 5
+God of Abraham | Exod 3:6, 15 | "The God of Abraham, the God of Isaac, and the God of Jacob."
+  forms: God of Abraham, Isaac, and Jacob
+  tier: 5
+Yahweh who heals you | Exod 15:26 | Spoken at Marah after the bitter water was made sweet.
+  forms: the LORD that healeth thee; Jehovah Rapha; Jehovah-rapha; the LORD who heals
+  tier: 5
+Jealous | Exod 34:14 | Said as the covenant was renewed.
+  sheep: "Yahweh, whose name is Jealous, is a jealous God" (Exodus 34:14): the one place God gives "Jealous" as his name.
+? Adonai | Adonai is the Hebrew word behind "Lord"; it isn't printed in the WEB or the KJV. Try "Lord" or "LORD".
+? Jesus; Christ; Messiah | Try that in a "titles of Jesus" round: this prompt is Old Testament names of God.
+? Allah | Not a name used in the Bible.
+
+@ holy-spirit-names | Names & Titles | Name a name or title of the Holy Spirit in the Bible. | prayer | closed ignore=the,a,an
+Holy Spirit; Holy Ghost | Matt 28:19; Luke 11:13 | "Baptizing them in the name of the Father and of the Son and of the Holy Spirit."
+  tier: 1
+Spirit of God | Gen 1:2; Rom 8:14 | Hovering over the surface of the waters.
+  tier: 1
+Counselor; Comforter | John 14:16, 26 | "Another Counselor, that he may be with you forever."
+  forms: Helper; Advocate; Paraclete
+  tier: 3
+Spirit of truth | John 14:17; 15:26; 16:13 | "He will guide you into all truth."
+  tier: 3
+Spirit of the LORD; Spirit of Yahweh | Judg 14:6; Isa 11:2 | Came mightily on Samson.
+  tier: 3
+Spirit of Christ | Rom 8:9; 1 Pet 1:11 | "If any man doesn't have the Spirit of Christ, he is not his."
+  tier: 4
+Spirit of adoption | Rom 8:15 | "By whom we cry, 'Abba! Father!'"
+  tier: 4
+Spirit of grace | Heb 10:29; Zech 12:10 | Insulting him is named among the gravest sins in Hebrews.
+  tier: 5
+Spirit of glory | 1 Pet 4:14 | "The Spirit of glory and of God rests on you."
+  tier: 5
+Spirit of life | Rom 8:2 | "The law of the Spirit of life in Christ Jesus made me free."
+  tier: 5
+Spirit of Jesus | Acts 16:7; Acts 16:18 | Did not allow Paul and Silas to go into Bithynia.
+  tier: 5
+Spirit of his Son | Gal 4:6 | Sent into our hearts, crying "Abba, Father!"
+  tier: 5
+Spirit of holiness | Rom 1:4 | Through whom Jesus was declared the Son of God with power.
+  tier: 5
+Holy Spirit of promise; Spirit of promise | Eph 1:13 | "You were sealed with the promised Holy Spirit."
+  tier: 5
+Spirit of the living God | 2 Cor 3:3 | Writing on tablets of human hearts.
+  tier: 5
+Spirit of your Father | Matt 10:20 | Speaking through the disciples when they are handed over.
+  tier: 5
+Eternal Spirit | Heb 9:14 | Named in Hebrews.
+  sheep: "Eternal Spirit" is used once: Christ "through the eternal Spirit offered himself without defect to God" (Hebrews 9:14).
+? Dove | The Spirit descended "like a dove" (Matthew 3:16), a likeness rather than a name.
+? Wind; breath; fire | Pictures of the Spirit (John 3:8; Acts 2:3), not titles.
+
+@ spiritual-gifts | Words & Virtues | Name a gift or calling Paul lists in Romans 12, 1 Corinthians 12, or Ephesians 4. | church | closed described phrase nouns ignore=the,a,an,of,gift,gifts,spiritual,to,be,word
+Prophecy; prophesying; prophesy | Rom 12:6; 1 Cor 12:10 | In all three of Paul's lists in one form.
+  anchor: prophecy
+  tier: 1
+Teaching; teach | Rom 12:7 | "He who teaches, to his teaching."
+  anchor: teaching
+  tier: 1
+Tongues; speaking in tongues; kinds of tongues; languages; kinds of languages | 1 Cor 12:10, 28 | The WEB reads "different kinds of languages."
+  anchor: languages; tongues
+  tier: 1
+Healing; healings; gifts of healing | 1 Cor 12:9, 28 | "Gifts of healings by the same Spirit."
+  anchor: healing; healings
+  tier: 3
+Faith | 1 Cor 12:9 | "To another faith by the same Spirit."
+  anchor: faith
+  tier: 3
+Miracles; working of miracles; miracle workers | 1 Cor 12:10, 28 | "Workings of miracles."
+  anchor: miracles
+  tier: 3
+Apostles; apostle | Eph 4:11; 1 Cor 12:28 | First in both of Paul's lists of callings.
+  anchor: apostles
+  tier: 3
+Pastors; pastor; shepherds | Eph 4:11 | The WEB reads shepherds; the KJV pastors.
+  anchor: shepherds; pastors
+  tier: 3
+Evangelists; evangelist | Eph 4:11 | Named only here among the lists.
+  anchor: evangelists
+  tier: 4
+Prophets; prophet | Eph 4:11; 1 Cor 12:28 | Second in both lists of callings.
+  anchor: prophets
+  tier: 4
+Teachers; teacher | Eph 4:11; 1 Cor 12:28 | Third in 1 Corinthians 12:28.
+  anchor: teachers
+  tier: 4
+Mercy; showing mercy | Rom 12:8 | "He who shows mercy, with cheerfulness."
+  anchor: mercy
+  tier: 4
+Giving; generosity | Rom 12:8 | "He who gives, let him do it with generosity."
+  anchor: gives; giveth
+  tier: 4
+Service; serving; ministry; ministering | Rom 12:7 | The KJV reads ministry.
+  anchor: service; ministry
+  tier: 4
+Wisdom; word of wisdom | 1 Cor 12:8 | "The word of wisdom."
+  anchor: wisdom
+  tier: 4
+Knowledge; word of knowledge | 1 Cor 12:8 | "The word of knowledge according to the same Spirit."
+  anchor: knowledge
+  tier: 4
+Interpretation of tongues; interpretation; interpretation of languages; interpreting | 1 Cor 12:10 | "To another the interpretation of languages."
+  anchor: interpretation
+  tier: 4
+Discerning of spirits; discernment; discernment of spirits; discerning | 1 Cor 12:10 | "To another discerning of spirits."
+  anchor: discerning
+  tier: 5
+Exhortation; exhorting; encouragement; encouraging | Rom 12:8 | "He who exhorts, to his exhorting."
+  anchor: exhorts; exhortation
+  tier: 5
+Leading; ruling; leadership; rules | Rom 12:8 | "He who rules, with diligence."
+  anchor: rules; ruleth
+  tier: 5
+Administration; governments; administrating | 1 Cor 12:28 | The WEB and KJV both read governments.
+  anchor: governments
+  tier: 5
+Helps; helping | 1 Cor 12:28 | Listed between healings and governments.
+  anchor: helps
+  sheep: "Helps" appears once in the lists, in 1 Corinthians 12:28, set between "gifts of healings" and "governments."
+? Love | Paul calls love "a more excellent way" (1 Corinthians 12:31–13:13), not one of the listed gifts.
+? Hospitality | Peter connects hospitality and gifts (1 Peter 4:9–10), but it isn't in Romans 12, 1 Corinthians 12, or Ephesians 4.
+
+@ solomons-temple | Worship & Feasts | Name something in or of Solomon's temple (1 Kings 6–8). | worship | closed nouns ignore=the,a,an,of,temple,solomon,solomon's
+Ark of the covenant; ark | 1 Kgs 8:1, 6 | Brought into the Most Holy Place under the cherubim's wings.
+  tier: 1
+Cherubim; cherub | 1 Kgs 6:23-28 | Two of olive wood, ten cubits high, overlaid with gold.
+  forms: cherubs
+  tier: 1
+Cedar | 1 Kgs 5:6; 6:9-10, 15-18 | "All was cedar. There was no stone seen."
+  forms: cedars of Lebanon; cedars
+  tier: 1
+Gold | 1 Kgs 6:20-22, 30 | The whole house was overlaid with gold.
+  tier: 1
+Most holy place; inner sanctuary; oracle | 1 Kgs 6:16, 19; 8:6 | Twenty cubits each way, for the ark.
+  forms: Holy of Holies
+  tier: 3
+Altar; golden altar; altar of gold | 1 Kgs 7:48; 8:22 | The golden altar stood before the inner sanctuary.
+  tier: 3
+Lampstands; candlesticks; lamp stands | 1 Kgs 7:49 | Ten of pure gold, five on each side.
+  tier: 3
+Sea; molten sea | 1 Kgs 7:23-26 | A cast basin ten cubits across.
+  forms: bronze sea; sea of cast metal
+  tier: 4
+Twelve oxen; oxen | 1 Kgs 7:25 | Holding up the sea, three facing each direction.
+  tier: 4
+Basins; lavers; bases; stands | 1 Kgs 7:27-38; 1 Kings 7:49 | Ten bronze stands, each with a basin.
+  tier: 4
+Table; table of show bread; showbread; shewbread | 1 Kgs 7:48 | The golden table for the bread of the presence.
+  tier: 4
+Hiram | 1 Kgs 7:13-14 | The bronze worker from Tyre, son of a widow of Naphtali.
+  forms: Huram
+  tier: 4
+Porch | 1 Kgs 6:3; 7:19-21 | Twenty cubits wide across the front of the house.
+  forms: vestibule; portico
+  tier: 4
+Cloud | 1 Kgs 8:10-11 | The glory of the LORD filled the house.
+  tier: 4
+Stone; stones | 1 Kgs 5:17; 6:7 | Prepared at the quarry before it was brought.
+  tier: 4
+Olive wood; olive | 1 Kgs 6:23, 31-33 | Used for the cherubim and the doors.
+  tier: 5
+Doors | 1 Kgs 6:31-34 | Carved with cherubim, palm trees and open flowers.
+  tier: 5
+Windows | 1 Kgs 6:4 | Fixed latticed windows.
+  tier: 5
+Chambers; rooms | 1 Kgs 6:5-6, 10 | Built around the house in three stories.
+  forms: side chambers
+  tier: 5
+Pomegranates | 1 Kgs 7:18, 20, 42 | Two hundred in rows on each capital.
+  tier: 5
+Lily work; lilies | 1 Kgs 7:19, 22, 26 | On top of the pillars and the rim of the sea.
+  tier: 5
+Bronze; brass | 1 Kgs 7:14-16, 45-47 | So much that its weight was never found out.
+  tier: 5
+Bronze altar | 1 Kgs 8:64 | Too small for all the offerings at the dedication.
+  forms: brazen altar
+  tier: 5
+Tablets of stone; tables of stone; tablets | 1 Kgs 8:9 | Nothing was in the ark except the two tablets of stone.
+  tier: 5
+Palm trees | 1 Kgs 6:29, 32 | Carved on the walls and the doors.
+  tier: 5
+Inner court; court | 1 Kgs 6:36; 7:12 | Built with three courses of cut stone and a course of cedar beams.
+  tier: 5
+Snuffers; tongs; bowls; spoons; pots; shovels; censers; firepans | 1 Kgs 7:40, 45, 49-50 | The temple's vessels of gold and bronze.
+  tier: 5
+Jachin; Boaz; Jachin and Boaz; pillars | 1 Kgs 7:15-22 | Two bronze pillars at the porch.
+  sheep: The two bronze pillars at the temple porch had names: Hiram called the right one Jachin and the left one Boaz (1 Kings 7:21).
+? Solomon | He built it (1 Kings 6:14). Name something in it.
+? Veil; curtain | The veil is described for the tabernacle and Chronicles' account (2 Chronicles 3:14), but not in 1 Kings 6–8.
+
+@ dreams-visions | People | Name a person who has a dream or vision recorded in Scripture. | calling | closed ignore=the,a,an,of,king,prophet
+Joseph | Gen 37:5-9 | Dreamed of sheaves and stars bowing down.
+  tier: 1
+Daniel | Dan 7:1 | Saw four beasts rising from the sea.
+  tier: 1
+Jacob | Gen 28:10-12 | Dreamed of a stairway reaching to heaven.
+  tier: 1
+Nebuchadnezzar | Dan 2:1; 4:5 | Dreamed of a great image, and later of a great tree.
+  tier: 3
+Pharaoh | Gen 41:1-7 | Seven fat cows and seven thin ones.
+  tier: 3
+Peter | Acts 10:9-17 | Saw a sheet let down from heaven.
+  tier: 3
+Paul | Acts 16:9; 18:9 | Saw a man of Macedonia asking for help.
+  tier: 3
+John | Rev 1:9-11 | Saw his visions on the island of Patmos.
+  tier: 3
+Joseph the husband of Mary | Matt 1:20; 2:13, 19; Matthew 1:16 | Warned and guided in dreams four times.
+  forms: Joseph of Nazareth
+  tier: 3
+Solomon | 1 Kgs 3:5 | The LORD appeared to him in a dream at Gibeon.
+  tier: 4
+Isaiah | Isa 1:1; 6:1 | Saw the Lord high and lifted up.
+  tier: 4
+Ezekiel | Ezek 1:1-3 | Saw visions of God by the river Chebar.
+  tier: 4
+Wise men | Matt 2:1, 12 | Warned in a dream not to return to Herod.
+  forms: Magi
+  tier: 4
+Pilate's wife | Matt 27:17-19 | Suffered many things in a dream because of Jesus.
+  anchor: wife
+  tier: 4
+Cupbearer; butler | Gen 40:5, 9 | Dreamed of a vine with three branches.
+  tier: 4
+Baker | Gen 40:5, 16 | Dreamed of three baskets on his head.
+  tier: 4
+Abram | Gen 15:1, 12 | The word of the LORD came to him in a vision.
+  forms: Abraham
+  tier: 4
+Samuel | 1 Sam 3:10-15 | Heard the LORD call in the night as a boy.
+  tier: 4
+Cornelius | Acts 10:3 | Saw an angel in a vision at about the ninth hour.
+  tier: 5
+Zechariah; Zechariah the prophet | Zech 1:7-8 | Saw a man riding a red horse.
+  tier: 5
+Ananias | Acts 9:10 | Sent in a vision to Saul.
+  tier: 5
+Stephen | Acts 7:55-56; Acts 7:59 | Saw the heavens opened as he died.
+  tier: 5
+Zacharias | Luke 1:11-13, 22 | The people understood he had seen a vision in the temple.
+  forms: Zechariah the priest
+  tier: 5
+Amos | Amos 7:1-9 | Shown locusts, fire, and a plumb line.
+  tier: 5
+Abimelech | Gen 20:3 | God came to him in a dream about Sarah.
+  tier: 5
+Laban | Gen 31:24 | Warned in a dream as he pursued Jacob.
+  tier: 5
+Eliphaz | Job 4:1, 12-16 | Describes a vision in the night.
+  tier: 5
+Balaam | Num 24:3-4, 15-16 | Speaks of seeing the vision of the Almighty.
+  tier: 5
+Obadiah | Obad 1 | His book opens, "The vision of Obadiah."
+  tier: 5
+Nahum | Nah 1:1 | His book is called the vision of Nahum.
+  tier: 5
+Habakkuk | Hab 1:1; 2:2 | Told to write the vision plainly.
+  tier: 5
+Jeremiah | Jer 1:11-13 | Shown an almond branch and a boiling pot.
+  tier: 5
+Micaiah | 1 Kgs 22:8, 19 | Saw the LORD on his throne with the host of heaven.
+  tier: 5
+Iddo | 2 Chr 9:29 | Chronicles cites the visions of Iddo the seer.
+  tier: 5
+Nathan | 2 Sam 7:17 | Reported his vision to David.
+  tier: 5
+Man in the camp of Midian | Judg 7:13-14 | Told his dream to a fellow soldier while Gideon listened.
+  anchor: dreamed
+  forms: Midianite soldier; Midianite; soldier in the camp of Midian
+  sheep: A soldier in Midian's camp dreamed a cake of barley bread tumbled into the camp and flattened a tent, and Gideon, overhearing it, worshiped and went to battle (Judges 7:13–15).
+
+@ angel-encounters | People | Name a person or group an angel appears to or speaks to in Scripture. | courage | closed ignore=the,a,an,of,king,prophet
+Mary; Virgin Mary | Luke 1:26-38 | Gabriel announced the birth of Jesus.
+  tier: 1
+Joseph | Matt 1:20 | An angel of the Lord spoke to him in a dream.
+  tier: 1
+Daniel | Dan 6:22; 9:21; Daniel 6:21 | Gabriel came to him; an angel shut the lions' mouths.
+  tier: 1
+Zacharias | Luke 1:11-20 | Gabriel appeared beside the altar of incense.
+  forms: Zechariah the priest
+  tier: 3
+Shepherds | Luke 2:8-10 | "I bring you good news of great joy."
+  tier: 3
+Abraham | Gen 22:11-12 | The angel of the LORD called from heaven to stay his hand.
+  tier: 3
+Mary Magdalene; Magdalene | Matt 28:1-7; John 20:11-13 | Told at the tomb that he had risen.
+  tier: 3
+Gideon | Judg 6:11-12 | Greeted under the oak at Ophrah.
+  tier: 3
+Peter | Acts 12:7-10 | Led out of prison by an angel.
+  tier: 3
+Lot | Gen 19:1 | Two angels came to Sodom in the evening.
+  tier: 3
+Hagar | Gen 16:7-11 | The angel of the LORD found her by a spring.
+  tier: 4
+Jacob | Gen 31:11; 32:1 | The angels of God met him on his way.
+  tier: 4
+Moses | Exod 3:1-2 | The angel of the LORD appeared in a flame from the bush.
+  tier: 4
+Balaam | Num 22:31-35 | His eyes were opened to see the angel in the road.
+  tier: 4
+Elijah | 1 Kgs 19:2-7 | An angel touched him and gave him food.
+  tier: 4
+Cornelius | Acts 10:3-6 | Told to send for Peter.
+  tier: 4
+Philip | Acts 8:26 | Told to go toward the Gaza road.
+  tier: 4
+Paul | Acts 27:23-24 | An angel stood by him in the storm.
+  tier: 4
+John | Rev 1:1; 22:8 | His revelation was sent by an angel.
+  tier: 4
+Women at the tomb; women | Matt 28:5; Luke 24:4-5 | "Why do you seek the living among the dead?"
+  anchor: women
+  tier: 4
+Apostles | Acts 5:18-20 | An angel opened the prison doors by night.
+  tier: 5
+Manoah | Judg 13:3, 11-20 | Told of Samson's birth; the angel went up in the altar flame.
+  forms: Manoah's wife; Manoah and his wife
+  tier: 5
+Jesus | Matt 4:11; Luke 22:43; Matthew 4:10 | Angels served him in the wilderness and strengthened him in Gethsemane.
+  tier: 5
+David | 1 Chr 21:16 | Saw the angel with a drawn sword over Jerusalem.
+  tier: 5
+Zechariah; Zechariah the prophet | Zech 1:7-9 | An angel explained his visions.
+  tier: 5
+Joshua the high priest; Joshua | Zech 3:1-6 | Stood before the angel of the LORD.
+  tier: 5
+Isaiah | Isa 1:1; 6:6-7 | A seraph touched his lips with a coal.
+  tier: 5
+Ornan; Araunah | 1 Chr 21:20; 2 Sam 24:16 | Turned from threshing and saw the angel.
+  tier: 5
+Balaam's donkey; donkey; ass | Num 22:23-31 | Saw the angel standing in the road with a drawn sword.
+  sheep: Balaam's donkey saw the angel of the LORD three times before Balaam did, and then the LORD opened her mouth to speak (Numbers 22:23–31).

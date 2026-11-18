@@ -1,0 +1,208 @@
+/* Fishers: the world. A full-screen scene behind everything else. */
+
+html, body { height: 100%; }
+body { overflow: hidden; }
+
+.scene {
+  position: fixed; inset: 0; z-index: 0; overflow: hidden;
+  background: #4aa8b2;
+}
+.layer { position: absolute; left: 0; right: 0; top: 0; will-change: transform; pointer-events: none; }
+.water { bottom: 0; }
+
+/* ---------- sky ---------- */
+.world { top: 0; }
+.sky {
+  position: absolute; left: 0; right: 0; top: 0; overflow: hidden;
+  background: linear-gradient(#2d3a66 0%, #46527f 22%, #6b6c95 44%, #9a82a0 60%, #cf9ea0 76%, #efb987 90%, #f8d79f 100%);
+}
+/* A faint painted-paper grain over the sky only. */
+.grain {
+  position: absolute; inset: 0; opacity: .22; mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .3 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.sun {
+  position: absolute; left: 22%; bottom: -46px; width: 132px; height: 132px; border-radius: 50%;
+  background: radial-gradient(circle, #fff8de 0 34%, #ffdc8f 54%, rgba(255, 210, 130, .35) 64%, rgba(255, 210, 130, 0) 72%);
+}
+.cloud { position: absolute; height: auto; animation: cloud-drift 60s ease-in-out infinite alternate; }
+@keyframes cloud-drift { to { transform: translateX(26px); } }
+.hills { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 70px; }
+.waterline {
+  position: absolute; left: -10%; right: -10%; height: 14px;
+  background: radial-gradient(14px 10px at 14px 12px, #f4c876 98%, transparent) 0 0 / 28px 14px repeat-x;
+  animation: drift 8s linear infinite;
+}
+@keyframes drift { to { transform: translateX(28px); } }
+.glitter {
+  position: absolute; left: 0; right: 0; height: 90px;
+  background: repeating-linear-gradient(180deg, rgba(255, 238, 196, 0) 0 8px, rgba(255, 238, 196, .65) 8px 10px);
+  -webkit-mask-image: radial-gradient(16% 100% at 24% 0, #000 0, transparent 100%);
+  mask-image: radial-gradient(16% 100% at 24% 0, #000 0, transparent 100%);
+  opacity: .7;
+}
+.boat-wrap { position: absolute; left: 50%; margin-left: -75px; animation: boat-bob 4.8s ease-in-out infinite; }
+.boat { display: block; }
+@keyframes boat-bob { 0%, 100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(3px) rotate(1deg); } }
+
+/* ---------- light rays ---------- */
+.rays { height: 820px; -webkit-mask-image: linear-gradient(#000 30%, transparent); mask-image: linear-gradient(#000 30%, transparent); }
+.rays i {
+  position: absolute; top: 0; height: 100%; width: 70px;
+  background: linear-gradient(rgba(255, 240, 200, .32), rgba(255, 240, 200, 0));
+  transform-origin: top center; animation: ray 11s ease-in-out infinite alternate;
+}
+.rays i:nth-child(1) { left: 12%; transform: skewX(-14deg); }
+.rays i:nth-child(2) { left: 34%; width: 44px; animation-delay: -3s; transform: skewX(-10deg); }
+.rays i:nth-child(3) { left: 58%; width: 90px; animation-delay: -6s; transform: skewX(-16deg); opacity: .7; }
+.rays i:nth-child(4) { left: 80%; width: 36px; animation-delay: -8s; transform: skewX(-8deg); }
+@keyframes ray { from { opacity: .35; translate: -18px 0; } to { opacity: 1; translate: 22px 0; } }
+
+/* ---------- kelp (mid layer) ---------- */
+.kelp { position: absolute; transform-origin: bottom center; animation: sway 7s ease-in-out infinite alternate; }
+.kelp svg { display: block; }
+@keyframes sway { from { transform: rotate(-3.5deg); } to { transform: rotate(3.5deg); } }
+
+/* ---------- gauge, zones, specks, the 153 ---------- */
+.gauge { position: absolute; right: 0; width: 64px; border-right: 2px solid rgba(240, 230, 210, .35); }
+.tick { position: absolute; right: 0; width: 10px; border-top: 1px solid rgba(240, 230, 210, .45); }
+.tick.major { width: 18px; border-top-color: rgba(246, 212, 140, .8); }
+.tick span {
+  position: absolute; right: 22px; top: -8px; white-space: nowrap;
+  font: 600 .6875rem/1 var(--sans); color: rgba(240, 232, 214, .7); font-variant-numeric: tabular-nums;
+}
+.tick.major span { color: rgba(246, 212, 140, .95); }
+
+.zone {
+  position: absolute; left: 14px; right: 90px; display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .5rem;
+  font-family: var(--serif); color: rgba(246, 236, 214, .62); font-size: .8125rem; line-height: 1.2;
+}
+.zone .rule { width: 28px; border-top: 1px solid rgba(246, 236, 214, .5); align-self: center; }
+.zone-name { font-style: italic; }
+.zone-ref::before { content: "· "; color: rgba(246, 236, 214, .5); }
+.zone-ref { font-variant-caps: small-caps; letter-spacing: .04em; color: rgba(246, 212, 140, .7); }
+.zone-sub { flex-basis: 100%; padding-left: 36px; font-size: .75rem; opacity: .85; }
+
+.specks { position: absolute; left: 0; top: 0; width: 2px; height: 2px; border-radius: 50%; animation: twinkle 5s ease-in-out infinite; }
+@keyframes twinkle { 50% { opacity: .45; } }
+
+.egg { position: absolute; left: 0; right: 0; height: 90px; }
+.egg-school { position: absolute; top: 0; width: 210px; height: 80px; animation: egg-swim 46s linear infinite; }
+.egg-school i { position: absolute; width: 7px; height: 3px; border-radius: 50% 40% 40% 50%; background: rgba(214, 236, 240, .75); }
+.egg-school i::after { content: ""; position: absolute; right: -3px; top: 0; border: 1.5px solid transparent; border-left: 3px solid rgba(214, 236, 240, .75); }
+@keyframes egg-swim { from { transform: translateX(-240px); } to { transform: translateX(110vw); } }
+.egg-note { top: 86px; }
+
+.seabed {
+  position: absolute; left: 0; right: 0;
+  background: linear-gradient(transparent, #12112e 22%, #1c1838 60%, #231d3e);
+  border-radius: 60% 60% 0 0 / 40px 40px 0 0;
+}
+
+/* ---------- passing life ---------- */
+.ambient { bottom: 0; overflow: hidden; }
+.school { position: absolute; left: 0; width: 240px; height: 40px; animation: swim-ltr linear forwards; }
+.school.rtl { animation-name: swim-rtl; }
+.school span { position: absolute; display: block; animation: wiggle 1.2s ease-in-out infinite alternate; }
+.school span svg { display: block; width: 100%; height: auto; }
+.school.ltr span svg { transform: scaleX(-1); }
+.school.glow span { filter: drop-shadow(0 0 4px rgba(120, 240, 220, .8)); }
+@keyframes swim-ltr { from { transform: translateX(-260px); } to { transform: translateX(110vw); } }
+@keyframes swim-rtl { from { transform: translateX(110vw); } to { transform: translateX(-260px); } }
+@keyframes wiggle { to { translate: 0 3px; } }
+.bubble.quick { animation-name: rise-quick; animation-fill-mode: both; }
+@keyframes rise-quick { 0% { transform: translateY(0) scale(.6); opacity: 0; } 15% { opacity: .95; } 100% { transform: translate(4px, -170px) scale(1); opacity: 0; } }
+.bubble {
+  position: absolute; border-radius: 50%; border: 1px solid rgba(238, 244, 251, .75);
+  background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, .45), transparent 60%);
+  animation: rise 4s ease-in forwards;
+}
+@keyframes rise { 0% { transform: translateY(0); opacity: 0; } 12% { opacity: .9; } 100% { transform: translate(8px, -220px); opacity: 0; } }
+
+/* ---------- foreground edges ---------- */
+.front-piece { position: absolute; display: flex; align-items: flex-end; }
+.front-piece svg { display: block; }
+.front-grass { margin-left: -40px; transform-origin: bottom center; animation: sway 5.5s ease-in-out infinite alternate; }
+
+/* ---------- darkness below 3,000 m ---------- */
+.dim { bottom: 0; background: radial-gradient(60% 40% at 50% 30%, rgba(2, 3, 12, .55), rgba(2, 3, 12, 1)); opacity: 0; }
+
+/* ---------- the net rope ---------- */
+.line { width: 100%; height: 100%; overflow: visible; }
+.rope { fill: none; stroke: #d6b98a; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 7 2.5; opacity: .95; }
+.rope-shadow { fill: none; stroke: rgba(40, 24, 10, .35); stroke-width: 4.2; stroke-linecap: round; }
+
+/* ---------- the mascot ---------- */
+.mascot {
+  position: absolute; left: 0; top: 0; width: 64px; height: 36px; z-index: 3;
+  --fish: #fff1cf; --glow: rgba(255, 236, 190, .65);
+}
+.ichthys-svg { position: relative; display: block; width: 100%; height: 100%; overflow: visible; animation: fish-bob 3.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px var(--glow)) drop-shadow(0 0 14px var(--glow)); transition: filter .8s ease; }
+.ichthys-svg .body { fill: var(--fish); opacity: .22; transition: fill .8s ease; }
+.ichthys-svg .line { fill: none; stroke: var(--fish); stroke-width: 3.4; stroke-linecap: round; transition: stroke .8s ease; }
+@keyframes fish-bob { 0%, 100% { transform: translateY(-5px) rotate(-2deg); } 50% { transform: translateY(5px) rotate(2deg); } }
+.halo {
+  position: absolute; left: 50%; top: 50%; width: 120px; height: 90px; margin: -45px 0 0 -60px; border-radius: 50%;
+  background: radial-gradient(closest-side, var(--glow), transparent); opacity: .7; animation: fish-bob 3.6s ease-in-out infinite;
+}
+.radiance {
+  position: absolute; left: 50%; top: 50%; width: 170px; height: 170px; margin: -85px 0 0 -85px; border-radius: 50%;
+  background: repeating-conic-gradient(rgba(255, 214, 120, .38) 0 6deg, transparent 6deg 30deg);
+  -webkit-mask-image: radial-gradient(closest-side, #000 30%, transparent);
+  mask-image: radial-gradient(closest-side, #000 30%, transparent);
+  opacity: 0; transition: opacity .9s ease;
+}
+/* tier colors: the fish takes the color of its last catch */
+.mascot[data-tier="1"] { --fish: var(--t1); --glow: color-mix(in srgb, var(--t1) 65%, transparent); }
+.mascot[data-tier="2"] { --fish: var(--t2); --glow: color-mix(in srgb, var(--t2) 65%, transparent); }
+.mascot[data-tier="3"] { --fish: var(--t3); --glow: color-mix(in srgb, var(--t3) 70%, transparent); }
+.mascot[data-tier="4"] { --fish: var(--t4); --glow: color-mix(in srgb, var(--t4) 75%, transparent); }
+.mascot[data-tier="5"] { --fish: var(--t5); --glow: color-mix(in srgb, var(--t5) 80%, transparent); }
+.mascot[data-tier="6"] { --fish: var(--t6); --glow: color-mix(in srgb, var(--t6) 95%, transparent); }
+.mascot[data-tier="6"] .ichthys-svg .body { opacity: .5; }
+.mascot[data-tier="6"] .radiance { opacity: 1; animation: radiate 9s linear infinite; }
+@keyframes radiate { to { transform: rotate(360deg); } }
+
+.you-mark {
+  position: absolute; top: 0; right: 70px; will-change: transform; z-index: 3; padding: 2px 6px 2px 8px; border-radius: 3px 0 0 3px;
+  font: 800 .6875rem/1.2 var(--sans); letter-spacing: .12em; color: #2a1a03; background: var(--gold);
+}
+.you-mark::after { content: ""; position: absolute; right: -9px; top: 0; border: 9px solid transparent; border-left-color: var(--gold); border-right: 0; height: 0; }
+
+
+/* ---------- quick cross-fade for reduced motion ---------- */
+.veil { bottom: 0; background: #0a1530; opacity: 0; transition: opacity .15s linear; z-index: 4; }
+.veil.on { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .kelp, .front-grass, .rays i, .cloud, .waterline, .boat-wrap, .specks, .egg-school, .ichthys-svg, .halo, .radiance { animation: none !important; }
+}
+
+/* ---------- the sink: fish darting away, tier lines ---------- */
+.scatter { position: absolute; width: 15px; animation: scatter 1.2s cubic-bezier(.2, .7, .3, 1) both; }
+.scatter svg { display: block; width: 100%; height: auto; }
+.scatter.right svg { transform: scaleX(-1); }
+@keyframes scatter { from { transform: translate(0, 0); opacity: .95; } to { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+
+.marks { position: absolute; left: 0; right: 0; top: 0; height: 0; }
+.tline {
+  position: absolute; left: 0; right: 64px; height: 0; border-top: 2px dotted var(--c); opacity: 0;
+  animation: tl-in .45s ease-out forwards;
+}
+.tline[data-t="1"] { --c: var(--t1); } .tline[data-t="2"] { --c: var(--t2); } .tline[data-t="3"] { --c: var(--t3); }
+.tline[data-t="4"] { --c: var(--t4); } .tline[data-t="5"] { --c: var(--t5); } .tline[data-t="6"] { --c: var(--t6); }
+.tline::after {
+  content: ""; position: absolute; left: 0; right: 0; top: -7px; height: 12px; opacity: 0;
+  background: radial-gradient(50% 50% at 50% 50%, var(--c), transparent);
+}
+.tline.hit::after { animation: tl-flash .7s ease-out; }
+.tl-label {
+  position: absolute; right: 14px; top: -24px; display: flex; align-items: center; gap: .35rem; white-space: nowrap;
+  font: 800 .6875rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--c);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .7);
+}
+.tl-label .ic { width: 20px; height: 20px; }
+@keyframes tl-in { to { opacity: .8; } }
+@keyframes tl-flash { 0% { opacity: 1; transform: scaleY(1.8); } 100% { opacity: 0; transform: scaleY(1); } }
+.marks.fade .tline { animation: none; opacity: 0; transition: opacity .5s ease; }

@@ -1,0 +1,1099 @@
+# Closed sets: fixed lists under 60 answers. At most one appears in a daily cast.
+# Converted from the earlier hand-written lists by tools/convert-closed.js, then checked by tools/verify.js.
+
+@ apostles | People | Name someone the New Testament calls an apostle. | calling | closed ignore=apostle
+Peter; Simon; Simon Peter; Cephas | Matthew 10:2; John 1:42 | The fisherman Jesus named Cephas, which means Peter.
+John; John son of Zebedee | Matthew 10:2 | Son of Zebedee and brother of James.
+Paul | Romans 1:1; 1 Corinthians 15:8–9 | Called to be an apostle after the resurrection.
+  forms: Saul; Saul of Tarsus
+James; James son of Zebedee | Matthew 10:2; Acts 12:2 | John's brother; killed by Herod.
+Matthew; Levi | Matthew 10:3; Mark 2:14 | The tax collector.
+Thomas; Didymus | John 20:24–28 | Also called Didymus.
+Andrew | Matthew 10:2; John 1:40–41 | Peter's brother, who brought him to Jesus.
+Judas Iscariot; Judas | Matthew 10:4 | One of the Twelve, who betrayed Jesus.
+Philip | Matthew 10:3; John 1:43–45 | From Bethsaida; brought Nathanael to Jesus.
+Bartholomew | Matthew 10:3 | Listed among the Twelve.
+Thaddaeus; Judas son of James; Lebbaeus; Judas | Matthew 10:3; Luke 6:16 | Luke's lists call him Judas the son of James.
+  forms: Jude
+Simon the Zealot; Simon Zelotes; Simon | Luke 6:15 | The other Simon among the Twelve.
+  forms: Simon the Cananaean; Simon the Canaanite
+James son of Alphaeus; James the son of Alphaeus | Matthew 10:3 | The second James among the Twelve.
+Matthias | Acts 1:23–26 | Chosen by lot to take Judas's place.
+Barnabas | Acts 14:14 | Luke calls Barnabas and Paul apostles.
+Jesus; Jesus Christ; Christ | Hebrews 3:1 | Hebrews calls him the Apostle and High Priest of our confession.
+  sheep: Hebrews calls Jesus the Apostle and High Priest of our confession (Hebrews 3:1).
+? Nathanael | Many identify him with Bartholomew, but Scripture never says so directly (John 1:45–49).
+? Luke; Mark | A Gospel writer, but the New Testament never calls him an apostle.
+? Timothy; Titus; Silas | A trusted co-worker of Paul, but not called an apostle in so many words.
+? James the brother of Jesus; James the Just; James the Lord's brother | Possibly: Galatians 1:19 may count him among the apostles, but readers differ on how to take the verse.
+? Junia; Andronicus | Romans 16:7 can be read as well known among the apostles or well known to them; translations differ.
+? Stephen | One of the seven chosen to serve (Acts 6:5), not an apostle.
+? Mary Magdalene | Later writers called her apostle to the apostles, but the New Testament does not use the title.
+
+@ hebrews11 | People | Name a person commended by name in Hebrews 11, the faith chapter. | faithfulness | closed
+Abraham | Hebrews 11:8–10, 17 | Obeyed and went out, not knowing where he was going.
+Noah | Hebrews 11:7 | Built an ark to save his household.
+Moses | Hebrews 11:23–28 | Chose to share the hardship of God's people.
+Abel | Hebrews 11:4 | Offered a more excellent sacrifice than Cain.
+Sarah | Hebrews 11:11 | Received power to conceive when she was past age.
+Isaac | Hebrews 11:20 | Blessed Jacob and Esau concerning things to come.
+Jacob | Hebrews 11:21 | Blessed Joseph's sons as he was dying.
+Joseph | Hebrews 11:22 | Spoke of the exodus and gave instructions about his bones.
+David | Hebrews 11:32 | Named in the closing list of the faithful.
+Enoch | Hebrews 11:5 | Taken away so that he did not see death.
+Rahab | Hebrews 11:31 | Welcomed the spies in peace.
+Samson | Hebrews 11:32 | Named in the closing list of the faithful.
+Gideon | Hebrews 11:32 | Named in the closing list of the faithful.
+Samuel | Hebrews 11:32 | Named in the closing list of the faithful.
+Barak | Hebrews 11:32 | Named in the closing list of the faithful.
+  sheep: Barak is named in the closing list of the faithful with Gideon, Samson and Jephthah (Hebrews 11:32).
+Jephthah | Hebrews 11:32 | Named in the closing list of the faithful.
+? Esau | Named in the chapter, but as one who was blessed, not as an example of faith (Hebrews 11:20).
+? Joshua | The walls of Jericho are there (Hebrews 11:30), but Joshua himself is not named.
+? Daniel | Probably in view where lions' mouths are stopped (Hebrews 11:33), but he is not named.
+? Elijah; Elisha | Likely in view in Hebrews 11:35, but not named.
+? Jochebed; Amram | Moses' parents are praised (Hebrews 11:23), but not by name.
+? Adam; Eve; Cain | Cain is mentioned only as Abel's contrast (Hebrews 11:4); the list of the faithful starts with Abel.
+
+@ matthew-genealogy | People | Name a person in the genealogy of Jesus in Matthew 1. | faithfulness | closed ignore=king
+Abraham | Matthew 1:1–2 | The genealogy begins with him.
+David | Matthew 1:1, 6 | Called David the king.
+Mary | Matthew 1:16 | Of whom Jesus was born.
+Joseph | Matthew 1:16 | The husband of Mary.
+Isaac | Matthew 1:2 | Son of Abraham.
+Jacob | Matthew 1:2 | Father of Judah and his brothers; Joseph's father also bears the name (Matthew 1:16).
+Solomon | Matthew 1:6–7 | Son of David.
+Ruth | Matthew 1:5 | Mother of Obed.
+Judah; Judas | Matthew 1:2–3 | Father of Perez and Zerah by Tamar.
+Boaz; Booz | Matthew 1:5 | Father of Obed by Ruth.
+Rahab; Rachab | Matthew 1:5 | Mother of Boaz.
+Jesse | Matthew 1:5–6 | Father of David.
+Hezekiah; Ezekias | Matthew 1:9–10 | Son of Ahaz.
+Tamar; Thamar | Matthew 1:3 | Mother of Perez and Zerah.
+Josiah; Josias | Matthew 1:10–11 | Father of Jechoniah at the time of the exile.
+Obed | Matthew 1:5 | Father of Jesse.
+Rehoboam; Roboam | Matthew 1:7 | Son of Solomon.
+Uriah; Urias | Matthew 1:6 | Solomon's mother is identified as the one who had been his wife.
+Zerubbabel; Zorobabel | Matthew 1:12–13 | Son of Shealtiel, in the generations after the exile.
+Perez; Phares | Matthew 1:3 | Son of Judah and Tamar.
+Jehoshaphat; Josaphat | Matthew 1:8 | Son of Asa.
+Uzziah; Ozias | Matthew 1:8–9 | Father of Jotham.
+Manasseh; Manasses | Matthew 1:10 | Son of Hezekiah.
+Ahaz; Achaz | Matthew 1:9 | Father of Hezekiah.
+Asa | Matthew 1:7–8 | Father of Jehoshaphat.
+  forms: Asaph
+Jechoniah; Jechonias | Matthew 1:11–12 | Named at the exile to Babylon.
+  forms: Jeconiah; Jehoiachin
+Jotham; Joatham | Matthew 1:9 | Son of Uzziah.
+Abijah; Abia | Matthew 1:7 | Son of Rehoboam.
+Joram | Matthew 1:8 | Son of Jehoshaphat.
+  forms: Jehoram
+Amon | Matthew 1:10 | Son of Manasseh.
+  forms: Amos
+Zerah; Zara | Matthew 1:3 | Twin brother of Perez.
+  sheep: Zerah, the twin of Perez, is named in the genealogy though the line runs through his brother (Matthew 1:3).
+Hezron; Esrom | Matthew 1:3 | Son of Perez.
+Ram; Aram | Matthew 1:3–4 | Son of Hezron.
+Amminadab; Aminadab | Matthew 1:4 | Father of Nahshon.
+Nahshon; Naasson | Matthew 1:4 | Father of Salmon.
+Salmon | Matthew 1:4–5 | Father of Boaz by Rahab.
+Shealtiel; Salathiel | Matthew 1:12 | Father of Zerubbabel.
+Abiud | Matthew 1:13 | Son of Zerubbabel.
+  forms: Abihud
+Eliakim | Matthew 1:13 | Named in the generations after the exile.
+Azor | Matthew 1:13–14 | Named in the generations after the exile.
+Zadok; Sadoc | Matthew 1:14 | Named in the generations after the exile.
+Achim | Matthew 1:14 | Named in the generations after the exile.
+Eliud | Matthew 1:14–15 | Named in the generations after the exile.
+Eleazar | Matthew 1:15 | Named in the generations after the exile.
+Matthan | Matthew 1:15 | Grandfather of Joseph.
+? Bathsheba | She is there, but unnamed: Matthew calls her the one who had been Uriah's wife (Matthew 1:6).
+? Jesus; Christ | The genealogy is his; this net holds the people who lead up to him.
+? Adam; Noah; Seth; Enoch; Shem | That is Luke's genealogy, which goes back to Adam (Luke 3:36–38); Matthew begins with Abraham.
+? Heli | Heli appears in Luke's genealogy (Luke 3:23), not Matthew's.
+? Moses; Aaron | From the tribe of Levi, so not in this line through Judah.
+
+@ romans16 | People | Name a person Paul names in Romans 16. | church | closed
+Phoebe; Phebe | Romans 16:1–2 | Commended to the church as a helper of many.
+Priscilla; Prisca | Romans 16:3–5 | Risked her neck for Paul's life.
+Aquila | Romans 16:3–5 | A church met in his and Prisca's house.
+Timothy; Timotheus | Romans 16:21 | Paul's fellow worker sends greetings.
+Tertius | Romans 16:22 | Wrote the letter down and adds his own greeting.
+  sheep: Tertius wrote the letter down and added his own greeting (Romans 16:22).
+Junia | Romans 16:7 | A relative of Paul and fellow prisoner; some translations read Junias.
+  forms: Junias
+Andronicus | Romans 16:7 | A relative of Paul and fellow prisoner.
+Gaius | Romans 16:23 | Host to Paul and to the whole church.
+Erastus | Romans 16:23 | The city treasurer.
+Rufus | Romans 16:13 | Greeted along with his mother.
+Epaenetus | Romans 16:5 | Paul calls him his beloved.
+  forms: Epenetus
+Urbanus; Urbane | Romans 16:9 | A fellow worker in Christ.
+Mary | Romans 16:6 | Paul says she laboured much.
+Jason | Romans 16:21 | A relative of Paul who sends greetings.
+Lucius | Romans 16:21 | A relative of Paul who sends greetings.
+Amplias | Romans 16:8 | Beloved in the Lord.
+  forms: Ampliatus
+Stachys | Romans 16:9 | Paul's beloved.
+Apelles | Romans 16:10 | Approved in Christ.
+Aristobulus | Romans 16:10 | Paul greets those of his household.
+Herodion | Romans 16:11 | A relative of Paul.
+Narcissus | Romans 16:11 | Paul greets those of his household who are in the Lord.
+Tryphaena; Tryphena | Romans 16:12 | A worker in the Lord.
+Tryphosa | Romans 16:12 | A worker in the Lord.
+Persis | Romans 16:12 | Worked hard in the Lord.
+Asyncritus | Romans 16:14 | Greeted with the brothers who are with him.
+Phlegon | Romans 16:14 | Greeted with the brothers who are with him.
+Hermes | Romans 16:14 | Greeted with the brothers who are with him.
+Patrobas | Romans 16:14 | Greeted with the brothers who are with him.
+Hermas | Romans 16:14 | Greeted with the brothers who are with him.
+Philologus | Romans 16:15 | Greeted with the saints who are with him.
+Julia | Romans 16:15 | Greeted with the saints who are with her.
+Nereus | Romans 16:15 | Greeted along with his sister.
+Olympas | Romans 16:15 | Greeted with the saints who are with him.
+Sosipater | Romans 16:21 | A relative of Paul who sends greetings.
+Quartus | Romans 16:23 | Called simply the brother.
+? Paul | He wrote the letter; this net holds the people he names.
+? Luke; Silas; Titus; Barnabas; Apollos | A co-worker of Paul elsewhere, but not named in Romans 16.
+? Lydia | She belongs to Philippi (Acts 16:14), not to this list.
+? Peter | Peter is not mentioned anywhere in Romans.
+
+@ passion-people | People | Name a person named in the Gospel accounts of Jesus' arrest, trial, death, burial, or resurrection. | mercy | closed ignore=king
+Pilate | Matthew 27:11–26 | The governor who handed Jesus over to be crucified.
+  forms: Pontius Pilate
+Judas | Matthew 26:47–50 | Betrayed Jesus with a kiss.
+  forms: Judas Iscariot
+Peter | Luke 22:54–62 | Denied Jesus three times; later ran to the tomb.
+  forms: Simon Peter; Simon; Cephas
+Mary Magdalene; Magdalene; Mary | John 20:1–18 | Came to the tomb while it was still dark.
+Barabbas | Mark 15:6–15 | The prisoner released in place of Jesus.
+Thomas; Didymus | John 20:24–29 | Would not believe until he saw.
+Caiaphas | Matthew 26:57–66 | The high priest who questioned Jesus.
+Joseph | Mark 15:42–46 | Laid the body in a tomb cut out of rock.
+  forms: Joseph of Arimathea
+Simon of Cyrene; Simon the Cyrenian | Mark 15:21 | Compelled to carry the cross.
+Nicodemus | John 19:39 | Brought myrrh and aloes for the burial.
+John | Mark 14:33 | Taken with Peter and James further into Gethsemane.
+Herod | Luke 23:7–12 | Questioned Jesus and sent him back to Pilate.
+  forms: Herod Antipas
+Annas | John 18:13, 24 | Jesus was led to him first.
+Malchus | John 18:10 | The high priest's servant whose ear was cut off.
+Cleopas | Luke 24:13–18 | One of the two on the road to Emmaus.
+James | Mark 14:33 | Taken with Peter and John further into Gethsemane.
+Salome | Mark 15:40; 16:1 | Watched from a distance and came to the tomb.
+Joanna | Luke 24:10 | One of the women who reported the empty tomb.
+Mary the wife of Clopas; Mary of Clopas | John 19:25 | Stood by the cross.
+Mary the mother of James; Mary the mother of James and Joses; Mary mother of James | Mark 15:40, 47; 16:1 | Saw where the body was laid.
+Alexander | Mark 15:21 | A son of Simon of Cyrene.
+Rufus | Mark 15:21 | A son of Simon of Cyrene.
+  sheep: Rufus and Alexander were the sons of Simon of Cyrene, who carried the cross (Mark 15:21).
+Nathanael | John 21:2 | Among the seven at the Sea of Tiberias after the resurrection.
+Clopas | John 19:25 | Named as the husband of one of the Marys at the cross.
+Zebedee | Matthew 27:56; John 21:2 | Named through his wife and sons.
+Elijah; Elias | Matthew 27:46–49 | Bystanders thought Jesus was calling for him.
+? Mary the mother of Jesus; mother of Jesus; Virgin Mary | She stands at the cross (John 19:25–27), but none of the four accounts gives her name there.
+? Veronica | From the later devotion of the Stations of the Cross; not named in the Gospels.
+? Longinus | The traditional name for the soldier with the spear; John leaves him unnamed (John 19:34).
+? Dismas | The traditional name for the repentant criminal; Luke leaves him unnamed (Luke 23:39–43).
+? Pilate's wife; Claudia Procula; Procula | She sends her warning in Matthew 27:19, but is not named.
+? Jesus; Christ | The accounts are about him; this net holds the others who are named.
+
+@ esther-people | People | Name a person named in the book of Esther. | courage | closed ignore=king,queen
+Esther; Hadassah | Esther 2:7 | Her Hebrew name was Hadassah.
+Mordecai | Esther 2:5–7 | Esther's cousin, who raised her.
+Haman | Esther 3:1–6 | The king's chief official, who plotted against the Jews.
+Ahasuerus | Esther 1:1 | King of Persia, ruling from India to Ethiopia.
+  forms: Xerxes
+Vashti | Esther 1:9–12 | The queen who refused the king's summons.
+Zeresh | Esther 5:10, 14 | Haman's wife.
+Hegai | Esther 2:8–9 | Keeper of the women, who favoured Esther.
+Bigthan | Esther 2:21–23 | One of two doorkeepers who plotted against the king.
+  forms: Bigthana
+Teresh | Esther 2:21–23 | One of two doorkeepers who plotted against the king.
+Hathach; Hatach | Esther 4:5–9 | Carried messages between Esther and Mordecai.
+  sheep: Hathach carried messages between Esther and Mordecai (Esther 4:5-10).
+Harbona; Harbonah | Esther 1:10; 7:9 | The attendant who pointed out Haman's gallows.
+Memucan | Esther 1:14–21 | The prince who advised the king about Vashti.
+Abihail | Esther 2:15; 9:29 | Esther's father.
+Hammedatha | Esther 3:1 | Haman's father.
+Shaashgaz | Esther 2:14 | Keeper of the concubines.
+Mehuman | Esther 1:10 | One of the seven attendants sent for Vashti.
+Biztha | Esther 1:10 | One of the seven attendants sent for Vashti.
+Bigtha | Esther 1:10 | One of the seven attendants sent for Vashti.
+Abagtha | Esther 1:10 | One of the seven attendants sent for Vashti.
+Zethar | Esther 1:10 | One of the seven attendants sent for Vashti.
+Carcas | Esther 1:10 | One of the seven attendants sent for Vashti.
+Carshena | Esther 1:14 | One of the seven princes of Persia and Media.
+Shethar | Esther 1:14 | One of the seven princes of Persia and Media.
+Admatha | Esther 1:14 | One of the seven princes of Persia and Media.
+Tarshish | Esther 1:14 | One of the seven princes of Persia and Media.
+Meres | Esther 1:14 | One of the seven princes of Persia and Media.
+Marsena | Esther 1:14 | One of the seven princes of Persia and Media.
+Kish | Esther 2:5 | An ancestor of Mordecai.
+Shimei | Esther 2:5 | An ancestor of Mordecai.
+Jair | Esther 2:5 | Mordecai's father.
+Parshandatha | Esther 9:7–9 | One of Haman's ten sons.
+Dalphon | Esther 9:7–9 | One of Haman's ten sons.
+Aspatha | Esther 9:7–9 | One of Haman's ten sons.
+Poratha | Esther 9:7–9 | One of Haman's ten sons.
+Adalia | Esther 9:7–9 | One of Haman's ten sons.
+Aridatha | Esther 9:7–9 | One of Haman's ten sons.
+Parmashta | Esther 9:7–9 | One of Haman's ten sons.
+Arisai | Esther 9:7–9 | One of Haman's ten sons.
+Aridai | Esther 9:7–9 | One of Haman's ten sons.
+Vaizatha; Vajezatha | Esther 9:7–9 | One of Haman's ten sons.
+? God; the LORD; Yahweh | Famously, God is never named in the book of Esther, though his care runs all through it.
+? Nehemiah; Ezra | Same Persian era, different book.
+? Daniel | An exile at a foreign court too, but in his own book.
+? Cyrus; Darius; Artaxerxes | A Persian king, but not the one in Esther; he appears in Ezra and Nehemiah.
+
+@ judges-people | People | Name a person named in the book of Judges. | courage | closed
+Samson | Judges 13:24; 16:28–31 | A Nazirite of great strength who judged Israel twenty years.
+Gideon | Judges 6:11–16; 7:7 | Defeated Midian with three hundred men.
+  forms: Jerubbaal
+Deborah | Judges 4:4–5 | A prophetess who judged Israel beneath a palm tree.
+Delilah | Judges 16:4–20 | Learned the secret of Samson's strength.
+Jephthah | Judges 11:1, 29–33 | The Gileadite who defeated the Ammonites.
+Barak | Judges 4:6–16 | Led Israel's army alongside Deborah.
+Jael | Judges 4:17–22 | Wife of Heber the Kenite; she killed Sisera.
+Sisera | Judges 4:2–3 | Commander of Jabin's army, with nine hundred iron chariots.
+Ehud | Judges 3:15–30 | The left-handed Benjamite who delivered Israel from Moab.
+Othniel | Judges 3:9–11 | The first judge; a kinsman of Caleb.
+Abimelech | Judges 9:1–6, 53 | Gideon's son, who made himself king at Shechem.
+Eglon | Judges 3:12–25 | King of Moab.
+Manoah | Judges 13:2–21 | Samson's father.
+Shamgar | Judges 3:31 | Struck down six hundred Philistines with an ox goad.
+  sheep: Shamgar struck down six hundred Philistines with an ox goad (Judges 3:31).
+Micah | Judges 17:1–13 | An Ephraimite who set up a shrine and hired a Levite.
+Jotham | Judges 9:5–21 | Gideon's youngest son, who told the fable of the trees.
+Caleb | Judges 1:12–15, 20 | Gave his daughter Achsah to Othniel.
+Joshua | Judges 2:6–9 | His death is recorded near the start of the book.
+Jabin | Judges 4:2, 23–24 | King of Canaan, who reigned in Hazor.
+Tola | Judges 10:1–2 | Judged Israel twenty-three years.
+Jair | Judges 10:3–5 | Judged twenty-two years; his thirty sons rode thirty donkeys.
+Ibzan | Judges 12:8–10 | Of Bethlehem; judged seven years.
+Elon | Judges 12:11–12 | The Zebulunite; judged ten years.
+Abdon | Judges 12:13–15 | Judged eight years.
+Achsah | Judges 1:12–15 | Caleb's daughter, who asked her father for springs of water.
+Adoni-bezek | Judges 1:5–7 | A Canaanite king defeated by Judah.
+Cushan-rishathaim; Cushan | Judges 3:8–10 | King of Mesopotamia, defeated by Othniel.
+Heber | Judges 4:11, 17 | The Kenite, husband of Jael.
+Joash | Judges 6:11, 29–32 | Gideon's father.
+Purah | Judges 7:10–11 | Gideon's servant, who went with him to the Midianite camp.
+Oreb | Judges 7:25 | A prince of Midian.
+Zeeb | Judges 7:25 | A prince of Midian.
+Zebah | Judges 8:5–21 | A king of Midian.
+Zalmunna | Judges 8:5–21 | A king of Midian.
+Gaal | Judges 9:26–41 | Stirred up Shechem against Abimelech.
+Zebul | Judges 9:28–41 | Ruler of the city of Shechem under Abimelech.
+Phinehas | Judges 20:28 | Aaron's grandson, serving before the ark.
+Lappidoth | Judges 4:4 | Deborah's husband.
+Abinoam | Judges 4:6 | Barak's father.
+? Ruth; Naomi; Boaz | Next book over: their story is set in the days of the judges (Ruth 1:1), but they are not named in Judges.
+? Eli; Samuel | He did judge Israel, but in 1 Samuel (1 Samuel 4:18; 7:15).
+? Moses; Aaron | Moses is mentioned in Judges, but this net only holds the people of the book's own stories.
+
+@ david-family | People | Name a wife or child of David named in Scripture. | mercy | closed
+Solomon | 2 Samuel 12:24 | Son of David and Bathsheba, and his successor.
+Bathsheba | 2 Samuel 11:27; 12:24 | Mother of Solomon.
+  forms: Bathshua
+Absalom | 2 Samuel 3:3; 15:1–6 | The son who led a revolt against his father.
+Michal | 1 Samuel 18:27 | Saul's daughter and David's first wife.
+Abigail | 1 Samuel 25:39–42 | Widow of Nabal of Carmel.
+Amnon | 2 Samuel 3:2 | David's firstborn.
+Tamar | 2 Samuel 13:1 | David's daughter and Absalom's sister.
+Adonijah | 2 Samuel 3:4; 1 Kings 1:5 | Tried to claim the throne in David's old age.
+Ahinoam | 1 Samuel 25:43; 2 Samuel 3:2 | Of Jezreel; mother of Amnon.
+Nathan | 2 Samuel 5:14; Luke 3:31 | A son born in Jerusalem; Luke's genealogy runs through him.
+  sheep: Luke traces the line of Jesus through Nathan, a son of David (Luke 3:31).
+Maacah | 2 Samuel 3:3 | Daughter of Talmai king of Geshur; mother of Absalom.
+Haggith | 2 Samuel 3:4 | Mother of Adonijah.
+Chileab; Daniel | 2 Samuel 3:3; 1 Chronicles 3:1 | Abigail's son, called Daniel in Chronicles.
+Shephatiah | 2 Samuel 3:4 | Son of Abital.
+Abital | 2 Samuel 3:4 | Mother of Shephatiah.
+Eglah | 2 Samuel 3:5 | Mother of Ithream.
+Ithream | 2 Samuel 3:5 | Son of Eglah, born at Hebron.
+Shammua | 2 Samuel 5:14 | A son born in Jerusalem.
+  forms: Shimea
+Shobab | 2 Samuel 5:14 | A son born in Jerusalem.
+Ibhar | 2 Samuel 5:15 | A son born in Jerusalem.
+Elishua | 2 Samuel 5:15 | A son born in Jerusalem.
+Nepheg | 2 Samuel 5:15 | A son born in Jerusalem.
+Japhia | 2 Samuel 5:15 | A son born in Jerusalem.
+Elishama | 2 Samuel 5:16 | A son born in Jerusalem.
+Eliada | 2 Samuel 5:16 | A son born in Jerusalem.
+Eliphelet | 2 Samuel 5:16 | A son born in Jerusalem.
+Jerimoth | 2 Chronicles 11:18 | A son of David whose daughter married Rehoboam.
+? Abishag | She cared for David in his old age, but the text does not call her his wife (1 Kings 1:1–4).
+? Jonathan | David's closest friend, but Saul's son (1 Samuel 18:1).
+? Mephibosheth | Jonathan's son, whom David welcomed to his table (2 Samuel 9:6–7).
+? Rehoboam | One generation on: Rehoboam was Solomon's son (1 Kings 11:43).
+? Jesse | The other direction: Jesse was David's father (1 Samuel 16:1).
+
+@ judah-kings | People | Name a ruler of the southern kingdom of Judah after the kingdom divided. | kingdom | closed ignore=king,queen
+Hezekiah | 2 Kings 18:1–7; 20:1–6 | Trusted the LORD through the Assyrian siege; fifteen years were added to his life.
+  forms: Ezekias
+Josiah | 2 Kings 22:1–2; 23:1–3 | King at eight; the Book of the Law was found in his reign and he renewed the covenant.
+  forms: Josias
+Rehoboam | 1 Kings 12:1–17; 14:21 | Solomon's son; the kingdom divided under him.
+Jehoshaphat | 1 Kings 22:41–43; 2 Chronicles 20:1–30 | Saw Judah delivered after prayer and singing.
+  forms: Josaphat
+Uzziah; Azariah | 2 Kings 15:1–7; 2 Chronicles 26:16–21 | Reigned fifty-two years; struck with leprosy after burning incense in the temple.
+  forms: Ozias
+Manasseh | 2 Kings 21:1–18; 2 Chronicles 33:10–13 | Reigned fifty-five years; Chronicles records his repentance.
+Asa | 1 Kings 15:9–24 | Removed idols from the land.
+Ahaz | 2 Kings 16:1–20; Isaiah 7:10–14 | Isaiah gave the Immanuel sign in his reign.
+Zedekiah; Mattaniah | 2 Kings 24:17–20; 25:1–7 | Judah's last king; Jerusalem fell to Babylon.
+Joash; Jehoash | 2 Kings 11:1–3, 21; 12:4–16 | Hidden as an infant, crowned at seven, and repaired the temple.
+Athaliah | 2 Kings 11:1–16 | The only queen to rule Judah; she held the throne six years.
+  sheep: Athaliah reigned over Judah for six years, the only queen to rule it in her own name (2 Kings 11:3).
+Jehoiakim; Eliakim | 2 Kings 23:34–37; Jeremiah 36:20–26 | Burned Jeremiah's scroll.
+Jehoiachin | 2 Kings 24:8–15; 25:27–30 | Reigned three months, was exiled, and was later released in Babylon.
+  forms: Jeconiah; Coniah; Jechoniah
+Amaziah | 2 Kings 14:1–20 | Defeated Edom, then lost to Jehoash of Israel.
+Jotham | 2 Kings 15:32–38 | Uzziah's son; built the upper gate of the temple.
+Amon | 2 Kings 21:19–26 | Reigned two years; killed by his own servants.
+Abijah; Abijam | 1 Kings 15:1–8; 2 Chronicles 13:1–2 | Rehoboam's son; reigned three years.
+Jehoram; Joram | 2 Kings 8:16–24 | Married a daughter of Ahab.
+Ahaziah | 2 Kings 8:25–29; 9:27 | Reigned one year; died in Jehu's uprising.
+Jehoahaz | 2 Kings 23:31–34 | Reigned three months before Pharaoh Necoh removed him.
+  forms: Shallum
+? David; Solomon; Saul | A step too early: he ruled the united kingdom, before it divided (1 Kings 12).
+? Ahab; Jeroboam; Jehu; Omri; Hoshea | Other side of the border: he was a king of the northern kingdom of Israel.
+? Gedaliah | A governor rather than a king: Babylon appointed him after Jerusalem fell (2 Kings 25:22).
+
+@ israel-kings | People | Name a king of the northern kingdom of Israel after the kingdom divided. | kingdom | closed ignore=king
+Ahab | 1 Kings 16:29–33; 18:17–19 | Omri's son, opposed by the prophet Elijah.
+Jeroboam | 1 Kings 12:20, 28–30 | The first northern king; set up golden calves at Bethel and Dan.
+  forms: Jeroboam I; Jeroboam son of Nebat
+Jehu | 2 Kings 9:1–13; 10:28 | Anointed at Elisha's direction; ended the house of Ahab.
+Omri | 1 Kings 16:23–28 | Bought the hill of Samaria and built his capital there.
+Hoshea | 2 Kings 17:1–6 | The last northern king; Samaria fell to Assyria.
+Jeroboam son of Joash | 2 Kings 14:23–29 | Reigned forty-one years; Jonah son of Amittai prophesied in his time.
+  forms: Jeroboam II; Jeroboam 2; Jeroboam the second
+Ahaziah | 1 Kings 22:51–53; 2 Kings 1:2–17 | Ahab's son; Elijah foretold his death after a fall.
+Joram; Jehoram | 2 Kings 3:1–3; 9:24 | Ahab's son; killed by Jehu.
+Baasha | 1 Kings 15:27–34 | Overthrew Nadab and reigned twenty-four years at Tirzah.
+Jehoash; Joash | 2 Kings 13:10–19 | Visited the dying Elisha and struck the ground with arrows three times.
+Nadab | 1 Kings 15:25–28 | Jeroboam's son; reigned two years.
+Zimri | 1 Kings 16:9–20 | Reigned seven days.
+  sheep: Zimri reigned seven days in Tirzah, the shortest reign of any king of Israel (1 Kings 16:15).
+Menahem | 2 Kings 15:14–22 | Paid tribute to Pul, king of Assyria.
+Pekah | 2 Kings 15:25–31; Isaiah 7:1 | Joined Rezin of Syria against Judah.
+Jehoahaz | 2 Kings 13:1–9 | Jehu's son; reigned seventeen years.
+Elah | 1 Kings 16:8–10 | Baasha's son; killed by Zimri.
+Zechariah; Zachariah | 2 Kings 15:8–12 | Reigned six months; the last king of Jehu's line.
+Shallum | 2 Kings 15:13–15 | Reigned one month.
+Pekahiah | 2 Kings 15:23–26 | Menahem's son; reigned two years.
+? Tibni | A real rival, but he never held the throne: half the people followed Tibni until Omri prevailed (1 Kings 16:21–22).
+? David; Solomon; Saul | A step too early: he ruled the united kingdom, before it divided (1 Kings 12).
+? Hezekiah; Josiah; Rehoboam; Asa; Uzziah; Manasseh | Other side of the border: he was a king of the southern kingdom of Judah.
+? Jezebel | Ahab's queen (1 Kings 16:31), but she never ruled in her own name.
+
+@ ot-prophets | People | Name a prophet or prophetess of the LORD named in the Old Testament. | word | closed ignore=prophet,prophetess
+Isaiah | Isaiah 1:1; 6:8 | Saw the Lord in the temple and answered his call.
+  forms: Esaias
+Elijah | 1 Kings 18:19–20, 36–39 | Called down fire on Mount Carmel.
+  forms: Elias
+Jeremiah | Jeremiah 1:1, 4–10 | Called before his birth to be a prophet to the nations.
+  forms: Jeremias
+Moses | Deuteronomy 34:10 | No prophet like him arose again in Israel.
+Daniel | Daniel 7:1; Matthew 24:15 | Exile in Babylon; Jesus calls him Daniel the prophet.
+Elisha | 2 Kings 2:9–15 | Received Elijah's mantle.
+  forms: Eliseus
+Ezekiel | Ezekiel 1:1–3 | A priest who saw visions by the river Chebar.
+Jonah | Jonah 1:1–3; 2 Kings 14:25 | Sent to Nineveh.
+  forms: Jonas
+Samuel | 1 Samuel 3:19–20 | Known from Dan to Beersheba as a prophet of the LORD.
+Hosea | Hosea 1:1–2 | Prophet to the northern kingdom.
+  forms: Osee
+Amos | Amos 7:14–15 | A herdsman called from following the flock.
+Micah | Micah 1:1; 5:2 | Foretold a ruler from Bethlehem.
+Joel | Joel 1:1; 2:28–29 | Foretold the outpouring of the Spirit.
+Malachi | Malachi 1:1 | The last book of the Old Testament bears his name.
+Nathan | 2 Samuel 7:2–17; 12:1–7 | Brought God's word to David.
+Zechariah | Zechariah 1:1 | Prophesied as the temple was being rebuilt.
+  forms: Zacharias
+Habakkuk | Habakkuk 1:1; 2:4 | Wrote that the righteous will live by faith.
+Haggai | Haggai 1:1–8 | Urged the returned exiles to rebuild the temple.
+Obadiah | Obadiah 1 | His one-chapter vision concerns Edom.
+Nahum | Nahum 1:1 | His oracle concerns Nineveh.
+Zephaniah | Zephaniah 1:1 | Prophesied in the days of Josiah.
+Deborah | Judges 4:4 | A prophetess who judged Israel.
+Miriam | Exodus 15:20 | The prophetess, sister of Aaron.
+Abraham | Genesis 20:1–7 | The first person the Bible calls a prophet.
+Aaron | Exodus 7:1 | Appointed as Moses' prophet before Pharaoh.
+Gad | 1 Samuel 22:5; 2 Samuel 24:11 | David's seer.
+Huldah | 2 Kings 22:14–20 | The prophetess consulted when the Book of the Law was found.
+  sheep: Huldah the prophetess was consulted when the Book of the Law was found in the temple (2 Kings 22:14).
+Micaiah | 1 Kings 22:8–28 | Stood alone against four hundred prophets before Ahab.
+Ahijah | 1 Kings 11:29–31 | The Shilonite who tore a garment into twelve pieces.
+Iddo | 2 Chronicles 12:15; 13:22 | A seer whose writings Chronicles cites.
+Shemaiah | 1 Kings 12:22; 2 Chronicles 12:5 | Told Rehoboam not to fight the northern tribes.
+Jehu; Jehu son of Hanani | 1 Kings 16:1, 7 | Brought the LORD's word against Baasha.
+Hanani | 2 Chronicles 16:7 | The seer who rebuked King Asa.
+Azariah; Azariah son of Oded | 2 Chronicles 15:1–8 | Encouraged King Asa's reforms.
+Oded | 2 Chronicles 28:9–15 | Persuaded Israel's army to release its captives from Judah.
+Uriah; Urijah | Jeremiah 26:20–23 | Prophesied in Jeremiah's day and was killed by Jehoiakim.
+Eldad | Numbers 11:26–29 | Prophesied in the camp in Moses' day.
+Medad | Numbers 11:26–29 | Prophesied in the camp in Moses' day.
+Asaph | 2 Chronicles 29:30 | Called Asaph the seer.
+Heman | 1 Chronicles 25:5 | Called the king's seer.
+Jeduthun | 2 Chronicles 35:15 | Called the king's seer.
+? John the Baptist; John | A prophet indeed (Luke 7:26), but of the New Testament.
+? Anna | A prophetess, but in the New Testament (Luke 2:36).
+? Agabus | A prophet, but in the New Testament (Acts 11:28).
+? Balaam | He spoke oracles (Numbers 23–24), but the Old Testament calls him a soothsayer, not a prophet (Joshua 13:22).
+? Hananiah | He is called a prophet, but Jeremiah told him the LORD had not sent him (Jeremiah 28:15).
+? Noadiah | A prophetess, but one who tried to frighten Nehemiah from his work (Nehemiah 6:14).
+? David | The New Testament calls David a prophet (Acts 2:29–30); the Old Testament does not use the title for him.
+? Enoch | Jude says Enoch prophesied (Jude 14), but that is in the New Testament.
+
+@ priests | Worship & Feasts | Name a priest named in the Bible. | prayer | closed ignore=priest,high
+Aaron | Exodus 28:1 | Israel's first high priest.
+Melchizedek | Genesis 14:18 | King of Salem and priest of God Most High.
+  sheep: Melchizedek, king of Salem, was priest of God Most High in the days of Abram (Genesis 14:18).
+Eli | 1 Samuel 1:9 | Priest at Shiloh when Samuel was a boy.
+Zacharias | Luke 1:5 | Father of John the Baptist, of the division of Abijah.
+  forms: Zechariah
+Caiaphas | Matthew 26:57 | High priest at the trial of Jesus.
+Ezra | Ezra 7:1–5, 11 | A priest and scribe descended from Aaron.
+Zadok | 2 Samuel 15:24; 1 Kings 1:39 | Anointed Solomon king.
+Annas | Luke 3:2; John 18:13 | High priest and father-in-law of Caiaphas.
+Jethro | Exodus 3:1 | Priest of Midian and Moses' father-in-law.
+  forms: Reuel
+Eleazar | Numbers 20:25–28 | Aaron's son, who succeeded him.
+Jesus | Hebrews 4:14 | Hebrews calls him our great high priest.
+  forms: Christ
+Phinehas | Numbers 25:7–11 | Aaron's grandson.
+Abiathar | 1 Samuel 22:20; 23:9 | Escaped from Nob and served David.
+Hilkiah | 2 Kings 22:8 | Found the Book of the Law in the temple.
+Jehoiada | 2 Kings 11:4, 17 | Protected the young Joash and made him king.
+Nadab | Leviticus 10:1–2 | Aaron's son, who offered unauthorized fire.
+Abihu | Leviticus 10:1–2 | Aaron's son, who offered unauthorized fire.
+Jeremiah | Jeremiah 1:1 | Of the priests who were in Anathoth.
+Ezekiel | Ezekiel 1:3 | Called Ezekiel the priest.
+Ahimelech | 1 Samuel 21:1–6 | Gave David the holy bread at Nob.
+Ithamar | Exodus 28:1; 38:21 | A son of Aaron, named with his brothers.
+Hophni | 1 Samuel 1:3 | Son of Eli.
+Joshua the high priest; Joshua son of Jehozadak; Joshua | Haggai 1:1; Zechariah 3:1 | High priest after the return from exile.
+  forms: Jeshua
+Ananias | Acts 23:2 | High priest at Paul's hearing.
+Urijah | 2 Kings 16:10–11 | Priest in the days of Ahaz.
+  forms: Uriah
+Azariah | 2 Chronicles 26:17 | Confronted King Uzziah in the temple.
+Seraiah | 2 Kings 25:18 | Chief priest when Jerusalem fell.
+Pashhur; Pashur | Jeremiah 20:1 | The priest who put Jeremiah in the stocks.
+Eliashib | Nehemiah 3:1 | High priest who helped rebuild the Sheep Gate.
+Ahijah; Ahiah | 1 Samuel 14:3 | Wore the ephod in Saul's camp.
+Sceva | Acts 19:14 | A Jewish chief priest whose seven sons are mentioned at Ephesus.
+Potiphera; Potipherah | Genesis 41:45 | Priest of On and Joseph's father-in-law.
+Mattan | 2 Kings 11:18 | Priest of Baal.
+Amaziah | Amos 7:10 | Priest of Bethel, who opposed Amos.
+Zephaniah | 2 Kings 25:18 | The second priest when Jerusalem fell.
+? Samuel | He served at Shiloh and offered sacrifices, but Scripture calls him a prophet and judge, never a priest.
+? David; Solomon | A king who worshipped and offered sacrifices, but not a priest.
+? Levi | The priestly tribe is named for him, but he lived long before the priesthood was given to Aaron's line.
+? Paul; Peter | An apostle; the New Testament does not call him a priest.
+? Potiphar | An easy mix-up: Potiphar was the captain of the guard (Genesis 39:1); Potiphera was the priest of On.
+
+@ altar-builders | Worship & Feasts | Name a person who built, rebuilt, or repaired an altar to the LORD in Scripture. | worship | closed ignore=king,prophet
+Noah | Genesis 8:20 | The first altar named in Scripture, built after the flood.
+Abraham; Abram | Genesis 12:7–8; 13:18; 22:9 | Built altars at Shechem, Bethel, Hebron, and Moriah.
+Elijah | 1 Kings 18:30–32 | Repaired the altar on Carmel with twelve stones.
+Moses | Exodus 17:15; 24:4 | Named one altar, The LORD is my Banner.
+Israel | Genesis 33:20; 35:7 | Built altars at Shechem and Bethel.
+  forms: Jacob
+David | 2 Samuel 24:25 | Built on the threshing floor he bought from Araunah.
+Isaac | Genesis 26:25 | Built an altar at Beersheba.
+Solomon | 1 Kings 9:25; 2 Chronicles 4:1 | Made the great bronze altar of the temple.
+Gideon | Judges 6:24–26 | Called his altar, The LORD is Peace.
+Joshua | Joshua 8:30–31 | Built on Mount Ebal of uncut stones.
+Samuel | 1 Samuel 7:15–17 | Built an altar at his home in Ramah.
+Saul | 1 Samuel 14:35 | The first altar he built to the LORD.
+  sheep: The altar Saul built after the battle at Michmash was the first altar he built to the LORD (1 Samuel 14:35).
+Bezalel; Bezaleel | Exodus 38:1, 22 | Made the altar of burnt offering for the tabernacle.
+Zerubbabel | Ezra 3:2 | Rebuilt the altar on its site after the exile.
+Jeshua | Ezra 3:2 | The priest who rebuilt the altar with Zerubbabel.
+  forms: Joshua the son of Jozadak; Jeshua the high priest
+Manasseh | 2 Chronicles 33:13, 16 | Restored the altar of the LORD after his repentance.
+Asa | 2 Chronicles 15:8 | Renewed the altar before the temple porch.
+? Cain; Abel | They brought offerings (Genesis 4:3–4), but no altar is mentioned; Noah's is the first.
+? Aaron | He built an altar at Sinai, but it stood before the golden calf (Exodus 32:5).
+? Balaam; Balak | Balak built seven altars at Balaam's word (Numbers 23:1), but in an attempt to curse Israel.
+? Ahaz; Uriah | Uriah built an altar for Ahaz, copied from one in Damascus (2 Kings 16:10–11).
+? Jeroboam | He built an altar at Bethel for his own feast (1 Kings 12:32–33).
+? Reubenites; Gadites; Reuben; Gad | Their altar by the Jordan was a witness, not for offerings (Joshua 22:26–27).
+? Manoah | He offered on a rock (Judges 13:19), but is not said to have built an altar.
+
+@ nt-women | People | Name a woman of New Testament times who is named in the New Testament. | calling | closed
+Mary; Virgin Mary | Luke 1:26–38 | The mother of Jesus.
+  forms: Mary the mother of Jesus; Mary mother of Jesus
+Mary Magdalene; Magdalene | Luke 8:2; John 20:1–18 | The first to see the risen Jesus in John's Gospel.
+Martha | Luke 10:38–42; John 11:20–27 | Sister of Mary and Lazarus.
+Elizabeth; Elisabeth | Luke 1:5–7, 39–45 | Mother of John the Baptist.
+Mary of Bethany; Mary sister of Martha | John 11:1–2; 12:3 | Anointed Jesus' feet.
+Priscilla | Acts 18:2, 26 | With Aquila, taught Apollos more accurately.
+  forms: Prisca
+Lydia | Acts 16:14–15 | A seller of purple, baptized at Philippi.
+Anna | Luke 2:36–38 | A prophetess who saw the infant Jesus in the temple.
+Dorcas; Tabitha | Acts 9:36–41 | A disciple at Joppa, raised to life through Peter.
+Sapphira | Acts 5:1–10 | Wife of Ananias.
+Phoebe | Romans 16:1–2 | A servant of the church at Cenchreae.
+Salome | Mark 15:40; 16:1 | A follower of Jesus who went to the tomb.
+Joanna | Luke 8:3; 24:10 | Wife of Chuzas, Herod's steward.
+Eunice | 2 Timothy 1:5 | Timothy's mother.
+Lois | 2 Timothy 1:5 | Timothy's grandmother.
+Herodias | Mark 6:17–24 | Wife of Herod Antipas.
+Rhoda | Acts 12:13–15 | The servant girl who left Peter standing at the gate.
+  sheep: Rhoda was so glad to hear Peter at the gate that she ran in without opening it (Acts 12:13-14).
+Susanna | Luke 8:3 | One of the women who provided for Jesus and the Twelve.
+Euodia | Philippians 4:2 | A worker in the gospel at Philippi.
+Syntyche | Philippians 4:2 | A worker in the gospel at Philippi.
+Junia | Romans 16:7 | A relative of Paul and fellow prisoner; some translations read Junias.
+  forms: Junias
+Chloe | 1 Corinthians 1:11 | Her people brought Paul news from Corinth.
+Bernice | Acts 25:13, 23 | Came with Agrippa to hear Paul.
+  forms: Berenice
+Drusilla | Acts 24:24 | Wife of the governor Felix.
+Damaris | Acts 17:34 | Believed at Athens.
+Apphia | Philemon 2 | Greeted at the head of Philemon.
+Claudia | 2 Timothy 4:21 | Sends greetings to Timothy.
+Persis | Romans 16:12 | Worked hard in the Lord.
+Tryphaena; Tryphena | Romans 16:12 | A worker in the Lord at Rome.
+Tryphosa | Romans 16:12 | A worker in the Lord at Rome.
+Julia | Romans 16:15 | Greeted among the saints at Rome.
+Mary the mother of John Mark; Mary mother of Mark | Acts 12:12 | The church met to pray in her house.
+Mary the wife of Clopas; Mary of Clopas | John 19:25 | Stood by the cross.
+Mary the mother of James and Joses; Mary mother of James | Mark 15:40, 47 | Watched the crucifixion and saw the tomb.
+Candace | Acts 8:27 | Queen of the Ethiopians; the name was probably a royal title.
+? Eve; Sarah; Rahab; Ruth; Rebekah; Hagar | Named in the New Testament, but she lived in Old Testament times.
+? Jezebel | Revelation 2:20 uses the name for a woman at Thyatira, probably as a symbol recalling Ahab's queen.
+? Veronica | From later tradition; she is not named in the New Testament.
+? Pilate's wife; Claudia Procula; Procula | She is in the Gospel (Matthew 27:19), but unnamed; the name comes from later tradition.
+? Samaritan woman; woman at the well | One of the best-known women in the Gospels, but John never gives her name (John 4:7).
+? Salome daughter of Herodias | Herodias's daughter danced for Herod (Mark 6:22), but the Gospels do not name her; the Salome named in Mark is a disciple.
+
+@ paul-coworkers | People | Name a companion, co-worker, or host of Paul named in Acts or his letters. | church | closed
+Timothy | Acts 16:1–3; Philippians 2:19–22 | Joined Paul at Lystra and is named in many of his letters.
+Barnabas | Acts 13:2–3 | Set apart with Paul for the first journey.
+Silas | Acts 15:40; 16:25 | Travelled with Paul and sang with him in the Philippian jail.
+  forms: Silvanus
+Luke | Colossians 4:14; 2 Timothy 4:11 | The beloved physician; the only one with Paul at the end.
+Titus | Galatians 2:1–3; Titus 1:4–5 | Left in Crete to set things in order.
+Priscilla; Prisca | Acts 18:2–3, 26; Romans 16:3 | A tentmaker who, with her husband, hosted and worked with Paul.
+Aquila | Acts 18:2–3, 26; Romans 16:3 | A tentmaker from Pontus who worked alongside Paul.
+Mark; John Mark | Acts 12:25; 15:37–39; 2 Timothy 4:11 | Left the first journey, yet Paul later called him useful.
+Apollos | Acts 18:24–28; 1 Corinthians 3:5–6 | An eloquent teacher from Alexandria.
+Lydia | Acts 16:14–15, 40 | A seller of purple who opened her home in Philippi.
+Onesimus | Philemon 10–16; Colossians 4:9 | Sent back to Philemon as a beloved brother.
+Philemon | Philemon 1–2, 22 | Paul asked him to prepare a guest room.
+Epaphroditus | Philippians 2:25–30 | Carried the Philippians' gift and nearly died in the work.
+  sheep: Epaphroditus nearly died for the work of Christ while bringing the gift of the Philippians to Paul (Philippians 2:25-30).
+Phoebe | Romans 16:1–2 | A servant of the church at Cenchreae and a helper of many.
+Tychicus | Ephesians 6:21–22; Colossians 4:7–8 | Carried Paul's letters and news.
+Demas | Colossians 4:14; 2 Timothy 4:10 | A fellow worker who later left Paul.
+Epaphras | Colossians 1:7; 4:12 | Brought the gospel to Colossae.
+Aristarchus | Acts 19:29; 27:2; Colossians 4:10 | A Macedonian who sailed with Paul toward Rome.
+Trophimus | Acts 20:4; 21:29; 2 Timothy 4:20 | An Ephesian whom Paul left sick at Miletus.
+Erastus | Acts 19:22; Romans 16:23 | Sent ahead into Macedonia with Timothy.
+Onesiphorus | 2 Timothy 1:16–18 | Often refreshed Paul and was not ashamed of his chains.
+Sosthenes | 1 Corinthians 1:1 | Named with Paul at the head of 1 Corinthians.
+Tertius | Romans 16:22 | The scribe who wrote down Romans.
+Archippus | Colossians 4:17; Philemon 2 | Called a fellow soldier.
+Crescens | 2 Timothy 4:10 | Went to Galatia.
+Gaius | Romans 16:23 | Host to Paul and to the whole church.
+Sopater | Acts 20:4 | Of Beroea; travelled with Paul.
+Secundus | Acts 20:4 | A Thessalonian who travelled with Paul.
+Stephanas | 1 Corinthians 1:16; 16:15–17 | His household were the first converts in Achaia.
+Fortunatus | 1 Corinthians 16:17 | Visited Paul from Corinth.
+Achaicus | 1 Corinthians 16:17 | Visited Paul from Corinth.
+Urbanus | Romans 16:9 | Called a fellow worker in Christ.
+Clement | Philippians 4:3 | A fellow worker at Philippi.
+Euodia | Philippians 4:2–3 | Laboured with Paul in the gospel.
+Syntyche | Philippians 4:2–3 | Laboured with Paul in the gospel.
+Justus; Jesus called Justus; Jesus Justus | Colossians 4:11; Acts 18:7 | A fellow worker who was a comfort to Paul.
+  forms: Titius Justus
+Artemas | Titus 3:12 | Paul planned to send him to Crete.
+Zenas | Titus 3:13 | The lawyer.
+Jason | Acts 17:5–9 | Paul's host in Thessalonica.
+Andronicus | Romans 16:7 | A kinsman and fellow prisoner.
+Junia | Romans 16:7 | A relative and fellow prisoner; some translations read Junias.
+  forms: Junias
+Mnason | Acts 21:16 | An early disciple from Cyprus who lodged Paul.
+Carpus | 2 Timothy 4:13 | Paul left his cloak with him at Troas.
+Publius | Acts 28:7 | The chief man of Malta, who hosted Paul three days.
+? Peter; Cephas | A fellow apostle whom Paul once opposed at Antioch (Galatians 2:11), not a travelling companion.
+? Ananias | He laid hands on Paul in Damascus (Acts 9:17–18), but is not shown working alongside him.
+? Gamaliel | Paul's teacher before his conversion (Acts 22:3).
+? Stephen | Paul was present at Stephen's death, on the other side (Acts 7:58).
+? Alexander | Alexander the coppersmith did Paul much harm (2 Timothy 4:14).
+
+@ nt-rulers | People | Name a ruler, governor, or official named in the New Testament. | kingdom | closed ignore=king,emperor,governor
+Pontius Pilate; Pilate | Matthew 27:2; Luke 3:1 | Governor of Judea.
+Herod | Matthew 2:1–3; Acts 12:1–4, 20–23 | King when Jesus was born.
+  forms: Herod the Great; Herod Agrippa I; Herod Agrippa; Agrippa I
+Augustus; Caesar Augustus | Luke 2:1 | His decree brought Joseph and Mary to Bethlehem.
+Herod the tetrarch | Mark 6:14–28; Luke 3:1; 23:7–12 | Tetrarch of Galilee, who beheaded John the Baptist.
+  forms: Herod Antipas; Antipas
+Caiaphas | Matthew 26:57; John 11:49–51 | High priest at Jesus' trial.
+Nicodemus | John 3:1 | A Pharisee and a ruler of the Jews.
+Felix | Acts 23:24; 24:24–27 | Governor who kept Paul in custody two years.
+Festus; Porcius Festus | Acts 24:27; 25:1–12 | Governor before whom Paul appealed to Caesar.
+Agrippa; King Agrippa | Acts 25:13; 26:27–28 | Heard Paul's defence at Caesarea.
+  forms: Herod Agrippa II; Agrippa II
+Tiberius; Tiberius Caesar | Luke 3:1 | John began preaching in his fifteenth year.
+Annas | Luke 3:2; John 18:13 | High priest and father-in-law of Caiaphas.
+Cornelius | Acts 10:1–2 | Centurion of the Italian Regiment.
+Joseph | Mark 15:43 | A prominent council member who asked for Jesus' body.
+  forms: Joseph of Arimathea
+Claudius | Acts 11:28; 18:2 | Emperor who ordered Jews to leave Rome.
+  forms: Claudius Caesar
+Quirinius; Cyrenius | Luke 2:2 | Governor of Syria at the enrolment.
+Gallio | Acts 18:12–17 | Proconsul of Achaia.
+Archelaus | Matthew 2:22 | Reigned over Judea after his father Herod.
+Jairus | Mark 5:22 | A ruler of the synagogue.
+Sergius Paulus | Acts 13:7–12 | Proconsul of Cyprus, who believed.
+Philip; Philip the tetrarch; Herod Philip | Luke 3:1 | Tetrarch of Iturea and Trachonitis.
+Ananias | Acts 23:2; 24:1 | High priest at Paul's hearing.
+Candace | Acts 8:27 | Queen of the Ethiopians.
+Julius | Acts 27:1–3 | The centurion who escorted Paul toward Rome.
+Claudius Lysias; Lysias | Acts 23:26–27 | The commanding officer who rescued Paul in Jerusalem.
+Lysanias | Luke 3:1 | Tetrarch of Abilene.
+Aretas | 2 Corinthians 11:32 | The king whose governor guarded Damascus.
+Publius | Acts 28:7 | The chief man of Malta.
+Erastus | Romans 16:23 | The city treasurer.
+  sheep: Erastus, the treasurer of the city, sent greetings to the church in Rome (Romans 16:23).
+Blastus | Acts 12:20 | The king's personal aide.
+Crispus | Acts 18:8 | Ruler of the synagogue at Corinth, who believed.
+Sosthenes | Acts 18:17 | Ruler of the synagogue at Corinth.
+Dionysius; Dionysius the Areopagite | Acts 17:34 | A member of the Areopagus, who believed.
+? Nero | The Caesar Paul appealed to was Nero, but the New Testament never names him (Acts 25:11).
+? Ethiopian eunuch | A high official indeed (Acts 8:27), but Luke does not give his name.
+? Julius Caesar | He died in 44 BC and is not named in the New Testament.
+? Zacchaeus; Matthew; Levi | A tax collector rather than a ruler or governor.
+? David; Solomon | A king, but of the Old Testament era.
+
+@ titles-of-jesus | Names & Titles | Name a title or name given to Jesus in the New Testament. | worship | closed ignore=jesus,our,my
+Christ; Messiah; the Christ | Matthew 16:16; John 1:41 | Christ is Greek and Messiah is Hebrew for the Anointed One.
+  forms: Anointed One
+Lord | John 20:28; Philippians 2:11 | Every tongue will confess that Jesus Christ is Lord.
+Son of God | Mark 1:1; John 20:31 | Mark's Gospel opens with it.
+Savior; Saviour | Luke 2:11 | Announced by the angel to the shepherds.
+Son of Man | Mark 10:45 | The title Jesus most often used of himself.
+Lamb of God; Lamb | John 1:29 | John the Baptist's words on seeing him.
+Good Shepherd; Shepherd | John 10:11 | He lays down his life for the sheep.
+Immanuel; Emmanuel; God with us | Matthew 1:23 | It means God with us.
+King of the Jews; King | Matthew 2:2; 27:37 | Sought by the wise men; written above the cross.
+Light of the World; Light | John 8:12 | Whoever follows him will not walk in darkness.
+Bread of Life; Bread | John 6:35 | Whoever comes to him will not hunger.
+The Word; Word; Word of God | John 1:1, 14 | The Word became flesh and lived among us.
+  forms: Logos
+The Way, the Truth, and the Life; Way; Truth; Life; Way Truth Life; Way Truth and Life | John 14:6 | No one comes to the Father except through him.
+Alpha and Omega; Alpha; Omega; First and Last; Beginning and End | Revelation 22:13 | The first and the last.
+King of kings; Lord of lords; King of kings and Lord of lords | Revelation 19:16 | The name written on his robe.
+Rabbi; Teacher; Rabboni | John 1:38; 20:16 | What his disciples called him.
+Son of David | Matthew 21:9 | The crowd's cry as he entered Jerusalem.
+God; My Lord and my God | John 1:1; 20:28 | Thomas's confession on seeing the risen Jesus.
+Resurrection and the Life; Resurrection | John 11:25 | Spoken to Martha before Lazarus was raised.
+True Vine; Vine | John 15:1 | His Father tends the vine.
+The Door; Door | John 10:9 | Whoever enters by him will be saved.
+  forms: Gate; Door of the sheep
+High Priest; Great High Priest; Priest | Hebrews 4:14 | He has passed through the heavens.
+Lion of Judah; Lion of the tribe of Judah; Lion | Revelation 5:5 | He has overcome to open the scroll.
+Mediator | 1 Timothy 2:5 | The one mediator between God and men.
+Cornerstone; Chief Cornerstone; Stone | Ephesians 2:20; 1 Peter 2:6 | The stone on which the building rests.
+Nazarene | Matthew 2:23 | From the town where he grew up.
+  forms: Jesus of Nazareth; of Nazareth
+Advocate | 1 John 2:1 | He speaks to the Father for us.
+Bridegroom | Mark 2:19–20 | His answer to a question about fasting.
+Head of the Church; Head; Head of the body | Colossians 1:18 | He is the head of the body.
+Holy One of God; Holy One | Mark 1:24 | Recognized even by an unclean spirit.
+Morning Star; Bright Morning Star; Bright and Morning Star | Revelation 22:16 | One of his last titles in Scripture.
+Root of David; Root; Root and Offspring of David | Revelation 5:5; 22:16 | Both David's root and David's offspring.
+Last Adam | 1 Corinthians 15:45 | A life-giving spirit.
+  forms: Second Adam
+Prophet | Luke 24:19; Acts 3:22 | A prophet mighty in deed and word.
+Firstborn; Firstborn of all creation; Firstborn from the dead | Colossians 1:15, 18 | Firstborn of all creation and firstborn from the dead.
+I AM | John 8:58 | Before Abraham came into existence, I AM.
+Only begotten Son; Only begotten | John 3:16 | The Son whom God gave.
+  forms: One and only Son; Only Son
+Apostle | Hebrews 3:1 | The Apostle and High Priest of our confession.
+Prince of life | Acts 3:15 | Peter's words in Solomon's porch.
+  forms: Author of life
+The Amen; Amen | Revelation 3:14 | The faithful and true witness.
+Chief Shepherd | 1 Peter 5:4 | He will give the unfading crown of glory.
+Author and perfecter of faith; Author and finisher of our faith; Author and finisher; Author of faith | Hebrews 12:2 | The one to whom runners in the race look.
+  forms: Pioneer and perfecter
+Dayspring; Dawn from on high | Luke 1:78 | From Zacharias's song.
+  forms: Sunrise; Rising sun
+  sheep: Zacharias sang that the dayspring from on high had visited his people (Luke 1:78).
+Faithful witness | Revelation 1:5 | Also called firstborn of the dead.
+  forms: Faithful and true witness
+Great Shepherd; Great Shepherd of the sheep | Hebrews 13:20 | Brought again from the dead.
+Shepherd and Overseer of souls; Overseer; Bishop of souls; Overseer of souls | 1 Peter 2:25 | The one to whom the straying return.
+  forms: Guardian of souls
+Righteous One; Just One | Acts 3:14; 7:52 | Used by both Peter and Stephen.
+Image of the invisible God; Image of God; Image | Colossians 1:15 | He makes the unseen God known.
+Lord of glory | 1 Corinthians 2:8 | The one the rulers of this age crucified.
+? Prince of Peace; Wonderful Counselor; Mighty God; Everlasting Father | From Isaiah 9:6, which Christians read of Christ, but the title itself is not repeated in the New Testament.
+? Redeemer | A title for God in the Old Testament (Isaiah 44:6). The New Testament says Christ redeems (Galatians 3:13) but does not use the noun of him.
+? Rose of Sharon; Lily of the Valley; Lily of the Valleys | From Song of Solomon 2:1; applied to Christ in hymns, not in the New Testament.
+? Jehovah; Yahweh | The divine name in the Old Testament; the New Testament writes Lord.
+? Man of Sorrows; Suffering Servant | From Isaiah 53, which the New Testament applies to Jesus, but the title itself is not repeated there.
+
+@ nt-letters | Books of the Bible | Name a New Testament letter (epistle). | word | closed books ignore=epistle,letter,to,book
+Romans | Romans 1:16–17 | Paul's fullest setting out of the gospel.
+  tier: 1
+1 Corinthians; Corinthians | 1 Corinthians 13:1–13; 15:1–8 | Holds the love chapter and the resurrection chapter.
+  tier: 1
+Ephesians | Ephesians 2:8–9; 6:10–18 | Saved by grace through faith; the armour of God.
+  tier: 3
+Galatians | Galatians 5:22–23 | Lists the fruit of the Spirit.
+  tier: 3
+Philippians | Philippians 1:12–14; 4:4 | A letter of joy written in chains.
+  tier: 3
+Hebrews | Hebrews 11:1 | Its author is not named.
+  tier: 3
+James | James 1:22 | Calls its readers to be doers of the word.
+  tier: 3
+2 Corinthians | 2 Corinthians 12:9 | Paul learns that grace is sufficient in weakness.
+  tier: 4
+Colossians | Colossians 1:15–20 | Sets out the supremacy of Christ.
+  tier: 4
+1 Peter; Peter | 1 Peter 1:1; 3:15 | Written to believers scattered through five provinces.
+  tier: 4
+1 John | 1 John 4:8 | Says that God is love.
+  tier: 4
+1 Timothy; Timothy | 1 Timothy 4:12 | Counsel to a young pastor.
+  tier: 4
+1 Thessalonians; Thessalonians | 1 Thessalonians 4:13–18 | Comfort about believers who have died.
+  tier: 5
+2 Timothy | 2 Timothy 3:16; 4:7 | Paul's last letter.
+  tier: 5
+Titus | Titus 1:5 | Written to Titus in Crete.
+  tier: 5
+2 Peter | 2 Peter 3:15–16 | Mentions the letters of Paul.
+  tier: 5
+2 Thessalonians | 2 Thessalonians 3:10–13 | Urges the church not to grow weary in doing good.
+  tier: 5
+Jude | Jude 3 | Urges readers to contend for the faith.
+  tier: 5
+Philemon | Philemon 10–16 | An appeal on behalf of Onesimus.
+  tier: 5
+2 John | 2 John 1 | Addressed to a chosen lady and her children.
+  sheep: 2 John is addressed to the chosen lady and her children (2 John 1).
+3 John | 3 John 1, 9, 12 | Written to Gaius; names Diotrephes and Demetrius.
+? Revelation; Revelations; Apocalypse | Revelation has a letter frame (Revelation 1:4) and contains seven letters (Revelation 2–3), but it is usually classed as prophecy (Revelation 1:3).
+? Acts | Addressed to Theophilus (Acts 1:1), but Acts is a narrative history, not a letter.
+? Luke | Addressed to Theophilus (Luke 1:3), but Luke is a Gospel.
+? Matthew; Mark; John | One of the four Gospels, not a letter.
+? Laodiceans | Paul mentions a letter from Laodicea (Colossians 4:16), but no such letter is in the New Testament.
+? 1 Clement; Clement; Barnabas; Didache | A genuine early Christian writing, but not part of the New Testament.
+? 3 Corinthians | Paul wrote other letters to Corinth (1 Corinthians 5:9), but only two are in the New Testament.
+
+@ ot-books | Books of the Bible | Name a book of the Old Testament. | word | closed books ignore=book
+Genesis | Genesis 1:1 | From creation to Joseph in Egypt.
+  tier: 1
+Psalms; Psalm | Psalm 23:1–6 | One hundred and fifty songs and prayers.
+  tier: 1
+Exodus | Exodus 14:21–22; 20:1–17 | The rescue from Egypt and the giving of the law.
+  tier: 1
+Proverbs | Proverbs 1:7 | Sayings of wisdom.
+  tier: 3
+Isaiah | Isaiah 53:1–6 | Holds the song of the suffering servant.
+  tier: 3
+Job | Job 1:21 | A righteous man tested by suffering.
+  tier: 3
+Daniel | Daniel 6:16–23 | Stories and visions from the exile.
+  tier: 3
+Ruth | Ruth 1:16 | A Moabite widow's loyalty.
+  tier: 3
+Jonah | Jonah 1:17 | The prophet sent to Nineveh.
+  tier: 3
+Esther | Esther 4:14 | A Jewish queen in Persia.
+  tier: 3
+Leviticus | Leviticus 19:2 | Laws of holiness and sacrifice.
+  tier: 4
+Numbers | Numbers 6:24–26 | The wilderness years.
+  tier: 4
+Deuteronomy | Deuteronomy 6:4–5 | Moses' farewell on the plains of Moab.
+  tier: 4
+Joshua | Joshua 1:9 | The entry into the land.
+  tier: 4
+Judges | Judges 21:25 | The days before Israel had a king.
+  tier: 4
+Jeremiah | Jeremiah 31:31–34 | Promises a new covenant.
+  tier: 4
+Ezekiel | Ezekiel 37:1–14 | The valley of dry bones.
+  tier: 4
+1 Samuel; Samuel | 1 Samuel 17:45–50 | Samuel, Saul, and the young David.
+  tier: 4
+Ecclesiastes | Ecclesiastes 3:1–8 | A time for every purpose under heaven.
+  tier: 4
+1 Kings; Kings | 1 Kings 18:36–39 | Holds Elijah’s contest on Mount Carmel.
+  tier: 5
+2 Samuel | 2 Samuel 7:12–16 | David's reign and God's covenant with him.
+  tier: 5
+2 Kings | 2 Kings 2:11 | From Elijah's departure to the exile.
+  tier: 5
+Song of Solomon; Song of Songs; Canticles; Song | Song of Solomon 8:6–7 | A love poem.
+  tier: 5
+Nehemiah | Nehemiah 2:17–18 | Rebuilding Jerusalem's walls.
+  tier: 5
+Ezra | Ezra 1:1–4 | The return from exile.
+  tier: 5
+Malachi | Malachi 3:1 | The last book of the Old Testament.
+  tier: 5
+Hosea | Hosea 6:6 | God's faithful love for an unfaithful people.
+  tier: 5
+1 Chronicles; Chronicles | 1 Chronicles 29:10–13 | Genealogies and the reign of David.
+  tier: 5
+2 Chronicles | 2 Chronicles 7:14 | From Solomon to the exile.
+  tier: 5
+Lamentations | Lamentations 3:22–23 | Poems of grief over fallen Jerusalem.
+  tier: 5
+Amos | Amos 5:24 | A call for justice.
+  tier: 5
+Micah | Micah 6:8 | What the LORD requires.
+  tier: 5
+Joel | Joel 1:4; 2:28 | The locusts and the promised Spirit.
+  tier: 5
+Zechariah | Zechariah 1:1, 8 | Night visions given in the days of the returned exiles.
+  tier: 5
+Obadiah | Obadiah 1 | The shortest Old Testament book: one chapter.
+  sheep: Obadiah is the shortest book of the Old Testament: a single chapter of twenty-one verses.
+Nahum | Nahum 1:1 | An oracle about Nineveh.
+  tier: 5
+Habakkuk | Habakkuk 2:4 | A prophet's questions and God's answer.
+  tier: 5
+Zephaniah | Zephaniah 1:14 | The great day of the LORD is near.
+  tier: 5
+Haggai | Haggai 1:8 | A call to rebuild the temple, in two chapters.
+? Tobit; Judith; Sirach; Ecclesiasticus; Wisdom; Wisdom of Solomon; Baruch; Maccabees; 1 Maccabees; 2 Maccabees | Received as Scripture by Catholic and Orthodox Christians, but outside the 66-book canon this game uses by default.
+? Matthew; Mark; Luke; John; Acts; Romans; Corinthians; Galatians; Ephesians; Philippians; Colossians; Thessalonians; Timothy; Titus; Philemon; Hebrews; James; Peter; Jude; Revelation | That one is in the New Testament.
+? Enoch; Jubilees; Jasher | An ancient book, but not part of the Old Testament in the 66-book canon.
+
+@ nt-books | Books of the Bible | Name a book of the New Testament. | word | closed books ignore=book,gospel,epistle,letter,to,according
+Matthew | Matthew 28:18–20 | The first Gospel; ends with the Great Commission.
+  tier: 1
+John | John 20:30–31 | Written so that readers may believe.
+  tier: 1
+Revelation; Revelations; Apocalypse | Revelation 1:1–3 | John's vision on Patmos.
+  tier: 1
+Romans | Romans 8:38–39 | Nothing can separate us from the love of God.
+  tier: 1
+Mark | Mark 1:1 | The shortest Gospel.
+  tier: 3
+Luke | Luke 1:1–4 | An orderly account written for Theophilus.
+  tier: 3
+Acts; Acts of the Apostles | Acts 1:8 | The gospel from Jerusalem to Rome.
+  tier: 3
+1 Corinthians; Corinthians | 1 Corinthians 13:13 | Faith, hope, and love.
+  tier: 4
+Ephesians | Ephesians 2:8–10 | Saved by grace through faith.
+  tier: 4
+Galatians | Galatians 2:20 | Crucified with Christ.
+  tier: 4
+Hebrews | Hebrews 4:14–16 | Jesus as the great high priest.
+  tier: 4
+James | James 2:17 | Faith without works is dead.
+  tier: 4
+Philippians | Philippians 4:13 | Strength through Christ.
+  tier: 4
+2 Corinthians | 2 Corinthians 5:17 | A new creation in Christ.
+  tier: 5
+Colossians | Colossians 3:1–4 | Set your mind on things above.
+  tier: 5
+1 Peter; Peter | 1 Peter 2:9 | A chosen people.
+  tier: 5
+1 John | 1 John 1:9 | He is faithful to forgive.
+  tier: 5
+1 Timothy; Timothy | 1 Timothy 2:5 | One mediator between God and men.
+  tier: 5
+1 Thessalonians; Thessalonians | 1 Thessalonians 5:16–18 | Rejoice, pray, give thanks.
+  tier: 5
+2 Timothy | 2 Timothy 1:7 | A spirit of power, love, and self-control.
+  tier: 5
+Titus | Titus 2:11–14 | The grace of God has appeared.
+  tier: 5
+2 Peter | 2 Peter 1:20–21 | Prophecy came as the Spirit moved its speakers.
+  tier: 5
+Jude | Jude 24–25 | Ends with a great doxology.
+  tier: 5
+2 Thessalonians | 2 Thessalonians 3:3 | The Lord is faithful.
+  tier: 5
+Philemon | Philemon 15–16 | No longer a slave, but a brother.
+  sheep: Philemon, a single chapter, is the appeal Paul wrote for the runaway slave Onesimus (Philemon 10-16).
+2 John | 2 John 6 | Love means walking in his commandments.
+  tier: 5
+3 John | 3 John 4 | No greater joy than children walking in truth.
+? Genesis; Exodus; Psalms; Proverbs; Isaiah; Daniel; Jonah; Job; Ruth; Esther; Malachi; Jeremiah; Ezekiel | That one is in the Old Testament.
+? Gospel of Thomas; Thomas | An early writing outside the New Testament; the four Gospels are Matthew, Mark, Luke, and John.
+? Didache; 1 Clement; Shepherd of Hermas; Barnabas | An early Christian writing, but not part of the New Testament.
+? Paul; Peter and Paul | He wrote many of its letters, but no book carries his name.
+? Tobit; Judith; Maccabees; Sirach | A deuterocanonical book of the Old Testament in Catholic and Orthodox Bibles.
+
+@ feasts-times | Worship & Feasts | Name a feast, fast, or sacred day or season named in the Bible. | remembrance | closed ignore=feast,festival,day,holy
+Passover | Exodus 12:11–14; Leviticus 23:5 | Remembers the night the LORD passed over Israel's houses in Egypt.
+  forms: Pesach
+Sabbath; seventh day | Exodus 20:8–11 | The seventh day, set apart for rest.
+  forms: Shabbat
+Pentecost | Leviticus 23:15–21; Acts 2:1 | Fifty days after Passover; the day the Spirit was poured out.
+  forms: Feast of Weeks; Weeks; Shavuot; Feast of Harvest
+Day of Atonement; Atonement | Leviticus 16:2, 29–31; 23:27 | The one day each year the high priest entered the Most Holy Place.
+  forms: Yom Kippur
+Feast of Booths; Booths; Tabernacles; Feast of Tabernacles | Leviticus 23:34–43; John 7:2 | A week of living in shelters to remember the wilderness.
+  forms: Sukkot; Ingathering; Feast of Ingathering
+Unleavened Bread; Feast of Unleavened Bread | Leviticus 23:6 | Seven days without leaven, beginning the day after Passover.
+Jubilee; Year of Jubilee | Leviticus 25:8–12 | Every fiftieth year, liberty was proclaimed through the land.
+Firstfruits | Leviticus 23:9–14 | The first sheaf of the harvest waved before the LORD.
+  forms: Feast of Firstfruits
+Trumpets | Leviticus 23:23–25 | A day of rest marked by the blowing of trumpets.
+  forms: Feast of Trumpets; Rosh Hashanah
+Purim | Esther 9:26–28 | Remembers the deliverance in Esther's day.
+Feast of Dedication; Dedication | John 10:22 | Jesus walked in the temple at this winter feast.
+  forms: Hanukkah; Chanukah
+  sheep: Jesus walked in the temple in Solomon's porch at the winter Feast of Dedication (John 10:22-23).
+New Moon | Numbers 28:11–15; Colossians 2:16 | The first day of each month, marked with offerings.
+  forms: New Moons
+Sabbath year; seventh year | Leviticus 25:1–7 | Every seventh year the land was to rest.
+  forms: sabbatical year; year of release
+The Lord's Day; Lord's Day | Revelation 1:10 | John was in the Spirit on the Lord's Day.
+fast of the fifth month; fast of the fourth month; fast of the seventh month; fast of the tenth month; fifth month fast | Zechariah 7:3–5; 8:19 | Four yearly fasts that Zechariah says will become feasts of joy.
+  forms: Fasts of the exile; Tisha B'Av
+The eighth-day assembly; solemn assembly; eighth day | Leviticus 23:36 | A closing assembly after the Feast of Booths.
+  forms: Shemini Atzeret
+? Christmas; Advent; Epiphany | A feast of the church year, but the day itself is not named in Scripture.
+? Easter | It celebrates the resurrection, but the feast is not named in Scripture; where the King James Version has Easter (Acts 12:4), the word is Passover.
+? Lent; Ash Wednesday; Good Friday; Palm Sunday | A day of the church year; the events are in the Gospels, but the observance is not named there.
+? Lord's Supper; Communion; Eucharist; Last Supper | A meal Jesus gave his church rather than a day or season.
+? Ramadan; Diwali | A sacred season of another faith, not named in the Bible.
+
+@ offerings | Worship & Feasts | Name a kind of offering or sacrifice in the Law of Moses. | mercy | closed ignore=offering,offerings,sacrifice,sacrifices
+Burnt offering; burnt | Leviticus 1:3–9 | Wholly consumed on the altar.
+  forms: whole burnt offering
+Sin offering; sin | Leviticus 4:1–3, 27–31 | For sins committed unintentionally.
+  forms: purification offering
+Tithe; tenth | Leviticus 27:30; Numbers 18:21 | A tenth, given for the support of the Levites.
+  forms: tithes
+lamb | Exodus 12:3–8 | A lamb without blemish for each household.
+  forms: Passover lamb; Passover; paschal lamb
+Firstfruits | Exodus 23:19; Leviticus 23:10 | The first of the harvest.
+meal offering; meat offering; meal | Leviticus 2:1–3 | Fine flour with oil and frankincense.
+  forms: Grain offering; grain; cereal offering
+Peace offering; peace | Leviticus 3:1–5 | A shared meal of thanksgiving and fellowship.
+  forms: fellowship offering; fellowship
+trespass offering; trespass | Leviticus 5:14–16 | Made with restitution added.
+  forms: Guilt offering; guilt; reparation offering
+Scapegoat | Leviticus 16:8–10, 21–22 | Sent into the wilderness on the Day of Atonement.
+  forms: goat for Azazel; Azazel
+Drink offering; drink | Numbers 15:5–10; 28:7 | Wine poured out with other offerings.
+  forms: libation
+thanksgiving offering; thanksgiving | Leviticus 7:12–13 | A peace offering given in thanks.
+  forms: Thank offering; thank
+Freewill offering; freewill | Leviticus 22:18–23 | Given voluntarily.
+  forms: voluntary offering
+Wave offering; wave | Leviticus 7:30; 23:11 | Waved before the LORD.
+Incense | Exodus 30:7–8 | Burned every morning and evening.
+Red heifer; heifer | Numbers 19:1–9 | Its ashes were used for the water of cleansing.
+  sheep: The ashes of a red heifer were kept for the water of cleansing (Numbers 19:2-9).
+Heave offering; heave | Leviticus 7:14, 32 | A portion lifted up for the priest.
+  forms: contribution
+Vow offering; vow | Leviticus 7:16 | Brought in fulfilment of a vow.
+  forms: votive offering; votive
+consecration offering; consecration | Leviticus 8:22–28 | Offered when Aaron and his sons were consecrated.
+  forms: Ordination offering; ordination; ram of ordination
+continual offering; continual burnt offering | Exodus 29:38–42; Numbers 28:3–6 | Two lambs each day, morning and evening.
+  forms: Daily offering; daily; morning and evening sacrifice; tamid
+Jealousy offering; jealousy | Numbers 5:15 | A grain offering of barley meal.
+  forms: grain offering of jealousy
+Atonement money; half shekel; ransom; half-shekel | Exodus 30:11–16 | Half a shekel from each person counted.
+? Widow's mite; mite | A gift to the temple treasury in Jesus' day (Mark 12:41–44), not one of the offerings of the Law.
+? Living sacrifice | Paul's picture of the Christian life (Romans 12:1).
+? Isaac | God stopped that sacrifice and provided a ram (Genesis 22:12–13), long before the Law was given.
+? Sacrifice of praise; praise | A New Testament image (Hebrews 13:15) rather than an offering of the Law.
+? Human sacrifice; child sacrifice | Forbidden by the Law (Leviticus 18:21).
+
+@ tabernacle-items | Worship & Feasts | Name a furnishing of the tabernacle or a piece of the priests' garments (Exodus 25–30). | worship | closed ignore=golden,gold,holy,priest,priests,high
+Ark of the covenant; ark; ark of the testimony; ark covenant | Exodus 25:10–16 | A gold-covered chest that held the tablets of the testimony.
+Lampstand; candlestick; lamp | Exodus 25:31–37 | Pure gold, with seven lamps.
+  forms: menorah
+altar | Exodus 27:1–2 | Acacia wood overlaid with bronze, with a horn at each corner.
+  forms: Altar of burnt offering; bronze altar; brazen altar; altar burnt offering
+Veil; vail | Exodus 26:31–33 | Separated the holy place from the most holy.
+  forms: curtain
+Mercy seat; mercy | Exodus 25:17–22 | The gold cover of the ark, where God promised to meet with Moses.
+  forms: atonement cover
+table; shewbread; bread of the presence; bread | Exodus 25:23–30 | Held the bread of the Presence.
+  forms: Table of showbread; showbread; table showbread
+Altar of incense; incense altar; altar incense | Exodus 30:1–6 | Stood before the veil.
+Ephod | Exodus 28:6–12 | Worn by the high priest, with two onyx stones on its shoulders.
+Bronze basin; basin; laver; wash basin | Exodus 30:17–21 | For the priests to wash their hands and feet.
+  forms: bronze laver
+breastplate; breastplate of judgment | Exodus 28:15–21 | Set with twelve stones for the twelve tribes.
+  forms: Breastpiece
+Cherubim; cherub | Exodus 25:18–20 | Two figures of hammered gold over the mercy seat.
+  forms: cherubs
+Urim and Thummim; Urim; Thummim | Exodus 28:30 | Carried in the breastpiece over Aaron's heart.
+  sheep: The Urim and Thummim were placed in the breastpiece over Aaron's heart (Exodus 28:30).
+Turban; mitre | Exodus 28:36–39 | Fine linen, bearing the gold plate.
+  forms: miter
+Robe of the ephod; robe; blue robe | Exodus 28:31–35 | All of blue, with bells and pomegranates on its hem.
+Anointing oil; oil | Exodus 30:22–25 | A blend of spices and olive oil for consecrating the tent and priests.
+Incense | Exodus 30:34–36 | A blend reserved for the LORD.
+Gold plate; plate | Exodus 28:36 | Engraved with the words, Holy to the LORD.
+  forms: crown; diadem; holy to the LORD
+Sash; girdle | Exodus 28:39–40 | Embroidered work.
+  forms: belt
+Tunic; coat | Exodus 28:39 | Woven of fine linen.
+  forms: tunics; coats
+Bells and pomegranates; bells; pomegranates | Exodus 28:33–34 | Alternating around the hem of the robe.
+Onyx stones; onyx; shoulder stones | Exodus 28:9–12 | Engraved with the names of the sons of Israel.
+Court hangings; hangings; court; screen | Exodus 27:9–16 | Fine linen hangings enclosed the court.
+  forms: courtyard; court curtains
+tent; tabernacle curtains; covering | Exodus 26:1, 14 | Ten curtains of fine linen, with coverings above.
+  forms: Tent curtains; coverings
+breeches; linen breeches | Exodus 28:42 | Worn by the priests when they served.
+  forms: Linen undergarments; undergarments
+? Ten Commandments; tablets; manna; jar of manna; Aaron's rod | Kept in or beside the ark (Hebrews 9:4), but not one of the furnishings.
+? Bronze sea; molten sea; Jachin; Boaz; pillars | That belongs to Solomon's temple (1 Kings 7).
+? Golden calf; calf | An idol made at Sinai (Exodus 32), not a furnishing of the tabernacle.
+? Bronze serpent; serpent | Made later in the wilderness (Numbers 21:9), not for the tabernacle.
+? Cross; pulpit; pews; baptistry | From a much later house of worship.
+
+@ tabernacle-materials | Worship & Feasts | Name a material, spice, or ingredient God specified for the tabernacle and its worship (Exodus 25–30). | worship | closed ignore=fine,pure,sweet,wood,stones,yarn
+Gold | Exodus 25:3 | The first material on the list.
+Silver | Exodus 25:3; 26:19 | Used for the sockets of the frames.
+Bronze; brass | Exodus 25:3; 27:2; 30:18 | Used for the altar and the basin.
+  forms: copper
+Acacia wood; acacia; shittim; shittim wood | Exodus 25:5, 10 | The wood of the ark, table, and altars.
+Olive oil; oil | Exodus 27:20 | Pure beaten oil for the lamp.
+Fine linen; linen | Exodus 25:4; 26:1 | For the curtains and the priests' garments.
+Frankincense | Exodus 30:34 | One of the four ingredients of the incense.
+Myrrh | Exodus 30:23 | The first spice in the anointing oil.
+blue; purple; scarlet; blue purple scarlet | Exodus 25:4 | Three colours woven through curtains and garments.
+  forms: Blue, purple, and scarlet yarn
+Goats' hair | Exodus 25:4; 26:7 | Woven into the tent over the tabernacle.
+  forms: goat hair
+Onyx stones; onyx | Exodus 25:7 | Set on the shoulders of the ephod.
+Rams' skins dyed red; rams skins | Exodus 25:5 | A covering for the tent.
+  forms: ram skins; ram skin
+Cinnamon | Exodus 30:23 | A spice in the anointing oil.
+Salt | Exodus 30:35; Leviticus 2:13 | The incense was seasoned with it, and so was every offering.
+Cassia | Exodus 30:24 | A spice in the anointing oil.
+Calamus; cane; fragrant cane | Exodus 30:23 | A spice in the anointing oil.
+  forms: sweet cane
+Stacte | Exodus 30:34 | An ingredient of the incense.
+Onycha | Exodus 30:34 | An ingredient of the incense.
+  sheep: Onycha was one of the four spices in the holy incense (Exodus 30:34).
+Galbanum | Exodus 30:34 | An ingredient of the incense.
+Sea cow hides; badgers skins; sea cow | Exodus 25:5 | The outer covering; translations differ on the animal.
+  forms: badger skins; goatskins; porpoise skins; sealskins
+Fine flour; flour; wheat flour | Exodus 29:2 | For the bread of the ordination.
+Wine | Exodus 29:40 | Poured out as a drink offering with the daily lamb.
+? Cedar; cedar wood | Solomon's temple used cedar (1 Kings 6:9); the tabernacle used acacia.
+? Honey | The Law kept honey out of the offerings made by fire (Leviticus 2:11).
+? Leaven; yeast | The Law kept leaven out of the offerings made by fire (Leviticus 2:11).
+? Iron; marble; ivory | Not on the list in Exodus 25:3–7.
+? Manna | Kept in a jar as a memorial (Exodus 16:33), but not a building material or ingredient.
