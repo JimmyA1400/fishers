@@ -6,7 +6,7 @@
 8. Release gate on the live URL
 
 ## Next action
-`cd tests/playthrough && node release-gate.js --url https://jimmya1400.github.io/fishers/`, then Lighthouse on the live URL, the update-toast test, and RELEASE_CHECKLIST.md.
+Finish the update test (tests/playthrough/update-check.js), rerun the live gate and Lighthouse, write RELEASE_CHECKLIST.md.
 
 ## Checklist
 

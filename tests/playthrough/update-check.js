@@ -25,6 +25,8 @@ const LIMIT = Number(A.minutes || 8) * 60000;
     await page.goto(BASE);
     await page.waitForFunction(() => navigator.serviceWorker && navigator.serviceWorker.controller, null, { timeout: 30000 });
     out.before = await page.evaluate(() => window.FSH_CONFIG.version);
+    // A first visit opens How to Play; close it like a player would.
+    await page.evaluate(() => document.querySelectorAll('dialog[open]').forEach((d) => d.close()));
     console.log('open tab is on', out.before, '— push a change now');
     const t0 = Date.now();
     let seen = false;
