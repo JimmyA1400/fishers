@@ -67,6 +67,9 @@
 .hud-on .hud { transform: none; opacity: 1; }
 .hud > * { pointer-events: auto; }
 .hud .glass { padding: .4rem .6rem .45rem; border-radius: 12px; min-width: 0; }
+/* The HUD sits over water that moves every frame during a sink; a live blur
+   there is redrawn each frame, so it trades the blur for a deeper tint. */
+.cam-moving .hud .glass { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(9, 20, 46, .78); }
 .hud-label { display: block; font: 700 .625rem/1.2 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: rgba(238, 244, 251, .66); }
 .hud strong { display: block; font-size: 1.125rem; line-height: 1.25; color: #fff; white-space: nowrap; }
 .hud-zone { display: block; font: italic .75rem/1.2 var(--serif); color: rgba(238, 244, 251, .8); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
