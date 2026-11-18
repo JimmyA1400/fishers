@@ -258,10 +258,9 @@
 .menu-list { display: grid; gap: .1rem; }
 .credits { margin-top: 1rem; }
 
-@media (prefers-reduced-motion: reduce) {
-  .cast-net, .ring.low, .cd-pill b.pulse, .inbar-row.shake { animation: none !important; }
-  .hud, .prompt-card, .inbar, .home.leaving .home-top, .home.leaving .home-bottom, .home.leaving .home-castno { transition-duration: .01s !important; }
-}
+/* calm motion (see Settings → Animations) */
+html.calm .cast-net, html.calm .ring.low, html.calm .cd-pill b.pulse, html.calm .inbar-row.shake { animation: none !important; }
+html.calm .hud, html.calm .prompt-card, html.calm .inbar, html.calm .home.leaving .home-top, html.calm .home.leaving .home-bottom, html.calm .home.leaving .home-castno { transition-duration: .01s !important; }
 [hidden] { display: none !important; }
 .inbar .feedback, .inbar .feedback.suggest, .inbar .feedback.near, .inbar .feedback.miss {
   min-height: 0; margin: 0; border: 0; color: var(--amber); background: rgba(9, 20, 46, .62);
@@ -388,11 +387,10 @@
 }
 @keyframes burst-in { from { opacity: 0; } }
 
-@media (prefers-reduced-motion: reduce) {
-  .tag-in, .go-btn, .rv-burst, .rv-body[data-t="6"] .rv-tier::after { animation: none !important; }
-  .rv-body > * { animation-duration: .01s !important; animation-delay: 0s !important; }
-  .rv-icon .ic { animation: none; }
-}
+/* calm motion (see Settings → Animations) */
+html.calm .tag-in, html.calm .go-btn, html.calm .rv-burst, html.calm .rv-body[data-t="6"] .rv-tier::after { animation: none !important; }
+html.calm .rv-body > * { animation-duration: .01s !important; animation-delay: 0s !important; }
+html.calm .rv-icon .ic { animation: none; }
 
 /* ---------- sheets: lists, settings, the end screen, all dark glass ---------- */
 .sheet-inner .card {
@@ -483,9 +481,8 @@
 .end .you-tag { color: var(--accent); }
 .end .next-cast { margin-top: 1.2rem; }
 
-@media (prefers-reduced-motion: reduce) {
-  .end, .cl-line, .cl-icon, .cl-miss, .end-fish { animation: none !important; opacity: 1; }
-}
+/* calm motion (see Settings → Animations) */
+html.calm .end, html.calm .cl-line, html.calm .cl-icon, html.calm .cl-miss, html.calm .end-fish { animation: none !important; opacity: 1; }
 .end .bank-list { columns: 2 8rem; }
 .end-view .corner, .view-sheet .corner { background: linear-gradient(rgba(4, 9, 26, .8), rgba(4, 9, 26, 0)); padding-bottom: .9rem; }
 

@@ -37,7 +37,10 @@
   var ZONES = [[0, 'Sunlit shallows']];
   var el, layers = {}, markers = [];
   var shown = 0, view = 'home', frac = 0.6, tween = null, H = 800, W = 400, frameFn = null, veilTimer = 0;
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Motion: 'full'; 'calm' (the camera still moves, shorter and steadier,
+  // with no parallax, bubbles or passing fish); 'off' (a quick cross-fade).
+  var motion = 'full', reduce = false;
+  function setMotion(m) { motion = m === 'calm' || m === 'off' ? m : 'full'; reduce = motion !== 'full'; }
 
   function fmt(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
   function zoneName(m) {
@@ -347,7 +350,7 @@
     return new Promise(function (resolve) {
       var dist = Math.abs(to - shown) + Math.abs(f1 - frac) * H;
       if (dist < 1 || opts.ms === 0) { shown = to; frac = f1; resolve(); return; }
-      if (reduce) {
+      if (motion === 'off') {
         // A quick cross-fade instead of a pan.
         layers.veil.classList.add('on');
         clearTimeout(veilTimer);
@@ -359,6 +362,7 @@
         return;
       }
       var ms = opts.ms || sinkMs(Math.abs(to - shown));
+      if (motion === 'calm') ms = Math.min(ms, opts.settle ? 1500 : 900);
       tween = { from: shown, to: to, f0: frac, f1: f1, start: 0, dur: ms, ease: opts.settle ? easeOut : easeInOut, done: resolve };
     });
   }
@@ -446,7 +450,7 @@
   }
 
   window.FSHScene = {
-    scatter: scatter, sinkMs: sinkMs, reduced: reduce,
+    scatter: scatter, sinkMs: sinkMs, setMotion: setMotion,
     init: init, setMarkers: setMarkers, go: go, setDepth: setDepth, setMascot: setMascot, burst: burst,
     onFrame: function (fn) { frameFn = fn; }, metres: metres, fishPoint: fishPoint,
     zoneName: zoneName, fmt: fmt, ZERO: ZERO, MAX_M: MAX_M, layer: function (k) { return layers[k]; }
