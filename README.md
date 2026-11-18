@@ -11,7 +11,9 @@ The whole game happens inside one painted world: a tall strip from the dawn sky,
 ## Play
 
 - **From disk:** double-click `index.html`.
-- **On the web:** push this folder to a GitHub repository and turn on GitHub Pages (Settings → Pages → deploy from the `main` branch, root folder). There is no build step for the game itself.
+- **On the web:** every push to `main` runs `.github/workflows/deploy.yml`: the tests and the Scripture check run first, then `tools/build-site.js` copies only the game files into `_site/`, stamps the version (commit SHA) into the service worker and the About screen, and deploys to GitHub Pages. Players with the game open get a "New version available" toast.
+- **Test the built site locally under a sub-path:** `node tools/build-site.js && node tools/serve-subpath.js`, then open http://localhost:8790/fishers/.
+- **Release gate:** `cd tests/playthrough && node release-gate.js --url <site url>`.
 
 ### How a round works
 

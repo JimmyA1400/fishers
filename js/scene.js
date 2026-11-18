@@ -262,10 +262,18 @@
   function fishScreenY() { return H * frac - lift(); }
   function camTop() { return ZERO + shown - fishScreenY(); }
 
+  var waterKey = '';
   function render(t) {
     var top = camTop();
     var topDepth = top - SKY, botDepth = top + H - SKY;
-    layers.water.style.background = 'linear-gradient(' + colorAt(Math.max(0, topDepth)) + ',' + colorAt(Math.max(0, botDepth)) + ')';
+    // Repainting a full-screen gradient is the most expensive thing in a
+    // frame, so the water is only repainted when the camera has moved far
+    // enough (about 12 m) for its colour to change visibly.
+    var wKey = Math.round(Math.max(0, topDepth) / 12) + '|' + Math.round(Math.max(0, botDepth) / 12);
+    if (wKey !== waterKey) {
+      waterKey = wKey;
+      layers.water.style.background = 'linear-gradient(' + colorAt(Math.max(0, topDepth)) + ',' + colorAt(Math.max(0, botDepth)) + ')';
+    }
     layers.world.style.transform = 'translate3d(0,' + (-top).toFixed(1) + 'px,0)';
     var kelpK = reduce ? 1 : 0.85, frontK = reduce ? 1 : 1.2;   // no parallax when motion is reduced
     layers['kelp-layer'].style.transform = 'translate3d(0,' + (-top * kelpK).toFixed(1) + 'px,0)';

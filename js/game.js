@@ -34,7 +34,7 @@
   function fmt(n) { return Scene.fmt(n); }
   function today() { return D.dateKey(new Date()); }
   function yesterday() { return D.addDays(today(), -1); }
-  function tierDef(t) { return tiers[t - 1]; }
+  function tierDef(t) { return (tiers || EARLY_TIERS)[t - 1]; }
   function say(text) { live.textContent = ''; setTimeout(function () { live.textContent = text; }, 60); }
   function comp(p) { return compiled[p.id] || (compiled[p.id] = M.compile(p)); }
   function total(results) { return results.reduce(function (n, r) { return n + r.points; }, 0); }
