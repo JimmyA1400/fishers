@@ -72,6 +72,25 @@ function main() {
   };
   stamp('js/config.js', "version: 'dev'", "version: '" + v + "'");
   if (fs.existsSync(path.join(OUT, 'sw.js'))) stamp('sw.js', '__BUILD_VERSION__', v);
+  // Link previews need absolute URLs. SITE_URL comes from the Pages
+  // workflow (e.g. https://user.github.io/fishers/); locally it is left
+  // relative.
+  let site = process.env.SITE_URL || '';
+  if (site && !site.endsWith('/')) site += '/';
+  stamp('index.html', '__SITE_URL__', site);
+
+  // Every file the service worker precaches must exist, or install fails.
+  const sw = fs.readFileSync(path.join(OUT, 'sw.js'), 'utf8');
+  const shell = JSON.parse(sw.match(/SHELL_FILES = (\[[\s\S]*?\]);/)[1].replace(/'/g, '"'));
+  for (const f of shell) {
+    if (f === './') continue;
+    if (!fs.existsSync(path.join(OUT, f))) throw new Error('sw.js precaches ' + f + ', which is not in _site/');
+  }
+  // And every script the page loads must be precached.
+  const html = fs.readFileSync(path.join(OUT, 'index.html'), 'utf8');
+  for (const m of html.matchAll(/(?:src|href)="((?:js|css)\/[^"]+)"/g)) {
+    if (!shell.includes(m[1])) throw new Error('index.html loads ' + m[1] + ', which sw.js does not precache');
+  }
 
   // GitHub Pages: serve files as-is (no Jekyll).
   fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
