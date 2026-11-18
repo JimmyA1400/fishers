@@ -219,6 +219,15 @@
     }).join('');
   }
 
+  // Group casts: a code picks the same seven prompts on every device, so a
+  // group or church can play one cast together. Nothing leaves the device.
+  function groupSession(code) {
+    return storedCast('group:' + code, function () {
+      return { kind: 'group', key: 'group:' + code, code: code, ids: D.pickGroup(data, code, CFG).map(function (p) { return p.id; }), results: [], startedAt: null };
+    });
+  }
+  function groupUrl(code) { var u = siteUrl(); return u ? u + '?group=' + encodeURIComponent(code) : ''; }
+
   function themeLinkHtml() {
     var w = data && themeWeek();
     return w ? '<button type="button" class="link-btn theme-link" id="theme">This week: <strong>' + esc(themeLabel(w.theme)) + '</strong> ▸</button>' : '';
@@ -229,6 +238,7 @@
   function title(s) {
     if (s.kind === 'endless') return 'Endless Cast #' + s.number;
     if (s.kind === 'theme') return 'Theme Week #' + s.number + ' · ' + themeLabel(s.theme);
+    if (s.kind === 'group') return 'Group cast · ' + s.code;
     return 'Fishers #' + castNumber(s.date) + (s.kind === 'archive' ? ' (archive)' : '');
   }
   function done(s) { return s.results.length >= s.ids.length; }
@@ -288,7 +298,8 @@
           '<nav class="home-modes" aria-label="Other ways to play">' +
             '<button type="button" class="link-btn" id="endless">Endless</button><span aria-hidden="true">·</span>' +
             '<button type="button" class="link-btn" id="archive">Archive</button><span aria-hidden="true">·</span>' +
-            '<button type="button" class="link-btn" id="practice">Practice Waters</button>' +
+            '<button type="button" class="link-btn" id="practice">Practice Waters</button><span aria-hidden="true">·</span>' +
+            '<button type="button" class="link-btn" id="group">Group</button>' +
           '</nav>' +
         '</div>' +
         '<p class="home-castno">Cast #' + castNumber(d.date) + ' · ' + esc(shortDate(d.date)) + streakHtml() + '</p>' +
@@ -297,7 +308,7 @@
     document.getElementById('home-about').onclick = function () { openDialog(document.getElementById('dlg-about')); };
     if (!data) {
       // Pressed before the bank arrives: remember it and carry on when it does.
-      [['go', function () { play(dailySession(), true); }], ['endless', renderEndless], ['archive', renderArchive], ['practice', renderPracticeSetup]]
+      [['go', function () { play(dailySession(), true); }], ['endless', renderEndless], ['archive', renderArchive], ['practice', renderPracticeSetup], ['group', function () { renderGroup(''); }]]
         .forEach(function (pair) {
           document.getElementById(pair[0]).onclick = function () {
             pendingHome = pair[1];
@@ -322,6 +333,74 @@
     document.getElementById('practice').onclick = renderPracticeSetup;
     var th = document.getElementById('theme');
     if (th) th.onclick = renderTheme;
+    document.getElementById('group').onclick = function () { renderGroup(''); };
+  }
+
+  function renderGroup(code) {
+    hudOn(false);
+    mode = 'cast'; session = null; syncScene(true, 'home');
+    code = D.groupCode(code);
+    var lede = '<p class="lede">Everyone who opens a group’s link gets the same seven prompts. Compare by sharing your result cards in your group chat; nothing is sent to a server, and there is no sign-up.</p>';
+    if (!code) {
+      show(
+        '<section class="card" aria-labelledby="gr-title">' +
+          '<p class="eyebrow">Group cast</p>' +
+          '<h2 id="gr-title" tabindex="-1">Play one cast together</h2>' + lede +
+          '<form class="stack" id="gr-form" novalidate>' +
+            '<label for="gr-code">Group code</label>' +
+            '<input id="gr-code" class="gr-input" type="text" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false" maxlength="16" enterkeyhint="go" placeholder="a friend’s code, or a name like GRACE">' +
+            '<p class="small" id="gr-err" role="alert"></p>' +
+            '<button type="submit" class="btn primary">Join this group</button>' +
+          '</form>' +
+          '<div class="stack"><button type="button" class="btn" id="gr-new">Start a new group</button></div>' +
+          '<button type="button" class="btn quiet" id="gr-back">Back to shore</button>' +
+        '</section>', '#gr-title');
+      document.getElementById('gr-form').onsubmit = function (e) {
+        e.preventDefault();
+        var c = D.groupCode(document.getElementById('gr-code').value);
+        if (!c) { document.getElementById('gr-err').textContent = 'Use 3 to 12 letters or numbers.'; return; }
+        renderGroup(c);
+      };
+      document.getElementById('gr-new').onclick = function () { renderGroup(D.newGroupCode()); };
+      document.getElementById('gr-back').onclick = renderHome;
+      return;
+    }
+    var s = groupSession(code), n = s.results.length, link = groupUrl(code);
+    var go = done(s) ? 'See your net' : n ? 'Carry on (' + n + ' of ' + s.ids.length + ')' : 'Cast the group net';
+    show(
+      '<section class="card" aria-labelledby="gr-title">' +
+        '<p class="eyebrow">Group cast</p>' +
+        '<h2 id="gr-title" tabindex="-1">Group <span class="mono gr-code">' + esc(code) + '</span></h2>' + lede +
+        (link ? '<p class="small">Invite link: <span class="mono gr-link">' + esc(link) + '</span></p>' : '') +
+        '<div class="stack">' +
+          '<button type="button" class="btn primary" id="gr-go">' + esc(go) + '</button>' +
+          (link ? '<button type="button" class="btn" id="gr-invite">Invite your group</button>' : '') +
+          (done(s) ? '<button type="button" class="btn" id="gr-again">Cast this one again</button>' : '') +
+        '</div>' +
+        '<p class="small">The same code gives the same cast as long as the question bank is unchanged. Your result stays on this device.</p>' +
+        '<button type="button" class="btn quiet" id="gr-other">Use a different code</button>' +
+        '<button type="button" class="btn quiet" id="gr-back">Back to shore</button>' +
+      '</section>', '#gr-title');
+    document.getElementById('gr-go').onclick = function () { if (done(s)) renderResults(s); else play(s); };
+    var inv = document.getElementById('gr-invite');
+    if (inv) inv.onclick = function () {
+      var text = 'Join our Fishers group cast (' + code + '): the same seven Bible prompts for all of us.';
+      Share.share(text, link).then(function (how) {
+        if (how === 'failed') Share.copy(text + '\n' + link).then(function (r) { toast(r === 'copied' ? 'Invite link copied ✓' : 'Copy the link above to invite your group'); });
+      });
+    };
+    var again = document.getElementById('gr-again');
+    if (again) again.onclick = function () { restart(s); play(s); };
+    document.getElementById('gr-other').onclick = function () { renderGroup(''); };
+    document.getElementById('gr-back').onclick = renderHome;
+  }
+  // An invite link (?group=CODE) opens that group once the bank is loaded.
+  function groupFromUrl() {
+    var m = /[?&]group=([^&#]*)/.exec(location.search);
+    if (!m) return '';
+    var c = D.groupCode(decodeURIComponent(m[1]));
+    try { history.replaceState(history.state, '', location.pathname); } catch (e) { /* ignore */ }
+    return c;
   }
 
   function renderTheme() {
@@ -832,11 +911,12 @@
   function siteUrl() { return /^https?:$/.test(location.protocol) ? location.origin + location.pathname.replace(/index\.html$/, '') : ''; }
   function shareText(s, withUrl) {
     return Share.cardText({
-      number: s.kind === 'endless' || s.kind === 'theme' ? s.number : castNumber(s.date),
-      label: s.kind === 'endless' ? 'Fishers Endless' : s.kind === 'theme' ? 'Fishers Theme Week (' + themeLabel(s.theme) + ')' : 'Fishers',
+      number: s.kind === 'group' ? null : s.kind === 'endless' || s.kind === 'theme' ? s.number : castNumber(s.date),
+      label: s.kind === 'endless' ? 'Fishers Endless' : s.kind === 'theme' ? 'Fishers Theme Week (' + themeLabel(s.theme) + ')' :
+        s.kind === 'group' ? 'Fishers group ' + s.code : 'Fishers',
       tiers: s.results.map(function (r) { return r.tier; }),
       score: total(s.results), tierDefs: tiers,
-      url: withUrl === false ? '' : siteUrl()
+      url: withUrl === false ? '' : s.kind === 'group' ? groupUrl(s.code) : siteUrl()
     });
   }
 
@@ -959,7 +1039,7 @@
     var score = total(s.results), depth = score * CFG.metresPerPoint;
     var isToday = s.kind === 'daily' && s.date === today();
     var streak = Store.currentStreak(today(), yesterday());
-    var sub = s.kind === 'endless' ? '' : s.kind === 'theme' ? ' · week of ' + esc(prettyDate(s.week)) : ' · ' + esc(prettyDate(s.date));
+    var sub = s.kind === 'endless' || s.kind === 'group' ? '' : s.kind === 'theme' ? ' · week of ' + esc(prettyDate(s.week)) : ' · ' + esc(prettyDate(s.date));
     var last = s.results[s.results.length - 1];
 
     show(
@@ -1221,6 +1301,8 @@
       var nav = app.querySelector('.home-modes');
       if (nav && !document.getElementById('theme')) nav.insertAdjacentHTML('beforebegin', themeLinkHtml());
       wireHome();
+      var invited = groupFromUrl();
+      if (invited) { pendingHome = null; renderGroup(invited); }
       if (pendingHome) { var fn = pendingHome; pendingHome = null; fn(); }
     }
   }
