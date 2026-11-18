@@ -6,7 +6,7 @@
 10. After launch: remaining backlog
 
 ## Next action
-Branch `feat/group-cast`: group cast codes without a backend (backlog #10), then deploy, smoke-test and run the full release gate.
+Run the full release gate on the live URL (tests/playthrough/release-gate.js --url ...) and update RELEASE_CHECKLIST.md with the new build.
 
 ## Checklist
 
@@ -83,7 +83,8 @@ Branch `feat/group-cast`: group cast codes without a backend (backlog #10), then
 - [x] Reduced-motion veil frames (F-06): re-measured 2026-11-18, Practice, reduced motion, Pixel 7, 6 sinks: at 1x 0-1 frame over 50 ms per sink (56-60 ms), was 3 per sink (worst 167 ms). Fixed by the quantized water repaint (launch week). Left: a one-off first-reveal layout (~40 ms real; 145-257 ms at 4x CPU); later reveals 13-26 ms at 4x. No code change
 - [x] Sink frame rate (#13): live in e1bdce6, smoke OK. Desktop 1440x900 software: 28-37 -> 35-45 fps (same-session A/B); with the GPU on: 57-58 fps after the first sink. Phone 4x CPU stays CPU-bound (26-37 fps on this machine today)
 - [x] Theme of the week (#11): live in 8e4f711, smoke OK; 7 themes with 7+ prompts rotate each Monday (Eastern); reading = the theme verses already checked by verify.js
-- [ ] Remaining: group cast without a backend (#10; you said go 2026-11-18; a live leaderboard needs a backend and your privacy approval), then a full release gate on the live URL
+- [x] Group cast (#10): live in b4a8f6a, smoke OK; a code gives the same 7 prompts on every device, invite link ?group=CODE, results compared by sharing cards. A live leaderboard needs a backend and your privacy approval (not built)
+- [ ] Full release gate on the live URL
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
