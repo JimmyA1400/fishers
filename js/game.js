@@ -664,6 +664,16 @@
       }
     };
 
+    // A Lost Sheep doesn't drop at once: the line goes taut and the tag tugs
+    // while every tier line is out, then the net sinks. (Skipped with reduced motion.)
+    if (rec.tier === 6 && !reduceMotion) {
+      tag.classList.add('tug');
+      buzz([10, 90, 10, 90, 10]);
+      say('Something heavy on the line.');
+      later(function () { if (my === screenNo) { tag.classList.remove('tug'); drop(); } }, SHEEP_HOLD_MS);
+    } else drop();
+
+    function drop() {
     var trail = reduceMotion ? null : setInterval(function () { var f = Scene.fishPoint(); Scene.burst(f.x + 4, f.y + 8, 2, 26); }, 110);
     Scene.scatter(p.x, p.y);
     Sound.whoosh(Scene.sinkMs(dist) / 1000);
@@ -682,7 +692,9 @@
       if (rec.tier === 6) Sound.chord();
       later(function () { marks.classList.add('fade'); renderReveal(prompt, rec, results); }, 450);
     });
+    }
   }
+  var SHEEP_HOLD_MS = 1500;
 
   function finishCast(s) {
     var score = total(s.results), tierList = s.results.map(function (r) { return r.tier; });
