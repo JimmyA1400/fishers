@@ -120,6 +120,16 @@
     if (sinkWatch) sinkWatch(m, fishY);
   }
   function band(score) { for (var i = 0; i < BANDS.length; i++) if (score >= BANDS[i][0]) return BANDS[i][1]; return BANDS[BANDS.length - 1][1]; }
+  // "Learn more": the WEB text of a Lost Sheep's passage, in a drawer.
+  function passageHtml(a, cls) {
+    var ps = a && a.passage;
+    if (!ps || !ps.verses || !ps.verses.length) return '';
+    return '<details class="more ' + (cls || '') + '"><summary>Learn more <span class="more-ref">' + esc(ps.ref) + '</span></summary>' +
+      '<blockquote class="passage">' + ps.verses.map(function (v) {
+        return '<p><sup class="vn">' + esc(v.r.replace(/^.* /, '').replace(/^\d+:/, '')) + '</sup>' + esc(v.t) + '</p>';
+      }).join('') + '</blockquote>' +
+      '<p class="passage-src">' + (ps.more ? 'The passage continues: read all of ' + esc(ps.ref) + '. ' : '') + 'World English Bible.</p></details>';
+  }
   function refsHtml(refs) { return refs && refs.length ? '<span class="ref">' + esc(refs.join('; ')) + '</span>' : ''; }
 
   // The phone's Back gesture: every screen away from home shares one history
@@ -726,7 +736,8 @@
         '<p class="rv-pts s3">+' + td.points + ' PTS · sink ' + fmt(td.points * CFG.metresPerPoint) + ' m</p>' +
         '<p class="rv-flavor s4">' + esc(td.flavor) + '</p>' +
         '<p class="rv-verse s5">' + refsHtml(a.refs) + esc(a.note) + '</p>' +
-        (a.fact && (t === 6 || t === 2) ? '<p class="rv-fact s5">' + esc(a.fact) + '</p>' : '');
+        (a.fact && (t === 6 || t === 2) ? '<p class="rv-fact s5">' + esc(a.fact) + '</p>' : '') +
+        (t === 6 ? '<div class="s5">' + passageHtml(a, 'rv-more') + '</div>' : '');
       spoken = td.name + '. ' + a.name + '. Plus ' + td.points + ' points, sink ' + fmt(td.points * CFG.metresPerPoint) + ' metres.';
     } else {
       body =
@@ -850,6 +861,7 @@
       html += '<section class="bank-tier" style="--c:var(--t' + t + ')">' +
         '<h4>' + Icons.tier(t) + esc(td.name) + ' <span class="mono">' + td.points + '</span></h4>';
       if ((t === 6 || t === 2) && g[0].a.fact) html += '<p class="bank-fact">' + esc(g[0].a.fact) + '</p>';
+      if (t === 6) html += passageHtml(g[0].a, 'bank-more');
       html += '<ul class="bank-list">' + g.map(function (x) {
         var you = rec.outcome === 'answer' && rec.a === x.i;
         var ref = (you || g.length <= REF_LIMIT) ? refOf(p, x.i) : '';

@@ -220,6 +220,8 @@ function main() {
   // Compact on purpose: the game downloads this file. "seen" (the verse count
   // behind each tier) stays in the review build, not in the shipped data.
   if (OUT === path.join(ROOT, 'data', 'prompts.json')) data.prompts.forEach(p => p.answers.forEach(a => { delete a.seen; }));
+  // Each Lost Sheep carries the WEB text of its first passage ("Learn more").
+  require('./add-passages').apply(data);
   fs.writeFileSync(OUT, JSON.stringify(data) + '\n');
   console.log('Wrote ' + path.relative(ROOT, OUT) + ': ' + out.length + ' prompts, ' +
     out.reduce((s, p) => s + p.answers.length, 0) + ' answers');
