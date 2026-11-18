@@ -211,11 +211,26 @@ input[type="text"]:focus-visible, select:focus-visible { outline: 3px solid var(
 .next-cast { margin: 1rem 0 0; text-align: center; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 
 /* ---------- dialogs ---------- */
+/* Sized to the part of the screen you can actually see (dvh leaves out the
+   phone's browser bars; the insets leave out the notch and home bar), so the
+   title and the close button are never off screen. The title stays pinned at
+   the top and the close button at the bottom while the middle scrolls. */
 .dlg {
-  width: min(32rem, calc(100vw - 1.5rem)); max-height: calc(100vh - 2rem); overflow: auto;
-  border: 0; border-radius: var(--radius); padding: 1.2rem; background: var(--parchment); color: var(--ink);
+  width: min(32rem, calc(100vw - 1.5rem));
+  max-height: calc(100vh - 2rem);
+  max-height: calc(100dvh - 1.5rem - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  overflow-y: auto; -webkit-overflow-scrolling: touch;
+  border: 0; border-radius: var(--radius); padding: 0 1.2rem; background: var(--parchment); color: var(--ink);
 }
 .dlg::backdrop { background: rgba(5, 10, 28, .72); }
+.dlg > h2:first-child {
+  position: sticky; top: 0; z-index: 1; margin: 0 -1.2rem .6rem; padding: 1.1rem 1.2rem .5rem;
+  background: var(--parchment); box-shadow: 0 1px 0 var(--parchment-line);
+}
+.dlg > form[method="dialog"]:last-child {
+  position: sticky; bottom: 0; z-index: 1; margin: .6rem -1.2rem 0; padding: .1rem 1.2rem 1.1rem;
+  background: var(--parchment); box-shadow: 0 -1px 0 var(--parchment-line);
+}
 .dlg h2 { font-size: 1.4rem; margin-bottom: .6rem; }
 .dlg h2:focus { outline: none; }
 .dlg h3 { font-size: 1rem; margin: 1rem 0 .4rem; }

@@ -1197,7 +1197,7 @@
   }
 
   // ---------- dialogs ---------------------------------------------------------
-  function openDialog(dlg) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); }
+  function openDialog(dlg) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); dlg.scrollTop = 0; }
 
   function renderStats() {
     var st = Store.get().stats;
