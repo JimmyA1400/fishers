@@ -809,14 +809,23 @@
         '<button type="button" class="catch-row" aria-expanded="false" data-i="' + i + '">' +
           '<span class="c-n mono">' + (i + 1) + '</span>' +
           '<span class="c-main"><span class="c-prompt">' + esc(p.prompt) + '</span>' +
-          '<span class="c-ans">' + (r.outcome === 'answer' ? esc(r.name) : 'Nothing landed') + '</span></span>' +
+          '<span class="c-ans">' + (r.outcome === 'answer' ? esc(r.name) : 'Nothing landed') + '</span>' +
+          (r.outcome === 'answer' && refOf(p, r.a) ? '<span class="c-ref">' + esc(refOf(p, r.a)) + '</span>' : '') + '</span>' +
           '<span class="c-pts mono">' + (r.points ? '+' + r.points : '0') + '</span>' +
           '<span class="chev" aria-hidden="true">▾</span>' +
         '</button><div class="bank" hidden></div></li>';
     }).join('') + '</ol>';
   }
 
+  // Where an answer is named: its first cited verse.
+  function refOf(p, i) {
+    var a = p && p.answers[i];
+    return a && a.refs && a.refs[0] ? a.refs[0] : '';
+  }
+
   // The whole net for one prompt: the Lost Sheep with its fact, then each tier.
+  // Each answer shows its verse, except in very long tiers, where only yours does.
+  var REF_LIMIT = 30;
   function bankHtml(p, rec) {
     var groups = {};
     p.answers.forEach(function (a, i) { (groups[a.tier] = groups[a.tier] || []).push({ a: a, i: i }); });
@@ -831,7 +840,9 @@
       if ((t === 6 || t === 2) && g[0].a.fact) html += '<p class="bank-fact">' + esc(g[0].a.fact) + '</p>';
       html += '<ul class="bank-list">' + g.map(function (x) {
         var you = rec.outcome === 'answer' && rec.a === x.i;
-        return '<li' + (you ? ' class="you"' : '') + '>' + esc(x.a.name) + (you ? ' <strong class="you-tag">YOU</strong>' : '') + '</li>';
+        var ref = (you || g.length <= REF_LIMIT) ? refOf(p, x.i) : '';
+        return '<li' + (you ? ' class="you"' : '') + '>' + esc(x.a.name) + (you ? ' <strong class="you-tag">YOU</strong>' : '') +
+          (ref ? '<span class="b-ref">' + esc(ref) + '</span>' : '') + '</li>';
       }).join('') + '</ul></section>';
     }
     return html;
