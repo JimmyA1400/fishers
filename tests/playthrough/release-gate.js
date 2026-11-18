@@ -235,7 +235,7 @@ async function fullDaily(name, page, shot, cdp) {
   await page.click('#menu-stats');
   await H.sleep(300);
   const stats = await page.textContent('#stats-body');
-  check(P, 'stats persist (1 played, streak shown)', /Casts\s*1\b/.test(stats) && /Streak\s*1\b/.test(stats), stats.slice(0, 160));
+  check(P, 'stats persist (1 played, streak shown)', /Casts\s*1(?!\d)/.test(stats) && /Streak\s*1(?!\d)/.test(stats), stats.slice(0, 160));
   await shot('stats');
   await closeDialogs(page);
   return { fps };

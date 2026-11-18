@@ -51,6 +51,10 @@
       var b = document.createElement('button'); b.type = 'button'; b.className = 'toast-btn'; b.textContent = action;
       b.onclick = function () { el.hidden = true; onAction(); };
       el.appendChild(b);
+      var x = document.createElement('button'); x.type = 'button'; x.className = 'toast-x'; x.setAttribute('aria-label', 'Not now');
+      x.textContent = '×';
+      x.onclick = function () { el.hidden = true; };
+      el.appendChild(x);
     } else {
       toastTimer = setTimeout(function () { el.hidden = true; }, 2200);
     }

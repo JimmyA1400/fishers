@@ -9,10 +9,10 @@ const fs = require('fs');
 const H = require('./helpers');
 const { chromium } = require('playwright');
 
-const URL = 'http://localhost:8765/';
+const URL = (H.args().url) || 'http://localhost:8765/';
 
 (async () => {
-  const server = await H.ensureServer(URL);
+  const server = /localhost/.test(URL) ? await H.ensureServer(URL) : null;
   const lighthouse = (await import('lighthouse')).default;
   const out = { date: H.stamp(), runs: [] };
   // Playwright's Chromium with a debugging port, which Lighthouse drives.

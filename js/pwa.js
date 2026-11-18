@@ -20,7 +20,7 @@
   // ---------- service worker and updates ----------------------------------
   function offerUpdate(reg) {
     if (!reg.waiting || !navigator.serviceWorker.controller) return;
-    toast('New version available', 'Tap to refresh', function () {
+    toast('New version available', 'Refresh', function () {
       wantReload = true;
       if (reg.waiting) reg.waiting.postMessage('skip-waiting');
     });
