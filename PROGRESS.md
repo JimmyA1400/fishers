@@ -3,10 +3,10 @@
 **Live URL:** https://jimmya1400.github.io/fishers/  (repo: https://github.com/JimmyA1400/fishers)
 
 ## Current step
-10. After launch: phone issues first (branch `fix/back-button`: Android back gesture leaves the game)
+10. After launch: remaining backlog
 
 ## Next action
-On `fix/back-button`: add history entries (home → round → results) so Back returns to home instead of leaving; test, merge, push, smoke-test live.
+Branch `feat/catch-verses`: show each answer's verse reference in The Catch (backlog #6), then deploy and smoke-test.
 
 ## Checklist
 
@@ -74,8 +74,8 @@ On `fix/back-button`: add history entries (home → round → results) so Back r
 - [x] Sent (2026-11-18)
 
 ### 10. After launch
-- [ ] Phone issues: Back gesture leaves the game (F-04); sink frame rate under throttle
-- [ ] Descent leftovers: tier line at a zone's depth overlaps that zone's label
+- [~] Phone issues: Back gesture fixed (F-04, deployed 2e80f28); sink frame rate under throttle still 46–59 fps
+- [x] Descent leftovers: tier line at a zone's depth no longer runs through the zone label
 - [ ] Descent redesign leftovers
 - [ ] Categories / bank (nothing waiting for review)
 - [ ] Remaining backlog: verse refs in The Catch (#6), Lost Sheep suspense beat (#9), Learn-more drawer (#14), 52+ alias-overlap warnings (#15), reduced-motion veil frames (F-06), desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
