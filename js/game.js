@@ -122,10 +122,27 @@
   function band(score) { for (var i = 0; i < BANDS.length; i++) if (score >= BANDS[i][0]) return BANDS[i][1]; return BANDS[BANDS.length - 1][1]; }
   function refsHtml(refs) { return refs && refs.length ? '<span class="ref">' + esc(refs.join('; ')) + '</span>' : ''; }
 
+  // The phone's Back gesture: every screen away from home shares one history
+  // entry, so Back returns to the home screen instead of leaving the game.
+  // A cast in progress keeps its clock and resumes from home, as after a reload.
+  var ignorePop = 0;
+  function markAway() {
+    if (!(history.state && history.state.fishers)) { try { history.pushState({ fishers: 'away' }, ''); } catch (e) { /* ignore */ } }
+  }
+  function markHome() {
+    if (history.state && history.state.fishers === 'away') { ignorePop++; history.back(); }
+  }
+  window.addEventListener('popstate', function () {
+    if (ignorePop) { ignorePop--; return; }
+    document.querySelectorAll('dialog[open]').forEach(function (d) { d.close(); });
+    if (!document.body.classList.contains('view-home')) renderHome();
+  });
+
   function show(html, focusSel, layout) {
     stopTimer(); stopCountdown(); clearPending();
     screenNo++;
     layout = layout || 'sheet';
+    if (layout === 'home') markHome(); else markAway();
     setLayout(layout);
     document.body.classList.remove('end-view', 'revealing');
     app.innerHTML = layout === 'sheet' ? '<div class="sheet-inner">' + html + '</div>' : html;
