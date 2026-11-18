@@ -34,7 +34,7 @@ Chios | Ac 20:15 | An island named in Acts 20:15.
 Cilicia | Ac 6:9 | A land or region named in Acts 6:9.
 Clauda | Ac 27:16 | An island named in Acts 27:16.
 Cos; Coos | Ac 21:1 | An island named in Acts 21:1.
-Crete; Cretans; Philistines | Zeph 2:5; Ac 27:7; Tit 1:12 | An island named in Zephaniah 2:5.
+Crete; Cretans | Zeph 2:5; Ac 27:7; Tit 1:12 | An island named in Zephaniah 2:5.
 Cush | Gen 2:13 | A land or region named in Genesis 2:13.
 Cushan | Hab 3:7 | A land or region named in Habakkuk 3:7.
 Cyprus; Chittim | Isa 23:1; Ac 4:36 | An island named in Isaiah 23:1.
@@ -91,7 +91,7 @@ Ituraea | Lk 3:1 | A land or region named in Luke 3:1.
 Javan | Isa 66:19 | A land or region named in Isaiah 66:19.
 Jeruel | 2 Chr 20:16 | A land or region named in 2 Chronicles 20:16.
 Jeshimon | Num 21:20 | A land or region named in Numbers 21:20.
-Judea; Jewry; Jews; Juda; Judaea; Judah | Ezr 5:8; Matt 2:1; Mk 1:5; Lk 23:5; Lk 23:51 | A land or region named in Ezra 5:8.
+Judea; Jewry; Juda; Judaea; Judah | Ezr 5:8; Matt 2:1; Mk 1:5; Lk 23:5; Lk 23:51 | A land or region named in Ezra 5:8.
   tier: 3
 Kir | 2 Kgs 16:9 | A land or region named in 2 Kings 16:9.
 Kittim; Chittim | Num 24:24 | An island named in Numbers 24:24.

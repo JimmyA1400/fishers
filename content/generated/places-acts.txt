@@ -36,7 +36,7 @@ Cnidus | Ac 27:7 | A town or city named in Acts 27:7.
 Corinth | Ac 18:1 | A town or city named in Acts 18:1.
   tier: 3
 Cos; Coos | Ac 21:1 | An island named in Acts 21:1.
-Crete; Cretans; Philistines | Gen 10:14; Ac 2:11; Ac 27:7 | An island named in Acts 27:7.
+Crete; Cretans | Gen 10:14; Ac 2:11; Ac 27:7 | An island named in Acts 27:7.
 Cyprus; Chittim | Num 24:24; Ac 4:36 | An island named in Acts 4:36.
 Cyrene | Ac 2:10 | A town or city named in Acts 2:10.
 Damascus; Syria-damascus | 1 Chr 18:6; Ac 9:2 | A town or city named in Acts 9:2.
@@ -55,10 +55,10 @@ Greece; Grecia | Dan 8:21; Ac 20:2 | A land or region named in Acts 20:2.
 Haran; Charran | Ac 7:2 | A town or city named in Acts 7:2.
 Iconium | Ac 13:51 | A town or city named in Acts 13:51.
 Italy | Ac 18:2 | A land or region named in Acts 18:2.
-Jerusalem; Jews; Judah | Ac 1:4; Ac 2:5; Ac 9:11 | A town or city named in Acts 1:4.
+Jerusalem | Ac 1:4; Ac 2:5; Ac 9:11 | A town or city named in Acts 1:4.
   tier: 1
 Joppa; Japho | Josh 19:46; Ac 9:36 | A town or city named in Acts 9:36.
-Judea; Jewry; Jews; Juda; Judaea; Judah | Dan 5:13; Matt 2:1; Ac 1:8; Ac 10:39 | A land or region named in Acts 1:8.
+Judea; Jewry; Juda; Judaea; Judah | Dan 5:13; Matt 2:1; Ac 1:8; Ac 10:39 | A land or region named in Acts 1:8.
   tier: 3
 Lasea | Ac 27:8 | A town or city named in Acts 27:8.
 Libya; Lubim | 2 Chr 12:3; Ac 2:10 | A land or region named in Acts 2:10.

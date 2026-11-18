@@ -53,6 +53,10 @@ for (const p of data.prompts) {
     names.set(k, a.name);
   });
 
+  // Labels reviewed and genuinely shared by two places (KJV spellings, or
+  // a renamed town), so landing on the more common one is right.
+  const SHARED_OK = new Set(['Laish', 'Syria-damascus', 'Phenice', 'City of Judah', 'Mount Sion', 'Sion', 'Assur',
+    'Chittim', 'Chinneroth', 'Sihor']);
   const c = M.compile(p);
   c.collisions.forEach(l => errors.push(tag + 'near miss "' + l + '" collides with a valid answer'));
 
@@ -66,7 +70,7 @@ for (const p of data.prompts) {
         const o = p.answers[r.index];
         if (label === a.name) errors.push(tag + 'the name "' + label + '" lands on "' + o.name + '"');
         else if (o.tier > a.tier) errors.push(tag + '"' + label + '" lands on the rarer "' + o.name + '"');
-        else warnings.push(tag + '"' + label + '" (' + a.name + ') is shared with "' + o.name + '" and lands there');
+        else if (!SHARED_OK.has(label)) warnings.push(tag + '"' + label + '" (' + a.name + ') is shared with "' + o.name + '" and lands there');
       }
     });
     (a.short || []).forEach(label => {

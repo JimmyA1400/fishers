@@ -54,7 +54,7 @@ Berachah | 2 Chr 20:26 | A valley named in 2 Chronicles 20:26.
 Beth-biri; Beth-birei | 1 Chr 4:31 | A town or city named in 1 Chronicles 4:31.
 Beth-gader | 1 Chr 2:51 | A town or city named in 1 Chronicles 2:51.
 Beth-horon | 1 Chr 6:68 | A town or city named in 1 Chronicles 6:68.
-Beth-horon the nether; Lower | 1 Kgs 9:17 | A town or city named in 1 Kings 9:17.
+Beth-horon the nether | 1 Kgs 9:17 | A town or city named in 1 Kings 9:17.
 Beth-horon the upper | 2 Chr 8:5 | A town or city named in 2 Chronicles 8:5.
 Beth-marcaboth | 1 Chr 4:31 | A town or city named in 1 Chronicles 4:31.
 Beth-shan; Beth Shean | 1 Sam 31:10; 1 Kgs 4:12 | A town or city named in 1 Kings 4:12.
@@ -174,7 +174,6 @@ Hepher | 1 Kgs 4:10 | A town or city named in 1 Kings 4:10.
 Heshbon | 1 Chr 6:81 | A town or city named in 1 Chronicles 6:81.
 Holon; Hilen | Josh 15:51; 1 Chr 6:58 | A town or city named in 1 Chronicles 6:58.
 Holy Place | 1 Kgs 8:8 | A place named in 1 Kings 8:8.
-  forms: Holiest of All
 Hormah | 1 Chr 4:30 | A town or city named in 1 Chronicles 4:30.
 Horse Gate | 2 Chr 23:15 | A gate named in 2 Chronicles 23:15.
 Hukok | 1 Chr 6:75 | A town or city named in 1 Chronicles 6:75.
@@ -195,7 +194,7 @@ Jazer; Jaazer | Num 21:32; 1 Chr 6:81 | A town or city named in 1 Chronicles 6:8
 Jebus; Jebusi | Josh 18:16; 1 Chr 11:4 | A town or city named in 1 Chronicles 11:4.
 Jericho | 1 Kgs 16:34 | A town or city named in 1 Kings 16:34.
 Jeruel | 2 Chr 20:16 | A land or region named in 2 Chronicles 20:16.
-Jerusalem; Jews; Judah | 1 Kgs 2:11; 1 Kgs 12:21; 2 Chr 32:18 | A town or city named in 1 Kings 2:11.
+Jerusalem | 1 Kgs 2:11; 1 Kgs 12:21; 2 Chr 32:18 | A town or city named in 1 Kings 2:11.
   tier: 1
 Jeshanah | 2 Chr 13:19 | A town or city named in 2 Chronicles 13:19.
 Jezreel; Jezreelitess | 1 Kgs 4:12; 1 Chr 3:1 | A town or city named in 1 Kings 4:12.

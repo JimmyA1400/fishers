@@ -295,6 +295,12 @@ function finalize(cfg, answers, books) {
   // A name may have changed above (when the display name was not in the text).
   // Fold any answers that now share a name, then strip aliases that are some
   // other answer's name, and drop bare generic words ("Sea").
+  // Labels the sources pair with a place that a player would never mean by it
+  // (found by validate.js: they made one answer land on another).
+  const NOT_ALIAS = {};
+  [['Jerusalem', ['Jews', 'Judah']], ['Judea', ['Jews']], ['Crete', ['Philistines']],
+    ['Beth-horon the nether', ['Lower']], ['Holy Place', ['Holiest of All']]]
+    .forEach(([n, xs]) => { NOT_ALIAS[sk(n)] = xs; });
   const GENERIC = /^(sea|river|mount|mountain|valley|brook|hill|wilderness|desert|city|land|plain|lake|pool|spring|well|island)$/i;
   const out = new Map();
   for (const a of merged.values()) {
@@ -305,8 +311,9 @@ function finalize(cfg, answers, books) {
   }
   const names = new Set(out.keys());
   for (const [k, a] of out) {
-    a.aliases = a.aliases.filter(x => !GENERIC.test(x) && (sk(x) === k || !names.has(sk(x))));
-    a.forms = (a.forms || []).filter(f => !names.has(sk(f)) || sk(f) === k);
+    const bad = new Set((NOT_ALIAS[k] || []).map(sk));
+    a.aliases = a.aliases.filter(x => !GENERIC.test(x) && !bad.has(sk(x)) && (sk(x) === k || !names.has(sk(x))));
+    a.forms = (a.forms || []).filter(f => !bad.has(sk(f)) && (!names.has(sk(f)) || sk(f) === k));
   }
   return [...out.values()];
 }

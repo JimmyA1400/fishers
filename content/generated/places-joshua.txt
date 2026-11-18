@@ -67,7 +67,7 @@ Beth-emek | Josh 19:27 | A town or city named in Joshua 19:27.
 Beth-haram; Beth Haran; Beth-aram | Num 32:36; Josh 13:27 | A town or city named in Joshua 13:27.
 Beth-hoglah; Beth-hogla | Josh 15:6 | A town or city named in Joshua 15:6.
 Beth-horon | Josh 10:10 | A town or city named in Joshua 10:10.
-Beth-horon the nether; Lower | Josh 16:3 | A town or city named in Joshua 16:3.
+Beth-horon the nether | Josh 16:3 | A town or city named in Joshua 16:3.
 Beth-horon the upper | Josh 16:5 | A town or city named in Joshua 16:5.
 Beth-jeshimoth | Josh 12:3 | A town or city named in Joshua 12:3.
   forms: Beth Jesimoth
@@ -230,7 +230,7 @@ Jebus; Jebusi | Josh 15:8; Josh 18:16; Judg 19:10 | A town or city named in Josh
 Jehud | Josh 19:45 | A town or city named in Joshua 19:45.
 Jericho | Josh 2:1 | A town or city named in Joshua 2:1.
   tier: 1
-Jerusalem; Jews; Judah | Josh 10:1; Josh 15:63; 2 Kgs 16:6 | A town or city named in Joshua 10:1.
+Jerusalem | Josh 10:1; Josh 15:63; 2 Kgs 16:6 | A town or city named in Joshua 10:1.
   tier: 3
 Jezreel; Jezreelitess | Josh 15:56; 1 Sam 27:3 | A town or city named in Joshua 15:56.
 Jiphthah-el; Valley of Iphtah El | Josh 19:14 | A valley named in Joshua 19:14.

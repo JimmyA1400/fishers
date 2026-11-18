@@ -68,7 +68,7 @@ City of David | Isa 22:9 | A town or city named in Isaiah 22:9.
   forms: City of Judah
 City of Destruction | Isa 19:18 | A town or city named in Isaiah 19:18.
 Corner Gate | Zech 14:10 | A gate named in Zechariah 14:10.
-Crete; Cretans; Philistines | Zeph 2:5; Ac 2:11 | An island named in Zephaniah 2:5.
+Crete; Cretans | Zeph 2:5; Ac 2:11 | An island named in Zephaniah 2:5.
 Cush | Isa 11:11 | A land or region named in Isaiah 11:11.
 Cushan | Hab 3:7 | A land or region named in Habakkuk 3:7.
 Cyprus; Chittim | Isa 23:1; Ac 4:36 | An island named in Isaiah 23:1.
@@ -137,7 +137,6 @@ Hethlon | Ezek 47:15 | A town or city named in Ezekiel 47:15.
 Hiddekel | Dan 10:4 | A river named in Daniel 10:4.
 Holon; Hilen | 1 Chr 6:58; Jer 48:21 | A town or city named in Jeremiah 48:21.
 Holy Place | Ezek 42:14 | A place named in Ezekiel 42:14.
-  forms: Holiest of All
 Horonaim | Isa 15:5 | A town or city named in Isaiah 15:5.
 Horse Gate | Jer 31:40 | A gate named in Jeremiah 31:40.
 Israel | Matt 2:20-21; 1 Sam 13:19 | The land God promised to the descendants of Abraham.
@@ -147,7 +146,7 @@ Jahaz; Jahazah; Jahzah | Isa 15:4; Jer 48:21 | A town or city named in Isaiah 15
 Javan | Isa 66:19 | A land or region named in Isaiah 66:19.
 Jazer; Jaazer | Num 21:32; Isa 16:8 | A town or city named in Isaiah 16:8.
 Jericho | Jer 39:5 | A town or city named in Jeremiah 39:5.
-Jerusalem; Jews; Judah | Isa 1:1; Isa 36:11 | A town or city named in Isaiah 1:1.
+Jerusalem | Isa 1:1; Isa 36:11 | A town or city named in Isaiah 1:1.
   tier: 1
 Jezreel; Jezreelitess | 1 Sam 27:3; Hos 1:4 | A town or city named in Hosea 1:4.
 Joppa; Japho | Josh 19:46; Jon 1:3 | A town or city named in Jonah 1:3.

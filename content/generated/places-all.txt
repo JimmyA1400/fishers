@@ -274,7 +274,7 @@ Corinth | Ac 18:1 | A town or city named in Acts 18:1.
 Corner Gate | 2 Kgs 14:13 | A gate named in 2 Kings 14:13.
 Cos; Coos | Ac 21:1 | An island named in Acts 21:1.
 Cozeba; Chozeba | 1 Chr 4:22 | A town or city named in 1 Chronicles 4:22.
-Crete; Cretans; Philistines | Zeph 2:5; Ac 27:7; Tit 1:12 | An island named in Zephaniah 2:5.
+Crete; Cretans | Zeph 2:5; Ac 27:7; Tit 1:12 | An island named in Zephaniah 2:5.
 Cun; Chun | 1 Chr 18:8 | A town or city named in 1 Chronicles 18:8.
 Cush | Gen 2:13 | A land or region named in Genesis 2:13.
 Cushan | Hab 3:7 | A land or region named in Habakkuk 3:7.
@@ -504,7 +504,7 @@ Hierapolis | Col 4:13 | A town or city named in Colossians 4:13.
 Hill Mizar | Ps 42:6 | A hill named in Psalm 42:6.
 Hobah | Gen 14:15 | A land or region named in Genesis 14:15.
 Holon; Hilen | Josh 15:51; 1 Chr 6:58 | A town or city named in Joshua 15:51.
-Holy Place; Holiest of All | Ex 26:33; Heb 9:8 | A place named in Exodus 26:33.
+Holy Place | Ex 26:33; Heb 9:8 | A place named in Exodus 26:33.
 Hor-haggidgad; Gudgodah; Hor Hagidgad | Num 33:32; Deut 10:7 | A camp on the wilderness journey named in Numbers 33:32.
 Horem | Josh 19:38 | A town or city named in Joshua 19:38.
 Hormah | Num 14:45 | A town or city named in Numbers 14:45.
@@ -558,7 +558,7 @@ Jehud | Josh 19:45 | A town or city named in Joshua 19:45.
 Jericho | Num 22:1 | A town or city named in Numbers 22:1.
   tier: 3
 Jeruel | 2 Chr 20:16 | A land or region named in 2 Chronicles 20:16.
-Jerusalem; Jews; Judah | Josh 10:1; Josh 15:63; 2 Chr 32:18 | A town or city named in Joshua 10:1.
+Jerusalem | Josh 10:1; Josh 15:63; 2 Chr 32:18 | A town or city named in Joshua 10:1.
   tier: 1
 Jeshanah | 2 Chr 13:19 | A town or city named in 2 Chronicles 13:19.
 Jeshimon | Num 21:20 | A land or region named in Numbers 21:20.
@@ -576,7 +576,7 @@ Jordan | Gen 32:10 | A river named in Genesis 32:10.
 Jorkeam; Jorkoam | 1 Chr 2:44 | A town or city named in 1 Chronicles 2:44.
 Jotbah | 2 Kgs 21:19 | A town or city named in 2 Kings 21:19.
 Jotbathah; Jotbath | Num 33:33; Deut 10:7 | A town or city named in Numbers 33:33.
-Judea; Jewry; Jews; Juda; Judaea; Judah | Ezr 5:8; Matt 2:1; Mk 1:5; Lk 23:5; Lk 23:51 | A land or region named in Ezra 5:8.
+Judea; Jewry; Juda; Judaea; Judah | Ezr 5:8; Matt 2:1; Mk 1:5; Lk 23:5; Lk 23:51 | A land or region named in Ezra 5:8.
 Juttah | Josh 15:55 | A town or city named in Joshua 15:55.
 Kabzeel; Jekabzeel | Josh 15:21; Neh 11:25 | A town or city named in Joshua 15:21.
 Kadesh-barnea; En Mishpat | Gen 14:7; Num 32:8 | A town or city named in Genesis 14:7.
