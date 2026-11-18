@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "verify": "node tools/verify.js && node tools/validate.js",
+    "verify": "node tools/verify.js && node tools/validate.js && node tools/add-passages.js --check",
     "check": "npm test && npm run verify",
     "build": "node tools/build-site.js --list"
   },
