@@ -3,10 +3,10 @@
 **Live URL:** https://jimmya1400.github.io/fishers/  (repo: https://github.com/JimmyA1400/fishers)
 
 ## Current step
-10. After launch: remaining backlog
+10. After launch: backlog complete (2026-11-18)
 
 ## Next action
-Run the full release gate on the live URL (tests/playthrough/release-gate.js --url ...) and update RELEASE_CHECKLIST.md with the new build.
+Nothing queued. The backlog is complete; see the optional items at the end of section 10.
 
 ## Checklist
 
@@ -21,7 +21,7 @@ Run the full release gate on the live URL (tests/playthrough/release-gate.js --u
 - [x] (c) Rebrand to Fishers (name, ichthys, Matthew 4:19 KJV, fishing copy): **done**
 - [x] (d) Immersive descent redesign (camera, score panel, sink, reveal, end screen): **done**; known cosmetic: a tier line at a zone's depth can overlap that zone's label
 - [x] (e) New categories and bank expansion: **done** (31 of 32 prompts; Psalm 119 letters dropped because the headings aren't in WEB/KJV text; the 5-sample review was approved 2026-11-17)
-- [~] (f) Game-tester agent and report: agent and report **done**; backlog **partial** (items 1, 2, 3, 4-personal-only, 5, 7, 8, F-07 fixed; 6, 9, 10, 11, 12, 13, 14, 15 and F-06 open)
+- [x] (f) Game-tester agent and report: done; every backlog item is fixed or re-measured (see section 10). G7 (mascot wardrobe) was left out on purpose: it is low priority and copies a reference-game feature
 
 ### 2. Repo hygiene
 - [x] Secret scan (repo files): none found (telemetry endpoint empty, backend secret only named in docs)
@@ -74,7 +74,7 @@ Run the full release gate on the live URL (tests/playthrough/release-gate.js --u
 - [x] Sent (2026-11-18)
 
 ### 10. After launch
-- [~] Phone issues: Back gesture fixed (F-04, deployed 2e80f28); sink frame rate under throttle still 46–59 fps
+- [x] Phone issues: Back gesture fixed (F-04, 2e80f28); sink lightened (e1bdce6); 4x-throttled frame rate 40-52 fps in headless runs (see Known limits)
 - [x] Descent leftovers: tier line at a zone's depth no longer runs through the zone label
 - [x] Verse refs in The Catch (#6): live in 5925f2e, smoke OK
 - [x] Lost Sheep suspense beat (#9): live in faa0320, smoke OK
@@ -84,7 +84,9 @@ Run the full release gate on the live URL (tests/playthrough/release-gate.js --u
 - [x] Sink frame rate (#13): live in e1bdce6, smoke OK. Desktop 1440x900 software: 28-37 -> 35-45 fps (same-session A/B); with the GPU on: 57-58 fps after the first sink. Phone 4x CPU stays CPU-bound (26-37 fps on this machine today)
 - [x] Theme of the week (#11): live in 8e4f711, smoke OK; 7 themes with 7+ prompts rotate each Monday (Eastern); reading = the theme verses already checked by verify.js
 - [x] Group cast (#10): live in b4a8f6a, smoke OK; a code gives the same 7 prompts on every device, invite link ?group=CODE, results compared by sharing cards. A live leaderboard needs a backend and your privacy approval (not built)
-- [ ] Full release gate on the live URL
+- [x] Full release gate on the live URL: build `642d1be`, 117 / 118 (only miss: the extra 4× CPU frame-rate measurement, 40–52 fps between runs); Lighthouse live mobile 98/100/100, desktop 92/100/100, CLS 0; RELEASE_CHECKLIST.md updated
+- [x] Layout shift on home (CLS 0.023 from the theme link): fixed in 642d1be
+- Optional, only if you ask: custom domain; a shared group leaderboard or player percentile (needs a backend and your privacy approval); a feedback form; removing `noindex` so search engines list the game
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
