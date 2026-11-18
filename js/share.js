@@ -7,7 +7,7 @@
   // opts: { label, number, score, tiers: [0-6 per round], tierDefs, url }
   function cardText(opts) {
     var row = opts.tiers.map(function (t) { return t ? opts.tierDefs[t - 1].emoji : NOTHING; }).join('');
-    var lines = [(opts.label || 'Fishers') + ' #' + opts.number + ' \u{1F41F}', opts.score + ' / 700', row];
+    var lines = [(opts.label || 'Fishers') + (opts.number != null ? ' #' + opts.number : '') + ' \u{1F41F}', opts.score + ' / 700', row];
     if (opts.url) lines.push(opts.url);
     return lines.join('\n');
   }

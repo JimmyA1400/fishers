@@ -220,7 +220,42 @@
     return { week: week, number: n + 1, theme: theme, prompts: picks };
   }
 
+  // ---------- group casts ----------------------------------------------
+  // A group code (a church name, or a random code) picks seven prompts the
+  // same way on every device, so a group can play one cast with no server.
+  function groupCode(raw) {
+    var c = String(raw || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    return c.length >= 3 && c.length <= 12 ? c : '';
+  }
+  function pickGroup(data, code, config) {
+    var c = groupCode(code);
+    if (!c) return [];
+    // Like a daily (one closed set, the rest from different categories), but
+    // drawn straight from a seeded shuffle, so it is quick on any phone.
+    var count = (config && config.promptsPerDay) || 7, seed = 'group|' + c;
+    var closed = data.prompts.filter(function (p) { return p.closed; });
+    var open = data.prompts.filter(function (p) { return !p.closed; });
+    var picked = [], cats = {};
+    if (closed.length) { var k = closed[shuffled(closed.length, seed + '|closed')[0]]; picked.push(k); cats[k.category] = 1; }
+    var order = shuffled(open.length, seed + '|open');
+    for (var i = 0; i < order.length && picked.length < count; i++) {
+      var p = open[order[i]];
+      if (!cats[p.category]) { cats[p.category] = 1; picked.push(p); }
+    }
+    for (i = 0; i < order.length && picked.length < count; i++) {   // fewer categories than slots
+      if (picked.indexOf(open[order[i]]) < 0) picked.push(open[order[i]]);
+    }
+    return shuffled(picked.length, seed + '|order').map(function (ix) { return picked[ix]; });
+  }
+  var CODE_CHARS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';   // no 0/O, 1/I/L
+  function newGroupCode(random) {
+    var r = random || Math.random, s = '';
+    for (var i = 0; i < 6; i++) s += CODE_CHARS.charAt(Math.floor(r() * CODE_CHARS.length));
+    return s;
+  }
+
   var api = {
+    groupCode: groupCode, pickGroup: pickGroup, newGroupCode: newGroupCode,
     weekStart: weekStart, themeRotation: themeRotation, pickThemeWeek: pickThemeWeek,
     hash: hash, rng: rng, shuffled: shuffled, dateKey: dateKey, dayNumber: dayNumber, msToNextCast: msToNextCast, TZ: TZ,
     addDays: addDays, pickCast: pickCast, pickDaily: pickDaily, pickEndless: pickEndless
