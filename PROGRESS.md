@@ -6,7 +6,7 @@
 10. After launch: remaining backlog
 
 ## Next action
-Desktop sink fps (backlog #13): measure the sink on a desktop profile, fix if under target, then deploy and smoke-test.
+Branch `feat/theme-week`: a weekly theme cast with that week's WEB verses to read (backlog #11), then deploy and smoke-test.
 
 ## Checklist
 
@@ -76,14 +76,13 @@ Desktop sink fps (backlog #13): measure the sink on a desktop profile, fix if un
 ### 10. After launch
 - [~] Phone issues: Back gesture fixed (F-04, deployed 2e80f28); sink frame rate under throttle still 46–59 fps
 - [x] Descent leftovers: tier line at a zone's depth no longer runs through the zone label
-- [ ] Descent redesign leftovers
-- [ ] Categories / bank (nothing waiting for review)
 - [x] Verse refs in The Catch (#6): live in 5925f2e, smoke OK
 - [x] Lost Sheep suspense beat (#9): live in faa0320, smoke OK
 - [x] Learn-more drawer (#14): live in 7ac965c, smoke OK; passages are WEB text, checked by `npm run verify`
 - [x] Alias overlaps (#15): live in 14e6077, smoke OK; 5 bad aliases dropped via NOT_ALIAS in tools/derive.js, Thaddaeus and Simon the Zealot no longer take "Judas"/"Simon"; 10 genuinely shared KJV spellings marked reviewed (SHARED_OK in validate.js); warnings 58 -> 10 (the rest are tier-balance notes)
 - [x] Reduced-motion veil frames (F-06): re-measured 2026-11-18, Practice, reduced motion, Pixel 7, 6 sinks: at 1x 0-1 frame over 50 ms per sink (56-60 ms), was 3 per sink (worst 167 ms). Fixed by the quantized water repaint (launch week). Left: a one-off first-reveal layout (~40 ms real; 145-257 ms at 4x CPU); later reveals 13-26 ms at 4x. No code change
-- [ ] Remaining backlog: desktop sink fps (#13); larger ideas (group mode #10, themed weeks #11) need your go-ahead
+- [x] Sink frame rate (#13): live in e1bdce6, smoke OK. Desktop 1440x900 software: 28-37 -> 35-45 fps (same-session A/B); with the GPU on: 57-58 fps after the first sink. Phone 4x CPU stays CPU-bound (26-37 fps on this machine today)
+- [ ] Remaining: themed weeks (#11), group cast without a backend (#10; you said go 2026-11-18; a live leaderboard needs a backend and your privacy approval), then a full release gate on the live URL
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
