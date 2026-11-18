@@ -276,6 +276,15 @@
 }
 @keyframes tag-wobble { 0%, 100% { transform: rotate(-9deg); } 50% { transform: rotate(-5deg) translateY(2px); } }
 @keyframes tag-in { from { opacity: 0; } }
+/* A Lost Sheep: the line goes taut and the tag tugs before the sink. */
+.tag.tug::before { border-left-style: solid; border-left-width: 2px; }
+.tag.tug .tag-in { animation: tag-tug .5s cubic-bezier(.3, 0, .2, 1) infinite; }
+@keyframes tag-tug {
+  0%, 100% { transform: rotate(-8deg) translateY(0); }
+  18% { transform: rotate(-3deg) translateY(5px); }
+  30% { transform: rotate(-11deg) translateY(-1px); }
+  45% { transform: rotate(-6deg) translateY(3px); }
+}
 
 /* the score panel's "slam" when the net settles */
 .hud-score { --c: var(--accent); }
