@@ -261,9 +261,8 @@ code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .9em; }
   .btn-ghost { padding: .4rem .6rem; font-size: .8125rem; }
   .bars li { grid-template-columns: 8.5rem 1fr 1.6rem; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .bubble { display: none; }
-}
+/* calm motion (see Settings → Animations) */
+html.calm .bubble { display: none; }
 
 /* ---------- guessing loop ---------- */
 .countdown { min-height: 1.6rem; margin: -.3rem 0 .3rem; font-family: var(--serif); font-style: italic; font-size: 1.125rem; color: var(--galilee-2); }
@@ -295,9 +294,8 @@ input[type="text"]:disabled, .btn:disabled { opacity: .55; cursor: not-allowed; 
 .landed .result-body { animation: rise-in .45s ease both; }
 @keyframes rise-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 .fact { margin: .2rem 0 .4rem; padding: .5rem .7rem; border-left: 3px solid var(--gold); background: #fcf5e3; border-radius: 0 8px 8px 0; font-size: .9375rem; }
-@media (prefers-reduced-motion: reduce) {
-  .landed .result-body { animation: none; }
-}
+/* calm motion (see Settings → Animations) */
+html.calm .landed .result-body { animation: none; }
 
 /* ---------- home modes ---------- */
 .modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: .45rem; margin-top: .5rem; }
@@ -354,3 +352,5 @@ input[type="text"]:disabled, .btn:disabled { opacity: .55; cursor: not-allowed; 
 }
 .ta-chip::after { content: "\21E5"; color: var(--ink-soft); font-size: .875rem; }
 .ta-chip:hover { background: #f6e9c8; }
+.dlg .field { display: block; margin: .8rem 0 .3rem; font-weight: 700; }
+.dlg .field-select { width: 100%; min-height: 44px; padding: 0 .6rem; border-radius: 10px; border: 2px solid var(--parchment-line); background: #fff; color: var(--ink); font: inherit; font-size: 1rem; }

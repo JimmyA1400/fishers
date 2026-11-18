@@ -5,7 +5,20 @@
   var CFG = window.FSH_CONFIG, M = window.FSHMatcher, D = window.FSHDaily, FSHRound = window.FSHRound,
       Store = window.FSHStore, Scene = window.FSHScene, Share = window.FSHShare, Tele = window.FSHTelemetry,
       Sound = window.FSHSound, Icons = window.FSHIcons;
-  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Animations: 'full', 'calm' or 'off'. By default a device that asks for
+  // reduced motion gets 'calm', so the net still visibly sinks for everyone.
+  var deviceReduce = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var reduceMotion = deviceReduce, noMotion = false;
+  function motionMode() {
+    var m = (Store.get().settings || {}).motion;
+    return m === 'full' || m === 'calm' || m === 'off' ? m : (deviceReduce ? 'calm' : 'full');
+  }
+  function applyMotion() {
+    var m = motionMode();
+    reduceMotion = m !== 'full'; noMotion = m === 'off';
+    document.documentElement.classList.toggle('calm', reduceMotion);
+    Scene.setMotion(m);
+  }
 
   var app = document.getElementById('app');
   var live = document.getElementById('live');
@@ -83,7 +96,7 @@
   function stopTimer() { if (tick) { clearInterval(tick); tick = null; } onVisible = null; }
   function stopCountdown() { if (countdown) { clearInterval(countdown); countdown = null; } }
   function castNumber(key) { return D.dayNumber(key, CFG.epoch) + 1; }
-  function later(fn, ms) { var id = setTimeout(fn, reduceMotion ? Math.min(ms, 30) : ms); pending.push(id); return id; }
+  function later(fn, ms) { var id = setTimeout(fn, noMotion ? Math.min(ms, 30) : ms); pending.push(id); return id; }
   function clearPending() { pending.forEach(clearTimeout); pending = []; }
 
   // Each screen is one of three layouts over the world: 'home' (camera at
@@ -810,11 +823,11 @@
 
     // A Lost Sheep doesn't drop at once: the line goes taut and the tag tugs
     // while every tier line is out, then the net sinks. (Skipped with reduced motion.)
-    if (rec.tier === 6 && !reduceMotion) {
-      tag.classList.add('tug');
+    if (rec.tier === 6 && !noMotion) {
+      if (!reduceMotion) tag.classList.add('tug');
       buzz([10, 90, 10, 90, 10]);
       say('Something heavy on the line.');
-      later(function () { if (my === screenNo) { tag.classList.remove('tug'); drop(); } }, SHEEP_HOLD_MS);
+      later(function () { if (my === screenNo) { tag.classList.remove('tug'); drop(); } }, reduceMotion ? 900 : SHEEP_HOLD_MS);
     } else drop();
 
     function drop() {
@@ -1250,6 +1263,10 @@
     };
     document.getElementById('set-sound').onchange = function (e) { settings.sound = e.target.checked; Store.save(); applySound(); };
     document.getElementById('set-typeahead').onchange = function (e) { settings.typeahead = e.target.checked; Store.save(); };
+    var motionSel = document.getElementById('set-motion');
+    motionSel.value = settings.motion || '';
+    motionSel.querySelector('option[value=""]').textContent = 'Match this device (' + (deviceReduce ? 'calm' : 'full') + ')';
+    motionSel.onchange = function () { settings.motion = motionSel.value; Store.save(); applyMotion(); };
 
     // Keep the input bar above the on-screen keyboard.
     var vv = window.visualViewport;
@@ -1281,6 +1298,7 @@
   // waiting for the prompt bank (1.25 MB).
   function start() {
     drawHelpTiers(EARLY_TIERS);
+    applyMotion();
     Scene.init(document.getElementById('scene'), []);
     hud = { m: document.getElementById('hud-m'), zone: document.getElementById('hud-zone'), sq: document.getElementById('hud-sq'),
             cast: document.getElementById('hud-cast'), score: document.getElementById('hud-score') };

@@ -179,9 +179,8 @@ body { overflow: hidden; }
 .veil { bottom: 0; background: #0a1530; opacity: 0; transition: opacity .15s linear; z-index: 4; }
 .veil.on { opacity: 1; }
 
-@media (prefers-reduced-motion: reduce) {
-  .kelp, .front-grass, .rays i, .cloud, .waterline, .boat-wrap, .specks, .egg-school, .ichthys-svg, .halo, .radiance { animation: none !important; }
-}
+/* calm motion (see Settings → Animations) */
+html.calm .kelp, html.calm .front-grass, html.calm .rays i, html.calm .cloud, html.calm .waterline, html.calm .boat-wrap, html.calm .specks, html.calm .egg-school, html.calm .ichthys-svg, html.calm .halo, html.calm .radiance { animation: none !important; }
 
 /* ---------- the sink: fish darting away, tier lines ---------- */
 .scatter { position: absolute; width: 15px; animation: scatter 1.2s cubic-bezier(.2, .7, .3, 1) both; }
@@ -215,4 +214,5 @@ body { overflow: hidden; }
    a line drawn at a zone's depth never runs through its text. */
 .zone, .egg { transition: opacity .3s ease; }
 .world:has(.marks .tline:not(.gone)) .zone, .world:has(.marks .tline:not(.gone)) .egg { opacity: .14; }
-@media (prefers-reduced-motion: reduce) { .zone, .egg { transition: none; } }
+/* calm motion (see Settings → Animations) */
+html.calm .zone, html.calm .egg { transition: none; }
