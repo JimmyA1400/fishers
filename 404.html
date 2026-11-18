@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Fishers · Not found</title>
+  <style>
+    body { margin: 0; min-height: 100vh; min-height: 100dvh; display: grid; place-items: center; background: #123a5c; color: #fff; font: 1.0625rem/1.5 Georgia, "Times New Roman", serif; text-align: center; padding: 1rem; box-sizing: border-box; }
+    a { color: #ffd257; display: inline-block; padding: .7rem 1.2rem; min-height: 44px; box-sizing: border-box; }
+    h1 { font-weight: 600; margin: 0 0 .5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Nothing in this net</h1>
+    <p>That page isn't here. The boat is waiting at the shore.</p>
+    <p><a id="home" href="./">Back to Fishers</a></p>
+  </main>
+  <script>
+    // On a GitHub Pages project site the game lives one folder down
+    // (/<repo>/), so send people to that folder, whatever path they asked for.
+    (function () {
+      var seg = location.pathname.split('/').filter(Boolean)[0];
+      var base = /\.github\.io$/.test(location.hostname) && seg ? '/' + seg + '/' : '/';
+      document.getElementById('home').href = base;
+    })();
+  </script>
+</body>
+</html>

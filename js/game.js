@@ -197,7 +197,9 @@
           '</nav>' +
         '</div>' +
         '<p class="home-castno">Cast #' + castNumber(d.date) + ' · ' + esc(shortDate(d.date)) + streakHtml() + '</p>' +
+        '<p class="home-foot"><span class="foot-src">Scripture: WEB &amp; KJV, public domain ·</span><button type="button" class="link-btn" id="home-about">About &amp; credits</button></p>' +
       '</section>', null, 'home');
+    document.getElementById('home-about').onclick = function () { openDialog(document.getElementById('dlg-about')); };
     if (!data) {
       // Pressed before the bank arrives: remember it and carry on when it does.
       [['go', function () { play(dailySession(), true); }], ['endless', renderEndless], ['archive', renderArchive], ['practice', renderPracticeSetup]]
@@ -691,7 +693,7 @@
       label: s.kind === 'endless' ? 'Fishers Endless' : 'Fishers',
       tiers: s.results.map(function (r) { return r.tier; }),
       score: total(s.results), tierDefs: tiers,
-      url: /^https?:$/.test(location.protocol) ? location.origin + location.pathname : ''
+      url: /^https?:$/.test(location.protocol) ? location.origin + location.pathname.replace(/index\.html$/, '') : ''
     });
   }
 
@@ -992,6 +994,8 @@
     document.getElementById('btn-menu').onclick = document.getElementById('hud-menu').onclick = function () { openDialog(menu); };
     document.getElementById('menu-help').onclick = function () { closeMenu(); openDialog(document.getElementById('dlg-help')); };
     document.getElementById('menu-stats').onclick = function () { closeMenu(); renderStats(); openDialog(document.getElementById('dlg-stats')); };
+    document.getElementById('menu-about').onclick = function () { closeMenu(); openDialog(document.getElementById('dlg-about')); };
+    document.getElementById('build-version').textContent = CFG.version || 'dev';
     document.getElementById('menu-shore').onclick = function () { closeMenu(); renderHome(); };
     document.getElementById('btn-settings').onclick = function () {
       document.getElementById('set-typeahead').checked = settings.typeahead !== false;
@@ -1073,9 +1077,17 @@
     if (document.readyState === 'complete') afterPaint(r);
     else window.addEventListener('load', function () { afterPaint(r); }, { once: true });
   }).then(loadBank).catch(function (err) {
-    app.innerHTML = '<section class="card"><h2>The nets are tangled</h2>' +
-      '<p>The prompt bank could not be loaded. If you opened this file directly, make sure ' +
-      '<code>data/prompts.js</code> exists (run <code>node tools/sync-data.js</code>).</p>' +
+    var offline = navigator.onLine === false;
+    var why = location.protocol === 'file:'
+      ? 'If you opened this file directly, make sure <code>data/prompts.js</code> exists (run <code>node tools/sync-data.js</code>).'
+      : offline
+        ? 'You’re offline, and today’s prompts haven’t been saved on this device yet. Connect once and they’ll be kept for offline play.'
+        : 'Check your connection and try again.';
+    setLayout('sheet');
+    app.innerHTML = '<section class="card" role="alert"><h2>' + (offline ? 'The boat is ashore' : 'The nets are tangled') + '</h2>' +
+      '<p>The prompt bank could not be loaded. ' + why + '</p>' +
+      '<p><button type="button" class="btn" id="retry-load">Try again</button></p>' +
       '<p class="small">' + esc(err && err.message) + '</p></section>';
+    document.getElementById('retry-load').onclick = function () { location.reload(); };
   });
 })();

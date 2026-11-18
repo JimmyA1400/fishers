@@ -24,12 +24,13 @@
 
   function load() {
     if (/^https?:$/.test(location.protocol) && window.fetch) {
+      // On the web only the JSON is published; the service worker keeps a
+      // copy for offline play. data/prompts.js exists only for file://.
       return fetch('data/prompts.json', { cache: 'no-cache' })
         .then(function (r) {
           if (!r.ok) throw new Error('HTTP ' + r.status);
           return r.json();
-        })
-        .catch(fromScript);
+        });
     }
     return fromScript();
   }

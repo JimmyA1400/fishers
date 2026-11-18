@@ -47,11 +47,15 @@ const SINGLE_CHAPTER = new Set(['OBA', 'PHM', '2JO', '3JO', 'JUD']);
 
 function load(tr) {
   const file = path.join(CACHE, tr, 'eng-' + tr + '_vpl.txt');
-  if (!fs.existsSync(file)) {
-    throw new Error('Missing ' + file + '. Run: node tools/fetch-sources.js');
-  }
+  // A pinned, gzipped copy lives in tools/texts/ so CI checks against the
+  // exact text the bank was verified with, without downloading anything.
+  const pinned = path.join(__dirname, '..', 'texts', 'eng-' + tr + '_vpl.txt.gz');
+  let text;
+  if (fs.existsSync(file)) text = fs.readFileSync(file, 'utf8');
+  else if (fs.existsSync(pinned)) text = require('zlib').gunzipSync(fs.readFileSync(pinned)).toString('utf8');
+  else throw new Error('Missing ' + file + '. Run: node tools/fetch-sources.js');
   const verses = new Map();          // "GEN 1:1" -> text
-  for (const line of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {
+  for (const line of text.split(/\r?\n/)) {
     const m = line.match(/^(\w{3}) (\d+):(\d+) (.*)$/);
     if (!m || !BY_CODE.has(m[1])) continue;
     verses.set(m[1] + ' ' + m[2] + ':' + m[3], m[4].replace(/[[\]]/g, '').trim());

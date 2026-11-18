@@ -107,9 +107,24 @@
     <div class="menu-list">
       <button type="button" class="btn" id="menu-help">How to play</button>
       <button type="button" class="btn" id="menu-stats">Your logbook</button>
+      <button type="button" class="btn" id="menu-about">About &amp; credits</button>
       <button type="button" class="btn" id="menu-shore">Back to shore</button>
     </div>
-    <p class="small credits">Scripture quotations are from the World English Bible (WEB) and the King James Version (KJV), both in the public domain. Place data from <a href="https://www.openbible.info/geo/">OpenBible.info</a> (CC BY 4.0). Rarity tiers are estimates until real answer data exists.</p>
+    <form method="dialog"><button class="btn">Back to the boat</button></form>
+  </dialog>
+
+  <dialog id="dlg-about" class="dlg" aria-labelledby="about-title">
+    <h2 id="about-title" tabindex="-1" autofocus>About Fishers</h2>
+    <p>Fishers is an independent fan project: a daily Bible trivia game made for friends. It is not affiliated with, endorsed by, or connected to any other game or company.</p>
+    <h3>Credits</h3>
+    <ul class="credit-list">
+      <li><strong>Scripture</strong> quotations are from the World English Bible (WEB) and the King James Version (KJV), both in the public domain. Texts from <a href="https://ebible.org/">eBible.org</a>.</li>
+      <li><strong>Place data</strong> from the <a href="https://www.openbible.info/geo/">OpenBible.info Bible Geocoding Data</a>, licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</li>
+      <li><strong>Reference notes</strong> checked against Easton&rsquo;s Bible Dictionary (1897, public domain).</li>
+      <li><strong>Number font:</strong> JetBrains Mono, &copy; The JetBrains Mono Project Authors, <a href="https://openfontlicense.org/">SIL Open Font License 1.1</a>.</li>
+    </ul>
+    <p class="small">Rarity tiers are estimates until real answer data exists. Your stats are saved on this device only; nothing you type is sent anywhere.</p>
+    <p class="small">Version <span class="mono" id="build-version">dev</span></p>
     <form method="dialog"><button class="btn">Back to the boat</button></form>
   </dialog>
 
