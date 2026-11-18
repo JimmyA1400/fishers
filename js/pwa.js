@@ -12,6 +12,7 @@
   'use strict';
   var CFG = window.FSH_CONFIG || {};
   var deferred = null;            // the saved beforeinstallprompt event
+  var wantReload = false;         // set when the player taps "refresh"
   var TIP_KEY = 'fishers.iosTipDismissed';
 
   function toast(msg, action, fn) { if (window.FSHToast) window.FSHToast(msg, action, fn); }
@@ -20,6 +21,7 @@
   function offerUpdate(reg) {
     if (!reg.waiting || !navigator.serviceWorker.controller) return;
     toast('New version available', 'Tap to refresh', function () {
+      wantReload = true;
       if (reg.waiting) reg.waiting.postMessage('skip-waiting');
     });
   }
@@ -27,8 +29,11 @@
   function register() {
     if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol) || CFG.version === 'dev') return;
     var reloading = false;
+    // Only reload when the player asked for the new version. The first
+    // install also changes the controller (clients.claim), and that must not
+    // reload the page under someone who just arrived.
     navigator.serviceWorker.addEventListener('controllerchange', function () {
-      if (reloading) return;
+      if (reloading || !wantReload) return;
       reloading = true;
       location.reload();
     });

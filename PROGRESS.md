@@ -3,10 +3,10 @@
 **Live URL:** not deployed yet
 
 ## Current step
-1. State audit (done) → starting 2. Repo hygiene
+7. Deployment (local release gate running on the built site under /fishers/)
 
 ## Next action
-Create branch `chore/site-build` and write `tools/build-site.js` (allowlist copy into `_site/`).
+Fix anything the local gate (`node tests/playthrough/release-gate.js --url http://localhost:8790/fishers/`) reports, merge `feat/pwa`, then `gh repo create fishers --public --source=. --remote=origin --push`.
 
 ## Checklist
 
@@ -26,42 +26,42 @@ Create branch `chore/site-build` and write `tools/build-site.js` (allowlist copy
 ### 2. Repo hygiene
 - [x] Secret scan (repo files): none found (telemetry endpoint empty, backend secret only named in docs)
 - [x] Reference-game material gitignored and absent from history (checked before the first commit)
-- [ ] Allowlist build into `_site/`
-- [ ] Deploy size report
-- [ ] LICENSE, credits screen, footer, fan-project notice
+- [x] Allowlist build into `_site/` (`tools/build-site.js`)
+- [x] Deploy size report: 33 files, 1.70 MB (1.34 MB is data/prompts.json, minified; Pages gzips it)
+- [x] LICENSE, credits screen, footer, fan-project notice
 
 ### 3. Sub-path
 - [x] No absolute paths or localhost references in index.html, css, js (grep 2026-11-18)
-- [ ] Share text built from `location.origin + location.pathname`
-- [ ] Test under `http://localhost:XXXX/fishers/` with zero 404s
+- [x] Share text built from `location.origin + location.pathname`
+- [x] Test under `http://localhost:XXXX/fishers/` with zero 404s
 
 ### 4. Same daily for everyone
-- [ ] Eastern-time date key (`Intl.DateTimeFormat`, America/New_York)
-- [ ] Countdown to midnight Eastern
-- [ ] Daily #N from launch date; streaks on Eastern date
-- [ ] Tests (Pacific device, UTC near midnight)
-- [ ] "Your stats are saved on this device" in How to Play
-- [ ] Old-key migration kept
+- [x] Eastern-time date key (`Intl.DateTimeFormat`, America/New_York)
+- [x] Countdown to midnight Eastern
+- [x] Daily #N from launch date; streaks on Eastern date
+- [x] Tests (Pacific device, UTC near midnight)
+- [x] "Your stats are saved on this device" in How to Play
+- [x] Old-key migration kept
 
 ### 5. Phone-first polish
-- [ ] viewport-fit=cover, 100dvh, safe-area insets
-- [ ] Input attributes, 16px font, above keyboard
-- [ ] Tap targets ≥ 44px, touch-action
-- [ ] Focus kept after Cast; blur on round end
-- [ ] performance.now() deadline timer, visibilitychange
-- [ ] Audio after tap, mute remembered; haptics
+- [x] viewport-fit=cover, 100dvh, safe-area insets
+- [x] Input attributes, 16px font, above keyboard
+- [x] Tap targets ≥ 44px, touch-action
+- [x] Focus kept after Cast; blur on round end
+- [x] performance.now() deadline timer, visibilitychange
+- [x] Audio after tap, mute remembered; haptics
 - [ ] Landscape usable; reduced motion; 60 fps at 4× CPU
-- [ ] navigator.share + clipboard fallback
+- [x] navigator.share + clipboard fallback
 
 ### 6. PWA and link previews
-- [ ] manifest.webmanifest, icons 192/512/maskable, apple-touch-icon, favicons
-- [ ] sw.js (versioned precache, network-first data, cleanup, update toast)
-- [ ] Install hints (Android prompt, iOS tip)
+- [x] manifest.webmanifest, icons 192/512/maskable, apple-touch-icon, favicons
+- [x] sw.js (versioned precache, network-first data, cleanup, update toast)
+- [x] Install hints (Android prompt, iOS tip)
 - [ ] OG/Twitter tags + 1200×630 og:image (absolute URL after first deploy)
-- [ ] Self-hosted font, no third-party requests, robots noindex
+- [x] Self-hosted font, no third-party requests, robots noindex
 
 ### 7. Deployment
-- [ ] Prerequisites (git, gh auth, user.name/email)
+- [x] Prerequisites (git, gh auth, user.name/email)
 - [ ] Public repo `fishers`, push main
 - [ ] `.github/workflows/deploy.yml` (test → build → deploy)
 - [ ] Enable Pages (build_type=workflow)
@@ -83,6 +83,11 @@ Create branch `chore/site-build` and write `tools/build-site.js` (allowlist copy
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
 - The reference game's comparison scripts (`tests/playthrough/krillion*.js`), all test results, `reports/` and the game-tester agent notes are gitignored and were never committed.
 - Branches: one per section (`chore/site-build`, `feat/eastern-daily`, `feat/phone-polish`, `feat/pwa`, `ci/pages-deploy`), merged into `main` with `--no-ff` once their tests pass.
+- Code is MIT-licensed (LICENSE); change it if you prefer another license.
+- The WEB and KJV texts are pinned gzipped in `tools/texts/` (3.2 MB, public domain) so CI verifies against the exact text the bank was checked with. They are not in the published site.
+- The JetBrains Mono font (OFL 1.1) is self-hosted from `fonts/`; no Google Fonts requests.
+- og:url and og:image are stamped with the Pages URL at build time (`SITE_URL` from configure-pages), so the link preview is absolute after the first deploy without a second edit.
+- Telemetry stays off (`js/config.js`); no analytics or trackers.
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
