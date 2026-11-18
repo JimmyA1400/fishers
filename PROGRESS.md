@@ -86,6 +86,7 @@ Nothing queued. The backlog is complete; see the optional items at the end of se
 - [x] Group cast (#10): live in b4a8f6a, smoke OK; a code gives the same 7 prompts on every device, invite link ?group=CODE, results compared by sharing cards. A live leaderboard needs a backend and your privacy approval (not built)
 - [x] Full release gate on the live URL: build `642d1be`, 117 / 118 (only miss: the extra 4× CPU frame-rate measurement, 40–52 fps between runs); Lighthouse live mobile 98/100/100, desktop 92/100/100, CLS 0; RELEASE_CHECKLIST.md updated
 - [x] Layout shift on home (CLS 0.023 from the theme link): fixed in 642d1be
+- [x] Phone dialogs (your report 2026-11-18: How to fish cut off at the top, "Back to the boat" unreachable): fixed in e5350a6. Dialogs are sized with 100dvh minus safe-area insets, the title and close button are pinned, dialogs open at the top. `tests/playthrough/phone-ui.js` checks every dialog and page on iPhone SE, iPhone 13 and Pixel 7 with browser bars, 360x560 and landscape (203 checks). Found on the way: `overscroll-behavior: contain` can swallow the next tap, so it is not used
 - Optional, only if you ask: custom domain; a shared group leaderboard or player percentile (needs a backend and your privacy approval); a feedback form; removing `noindex` so search engines list the game
 
 ## Decisions made
