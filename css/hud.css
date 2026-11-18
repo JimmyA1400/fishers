@@ -349,6 +349,11 @@
 .passage .vn { margin-right: .25rem; font: 700 .65rem/1 var(--mono); color: var(--c, var(--t6)); }
 .passage-src { margin: .35rem 0 0; font-size: .75rem; color: rgba(238, 244, 251, .6); text-align: right; }
 .bank-more { margin: 0 0 .4rem; max-width: none; }
+.reading { margin: .4rem 0 .5rem; }
+.reflect { margin: 0 0 .8rem; font: italic 1rem/1.45 var(--serif); }
+.reflect .eyebrow { display: block; font-style: normal; margin-bottom: .15rem; }
+.theme-link { display: block; margin: 0 auto .55rem; min-height: 44px; font-size: .9375rem; }
+.theme-link strong { color: var(--accent); }
 .bank-more summary { justify-content: flex-start; padding-left: 0; }
 .go-btn {
   margin-top: .8rem; min-height: 56px; min-width: 14rem; padding: 0 1.6rem; border-radius: 999px; cursor: pointer;

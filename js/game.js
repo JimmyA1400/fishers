@@ -200,10 +200,35 @@
       return { kind: 'endless', key: 'endless:' + n, number: n, ids: D.pickEndless(data, n, CFG).map(function (p) { return p.id; }), results: [], startedAt: null };
     });
   }
+  // The theme of the week: the same seven prompts for every player, Monday to Sunday (Eastern).
+  var THEME_LABEL = { word: 'The Word', kingdom: 'The Kingdom', church: 'The Church', deep: 'The Deep', light: 'Light' };
+  function themeLabel(t) { return THEME_LABEL[t] || (t.charAt(0).toUpperCase() + t.slice(1)); }
+  function themeWeek() { return D.pickThemeWeek(data, today(), CFG); }
+  function themeSession() {
+    var w = themeWeek();
+    return storedCast('theme:' + w.week, function () {
+      return { kind: 'theme', key: 'theme:' + w.week, week: w.week, number: w.number, theme: w.theme,
+        ids: w.prompts.map(function (p) { return p.id; }), results: [], startedAt: null };
+    });
+  }
+  function readingHtml(theme, withQuestion) {
+    var list = (data.themes && data.themes[theme]) || [];
+    return list.map(function (v) {
+      return '<blockquote class="passage reading"><p>' + esc(v.text) + '</p><p class="passage-src">' + esc(v.ref) + ' (' + esc(v.translation) + ')</p></blockquote>' +
+        (withQuestion && v.question ? '<p class="reflect"><span class="eyebrow">To think about</span> ' + esc(v.question) + '</p>' : '');
+    }).join('');
+  }
+
+  function themeLinkHtml() {
+    var w = data && themeWeek();
+    return w ? '<button type="button" class="link-btn theme-link" id="theme">This week: <strong>' + esc(themeLabel(w.theme)) + '</strong> ▸</button>' : '';
+  }
+
   function restart(s) { s.results = []; s.startedAt = null; s.done = false; Store.save(); }
 
   function title(s) {
     if (s.kind === 'endless') return 'Endless Cast #' + s.number;
+    if (s.kind === 'theme') return 'Theme Week #' + s.number + ' · ' + themeLabel(s.theme);
     return 'Fishers #' + castNumber(s.date) + (s.kind === 'archive' ? ' (archive)' : '');
   }
   function done(s) { return s.results.length >= s.ids.length; }
@@ -259,6 +284,7 @@
         '<div class="home-bottom">' +
           (status ? '<p class="home-status">' + esc(status) + '</p>' : '') +
           '<button type="button" class="cast-net" id="go">' + label + '</button>' +
+          themeLinkHtml() +
           '<nav class="home-modes" aria-label="Other ways to play">' +
             '<button type="button" class="link-btn" id="endless">Endless</button><span aria-hidden="true">·</span>' +
             '<button type="button" class="link-btn" id="archive">Archive</button><span aria-hidden="true">·</span>' +
@@ -294,6 +320,32 @@
     document.getElementById('endless').onclick = renderEndless;
     document.getElementById('archive').onclick = renderArchive;
     document.getElementById('practice').onclick = renderPracticeSetup;
+    var th = document.getElementById('theme');
+    if (th) th.onclick = renderTheme;
+  }
+
+  function renderTheme() {
+    hudOn(false);
+    mode = 'cast'; session = null; syncScene(true, 'home');
+    var s = themeSession(), label = themeLabel(s.theme), n = s.results.length;
+    var next = D.addDays(s.week, 7), go;
+    if (done(s)) go = 'See this week’s net';
+    else if (n) go = 'Carry on (' + n + ' of ' + s.ids.length + ')';
+    else go = 'Cast this week’s net';
+    show(
+      '<section class="card" aria-labelledby="th-title">' +
+        '<p class="eyebrow">Theme of the week · #' + s.number + '</p>' +
+        '<h2 id="th-title" tabindex="-1">' + esc(label) + '</h2>' +
+        '<p class="lede">Seven prompts on one theme, the same for every player this week. A new theme starts Monday at midnight Eastern (' + esc(shortDate(next)) + '). It does not touch your daily streak.</p>' +
+        '<h3>This week’s reading</h3>' + readingHtml(s.theme, false) +
+        '<div class="stack"><button type="button" class="btn primary" id="th-go">' + esc(go) + '</button>' +
+          (done(s) ? '<button type="button" class="btn" id="th-again">Cast this one again</button>' : '') + '</div>' +
+        '<button type="button" class="btn quiet" id="th-back">Back to shore</button>' +
+      '</section>', '#th-title');
+    document.getElementById('th-go').onclick = function () { if (done(s)) renderResults(s); else play(s); };
+    var again = document.getElementById('th-again');
+    if (again) again.onclick = function () { restart(s); play(s); };
+    document.getElementById('th-back').onclick = renderHome;
   }
 
   // From the home screen the title lifts away and the camera pans down to the
@@ -780,8 +832,8 @@
   function siteUrl() { return /^https?:$/.test(location.protocol) ? location.origin + location.pathname.replace(/index\.html$/, '') : ''; }
   function shareText(s, withUrl) {
     return Share.cardText({
-      number: s.kind === 'endless' ? s.number : castNumber(s.date),
-      label: s.kind === 'endless' ? 'Fishers Endless' : 'Fishers',
+      number: s.kind === 'endless' || s.kind === 'theme' ? s.number : castNumber(s.date),
+      label: s.kind === 'endless' ? 'Fishers Endless' : s.kind === 'theme' ? 'Fishers Theme Week (' + themeLabel(s.theme) + ')' : 'Fishers',
       tiers: s.results.map(function (r) { return r.tier; }),
       score: total(s.results), tierDefs: tiers,
       url: withUrl === false ? '' : siteUrl()
@@ -907,7 +959,7 @@
     var score = total(s.results), depth = score * CFG.metresPerPoint;
     var isToday = s.kind === 'daily' && s.date === today();
     var streak = Store.currentStreak(today(), yesterday());
-    var sub = s.kind === 'endless' ? '' : ' · ' + esc(prettyDate(s.date));
+    var sub = s.kind === 'endless' ? '' : s.kind === 'theme' ? ' · week of ' + esc(prettyDate(s.week)) : ' · ' + esc(prettyDate(s.date));
     var last = s.results[s.results.length - 1];
 
     show(
@@ -924,6 +976,7 @@
         '</header>' +
         '<h3 class="sec">Cast log</h3>' + castLogSvg(s) +
         '<h3 class="sec">The bearing</h3>' + bearingHtml(score) +
+        (s.kind === 'theme' ? '<h3 class="sec">This week’s reading · ' + esc(themeLabel(s.theme)) + '</h3>' + readingHtml(s.theme, true) : '') +
         '<pre class="share-card" id="share-card" aria-label="Shareable result, with no answers shown">' + esc(shareText(s)) + '</pre>' +
         '<div class="actions">' +
           (navigator.share ? '<button type="button" class="btn primary" id="share">Share</button>' : '') +
@@ -1165,6 +1218,8 @@
     if (JSON.stringify(tiers) !== JSON.stringify(EARLY_TIERS)) drawHelpTiers(tiers);
     if (document.body.classList.contains('view-home') && document.getElementById('go')) {
       session = dailySession();
+      var nav = app.querySelector('.home-modes');
+      if (nav && !document.getElementById('theme')) nav.insertAdjacentHTML('beforebegin', themeLinkHtml());
       wireHome();
       if (pendingHome) { var fn = pendingHome; pendingHome = null; fn(); }
     }
