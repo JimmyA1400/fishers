@@ -206,3 +206,9 @@ body { overflow: hidden; }
 @keyframes tl-in { to { opacity: .8; } }
 @keyframes tl-flash { 0% { opacity: 1; transform: scaleY(1.8); } 100% { opacity: 0; transform: scaleY(1); } }
 .marks.fade .tline { animation: none; opacity: 0; transition: opacity .5s ease; }
+
+/* While the tier lines are out (the sink), the depth-zone labels step back so
+   a line drawn at a zone's depth never runs through its text. */
+.zone, .egg { transition: opacity .3s ease; }
+.world:has(.marks .tline:not(.gone)) .zone, .world:has(.marks .tline:not(.gone)) .egg { opacity: .14; }
+@media (prefers-reduced-motion: reduce) { .zone, .egg { transition: none; } }
