@@ -1,4 +1,8 @@
-/* Fishers: loads the prompt bank.
+/* Fishers: loads the prompt bank and the daily schedule.
+ *
+ * data/schedule.json (the daily casts, see scripts/build-schedule.js) is
+ * attached as data.schedule. If it cannot be loaded the game still runs: the
+ * schedule module picks each day on the device (see js/schedule.js).
  *
  * data/prompts.json is the source of truth. Browsers refuse to fetch local
  * files, so when the game is opened by double-clicking index.html it loads
@@ -26,11 +30,19 @@
     if (/^https?:$/.test(location.protocol) && window.fetch) {
       // On the web only the JSON is published; the service worker keeps a
       // copy for offline play. data/prompts.js exists only for file://.
-      return fetch('data/prompts.json', { cache: 'no-cache' })
+      var bank = fetch('data/prompts.json', { cache: 'no-cache' })
         .then(function (r) {
           if (!r.ok) throw new Error('HTTP ' + r.status);
           return r.json();
         });
+      var sched = fetch('data/schedule.json', { cache: 'no-cache' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+      return Promise.all([bank, sched]).then(function (both) {
+        both[0].schedule = both[1];
+        if (!both[1] && window.console) console.warn('Fishers: data/schedule.json did not load; picking dailies on this device.');
+        return both[0];
+      });
     }
     return fromScript();
   }

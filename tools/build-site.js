@@ -63,6 +63,9 @@ function main() {
   fs.mkdirSync(path.join(OUT, 'data'), { recursive: true });
   const bank = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'prompts.json'), 'utf8'));
   fs.writeFileSync(path.join(OUT, 'data', 'prompts.json'), JSON.stringify(bank));
+  // The daily schedule (scripts/build-schedule.js), minified.
+  const sched = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'schedule.json'), 'utf8'));
+  fs.writeFileSync(path.join(OUT, 'data', 'schedule.json'), JSON.stringify(sched));
 
   // Stamp the version.
   const stamp = (rel, from, to) => {

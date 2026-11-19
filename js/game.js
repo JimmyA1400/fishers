@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  var CFG = window.FSH_CONFIG, M = window.FSHMatcher, D = window.FSHDaily, FSHRound = window.FSHRound,
+  var CFG = window.FSH_CONFIG, M = window.FSHMatcher, D = window.FSHDaily, Sched = window.FSHSchedule, FSHRound = window.FSHRound,
       Store = window.FSHStore, Scene = window.FSHScene, Share = window.FSHShare, Tele = window.FSHTelemetry,
       Sound = window.FSHSound, Icons = window.FSHIcons;
   // Animations: 'full', 'calm' or 'off'. By default a device that asks for
@@ -189,7 +189,7 @@
   function dailySession() {
     var st = Store.get(), t = today();
     if (!(st.daily && st.daily.date === t && validIds(st.daily.ids))) {
-      st.daily = { kind: 'daily', key: 'daily:' + t, date: t, ids: D.pickDaily(data, t, CFG).map(function (p) { return p.id; }), results: [], startedAt: null };
+      st.daily = { kind: 'daily', key: 'daily:' + t, date: t, ids: Sched.dailyIds(data, data.schedule, t, CFG), results: [], startedAt: null };
       Store.save();
     }
     st.daily.kind = 'daily';
@@ -205,12 +205,13 @@
   }
   function archiveSession(date) {
     return storedCast('archive:' + date, function () {
-      return { kind: 'archive', key: 'archive:' + date, date: date, ids: D.pickDaily(data, date, CFG).map(function (p) { return p.id; }), results: [], startedAt: null };
+      return { kind: 'archive', key: 'archive:' + date, date: date, ids: Sched.dailyIds(data, data.schedule, date, CFG), results: [], startedAt: null };
     });
   }
   function endlessSession(n) {
     return storedCast('endless:' + n, function () {
-      return { kind: 'endless', key: 'endless:' + n, number: n, ids: D.pickEndless(data, n, CFG).map(function (p) { return p.id; }), results: [], startedAt: null };
+      // Never a prompt due as a daily in the next 14 days (see js/schedule.js).
+      return { kind: 'endless', key: 'endless:' + n, number: n, ids: Sched.endlessIds(data, data.schedule, n, today(), CFG), results: [], startedAt: null };
     });
   }
   // The theme of the week: the same seven prompts for every player, Monday to Sunday (Eastern).
@@ -477,7 +478,7 @@
       '<section class="card" aria-labelledby="en-title">' +
         '<p class="eyebrow">Endless Casts</p>' +
         '<h2 id="en-title" tabindex="-1">As many casts as you like</h2>' +
-        '<p class="lede">Numbered casts of seven, the same for every player, built by the same rules as the daily. They do not touch your streak.</p>' +
+        '<p class="lede">Numbered casts of seven, the same for every player on a given day, built by the same rules as the daily and never using a prompt from the next two weeks of dailies. Endless casts refresh as new dailies air. They do not touch your streak.</p>' +
         '<div class="stack"><button type="button" class="btn primary" id="en-next">Cast Endless #' + next + '</button></div>' +
         (rows ? '<h3>Your Endless Casts</h3><ul class="cast-list">' + rows + '</ul>' : '') +
         '<button type="button" class="btn quiet" id="en-back">Back to shore</button>' +
@@ -1197,10 +1198,18 @@
   function nextPractice() {
     mode = 'practice';
     if (total(practice.results) >= 600) practice.results = [];   // back toward the surface before the floor
-    var todays = dailySession().ids;
-    var pool = data.prompts.filter(function (p) {
-      return todays.indexOf(p.id) === -1 && (!practice.category || p.category === practice.category);
+    // Prompts due as a daily in the next 14 days stay out, so practice never
+    // spoils a daily. If a category has nothing else, the ones due latest
+    // are used (never today's).
+    var soon = Sched.upcoming(data, data.schedule, today(), 14, CFG);
+    var inCat = data.prompts.filter(function (p) {
+      return !p.retired && (!practice.category || p.category === practice.category) && soon[p.id] !== 0;
     });
+    var pool = inCat.filter(function (p) { return !(p.id in soon); });
+    if (!pool.length && inCat.length) {
+      var latest = Math.max.apply(null, inCat.map(function (p) { return soon[p.id]; }));
+      pool = inCat.filter(function (p) { return soon[p.id] === latest; });
+    }
     var fresh = pool.filter(function (p) { return !practice.seen[p.id]; });
     if (!fresh.length) { practice.seen = {}; fresh = pool; }
     if (!fresh.length) { renderPracticeSetup(); say('Every prompt in that category is in today’s cast. Try another category.'); return; }

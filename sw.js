@@ -2,7 +2,7 @@
  *
  * - The app shell (page, CSS, JS, icons, font) is precached under a cache
  *   named for the build, so every deploy gets a fresh cache.
- * - data/prompts.json is network-first with a cache fallback: new content
+ * - data/prompts.json and data/schedule.json are network-first with a cache fallback: new content
  *   arrives when online, and the game still plays offline.
  * - Old caches are deleted on activate.
  * - A new version waits until the page asks it to take over (the "New
@@ -21,7 +21,7 @@ var SHELL_FILES = [
   'index.html',
   'manifest.webmanifest',
   'css/styles.css', 'css/world.css', 'css/hud.css',
-  'js/config.js', 'js/data-loader.js', 'js/matcher.js', 'js/round.js', 'js/typeahead.js', 'js/daily.js',
+  'js/config.js', 'js/data-loader.js', 'js/matcher.js', 'js/round.js', 'js/typeahead.js', 'js/daily.js', 'js/schedule.js',
   'js/storage.js', 'js/scene.js', 'js/icons.js', 'js/share.js', 'js/sound.js', 'js/telemetry.js',
   'js/pwa.js', 'js/game.js',
   'fonts/jetbrains-mono-latin-500-normal.woff2', 'fonts/jetbrains-mono-latin-700-normal.woff2',
@@ -37,7 +37,9 @@ self.addEventListener('install', function (event) {
     }).then(function () {
       // Also keep the prompt bank, so the first offline visit can still play.
       return caches.open(DATA).then(function (c) {
-        return fetch('data/prompts.json', { cache: 'no-cache' }).then(function (r) { if (r.ok) return c.put('data/prompts.json', r); }).catch(function () {});
+        return Promise.all(['data/prompts.json', 'data/schedule.json'].map(function (u) {
+          return fetch(u, { cache: 'no-cache' }).then(function (r) { if (r.ok) return c.put(u, r); }).catch(function () {});
+        }));
       });
     })
   );
@@ -62,14 +64,16 @@ self.addEventListener('fetch', function (event) {
   var url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
 
-  // The prompt bank: network first, cached copy when offline.
-  if (/\/data\/prompts\.json$/.test(url.pathname)) {
+  // The prompt bank and the schedule: network first, cached copy when offline.
+  var dataFile = /\/(data\/(?:prompts|schedule)\.json)$/.exec(url.pathname);
+  if (dataFile) {
+    var name = dataFile[1];
     event.respondWith(
       fetch(req).then(function (res) {
-        if (res.ok) { var copy = res.clone(); caches.open(DATA).then(function (c) { c.put('data/prompts.json', copy); }); }
+        if (res.ok) { var copy = res.clone(); caches.open(DATA).then(function (c) { c.put(name, copy); }); }
         return res;
       }).catch(function () {
-        return caches.open(DATA).then(function (c) { return c.match('data/prompts.json'); }).then(function (hit) {
+        return caches.open(DATA).then(function (c) { return c.match(name); }).then(function (hit) {
           return hit || Response.error();
         });
       })

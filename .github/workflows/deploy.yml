@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 2   # the previous commit's schedule, for the frozen-date check
       - name: Set up Node
         uses: actions/setup-node@v7
         with:
@@ -34,6 +36,10 @@ jobs:
         run: npm test
       - name: Scripture verification and game-rule validation
         run: npm run verify
+      - name: Daily schedule (hard rules, 60+ days ahead, frozen dates unchanged)
+        run: |
+          git show HEAD^1:data/schedule.json > /tmp/base-schedule.json 2>/dev/null || : > /tmp/base-schedule.json
+          node scripts/check-schedule.js --base /tmp/base-schedule.json
 
   deploy:
     needs: test
