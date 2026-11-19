@@ -22,7 +22,11 @@ const S = require('../js/schedule.js');
 
 const ROOT = path.join(__dirname, '..');
 const EPOCH = '2026-11-17';
-const LEGACY_THROUGH = '2026-11-19';   // the last day that aired before the schedule existed
+const AIRED = {   // what the old picker gave, recorded on 2026-11-19 (the pool will grow, so it is not recomputed)
+  '2026-11-17': ['places-joshua', 'people-joshua-ruth', 'creatures', 'nations', 'parables-miracles', 'occupations', 'armor-of-god'],
+  '2026-11-18': ['occupations', 'new-names', 'revelation', 'plants', 'body-parts', 'objects', 'people-gospels'],
+  '2026-11-19': ['revelation', 'food', 'nations', 'giants', 'clothing', 'places-prophets', 'parables-miracles']
+};
 const MIN_FUTURE = 60;
 
 function arg(name, def) { const i = process.argv.indexOf('--' + name); return i > 0 ? process.argv[i + 1] : def; }
@@ -46,8 +50,7 @@ const remaining = D.dayNumber(last, today);
 if (remaining < MIN_FUTURE) fail.push('only ' + remaining + ' future days scheduled (need ' + MIN_FUTURE + ')');
 
 // 3. Frozen and aired days.
-for (let k = EPOCH; k <= LEGACY_THROUGH; k = D.addDays(k, 1)) {
-  const aired = D.pickDaily(data, k, { epoch: EPOCH, promptsPerDay: 7 }).map((p) => p.id);
+for (const [k, aired] of Object.entries(AIRED)) {
   if (JSON.stringify(sched.days[k]) !== JSON.stringify(aired)) fail.push('frozen: ' + k + ' differs from what aired');
 }
 const basePath = arg('base', '');

@@ -1,0 +1,7328 @@
+# Fishers: prompt bank for review
+
+Built from `content/` by `tools/build-prompts.js`, checked by `tools/verify.js` (every name and alias is found at its cited verse in the WEB or KJV) and `tools/validate.js` (game rules and matcher).
+
+**How tiers are set.** *verses* is how many verses in the WEB and KJV use the answer's name or aliases. The most frequent ~5% become Mustard Seed, the next ~7.5% Five Loaves, the next ~20% Lost Coin, the rest Hidden Treasure. Answers marked *(manual)* were moved by hand, for names that are famous but rare in the text, or common words that inflate the count. Prompts whose answers are descriptions or book titles are tiered entirely by hand. The Lost Sheep and Best Seat are hand-picked. All tiers are estimates.
+
+**Accepted spellings.** *Aliases* are found in the Bible text. *Forms* (modern names, labels) and *short* forms (abbreviations, which are only suggested) are not text-checked; they are listed here for review.
+
+---
+
+## Name a person, place, or thing named in the book of 1 Samuel.
+
+`1samuel-anything` · Books of the Bible · 383 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 11 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 32 |
+| 🪙 Lost Coin (60) | 76 |
+| 💎 Hidden Treasure (85) | 263 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Ichabod. Phinehas's wife named her son Ichabod, saying the glory had departed from Israel, because the ark was taken (1 Samuel 4:21–22).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Achish** · 1 Samuel 21:10 · Named in 1 Samuel 21:10. · *18 verses*
+- **David** · 1 Samuel 16:13 · Named in 1 Samuel 16:13. · *233 verses*
+- **Goliath** · 1 Samuel 17:4 · Named in 1 Samuel 17:4. · *4 verses*
+- **Hand** · 1 Samuel 2:13 · Mentioned in 1 Samuel 2:13. · *32 verses*
+- **House** · 1 Samuel 1:7 · Mentioned in 1 Samuel 1:7. · *18.666666666666668 verses*
+- **Jesse** · 1 Samuel 16:1 · Named in 1 Samuel 16:1. · *24 verses*
+- **King** · 1 Samuel 2:10 · Mentioned in 1 Samuel 2:10. · *27 verses*
+- **Philistine** · 1 Samuel 31:9 · Named in 1 Samuel 31:9. · *125 verses*<br><small>aliases: Philistines · forms: Philistia, Palestina, Palestine</small>
+- **Samuel** · 1 Samuel 1:20 · Named in 1 Samuel 1:20. · *110 verses*
+- **Saul** · 1 Samuel 9:2 · Named in 1 Samuel 9:2. · *242 verses*
+- **Servant** · 1 Samuel 1:11 · Mentioned in 1 Samuel 1:11. · *27.333333333333332 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Abiathar** · 1 Samuel 22:20 · Escaped from Nob and served David. · *6 verses*
+- **Abigail** · 1 Samuel 25:3 · Nabal's wise wife, who later married David; also David's sister. · *11 verses*
+- **Abner** · 1 Samuel 14:50 · Son of Ner. · *9 verses*
+- **Ahimelech** · 1 Samuel 21:1 · Gave David the holy bread at Nob. · *11 verses*
+- **Ark** · 1 Samuel 3:3 · Mentioned in 1 Samuel 3:3. · *11 verses*
+- **Benjamin** · 1 Samuel 4:12 · Named in 1 Samuel 4:12. · *11 verses*
+- **Beth-shemesh** · 1 Samuel 6:9 · Named in 1 Samuel 6:9. · *8 verses*
+- **Egypt** · 1 Samuel 2:27 · Named in 1 Samuel 2:27. · *10 verses*<br><small>forms: Lower, Proud, Rahab</small>
+- **Eli** · 1 Samuel 1:3 · Named in 1 Samuel 1:3. · *30 verses*
+- **Elkanah** · 1 Samuel 1:1 · Named in 1 Samuel 1:1. · *8 verses*
+- **Gath** · 1 Samuel 5:8 · Named in 1 Samuel 5:8. · *12 verses*
+- **Gibeah** · 1 Samuel 10:26 · Named in 1 Samuel 10:26. · *12 verses*
+- **Gilgal** · 1 Samuel 7:16 · Named in 1 Samuel 7:16. · *12 verses*
+- **Hannah** · 1 Samuel 1:2 · Prayed for a son and named him Samuel. · *11 verses*
+- **Head** · 1 Samuel 1:11 · Mentioned in 1 Samuel 1:11. · *8 verses*
+- **Heart** · 1 Samuel 1:8 · Mentioned in 1 Samuel 1:8. · *8.333333333333334 verses*
+- **Jabesh** · 1 Samuel 11:1 · Named in 1 Samuel 11:1. · *8 verses*
+- **Jonathan** · 1 Samuel 13:2 · Named in 1 Samuel 13:2. · *60 verses*
+- **Judah** · 1 Samuel 11:8 · Named in 1 Samuel 11:8. · *14 verses*<br><small>forms: Judas</small>
+- **Keilah** · 1 Samuel 23:1 · Named in 1 Samuel 23:1. · *12 verses*
+- **Michal** · 1 Samuel 14:49 · Named in 1 Samuel 14:49. · *9 verses*
+- **Michmash** · 1 Samuel 13:2 · Named in 1 Samuel 13:2. · *7 verses*<br><small>forms: Michmas</small>
+- **Mizpah** · 1 Samuel 7:5 · Named in 1 Samuel 7:5. · *7 verses*<br><small>forms: Galeed, Jegar Sahadutha</small>
+- **Mizpeh** · 1 Samuel 22:3 · Named in 1 Samuel 22:3. · *8 verses*
+- **Nabal** · 1 Samuel 25:3 · Named in 1 Samuel 25:3. · *16 verses*
+- **Phinehas** · 1 Samuel 1:3 · Named in 1 Samuel 1:3. · *7 verses*
+- **Priest** · 1 Samuel 1:3 · Mentioned in 1 Samuel 1:3. · *9 verses*
+- **Ramah** · 1 Samuel 1:19 · Named in 1 Samuel 1:19. · *14 verses*<br><small>forms: Rama, Ramath</small>
+- **Sheep** · 1 Samuel 8:17 · Mentioned in 1 Samuel 8:17. · *7 verses*
+- **Shiloh** · 1 Samuel 1:3 · Named in 1 Samuel 1:3. · *9 verses*
+- **Sling** · 1 Samuel 17:40 · Mentioned in 1 Samuel 17:40. · *1 verses*
+- **Sword** · 1 Samuel 13:19 · Mentioned in 1 Samuel 13:19. · *6.333333333333333 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Aaron** · 1 Samuel 12:6 · Named in 1 Samuel 12:6. · *2 verses*
+- **Abiel** · 1 Samuel 9:1 · Son of Zeror. · *2 verses*
+- **Abinadab** · 1 Samuel 7:1 · Named in 1 Samuel 7:1. · *4 verses*
+- **Abishai** · 1 Samuel 26:6 · Son of Zeruiah. · *4 verses*
+- **Agag** · 1 Samuel 15:8 · Named in 1 Samuel 15:8. · *5 verses*
+- **Ahijah** · 1 Samuel 14:3 · Wore the ephod in Saul's camp. · *2 verses*<br><small>aliases: Ahiah</small>
+- **Ahinoam** · 1 Samuel 14:50 · Saul's wife; also David's wife from Jezreel. · *4 verses*
+- **Ahitub** · 1 Samuel 14:3 · Son of Phinehas. · *5 verses*
+- **Amalek** · 1 Samuel 15:2 · Named in 1 Samuel 15:2. · *5 verses*
+- **Ammon** · 1 Samuel 11:1; 1 Samuel 12:12 · Named in 1 Samuel 11:1. · *2 verses*<br><small>forms: Ammonitess</small>
+- **Aphek** · 1 Samuel 4:1 · Named in 1 Samuel 4:1. · *2 verses*<br><small>forms: Antipatris</small>
+- **Armour** · 1 Samuel 14:1 · Mentioned in 1 Samuel 14:1. · *5.666666666666667 verses*<br><small>aliases: Armor</small>
+- **Armour-bearer** · 1 Samuel 14:7 · Mentioned in 1 Samuel 14:7. · *3 verses*<br><small>aliases: Armor bearer</small>
+- **Arrow** · 1 Samuel 20:20 · Mentioned in 1 Samuel 20:20. · *2 verses*
+- **Ashdod** · 1 Samuel 5:1 · Named in 1 Samuel 5:1. · *6 verses*<br><small>forms: Azotus</small>
+- **Back** · 1 Samuel 6:21 · Mentioned in 1 Samuel 6:21. · *4 verses*
+- **Beersheba** · 1 Samuel 3:20 · Named in 1 Samuel 3:20. · *2 verses*<br><small>forms: Shebah, Shibah</small>
+- **Besor** · 1 Samuel 30:9 · Named in 1 Samuel 30:9. · *3 verses*
+- **Beth-aven** · 1 Samuel 13:5 · Named in 1 Samuel 13:5. · *2 verses*
+- **Beth-shan** · 1 Samuel 31:10 · Named in 1 Samuel 31:10. · *2 verses*<br><small>forms: Beth Shean</small>
+- **Bethel** · 1 Samuel 7:16 · Named in 1 Samuel 7:16. · *4 verses*
+- **Bethlehem** · 1 Samuel 16:1; 1 Samuel 16:4; 1 Samuel 17:12 · Named in 1 Samuel 16:1. · *5 verses*<br><small>aliases: Beth-lehem-judah · forms: Beth-lehem Ephratah, Bethlehem Ephrathah</small>
+- **Blood** · 1 Samuel 14:32 · Mentioned in 1 Samuel 14:32. · *2.6666666666666665 verses*
+- **Bread** · 1 Samuel 2:5 · Mentioned in 1 Samuel 2:5. · *6 verses*
+- **Captain** · 1 Samuel 8:12 · Mentioned in 1 Samuel 8:12. · *4.333333333333333 verses*
+- **Carmel** · 1 Samuel 15:12; 1 Samuel 27:3 · Named in 1 Samuel 15:12. · *6 verses*<br><small>aliases: Carmelitess</small>
+- **Cattle** · 1 Samuel 14:32 · Mentioned in 1 Samuel 14:32. · *3 verses*
+- **Doeg** · 1 Samuel 21:7 · Named in 1 Samuel 21:7. · *4 verses*
+- **Donkey** · 1 Samuel 8:16 · Mentioned in 1 Samuel 8:16. · *5.333333333333333 verses*<br><small>aliases: Ass</small>
+- **Ear** · 1 Samuel 3:11 · Mentioned in 1 Samuel 3:11. · *2.6666666666666665 verses*
+- **Ebenezer** · 1 Samuel 4:1 · Named in 1 Samuel 4:1. · *3 verses*
+- **Ekron** · 1 Samuel 5:10 · Named in 1 Samuel 5:10. · *5 verses*
+- **Elah** · 1 Samuel 17:2 · Named in 1 Samuel 17:2. · *3 verses*
+- **Elder** · 1 Samuel 4:3 · Mentioned in 1 Samuel 4:3. · *2.3333333333333335 verses*
+- **Eliab** · 1 Samuel 16:6 · Named in 1 Samuel 16:6. · *3 verses*
+- **Ephod** · 1 Samuel 2:18 · Mentioned in 1 Samuel 2:18. · *2.6666666666666665 verses*
+- **Eye** · 1 Samuel 2:33 · Mentioned in 1 Samuel 2:33. · *5.333333333333333 verses*
+- **Face** · 1 Samuel 5:3 · Mentioned in 1 Samuel 5:3. · *4.666666666666667 verses*
+- **Field** · 1 Samuel 4:2 · Mentioned in 1 Samuel 4:2. · *5 verses*
+- **Geba** · 1 Samuel 13:3 · Named in 1 Samuel 13:3. · *3 verses*<br><small>forms: Gaba</small>
+- **Gilead** · 1 Samuel 13:7 · Named in 1 Samuel 13:7. · *4 verses*
+- **Hachilah** · 1 Samuel 23:19 · Named in 1 Samuel 23:19. · *3 verses*
+- **High place** · 1 Samuel 9:12 · Mentioned in 1 Samuel 9:12. · *2.6666666666666665 verses*
+- **Hill** · 1 Samuel 1:1 · Mentioned in 1 Samuel 1:1. · *4.333333333333333 verses*
+- **Hophni** · 1 Samuel 1:3 · Son of Eli. · *5 verses*
+- **Jabesh-gilead** · 1 Samuel 11:1 · Named in 1 Samuel 11:1. · *3 verses*
+- **Javelin** · 1 Samuel 17:6 · Mentioned in 1 Samuel 17:6. · *2.3333333333333335 verses*
+- **Jeshimon** · 1 Samuel 23:19 · Named in 1 Samuel 23:19. · *4 verses*
+- **Jezreel** · 1 Samuel 25:43; 1 Samuel 27:3 · Named in 1 Samuel 25:43. · *5 verses*<br><small>aliases: Jezreelitess</small>
+- **Judge** · 1 Samuel 2:10 · Mentioned in 1 Samuel 2:10. · *3.3333333333333335 verses*
+- **Kiriath-jearim** · 1 Samuel 6:21 · Named in 1 Samuel 6:21. · *3 verses*<br><small>aliases: Kiriath, Kirjath, Kirjath Jearim · forms: Kiriath Arim, Kiriath Baal, Kiriatharim, Kirjath Arim, Kirjath Baal</small>
+- **Kish** · 1 Samuel 9:1 · Son of Abiel. · *5 verses*
+- **Maon** · 1 Samuel 23:24 · Named in 1 Samuel 25:2. · *3 verses*
+- **Meat** · 1 Samuel 2:13 · Mentioned in 1 Samuel 2:13. · *3 verses*
+- **Merab** · 1 Samuel 14:49 · Saul's older daughter. · *3 verses*
+- **Messenger** · 1 Samuel 4:17 · Mentioned in 1 Samuel 4:17. · *5.333333333333333 verses*
+- **Moab** · 1 Samuel 12:9 · Named in 1 Samuel 12:9. · *4 verses*
+- **Nahash** · 1 Samuel 11:1 · Named in 1 Samuel 11:1. · *3 verses*
+- **Naioth** · 1 Samuel 19:18 · Named in 1 Samuel 19:18. · *5 verses*
+- **Ner** · 1 Samuel 14:50 · Named in 1 Samuel 14:50. · *4 verses*
+- **Nob** · 1 Samuel 21:1 · Named in 1 Samuel 21:1. · *4 verses*
+- **Oxen** · 1 Samuel 11:5 · Mentioned in 1 Samuel 11:5. · *3.3333333333333335 verses*
+- **Prince** · 1 Samuel 2:8 · Mentioned in 1 Samuel 2:8. · *3 verses*
+- **Prophet** · 1 Samuel 3:20 · Mentioned in 1 Samuel 3:20. · *3.6666666666666665 verses*
+- **Side** · 1 Samuel 4:18 · Mentioned in 1 Samuel 4:18. · *5 verses*
+- **Sore** · 1 Samuel 1:6 · Mentioned in 1 Samuel 1:6. · *3.6666666666666665 verses*<br><small>forms: Sores</small>
+- **Spear** · 1 Samuel 13:19 · Mentioned in 1 Samuel 13:19. · *6 verses*
+- **Stone** · 1 Samuel 6:14 · Mentioned in 1 Samuel 6:14. · *3.3333333333333335 verses*
+- **Tumors** · 1 Samuel 5:6 · Mentioned in 1 Samuel 5:6. · *2.3333333333333335 verses*<br><small>aliases: Emerods</small>
+- **Valley** · 1 Samuel 6:13 · Mentioned in 1 Samuel 6:13. · *3 verses*<br><small>forms: Vale</small>
+- **Wall** · 1 Samuel 18:11 · Mentioned in 1 Samuel 18:11. · *2.6666666666666665 verses*
+- **Water** · 1 Samuel 7:6 · Mentioned in 1 Samuel 7:6. · *2.6666666666666665 verses*
+- **Wilderness** · 1 Samuel 4:8 · Mentioned in 1 Samuel 4:8. · *4.666666666666667 verses*
+- **Wine** · 1 Samuel 1:14 · Mentioned in 1 Samuel 1:14. · *2.3333333333333335 verses*
+- **Ziklag** · 1 Samuel 27:6 · Named in 1 Samuel 27:6. · *4 verses*
+- **Ziph** · 1 Samuel 23:14 · Named in 1 Samuel 23:14. · *4 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Abel** · 1 Samuel 6:18 · Named in 1 Samuel 6:18. · *1 verses*
+- **Abijah** · 1 Samuel 8:2 · Named in 1 Samuel 8:2. · *1 verses*<br><small>forms: Abijam, Abia</small>
+- **Acre** · 1 Samuel 14:14 · Mentioned in 1 Samuel 14:14. · *0.3333333333333333 verses*
+- **Adriel** · 1 Samuel 18:19 · Named in 1 Samuel 18:19. · *1 verses*
+- **Adullam** · 1 Samuel 22:1 · Named in 1 Samuel 22:1. · *1 verses*
+- **Ahimaaz** · 1 Samuel 14:50 · Named in 1 Samuel 14:50. · *1 verses*
+- **Aijalon** · 1 Samuel 14:31 · Named in 1 Samuel 14:31. · *1 verses*<br><small>forms: Ajalon</small>
+- **Altar** · 1 Samuel 2:28 · Mentioned in 1 Samuel 2:28. · *1.3333333333333333 verses*
+- **Angel** · 1 Samuel 29:9 · Mentioned in 1 Samuel 29:9. · *0.3333333333333333 verses*<br><small>forms: Angels</small>
+- **Arabah** · 1 Samuel 23:24 · Named in 1 Samuel 23:24. · *1 verses*
+- **Archer** · 1 Samuel 31:3 · Mentioned in 1 Samuel 31:3. · *0.3333333333333333 verses*
+- **Arm** · 1 Samuel 2:31 · Mentioned in 1 Samuel 2:31. · *0.3333333333333333 verses*
+- **Aroer** · 1 Samuel 30:28 · Named in 1 Samuel 30:28. · *1 verses*
+- **Ashkelon** · 1 Samuel 6:17 · Named in 1 Samuel 6:17. · *1 verses*<br><small>aliases: Askelon</small>
+- **Ashtaroth** · 1 Samuel 7:3 · Mentioned in 1 Samuel 7:3. · *1.3333333333333333 verses*<br><small>forms: Ashtoreth</small>
+- **Athach** · 1 Samuel 30:30 · Named in 1 Samuel 30:30. · *1 verses*
+- **Axe** · 1 Samuel 13:20 · Mentioned in 1 Samuel 13:20. · *0.6666666666666666 verses*<br><small>aliases: Ax</small>
+- **Azekah** · 1 Samuel 17:1 · Named in 1 Samuel 17:1. · *1 verses*
+- **Baal** · 1 Samuel 7:4 · Mentioned in 1 Samuel 7:4. · *0.6666666666666666 verses*
+- **Bag** · 1 Samuel 17:40 · Mentioned in 1 Samuel 17:40. · *0.6666666666666666 verses*
+- **Baker** · 1 Samuel 8:13 · Mentioned in 1 Samuel 8:13. · *0.3333333333333333 verses*
+- **Beam** · 1 Samuel 17:7 · Mentioned in 1 Samuel 17:7. · *0.3333333333333333 verses*
+- **Bear** · 1 Samuel 17:34 · Mentioned in 1 Samuel 17:34. · *1 verses*
+- **Beard** · 1 Samuel 17:35 · Mentioned in 1 Samuel 17:35. · *0.6666666666666666 verses*
+- **Bed** · 1 Samuel 19:13 · Mentioned in 1 Samuel 19:13. · *1.3333333333333333 verses*
+- **Beth-car** · 1 Samuel 7:11 · Named in 1 Samuel 7:11. · *1 verses*<br><small>aliases: Beth Kar</small>
+- **Beth-horon** · 1 Samuel 13:18 · Named in 1 Samuel 13:18. · *1 verses*
+- **Bezek** · 1 Samuel 11:8 · Named in 1 Samuel 11:8. · *1 verses*
+- **Bit** · 1 Samuel 3:18 · Mentioned in 1 Samuel 3:18. · *0.3333333333333333 verses*
+- **Blind** · 1 Samuel 12:3 · Mentioned in 1 Samuel 12:3. · *0.3333333333333333 verses*<br><small>forms: Blindness</small>
+- **Bones** · 1 Samuel 31:13 · Mentioned in 1 Samuel 31:13. · *0.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Book** · 1 Samuel 10:25 · Mentioned in 1 Samuel 10:25. · *0.3333333333333333 verses*
+- **Bor-ashan** · 1 Samuel 30:30 · Named in 1 Samuel 30:30. · *1 verses*<br><small>aliases: Chor-ashan, Chorashan</small>
+- **Bottle** · 1 Samuel 1:24 · Mentioned in 1 Samuel 1:24. · *1.3333333333333333 verses*
+- **Bow** · 1 Samuel 18:4 · Mentioned in 1 Samuel 18:4. · *1 verses*
+- **Bozez** · 1 Samuel 14:4 · Named in 1 Samuel 14:4. · *1 verses*
+- **Brass** · 1 Samuel 17:5 · Mentioned in 1 Samuel 17:5. · *1 verses*
+- **Bronze** · 1 Samuel 17:5 · Mentioned in 1 Samuel 17:5. · *1 verses*
+- **Brook** · 1 Samuel 17:40 · Mentioned in 1 Samuel 17:40. · *1.3333333333333333 verses*<br><small>forms: Stream</small>
+- **Bull** · 1 Samuel 1:24 · Mentioned in 1 Samuel 1:24. · *0.6666666666666666 verses*<br><small>aliases: Bullock</small>
+- **Cakes** · 1 Samuel 25:18 · Mentioned in 1 Samuel 25:18. · *0.6666666666666666 verses*<br><small>aliases: Cake</small>
+- **Cakes of figs** · 1 Samuel 25:18; 1 Samuel 30:12 · Mentioned in 1 Samuel 25:18. · *0.6666666666666666 verses*<br><small>aliases: Cake of figs</small>
+- **Caleb** · 1 Samuel 25:3 · Named in 1 Samuel 25:3. · *2 verses*
+- **Calf** · 1 Samuel 28:24 · Mentioned in 1 Samuel 28:24. · *0.3333333333333333 verses*
+- **Camel** · 1 Samuel 15:3 · Mentioned in 1 Samuel 15:3. · *1 verses*
+- **Cart** · 1 Samuel 6:7 · Mentioned in 1 Samuel 6:7. · *1.6666666666666667 verses*
+- **Cauldron** · 1 Samuel 2:14 · Mentioned in 1 Samuel 2:14. · *0.3333333333333333 verses*
+- **Cave** · 1 Samuel 13:6 · Mentioned in 1 Samuel 13:6. · *2 verses*<br><small>forms: Cavern</small>
+- **Chariot** · 1 Samuel 8:11 · Mentioned in 1 Samuel 8:11. · *1 verses*
+- **Cheese** · 1 Samuel 17:18 · Mentioned in 1 Samuel 17:18. · *0.3333333333333333 verses*
+- **Cherubim** · 1 Samuel 4:4 · Mentioned in 1 Samuel 4:4. · *0.3333333333333333 verses*<br><small>aliases: Cherubims · forms: Cherub</small>
+- **Chief** · 1 Samuel 14:38 · Mentioned in 1 Samuel 14:38. · *0.6666666666666666 verses*
+- **Coat** · 1 Samuel 2:19 · Mentioned in 1 Samuel 2:19. · *1 verses*
+- **Coat of mail** · 1 Samuel 17:5 · Mentioned in 1 Samuel 17:5. · *0.6666666666666666 verses*
+- **Cook** · 1 Samuel 8:13 · Mentioned in 1 Samuel 8:13. · *1 verses*
+- **Crag** · 1 Samuel 14:4 · Mentioned in 1 Samuel 14:4. · *0.6666666666666666 verses*<br><small>forms: Cliff</small>
+- **Cubit** · 1 Samuel 17:4 · Mentioned in 1 Samuel 17:4. · *0.3333333333333333 verses*
+- **Dagon** · 1 Samuel 5:2 · Mentioned in 1 Samuel 5:2. · *1.6666666666666667 verses*
+- **Dan** · 1 Samuel 3:20 · Named in 1 Samuel 3:20. · *1 verses*<br><small>forms: Dan Jaan, Leshem, Vedan</small>
+- **Darkness** · 1 Samuel 2:9 · Mentioned in 1 Samuel 2:9. · *0.3333333333333333 verses*
+- **Daybreak** · 1 Samuel 9:26 · Mentioned in 1 Samuel 9:26. · *0.3333333333333333 verses*<br><small>forms: Dawn</small>
+- **Desert** · 1 Samuel 23:19 · Mentioned in 1 Samuel 23:19. · *1.3333333333333333 verses*
+- **Diviner** · 1 Samuel 6:2 · Mentioned in 1 Samuel 6:2. · *0.3333333333333333 verses*
+- **Dog** · 1 Samuel 17:43 · Mentioned in 1 Samuel 17:43. · *0.6666666666666666 verses*
+- **Door** · 1 Samuel 2:22 · Mentioned in 1 Samuel 2:22. · *1 verses*
+- **Doorpost** · 1 Samuel 1:9 · Mentioned in 1 Samuel 1:9. · *0.3333333333333333 verses*
+- **Dust** · 1 Samuel 2:8 · Mentioned in 1 Samuel 2:8. · *0.3333333333333333 verses*
+- **Edom** · 1 Samuel 14:47 · Named in 1 Samuel 14:47. · *1 verses*<br><small>forms: Esau</small>
+- **Elders** · 1 Samuel 4:3 · Mentioned in 1 Samuel 4:3. · *2 verses*
+- **Eleazar** · 1 Samuel 7:1 · Named in 1 Samuel 7:1. · *1 verses*
+- **Elihu** · 1 Samuel 1:1 · Son of Tohu. · *1 verses*
+- **En-dor** · 1 Samuel 28:7 · Named in 1 Samuel 28:7. · *1 verses*
+- **Engedi** · 1 Samuel 23:29 · Named in 1 Samuel 23:29. · *0 verses*
+- **Ephah** · 1 Samuel 1:24 · Mentioned in 1 Samuel 1:24. · *0.6666666666666666 verses*
+- **Ephes-dammim** · 1 Samuel 17:1 · Named in 1 Samuel 17:1. · *1 verses*<br><small>forms: Pas Dammim, Pasdammim</small>
+- **Eshtemoa** · 1 Samuel 30:28 · Named in 1 Samuel 30:28. · *1 verses*<br><small>forms: Eshtemoh</small>
+- **Ezel** · 1 Samuel 20:19 · Named in 1 Samuel 20:19. · *1 verses*
+- **Fat** · 1 Samuel 2:15 · Mentioned in 1 Samuel 2:15. · *2 verses*
+- **Feet** · 1 Samuel 2:9 · Mentioned in 1 Samuel 2:9. · *1.6666666666666667 verses*<br><small>forms: Foot</small>
+- **Fig** · 1 Samuel 25:18 · Mentioned in 1 Samuel 25:18. · *0.6666666666666666 verses*<br><small>forms: Fig tree</small>
+- **Figs** · 1 Samuel 25:18 · Mentioned in 1 Samuel 25:18. · *0.6666666666666666 verses*
+- **Fire** · 1 Samuel 2:28 · Mentioned in 1 Samuel 2:28. · *1.3333333333333333 verses*
+- **Flea** · 1 Samuel 24:14 · Mentioned in 1 Samuel 24:14. · *0.6666666666666666 verses*
+- **Flesh** · 1 Samuel 2:13 · Mentioned in 1 Samuel 2:13. · *1.3333333333333333 verses*
+- **Flour** · 1 Samuel 1:24 · Mentioned in 1 Samuel 1:24. · *0.6666666666666666 verses*<br><small>aliases: Meal</small>
+- **Fool** · 1 Samuel 26:21 · Mentioned in 1 Samuel 26:21. · *0.3333333333333333 verses*
+- **Forehead** · 1 Samuel 17:49 · Mentioned in 1 Samuel 17:49. · *0.3333333333333333 verses*
+- **Forest** · 1 Samuel 14:25 · Mentioned in 1 Samuel 14:25. · *1 verses*
+- **Fork** · 1 Samuel 2:13 · Mentioned in 1 Samuel 2:13. · *1 verses*
+- **Fortified city** · 1 Samuel 6:18 · Mentioned in 1 Samuel 6:18. · *0.3333333333333333 verses*<br><small>aliases: Fenced city</small>
+- **Fountain** · 1 Samuel 29:1 · Mentioned in 1 Samuel 29:1. · *0.3333333333333333 verses*
+- **Gad** · 1 Samuel 13:7 · Named in 1 Samuel 13:7. · *2 verses*
+- **Gallim** · 1 Samuel 25:44 · Named in 1 Samuel 25:44. · *1 verses*
+- **Garment** · 1 Samuel 18:4 · Mentioned in 1 Samuel 18:4. · *0.3333333333333333 verses*
+- **Gate** · 1 Samuel 4:18 · Mentioned in 1 Samuel 4:18. · *1.6666666666666667 verses*
+- **Gaza** · 1 Samuel 6:17 · Named in 1 Samuel 6:17. · *1 verses*<br><small>forms: Azzah</small>
+- **Girdle** · 1 Samuel 18:4 · Mentioned in 1 Samuel 18:4. · *0.3333333333333333 verses*
+- **Goad** · 1 Samuel 13:21 · Mentioned in 1 Samuel 13:21. · *0.3333333333333333 verses*
+- **Goat** · 1 Samuel 10:3 · Mentioned in 1 Samuel 10:3. · *2 verses*
+- **Goats' hair** · 1 Samuel 19:13 · Mentioned in 1 Samuel 19:13. · *0.6666666666666666 verses*
+- **Gold** · 1 Samuel 6:8 · Mentioned in 1 Samuel 6:8. · *1 verses*
+- **Grain** · 1 Samuel 17:17 · Mentioned in 1 Samuel 17:17. · *0.6666666666666666 verses*<br><small>aliases: Corn</small>
+- **Guard** · 1 Samuel 22:14 · Mentioned in 1 Samuel 22:14. · *0.6666666666666666 verses*
+- **Hair** · 1 Samuel 14:45 · Mentioned in 1 Samuel 14:45. · *1 verses*
+- **Harp** · 1 Samuel 10:5 · Mentioned in 1 Samuel 10:5. · *1 verses*
+- **Havilah** · 1 Samuel 15:7 · Named in 1 Samuel 15:7. · *1 verses*
+- **Hazor** · 1 Samuel 12:9 · Named in 1 Samuel 12:9. · *1 verses*
+- **Hebron** · 1 Samuel 30:31 · Named in 1 Samuel 30:31. · *1 verses*<br><small>forms: Arba, Arbah, Kiriath Arba, Kirjath Arba</small>
+- **Heifer** · 1 Samuel 16:2 · Mentioned in 1 Samuel 16:2. · *0.3333333333333333 verses*
+- **Helmet** · 1 Samuel 17:5 · Mentioned in 1 Samuel 17:5. · *0.6666666666666666 verses*
+- **Hereth** · 1 Samuel 22:5 · Named in 1 Samuel 22:5. · *1 verses*<br><small>aliases: Hareth</small>
+- **Highway** · 1 Samuel 6:12 · Mentioned in 1 Samuel 6:12. · *0.3333333333333333 verses*
+- **Honey** · 1 Samuel 14:25 · Mentioned in 1 Samuel 14:25. · *1.3333333333333333 verses*
+- **Honeycomb** · 1 Samuel 14:27 · Mentioned in 1 Samuel 14:27. · *0.3333333333333333 verses*
+- **Hormah** · 1 Samuel 30:30 · Named in 1 Samuel 30:30. · *1 verses*
+- **Horn** · 1 Samuel 2:1 · Mentioned in 1 Samuel 2:1. · *1.3333333333333333 verses*
+- **Housetop** · 1 Samuel 9:25 · Mentioned in 1 Samuel 9:25. · *0.6666666666666666 verses*<br><small>forms: Roof</small>
+- **Idol** · 1 Samuel 31:9 · Mentioned in 1 Samuel 31:9. · *0.3333333333333333 verses*
+- **Image** · 1 Samuel 6:5 · Mentioned in 1 Samuel 6:5. · *1.3333333333333333 verses*<br><small>forms: Statue</small>
+- **Iron** · 1 Samuel 17:7 · Mentioned in 1 Samuel 17:7. · *0.3333333333333333 verses*
+- **Jacob** · 1 Samuel 12:8 · Named in 1 Samuel 12:8. · *1 verses*
+- **Jar** · 1 Samuel 26:11 · Mentioned in 1 Samuel 26:11. · *1 verses*
+- **Jattir** · 1 Samuel 30:27 · Named in 1 Samuel 30:27. · *1 verses*
+- **Jephthah** · 1 Samuel 12:11 · Named in 1 Samuel 12:11. · *1 verses*
+- **Jeroham** · 1 Samuel 1:1 · Named in 1 Samuel 1:1. · *1 verses*
+- **Jerubbaal** · 1 Samuel 12:11 · Named in 1 Samuel 12:11. · *1 verses*
+- **Jerusalem** · 1 Samuel 17:54 · Named in 1 Samuel 17:54. · *1 verses*
+- **Joab** · 1 Samuel 26:6 · Named in 1 Samuel 26:6. · *1 verses*
+- **Joel** · 1 Samuel 8:2 · Named in 1 Samuel 8:2. · *1 verses*
+- **Jordan** · 1 Samuel 13:7 · Named in 1 Samuel 13:7. · *2 verses*
+- **Joshua** · 1 Samuel 6:14 · Named in 1 Samuel 6:14. · *2 verses*
+- **Keeper** · 1 Samuel 17:20 · Mentioned in 1 Samuel 17:20. · *1 verses*
+- **Kettle** · 1 Samuel 2:14 · Mentioned in 1 Samuel 2:14. · *0.3333333333333333 verses*
+- **Laish** · 1 Samuel 25:44 · Named in 1 Samuel 25:44. · *1 verses*
+- **Lamb** · 1 Samuel 7:9 · Mentioned in 1 Samuel 7:9. · *1 verses*
+- **Lamp** · 1 Samuel 3:3 · Mentioned in 1 Samuel 3:3. · *0.3333333333333333 verses*
+- **Leg** · 1 Samuel 17:6 · Mentioned in 1 Samuel 17:6. · *0.3333333333333333 verses*
+- **Levite** · 1 Samuel 6:15 · Mentioned in 1 Samuel 6:15. · *0.3333333333333333 verses*
+- **Linen** · 1 Samuel 2:18 · Mentioned in 1 Samuel 2:18. · *0.6666666666666666 verses*
+- **Lion** · 1 Samuel 17:34 · Mentioned in 1 Samuel 17:34. · *1 verses*
+- **Lips** · 1 Samuel 1:13 · Mentioned in 1 Samuel 1:13. · *0.3333333333333333 verses*<br><small>aliases: Lip</small>
+- **Lute** · 1 Samuel 10:5 · Mentioned in 1 Samuel 10:5. · *0.3333333333333333 verses*
+- **Malchi-shua** · 1 Samuel 14:49 · Named in 1 Samuel 14:49. · *2 verses*
+- **Mantle** · 1 Samuel 15:27 · Mentioned in 1 Samuel 15:27. · *0.6666666666666666 verses*
+- **Maoch** · 1 Samuel 27:2 · Named in 1 Samuel 27:2. · *1 verses*
+- **Mattock** · 1 Samuel 13:20 · Mentioned in 1 Samuel 13:20. · *0.6666666666666666 verses*
+- **Melchi** · 1 Samuel 14:49 · Named in 1 Samuel 14:49. · *1 verses*
+- **Migron** · 1 Samuel 14:2 · Named in 1 Samuel 14:2. · *1 verses*
+- **Milk** · 1 Samuel 6:7 · Mentioned in 1 Samuel 6:7. · *0.6666666666666666 verses*
+- **Moon** · 1 Samuel 20:5 · Mentioned in 1 Samuel 20:5. · *1.3333333333333333 verses*
+- **Moses** · 1 Samuel 12:6 · Named in 1 Samuel 12:6. · *2 verses*
+- **Mount Gilboa** · 1 Samuel 28:4; 1 Samuel 31:1 · Named in 1 Samuel 28:4. · *2 verses*
+- **Mountain** · 1 Samuel 17:3 · Mentioned in 1 Samuel 17:3. · *2 verses*
+- **Mouth** · 1 Samuel 1:12 · Mentioned in 1 Samuel 1:12. · *2 verses*
+- **Neck** · 1 Samuel 4:18 · Mentioned in 1 Samuel 4:18. · *0.3333333333333333 verses*
+- **New moon** · 1 Samuel 20:5 · Mentioned in 1 Samuel 20:5. · *1.3333333333333333 verses*
+- **Oak** · 1 Samuel 10:3 · Mentioned in 1 Samuel 10:3. · *0.3333333333333333 verses*
+- **Officer** · 1 Samuel 8:15 · Mentioned in 1 Samuel 8:15. · *0.3333333333333333 verses*
+- **Oil** · 1 Samuel 10:1 · Mentioned in 1 Samuel 10:1. · *1 verses*<br><small>forms: Olive oil</small>
+- **Olive** · 1 Samuel 8:14 · Mentioned in 1 Samuel 8:14. · *0.3333333333333333 verses*<br><small>forms: Olive tree</small>
+- **Ophrah** · 1 Samuel 13:17 · Named in 1 Samuel 13:17. · *1 verses*
+- **Ox** · 1 Samuel 12:3 · Mentioned in 1 Samuel 12:3. · *1 verses*
+- **Pan** · 1 Samuel 2:14 · Mentioned in 1 Samuel 2:14. · *0.3333333333333333 verses*
+- **Paran** · 1 Samuel 25:1 · Named in 1 Samuel 25:1. · *1 verses*
+- **Parched grain** · 1 Samuel 17:17 · Mentioned in 1 Samuel 17:17. · *0.6666666666666666 verses*<br><small>aliases: Parched corn</small>
+- **Partridge** · 1 Samuel 26:20 · Mentioned in 1 Samuel 26:20. · *0.3333333333333333 verses*
+- **Pen** · 1 Samuel 24:3 · Mentioned in 1 Samuel 24:3. · *0.3333333333333333 verses*
+- **Peninnah** · 1 Samuel 1:2 · Elkanah's other wife, who provoked Hannah. · *2 verses*
+- **Perfumer** · 1 Samuel 8:13 · Mentioned in 1 Samuel 8:13. · *0.3333333333333333 verses*<br><small>forms: Apothecary</small>
+- **Phalti** · 1 Samuel 25:44 · Son of Laish. · *1 verses*
+- **Pharaoh** · 1 Samuel 2:27 · Named in 1 Samuel 2:27. · *2 verses*
+- **Piece of silver** · 1 Samuel 2:36 · Mentioned in 1 Samuel 2:36. · *0.3333333333333333 verses*<br><small>forms: Pieces of silver</small>
+- **Pillar** · 1 Samuel 2:8 · Mentioned in 1 Samuel 2:8. · *0.3333333333333333 verses*
+- **Pillow** · 1 Samuel 19:13 · Mentioned in 1 Samuel 19:13. · *0.6666666666666666 verses*
+- **Pipe** · 1 Samuel 10:5 · Mentioned in 1 Samuel 10:5. · *0.3333333333333333 verses*
+- **Plague** · 1 Samuel 4:8 · Mentioned in 1 Samuel 4:8. · *0.6666666666666666 verses*
+- **Plowshare** · 1 Samuel 13:20 · Mentioned in 1 Samuel 13:20. · *0.6666666666666666 verses*
+- **Pomegranate** · 1 Samuel 14:2 · Mentioned in 1 Samuel 14:2. · *0.3333333333333333 verses*
+- **Pot** · 1 Samuel 2:14 · Mentioned in 1 Samuel 2:14. · *0.3333333333333333 verses*
+- **Psaltery** · 1 Samuel 10:5 · Mentioned in 1 Samuel 10:5. · *0.3333333333333333 verses*
+- **Racal** · 1 Samuel 30:29 · Named in 1 Samuel 30:29. · *1 verses*<br><small>aliases: Rachal</small>
+- **Rachel** · 1 Samuel 10:2 · Named in 1 Samuel 10:2. · *1 verses*<br><small>forms: Rahel</small>
+- **Raiment** · 1 Samuel 28:8 · Mentioned in 1 Samuel 28:8. · *0.3333333333333333 verses*
+- **Rain** · 1 Samuel 12:17 · Mentioned in 1 Samuel 12:17. · *0.6666666666666666 verses*
+- **Raisins** · 1 Samuel 25:18 · Mentioned in 1 Samuel 25:18. · *0.6666666666666666 verses*
+- **Ram** · 1 Samuel 15:22 · Mentioned in 1 Samuel 15:22. · *0.3333333333333333 verses*
+- **Ramathaim-zophim** · 1 Samuel 1:1 · Named in 1 Samuel 1:1. · *1 verses*<br><small>aliases: Ramathaim</small>
+- **Ramoth** · 1 Samuel 30:27 · Named in 1 Samuel 30:27. · *1 verses*
+- **Razor** · 1 Samuel 1:11 · Mentioned in 1 Samuel 1:11. · *0.3333333333333333 verses*
+- **Robe** · 1 Samuel 2:19 · Mentioned in 1 Samuel 2:19. · *2 verses*
+- **Rock** · 1 Samuel 24:2 · Mentioned in 1 Samuel 24:2. · *1.6666666666666667 verses*
+- **Rod** · 1 Samuel 14:27 · Mentioned in 1 Samuel 14:27. · *0.6666666666666666 verses*
+- **Sack** · 1 Samuel 9:7 · Mentioned in 1 Samuel 9:7. · *0.3333333333333333 verses*
+- **Sand** · 1 Samuel 13:5 · Mentioned in 1 Samuel 13:5. · *0.3333333333333333 verses*
+- **Sash** · 1 Samuel 18:4 · Mentioned in 1 Samuel 18:4. · *0.3333333333333333 verses*
+- **Sea** · 1 Samuel 13:5 · Mentioned in 1 Samuel 13:5. · *0.3333333333333333 verses*
+- **Seah** · 1 Samuel 25:18 · Mentioned in 1 Samuel 25:18. · *0.3333333333333333 verses*
+- **Secu** · 1 Samuel 19:22 · Named in 1 Samuel 19:22. · *1 verses*<br><small>aliases: Sechu</small>
+- **Seer** · 1 Samuel 9:9 · Mentioned in 1 Samuel 9:9. · *1.3333333333333333 verses*
+- **Sela Hammahlekoth** · 1 Samuel 23:28 · Named in 1 Samuel 23:28. · *1 verses*
+- **Seneh** · 1 Samuel 14:4 · Named in 1 Samuel 14:4. · *1 verses*
+- **Shaalim** · 1 Samuel 9:4 · Named in 1 Samuel 9:4. · *1 verses*<br><small>aliases: Shalim</small>
+- **Shaaraim** · 1 Samuel 17:52 · Named in 1 Samuel 17:52. · *1 verses*<br><small>forms: Sharaim</small>
+- **Shalishah** · 1 Samuel 9:4 · Named in 1 Samuel 9:4. · *1 verses*<br><small>aliases: Shalisha</small>
+- **Shammah** · 1 Samuel 16:9 · Named in 1 Samuel 16:9. · *2 verses*
+- **Shearer** · 1 Samuel 25:7 · Mentioned in 1 Samuel 25:7. · *0.6666666666666666 verses*<br><small>forms: Sheepshearer</small>
+- **Shekel** · 1 Samuel 9:8 · Mentioned in 1 Samuel 9:8. · *1 verses*
+- **Shen** · 1 Samuel 7:12 · Named in 1 Samuel 7:12. · *1 verses*
+- **Shepherd** · 1 Samuel 17:40 · Mentioned in 1 Samuel 17:40. · *0.6666666666666666 verses*
+- **Shield** · 1 Samuel 17:7 · Mentioned in 1 Samuel 17:7. · *1 verses*
+- **Shore** · 1 Samuel 13:5 · Mentioned in 1 Samuel 13:5. · *0.3333333333333333 verses*<br><small>aliases: Seashore</small>
+- **Shoulder** · 1 Samuel 9:2 · Mentioned in 1 Samuel 9:2. · *1.3333333333333333 verses*
+- **Show bread** · 1 Samuel 21:6 · Mentioned in 1 Samuel 21:6. · *0.3333333333333333 verses*<br><small>aliases: Shewbread</small>
+- **Shual** · 1 Samuel 13:17 · Named in 1 Samuel 13:17. · *1 verses*
+- **Shunem** · 1 Samuel 28:4 · Named in 1 Samuel 28:4. · *1 verses*
+- **Shur** · 1 Samuel 15:7 · Named in 1 Samuel 15:7. · *2 verses*
+- **Sickle** · 1 Samuel 13:20 · Mentioned in 1 Samuel 13:20. · *0.3333333333333333 verses*
+- **Silver** · 1 Samuel 2:36 · Mentioned in 1 Samuel 2:36. · *0.6666666666666666 verses*
+- **Siphmoth** · 1 Samuel 30:28 · Named in 1 Samuel 30:28. · *1 verses*
+- **Sisera** · 1 Samuel 12:9 · Named in 1 Samuel 12:9. · *1 verses*
+- **Skirt** · 1 Samuel 15:27 · Mentioned in 1 Samuel 15:27. · *1.3333333333333333 verses*
+- **Sky** · 1 Samuel 2:10 · Mentioned in 1 Samuel 2:10. · *1 verses*<br><small>forms: Firmament, Expanse</small>
+- **Smith** · 1 Samuel 13:19 · Mentioned in 1 Samuel 13:19. · *0.3333333333333333 verses*<br><small>aliases: Blacksmith</small>
+- **Socoh** · 1 Samuel 17:1 · Named in 1 Samuel 17:1. · *1 verses*<br><small>aliases: Shochoh · forms: Shocho, Shoco, Soco, Sochoh</small>
+- **Span** · 1 Samuel 17:4 · Mentioned in 1 Samuel 17:4. · *0.3333333333333333 verses*
+- **Staff** · 1 Samuel 17:40 · Mentioned in 1 Samuel 17:40. · *0.6666666666666666 verses*
+- **Strong drink** · 1 Samuel 1:15 · Mentioned in 1 Samuel 1:15. · *0.3333333333333333 verses*
+- **Stronghold** · 1 Samuel 22:4 · Mentioned in 1 Samuel 22:4. · *2 verses*<br><small>forms: Fortress, Fort</small>
+- **Sun** · 1 Samuel 11:9 · Mentioned in 1 Samuel 11:9. · *0.3333333333333333 verses*
+- **Tabernacle** · 1 Samuel 2:22 · Mentioned in 1 Samuel 2:22. · *0.3333333333333333 verses*
+- **Table** · 1 Samuel 20:29 · Mentioned in 1 Samuel 20:29. · *0.6666666666666666 verses*
+- **Tabor** · 1 Samuel 10:3 · Named in 1 Samuel 10:3. · *1 verses*
+- **Tabret** · 1 Samuel 10:5 · Mentioned in 1 Samuel 10:5. · *0.6666666666666666 verses*
+- **Tamarisk** · 1 Samuel 22:6 · Mentioned in 1 Samuel 22:6. · *0.6666666666666666 verses*
+- **Tambourine** · 1 Samuel 10:5 · Mentioned in 1 Samuel 10:5. · *0.6666666666666666 verses*
+- **Teeth** · 1 Samuel 2:13 · Mentioned in 1 Samuel 2:13. · *0.3333333333333333 verses*<br><small>forms: Tooth</small>
+- **Telaim** · 1 Samuel 15:4 · Named in 1 Samuel 15:4. · *1 verses*<br><small>forms: Telem</small>
+- **Temple** · 1 Samuel 1:9 · Mentioned in 1 Samuel 1:9. · *0.6666666666666666 verses*
+- **Tent** · 1 Samuel 2:22 · Mentioned in 1 Samuel 2:22. · *1.6666666666666667 verses*
+- **Teraphim** · 1 Samuel 15:23 · Mentioned in 1 Samuel 15:23. · *1 verses*
+- **Thigh** · 1 Samuel 9:24 · Mentioned in 1 Samuel 9:24. · *0.3333333333333333 verses*
+- **Threshing floor** · 1 Samuel 23:1 · Mentioned in 1 Samuel 23:1. · *0.3333333333333333 verses*
+- **Threshold** · 1 Samuel 5:4 · Mentioned in 1 Samuel 5:4. · *0.6666666666666666 verses*
+- **Throne** · 1 Samuel 2:8 · Mentioned in 1 Samuel 2:8. · *0.3333333333333333 verses*
+- **Thunder** · 1 Samuel 2:10 · Mentioned in 1 Samuel 2:10. · *1.3333333333333333 verses*
+- **Tomb** · 1 Samuel 10:2 · Mentioned in 1 Samuel 10:2. · *0.6666666666666666 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Tree** · 1 Samuel 14:2 · Mentioned in 1 Samuel 14:2. · *1 verses*<br><small>forms: Trees</small>
+- **Trench** · 1 Samuel 17:20 · Mentioned in 1 Samuel 17:20. · *1 verses*<br><small>forms: Ditch</small>
+- **Trumpet** · 1 Samuel 13:3 · Mentioned in 1 Samuel 13:3. · *0.3333333333333333 verses*
+- **Unleavened bread** · 1 Samuel 28:24 · Mentioned in 1 Samuel 28:24. · *0.3333333333333333 verses*
+- **Urim** · 1 Samuel 28:6 · Mentioned in 1 Samuel 28:6. · *0.3333333333333333 verses*
+- **Valley of Zeboim** · 1 Samuel 13:18 · Named in 1 Samuel 13:18. · *0 verses*
+- **Wagon** · 1 Samuel 17:20 · Mentioned in 1 Samuel 17:20. · *1 verses*
+- **Weaver** · 1 Samuel 17:7 · Mentioned in 1 Samuel 17:7. · *0.3333333333333333 verses*
+- **Wheat** · 1 Samuel 6:13 · Mentioned in 1 Samuel 6:13. · *0.6666666666666666 verses*
+- **Wild goat** · 1 Samuel 24:2 · Mentioned in 1 Samuel 24:2. · *0.3333333333333333 verses*
+- **Window** · 1 Samuel 19:12 · Mentioned in 1 Samuel 19:12. · *0.3333333333333333 verses*
+- **Womb** · 1 Samuel 1:5 · Mentioned in 1 Samuel 1:5. · *0.6666666666666666 verses*
+- **Yoke** · 1 Samuel 6:7 · Mentioned in 1 Samuel 6:7. · *1 verses*
+- **Zelzah** · 1 Samuel 10:2 · Named in 1 Samuel 10:2. · *1 verses*
+- **Zeruiah** · 1 Samuel 26:6 · Named in 1 Samuel 26:6. · *1 verses*
+- **Zobah** · 1 Samuel 14:47 · Named in 1 Samuel 14:47. · *1 verses*<br><small>forms: Aram Zobah, Hadadezer, Zoba</small>
+- **Zuph** · 1 Samuel 1:1 · Named in 1 Samuel 1:1. · *2 verses*
+
+### Near misses
+
+- **Bathsheba, Solomon, Absalom**: They come in 2 Samuel, after Saul's death.
+- **Ruth, Boaz**: That is the book of Ruth, just before 1 Samuel.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Acts.
+
+`acts-anything` · Books of the Bible · 403 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 11 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 33 |
+| 🪙 Lost Coin (60) | 79 |
+| 💎 Hidden Treasure (85) | 279 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Rhoda. A servant girl named Rhoda was so glad to hear Peter at the gate that she ran in without opening it (Acts 12:13–14).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Canaan** · Acts 4:27; Acts 7:11 · Named in Acts 7:11. · *32 verses*<br><small>aliases: Chanaan, Gentile · forms: Glorious Land</small>
+- **Hand** · Acts 2:23 · Mentioned in Acts 2:23. · *19 verses*
+- **Jerusalem** · Acts 1:4; Acts 2:5 · Named in Acts 1:4. · *60 verses*
+- **Jesus** · Acts 1:1; Acts 2:38 · Named in Acts 1:1. · *72 verses*<br><small>aliases: Jesus Christ · forms: Christ child</small>
+- **John** · Acts 1:5 · Named in Acts 1:5. · *25 verses*<br><small>forms: John son of Zebedee, John the Baptist</small>
+- **Judea** · Acts 1:8; Acts 10:39 · Named in Acts 1:8. · *21 verses*<br><small>aliases: Juda · forms: Jewry, Judaea</small>
+- **Moses** · Acts 3:22 · Named in Acts 3:22. · *19 verses*
+- **Paul** · Acts 7:58; Acts 9:11; Acts 13:9 · Named in Acts 7:58. · *129 verses*<br><small>aliases: Saul of Tarsus</small>
+- **Peter** · Acts 1:13 · Named in Acts 1:13. · *57 verses*<br><small>forms: Simon Peter, Cephas</small>
+- **Philip** · Acts 1:13 · Named in Acts 1:13. · *17 verses*<br><small>forms: Philip the tetrarch, Herod Philip</small>
+- **Saul** · Acts 7:58 · Named in Acts 7:58. · *23 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Abraham** · Acts 3:13 · Named in Acts 3:13. · *8 verses*<br><small>forms: Abram</small>
+- **Agrippa** · Acts 25:13 · Heard Paul's defence at Caesarea. · *12 verses*<br><small>aliases: King Agrippa · forms: Herod Agrippa II, Agrippa II</small>
+- **Ananias** · Acts 5:1 · Named in Acts 5:1. · *10 verses*
+- **Antioch** · Acts 6:5; Acts 13:14 · Named in Acts 6:5. · *16 verses*<br><small>aliases: Antioch of Pisidia</small>
+- **Apostle** · Acts 1:2 · Mentioned in Acts 1:2. · *10 verses*
+- **Asia** · Acts 2:9; Acts 19:31 · Named in Acts 2:9. · *14 verses*<br><small>aliases: Asiarchs</small>
+- **Augustus** · Acts 17:7; Acts 25:21 · Named in Acts 25:21. · *11 verses*<br><small>aliases: Caesar · forms: Caesar Augustus</small>
+- **Barnabas** · Acts 4:36 · Named in Acts 4:36. · *23 verses*
+- **Caesarea** · Acts 8:40 · Named in Acts 8:40. · *15 verses*
+- **Chief** · Acts 4:23 · Mentioned in Acts 4:23. · *13 verses*
+- **Cornelius** · Acts 10:1 · Centurion of the Italian Regiment. · *10 verses*
+- **Cyprus** · Acts 4:36 · Named in Acts 4:36. · *8 verses*<br><small>forms: Chittim</small>
+- **Damascus** · Acts 9:2 · Named in Acts 9:2. · *14 verses*<br><small>forms: Syria-damascus</small>
+- **David** · Acts 1:16 · Named in Acts 1:16. · *10 verses*
+- **Egypt** · Acts 2:10 · Named in Acts 2:10. · *12 verses*<br><small>forms: Lower, Proud, Rahab</small>
+- **Ephesus** · Acts 18:19 · Named in Acts 18:19. · *9 verses*
+- **Felix** · Acts 23:24 · Governor who kept Paul in custody two years. · *8 verses*
+- **Festus** · Acts 24:27 · Governor before whom Paul appealed to Caesar. · *13 verses*<br><small>aliases: Porcius Festus</small>
+- **Herod** · Acts 4:27 · Named in Acts 4:27. · *9 verses*<br><small>forms: Herod the Great, Herod Antipas</small>
+- **House** · Acts 2:2 · Mentioned in Acts 2:2. · *12 verses*
+- **Joppa** · Acts 9:36 · Named in Acts 9:36. · *10 verses*<br><small>forms: Japho</small>
+- **Judah** · Acts 1:13; Acts 9:11 · Named in Acts 1:13. · *8 verses*<br><small>aliases: Juda</small>
+- **Judas** · Acts 1:13 · Named in Acts 1:13. · *8 verses*<br><small>forms: Judas Iscariot</small>
+- **Macedonia** · Acts 16:9 · Named in Acts 16:9. · *9 verses*
+- **Nazareth** · Acts 2:22; Acts 24:5 · Named in Acts 2:22. · *8 verses*<br><small>aliases: Nazarene</small>
+- **Priest** · Acts 4:1 · Mentioned in Acts 4:1. · *8.333333333333334 verses*
+- **Prophet** · Acts 2:16 · Mentioned in Acts 2:16. · *10.333333333333334 verses*
+- **Samaria** · Acts 1:8; Acts 8:25 · Named in Acts 1:8. · *8 verses*<br><small>aliases: Samaritans, Samaritan</small>
+- **Ship** · Acts 20:13 · Mentioned in Acts 20:13. · *7.333333333333333 verses*
+- **Silas** · Acts 15:22 · Named in Acts 15:22. · *13 verses*<br><small>forms: Silvanus</small>
+- **Simon** · Acts 1:13 · Named in Acts 1:13. · *12 verses*
+- **Stephen** · Acts 6:5 · Named in Acts 6:5. · *7 verses*
+- **Temple** · Acts 2:46 · Mentioned in Acts 2:46. · *9.666666666666666 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Achaia** · Acts 18:12 · Named in Acts 18:12. · *3 verses*
+- **Alexandria** · Acts 6:9; Acts 18:24 · Named in Acts 6:9. · *3 verses*
+- **Angel** · Acts 5:19; Acts 7:53 · Mentioned in Acts 5:19. · *7 verses*<br><small>aliases: Angels</small>
+- **Aquila** · Acts 18:2 · A tentmaker from Pontus who worked alongside Paul. · *3 verses*
+- **Aristarchus** · Acts 19:29 · A Macedonian who sailed with Paul toward Rome. · *3 verses*
+- **Athens** · Acts 17:15 · Named in Acts 17:15. · *4 verses*
+- **Back** · Acts 1:11 · Mentioned in Acts 1:11. · *2.3333333333333335 verses*
+- **Berea** · Acts 17:10 · Named in Acts 17:10. · *3 verses*<br><small>aliases: Beroea</small>
+- **Bernice** · Acts 25:13 · Came with Agrippa to hear Paul. · *3 verses*<br><small>forms: Berenice</small>
+- **Blood** · Acts 1:19 · Mentioned in Acts 1:19. · *4 verses*
+- **Bread** · Acts 2:42 · Mentioned in Acts 2:42. · *2.3333333333333335 verses*
+- **Captain** · Acts 4:1 · Mentioned in Acts 4:1. · *7.333333333333333 verses*
+- **Centurion** · Acts 10:1 · Mentioned in Acts 10:1. · *4.666666666666667 verses*
+- **Chief captain** · Acts 21:31 · Mentioned in Acts 21:31. · *6 verses*<br><small>forms: Tribune</small>
+- **Cilicia** · Acts 6:9 · Named in Acts 6:9. · *7 verses*
+- **Claudius** · Acts 11:28 · Emperor who ordered Jews to leave Rome. · *3 verses*<br><small>forms: Claudius Caesar</small>
+- **Claudius Lysias** · Acts 11:28; Acts 23:26 · Named in Acts 11:28. · *3 verses*<br><small>aliases: Lysias</small>
+- **Crete** · Acts 2:11; Acts 27:7 · Named in Acts 27:7. · *5 verses*<br><small>aliases: Cretans</small>
+- **Cyrene** · Acts 2:10 · Named in Acts 2:10. · *3 verses*
+- **Derbe** · Acts 14:6 · Named in Acts 14:6. · *4 verses*
+- **Door** · Acts 3:2 · Mentioned in Acts 3:2. · *4 verses*
+- **Dorcas** · Acts 9:36 · A disciple at Joppa, raised to life through Peter. · *3 verses*<br><small>aliases: Tabitha</small>
+- **Elder** · Acts 4:5 · Mentioned in Acts 4:5. · *6 verses*
+- **Elders** · Acts 4:5 · Mentioned in Acts 4:5. · *6 verses*
+- **Emperor** · Acts 17:7; Acts 25:21 · Mentioned in Acts 17:7. · *3.3333333333333335 verses*<br><small>aliases: Caesar</small>
+- **Eye** · Acts 3:4 · Mentioned in Acts 3:4. · *4 verses*
+- **Face** · Acts 2:25 · Mentioned in Acts 2:25. · *2.6666666666666665 verses*
+- **Foot** · Acts 2:35; Acts 7:5 · Mentioned in Acts 2:35. · *7 verses*<br><small>aliases: Feet</small>
+- **Galilee** · Acts 1:11; Acts 2:7 · Named in Acts 1:11. · *6 verses*<br><small>aliases: Galilean, Galileans</small>
+- **Gallio** · Acts 18:12 · Proconsul of Achaia. · *3 verses*
+- **Gate** · Acts 3:2 · Mentioned in Acts 3:2. · *2.6666666666666665 verses*
+- **Governor** · Acts 7:10 · Mentioned in Acts 7:10. · *2.6666666666666665 verses*
+- **Heart** · Acts 1:24 · Mentioned in Acts 1:24. · *7.666666666666667 verses*
+- **High priest** · Acts 4:6 · Mentioned in Acts 4:6. · *4.333333333333333 verses*
+- **Iconium** · Acts 13:51 · Named in Acts 13:51. · *5 verses*
+- **Isaac** · Acts 3:13 · Named in Acts 3:13. · *3 verses*
+- **Isaiah** · Acts 8:28 · Named in Acts 8:28. · *3 verses*<br><small>aliases: Esaias</small>
+- **Island** · Acts 13:6 · Mentioned in Acts 13:6. · *2.3333333333333335 verses*<br><small>aliases: Isle</small>
+- **Italy** · Acts 18:2 · Named in Acts 18:2. · *3 verses*
+- **Jacob** · Acts 3:13 · Named in Acts 3:13. · *7 verses*
+- **James** · Acts 1:13 · Son of Alphaeus. · *5 verses*<br><small>forms: James son of Zebedee</small>
+- **Jason** · Acts 17:5 · Paul's host in Thessalonica. · *4 verses*
+- **Joseph** · Acts 1:23 · Named in Acts 1:23. · *5 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Judge** · Acts 4:19 · Mentioned in Acts 4:19. · *4 verses*
+- **King** · Acts 4:26 · Mentioned in Acts 4:26. · *6.666666666666667 verses*
+- **Lydda** · Acts 9:32 · Named in Acts 9:32. · *3 verses*<br><small>forms: Lod</small>
+- **Lystra** · Acts 14:6 · Named in Acts 14:6. · *5 verses*
+- **Mark** · Acts 12:12 · Named in Acts 12:12. · *4 verses*<br><small>forms: John Mark</small>
+- **Meat** · Acts 2:17; Acts 2:46 · Mentioned in Acts 2:17. · *2.3333333333333335 verses*
+- **Mount** · Acts 1:12 · Named in Acts 1:12. · *3 verses*<br><small>aliases: Olivet · forms: Mount of Olives, Mount of Corruption</small>
+- **Mouth** · Acts 1:16 · Mentioned in Acts 1:16. · *4.333333333333333 verses*
+- **Officer** · Acts 5:22 · Mentioned in Acts 5:22. · *6 verses*
+- **Pamphylia** · Acts 2:10 · Named in Acts 2:10. · *5 verses*
+- **Perga** · Acts 13:13 · Named in Acts 13:13. · *3 verses*
+- **Pharaoh** · Acts 7:10 · Named in Acts 7:10. · *3 verses*
+- **Phoenicia** · Acts 11:19; Acts 21:2 · Named in Acts 11:19. · *4 verses*<br><small>aliases: Phenice, Phenicia</small>
+- **Phoenix** · Acts 27:12 · Named in Acts 27:12. · *3 verses*<br><small>aliases: Phenice</small>
+- **Phrygia** · Acts 2:10 · Named in Acts 2:10. · *3 verses*
+- **Pilate** · Acts 3:13; Acts 4:27 · Named in Acts 3:13. · *3 verses*<br><small>aliases: Pontius Pilate</small>
+- **Priscilla** · Acts 18:2 · A tentmaker who, with her husband, hosted and worked with Paul. · *3 verses*<br><small>forms: Prisca</small>
+- **Prison** · Acts 5:18 · Mentioned in Acts 5:18. · *7 verses*<br><small>forms: Dungeon</small>
+- **Rome** · Acts 2:10 · Named in Acts 2:10. · *6 verses*
+- **Sabbath** · Acts 1:12 · Mentioned in Acts 1:12. · *3 verses*
+- **Sail** · Acts 13:13; Acts 27:40 · Mentioned in Acts 27:40. · *4.666666666666667 verses*
+- **Sea** · Acts 4:24 · Mentioned in Acts 4:24. · *6 verses*
+- **Servant** · Acts 2:18 · Mentioned in Acts 2:18. · *3.6666666666666665 verses*
+- **Silver** · Acts 3:6 · Mentioned in Acts 3:6. · *2.3333333333333335 verses*
+- **Sky** · Acts 1:10 · Mentioned in Acts 1:10. · *4.666666666666667 verses*<br><small>forms: Firmament, Expanse</small>
+- **Soldier** · Acts 10:7 · Mentioned in Acts 10:7. · *4.666666666666667 verses*
+- **Solomon** · Acts 3:11 · Named in Acts 3:11. · *3 verses*
+- **Synagogue** · Acts 6:9 · Mentioned in Acts 6:9. · *7.666666666666667 verses*
+- **Syria** · Acts 15:23 · Named in Acts 15:23. · *5 verses*<br><small>forms: Syria-damascus</small>
+- **Tarsus** · Acts 9:11 · Named in Acts 9:11. · *5 verses*
+- **Thessalonica** · Acts 17:1 · Named in Acts 17:1. · *4 verses*
+- **Timothy** · Acts 16:1 · Joined Paul at Lystra and is named in many of his letters. · *6 verses*<br><small>aliases: Timotheus</small>
+- **Tongue** · Acts 1:19 · Mentioned in Acts 1:19. · *3.6666666666666665 verses*
+- **Troas** · Acts 16:8 · Named in Acts 16:8. · *4 verses*
+- **Tyre** · Acts 12:20 · Named in Acts 12:20. · *3 verses*<br><small>forms: Tyrus</small>
+- **Wind** · Acts 2:2 · Mentioned in Acts 2:2. · *2.6666666666666665 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Aaron** · Acts 7:40 · Named in Acts 7:40. · *1 verses*
+- **Adramyttium** · Acts 27:2 · Named in Acts 27:2. · *1 verses*
+- **Adriatic Sea** · Acts 27:27 · Named in Acts 27:27. · *1 verses*<br><small>aliases: Adria</small>
+- **Agabus** · Acts 11:28 · Named in Acts 11:28. · *2 verses*
+- **Agrippa I** · Acts 25:13; Acts 26:7 · Named in Acts 25:13. · *2 verses*<br><small>forms: Herod Agrippa I, Herod Agrippa</small>
+- **Akeldama** · Acts 1:19 · Named in Acts 1:19. · *1 verses*<br><small>aliases: Aceldama, Field of Blood, The field of blood</small>
+- **Alexander** · Acts 4:6 · Named in Acts 4:6. · *2 verses*
+- **Alphaeus** · Acts 1:13 · Named in Acts 1:13. · *1 verses*
+- **Altar** · Acts 17:23 · Mentioned in Acts 17:23. · *0.3333333333333333 verses*
+- **Amphipolis** · Acts 17:1 · Named in Acts 17:1. · *1 verses*
+- **Anchor** · Acts 27:13 · Mentioned in Acts 27:13. · *1.6666666666666667 verses*
+- **Andrew** · Acts 1:13 · Named in Acts 1:13. · *1 verses*
+- **Ankle** · Acts 3:7 · Mentioned in Acts 3:7. · *0.3333333333333333 verses*
+- **Anna** · Acts 4:6 · Named in Acts 4:6. · *1 verses*
+- **Annas** · Acts 4:6 · Named in Acts 4:6. · *1 verses*
+- **Antipatris** · Acts 23:31 · Named in Acts 23:31. · *1 verses*<br><small>forms: Aphek</small>
+- **Apollonia** · Acts 17:1 · Named in Acts 17:1. · *1 verses*
+- **Apollos** · Acts 18:24 · An eloquent teacher from Alexandria. · *2 verses*
+- **Appii Forum** · Acts 28:15 · Named in Acts 28:15. · *0 verses*<br><small>aliases: Market of Appius</small>
+- **Apron** · Acts 19:12 · Mentioned in Acts 19:12. · *0.3333333333333333 verses*
+- **Areopagus** · Acts 17:19; Acts 17:22 · Named in Acts 17:19. · *2 verses*<br><small>aliases: Mars’ hill</small>
+- **Arm** · Acts 13:17 · Mentioned in Acts 13:17. · *0.3333333333333333 verses*
+- **Artemis** · Acts 19:24 · Mentioned in Acts 19:24. · *1.6666666666666667 verses*<br><small>aliases: Diana</small>
+- **Assos** · Acts 20:13 · Named in Acts 20:13. · *2 verses*
+- **Attalia** · Acts 14:25 · Named in Acts 14:25. · *1 verses*
+- **Azotus** · Acts 8:40 · Named in Acts 8:40. · *1 verses*<br><small>forms: Ashdod</small>
+- **Babylon** · Acts 7:43 · Named in Acts 7:43. · *1 verses*
+- **Bar-jesus** · Acts 13:6 · Named in Acts 13:6. · *1 verses*
+- **Barsabas** · Acts 1:23 · Named in Acts 1:23. · *2 verses*
+- **Bartholomew** · Acts 1:13 · Named in Acts 1:13. · *1 verses*
+- **Basket** · Acts 9:25 · Mentioned in Acts 9:25. · *0.3333333333333333 verses*
+- **Beautiful Gate** · Acts 3:2; Acts 3:10 · Named in Acts 3:2. · *2 verses*<br><small>aliases: Beautiful</small>
+- **Bed** · Acts 5:15 · Mentioned in Acts 5:15. · *1 verses*
+- **Belt** · Acts 21:11 · Mentioned in Acts 21:11. · *0.3333333333333333 verses*
+- **Benjamin** · Acts 13:21 · Named in Acts 13:21. · *1 verses*
+- **Billows** · Acts 2:19 · Mentioned in Acts 2:19. · *0.3333333333333333 verses*
+- **Bithynia** · Acts 16:7 · Named in Acts 16:7. · *1 verses*
+- **Blastus** · Acts 12:20 · The king's personal aide. · *1 verses*
+- **Blind** · Acts 13:11 · Mentioned in Acts 13:11. · *0.3333333333333333 verses*<br><small>forms: Blindness</small>
+- **Boat** · Acts 27:16 · Mentioned in Acts 27:16. · *1 verses*
+- **Bones** · Acts 3:7 · Mentioned in Acts 3:7. · *0.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Book** · Acts 1:1 · Mentioned in Acts 1:1. · *1.3333333333333333 verses*
+- **Bowels** · Acts 1:18 · Mentioned in Acts 1:18. · *0.3333333333333333 verses*
+- **Builder** · Acts 4:11 · Mentioned in Acts 4:11. · *0.3333333333333333 verses*
+- **Bush** · Acts 7:30 · Mentioned in Acts 7:30. · *0.6666666666666666 verses*<br><small>forms: Burning bush</small>
+- **Caiaphas** · Acts 4:6 · Named in Acts 4:6. · *1 verses*
+- **Calf** · Acts 7:41 · Mentioned in Acts 7:41. · *0.3333333333333333 verses*
+- **Candace** · Acts 8:27 · Queen of the Ethiopians; the name was probably a royal title. · *1 verses*
+- **Cappadocia** · Acts 2:9 · Named in Acts 2:9. · *1 verses*
+- **Castle** · Acts 21:34 · Mentioned in Acts 21:34. · *2 verses*<br><small>forms: Citadel</small>
+- **Cenchreae** · Acts 18:18 · Named in Acts 18:18. · *1 verses*<br><small>aliases: Cenchrea</small>
+- **Chain** · Acts 12:6 · Mentioned in Acts 12:6. · *1.3333333333333333 verses*
+- **Chains** · Acts 12:6 · Mentioned in Acts 12:6. · *1 verses*<br><small>forms: Necklace</small>
+- **Chaldaeans** · Acts 7:4 · Named in Acts 7:4. · *1 verses*<br><small>forms: Chaldea, Chaldean, Chaldeans, Chaldees</small>
+- **Chamberlain** · Acts 12:20 · Mentioned in Acts 12:20. · *0.3333333333333333 verses*
+- **Chariot** · Acts 8:28 · Mentioned in Acts 8:28. · *1 verses*
+- **Chios** · Acts 20:15 · Named in Acts 20:15. · *1 verses*
+- **Clauda** · Acts 27:16 · Named in Acts 27:16. · *1 verses*
+- **Cloak** · Acts 12:8 · Mentioned in Acts 12:8. · *1 verses*
+- **Cloud** · Acts 1:9 · Mentioned in Acts 1:9. · *0.3333333333333333 verses*<br><small>forms: Clouds</small>
+- **Cnidus** · Acts 27:7 · Named in Acts 27:7. · *1 verses*
+- **Coat** · Acts 9:39 · Mentioned in Acts 9:39. · *0.3333333333333333 verses*
+- **Corinth** · Acts 18:1 · Named in Acts 18:1. · *2 verses*
+- **Cos** · Acts 21:1 · Named in Acts 21:1. · *1 verses*<br><small>aliases: Coos</small>
+- **Crispus** · Acts 18:8 · Ruler of the synagogue at Corinth, who believed. · *1 verses*
+- **Damaris** · Acts 17:34 · Believed at Athens. · *1 verses*
+- **Darkness** · Acts 2:20 · Mentioned in Acts 2:20. · *1 verses*
+- **Daybreak** · Acts 5:21 · Mentioned in Acts 5:21. · *0.3333333333333333 verses*<br><small>forms: Dawn</small>
+- **Demetrius** · Acts 19:24 · Named in Acts 19:24. · *2 verses*
+- **Desert** · Acts 8:26 · Mentioned in Acts 8:26. · *0.3333333333333333 verses*
+- **Devil** · Acts 10:38 · Mentioned in Acts 10:38. · *0.6666666666666666 verses*
+- **Dionysius** · Acts 17:34 · A member of the Areopagus, who believed. · *1 verses*
+- **Doctor** · Acts 5:34 · Mentioned in Acts 5:34. · *0.3333333333333333 verses*
+- **Drusilla** · Acts 24:24 · Wife of the governor Felix. · *1 verses*
+- **Dumb** · Acts 8:32 · Mentioned in Acts 8:32. · *0.3333333333333333 verses*<br><small>forms: Mute</small>
+- **Dust** · Acts 13:51 · Mentioned in Acts 13:51. · *0.6666666666666666 verses*
+- **Dysentery** · Acts 28:8 · Mentioned in Acts 28:8. · *0.3333333333333333 verses*<br><small>aliases: Bloody flux, Flux</small>
+- **Ear** · Acts 7:51 · Mentioned in Acts 7:51. · *1.6666666666666667 verses*
+- **Earthquake** · Acts 16:26 · Mentioned in Acts 16:26. · *0.3333333333333333 verses*
+- **Erastus** · Acts 19:22 · Sent ahead into Macedonia with Timothy. · *1 verses*
+- **Ethiopia** · Acts 8:27 · Named in Acts 8:27. · *1 verses*
+- **Eunuch** · Acts 8:27 · Mentioned in Acts 8:27. · *1.6666666666666667 verses*
+- **Eutychus** · Acts 20:9 · Named in Acts 20:9. · *1 verses*
+- **Evangelist** · Acts 21:8 · Mentioned in Acts 21:8. · *0.3333333333333333 verses*
+- **Fair Havens** · Acts 27:8 · Named in Acts 27:8. · *1 verses*
+- **Fathom** · Acts 27:28 · Mentioned in Acts 27:28. · *0.3333333333333333 verses*
+- **Fever** · Acts 28:8 · Mentioned in Acts 28:8. · *0.3333333333333333 verses*
+- **Field** · Acts 1:18 · Mentioned in Acts 1:18. · *1 verses*
+- **Fire** · Acts 2:3 · Mentioned in Acts 2:3. · *2 verses*
+- **Flesh** · Acts 2:17 · Mentioned in Acts 2:17. · *1.3333333333333333 verses*
+- **Footstool** · Acts 2:35 · Mentioned in Acts 2:35. · *0.6666666666666666 verses*
+- **Foundation** · Acts 16:26 · Mentioned in Acts 16:26. · *0.3333333333333333 verses*
+- **Gaius** · Acts 19:29 · Named in Acts 19:29. · *2 verses*
+- **Galatia** · Acts 16:6 · Named in Acts 16:6. · *2 verses*
+- **Gall** · Acts 8:23 · Mentioned in Acts 8:23. · *0.3333333333333333 verses*
+- **Gamaliel** · Acts 5:34 · Named in Acts 5:34. · *2 verses*
+- **Garment** · Acts 7:58 · Mentioned in Acts 7:58. · *1 verses*
+- **Gaza** · Acts 8:26 · Named in Acts 8:26. · *1 verses*<br><small>forms: Azzah</small>
+- **Girdle** · Acts 21:11 · Mentioned in Acts 21:11. · *0.3333333333333333 verses*
+- **Goad** · Acts 26:14 · Mentioned in Acts 26:14. · *0.3333333333333333 verses*
+- **Gold** · Acts 3:6 · Mentioned in Acts 3:6. · *1 verses*
+- **Grain** · Acts 7:12 · Mentioned in Acts 7:12. · *0.3333333333333333 verses*<br><small>aliases: Corn</small>
+- **Greece** · Acts 20:2 · Named in Acts 20:2. · *1 verses*<br><small>forms: Grecia</small>
+- **Guard** · Acts 5:23 · Mentioned in Acts 5:23. · *2 verses*
+- **Hair** · Acts 27:34 · Mentioned in Acts 27:34. · *0.3333333333333333 verses*
+- **Hamor** · Acts 7:16 · Named in Acts 7:16. · *1 verses*
+- **Handkerchief** · Acts 19:12 · Mentioned in Acts 19:12. · *0.3333333333333333 verses*
+- **Haran** · Acts 7:2 · Named in Acts 7:2. · *2 verses*<br><small>aliases: Charran</small>
+- **Head** · Acts 4:11 · Mentioned in Acts 4:11. · *1.6666666666666667 verses*
+- **Hill** · Acts 17:22 · Mentioned in Acts 17:22. · *0.3333333333333333 verses*
+- **Housetop** · Acts 10:9 · Mentioned in Acts 10:9. · *0.3333333333333333 verses*<br><small>forms: Roof</small>
+- **Idol** · Acts 7:41 · Mentioned in Acts 7:41. · *1.6666666666666667 verses*
+- **Image** · Acts 19:35 · Mentioned in Acts 19:35. · *0.3333333333333333 verses*<br><small>forms: Statue</small>
+- **Iron** · Acts 12:10 · Mentioned in Acts 12:10. · *0.3333333333333333 verses*
+- **Jailer** · Acts 16:23 · Mentioned in Acts 16:23. · *1 verses*
+- **Jesse** · Acts 13:22 · Named in Acts 13:22. · *1 verses*
+- **Joel** · Acts 2:16 · Named in Acts 2:16. · *1 verses*
+- **Joshua** · Acts 7:45 · Named in Acts 7:45. · *1 verses*
+- **Judgment hall** · Acts 23:35 · Mentioned in Acts 23:35. · *0.3333333333333333 verses*<br><small>forms: Praetorium</small>
+- **Julius** · Acts 27:1 · The centurion who escorted Paul toward Rome. · *2 verses*
+- **Justus** · Acts 1:23 · Named in Acts 1:23. · *2 verses*<br><small>forms: Jesus called Justus, Jesus Justus</small>
+- **Keeper** · Acts 5:23 · Mentioned in Acts 5:23. · *2 verses*
+- **Kish** · Acts 13:21 · Named in Acts 13:21. · *1 verses*
+- **Lamb** · Acts 8:32 · Mentioned in Acts 8:32. · *0.3333333333333333 verses*
+- **Lame** · Acts 3:2 · Mentioned in Acts 3:2. · *1 verses*<br><small>forms: Lameness</small>
+- **Lasea** · Acts 27:8 · Named in Acts 27:8. · *1 verses*
+- **Levite** · Acts 4:36 · Mentioned in Acts 4:36. · *0.3333333333333333 verses*
+- **Libya** · Acts 2:10 · Named in Acts 2:10. · *1 verses*<br><small>forms: Lubim</small>
+- **Lodge** · Acts 21:16 · Mentioned in Acts 21:16. · *0.3333333333333333 verses*<br><small>forms: Hut, Cottage</small>
+- **Loins** · Acts 2:30 · Mentioned in Acts 2:30. · *0.3333333333333333 verses*
+- **Lucius** · Acts 13:1 · Named in Acts 13:1. · *1 verses*
+- **Lycaonia** · Acts 14:6 · Named in Acts 14:6. · *2 verses*
+- **Lycia** · Acts 27:5 · Named in Acts 27:5. · *1 verses*
+- **Lydia** · Acts 16:14 · A seller of purple who opened her home in Philippi. · *2 verses*
+- **Magistrate** · Acts 16:20 · Mentioned in Acts 16:20. · *1.6666666666666667 verses*
+- **Malta** · Acts 28:1 · Named in Acts 28:1. · *1 verses*<br><small>aliases: Melita</small>
+- **Manaen** · Acts 13:1 · Named in Acts 13:1. · *1 verses*
+- **Marketplace** · Acts 16:19; Acts 17:17 · Mentioned in Acts 16:19. · *1.3333333333333333 verses*<br><small>aliases: Market</small>
+- **Mary** · Acts 1:14 · Named in Acts 1:14. · *2 verses*<br><small>aliases: Mary the mother of Jesus · forms: Mary Magdalene, Virgin Mary, Mary the mother of Jesus, Mary mother of Jesus, Mary the mother of James, Mary the wife of Clopas, Mary the mother of Mark, Magdalene, Mary of Clopas</small>
+- **Matthew** · Acts 1:13 · Son of Alphaeus. · *1 verses*<br><small>forms: Levi</small>
+- **Matthias** · Acts 1:23 · Chosen by lot to take Judas's place. · *2 verses*
+- **Mede** · Acts 2:9 · Named in Acts 2:9. · *1 verses*
+- **Mercury** · Acts 14:12 · Mentioned in Acts 14:12. · *0.3333333333333333 verses*<br><small>forms: Hermes</small>
+- **Mesopotamia** · Acts 2:9 · Named in Acts 2:9. · *2 verses*
+- **Midian** · Acts 7:29 · Named in Acts 7:29. · *1 verses*
+- **Miletus** · Acts 20:15 · Named in Acts 20:15. · *2 verses*<br><small>forms: Miletum</small>
+- **Mist** · Acts 2:19; Acts 13:11 · Mentioned in Acts 2:19. · *0.6666666666666666 verses*<br><small>aliases: Vapour · forms: Vapor</small>
+- **Mitylene** · Acts 20:14 · Named in Acts 20:14. · *1 verses*
+- **Mnason** · Acts 21:16 · An early disciple from Cyprus who lodged Paul. · *1 verses*
+- **Moloch** · Acts 7:43 · Mentioned in Acts 7:43. · *0.3333333333333333 verses*<br><small>forms: Molech</small>
+- **Moon** · Acts 2:20 · Mentioned in Acts 2:20. · *0.3333333333333333 verses*
+- **Mount Sinai** · Acts 7:30 · Named in Acts 7:30. · *2 verses*<br><small>aliases: Sina</small>
+- **Mountain** · Acts 1:12 · Mentioned in Acts 1:12. · *0.3333333333333333 verses*
+- **Myra** · Acts 27:5 · Named in Acts 27:5. · *1 verses*
+- **Mysia** · Acts 16:7 · Named in Acts 16:7. · *2 verses*
+- **Neapolis** · Acts 16:11 · Named in Acts 16:11. · *1 verses*
+- **Neck** · Acts 15:10 · Mentioned in Acts 15:10. · *0.6666666666666666 verses*
+- **New wine** · Acts 2:13 · Mentioned in Acts 2:13. · *0.3333333333333333 verses*
+- **Overseer** · Acts 20:28 · Mentioned in Acts 20:28. · *0.3333333333333333 verses*<br><small>forms: Bishop</small>
+- **Oxen** · Acts 14:13 · Mentioned in Acts 14:13. · *0.3333333333333333 verses*
+- **Palace** · Acts 23:35 · Mentioned in Acts 23:35. · *0.3333333333333333 verses*
+- **Palsy** · Acts 8:7 · Mentioned in Acts 8:7. · *0.6666666666666666 verses*<br><small>aliases: Paralyzed · forms: Paralysis, Paralytic</small>
+- **Paphos** · Acts 13:6 · Named in Acts 13:6. · *2 verses*
+- **Passover** · Acts 12:4 · Mentioned in Acts 12:4. · *0.3333333333333333 verses*
+- **Patara** · Acts 21:1 · Named in Acts 21:1. · *1 verses*
+- **Pentecost** · Acts 2:1 · Mentioned in Acts 2:1. · *0.6666666666666666 verses*
+- **Philippi** · Acts 16:12 · Named in Acts 16:12. · *2 verses*
+- **Pieces of silver** · Acts 19:19 · Mentioned in Acts 19:19. · *0.3333333333333333 verses*<br><small>forms: Piece of silver</small>
+- **Pisidia** · Acts 13:14 · Named in Acts 13:14. · *2 verses*
+- **Plague** · Acts 24:5 · Mentioned in Acts 24:5. · *0.3333333333333333 verses*
+- **Pontus** · Acts 2:9 · Named in Acts 2:9. · *2 verses*
+- **Porch** · Acts 3:11 · Mentioned in Acts 3:11. · *0.6666666666666666 verses*<br><small>forms: Portico</small>
+- **Prince** · Acts 3:15 · Mentioned in Acts 3:15. · *0.6666666666666666 verses*
+- **Proconsul** · Acts 13:7 · Mentioned in Acts 13:7. · *1.6666666666666667 verses*<br><small>aliases: Deputy</small>
+- **Ptolemais** · Acts 21:7 · Named in Acts 21:7. · *1 verses*
+- **Publius** · Acts 28:7 · The chief man of Malta, who hosted Paul three days. · *2 verses*
+- **Purple** · Acts 16:14 · Mentioned in Acts 16:14. · *0.3333333333333333 verses*
+- **Puteoli** · Acts 28:13 · Named in Acts 28:13. · *1 verses*
+- **Queen** · Acts 8:27 · Mentioned in Acts 8:27. · *0.3333333333333333 verses*
+- **Raiment** · Acts 18:6 · Mentioned in Acts 18:6. · *0.6666666666666666 verses*
+- **Rain** · Acts 14:17 · Mentioned in Acts 14:17. · *0.6666666666666666 verses*
+- **Rash** · Acts 19:36 · Mentioned in Acts 19:36. · *0.3333333333333333 verses*
+- **Red Sea** · Acts 7:36 · Named in Acts 7:36. · *1 verses*
+- **Rhegium** · Acts 28:13 · Named in Acts 28:13. · *1 verses*
+- **Rhodes** · Acts 21:1 · Named in Acts 21:1. · *1 verses*
+- **River** · Acts 16:13 · Mentioned in Acts 16:13. · *0.3333333333333333 verses*
+- **Rock** · Acts 27:29 · Mentioned in Acts 27:29. · *0.3333333333333333 verses*
+- **Rod** · Acts 16:22 · Mentioned in Acts 16:22. · *0.3333333333333333 verses*
+- **Rope** · Acts 27:32 · Mentioned in Acts 27:32. · *0.6666666666666666 verses*
+- **Sabbath day's journey** · Acts 1:12 · Mentioned in Acts 1:12. · *0.3333333333333333 verses*
+- **Sailor** · Acts 27:27 · Mentioned in Acts 27:27. · *0.6666666666666666 verses*<br><small>forms: Mariner</small>
+- **Salamis** · Acts 13:5 · Named in Acts 13:5. · *1 verses*
+- **Salmone** · Acts 27:7 · Named in Acts 27:7. · *1 verses*
+- **Samos** · Acts 20:15 · Named in Acts 20:15. · *1 verses*
+- **Samothrace** · Acts 16:11 · Named in Acts 16:11. · *1 verses*<br><small>aliases: Samothracia</small>
+- **Samuel** · Acts 3:24 · Named in Acts 3:24. · *2 verses*
+- **Sand** · Acts 27:17 · Mentioned in Acts 27:17. · *0.3333333333333333 verses*
+- **Sandals** · Acts 7:33 · Mentioned in Acts 7:33. · *1 verses*<br><small>aliases: Sandal</small>
+- **Sapphira** · Acts 5:1 · Wife of Ananias. · *1 verses*
+- **Satan** · Acts 5:3 · Mentioned in Acts 5:3. · *0.6666666666666666 verses*
+- **Scales** · Acts 9:18 · Mentioned in Acts 9:18. · *0.3333333333333333 verses*<br><small>forms: Balances</small>
+- **Sceva** · Acts 19:14 · A Jewish chief priest whose seven sons are mentioned at Ephesus. · *1 verses*
+- **School** · Acts 19:9 · Mentioned in Acts 19:9. · *0.3333333333333333 verses*
+- **Scourge** · Acts 22:25 · Mentioned in Acts 22:25. · *0.3333333333333333 verses*<br><small>forms: Whip</small>
+- **Scribe** · Acts 4:5 · Mentioned in Acts 4:5. · *1 verses*
+- **Secundus** · Acts 20:4 · A Thessalonian who travelled with Paul. · *1 verses*
+- **Seleucia** · Acts 13:4 · Named in Acts 13:4. · *1 verses*
+- **Sergius Paulus** · Acts 13:7 · Proconsul of Cyprus, who believed. · *1 verses*
+- **Sharon** · Acts 9:35 · Named in Acts 9:35. · *1 verses*<br><small>aliases: Saron</small>
+- **Shearer** · Acts 8:32 · Mentioned in Acts 8:32. · *0.3333333333333333 verses*<br><small>forms: Sheepshearer</small>
+- **Shechem** · Acts 7:16 · Named in Acts 7:16. · *1 verses*<br><small>aliases: Sychem · forms: Sichem</small>
+- **Sheep** · Acts 8:32 · Mentioned in Acts 8:32. · *0.3333333333333333 verses*
+- **Shepherd** · Acts 20:28 · Mentioned in Acts 20:28. · *0.3333333333333333 verses*
+- **Shoes** · Acts 7:33 · Mentioned in Acts 7:33. · *0.6666666666666666 verses*<br><small>aliases: Shoe</small>
+- **Shore** · Acts 21:5 · Mentioned in Acts 21:5. · *1.6666666666666667 verses*<br><small>forms: Seashore</small>
+- **Shrine** · Acts 19:24 · Mentioned in Acts 19:24. · *0.3333333333333333 verses*
+- **Side** · Acts 10:6 · Mentioned in Acts 10:6. · *1.3333333333333333 verses*
+- **Sidon** · Acts 12:20 · Named in Acts 12:20. · *2 verses*<br><small>forms: Great Sidon, Zidon</small>
+- **Silversmith** · Acts 19:24 · Mentioned in Acts 19:24. · *0.3333333333333333 verses*
+- **Simeon** · Acts 13:1 · Named in Acts 13:1. · *2 verses*
+- **Simon the Zealot** · Acts 1:13 · Named in Acts 1:13. · *1 verses*<br><small>aliases: Simon Zelotes · forms: Simon the Cananaean</small>
+- **Smoke** · Acts 2:19 · Mentioned in Acts 2:19. · *0.3333333333333333 verses*
+- **Solomon’s Porch** · Acts 5:12 · Named in Acts 5:12. · *0 verses*
+- **Sopater** · Acts 20:4 · Of Beroea; travelled with Paul. · *1 verses*
+- **Sore** · Acts 20:37 · Mentioned in Acts 20:37. · *0.3333333333333333 verses*<br><small>forms: Sores</small>
+- **Sosthenes** · Acts 18:17 · Ruler of the synagogue at Corinth. · *1 verses*
+- **Spear** · Acts 23:23 · Mentioned in Acts 23:23. · *0.3333333333333333 verses*
+- **Stairs** · Acts 21:35 · Mentioned in Acts 21:35. · *0.6666666666666666 verses*<br><small>forms: Staircase, Steps</small>
+- **Star** · Acts 7:43; Acts 27:20 · Mentioned in Acts 7:43. · *0.6666666666666666 verses*<br><small>aliases: Stars</small>
+- **Stone** · Acts 4:11 · Mentioned in Acts 4:11. · *1.3333333333333333 verses*
+- **Storm** · Acts 27:18 · Mentioned in Acts 27:18. · *0.6666666666666666 verses*<br><small>aliases: Tempest</small>
+- **Straight** · Acts 9:11 · Named in Acts 9:11. · *1 verses*
+- **Stranger** · Acts 2:10 · Mentioned in Acts 2:10. · *1.3333333333333333 verses*<br><small>forms: Foreigner, Sojourner</small>
+- **Street** · Acts 5:15 · Mentioned in Acts 5:15. · *1 verses*
+- **Sun** · Acts 2:20 · Mentioned in Acts 2:20. · *1.3333333333333333 verses*
+- **Sword** · Acts 12:2 · Mentioned in Acts 12:2. · *0.6666666666666666 verses*
+- **Syracuse** · Acts 28:12 · Named in Acts 28:12. · *1 verses*
+- **Syrtis** · Acts 27:17 · Named in Acts 27:17. · *1 verses*
+- **Tabernacle** · Acts 7:43 · Mentioned in Acts 7:43. · *1.3333333333333333 verses*
+- **Table** · Acts 6:2 · Mentioned in Acts 6:2. · *0.3333333333333333 verses*
+- **Tanner** · Acts 9:43 · Mentioned in Acts 9:43. · *1 verses*
+- **Teacher** · Acts 5:34 · Mentioned in Acts 5:34. · *0.6666666666666666 verses*
+- **Teeth** · Acts 7:54 · Mentioned in Acts 7:54. · *0.3333333333333333 verses*<br><small>forms: Tooth</small>
+- **Temples** · Acts 7:48 · Mentioned in Acts 7:48. · *1 verses*
+- **Tent** · Acts 18:3 · Mentioned in Acts 18:3. · *0.3333333333333333 verses*
+- **Tentmaker** · Acts 18:3 · Mentioned in Acts 18:3. · *0.3333333333333333 verses*
+- **Tertullus** · Acts 24:1 · Named in Acts 24:1. · *2 verses*
+- **Tetrarch** · Acts 13:1 · Mentioned in Acts 13:1. · *0.3333333333333333 verses*
+- **Theater** · Acts 19:29 · Mentioned in Acts 19:29. · *0.6666666666666666 verses*<br><small>aliases: Theatre</small>
+- **Theophilus** · Acts 1:1 · Named in Acts 1:1. · *1 verses*
+- **Thomas** · Acts 1:13 · Named in Acts 1:13. · *1 verses*<br><small>forms: Didymus</small>
+- **Three Taverns** · Acts 28:15 · Named in Acts 28:15. · *1 verses*
+- **Throne** · Acts 2:30 · Mentioned in Acts 2:30. · *1 verses*
+- **Thyatira** · Acts 16:14 · Named in Acts 16:14. · *1 verses*
+- **Tomb** · Acts 2:29 · Mentioned in Acts 2:29. · *1 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Tree** · Acts 5:30 · Mentioned in Acts 5:30. · *1 verses*<br><small>forms: Trees</small>
+- **Trogyllium** · Acts 20:15 · Named in Acts 20:15. · *1 verses*
+- **Trophimus** · Acts 20:4 · An Ephesian whom Paul left sick at Miletus. · *2 verses*
+- **Tunic** · Acts 9:39 · Mentioned in Acts 9:39. · *0.3333333333333333 verses*
+- **Tychicus** · Acts 20:4 · Named in Acts 20:4. · *1 verses*
+- **Tyrannus** · Acts 19:9 · Named in Acts 19:9. · *1 verses*
+- **Unclean spirit** · Acts 5:16 · Mentioned in Acts 5:16. · *0.6666666666666666 verses*
+- **Unleavened bread** · Acts 12:3 · Mentioned in Acts 12:3. · *0.6666666666666666 verses*
+- **Upper room** · Acts 1:13 · Mentioned in Acts 1:13. · *1.3333333333333333 verses*
+- **Viper** · Acts 28:3 · Mentioned in Acts 28:3. · *0.3333333333333333 verses*
+- **Virgin** · Acts 21:9 · Mentioned in Acts 21:9. · *0.3333333333333333 verses*
+- **Wall** · Acts 9:25 · Mentioned in Acts 9:25. · *0.6666666666666666 verses*
+- **Water** · Acts 1:5 · Mentioned in Acts 1:5. · *2 verses*
+- **Wheat** · Acts 27:38 · Mentioned in Acts 27:38. · *0.3333333333333333 verses*
+- **Widow** · Acts 6:1 · Mentioned in Acts 6:1. · *1 verses*
+- **Wilderness** · Acts 7:30 · Mentioned in Acts 7:30. · *2.3333333333333335 verses*
+- **Window** · Acts 20:9 · Mentioned in Acts 20:9. · *0.3333333333333333 verses*
+- **Wine** · Acts 2:13 · Mentioned in Acts 2:13. · *0.3333333333333333 verses*
+- **Womb** · Acts 3:2 · Mentioned in Acts 3:2. · *0.6666666666666666 verses*
+- **Worm** · Acts 12:23 · Mentioned in Acts 12:23. · *0.3333333333333333 verses*
+- **Worms** · Acts 12:23 · Mentioned in Acts 12:23. · *0.3333333333333333 verses*
+- **Wound** · Acts 5:6 · Mentioned in Acts 5:6. · *0.3333333333333333 verses*<br><small>forms: Wounds</small>
+- **Yoke** · Acts 15:10 · Mentioned in Acts 15:10. · *0.3333333333333333 verses*
+- **Zeus** · Acts 14:12; Acts 19:35 · Mentioned in Acts 14:12. · *1 verses*<br><small>aliases: Jupiter</small>
+
+### Near misses
+
+- **Philemon, Onesimus**: Paul's letter to Philemon names them; Acts does not.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Daniel.
+
+`daniel-anything` · Books of the Bible · 196 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 10 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 17 |
+| 🪙 Lost Coin (60) | 37 |
+| 💎 Hidden Treasure (85) | 131 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Melzar. The KJV names Melzar as the steward who let Daniel and his friends eat vegetables and drink water for ten days (Daniel 1:11–16).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Abednego** · Daniel 1:7 · Named in Daniel 1:7. · *14 verses*
+- **Chaldean** · Daniel 1:4 · Named in Daniel 1:4. · *11 verses*<br><small>aliases: Chaldeans · forms: Chaldea, Chaldaeans, Chaldees</small>
+- **Daniel** · Daniel 1:6 · Named in Daniel 1:6. · *65 verses*
+- **Jerusalem** · Daniel 1:1; Daniel 3:8 · Named in Daniel 1:1. · *9 verses*
+- **King** · Daniel 1:1 · Mentioned in Daniel 1:1. · *44.666666666666664 verses*
+- **Lion** · Daniel 6:7 · Mentioned in Daniel 6:7. · *3 verses*
+- **Meshach** · Daniel 1:7; 3:12 · The name given to Mishael in Babylon. · *14 verses*
+- **Nebuchadnezzar** · Daniel 1:1 · Named in Daniel 1:1. · *29 verses*
+- **Prince** · Daniel 1:3 · Mentioned in Daniel 1:3. · *10.666666666666666 verses*
+- **Shadrach** · Daniel 1:7 · Named in Daniel 1:7. · *14 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Azariah** · Daniel 1:6 · Named in Daniel 1:6. · *5 verses*<br><small>forms: Azariah son of Oded</small>
+- **Babylon** · Daniel 1:1 · Named in Daniel 1:1. · *15 verses*
+- **Belshazzar** · Daniel 5:1 · Named in Daniel 5:1. · *8 verses*
+- **Belteshazzar** · Daniel 1:7 · Named in Daniel 1:7. · *8 verses*
+- **Darius** · Daniel 5:31 · Named in Daniel 5:31. · *8 verses*
+- **Face** · Daniel 1:10 · Mentioned in Daniel 1:10. · *7.666666666666667 verses*
+- **Furnace** · Daniel 3:6 · Mentioned in Daniel 3:6. · *3.3333333333333335 verses*
+- **Hananiah** · Daniel 1:6 · Named in Daniel 1:6. · *5 verses*
+- **Hand** · Daniel 1:2 · Mentioned in Daniel 1:2. · *7 verses*
+- **Horn** · Daniel 3:5 · Mentioned in Daniel 3:5. · *6 verses*
+- **Image** · Daniel 2:31 · Mentioned in Daniel 2:31. · *5 verses*<br><small>forms: Statue</small>
+- **Judah** · Daniel 1:1 · Named in Daniel 1:1. · *7 verses*<br><small>forms: Judas</small>
+- **Mede** · Daniel 5:28 · Named in Daniel 5:28. · *7 verses*
+- **Media** · Daniel 5:28; Daniel 8:20 · Named in Daniel 8:20. · *6 verses*<br><small>aliases: Medes</small>
+- **Mishael** · Daniel 1:6 · Named in Daniel 1:6. · *5 verses*
+- **Persia** · Daniel 8:20 · Named in Daniel 8:20. · *5 verses*
+- **Sky** · Daniel 2:38; Daniel 12:3 · Mentioned in Daniel 2:38. · *7 verses*<br><small>aliases: Firmament, Expanse</small>
+
+### 🪙 Lost Coin (60)
+
+- **Arioch** · Daniel 2:14 · Named in Daniel 2:14. · *4 verses*
+- **Arm** · Daniel 2:32 · Mentioned in Daniel 2:32. · *2 verses*
+- **Astrologer** · Daniel 1:20 · Mentioned in Daniel 1:20. · *2.6666666666666665 verses*
+- **Bed** · Daniel 2:28 · Mentioned in Daniel 2:28. · *2 verses*
+- **Brass** · Daniel 2:32 · Mentioned in Daniel 2:32. · *3.3333333333333335 verses*
+- **Bronze** · Daniel 2:32 · Mentioned in Daniel 2:32. · *3.3333333333333335 verses*
+- **Captain** · Daniel 2:14 · Mentioned in Daniel 2:14. · *2 verses*
+- **Clay** · Daniel 2:33 · Mentioned in Daniel 2:33. · *2.3333333333333335 verses*<br><small>forms: Mud, Mire</small>
+- **Counselor** · Daniel 3:2 · Mentioned in Daniel 3:2. · *2 verses*<br><small>aliases: Counsellor</small>
+- **Cyrus** · Daniel 1:21 · Named in Daniel 1:21. · *3 verses*
+- **Egypt** · Daniel 9:15 · Named in Daniel 9:15. · *4 verses*<br><small>forms: Lower, Proud, Rahab</small>
+- **Eunuch** · Daniel 1:3 · Mentioned in Daniel 1:3. · *2.3333333333333335 verses*
+- **Eye** · Daniel 4:34 · Mentioned in Daniel 4:34. · *3 verses*
+- **Field** · Daniel 2:38 · Mentioned in Daniel 2:38. · *2.3333333333333335 verses*
+- **Fire** · Daniel 3:22 · Mentioned in Daniel 3:22. · *2.6666666666666665 verses*
+- **Foot** · Daniel 2:33; Daniel 8:13 · Mentioned in Daniel 2:33. · *3 verses*<br><small>aliases: Feet</small>
+- **Fortress** · Daniel 11:7; Daniel 11:19; Daniel 11:24 · Mentioned in Daniel 11:7. · *2.3333333333333335 verses*<br><small>aliases: Stronghold, Fort</small>
+- **Gabriel** · Daniel 8:16 · Named in Daniel 8:16. · *2 verses*
+- **Gold** · Daniel 2:32 · Mentioned in Daniel 2:32. · *4.666666666666667 verses*
+- **Governor** · Daniel 2:48 · Mentioned in Daniel 2:48. · *3.3333333333333335 verses*
+- **Grass** · Daniel 4:15 · Mentioned in Daniel 4:15. · *2 verses*
+- **Greece** · Daniel 8:21 · Named in Daniel 8:21. · *3 verses*<br><small>aliases: Grecia</small>
+- **Head** · Daniel 1:10 · Mentioned in Daniel 1:10. · *4.333333333333333 verses*
+- **Heart** · Daniel 1:8 · Mentioned in Daniel 1:8. · *4.666666666666667 verses*
+- **House** · Daniel 1:2 · Mentioned in Daniel 1:2. · *3.3333333333333335 verses*
+- **Iron** · Daniel 2:33 · Mentioned in Daniel 2:33. · *4.666666666666667 verses*
+- **Magician** · Daniel 1:20 · Mentioned in Daniel 1:20. · *2.3333333333333335 verses*
+- **Meat** · Daniel 1:5 · Mentioned in Daniel 1:5. · *3.3333333333333335 verses*
+- **Michael** · Daniel 10:13 · Named in Daniel 10:13. · *3 verses*
+- **Mouth** · Daniel 3:26 · Mentioned in Daniel 3:26. · *3 verses*
+- **Palace** · Daniel 1:4 · Mentioned in Daniel 1:4. · *2.3333333333333335 verses*
+- **River** · Daniel 8:2 · Mentioned in Daniel 8:2. · *2.3333333333333335 verses*
+- **Servant** · Daniel 1:12 · Mentioned in Daniel 1:12. · *4 verses*
+- **Silver** · Daniel 2:32 · Mentioned in Daniel 2:32. · *3 verses*
+- **Stone** · Daniel 2:34 · Mentioned in Daniel 2:34. · *2.3333333333333335 verses*
+- **Wine** · Daniel 1:5 · Mentioned in Daniel 1:5. · *2.6666666666666665 verses*
+- **Wise men** · Daniel 2:12 · Mentioned in Daniel 2:12. · *4 verses*<br><small>forms: Magi</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Ahasuerus** · Daniel 9:1 · Named in Daniel 9:1. · *1 verses*<br><small>forms: Xerxes</small>
+- **Ammon** · Daniel 11:41 · Named in Daniel 11:41. · *1 verses*<br><small>forms: Ammonitess</small>
+- **Angel** · Daniel 3:28 · Mentioned in Daniel 3:28. · *0.6666666666666666 verses*<br><small>forms: Angels</small>
+- **Ashes** · Daniel 9:3 · Mentioned in Daniel 9:3. · *0.3333333333333333 verses*
+- **Back** · Daniel 7:6 · Mentioned in Daniel 7:6. · *0.6666666666666666 verses*
+- **Balances** · Daniel 5:27 · Mentioned in Daniel 5:27. · *0.3333333333333333 verses*<br><small>forms: Scales</small>
+- **Bear** · Daniel 7:5 · Mentioned in Daniel 7:5. · *0.6666666666666666 verses*
+- **Belly** · Daniel 2:32 · Mentioned in Daniel 2:32. · *0.3333333333333333 verses*<br><small>forms: Stomach</small>
+- **Beryl** · Daniel 10:6 · Mentioned in Daniel 10:6. · *0.3333333333333333 verses*
+- **Bones** · Daniel 6:24 · Mentioned in Daniel 6:24. · *0.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Book** · Daniel 7:10 · Mentioned in Daniel 7:10. · *1.3333333333333333 verses*
+- **Bread** · Daniel 10:3 · Mentioned in Daniel 10:3. · *0.3333333333333333 verses*
+- **Breast** · Daniel 2:32 · Mentioned in Daniel 2:32. · *0.3333333333333333 verses*
+- **Chain** · Daniel 5:7 · Mentioned in Daniel 5:7. · *1 verses*
+- **Chariot** · Daniel 11:40 · Mentioned in Daniel 11:40. · *0.3333333333333333 verses*
+- **Chest** · Daniel 2:32 · Mentioned in Daniel 2:32. · *0.3333333333333333 verses*
+- **Chief** · Daniel 2:48 · Mentioned in Daniel 2:48. · *1 verses*
+- **Citadel** · Daniel 8:2 · Mentioned in Daniel 8:2. · *0.3333333333333333 verses*<br><small>forms: Castle</small>
+- **Cloud** · Daniel 7:13 · Mentioned in Daniel 7:13. · *0.3333333333333333 verses*<br><small>aliases: Clouds</small>
+- **Coat** · Daniel 3:21 · Mentioned in Daniel 3:21. · *0.6666666666666666 verses*
+- **Cornet** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+- **Cubit** · Daniel 3:1 · Mentioned in Daniel 3:1. · *0.3333333333333333 verses*
+- **Darkness** · Daniel 2:22 · Mentioned in Daniel 2:22. · *0.3333333333333333 verses*
+- **Deputy** · Daniel 3:2 · Mentioned in Daniel 3:2. · *1.3333333333333333 verses*<br><small>forms: Proconsul</small>
+- **Dew** · Daniel 4:15 · Mentioned in Daniel 4:15. · *1.6666666666666667 verses*
+- **Donkey** · Daniel 5:21 · Mentioned in Daniel 5:21. · *0.3333333333333333 verses*<br><small>aliases: Ass</small>
+- **Dulcimer** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1 verses*
+- **Dura** · Daniel 3:1 · Named in Daniel 3:1. · *1 verses*
+- **Dust** · Daniel 12:2 · Mentioned in Daniel 12:2. · *0.3333333333333333 verses*
+- **Eagle** · Daniel 4:33 · Mentioned in Daniel 4:33. · *0.6666666666666666 verses*
+- **Ear** · Daniel 9:18 · Mentioned in Daniel 9:18. · *0.3333333333333333 verses*
+- **Edom** · Daniel 11:41 · Named in Daniel 11:41. · *1 verses*<br><small>forms: Esau</small>
+- **Elam** · Daniel 8:2 · Named in Daniel 8:2. · *1 verses*
+- **Finger** · Daniel 5:5 · Mentioned in Daniel 5:5. · *0.3333333333333333 verses*
+- **Flesh** · Daniel 1:15 · Mentioned in Daniel 1:15. · *1.6666666666666667 verses*
+- **Flood** · Daniel 9:26 · Mentioned in Daniel 9:26. · *0.6666666666666666 verses*
+- **Flute** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+- **Fortified city** · Daniel 11:15 · Mentioned in Daniel 11:15. · *0.3333333333333333 verses*<br><small>aliases: Fenced city</small>
+- **Garment** · Daniel 3:21 · Mentioned in Daniel 3:21. · *0.6666666666666666 verses*
+- **Gate** · Daniel 2:49 · Mentioned in Daniel 2:49. · *0.3333333333333333 verses*
+- **Glorious Land** · Daniel 8:9 · Named in Daniel 8:9. · *0 verses*<br><small>forms: Canaan, Chanaan, Gentile</small>
+- **Goat** · Daniel 8:5 · Mentioned in Daniel 8:5. · *1 verses*
+- **Great Sea** · Daniel 7:2 · Named in Daniel 7:2. · *0 verses*<br><small>forms: Western Sea</small>
+- **Guard** · Daniel 2:14 · Mentioned in Daniel 2:14. · *0.3333333333333333 verses*
+- **Hair** · Daniel 3:27 · Mentioned in Daniel 3:27. · *1 verses*
+- **Harp** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+- **Herald** · Daniel 3:4 · Mentioned in Daniel 3:4. · *0.3333333333333333 verses*
+- **Hiddekel** · Daniel 10:4 · Named in Daniel 10:4. · *1 verses*
+- **Island** · Daniel 11:18 · Mentioned in Daniel 11:18. · *0.3333333333333333 verses*<br><small>aliases: Isle</small>
+- **Jehoiakim** · Daniel 1:1 · Named in Daniel 1:1. · *2 verses*<br><small>forms: Eliakim</small>
+- **Jeremiah** · Daniel 9:2 · Named in Daniel 9:2. · *1 verses*<br><small>forms: Jeremias</small>
+- **Joints** · Daniel 5:6 · Mentioned in Daniel 5:6. · *0.3333333333333333 verses*
+- **Judge** · Daniel 3:2 · Mentioned in Daniel 3:2. · *1 verses*
+- **Kittim** · Daniel 11:30 · Named in Daniel 11:30. · *1 verses*<br><small>aliases: Chittim</small>
+- **Knee** · Daniel 5:6 · Mentioned in Daniel 5:6. · *1 verses*
+- **Lamp** · Daniel 5:5 · Mentioned in Daniel 5:5. · *0.6666666666666666 verses*
+- **Lampstand** · Daniel 5:5 · Mentioned in Daniel 5:5. · *0.3333333333333333 verses*<br><small>aliases: Candlestick</small>
+- **Leg** · Daniel 2:33 · Mentioned in Daniel 2:33. · *0.3333333333333333 verses*
+- **Leopard** · Daniel 7:6 · Mentioned in Daniel 7:6. · *0.3333333333333333 verses*
+- **Lightning** · Daniel 10:6 · Mentioned in Daniel 10:6. · *0.3333333333333333 verses*
+- **Linen** · Daniel 10:5 · Mentioned in Daniel 10:5. · *1 verses*
+- **Lips** · Daniel 10:16 · Mentioned in Daniel 10:16. · *0.3333333333333333 verses*<br><small>aliases: Lip</small>
+- **Loins** · Daniel 5:6 · Mentioned in Daniel 5:6. · *0.6666666666666666 verses*
+- **Lyre** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+- **Mantle** · Daniel 3:21 · Mentioned in Daniel 3:21. · *0.3333333333333333 verses*
+- **Moab** · Daniel 11:41 · Named in Daniel 11:41. · *1 verses*
+- **Moses** · Daniel 9:11 · Named in Daniel 9:11. · *2 verses*
+- **Most Holy** · Daniel 9:24 · Named in Daniel 9:24. · *0 verses*<br><small>forms: Most Holy Place, Holy Sanctuary, Holiest, Holiest of All, Holy of Holies</small>
+- **Mound** · Daniel 11:15 · Mentioned in Daniel 11:15. · *0.3333333333333333 verses*<br><small>forms: Siege works</small>
+- **Mountain** · Daniel 2:35 · Mentioned in Daniel 2:35. · *1.6666666666666667 verses*
+- **Mute** · Daniel 4:19; Daniel 10:15 · Mentioned in Daniel 4:19. · *0.6666666666666666 verses*<br><small>aliases: Dumb</small>
+- **Nail** · Daniel 4:33 · Mentioned in Daniel 4:33. · *0.6666666666666666 verses*
+- **Nails** · Daniel 4:33 · Mentioned in Daniel 4:33. · *0.6666666666666666 verses*<br><small>forms: Fingernails</small>
+- **Neck** · Daniel 5:7 · Mentioned in Daniel 5:7. · *1 verses*
+- **Oxen** · Daniel 4:25 · Mentioned in Daniel 4:25. · *1.3333333333333333 verses*
+- **Peres** · Daniel 5:28 · Named in Daniel 5:28. · *1 verses*
+- **Pipe** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+- **Potter** · Daniel 2:41 · Mentioned in Daniel 2:41. · *0.3333333333333333 verses*
+- **Prophet** · Daniel 9:2 · Mentioned in Daniel 9:2. · *1 verses*
+- **Psaltery** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+- **Purple** · Daniel 5:7 · Mentioned in Daniel 5:7. · *1 verses*
+- **Queen** · Daniel 5:10 · Mentioned in Daniel 5:10. · *0.3333333333333333 verses*
+- **Ram** · Daniel 8:3 · Mentioned in Daniel 8:3. · *1.6666666666666667 verses*
+- **Rib** · Daniel 7:5 · Mentioned in Daniel 7:5. · *0.3333333333333333 verses*
+- **Sackbut** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+- **Sackcloth** · Daniel 9:3 · Mentioned in Daniel 9:3. · *0.3333333333333333 verses*
+- **Scarlet** · Daniel 5:7 · Mentioned in Daniel 5:7. · *1 verses*
+- **Sea** · Daniel 7:2 · Mentioned in Daniel 7:2. · *1 verses*
+- **Shinar** · Daniel 1:2 · Named in Daniel 1:2. · *1 verses*<br><small>forms: Babylonish</small>
+- **Ship** · Daniel 11:30 · Mentioned in Daniel 11:30. · *0.6666666666666666 verses*
+- **Side** · Daniel 7:5 · Mentioned in Daniel 7:5. · *1.3333333333333333 verses*
+- **Signet** · Daniel 6:17 · Mentioned in Daniel 6:17. · *0.3333333333333333 verses*
+- **Snow** · Daniel 7:9 · Mentioned in Daniel 7:9. · *0.3333333333333333 verses*
+- **Sore** · Daniel 6:14 · Mentioned in Daniel 6:14. · *0.3333333333333333 verses*<br><small>forms: Sores</small>
+- **Star** · Daniel 8:10 · Mentioned in Daniel 8:10. · *0.6666666666666666 verses*<br><small>aliases: Stars</small>
+- **Steps** · Daniel 11:43 · Mentioned in Daniel 11:43. · *0.3333333333333333 verses*<br><small>forms: Stairs, Staircase</small>
+- **Steward** · Daniel 1:11 · Mentioned in Daniel 1:11. · *0.6666666666666666 verses*
+- **Stream** · Daniel 7:10 · Mentioned in Daniel 7:10. · *0.3333333333333333 verses*<br><small>forms: Brook</small>
+- **Street** · Daniel 9:25 · Mentioned in Daniel 9:25. · *0.3333333333333333 verses*
+- **Sun** · Daniel 6:14 · Mentioned in Daniel 6:14. · *0.3333333333333333 verses*
+- **Susa** · Daniel 8:2 · Named in Daniel 8:2. · *1 verses*<br><small>aliases: Shushan</small>
+- **Sword** · Daniel 11:33 · Mentioned in Daniel 11:33. · *0.3333333333333333 verses*
+- **Tabernacle** · Daniel 11:45 · Mentioned in Daniel 11:45. · *0.3333333333333333 verses*
+- **Table** · Daniel 11:27 · Mentioned in Daniel 11:27. · *0.3333333333333333 verses*
+- **Tax collector** · Daniel 11:20 · Mentioned in Daniel 11:20. · *0.3333333333333333 verses*<br><small>forms: Publican</small>
+- **Teeth** · Daniel 7:5 · Mentioned in Daniel 7:5. · *1 verses*<br><small>forms: Tooth</small>
+- **Temple** · Daniel 5:2 · Mentioned in Daniel 5:2. · *0.6666666666666666 verses*
+- **Tent** · Daniel 11:45 · Mentioned in Daniel 11:45. · *0.3333333333333333 verses*
+- **Thigh** · Daniel 2:32 · Mentioned in Daniel 2:32. · *0.6666666666666666 verses*
+- **Threshing floor** · Daniel 2:35 · Mentioned in Daniel 2:35. · *0.3333333333333333 verses*
+- **Throne** · Daniel 5:20 · Mentioned in Daniel 5:20. · *0.6666666666666666 verses*
+- **Toe** · Daniel 2:41 · Mentioned in Daniel 2:41. · *0.6666666666666666 verses*<br><small>forms: Big toe, Great toe</small>
+- **Tongue** · Daniel 1:4 · Mentioned in Daniel 1:4. · *0.3333333333333333 verses*
+- **Torch** · Daniel 10:6 · Mentioned in Daniel 10:6. · *0.3333333333333333 verses*
+- **Treasure house** · Daniel 1:2 · Mentioned in Daniel 1:2. · *0.3333333333333333 verses*<br><small>forms: Storehouse, Store city</small>
+- **Treasurer** · Daniel 3:2 · Mentioned in Daniel 3:2. · *0.6666666666666666 verses*
+- **Tree** · Daniel 4:10 · Mentioned in Daniel 4:10. · *2 verses*<br><small>forms: Trees</small>
+- **Tunic** · Daniel 3:21 · Mentioned in Daniel 3:21. · *0.3333333333333333 verses*
+- **Ulai** · Daniel 8:2 · Named in Daniel 8:2. · *2 verses*
+- **Uphaz** · Daniel 10:5 · Named in Daniel 10:5. · *1 verses*
+- **Vegetables** · Daniel 1:12 · Mentioned in Daniel 1:12. · *0.6666666666666666 verses*<br><small>aliases: Pulse</small>
+- **Waist** · Daniel 10:5 · Mentioned in Daniel 10:5. · *0.3333333333333333 verses*
+- **Wall** · Daniel 5:5 · Mentioned in Daniel 5:5. · *0.6666666666666666 verses*
+- **Water** · Daniel 1:12 · Mentioned in Daniel 1:12. · *1 verses*
+- **Wheel** · Daniel 7:9 · Mentioned in Daniel 7:9. · *0.3333333333333333 verses*
+- **Whirlwind** · Daniel 11:40 · Mentioned in Daniel 11:40. · *0.3333333333333333 verses*
+- **Wild donkey** · Daniel 5:21 · Mentioned in Daniel 5:21. · *0.3333333333333333 verses*<br><small>aliases: Wild ass</small>
+- **Wind** · Daniel 2:35 · Mentioned in Daniel 2:35. · *1.3333333333333333 verses*
+- **Window** · Daniel 6:10 · Mentioned in Daniel 6:10. · *0.3333333333333333 verses*
+- **Wool** · Daniel 7:9 · Mentioned in Daniel 7:9. · *0.3333333333333333 verses*
+- **Zither** · Daniel 3:5 · Mentioned in Daniel 3:5. · *1.3333333333333333 verses*
+
+### Near misses
+
+- **Esther, Mordecai**: They are in the book of Esther, in Persia.
+- **Writing on the wall, handwriting**: Daniel 5:5 says the fingers of a man's hand wrote on the wall; try "wall" or "hand".
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Exodus.
+
+`exodus-anything` · Books of the Bible · 406 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 12 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 33 |
+| 🪙 Lost Coin (60) | 80 |
+| 💎 Hidden Treasure (85) | 280 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Aholiab. Oholiab of the tribe of Dan worked beside Bezalel on the tabernacle (Exodus 31:6); the KJV calls him Aholiab.
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Aaron** · Exodus 4:14 · Named in Exodus 4:14. · *109 verses*
+- **Altar** · Exodus 17:15 · Mentioned in Exodus 17:15. · *17 verses*
+- **Egypt** · Exodus 1:1 · Named in Exodus 1:1. · *110 verses*<br><small>forms: Lower, Proud, Rahab</small>
+- **Gold** · Exodus 3:22 · Mentioned in Exodus 3:22. · *27 verses*
+- **Hand** · Exodus 2:19 · Mentioned in Exodus 2:19. · *30 verses*
+- **Moses** · Exodus 2:10 · Named in Exodus 2:10. · *268 verses*
+- **Pharaoh** · Exodus 1:11 · Named in Exodus 1:11. · *108 verses*
+- **Servant** · Exodus 2:5 · Mentioned in Exodus 2:5. · *15 verses*
+- **Side** · Exodus 2:5 · Mentioned in Exodus 2:5. · *18.333333333333332 verses*
+- **Tabernacle** · Exodus 25:9 · Mentioned in Exodus 25:9. · *27.666666666666668 verses*
+- **Tent** · Exodus 16:16 · Mentioned in Exodus 16:16. · *17.666666666666668 verses*
+- **Water** · Exodus 2:10 · Mentioned in Exodus 2:10. · *13.333333333333334 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Abraham** · Exodus 2:24 · Named in Exodus 2:24. · *9 verses*<br><small>forms: Abram</small>
+- **Acacia** · Exodus 25:5 · Mentioned in Exodus 25:5. · *8.666666666666666 verses*<br><small>aliases: Shittim</small>
+- **Blood** · Exodus 4:9 · Mentioned in Exodus 4:9. · *7.333333333333333 verses*
+- **Blue** · Exodus 25:4 · Mentioned in Exodus 25:4. · *11.333333333333334 verses*
+- **Brass** · Exodus 25:3 · Mentioned in Exodus 25:3. · *10 verses*
+- **Bread** · Exodus 2:20 · Mentioned in Exodus 2:20. · *10.666666666666666 verses*
+- **Bronze** · Exodus 25:3 · Mentioned in Exodus 25:3. · *11.333333333333334 verses*
+- **Cubit** · Exodus 25:10 · Mentioned in Exodus 25:10. · *10.666666666666666 verses*
+- **Door** · Exodus 12:7 · Mentioned in Exodus 12:7. · *7.666666666666667 verses*
+- **Ephod** · Exodus 25:7 · Mentioned in Exodus 25:7. · *7.666666666666667 verses*
+- **Face** · Exodus 2:15 · Mentioned in Exodus 2:15. · *7.666666666666667 verses*
+- **Fire** · Exodus 3:2 · Mentioned in Exodus 3:2. · *8 verses*
+- **Heart** · Exodus 4:14 · Mentioned in Exodus 4:14. · *12 verses*
+- **House** · Exodus 1:21 · Mentioned in Exodus 1:21. · *12 verses*
+- **Isaac** · Exodus 2:24 · Named in Exodus 2:24. · *9 verses*
+- **Jacob** · Exodus 1:1 · Named in Exodus 1:1. · *11 verses*
+- **Jethro** · Exodus 2:18; Exodus 3:1 · Named in Exodus 2:18. · *9 verses*
+- **Lamp** · Exodus 25:31 · Mentioned in Exodus 25:31. · *7.333333333333333 verses*
+- **Linen** · Exodus 25:4 · Mentioned in Exodus 25:4. · *10.666666666666666 verses*
+- **Manna** · Exodus 16:15 · Mentioned in Exodus 16:15. · *1.3333333333333333 verses*
+- **Miriam** · Exodus 15:20 · The prophetess, sister of Aaron. · *2 verses*
+- **Mount Sinai** · Exodus 16:1; Exodus 19:11 · Named in Exodus 16:1. · *10 verses*<br><small>forms: Sina</small>
+- **Mountain** · Exodus 3:1 · Mentioned in Exodus 3:1. · *10.666666666666666 verses*
+- **Pillar** · Exodus 13:21 · Mentioned in Exodus 13:21. · *11 verses*
+- **Purple** · Exodus 25:4 · Mentioned in Exodus 25:4. · *8.666666666666666 verses*
+- **Red Sea** · Exodus 10:19 · Named in Exodus 10:19. · *5 verses*
+- **Ring** · Exodus 25:12 · Mentioned in Exodus 25:12. · *10.666666666666666 verses*
+- **Scarlet** · Exodus 25:4 · Mentioned in Exodus 25:4. · *8.666666666666666 verses*
+- **Sea** · Exodus 10:19 · Mentioned in Exodus 10:19. · *9.333333333333334 verses*
+- **Silver** · Exodus 3:22 · Mentioned in Exodus 3:22. · *9.333333333333334 verses*
+- **Stone** · Exodus 4:25 · Mentioned in Exodus 4:25. · *9.666666666666666 verses*
+- **Table** · Exodus 24:12 · Mentioned in Exodus 24:12. · *8.333333333333334 verses*
+- **Wilderness** · Exodus 3:1 · Mentioned in Exodus 3:1. · *8.333333333333334 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Abihu** · Exodus 6:23 · Named in Exodus 6:23. · *4 verses*
+- **Amalek** · Exodus 17:8 · Named in Exodus 17:8. · *7 verses*
+- **Amram** · Exodus 6:18 · Named in Exodus 6:18. · *2 verses*
+- **Angel** · Exodus 3:2 · Mentioned in Exodus 3:2. · *2 verses*<br><small>forms: Angels</small>
+- **Ark** · Exodus 2:3 · Mentioned in Exodus 2:3. · *7 verses*
+- **Back** · Exodus 3:1 · Mentioned in Exodus 3:1. · *4 verses*
+- **Basin** · Exodus 12:22; Exodus 30:18 · Mentioned in Exodus 12:22. · *4.333333333333333 verses*<br><small>aliases: Laver</small>
+- **Bezalel** · Exodus 31:2 · Named in Exodus 31:2. · *6 verses*<br><small>aliases: Bezaleel</small>
+- **Boils** · Exodus 9:9 · Mentioned in Exodus 9:9. · *2.3333333333333335 verses*<br><small>aliases: Boil</small>
+- **Bowl** · Exodus 25:29 · Mentioned in Exodus 25:29. · *2.6666666666666665 verses*
+- **Breastplate** · Exodus 25:7 · Mentioned in Exodus 25:7. · *6.666666666666667 verses*
+- **Brick** · Exodus 1:14 · Mentioned in Exodus 1:14. · *2.3333333333333335 verses*
+- **Bull** · Exodus 21:28; Exodus 29:1 · Mentioned in Exodus 21:28. · *4.333333333333333 verses*<br><small>aliases: Bullock</small>
+- **Canaan** · Exodus 6:4 · Named in Exodus 6:4. · *3 verses*<br><small>forms: Chanaan, Gentile, Glorious Land</small>
+- **Cattle** · Exodus 9:3 · Mentioned in Exodus 9:3. · *5.333333333333333 verses*
+- **Chain** · Exodus 28:14 · Mentioned in Exodus 28:14. · *2.3333333333333335 verses*
+- **Chains** · Exodus 28:14 · Mentioned in Exodus 28:14. · *2.3333333333333335 verses*<br><small>forms: Necklace</small>
+- **Chariot** · Exodus 14:6 · Mentioned in Exodus 14:6. · *3.6666666666666665 verses*
+- **Cherub** · Exodus 25:18; Exodus 25:19 · Mentioned in Exodus 25:18. · *3.6666666666666665 verses*<br><small>aliases: Cherubim, Cherubims</small>
+- **Cloud** · Exodus 13:21 · Mentioned in Exodus 13:21. · *6.333333333333333 verses*<br><small>forms: Clouds</small>
+- **Coat** · Exodus 28:4 · Mentioned in Exodus 28:4. · *3 verses*
+- **Crown** · Exodus 25:11 · Mentioned in Exodus 25:11. · *4 verses*
+- **Dan** · Exodus 1:4 · Named in Exodus 1:4. · *4 verses*
+- **Donkey** · Exodus 4:20 · Mentioned in Exodus 4:20. · *4 verses*<br><small>aliases: Ass</small>
+- **Ear** · Exodus 9:31 · Mentioned in Exodus 9:31. · *3 verses*
+- **Elder** · Exodus 3:16 · Mentioned in Exodus 3:16. · *3.6666666666666665 verses*
+- **Elders** · Exodus 3:16 · Mentioned in Exodus 3:16. · *3.6666666666666665 verses*
+- **Eleazar** · Exodus 6:23 · Named in Exodus 6:23. · *3 verses*
+- **Embroiderer** · Exodus 26:36 · Mentioned in Exodus 26:36. · *2.6666666666666665 verses*
+- **Eye** · Exodus 5:21 · Mentioned in Exodus 5:21. · *3 verses*
+- **Field** · Exodus 1:14 · Mentioned in Exodus 1:14. · *5.333333333333333 verses*
+- **Fine linen** · Exodus 25:4 · Mentioned in Exodus 25:4. · *3.6666666666666665 verses*
+- **Flesh** · Exodus 4:7 · Mentioned in Exodus 4:7. · *4.666666666666667 verses*
+- **Foot** · Exodus 3:5; Exodus 12:37 · Mentioned in Exodus 3:5. · *7 verses*<br><small>aliases: Feet</small>
+- **Frog** · Exodus 8:2 · Mentioned in Exodus 8:2. · *3.6666666666666665 verses*
+- **Garment** · Exodus 19:10 · Mentioned in Exodus 19:10. · *5 verses*
+- **Gate** · Exodus 20:10 · Mentioned in Exodus 20:10. · *4.333333333333333 verses*
+- **Girdle** · Exodus 28:4 · Mentioned in Exodus 28:4. · *4 verses*
+- **Goat** · Exodus 12:5 · Mentioned in Exodus 12:5. · *3 verses*
+- **Hail** · Exodus 9:23 · Mentioned in Exodus 9:23. · *4.666666666666667 verses*<br><small>forms: Hailstones</small>
+- **Head** · Exodus 4:31 · Mentioned in Exodus 4:31. · *6 verses*
+- **Hook** · Exodus 26:32 · Mentioned in Exodus 26:32. · *4.666666666666667 verses*<br><small>forms: Fishhook</small>
+- **Horn** · Exodus 21:29 · Mentioned in Exodus 21:29. · *3 verses*
+- **Hur** · Exodus 17:10 · Named in Exodus 17:10. · *6 verses*
+- **Ithamar** · Exodus 6:23 · Named in Exodus 6:23. · *3 verses*
+- **Joseph** · Exodus 1:5 · Named in Exodus 1:5. · *4 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Joshua** · Exodus 17:9 · Named in Exodus 17:9. · *7 verses*
+- **Judah** · Exodus 1:2 · Named in Exodus 1:2. · *4 verses*<br><small>forms: Judas</small>
+- **Judge** · Exodus 2:14 · Mentioned in Exodus 2:14. · *3 verses*
+- **King** · Exodus 1:8 · Mentioned in Exodus 1:8. · *4.666666666666667 verses*
+- **Lamb** · Exodus 12:3 · Mentioned in Exodus 12:3. · *3.3333333333333335 verses*
+- **Lampstand** · Exodus 25:31 · Mentioned in Exodus 25:31. · *5.333333333333333 verses*<br><small>aliases: Candlestick</small>
+- **Levi** · Exodus 1:2 · Named in Exodus 1:2. · *6 verses*
+- **Meat** · Exodus 4:7; Exodus 12:8 · Mentioned in Exodus 4:7. · *5 verses*
+- **Midian** · Exodus 2:15 · Named in Exodus 2:15. · *5 verses*
+- **Nadab** · Exodus 6:23 · Named in Exodus 6:23. · *4 verses*
+- **Olive oil** · Exodus 25:6; Exodus 27:20 · Mentioned in Exodus 25:6. · *6 verses*<br><small>aliases: Oil</small>
+- **Onyx** · Exodus 25:7 · Mentioned in Exodus 25:7. · *2.3333333333333335 verses*
+- **Ox** · Exodus 20:17 · Mentioned in Exodus 20:17. · *4.666666666666667 verses*
+- **Philistia** · Exodus 13:17; Exodus 15:14 · Named in Exodus 15:14. · *3 verses*<br><small>aliases: Palestina, Philistine, Philistines · forms: Palestine</small>
+- **Priest** · Exodus 2:16 · Mentioned in Exodus 2:16. · *7 verses*
+- **Ram** · Exodus 25:5 · Mentioned in Exodus 25:5. · *6.333333333333333 verses*
+- **Rephidim** · Exodus 17:1 · Named in Exodus 17:1. · *3 verses*
+- **River** · Exodus 1:22 · Mentioned in Exodus 1:22. · *6 verses*
+- **Robe** · Exodus 28:4 · Mentioned in Exodus 28:4. · *3 verses*
+- **Rod** · Exodus 4:2 · Mentioned in Exodus 4:2. · *6.666666666666667 verses*
+- **Sabbath** · Exodus 16:23 · Mentioned in Exodus 16:23. · *4.333333333333333 verses*
+- **Sheep** · Exodus 9:3 · Mentioned in Exodus 9:3. · *3 verses*
+- **Shekel** · Exodus 21:32 · Mentioned in Exodus 21:32. · *3.3333333333333335 verses*
+- **Shoulder** · Exodus 12:34 · Mentioned in Exodus 12:34. · *3.6666666666666665 verses*
+- **Signet** · Exodus 28:11 · Mentioned in Exodus 28:11. · *2.3333333333333335 verses*
+- **Skin** · Exodus 22:27 · Mentioned in Exodus 22:27. · *3.6666666666666665 verses*
+- **Sky** · Exodus 9:8 · Mentioned in Exodus 9:8. · *3 verses*<br><small>forms: Firmament, Expanse</small>
+- **Stranger** · Exodus 2:22 · Mentioned in Exodus 2:22. · *4.666666666666667 verses*<br><small>aliases: Foreigner · forms: Sojourner</small>
+- **Sword** · Exodus 5:3 · Mentioned in Exodus 5:3. · *2.3333333333333335 verses*
+- **Tablets** · Exodus 24:12 · Mentioned in Exodus 24:12. · *3.3333333333333335 verses*<br><small>aliases: Tables of stone</small>
+- **Tunic** · Exodus 28:4 · Mentioned in Exodus 28:4. · *2.3333333333333335 verses*
+- **Unleavened bread** · Exodus 12:8 · Mentioned in Exodus 12:8. · *3.6666666666666665 verses*
+- **Veil** · Exodus 26:31 · Mentioned in Exodus 26:31. · *5.333333333333333 verses*
+- **Zipporah** · Exodus 2:21 · The wife of Moses. · *3 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Abiasaph** · Exodus 6:24 · Named in Exodus 6:24. · *1 verses*
+- **Agate** · Exodus 28:19 · Mentioned in Exodus 28:19. · *0.6666666666666666 verses*
+- **Almond** · Exodus 25:33 · Mentioned in Exodus 25:33. · *1.3333333333333333 verses*<br><small>forms: Almond tree</small>
+- **Almonds** · Exodus 25:33 · Mentioned in Exodus 25:33. · *1.3333333333333333 verses*
+- **Amethyst** · Exodus 28:19 · Mentioned in Exodus 28:19. · *0.6666666666666666 verses*
+- **Amminadab** · Exodus 6:23 · Named in Exodus 6:23. · *1 verses*<br><small>forms: Aminadab</small>
+- **Arm** · Exodus 6:6 · Mentioned in Exodus 6:6. · *0.6666666666666666 verses*
+- **Asher** · Exodus 1:4 · Named in Exodus 1:4. · *1 verses*
+- **Asherah** · Exodus 34:13 · Mentioned in Exodus 34:13. · *0.3333333333333333 verses*<br><small>forms: Asherim</small>
+- **Ashes** · Exodus 9:8 · Mentioned in Exodus 9:8. · *1 verses*
+- **Baal** · Exodus 14:2 · Mentioned in Exodus 14:2. · *0.6666666666666666 verses*
+- **Baal-zephon** · Exodus 14:2 · Named in Exodus 14:2. · *2 verses*
+- **Badger** · Exodus 25:5 · Mentioned in Exodus 25:5. · *2 verses*
+- **Barley** · Exodus 9:31 · Mentioned in Exodus 9:31. · *0.3333333333333333 verses*
+- **Basket** · Exodus 2:3 · Mentioned in Exodus 2:3. · *1.6666666666666667 verses*
+- **Bed** · Exodus 8:3 · Mentioned in Exodus 8:3. · *0.6666666666666666 verses*
+- **Bedchamber** · Exodus 8:3 · Mentioned in Exodus 8:3. · *0.3333333333333333 verses*<br><small>aliases: Bedroom</small>
+- **Bekah** · Exodus 38:26 · Mentioned in Exodus 38:26. · *0.3333333333333333 verses*<br><small>aliases: Beka</small>
+- **Bells** · Exodus 28:33 · Mentioned in Exodus 28:33. · *0.6666666666666666 verses*
+- **Belt** · Exodus 12:11 · Mentioned in Exodus 12:11. · *0.6666666666666666 verses*
+- **Benjamin** · Exodus 1:3 · Named in Exodus 1:3. · *1 verses*
+- **Beryl** · Exodus 28:17 · Mentioned in Exodus 28:17. · *1.3333333333333333 verses*
+- **Big toe** · Exodus 29:20 · Mentioned in Exodus 29:20. · *0.3333333333333333 verses*<br><small>aliases: Great toe, Toe</small>
+- **Bitter herbs** · Exodus 12:8 · Mentioned in Exodus 12:8. · *0.3333333333333333 verses*
+- **Blains** · Exodus 9:9 · Mentioned in Exodus 9:9. · *0.6666666666666666 verses*<br><small>aliases: Blisters</small>
+- **Blind** · Exodus 4:11 · Mentioned in Exodus 4:11. · *0.6666666666666666 verses*<br><small>forms: Blindness</small>
+- **Bones** · Exodus 12:46 · Mentioned in Exodus 12:46. · *0.6666666666666666 verses*<br><small>aliases: Bone</small>
+- **Bonnet** · Exodus 28:40 · Mentioned in Exodus 28:40. · *1 verses*
+- **Book** · Exodus 17:14 · Mentioned in Exodus 17:14. · *1.3333333333333333 verses*
+- **Bosom** · Exodus 4:6 · Mentioned in Exodus 4:6. · *0.6666666666666666 verses*
+- **Bracelets** · Exodus 35:22 · Mentioned in Exodus 35:22. · *0.3333333333333333 verses*<br><small>aliases: Bracelet</small>
+- **Breast** · Exodus 29:26 · Mentioned in Exodus 29:26. · *0.6666666666666666 verses*
+- **Breeches** · Exodus 28:42 · Mentioned in Exodus 28:42. · *0.6666666666666666 verses*<br><small>forms: Undergarments</small>
+- **Bulrushes** · Exodus 2:3 · Mentioned in Exodus 2:3. · *0.3333333333333333 verses*<br><small>aliases: Bulrush</small>
+- **Bush** · Exodus 3:2 · Mentioned in Exodus 3:2. · *1 verses*<br><small>forms: Burning bush</small>
+- **Cakes** · Exodus 12:39 · Mentioned in Exodus 12:39. · *1 verses*<br><small>aliases: Cake</small>
+- **Calamus** · Exodus 30:23 · Mentioned in Exodus 30:23. · *0.3333333333333333 verses*
+- **Calf** · Exodus 32:4 · Mentioned in Exodus 32:4. · *2 verses*
+- **Camel** · Exodus 9:3 · Mentioned in Exodus 9:3. · *0.3333333333333333 verses*
+- **Captain** · Exodus 14:7 · Mentioned in Exodus 14:7. · *0.6666666666666666 verses*
+- **Carbuncle** · Exodus 28:17 · Mentioned in Exodus 28:17. · *0.6666666666666666 verses*
+- **Carmi** · Exodus 6:14 · Named in Exodus 6:14. · *1 verses*
+- **Cassia** · Exodus 30:24 · Mentioned in Exodus 30:24. · *0.3333333333333333 verses*
+- **Chief** · Exodus 15:15 · Mentioned in Exodus 15:15. · *0.3333333333333333 verses*
+- **Chrysolite** · Exodus 28:20 · Mentioned in Exodus 28:20. · *0.6666666666666666 verses*
+- **Cinnamon** · Exodus 30:23 · Mentioned in Exodus 30:23. · *0.3333333333333333 verses*
+- **Cloak** · Exodus 4:6 · Mentioned in Exodus 4:6. · *0.6666666666666666 verses*
+- **Coat of mail** · Exodus 28:32 · Mentioned in Exodus 28:32. · *0.6666666666666666 verses*
+- **Cord** · Exodus 28:14 · Mentioned in Exodus 28:14. · *1.6666666666666667 verses*
+- **Coriander** · Exodus 16:31 · Mentioned in Exodus 16:31. · *0.3333333333333333 verses*
+- **Cup** · Exodus 25:31 · Mentioned in Exodus 25:31. · *2 verses*
+- **Darkness** · Exodus 10:21 · Mentioned in Exodus 10:21. · *1.3333333333333333 verses*
+- **Deaf** · Exodus 4:11 · Mentioned in Exodus 4:11. · *0.3333333333333333 verses*<br><small>forms: Deafness</small>
+- **Desert** · Exodus 3:1 · Mentioned in Exodus 3:1. · *1.3333333333333333 verses*
+- **Dew** · Exodus 16:13 · Mentioned in Exodus 16:13. · *0.6666666666666666 verses*
+- **Diamond** · Exodus 28:18 · Mentioned in Exodus 28:18. · *0.6666666666666666 verses*
+- **Dog** · Exodus 11:7 · Mentioned in Exodus 11:7. · *0.6666666666666666 verses*
+- **Doorpost** · Exodus 21:6 · Mentioned in Exodus 21:6. · *0.3333333333333333 verses*
+- **Dough** · Exodus 12:34 · Mentioned in Exodus 12:34. · *0.6666666666666666 verses*
+- **Dungeon** · Exodus 12:29 · Mentioned in Exodus 12:29. · *0.3333333333333333 verses*<br><small>forms: Prison</small>
+- **Dust** · Exodus 8:16 · Mentioned in Exodus 8:16. · *1 verses*
+- **Eagle** · Exodus 19:4 · Mentioned in Exodus 19:4. · *0.3333333333333333 verses*
+- **Earrings** · Exodus 32:2 · Mentioned in Exodus 32:2. · *1 verses*<br><small>aliases: Earring</small>
+- **East wind** · Exodus 10:13 · Mentioned in Exodus 10:13. · *0.6666666666666666 verses*
+- **Edom** · Exodus 15:15 · Named in Exodus 15:15. · *1 verses*<br><small>forms: Esau</small>
+- **Eliezer** · Exodus 18:4 · Named in Exodus 18:4. · *1 verses*
+- **Elim** · Exodus 15:27 · Named in Exodus 15:27. · *2 verses*
+- **Elisheba** · Exodus 6:23 · Aaron's wife. · *1 verses*
+- **Elkanah** · Exodus 6:24 · Named in Exodus 6:24. · *1 verses*
+- **Emerald** · Exodus 28:18 · Mentioned in Exodus 28:18. · *0.6666666666666666 verses*
+- **Engraver** · Exodus 28:11 · Mentioned in Exodus 28:11. · *1 verses*
+- **Ephah** · Exodus 16:36 · Mentioned in Exodus 16:36. · *0.6666666666666666 verses*
+- **Etham** · Exodus 13:20 · Named in Exodus 13:20. · *1 verses*
+- **Fat** · Exodus 23:18 · Mentioned in Exodus 23:18. · *1 verses*
+- **Fatherless** · Exodus 22:22 · Mentioned in Exodus 22:22. · *0.6666666666666666 verses*<br><small>forms: Orphan</small>
+- **Feast of Unleavened Bread** · Exodus 12:17 · Mentioned in Exodus 12:17. · *1 verses*
+- **Feast of Weeks** · Exodus 34:22 · Mentioned in Exodus 34:22. · *0.3333333333333333 verses*
+- **Fine flour** · Exodus 29:40 · Mentioned in Exodus 29:40. · *0.3333333333333333 verses*
+- **Finger** · Exodus 8:19 · Mentioned in Exodus 8:19. · *1 verses*
+- **Firstfruits** · Exodus 23:16 · Mentioned in Exodus 23:16. · *1.3333333333333333 verses*<br><small>aliases: First fruits</small>
+- **Fish** · Exodus 7:18 · Mentioned in Exodus 7:18. · *0.6666666666666666 verses*
+- **Fist** · Exodus 21:18 · Mentioned in Exodus 21:18. · *0.3333333333333333 verses*
+- **Flax** · Exodus 9:31 · Mentioned in Exodus 9:31. · *0.3333333333333333 verses*
+- **Flint** · Exodus 4:25 · Mentioned in Exodus 4:25. · *0.3333333333333333 verses*
+- **Flood** · Exodus 15:8 · Mentioned in Exodus 15:8. · *0.3333333333333333 verses*
+- **Flour** · Exodus 29:2; Exodus 29:41 · Mentioned in Exodus 29:2. · *1.6666666666666667 verses*<br><small>aliases: Meal</small>
+- **Forehead** · Exodus 28:38 · Mentioned in Exodus 28:38. · *0.3333333333333333 verses*
+- **Fork** · Exodus 38:3 · Mentioned in Exodus 38:3. · *0.3333333333333333 verses*
+- **Foundation** · Exodus 9:18 · Mentioned in Exodus 9:18. · *0.3333333333333333 verses*
+- **Frankincense** · Exodus 30:34 · Mentioned in Exodus 30:34. · *0.3333333333333333 verses*
+- **Frost** · Exodus 16:14 · Mentioned in Exodus 16:14. · *0.3333333333333333 verses*
+- **Furnace** · Exodus 9:8 · Mentioned in Exodus 9:8. · *1 verses*
+- **Gad** · Exodus 1:4 · Named in Exodus 1:4. · *1 verses*
+- **Galbanum** · Exodus 30:34 · Mentioned in Exodus 30:34. · *0.3333333333333333 verses*
+- **Gerah** · Exodus 30:13 · Mentioned in Exodus 30:13. · *0.3333333333333333 verses*
+- **Gershom** · Exodus 2:22 · Named in Exodus 2:22. · *2 verses*
+- **Gershon** · Exodus 6:16 · Named in Exodus 6:16. · *2 verses*
+- **Goats' hair** · Exodus 25:4 · Mentioned in Exodus 25:4. · *2 verses*
+- **Goshen** · Exodus 8:22 · Named in Exodus 8:22. · *2 verses*
+- **Grain** · Exodus 22:6 · Mentioned in Exodus 22:6. · *0.3333333333333333 verses*<br><small>aliases: Corn</small>
+- **Hair** · Exodus 25:4 · Mentioned in Exodus 25:4. · *2 verses*
+- **Handbreadth** · Exodus 37:12 · Mentioned in Exodus 37:12. · *0.3333333333333333 verses*<br><small>forms: Handbreath</small>
+- **Headband** · Exodus 28:40 · Mentioned in Exodus 28:40. · *1 verses*<br><small>forms: Headdress</small>
+- **Hebron** · Exodus 6:18 · Named in Exodus 6:18. · *1 verses*
+- **Hem** · Exodus 28:33 · Mentioned in Exodus 28:33. · *1.6666666666666667 verses*
+- **Hezron** · Exodus 6:14 · Named in Exodus 6:14. · *1 verses*<br><small>forms: Esrom</small>
+- **Hill** · Exodus 17:9 · Mentioned in Exodus 17:9. · *1 verses*
+- **Hin** · Exodus 29:40 · Mentioned in Exodus 29:40. · *0.6666666666666666 verses*
+- **Hired servant** · Exodus 12:45 · Mentioned in Exodus 12:45. · *0.3333333333333333 verses*<br><small>forms: Hireling</small>
+- **Holy Place** · Exodus 26:33 · Named in Exodus 26:33. · *0 verses*
+- **Honey** · Exodus 3:8 · Mentioned in Exodus 3:8. · *1.6666666666666667 verses*
+- **Hornet** · Exodus 23:28 · Mentioned in Exodus 23:28. · *0.3333333333333333 verses*
+- **Horse** · Exodus 9:3 · Mentioned in Exodus 9:3. · *2 verses*
+- **Hyssop** · Exodus 12:22 · Mentioned in Exodus 12:22. · *0.3333333333333333 verses*
+- **Idol** · Exodus 20:4 · Mentioned in Exodus 20:4. · *0.6666666666666666 verses*
+- **Image** · Exodus 20:4 · Mentioned in Exodus 20:4. · *1 verses*<br><small>forms: Statue</small>
+- **Inn** · Exodus 4:24 · Mentioned in Exodus 4:24. · *0.3333333333333333 verses*<br><small>aliases: Lodging place</small>
+- **Issachar** · Exodus 1:3 · Named in Exodus 1:3. · *1 verses*
+- **Izhar** · Exodus 6:18 · Named in Exodus 6:18. · *2 verses*
+- **Jachin** · Exodus 6:15 · Named in Exodus 6:15. · *1 verses*
+- **Jacinth** · Exodus 28:19 · Mentioned in Exodus 28:19. · *0.6666666666666666 verses*
+- **Jasper** · Exodus 28:20 · Mentioned in Exodus 28:20. · *0.6666666666666666 verses*
+- **Jochebed** · Exodus 6:20 · The mother of Moses, Aaron and Miriam. · *1 verses*
+- **Kidneys** · Exodus 29:13 · Mentioned in Exodus 29:13. · *0.6666666666666666 verses*<br><small>forms: Reins</small>
+- **Kohath** · Exodus 6:16 · Named in Exodus 6:16. · *2 verses*
+- **Korah** · Exodus 6:21 · Named in Exodus 6:21. · *2 verses*
+- **Ladle** · Exodus 25:29 · Mentioned in Exodus 25:29. · *0.3333333333333333 verses*
+- **Leg** · Exodus 12:9 · Mentioned in Exodus 12:9. · *0.6666666666666666 verses*
+- **Levite** · Exodus 4:14 · Mentioned in Exodus 4:14. · *1.3333333333333333 verses*
+- **Libni** · Exodus 6:17 · Named in Exodus 6:17. · *1 verses*
+- **Lice** · Exodus 8:16 · Mentioned in Exodus 8:16. · *1 verses*
+- **Lightning** · Exodus 9:23 · Mentioned in Exodus 9:23. · *1.3333333333333333 verses*
+- **Ligure** · Exodus 28:19 · Mentioned in Exodus 28:19. · *0.6666666666666666 verses*
+- **Lintel** · Exodus 12:7 · Mentioned in Exodus 12:7. · *1 verses*
+- **Lips** · Exodus 6:12 · Mentioned in Exodus 6:12. · *0.6666666666666666 verses*<br><small>aliases: Lip</small>
+- **Liver** · Exodus 29:13 · Mentioned in Exodus 29:13. · *0.6666666666666666 verses*
+- **Locust** · Exodus 10:4 · Mentioned in Exodus 10:4. · *1.6666666666666667 verses*
+- **Locusts** · Exodus 10:4 · Mentioned in Exodus 10:4. · *1.6666666666666667 verses*
+- **Loins** · Exodus 1:5 · Mentioned in Exodus 1:5. · *1 verses*
+- **Magician** · Exodus 7:11 · Mentioned in Exodus 7:11. · *2 verses*
+- **Marah** · Exodus 15:23 · Named in Exodus 15:23. · *1 verses*
+- **Massah** · Exodus 17:7 · Named in Exodus 17:7. · *1 verses*
+- **Merari** · Exodus 6:16 · Named in Exodus 6:16. · *2 verses*
+- **Meribah** · Exodus 17:7 · Named in Exodus 17:7. · *1 verses*<br><small>forms: Meribah Kadesh, Meribath Kadesh, Waters of Meribah-kadesh, Waters of Meribath-kadesh</small>
+- **Midwife** · Exodus 1:16 · Mentioned in Exodus 1:16. · *0.6666666666666666 verses*
+- **Migdol** · Exodus 14:2 · Named in Exodus 14:2. · *1 verses*
+- **Milk** · Exodus 3:8 · Mentioned in Exodus 3:8. · *2 verses*
+- **Mirror** · Exodus 38:8 · Mentioned in Exodus 38:8. · *0.3333333333333333 verses*
+- **Mishael** · Exodus 6:22 · Named in Exodus 6:22. · *1 verses*
+- **Mitre** · Exodus 28:4 · Mentioned in Exodus 28:4. · *2 verses*<br><small>forms: Miter</small>
+- **Moab** · Exodus 15:15 · Named in Exodus 15:15. · *1 verses*
+- **Mortar** · Exodus 1:14 · Mentioned in Exodus 1:14. · *0.3333333333333333 verses*
+- **Most Holy Place** · Exodus 26:33; Exodus 26:34 · Named in Exodus 26:33. · *0 verses*<br><small>aliases: Most Holy · forms: Holy Sanctuary, Holiest, Holiest of All, Holy of Holies</small>
+- **Mount Horeb** · Exodus 3:1; Exodus 33:6 · Named in Exodus 3:1. · *1 verses*
+- **Mouth** · Exodus 4:11 · Mentioned in Exodus 4:11. · *2 verses*
+- **Mushi** · Exodus 6:19 · Named in Exodus 6:19. · *1 verses*
+- **Mute** · Exodus 4:11 · Mentioned in Exodus 4:11. · *0.3333333333333333 verses*<br><small>aliases: Dumb</small>
+- **Myrrh** · Exodus 30:23 · Mentioned in Exodus 30:23. · *0.3333333333333333 verses*
+- **Nahshon** · Exodus 6:23 · Named in Exodus 6:23. · *1 verses*<br><small>forms: Naasson</small>
+- **Naphtali** · Exodus 1:4 · Named in Exodus 1:4. · *1 verses*
+- **Neck** · Exodus 13:13 · Mentioned in Exodus 13:13. · *0.6666666666666666 verses*
+- **Nepheg** · Exodus 6:21 · Named in Exodus 6:21. · *1 verses*
+- **Net** · Exodus 27:4 · Mentioned in Exodus 27:4. · *0.6666666666666666 verses*
+- **Nile** · Exodus 17:5 · Named in Exodus 17:5. · *1 verses*<br><small>forms: Sihor</small>
+- **Nostrils** · Exodus 15:8 · Mentioned in Exodus 15:8. · *0.3333333333333333 verses*
+- **Nun** · Exodus 33:11 · Named in Exodus 33:11. · *1 verses*
+- **Nurse** · Exodus 2:7 · Mentioned in Exodus 2:7. · *0.6666666666666666 verses*
+- **Officer** · Exodus 5:6 · Mentioned in Exodus 5:6. · *1.6666666666666667 verses*
+- **Ohad** · Exodus 6:15 · Named in Exodus 6:15. · *1 verses*
+- **Olive** · Exodus 23:11 · Mentioned in Exodus 23:11. · *1 verses*<br><small>forms: Olive tree</small>
+- **Omer** · Exodus 16:16 · Mentioned in Exodus 16:16. · *2 verses*
+- **Onycha** · Exodus 30:34 · Mentioned in Exodus 30:34. · *0.3333333333333333 verses*
+- **Oven** · Exodus 8:3 · Mentioned in Exodus 8:3. · *0.3333333333333333 verses*
+- **Oxen** · Exodus 9:3 · Mentioned in Exodus 9:3. · *1.6666666666666667 verses*
+- **Pallu** · Exodus 6:14 · Named in Exodus 6:14. · *1 verses*
+- **Palm tree** · Exodus 15:27 · Mentioned in Exodus 15:27. · *0.3333333333333333 verses*
+- **Pan** · Exodus 27:3 · Mentioned in Exodus 27:3. · *0.6666666666666666 verses*
+- **Papyrus** · Exodus 2:3 · Mentioned in Exodus 2:3. · *0.3333333333333333 verses*
+- **Passover** · Exodus 12:11 · Mentioned in Exodus 12:11. · *2 verses*
+- **Perfumer** · Exodus 30:25 · Mentioned in Exodus 30:25. · *1 verses*<br><small>aliases: Apothecary</small>
+- **Pestilence** · Exodus 5:3 · Mentioned in Exodus 5:3. · *1 verses*
+- **Phinehas** · Exodus 6:25 · Named in Exodus 6:25. · *1 verses*
+- **Pi-hahiroth** · Exodus 14:2 · Named in Exodus 14:2. · *2 verses*<br><small>aliases: Hahiroth</small>
+- **Pitcher** · Exodus 37:16 · Mentioned in Exodus 37:16. · *0.3333333333333333 verses*
+- **Pithom** · Exodus 1:11 · Named in Exodus 1:11. · *1 verses*
+- **Plague** · Exodus 8:2 · Mentioned in Exodus 8:2. · *1.6666666666666667 verses*
+- **Pomegranate** · Exodus 28:33 · Mentioned in Exodus 28:33. · *1.6666666666666667 verses*
+- **Pool** · Exodus 7:19 · Mentioned in Exodus 7:19. · *0.6666666666666666 verses*
+- **Pot** · Exodus 16:3 · Mentioned in Exodus 16:3. · *1.3333333333333333 verses*
+- **Prince** · Exodus 2:14 · Mentioned in Exodus 2:14. · *0.3333333333333333 verses*
+- **Prophet** · Exodus 7:1 · Mentioned in Exodus 7:1. · *0.3333333333333333 verses*
+- **Prophetess** · Exodus 15:20 · Mentioned in Exodus 15:20. · *0.3333333333333333 verses*
+- **Puah** · Exodus 1:15 · A Hebrew midwife who feared God and spared the boys. · *1 verses*
+- **Quail** · Exodus 16:13 · Mentioned in Exodus 16:13. · *0.3333333333333333 verses*
+- **Raiment** · Exodus 3:22 · Mentioned in Exodus 3:22. · *2 verses*
+- **Rain** · Exodus 9:18 · Mentioned in Exodus 9:18. · *1.3333333333333333 verses*
+- **Rameses** · Exodus 1:11; Exodus 12:37 · Named in Exodus 1:11. · *2 verses*<br><small>aliases: Raamses</small>
+- **Reed** · Exodus 2:3 · Mentioned in Exodus 2:3. · *0.6666666666666666 verses*<br><small>aliases: Reeds</small>
+- **Reuben** · Exodus 1:2 · Named in Exodus 1:2. · *2 verses*
+- **Reuel** · Exodus 2:18 · Named in Exodus 2:18. · *1 verses*
+- **Rib** · Exodus 30:4 · Mentioned in Exodus 30:4. · *0.6666666666666666 verses*
+- **Rie** · Exodus 9:32 · Mentioned in Exodus 9:32. · *0.3333333333333333 verses*
+- **Rock** · Exodus 17:6 · Mentioned in Exodus 17:6. · *1 verses*
+- **Roof** · Exodus 35:11 · Mentioned in Exodus 35:11. · *0.6666666666666666 verses*<br><small>forms: Housetop</small>
+- **Ruby** · Exodus 28:17 · Mentioned in Exodus 28:17. · *0.6666666666666666 verses*<br><small>forms: Rubies</small>
+- **Salt** · Exodus 30:35 · Mentioned in Exodus 30:35. · *0.3333333333333333 verses*
+- **Sand** · Exodus 2:12 · Mentioned in Exodus 2:12. · *0.3333333333333333 verses*
+- **Sandals** · Exodus 3:5 · Mentioned in Exodus 3:5. · *0.6666666666666666 verses*<br><small>aliases: Sandal</small>
+- **Sapphire** · Exodus 24:10 · Mentioned in Exodus 24:10. · *1 verses*
+- **Sardius** · Exodus 28:17 · Mentioned in Exodus 28:17. · *0.6666666666666666 verses*
+- **Sash** · Exodus 28:4 · Mentioned in Exodus 28:4. · *1.6666666666666667 verses*
+- **Sea cow** · Exodus 25:5 · Mentioned in Exodus 25:5. · *2 verses*
+- **Shelter** · Exodus 9:19 · Mentioned in Exodus 9:19. · *0.3333333333333333 verses*<br><small>forms: Booth</small>
+- **Shepherd** · Exodus 2:17 · Mentioned in Exodus 2:17. · *0.6666666666666666 verses*
+- **Shimei** · Exodus 6:17 · Named in Exodus 6:17. · *1 verses*
+- **Shiphrah** · Exodus 1:15 · A Hebrew midwife who feared God and spared the boys. · *1 verses*
+- **Shoes** · Exodus 3:5 · Mentioned in Exodus 3:5. · *0.6666666666666666 verses*<br><small>aliases: Shoe</small>
+- **Shore** · Exodus 14:30 · Mentioned in Exodus 14:30. · *0.3333333333333333 verses*<br><small>aliases: Seashore</small>
+- **Show bread** · Exodus 25:30; Exodus 35:13 · Mentioned in Exodus 25:30. · *1 verses*<br><small>aliases: Shewbread</small>
+- **Shur** · Exodus 15:22 · Named in Exodus 15:22. · *1 verses*
+- **Signet ring** · Exodus 28:11; Exodus 35:22 · Mentioned in Exodus 28:11. · *0.3333333333333333 verses*
+- **Simeon** · Exodus 1:2 · Named in Exodus 1:2. · *2 verses*
+- **Sin** · Exodus 16:1 · Named in Exodus 16:1. · *2 verses*
+- **Skirt** · Exodus 39:24 · Mentioned in Exodus 39:24. · *1 verses*
+- **Smoke** · Exodus 19:18 · Mentioned in Exodus 19:18. · *0.3333333333333333 verses*
+- **Snake** · Exodus 4:3 · Mentioned in Exodus 4:3. · *1.6666666666666667 verses*<br><small>aliases: Serpent</small>
+- **Snow** · Exodus 4:6 · Mentioned in Exodus 4:6. · *0.3333333333333333 verses*
+- **Snuffers** · Exodus 25:38 · Mentioned in Exodus 25:38. · *0.6666666666666666 verses*
+- **Sore** · Exodus 14:10 · Mentioned in Exodus 14:10. · *0.3333333333333333 verses*<br><small>forms: Sores</small>
+- **Span** · Exodus 28:16 · Mentioned in Exodus 28:16. · *0.6666666666666666 verses*
+- **Spelt** · Exodus 9:32 · Mentioned in Exodus 9:32. · *0.3333333333333333 verses*<br><small>forms: Fitches</small>
+- **Spoon** · Exodus 25:29 · Mentioned in Exodus 25:29. · *0.6666666666666666 verses*
+- **Stacte** · Exodus 30:34 · Mentioned in Exodus 30:34. · *0.3333333333333333 verses*
+- **Staff** · Exodus 4:2; Exodus 12:11 · Mentioned in Exodus 4:2. · *0.6666666666666666 verses*
+- **Star** · Exodus 32:13 · Mentioned in Exodus 32:13. · *0.3333333333333333 verses*<br><small>aliases: Stars</small>
+- **Steps** · Exodus 20:26 · Mentioned in Exodus 20:26. · *0.3333333333333333 verses*<br><small>forms: Stairs, Staircase</small>
+- **Stool** · Exodus 1:16 · Mentioned in Exodus 1:16. · *0.3333333333333333 verses*
+- **Stream** · Exodus 7:19 · Mentioned in Exodus 7:19. · *0.6666666666666666 verses*<br><small>forms: Brook</small>
+- **Succoth** · Exodus 12:37 · Named in Exodus 12:37. · *2 verses*
+- **Sun** · Exodus 16:21 · Mentioned in Exodus 16:21. · *1.3333333333333333 verses*
+- **Talent** · Exodus 25:39 · Mentioned in Exodus 25:39. · *2 verses*
+- **Tambourine** · Exodus 15:20 · Mentioned in Exodus 15:20. · *0.3333333333333333 verses*
+- **Taskmaster** · Exodus 1:11 · Mentioned in Exodus 1:11. · *2 verses*
+- **Thigh** · Exodus 28:42 · Mentioned in Exodus 28:42. · *1.3333333333333333 verses*
+- **Thorns** · Exodus 22:6 · Mentioned in Exodus 22:6. · *0.3333333333333333 verses*<br><small>aliases: Thorn</small>
+- **Throne** · Exodus 11:5 · Mentioned in Exodus 11:5. · *0.6666666666666666 verses*
+- **Thumb** · Exodus 29:20 · Mentioned in Exodus 29:20. · *0.3333333333333333 verses*
+- **Thummim** · Exodus 28:30 · Mentioned in Exodus 28:30. · *0.3333333333333333 verses*
+- **Thunder** · Exodus 9:23 · Mentioned in Exodus 9:23. · *1.6666666666666667 verses*
+- **Timbrel** · Exodus 15:20 · Mentioned in Exodus 15:20. · *0.3333333333333333 verses*
+- **Tongs** · Exodus 25:38 · Mentioned in Exodus 25:38. · *0.3333333333333333 verses*
+- **Tongue** · Exodus 4:10 · Mentioned in Exodus 4:10. · *0.6666666666666666 verses*
+- **Tooth** · Exodus 21:24 · Mentioned in Exodus 21:24. · *0.6666666666666666 verses*<br><small>forms: Teeth</small>
+- **Topaz** · Exodus 28:17 · Mentioned in Exodus 28:17. · *0.6666666666666666 verses*
+- **Tree** · Exodus 9:25; Exodus 10:15 · Mentioned in Exodus 9:25. · *1.6666666666666667 verses*<br><small>aliases: Trees</small>
+- **Trumpet** · Exodus 19:13 · Mentioned in Exodus 19:13. · *1.3333333333333333 verses*
+- **Turban** · Exodus 28:4 · Mentioned in Exodus 28:4. · *1.6666666666666667 verses*
+- **Turquoise** · Exodus 28:18 · Mentioned in Exodus 28:18. · *0.6666666666666666 verses*
+- **Urim** · Exodus 28:30 · Mentioned in Exodus 28:30. · *0.3333333333333333 verses*
+- **Uzziel** · Exodus 6:18 · Named in Exodus 6:18. · *2 verses*
+- **Virgin** · Exodus 22:16 · Mentioned in Exodus 22:16. · *0.6666666666666666 verses*
+- **Wafers** · Exodus 16:31 · Mentioned in Exodus 16:31. · *0.6666666666666666 verses*
+- **Waist** · Exodus 12:11 · Mentioned in Exodus 12:11. · *0.6666666666666666 verses*
+- **Wall** · Exodus 14:22 · Mentioned in Exodus 14:22. · *0.6666666666666666 verses*
+- **Weaver** · Exodus 35:35 · Mentioned in Exodus 35:35. · *0.3333333333333333 verses*
+- **Wheat** · Exodus 9:32 · Mentioned in Exodus 9:32. · *1 verses*
+- **Wheel** · Exodus 14:25 · Mentioned in Exodus 14:25. · *0.3333333333333333 verses*
+- **Widow** · Exodus 22:22 · Mentioned in Exodus 22:22. · *0.6666666666666666 verses*
+- **Wind** · Exodus 10:13 · Mentioned in Exodus 10:13. · *1.3333333333333333 verses*
+- **Wine** · Exodus 29:40 · Mentioned in Exodus 29:40. · *0.3333333333333333 verses*
+- **Wise men** · Exodus 7:11 · Mentioned in Exodus 7:11. · *0.6666666666666666 verses*<br><small>forms: Magi</small>
+- **Womb** · Exodus 13:2 · Mentioned in Exodus 13:2. · *1.3333333333333333 verses*
+- **Worm** · Exodus 16:20 · Mentioned in Exodus 16:20. · *0.6666666666666666 verses*
+- **Worms** · Exodus 16:20 · Mentioned in Exodus 16:20. · *0.6666666666666666 verses*
+- **Wound** · Exodus 21:25 · Mentioned in Exodus 21:25. · *0.3333333333333333 verses*<br><small>forms: Wounds</small>
+- **Yeast** · Exodus 12:15 · Mentioned in Exodus 12:15. · *1.3333333333333333 verses*<br><small>aliases: Leaven</small>
+- **Zebulun** · Exodus 1:3 · Named in Exodus 1:3. · *1 verses*
+- **Zichri** · Exodus 6:21 · Named in Exodus 6:21. · *1 verses*
+- **Zithri** · Exodus 6:22 · Named in Exodus 6:22. · *1 verses*
+- **Zohar** · Exodus 6:15 · Named in Exodus 6:15. · *1 verses*
+
+### Near misses
+
+- **Noah, Noah's ark**: Noah is in Genesis; the ark in Exodus is the ark of the covenant (Exodus 25:10).
+- **Ten Commandments**: Exodus gives them (Exodus 20:1–17) but never uses that name; try the tablets of stone.
+- **Golden calf**: Exodus calls it a molded calf (Exodus 32:4); try "calf".
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Ezekiel.
+
+`ezekiel-anything` · Books of the Bible · 444 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 13 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 35 |
+| 🪙 Lost Coin (60) | 87 |
+| 💎 Hidden Treasure (85) | 308 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Jaaz-aniah. In his vision of the temple, Ezekiel saw Jaazaniah son of Shaphan standing among seventy elders, each with a censer in his hand (Ezekiel 8:11).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Blood** · Ezekiel 3:18 · Mentioned in Ezekiel 3:18. · *14.666666666666666 verses*
+- **Bones** · Ezekiel 6:5 · Mentioned in Ezekiel 6:5. · *4 verses*<br><small>aliases: Bone</small>
+- **Cubit** · Ezekiel 40:5 · Mentioned in Ezekiel 40:5. · *17.666666666666668 verses*
+- **Egypt** · Ezekiel 16:26; Ezekiel 17:15; Ezekiel 31:18 · Named in Ezekiel 16:26. · *43 verses*<br><small>aliases: Lower · forms: Proud, Rahab</small>
+- **Ezekiel** · Ezekiel 1:3 · A priest who saw visions by the river Chebar. · *2 verses*
+- **Face** · Ezekiel 1:6 · Mentioned in Ezekiel 1:6. · *20 verses*
+- **Gate** · Ezekiel 8:3 · Mentioned in Ezekiel 8:3. · *20.333333333333332 verses*
+- **Hand** · Ezekiel 1:3 · Mentioned in Ezekiel 1:3. · *34.666666666666664 verses*
+- **House** · Ezekiel 2:5 · Mentioned in Ezekiel 2:5. · *51.666666666666664 verses*
+- **Judah** · Ezekiel 4:6 · Named in Ezekiel 4:6. · *15 verses*<br><small>forms: Judas</small>
+- **Side** · Ezekiel 1:8 · Mentioned in Ezekiel 1:8. · *31.333333333333332 verses*
+- **Sword** · Ezekiel 5:1 · Mentioned in Ezekiel 5:1. · *26.333333333333332 verses*
+- **Wheel** · Ezekiel 1:15 · Mentioned in Ezekiel 1:15. · *5.666666666666667 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Altar** · Ezekiel 6:4 · Mentioned in Ezekiel 6:4. · *6.333333333333333 verses*
+- **Ammon** · Ezekiel 21:20 · Named in Ezekiel 21:20. · *6 verses*<br><small>forms: Ammonitess</small>
+- **Babylon** · Ezekiel 12:13 · Named in Ezekiel 12:13. · *15 verses*
+- **Bread** · Ezekiel 4:9 · Mentioned in Ezekiel 4:9. · *6.333333333333333 verses*
+- **Chaldea** · Ezekiel 1:3; Ezekiel 11:24 · Named in Ezekiel 1:3. · *8 verses*<br><small>aliases: Chaldean, Chaldeans · forms: Chaldaeans, Chaldees</small>
+- **Chebar** · Ezekiel 1:1 · Named in Ezekiel 1:1. · *8 verses*
+- **Cherub** · Ezekiel 9:3; Ezekiel 10:1 · Mentioned in Ezekiel 9:3. · *7.333333333333333 verses*<br><small>aliases: Cherubim, Cherubims</small>
+- **Door** · Ezekiel 8:3 · Mentioned in Ezekiel 8:3. · *9.333333333333334 verses*
+- **Eden** · Ezekiel 27:23; Ezekiel 36:35 · Named in Ezekiel 27:23. · *6 verses*<br><small>aliases: Garden of Eden</small>
+- **Edom** · Ezekiel 25:12 · Named in Ezekiel 25:12. · *6 verses*<br><small>forms: Esau</small>
+- **Eye** · Ezekiel 1:18 · Mentioned in Ezekiel 1:18. · *11.666666666666666 verses*
+- **Field** · Ezekiel 7:15 · Mentioned in Ezekiel 7:15. · *8.333333333333334 verses*
+- **Fire** · Ezekiel 1:4 · Mentioned in Ezekiel 1:4. · *14.666666666666666 verses*
+- **Flesh** · Ezekiel 4:14 · Mentioned in Ezekiel 4:14. · *6.666666666666667 verses*
+- **Gog** · Ezekiel 38:2 · Named in Ezekiel 38:2. · *8 verses*
+- **Head** · Ezekiel 1:22 · Mentioned in Ezekiel 1:22. · *10 verses*
+- **Heart** · Ezekiel 3:10 · Mentioned in Ezekiel 3:10. · *13 verses*
+- **Idol** · Ezekiel 6:4 · Mentioned in Ezekiel 6:4. · *12 verses*
+- **Jerusalem** · Ezekiel 4:1 · Named in Ezekiel 4:1. · *26 verses*
+- **Judge** · Ezekiel 7:3 · Mentioned in Ezekiel 7:3. · *6.666666666666667 verses*
+- **King** · Ezekiel 1:2 · Mentioned in Ezekiel 1:2. · *11 verses*
+- **Meat** · Ezekiel 4:10 · Mentioned in Ezekiel 4:10. · *8.666666666666666 verses*
+- **Mountain** · Ezekiel 6:2 · Mentioned in Ezekiel 6:2. · *12.666666666666666 verses*
+- **No** · Ezekiel 30:14 · Named in Ezekiel 30:14. · *9 verses*<br><small>forms: No Amon</small>
+- **Pharaoh** · Ezekiel 17:17 · Named in Ezekiel 17:17. · *12 verses*
+- **Priest** · Ezekiel 1:3 · Mentioned in Ezekiel 1:3. · *8 verses*
+- **Prince** · Ezekiel 7:27 · Mentioned in Ezekiel 7:27. · *13.666666666666666 verses*
+- **Reed** · Ezekiel 29:6; Ezekiel 42:16 · Mentioned in Ezekiel 29:6. · *6.666666666666667 verses*<br><small>aliases: Reeds</small>
+- **River** · Ezekiel 1:1 · Mentioned in Ezekiel 1:1. · *10.666666666666666 verses*
+- **Samaria** · Ezekiel 16:46 · Named in Ezekiel 16:46. · *6 verses*<br><small>forms: Samaritans, Samaritan</small>
+- **Sea** · Ezekiel 25:16 · Mentioned in Ezekiel 25:16. · *10 verses*
+- **Tree** · Ezekiel 6:13; Ezekiel 15:2 · Mentioned in Ezekiel 6:13. · *10.666666666666666 verses*<br><small>aliases: Trees</small>
+- **Tyre** · Ezekiel 26:2 · Named in Ezekiel 26:2. · *12 verses*<br><small>aliases: Tyrus</small>
+- **Wall** · Ezekiel 4:3 · Mentioned in Ezekiel 4:3. · *13 verses*
+- **Water** · Ezekiel 1:24 · Mentioned in Ezekiel 1:24. · *14 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Arm** · Ezekiel 4:7 · Mentioned in Ezekiel 4:7. · *3.3333333333333335 verses*
+- **Arvad** · Ezekiel 27:8 · Named in Ezekiel 27:8. · *2 verses*
+- **Asher** · Ezekiel 48:2 · Named in Ezekiel 48:2. · *3 verses*
+- **Asshur** · Ezekiel 27:23 · Named in Ezekiel 27:23. · *2 verses*<br><small>forms: Assur</small>
+- **Back** · Ezekiel 8:16 · Mentioned in Ezekiel 8:16. · *5.666666666666667 verses*
+- **Benjamin** · Ezekiel 48:22 · Named in Ezekiel 48:22. · *4 verses*
+- **Bronze** · Ezekiel 1:7 · Mentioned in Ezekiel 1:7. · *2.3333333333333335 verses*
+- **Bull** · Ezekiel 39:18 · Mentioned in Ezekiel 39:18. · *4.333333333333333 verses*<br><small>aliases: Bullock</small>
+- **Canaan** · Ezekiel 4:13; Ezekiel 16:3 · Named in Ezekiel 16:3. · *3 verses*<br><small>aliases: Gentile · forms: Chanaan, Glorious Land</small>
+- **Cedar** · Ezekiel 17:3 · Mentioned in Ezekiel 17:3. · *2.3333333333333335 verses*
+- **Cloud** · Ezekiel 1:4; Ezekiel 30:3 · Mentioned in Ezekiel 1:4. · *3.3333333333333335 verses*<br><small>aliases: Clouds</small>
+- **Damascus** · Ezekiel 27:18 · Named in Ezekiel 27:18. · *5 verses*<br><small>forms: Syria-damascus</small>
+- **Dan** · Ezekiel 27:19 · Named in Ezekiel 27:19. · *4 verses*<br><small>aliases: Vedan · forms: Dan Jaan, Laish, Leshem</small>
+- **Daniel** · Ezekiel 14:14 · Named in Ezekiel 14:14. · *3 verses*
+- **David** · Ezekiel 34:23 · Named in Ezekiel 34:23. · *4 verses*
+- **Dedan** · Ezekiel 25:13 · Named in Ezekiel 25:13. · *4 verses*<br><small>forms: Dedanim</small>
+- **Ear** · Ezekiel 3:10 · Mentioned in Ezekiel 3:10. · *3 verses*
+- **Elder** · Ezekiel 7:26 · Mentioned in Ezekiel 7:26. · *3.3333333333333335 verses*
+- **Elders** · Ezekiel 7:26 · Mentioned in Ezekiel 7:26. · *2.3333333333333335 verses*
+- **Ephah** · Ezekiel 45:10 · Mentioned in Ezekiel 45:10. · *2.6666666666666665 verses*
+- **Fat** · Ezekiel 34:3 · Mentioned in Ezekiel 34:3. · *2.6666666666666665 verses*
+- **Flour** · Ezekiel 16:13; Ezekiel 42:13 · Mentioned in Ezekiel 16:13. · *4.666666666666667 verses*<br><small>aliases: Meal</small>
+- **Foot** · Ezekiel 1:7 · Mentioned in Ezekiel 1:7. · *5.333333333333333 verses*<br><small>aliases: Feet</small>
+- **Gad** · Ezekiel 48:27 · Named in Ezekiel 48:27. · *3 verses*
+- **Garment** · Ezekiel 16:8 · Mentioned in Ezekiel 16:8. · *3 verses*
+- **Gold** · Ezekiel 7:19 · Mentioned in Ezekiel 7:19. · *2.3333333333333335 verses*
+- **Hamath** · Ezekiel 47:16 · Named in Ezekiel 47:16. · *4 verses*
+- **High place** · Ezekiel 6:3 · Mentioned in Ezekiel 6:3. · *3.3333333333333335 verses*
+- **Hill** · Ezekiel 6:3 · Mentioned in Ezekiel 6:3. · *2.6666666666666665 verses*
+- **Horse** · Ezekiel 17:15 · Mentioned in Ezekiel 17:15. · *4 verses*
+- **Image** · Ezekiel 6:4 · Mentioned in Ezekiel 6:4. · *3 verses*<br><small>forms: Statue</small>
+- **Island** · Ezekiel 26:15 · Mentioned in Ezekiel 26:15. · *2.6666666666666665 verses*<br><small>aliases: Isle</small>
+- **Issachar** · Ezekiel 48:25 · Named in Ezekiel 48:25. · *3 verses*
+- **Jacob** · Ezekiel 20:5 · Named in Ezekiel 20:5. · *4 verses*
+- **Joseph** · Ezekiel 37:16 · Named in Ezekiel 37:16. · *4 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Lamb** · Ezekiel 27:21 · Mentioned in Ezekiel 27:21. · *3.3333333333333335 verses*
+- **Lebanon** · Ezekiel 17:3 · Named in Ezekiel 17:3. · *5 verses*
+- **Levite** · Ezekiel 43:19 · Mentioned in Ezekiel 43:19. · *2.6666666666666665 verses*
+- **Linen** · Ezekiel 9:2 · Mentioned in Ezekiel 9:2. · *4 verses*
+- **Lion** · Ezekiel 1:10 · Mentioned in Ezekiel 1:10. · *3.3333333333333335 verses*
+- **Loins** · Ezekiel 1:27 · Mentioned in Ezekiel 1:27. · *2.3333333333333335 verses*
+- **Merchant** · Ezekiel 16:29 · Mentioned in Ezekiel 16:29. · *5.333333333333333 verses*
+- **Meshech** · Ezekiel 27:13; Ezekiel 32:26 · Named in Ezekiel 27:13. · *5 verses*<br><small>aliases: Meshech Tubal · forms: Mesech</small>
+- **Moab** · Ezekiel 25:8 · Named in Ezekiel 25:8. · *3 verses*
+- **Mount Seir** · Ezekiel 25:8; Ezekiel 35:2 · Named in Ezekiel 25:8. · *4 verses*
+- **Mouth** · Ezekiel 2:8 · Mentioned in Ezekiel 2:8. · *5.666666666666667 verses*
+- **Naphtali** · Ezekiel 48:3 · Named in Ezekiel 48:3. · *3 verses*
+- **Nebuchadnezzar** · Ezekiel 26:7 · Named in Ezekiel 26:7. · *4 verses*
+- **Net** · Ezekiel 12:13 · Mentioned in Ezekiel 12:13. · *2.3333333333333335 verses*
+- **Oil** · Ezekiel 16:9 · Mentioned in Ezekiel 16:9. · *5 verses*<br><small>forms: Olive oil</small>
+- **Palm tree** · Ezekiel 40:16 · Mentioned in Ezekiel 40:16. · *3.6666666666666665 verses*
+- **Pasture** · Ezekiel 27:28 · Mentioned in Ezekiel 27:28. · *2.6666666666666665 verses*<br><small>forms: Meadow</small>
+- **Pestilence** · Ezekiel 5:12 · Mentioned in Ezekiel 5:12. · *3.6666666666666665 verses*
+- **Philistine** · Ezekiel 16:57 · Named in Ezekiel 16:57. · *4 verses*<br><small>aliases: Philistines · forms: Philistia, Palestina, Palestine</small>
+- **Porch** · Ezekiel 8:16 · Mentioned in Ezekiel 8:16. · *5 verses*<br><small>forms: Portico</small>
+- **Prophet** · Ezekiel 2:5 · Mentioned in Ezekiel 2:5. · *5 verses*
+- **Put** · Ezekiel 27:10 · Named in Ezekiel 27:10. · *4 verses*<br><small>aliases: Phut · forms: Libyans, Pul</small>
+- **Ram** · Ezekiel 4:2 · Mentioned in Ezekiel 4:2. · *4.666666666666667 verses*
+- **Reuben** · Ezekiel 48:6 · Named in Ezekiel 48:6. · *3 verses*
+- **Rod** · Ezekiel 7:10 · Mentioned in Ezekiel 7:10. · *2.6666666666666665 verses*
+- **Rosh** · Ezekiel 38:2 · Named in Ezekiel 38:2. · *3 verses*
+- **Sabbath** · Ezekiel 20:12 · Mentioned in Ezekiel 20:12. · *5 verses*
+- **Servant** · Ezekiel 28:25 · Mentioned in Ezekiel 28:25. · *2.3333333333333335 verses*
+- **Sheba** · Ezekiel 23:42; Ezekiel 27:22 · Named in Ezekiel 27:22. · *4 verses*<br><small>aliases: Sabeans · forms: Seba</small>
+- **Sheep** · Ezekiel 34:2 · Mentioned in Ezekiel 34:2. · *4.333333333333333 verses*
+- **Shepherd** · Ezekiel 34:2 · Mentioned in Ezekiel 34:2. · *3.3333333333333335 verses*
+- **Shoulder** · Ezekiel 12:6 · Mentioned in Ezekiel 12:6. · *2.3333333333333335 verses*
+- **Sidon** · Ezekiel 27:8 · Named in Ezekiel 27:8. · *3 verses*<br><small>aliases: Zidon · forms: Great Sidon</small>
+- **Silver** · Ezekiel 7:19 · Mentioned in Ezekiel 7:19. · *3 verses*
+- **Simeon** · Ezekiel 48:24 · Named in Ezekiel 48:24. · *3 verses*
+- **Sky** · Ezekiel 1:22; Ezekiel 8:3 · Mentioned in Ezekiel 1:22. · *4 verses*<br><small>aliases: Firmament, Expanse</small>
+- **Sodom** · Ezekiel 16:46 · Named in Ezekiel 16:46. · *6 verses*<br><small>forms: Sodoma</small>
+- **Stairs** · Ezekiel 40:6 · Mentioned in Ezekiel 40:6. · *2.6666666666666665 verses*<br><small>aliases: Steps · forms: Staircase</small>
+- **Stone** · Ezekiel 1:26 · Mentioned in Ezekiel 1:26. · *4 verses*
+- **Stranger** · Ezekiel 7:21; Ezekiel 22:7 · Mentioned in Ezekiel 7:21. · *4.666666666666667 verses*<br><small>aliases: Foreigner · forms: Sojourner</small>
+- **Stronghold** · Ezekiel 4:2; Ezekiel 19:9 · Mentioned in Ezekiel 4:2. · *2.3333333333333335 verses*<br><small>aliases: Fort · forms: Fortress</small>
+- **Table** · Ezekiel 23:41 · Mentioned in Ezekiel 23:41. · *3 verses*
+- **Tarshish** · Ezekiel 27:12 · Named in Ezekiel 27:12. · *3 verses*<br><small>forms: Tharshish</small>
+- **Temple** · Ezekiel 8:16 · Mentioned in Ezekiel 8:16. · *4.333333333333333 verses*
+- **Threshold** · Ezekiel 9:3 · Mentioned in Ezekiel 9:3. · *3.6666666666666665 verses*
+- **Tubal** · Ezekiel 27:13 · Named in Ezekiel 27:13. · *5 verses*
+- **Valley** · Ezekiel 6:3 · Mentioned in Ezekiel 6:3. · *3.6666666666666665 verses*<br><small>forms: Vale</small>
+- **Wilderness** · Ezekiel 6:14 · Mentioned in Ezekiel 6:14. · *4.666666666666667 verses*
+- **Wind** · Ezekiel 1:4 · Mentioned in Ezekiel 1:4. · *4 verses*
+- **Window** · Ezekiel 40:16 · Mentioned in Ezekiel 40:16. · *2.6666666666666665 verses*
+- **Zadok** · Ezekiel 40:46 · Named in Ezekiel 40:46. · *4 verses*<br><small>forms: Sadoc</small>
+- **Zebulun** · Ezekiel 48:26 · Named in Ezekiel 48:26. · *3 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Abraham** · Ezekiel 33:24 · Named in Ezekiel 33:24. · *1 verses*<br><small>forms: Abram</small>
+- **Agate** · Ezekiel 27:16 · Mentioned in Ezekiel 27:16. · *0.3333333333333333 verses*
+- **Ambassador** · Ezekiel 17:15 · Mentioned in Ezekiel 17:15. · *0.3333333333333333 verses*
+- **Ankle** · Ezekiel 47:3 · Mentioned in Ezekiel 47:3. · *0.3333333333333333 verses*
+- **Arabah** · Ezekiel 47:8 · Named in Ezekiel 47:8. · *1 verses*
+- **Arabia** · Ezekiel 27:21 · Named in Ezekiel 27:21. · *1 verses*
+- **Armholes** · Ezekiel 13:18 · Mentioned in Ezekiel 13:18. · *0.3333333333333333 verses*<br><small>forms: Arm pit</small>
+- **Armour** · Ezekiel 38:4 · Mentioned in Ezekiel 38:4. · *0.3333333333333333 verses*<br><small>aliases: Armor</small>
+- **Arrow** · Ezekiel 5:16 · Mentioned in Ezekiel 5:16. · *1.3333333333333333 verses*
+- **Ashes** · Ezekiel 27:30 · Mentioned in Ezekiel 27:30. · *0.6666666666666666 verses*
+- **Assyria** · Ezekiel 23:5; Ezekiel 23:7 · Named in Ezekiel 23:5. · *1 verses*<br><small>forms: Assur</small>
+- **Axe** · Ezekiel 26:9 · Mentioned in Ezekiel 26:9. · *0.3333333333333333 verses*<br><small>aliases: Ax</small>
+- **Baal** · Ezekiel 25:9 · Mentioned in Ezekiel 25:9. · *0.3333333333333333 verses*
+- **Baal-meon** · Ezekiel 25:9 · Named in Ezekiel 25:9. · *1 verses*<br><small>forms: Beth Baal Meon</small>
+- **Badger** · Ezekiel 16:10 · Mentioned in Ezekiel 16:10. · *0.3333333333333333 verses*
+- **Balances** · Ezekiel 5:1; Ezekiel 29:4 · Mentioned in Ezekiel 5:1. · *1 verses*<br><small>aliases: Scales</small>
+- **Balm** · Ezekiel 27:17 · Mentioned in Ezekiel 27:17. · *0.3333333333333333 verses*
+- **Bamah** · Ezekiel 20:29 · Named in Ezekiel 20:29. · *1 verses*
+- **Barley** · Ezekiel 4:9 · Mentioned in Ezekiel 4:9. · *1.3333333333333333 verses*
+- **Bashan** · Ezekiel 27:6 · Named in Ezekiel 27:6. · *2 verses*
+- **Bath** · Ezekiel 45:10; Ezekiel 45:14 · Mentioned in Ezekiel 45:10. · *1 verses*<br><small>aliases: Baths</small>
+- **Battering ram** · Ezekiel 4:2 · Mentioned in Ezekiel 4:2. · *0.6666666666666666 verses*
+- **Beans** · Ezekiel 4:9 · Mentioned in Ezekiel 4:9. · *0.3333333333333333 verses*
+- **Beard** · Ezekiel 5:1 · Mentioned in Ezekiel 5:1. · *0.3333333333333333 verses*
+- **Bed** · Ezekiel 23:17 · Mentioned in Ezekiel 23:17. · *1 verses*
+- **Belly** · Ezekiel 3:3 · Mentioned in Ezekiel 3:3. · *0.6666666666666666 verses*<br><small>forms: Stomach</small>
+- **Belt** · Ezekiel 23:15 · Mentioned in Ezekiel 23:15. · *0.3333333333333333 verses*
+- **Benaiah** · Ezekiel 11:1 · Named in Ezekiel 11:1. · *2 verses*
+- **Berothah** · Ezekiel 47:16 · Named in Ezekiel 47:16. · *1 verses*
+- **Beryl** · Ezekiel 1:16 · Mentioned in Ezekiel 1:16. · *1 verses*
+- **Beth-jeshimoth** · Ezekiel 25:9 · Named in Ezekiel 25:9. · *1 verses*<br><small>forms: Beth Jesimoth</small>
+- **Blanket** · Ezekiel 16:4 · Mentioned in Ezekiel 16:4. · *0.6666666666666666 verses*
+- **Blue** · Ezekiel 23:6 · Mentioned in Ezekiel 23:6. · *1 verses*
+- **Boil** · Ezekiel 24:5 · Mentioned in Ezekiel 24:5. · *1.3333333333333333 verses*<br><small>forms: Boils</small>
+- **Bonnet** · Ezekiel 44:18 · Mentioned in Ezekiel 44:18. · *0.3333333333333333 verses*
+- **Book** · Ezekiel 2:9 · Mentioned in Ezekiel 2:9. · *0.3333333333333333 verses*
+- **Bowels** · Ezekiel 3:3 · Mentioned in Ezekiel 3:3. · *0.6666666666666666 verses*
+- **Bracelets** · Ezekiel 16:11 · Mentioned in Ezekiel 16:11. · *0.6666666666666666 verses*<br><small>aliases: Bracelet</small>
+- **Brass** · Ezekiel 1:7 · Mentioned in Ezekiel 1:7. · *2 verses*
+- **Breast** · Ezekiel 16:7 · Mentioned in Ezekiel 16:7. · *1.6666666666666667 verses*
+- **Breeches** · Ezekiel 44:18 · Mentioned in Ezekiel 44:18. · *0.3333333333333333 verses*<br><small>forms: Undergarments</small>
+- **Briers** · Ezekiel 2:6 · Mentioned in Ezekiel 2:6. · *0.3333333333333333 verses*
+- **Brimstone** · Ezekiel 38:22 · Mentioned in Ezekiel 38:22. · *0.3333333333333333 verses*<br><small>aliases: Sulfur</small>
+- **Brook** · Ezekiel 47:19 · Mentioned in Ezekiel 47:19. · *0.6666666666666666 verses*<br><small>forms: Stream</small>
+- **Broth** · Ezekiel 24:10 · Mentioned in Ezekiel 24:10. · *0.3333333333333333 verses*
+- **Builder** · Ezekiel 27:4 · Mentioned in Ezekiel 27:4. · *0.3333333333333333 verses*
+- **Cakes** · Ezekiel 4:12 · Mentioned in Ezekiel 4:12. · *0.3333333333333333 verses*<br><small>aliases: Cake</small>
+- **Calamus** · Ezekiel 27:19 · Mentioned in Ezekiel 27:19. · *0.3333333333333333 verses*
+- **Calf** · Ezekiel 1:7 · Mentioned in Ezekiel 1:7. · *0.3333333333333333 verses*
+- **Camel** · Ezekiel 25:5 · Mentioned in Ezekiel 25:5. · *0.3333333333333333 verses*
+- **Canneh** · Ezekiel 27:23 · Named in Ezekiel 27:23. · *1 verses*
+- **Captain** · Ezekiel 21:22 · Mentioned in Ezekiel 21:22. · *1.3333333333333333 verses*
+- **Carbuncle** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Cassia** · Ezekiel 27:19 · Mentioned in Ezekiel 27:19. · *0.3333333333333333 verses*
+- **Cattle** · Ezekiel 34:17 · Mentioned in Ezekiel 34:17. · *1.6666666666666667 verses*
+- **Cauldron** · Ezekiel 11:3 · Mentioned in Ezekiel 11:3. · *2 verses*
+- **Cave** · Ezekiel 33:27 · Mentioned in Ezekiel 33:27. · *0.3333333333333333 verses*<br><small>forms: Cavern</small>
+- **Censer** · Ezekiel 8:11 · Mentioned in Ezekiel 8:11. · *0.3333333333333333 verses*
+- **Chain** · Ezekiel 7:23 · Mentioned in Ezekiel 7:23. · *1.3333333333333333 verses*
+- **Chains** · Ezekiel 7:23 · Mentioned in Ezekiel 7:23. · *1 verses*<br><small>forms: Necklace</small>
+- **Chariot** · Ezekiel 23:24 · Mentioned in Ezekiel 23:24. · *1.6666666666666667 verses*
+- **Charioteer** · Ezekiel 39:20 · Mentioned in Ezekiel 39:20. · *0.3333333333333333 verses*
+- **Chest** · Ezekiel 27:24 · Mentioned in Ezekiel 27:24. · *0.3333333333333333 verses*
+- **Chief** · Ezekiel 27:22 · Mentioned in Ezekiel 27:22. · *1.3333333333333333 verses*
+- **Chilmad** · Ezekiel 27:23 · Named in Ezekiel 27:23. · *1 verses*
+- **Chittim** · Ezekiel 27:6 · Named in Ezekiel 27:6. · *1 verses*<br><small>forms: Cyprus</small>
+- **Chrysolite** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Coal** · Ezekiel 1:13 · Mentioned in Ezekiel 1:13. · *1 verses*<br><small>aliases: Coals · forms: Live coal</small>
+- **Cor** · Ezekiel 45:14 · Mentioned in Ezekiel 45:14. · *0.3333333333333333 verses*
+- **Coral** · Ezekiel 27:16 · Mentioned in Ezekiel 27:16. · *0.3333333333333333 verses*
+- **Cord** · Ezekiel 27:24 · Mentioned in Ezekiel 27:24. · *0.3333333333333333 verses*
+- **Crown** · Ezekiel 16:12 · Mentioned in Ezekiel 16:12. · *1 verses*
+- **Crystal** · Ezekiel 1:22 · Mentioned in Ezekiel 1:22. · *0.3333333333333333 verses*
+- **Cup** · Ezekiel 23:31 · Mentioned in Ezekiel 23:31. · *1 verses*
+- **Cush** · Ezekiel 30:9; Ezekiel 38:5 · Named in Ezekiel 38:5. · *1 verses*
+- **Cypress** · Ezekiel 27:5 · Mentioned in Ezekiel 27:5. · *1 verses*
+- **Darkness** · Ezekiel 32:8 · Mentioned in Ezekiel 32:8. · *0.3333333333333333 verses*
+- **Desert** · Ezekiel 7:27 · Mentioned in Ezekiel 7:27. · *1 verses*
+- **Diadem** · Ezekiel 21:26 · Mentioned in Ezekiel 21:26. · *0.3333333333333333 verses*
+- **Diamond** · Ezekiel 3:9 · Mentioned in Ezekiel 3:9. · *0.6666666666666666 verses*
+- **Diblah** · Ezekiel 6:14 · Named in Ezekiel 6:14. · *1 verses*<br><small>aliases: Diblath · forms: Riblah</small>
+- **Donkey** · Ezekiel 23:20 · Mentioned in Ezekiel 23:20. · *0.3333333333333333 verses*<br><small>aliases: Ass</small>
+- **Dough** · Ezekiel 44:30 · Mentioned in Ezekiel 44:30. · *0.3333333333333333 verses*
+- **Dove** · Ezekiel 7:16 · Mentioned in Ezekiel 7:16. · *0.3333333333333333 verses*
+- **Dragon** · Ezekiel 29:3 · Mentioned in Ezekiel 29:3. · *0.3333333333333333 verses*
+- **Dust** · Ezekiel 24:7 · Mentioned in Ezekiel 24:7. · *1.6666666666666667 verses*
+- **Eagle** · Ezekiel 1:10 · Mentioned in Ezekiel 1:10. · *1.3333333333333333 verses*
+- **Earrings** · Ezekiel 16:12 · Mentioned in Ezekiel 16:12. · *0.3333333333333333 verses*<br><small>aliases: Earring</small>
+- **Earthquake** · Ezekiel 37:7 · Mentioned in Ezekiel 37:7. · *0.3333333333333333 verses*
+- **East Gate** · Ezekiel 11:1 · Named in Ezekiel 11:1. · *0 verses*
+- **East wind** · Ezekiel 17:10 · Mentioned in Ezekiel 17:10. · *1 verses*
+- **Ebony** · Ezekiel 27:15 · Mentioned in Ezekiel 27:15. · *0.3333333333333333 verses*
+- **Elam** · Ezekiel 32:24 · Named in Ezekiel 32:24. · *2 verses*
+- **Elbow** · Ezekiel 13:18 · Mentioned in Ezekiel 13:18. · *0.3333333333333333 verses*
+- **Elishah** · Ezekiel 27:7 · Named in Ezekiel 27:7. · *1 verses*
+- **Embroidered work** · Ezekiel 16:10 · Mentioned in Ezekiel 16:10. · *1.6666666666666667 verses*<br><small>forms: Embroidery</small>
+- **Emerald** · Ezekiel 27:16 · Mentioned in Ezekiel 27:16. · *0.6666666666666666 verses*
+- **Eneglaim** · Ezekiel 47:10 · Named in Ezekiel 47:10. · *0 verses*
+- **Engedi** · Ezekiel 47:10 · Named in Ezekiel 47:10. · *0 verses*
+- **Fatherless** · Ezekiel 22:7 · Mentioned in Ezekiel 22:7. · *0.3333333333333333 verses*<br><small>forms: Orphan</small>
+- **Fine flour** · Ezekiel 16:13 · Mentioned in Ezekiel 16:13. · *1 verses*
+- **Fine linen** · Ezekiel 16:10 · Mentioned in Ezekiel 16:10. · *1.3333333333333333 verses*
+- **Fir** · Ezekiel 27:5 · Mentioned in Ezekiel 27:5. · *1.3333333333333333 verses*
+- **Firstfruits** · Ezekiel 20:40 · Mentioned in Ezekiel 20:40. · *1 verses*<br><small>aliases: First fruits</small>
+- **Fish** · Ezekiel 29:4 · Mentioned in Ezekiel 29:4. · *1.6666666666666667 verses*
+- **Fishermen** · Ezekiel 47:10 · Mentioned in Ezekiel 47:10. · *0.3333333333333333 verses*<br><small>aliases: Fishers · forms: Fisherman</small>
+- **Flax** · Ezekiel 40:3 · Mentioned in Ezekiel 40:3. · *0.3333333333333333 verses*
+- **Flint** · Ezekiel 3:9 · Mentioned in Ezekiel 3:9. · *0.3333333333333333 verses*
+- **Flood** · Ezekiel 31:15 · Mentioned in Ezekiel 31:15. · *0.3333333333333333 verses*
+- **Forehead** · Ezekiel 3:8 · Mentioned in Ezekiel 3:8. · *1.3333333333333333 verses*
+- **Forest** · Ezekiel 15:2 · Mentioned in Ezekiel 15:2. · *2 verses*
+- **Foundation** · Ezekiel 13:14 · Mentioned in Ezekiel 13:14. · *1 verses*
+- **Fox** · Ezekiel 13:4 · Mentioned in Ezekiel 13:4. · *0.3333333333333333 verses*
+- **Furnace** · Ezekiel 22:18 · Mentioned in Ezekiel 22:18. · *1 verses*
+- **Gammadim** · Ezekiel 27:11 · Named in Ezekiel 27:11. · *1 verses*<br><small>aliases: Gammadims</small>
+- **Gebal** · Ezekiel 27:9 · Named in Ezekiel 27:9. · *1 verses*
+- **Gerah** · Ezekiel 45:12 · Mentioned in Ezekiel 45:12. · *0.3333333333333333 verses*
+- **Gilead** · Ezekiel 47:18 · Named in Ezekiel 47:18. · *1 verses*
+- **Girdle** · Ezekiel 23:15 · Mentioned in Ezekiel 23:15. · *0.3333333333333333 verses*
+- **Goat** · Ezekiel 27:21 · Mentioned in Ezekiel 27:21. · *2 verses*
+- **Gomer** · Ezekiel 38:6 · Named in Ezekiel 38:6. · *1 verses*
+- **Governor** · Ezekiel 23:6 · Mentioned in Ezekiel 23:6. · *1 verses*
+- **Grain** · Ezekiel 36:29 · Mentioned in Ezekiel 36:29. · *0.3333333333333333 verses*<br><small>aliases: Corn</small>
+- **Grapes** · Ezekiel 18:2 · Mentioned in Ezekiel 18:2. · *0.3333333333333333 verses*
+- **Great Sea** · Ezekiel 47:10 · Named in Ezekiel 47:10. · *0 verses*<br><small>forms: Western Sea</small>
+- **Guard** · Ezekiel 38:7 · Mentioned in Ezekiel 38:7. · *0.3333333333333333 verses*
+- **Hailstones** · Ezekiel 13:11 · Mentioned in Ezekiel 13:11. · *1 verses*
+- **Hair** · Ezekiel 5:1 · Mentioned in Ezekiel 5:1. · *1 verses*
+- **Hamonah** · Ezekiel 39:16 · Named in Ezekiel 39:16. · *1 verses*
+- **Haran** · Ezekiel 27:23 · Named in Ezekiel 27:23. · *1 verses*<br><small>forms: Charran</small>
+- **Harp** · Ezekiel 26:13 · Mentioned in Ezekiel 26:13. · *0.3333333333333333 verses*
+- **Hauran** · Ezekiel 47:16 · Named in Ezekiel 47:16. · *2 verses*
+- **Hazar-enan** · Ezekiel 47:17 · Named in Ezekiel 47:17. · *2 verses*<br><small>aliases: Hazar-enon</small>
+- **Hazer-hatticon** · Ezekiel 47:16 · Named in Ezekiel 47:16. · *1 verses*<br><small>aliases: Hazar Hatticon</small>
+- **Headdress** · Ezekiel 24:17 · Mentioned in Ezekiel 24:17. · *0.3333333333333333 verses*<br><small>forms: Headband</small>
+- **Hedge** · Ezekiel 13:5 · Mentioned in Ezekiel 13:5. · *0.6666666666666666 verses*<br><small>forms: Fence</small>
+- **Helbon** · Ezekiel 27:18 · Named in Ezekiel 27:18. · *1 verses*
+- **Helmet** · Ezekiel 23:24 · Mentioned in Ezekiel 23:24. · *1 verses*
+- **Hethlon** · Ezekiel 47:15 · Named in Ezekiel 47:15. · *2 verses*
+- **Hin** · Ezekiel 4:11 · Mentioned in Ezekiel 4:11. · *2 verses*
+- **Holy Place** · Ezekiel 42:14 · Named in Ezekiel 42:14. · *0 verses*
+- **Homer** · Ezekiel 45:11 · Mentioned in Ezekiel 45:11. · *1 verses*
+- **Honey** · Ezekiel 3:3 · Mentioned in Ezekiel 3:3. · *2 verses*
+- **Hook** · Ezekiel 19:4 · Mentioned in Ezekiel 19:4. · *1.6666666666666667 verses*<br><small>forms: Fishhook</small>
+- **Horn** · Ezekiel 27:15 · Mentioned in Ezekiel 27:15. · *1.6666666666666667 verses*
+- **Iron** · Ezekiel 4:3 · Mentioned in Ezekiel 4:3. · *1.6666666666666667 verses*
+- **Jasper** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Javan** · Ezekiel 27:13 · Named in Ezekiel 27:13. · *2 verses*
+- **Jaw** · Ezekiel 29:4 · Mentioned in Ezekiel 29:4. · *0.6666666666666666 verses*<br><small>forms: Jawbone</small>
+- **Jehoiachin** · Ezekiel 1:2 · Named in Ezekiel 1:2. · *1 verses*<br><small>forms: Jeconiah, Coniah, Jechoniah, Jechonias</small>
+- **Job** · Ezekiel 14:14 · Named in Ezekiel 14:14. · *2 verses*
+- **Jordan** · Ezekiel 47:18 · Named in Ezekiel 47:18. · *1 verses*
+- **Kedar** · Ezekiel 27:21 · Named in Ezekiel 27:21. · *1 verses*
+- **Keeper** · Ezekiel 40:45 · Mentioned in Ezekiel 40:45. · *1.3333333333333333 verses*
+- **Kiriathaim** · Ezekiel 25:9 · Named in Ezekiel 25:9. · *1 verses*<br><small>forms: Kirjathaim</small>
+- **Knee** · Ezekiel 7:17 · Mentioned in Ezekiel 7:17. · *1 verses*
+- **Knife** · Ezekiel 5:1 · Mentioned in Ezekiel 5:1. · *0.6666666666666666 verses*
+- **Koa** · Ezekiel 23:23 · Named in Ezekiel 23:23. · *1 verses*
+- **Lamp** · Ezekiel 1:13 · Mentioned in Ezekiel 1:13. · *0.3333333333333333 verses*
+- **Leather** · Ezekiel 16:10 · Mentioned in Ezekiel 16:10. · *0.3333333333333333 verses*
+- **Lentils** · Ezekiel 4:9 · Mentioned in Ezekiel 4:9. · *0.3333333333333333 verses*
+- **Levi** · Ezekiel 40:46 · Named in Ezekiel 40:46. · *2 verses*
+- **Libya** · Ezekiel 30:5 · Named in Ezekiel 30:5. · *2 verses*<br><small>forms: Lubim</small>
+- **Lightning** · Ezekiel 1:4 · Mentioned in Ezekiel 1:4. · *2 verses*
+- **Lips** · Ezekiel 24:17 · Mentioned in Ezekiel 24:17. · *1 verses*<br><small>aliases: Lip</small>
+- **Liver** · Ezekiel 21:21 · Mentioned in Ezekiel 21:21. · *0.3333333333333333 verses*
+- **Lock** · Ezekiel 8:3 · Mentioned in Ezekiel 8:3. · *0.6666666666666666 verses*
+- **Lodge** · Ezekiel 40:7 · Mentioned in Ezekiel 40:7. · *2 verses*<br><small>forms: Hut, Cottage</small>
+- **Lud** · Ezekiel 27:10 · Named in Ezekiel 27:10. · *2 verses*<br><small>forms: Ludim</small>
+- **Lydia** · Ezekiel 30:5 · Named in Ezekiel 30:5. · *1 verses*
+- **Magog** · Ezekiel 38:2 · Named in Ezekiel 38:2. · *2 verses*
+- **Manasseh** · Ezekiel 48:4 · Named in Ezekiel 48:4. · *2 verses*<br><small>forms: Manasses</small>
+- **Mariner** · Ezekiel 27:8 · Mentioned in Ezekiel 27:8. · *1.3333333333333333 verses*<br><small>forms: Sailor</small>
+- **Mark** · Ezekiel 21:19 · Named in Ezekiel 21:19. · *1 verses*<br><small>forms: John Mark</small>
+- **Market** · Ezekiel 27:13 · Mentioned in Ezekiel 27:13. · *1.6666666666666667 verses*<br><small>forms: Marketplace</small>
+- **Marsh** · Ezekiel 47:11 · Mentioned in Ezekiel 47:11. · *0.3333333333333333 verses*<br><small>aliases: Swamp · forms: Fen</small>
+- **Memphis** · Ezekiel 30:13 · Named in Ezekiel 30:13. · *2 verses*<br><small>aliases: Noph</small>
+- **Meribath Kadesh** · Ezekiel 48:28 · Named in Ezekiel 48:28. · *1 verses*<br><small>aliases: Waters of Meribath-kadesh · forms: Meribah, Meribah Kadesh, Waters of Meribah-kadesh</small>
+- **Messenger** · Ezekiel 23:16 · Mentioned in Ezekiel 23:16. · *1 verses*
+- **Milk** · Ezekiel 20:6 · Mentioned in Ezekiel 20:6. · *1 verses*
+- **Millet** · Ezekiel 4:9 · Mentioned in Ezekiel 4:9. · *0.3333333333333333 verses*
+- **Mina** · Ezekiel 45:12 · Mentioned in Ezekiel 45:12. · *0.3333333333333333 verses*<br><small>aliases: Maneh · forms: Minas</small>
+- **Minnith** · Ezekiel 27:17 · Named in Ezekiel 27:17. · *1 verses*
+- **Moon** · Ezekiel 32:7 · Mentioned in Ezekiel 32:7. · *1.6666666666666667 verses*
+- **Most Holy Place** · Ezekiel 41:4 · Named in Ezekiel 41:4. · *0 verses*<br><small>aliases: Most Holy · forms: Holy Sanctuary, Holiest, Holiest of All, Holy of Holies</small>
+- **Mound** · Ezekiel 4:2 · Mentioned in Ezekiel 4:2. · *1.3333333333333333 verses*<br><small>forms: Siege works</small>
+- **Mule** · Ezekiel 27:14 · Mentioned in Ezekiel 27:14. · *0.3333333333333333 verses*
+- **Mute** · Ezekiel 3:26 · Mentioned in Ezekiel 3:26. · *1 verses*<br><small>aliases: Dumb</small>
+- **Navel** · Ezekiel 16:4 · Mentioned in Ezekiel 16:4. · *0.3333333333333333 verses*
+- **Neck** · Ezekiel 16:11 · Mentioned in Ezekiel 16:11. · *0.6666666666666666 verses*
+- **New moon** · Ezekiel 45:17 · Mentioned in Ezekiel 45:17. · *1.3333333333333333 verses*
+- **Noah** · Ezekiel 14:14 · Named in Ezekiel 14:14. · *2 verses*
+- **Nose** · Ezekiel 8:17 · Mentioned in Ezekiel 8:17. · *1.3333333333333333 verses*
+- **Nostrils** · Ezekiel 38:18 · Mentioned in Ezekiel 38:18. · *0.3333333333333333 verses*
+- **Oak** · Ezekiel 6:13 · Mentioned in Ezekiel 6:13. · *0.6666666666666666 verses*
+- **Oar** · Ezekiel 27:6 · Mentioned in Ezekiel 27:6. · *0.6666666666666666 verses*
+- **Onyx** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Ox** · Ezekiel 1:10 · Mentioned in Ezekiel 1:10. · *0.3333333333333333 verses*
+- **Palace** · Ezekiel 19:7 · Mentioned in Ezekiel 19:7. · *0.6666666666666666 verses*
+- **Pan** · Ezekiel 4:3 · Mentioned in Ezekiel 4:3. · *0.3333333333333333 verses*
+- **Paralyzed** · Ezekiel 29:7 · Mentioned in Ezekiel 29:7. · *0.3333333333333333 verses*<br><small>forms: Palsy, Paralysis, Paralytic</small>
+- **Passover** · Ezekiel 45:21 · Mentioned in Ezekiel 45:21. · *0.3333333333333333 verses*
+- **Pathros** · Ezekiel 29:14 · Named in Ezekiel 29:14. · *2 verses*
+- **Pavement** · Ezekiel 40:17 · Mentioned in Ezekiel 40:17. · *1 verses*
+- **Pekod** · Ezekiel 23:23 · Named in Ezekiel 23:23. · *1 verses*
+- **Pelatiah** · Ezekiel 11:1 · Named in Ezekiel 11:1. · *2 verses*
+- **Persia** · Ezekiel 27:10 · Named in Ezekiel 27:10. · *2 verses*
+- **Pi-beseth** · Ezekiel 30:17 · Named in Ezekiel 30:17. · *1 verses*
+- **Pillar** · Ezekiel 26:11 · Mentioned in Ezekiel 26:11. · *1 verses*
+- **Pillow** · Ezekiel 13:18 · Mentioned in Ezekiel 13:18. · *0.6666666666666666 verses*
+- **Pipe** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Pot** · Ezekiel 24:3 · Mentioned in Ezekiel 24:3. · *0.6666666666666666 verses*
+- **Purple** · Ezekiel 27:7 · Mentioned in Ezekiel 27:7. · *0.6666666666666666 verses*
+- **Raamah** · Ezekiel 27:22 · Named in Ezekiel 27:22. · *1 verses*
+- **Rabbah** · Ezekiel 21:20 · Named in Ezekiel 21:20. · *2 verses*<br><small>aliases: Rabbath</small>
+- **Raiment** · Ezekiel 16:13 · Mentioned in Ezekiel 16:13. · *0.3333333333333333 verses*
+- **Rain** · Ezekiel 1:28 · Mentioned in Ezekiel 1:28. · *0.6666666666666666 verses*
+- **Rainbow** · Ezekiel 1:28 · Mentioned in Ezekiel 1:28. · *0.3333333333333333 verses*
+- **Razor** · Ezekiel 5:1 · Mentioned in Ezekiel 5:1. · *0.3333333333333333 verses*
+- **Ring** · Ezekiel 1:18 · Mentioned in Ezekiel 1:18. · *0.6666666666666666 verses*
+- **Robe** · Ezekiel 5:3 · Mentioned in Ezekiel 5:3. · *0.6666666666666666 verses*
+- **Rock** · Ezekiel 24:7 · Mentioned in Ezekiel 24:7. · *1.3333333333333333 verses*
+- **Roof** · Ezekiel 3:26 · Mentioned in Ezekiel 3:26. · *0.6666666666666666 verses*<br><small>forms: Housetop</small>
+- **Rope** · Ezekiel 3:25 · Mentioned in Ezekiel 3:25. · *0.6666666666666666 verses*
+- **Ruby** · Ezekiel 27:16 · Mentioned in Ezekiel 27:16. · *0.6666666666666666 verses*<br><small>aliases: Rubies</small>
+- **Sackcloth** · Ezekiel 7:18 · Mentioned in Ezekiel 7:18. · *0.6666666666666666 verses*
+- **Salt** · Ezekiel 43:24 · Mentioned in Ezekiel 43:24. · *0.6666666666666666 verses*
+- **Sandals** · Ezekiel 16:10 · Mentioned in Ezekiel 16:10. · *1 verses*<br><small>aliases: Sandal</small>
+- **Sapphire** · Ezekiel 1:26 · Mentioned in Ezekiel 1:26. · *1 verses*
+- **Sardius** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Scepter** · Ezekiel 19:11 · Mentioned in Ezekiel 19:11. · *0.6666666666666666 verses*<br><small>aliases: Sceptre</small>
+- **Scorpion** · Ezekiel 2:6 · Mentioned in Ezekiel 2:6. · *0.3333333333333333 verses*
+- **Scroll** · Ezekiel 2:9 · Mentioned in Ezekiel 2:9. · *1.3333333333333333 verses*
+- **Senir** · Ezekiel 27:5 · Named in Ezekiel 27:5. · *1 verses*<br><small>forms: Shenir</small>
+- **Shaphan** · Ezekiel 8:11 · Named in Ezekiel 8:11. · *1 verses*
+- **Shekel** · Ezekiel 4:10 · Mentioned in Ezekiel 4:10. · *0.6666666666666666 verses*
+- **Shield** · Ezekiel 23:24 · Mentioned in Ezekiel 23:24. · *2 verses*
+- **Ship** · Ezekiel 27:5 · Mentioned in Ezekiel 27:5. · *2 verses*
+- **Shoes** · Ezekiel 24:17 · Mentioned in Ezekiel 24:17. · *0.6666666666666666 verses*<br><small>aliases: Shoe</small>
+- **Shrine** · Ezekiel 18:11 · Mentioned in Ezekiel 18:11. · *0.3333333333333333 verses*
+- **Shroud** · Ezekiel 31:3 · Mentioned in Ezekiel 31:3. · *0.3333333333333333 verses*<br><small>forms: Linen cloth</small>
+- **Sibraim** · Ezekiel 47:16 · Named in Ezekiel 47:16. · *1 verses*
+- **Silk** · Ezekiel 16:10 · Mentioned in Ezekiel 16:10. · *0.6666666666666666 verses*
+- **Sinew** · Ezekiel 37:6 · Mentioned in Ezekiel 37:6. · *0.6666666666666666 verses*
+- **Singer** · Ezekiel 40:44 · Mentioned in Ezekiel 40:44. · *0.3333333333333333 verses*
+- **Skin** · Ezekiel 16:10 · Mentioned in Ezekiel 16:10. · *1 verses*
+- **Skirt** · Ezekiel 5:3 · Mentioned in Ezekiel 5:3. · *0.6666666666666666 verses*
+- **Slave** · Ezekiel 34:27 · Mentioned in Ezekiel 34:27. · *0.3333333333333333 verses*
+- **Sole** · Ezekiel 1:7 · Mentioned in Ezekiel 1:7. · *0.6666666666666666 verses*
+- **Sore** · Ezekiel 14:21 · Mentioned in Ezekiel 14:21. · *1 verses*<br><small>forms: Sores</small>
+- **Span** · Ezekiel 43:13 · Mentioned in Ezekiel 43:13. · *0.3333333333333333 verses*
+- **Spear** · Ezekiel 39:9 · Mentioned in Ezekiel 39:9. · *0.3333333333333333 verses*
+- **Spelt** · Ezekiel 4:9 · Mentioned in Ezekiel 4:9. · *0.3333333333333333 verses*<br><small>aliases: Fitches</small>
+- **Staff** · Ezekiel 4:16 · Mentioned in Ezekiel 4:16. · *1.3333333333333333 verses*
+- **Star** · Ezekiel 32:7 · Mentioned in Ezekiel 32:7. · *0.3333333333333333 verses*<br><small>aliases: Stars</small>
+- **Storm** · Ezekiel 38:9 · Mentioned in Ezekiel 38:9. · *0.3333333333333333 verses*<br><small>forms: Tempest</small>
+- **Street** · Ezekiel 7:19 · Mentioned in Ezekiel 7:19. · *2 verses*
+- **Sun** · Ezekiel 8:16 · Mentioned in Ezekiel 8:16. · *0.6666666666666666 verses*
+- **Syene** · Ezekiel 29:10 · Named in Ezekiel 29:10. · *2 verses*<br><small>forms: Sinim</small>
+- **Syria** · Ezekiel 16:57 · Named in Ezekiel 16:57. · *2 verses*<br><small>forms: Syria-damascus</small>
+- **Tabernacle** · Ezekiel 37:27 · Mentioned in Ezekiel 37:27. · *0.6666666666666666 verses*
+- **Tabret** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Tamar** · Ezekiel 47:19 · Named in Ezekiel 47:19. · *2 verses*<br><small>forms: Thamar</small>
+- **Tambourine** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Tammuz** · Ezekiel 8:14 · Mentioned in Ezekiel 8:14. · *0.3333333333333333 verses*
+- **Teeth** · Ezekiel 18:2 · Mentioned in Ezekiel 18:2. · *0.3333333333333333 verses*<br><small>forms: Tooth</small>
+- **Tehaphnehes** · Ezekiel 30:18 · Named in Ezekiel 30:18. · *1 verses*<br><small>forms: Tahpanhes, Tahapanes</small>
+- **Tel-abib** · Ezekiel 3:15 · Named in Ezekiel 3:15. · *1 verses*<br><small>aliases: Tel Aviv</small>
+- **Teman** · Ezekiel 25:13 · Named in Ezekiel 25:13. · *1 verses*
+- **Tent** · Ezekiel 37:27 · Mentioned in Ezekiel 37:27. · *0.6666666666666666 verses*
+- **Teraphim** · Ezekiel 21:21 · Mentioned in Ezekiel 21:21. · *0.3333333333333333 verses*
+- **The Lord Is There** · Ezekiel 48:35 · Named in Ezekiel 48:35. · *0 verses*<br><small>aliases: Yahweh Is There</small>
+- **Thigh** · Ezekiel 21:12 · Mentioned in Ezekiel 21:12. · *1 verses*
+- **Thorns** · Ezekiel 2:6 · Mentioned in Ezekiel 2:6. · *0.6666666666666666 verses*<br><small>aliases: Thorn</small>
+- **Throne** · Ezekiel 1:26 · Mentioned in Ezekiel 1:26. · *1.3333333333333333 verses*
+- **Tin** · Ezekiel 22:18 · Mentioned in Ezekiel 22:18. · *1 verses*
+- **Togarmah** · Ezekiel 27:14 · Named in Ezekiel 27:14. · *2 verses*
+- **Tongue** · Ezekiel 3:26 · Mentioned in Ezekiel 3:26. · *0.3333333333333333 verses*
+- **Topaz** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Torch** · Ezekiel 1:13 · Mentioned in Ezekiel 1:13. · *0.3333333333333333 verses*
+- **Tower** · Ezekiel 26:4 · Mentioned in Ezekiel 26:4. · *1.6666666666666667 verses*<br><small>forms: Watchtower</small>
+- **Trader** · Ezekiel 27:13 · Mentioned in Ezekiel 27:13. · *1.6666666666666667 verses*
+- **Treasury** · Ezekiel 28:4 · Mentioned in Ezekiel 28:4. · *0.3333333333333333 verses*
+- **Trumpet** · Ezekiel 7:14 · Mentioned in Ezekiel 7:14. · *1.6666666666666667 verses*
+- **Turban** · Ezekiel 21:26 · Mentioned in Ezekiel 21:26. · *1.3333333333333333 verses*
+- **Turquoise** · Ezekiel 28:13 · Mentioned in Ezekiel 28:13. · *0.3333333333333333 verses*
+- **Unleavened bread** · Ezekiel 45:21 · Mentioned in Ezekiel 45:21. · *0.3333333333333333 verses*
+- **Upper room** · Ezekiel 42:5 · Mentioned in Ezekiel 42:5. · *0.3333333333333333 verses*
+- **Valley of Hamon-gog** · Ezekiel 39:11 · Named in Ezekiel 39:11. · *0 verses*<br><small>aliases: The valley of Hamon-gog</small>
+- **Veil** · Ezekiel 13:18 · Mentioned in Ezekiel 13:18. · *0.6666666666666666 verses*
+- **Vine** · Ezekiel 15:2 · Mentioned in Ezekiel 15:2. · *2 verses*<br><small>forms: Grapevine</small>
+- **Virgin** · Ezekiel 9:6 · Mentioned in Ezekiel 9:6. · *0.6666666666666666 verses*
+- **Wagon** · Ezekiel 23:24 · Mentioned in Ezekiel 23:24. · *0.6666666666666666 verses*
+- **Waist** · Ezekiel 1:27 · Mentioned in Ezekiel 1:27. · *1.6666666666666667 verses*
+- **Watchman** · Ezekiel 3:17 · Mentioned in Ezekiel 3:17. · *1.3333333333333333 verses*
+- **Whale** · Ezekiel 32:2 · Mentioned in Ezekiel 32:2. · *0.3333333333333333 verses*
+- **Wheat** · Ezekiel 4:9 · Mentioned in Ezekiel 4:9. · *1 verses*
+- **Whirlwind** · Ezekiel 1:4 · Mentioned in Ezekiel 1:4. · *0.3333333333333333 verses*
+- **Widow** · Ezekiel 22:7 · Mentioned in Ezekiel 22:7. · *1 verses*
+- **Willow** · Ezekiel 17:5 · Mentioned in Ezekiel 17:5. · *0.3333333333333333 verses*
+- **Wine** · Ezekiel 27:18 · Mentioned in Ezekiel 27:18. · *0.6666666666666666 verses*
+- **Wise men** · Ezekiel 27:8 · Mentioned in Ezekiel 27:8. · *0.6666666666666666 verses*<br><small>forms: Magi</small>
+- **Womb** · Ezekiel 20:26 · Mentioned in Ezekiel 20:26. · *0.3333333333333333 verses*
+- **Wool** · Ezekiel 27:18 · Mentioned in Ezekiel 27:18. · *1 verses*
+- **Wounds** · Ezekiel 28:9 · Mentioned in Ezekiel 28:9. · *0.3333333333333333 verses*<br><small>aliases: Wound</small>
+- **Yoke** · Ezekiel 30:18 · Mentioned in Ezekiel 30:18. · *0.6666666666666666 verses*
+- **Zedad** · Ezekiel 47:15 · Named in Ezekiel 47:15. · *1 verses*
+- **Zoan** · Ezekiel 30:14 · Named in Ezekiel 30:14. · *1 verses*
+
+### Near misses
+
+- **Valley of dry bones**: Ezekiel says the valley was full of bones (Ezekiel 37:1); try "bones" or "valley".
+- **Lions' den**: That is the book of Daniel, though Ezekiel does name Daniel (Ezekiel 14:14).
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Hebrews.
+
+`hebrews-anything` · Books of the Bible · 207 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 10 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 18 |
+| 🪙 Lost Coin (60) | 41 |
+| 💎 Hidden Treasure (85) | 137 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Salem. Hebrews explains that Melchizedek was king of Salem, which means king of peace (Hebrews 7:1–2).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Abraham** · Hebrews 2:16 · Named in Hebrews 2:16. · *10 verses*<br><small>forms: Abram</small>
+- **Blood** · Hebrews 2:14 · Mentioned in Hebrews 2:14. · *6.666666666666667 verses*
+- **Faith** · Hebrews 4:2 · Mentioned in Hebrews 4:2. · *10.666666666666666 verses*
+- **High priest** · Hebrews 2:17 · Mentioned in Hebrews 2:17. · *6.333333333333333 verses*
+- **Jesus** · Hebrews 2:9; Hebrews 10:10 · Named in Hebrews 2:9. · *14 verses*<br><small>aliases: Jesus Christ · forms: Christ child</small>
+- **Melchizedek** · Hebrews 5:6 · Named in Hebrews 5:6. · *9 verses*
+- **Moses** · Hebrews 3:2 · Named in Hebrews 3:2. · *11 verses*
+- **Priest** · Hebrews 2:17 · Mentioned in Hebrews 2:17. · *10.666666666666666 verses*
+- **Sacrifice** · Hebrews 5:1 · Mentioned in Hebrews 5:1. · *6 verses*
+- **Sin** · Hebrews 1:3 · Mentioned in Hebrews 1:3. · *8 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Aaron** · Hebrews 5:4 · Named in Hebrews 5:4. · *3 verses*
+- **Angel** · Hebrews 1:4 · Mentioned in Hebrews 1:4. · *4 verses*<br><small>aliases: Angels</small>
+- **Covenant** · Hebrews 7:22 · Mentioned in Hebrews 7:22. · *5.333333333333333 verses*
+- **Death** · Hebrews 2:9 · Mentioned in Hebrews 2:9. · *3 verses*
+- **Egypt** · Hebrews 3:16 · Named in Hebrews 3:16. · *4 verses*<br><small>forms: Lower, Proud</small>
+- **Hand** · Hebrews 1:3 · Mentioned in Hebrews 1:3. · *4.333333333333333 verses*
+- **Heart** · Hebrews 3:8 · Mentioned in Hebrews 3:8. · *3.3333333333333335 verses*
+- **Heaven** · Hebrews 1:10 · Mentioned in Hebrews 1:10. · *3.3333333333333335 verses*
+- **Holy Place** · Hebrews 9:2; Hebrews 9:8 · Named in Hebrews 9:2. · *3 verses*
+- **House** · Hebrews 3:2 · Mentioned in Hebrews 3:2. · *3 verses*
+- **Isaac** · Hebrews 11:9 · Named in Hebrews 11:9. · *4 verses*
+- **Law** · Hebrews 7:5 · Mentioned in Hebrews 7:5. · *5 verses*
+- **Noah** · Hebrews 11:7 · Built an ark to save his household. · *1 verses*
+- **Promise** · Hebrews 4:1 · Mentioned in Hebrews 4:1. · *4.666666666666667 verses*
+- **Rahab** · Hebrews 11:31 · Welcomed the spies in peace. · *1 verses*<br><small>forms: Rachab</small>
+- **Spirit** · Hebrews 1:7 · Mentioned in Hebrews 1:7. · *4 verses*
+- **Tabernacle** · Hebrews 8:2 · Mentioned in Hebrews 8:2. · *3.3333333333333335 verses*
+- **Word** · Hebrews 1:3 · Mentioned in Hebrews 1:3. · *4.666666666666667 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Abel** · Hebrews 11:4 · Offered a more excellent sacrifice than Cain. · *2 verses*
+- **Altar** · Hebrews 7:13 · Mentioned in Hebrews 7:13. · *1 verses*
+- **Back** · Hebrews 10:38 · Mentioned in Hebrews 10:38. · *1 verses*
+- **Barak** · Hebrews 11:32 · Named in the closing list of the faithful. · *1 verses*
+- **Blessing** · Hebrews 6:7 · Mentioned in Hebrews 6:7. · *1 verses*
+- **Cain** · Hebrews 11:4 · Named in Hebrews 11:4. · *1 verses*
+- **Commandment** · Hebrews 7:5 · Mentioned in Hebrews 7:5. · *2 verses*<br><small>forms: Commandments</small>
+- **Compassion** · Hebrews 5:2 · Mentioned in Hebrews 5:2. · *1 verses*
+- **Courage** · Hebrews 4:16; Hebrews 13:6 · Mentioned in Hebrews 4:16. · *1.3333333333333333 verses*<br><small>aliases: Boldness</small>
+- **David** · Hebrews 4:7 · Named in Hebrews 4:7. · *2 verses*
+- **Discipline** · Hebrews 12:6 · Mentioned in Hebrews 12:6. · *1 verses*
+- **Disobedience** · Hebrews 2:2 · Mentioned in Hebrews 2:2. · *1 verses*
+- **Enoch** · Hebrews 11:5 · Taken away so that he did not see death. · *1 verses*
+- **Esau** · Hebrews 11:20 · Named in Hebrews 11:20. · *2 verses*
+- **Fire** · Hebrews 1:7 · Mentioned in Hebrews 1:7. · *1.6666666666666667 verses*
+- **Flesh** · Hebrews 2:14 · Mentioned in Hebrews 2:14. · *1.6666666666666667 verses*
+- **Foot** · Hebrews 1:13; Hebrews 10:29 · Mentioned in Hebrews 1:13. · *1.6666666666666667 verses*<br><small>aliases: Feet</small>
+- **Foundation** · Hebrews 1:10 · Mentioned in Hebrews 1:10. · *1.6666666666666667 verses*
+- **Gideon** · Hebrews 11:32 · Named in the closing list of the faithful. · *1 verses*<br><small>forms: Jerubbaal</small>
+- **Glory** · Hebrews 1:3 · Mentioned in Hebrews 1:3. · *2.3333333333333335 verses*
+- **Goat** · Hebrews 9:12 · Mentioned in Hebrews 9:12. · *1.6666666666666667 verses*
+- **Grace** · Hebrews 2:9 · Mentioned in Hebrews 2:9. · *2.3333333333333335 verses*
+- **Holiest** · Hebrews 9:3 · Named in Hebrews 9:3. · *1 verses*<br><small>aliases: Holiest of All, Holy of Holies · forms: Most Holy Place, Holy Sanctuary, Most Holy</small>
+- **Honor** · Hebrews 2:7 · Mentioned in Hebrews 2:7. · *1.6666666666666667 verses*<br><small>aliases: Honour</small>
+- **Hope** · Hebrews 3:6 · Mentioned in Hebrews 3:6. · *2 verses*
+- **Infirmity** · Hebrews 4:15 · Mentioned in Hebrews 4:15. · *1 verses*<br><small>aliases: Infirmities</small>
+- **Inheritance** · Hebrews 1:4 · Mentioned in Hebrews 1:4. · *1 verses*
+- **Jacob** · Hebrews 11:9 · Named in Hebrews 11:9. · *3 verses*
+- **Joseph** · Hebrews 11:21 · Named in Hebrews 11:21. · *2 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Judah** · Hebrews 7:14 · Named in Hebrews 7:14. · *2 verses*<br><small>aliases: Juda · forms: Judas</small>
+- **King** · Hebrews 7:1 · Mentioned in Hebrews 7:1. · *1.3333333333333333 verses*
+- **Levi** · Hebrews 7:5 · Named in Hebrews 7:5. · *2 verses*
+- **Love** · Hebrews 6:10 · Mentioned in Hebrews 6:10. · *1.6666666666666667 verses*
+- **Meat** · Hebrews 2:14; Hebrews 5:12 · Mentioned in Hebrews 2:14. · *1.6666666666666667 verses*
+- **Mountain** · Hebrews 8:5 · Mentioned in Hebrews 8:5. · *1.3333333333333333 verses*
+- **Oath** · Hebrews 6:16 · Mentioned in Hebrews 6:16. · *1.6666666666666667 verses*
+- **Peace** · Hebrews 7:2 · Mentioned in Hebrews 7:2. · *1.3333333333333333 verses*
+- **Righteousness** · Hebrews 1:8 · Mentioned in Hebrews 1:8. · *2.3333333333333335 verses*
+- **Salvation** · Hebrews 1:14 · Mentioned in Hebrews 1:14. · *2 verses*
+- **Throne** · Hebrews 1:8 · Mentioned in Hebrews 1:8. · *1.3333333333333333 verses*
+- **Unbelief** · Hebrews 3:12 · Mentioned in Hebrews 3:12. · *1.3333333333333333 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Anchor** · Hebrews 6:19 · Mentioned in Hebrews 6:19. · *0.3333333333333333 verses*
+- **Apostle** · Hebrews 3:1 · Mentioned in Hebrews 3:1. · *0.3333333333333333 verses*
+- **Ark** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.6666666666666666 verses*
+- **Ashes** · Hebrews 9:13 · Mentioned in Hebrews 9:13. · *0.3333333333333333 verses*
+- **Atonement** · Hebrews 2:17 · Mentioned in Hebrews 2:17. · *0.3333333333333333 verses*<br><small>forms: Propitiation</small>
+- **Baptism** · Hebrews 6:2 · Mentioned in Hebrews 6:2. · *0.3333333333333333 verses*
+- **Bed** · Hebrews 13:4 · Mentioned in Hebrews 13:4. · *0.3333333333333333 verses*
+- **Bitterness** · Hebrews 12:15 · Mentioned in Hebrews 12:15. · *0.3333333333333333 verses*
+- **Bones** · Hebrews 11:22 · Mentioned in Hebrews 11:22. · *0.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Book** · Hebrews 9:19 · Mentioned in Hebrews 9:19. · *0.6666666666666666 verses*
+- **Bread** · Hebrews 9:2 · Mentioned in Hebrews 9:2. · *0.3333333333333333 verses*
+- **Briers** · Hebrews 6:8 · Mentioned in Hebrews 6:8. · *0.3333333333333333 verses*
+- **Brotherly love** · Hebrews 13:1 · Mentioned in Hebrews 13:1. · *0.3333333333333333 verses*<br><small>forms: Brotherly kindness</small>
+- **Builder** · Hebrews 11:10 · Mentioned in Hebrews 11:10. · *0.3333333333333333 verses*
+- **Bull** · Hebrews 9:13 · Mentioned in Hebrews 9:13. · *0.6666666666666666 verses*<br><small>forms: Bullock</small>
+- **Captain** · Hebrews 2:10 · Mentioned in Hebrews 2:10. · *0.3333333333333333 verses*
+- **Cave** · Hebrews 11:38 · Mentioned in Hebrews 11:38. · *0.3333333333333333 verses*<br><small>forms: Cavern</small>
+- **Censer** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.3333333333333333 verses*
+- **Chain** · Hebrews 10:34 · Mentioned in Hebrews 10:34. · *0.3333333333333333 verses*
+- **Chains** · Hebrews 10:34 · Mentioned in Hebrews 10:34. · *0.3333333333333333 verses*<br><small>forms: Necklace</small>
+- **Cherubim** · Hebrews 9:5 · Mentioned in Hebrews 9:5. · *0.3333333333333333 verses*<br><small>aliases: Cherubims · forms: Cherub</small>
+- **Cloud** · Hebrews 12:1 · Mentioned in Hebrews 12:1. · *0.3333333333333333 verses*<br><small>forms: Clouds</small>
+- **Counsel** · Hebrews 6:17 · Mentioned in Hebrews 6:17. · *0.3333333333333333 verses*
+- **Covetousness** · Hebrews 13:5 · Mentioned in Hebrews 13:5. · *0.3333333333333333 verses*<br><small>forms: Coveting, Greed</small>
+- **Cursing** · Hebrews 6:8 · Mentioned in Hebrews 6:8. · *0.3333333333333333 verses*
+- **Darkness** · Hebrews 12:18 · Mentioned in Hebrews 12:18. · *0.3333333333333333 verses*
+- **Desert** · Hebrews 11:38 · Mentioned in Hebrews 11:38. · *0.3333333333333333 verses*
+- **Devil** · Hebrews 2:14 · Mentioned in Hebrews 2:14. · *0.3333333333333333 verses*
+- **Diligence** · Hebrews 4:11 · Mentioned in Hebrews 4:11. · *0.6666666666666666 verses*
+- **Elder** · Hebrews 11:2 · Mentioned in Hebrews 11:2. · *0.3333333333333333 verses*
+- **Elders** · Hebrews 11:2 · Mentioned in Hebrews 11:2. · *0.3333333333333333 verses*
+- **Eye** · Hebrews 4:13 · Mentioned in Hebrews 4:13. · *0.3333333333333333 verses*
+- **Footstool** · Hebrews 1:13 · Mentioned in Hebrews 1:13. · *0.6666666666666666 verses*
+- **Garment** · Hebrews 1:11 · Mentioned in Hebrews 1:11. · *0.3333333333333333 verses*
+- **Gate** · Hebrews 13:12 · Mentioned in Hebrews 13:12. · *0.3333333333333333 verses*
+- **Gold** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.3333333333333333 verses*
+- **Gospel** · Hebrews 4:2 · Mentioned in Hebrews 4:2. · *0.3333333333333333 verses*
+- **Heifer** · Hebrews 9:13 · Mentioned in Hebrews 9:13. · *0.3333333333333333 verses*
+- **Holiness** · Hebrews 12:10 · Mentioned in Hebrews 12:10. · *0.6666666666666666 verses*
+- **Hospitality** · Hebrews 13:2 · Mentioned in Hebrews 13:2. · *0.3333333333333333 verses*
+- **Hyssop** · Hebrews 9:19 · Mentioned in Hebrews 9:19. · *0.3333333333333333 verses*
+- **Image** · Hebrews 1:3 · Mentioned in Hebrews 1:3. · *0.6666666666666666 verses*<br><small>forms: Statue</small>
+- **Instruction** · Hebrews 11:22 · Mentioned in Hebrews 11:22. · *0.3333333333333333 verses*
+- **Italy** · Hebrews 13:24 · Named in Hebrews 13:24. · *1 verses*
+- **Jephthah** · Hebrews 11:32 · Named in the closing list of the faithful. · *1 verses*
+- **Jericho** · Hebrews 11:30 · Named in Hebrews 11:30. · *1 verses*
+- **Jerusalem** · Hebrews 12:22 · Named in Hebrews 12:22. · *1 verses*
+- **Joints** · Hebrews 4:12 · Mentioned in Hebrews 4:12. · *0.3333333333333333 verses*
+- **Joshua** · Hebrews 4:8 · Named in Hebrews 4:8. · *1 verses*
+- **Joy** · Hebrews 12:2 · Mentioned in Hebrews 12:2. · *0.6666666666666666 verses*
+- **Judge** · Hebrews 10:30 · Mentioned in Hebrews 10:30. · *1 verses*
+- **Judgment** · Hebrews 6:2 · Mentioned in Hebrews 6:2. · *1 verses*
+- **Kingdom** · Hebrews 1:8 · Mentioned in Hebrews 1:8. · *1 verses*
+- **Knee** · Hebrews 12:12 · Mentioned in Hebrews 12:12. · *0.3333333333333333 verses*
+- **Knowledge** · Hebrews 10:26 · Mentioned in Hebrews 10:26. · *0.3333333333333333 verses*
+- **Lame** · Hebrews 12:13 · Mentioned in Hebrews 12:13. · *0.3333333333333333 verses*<br><small>forms: Lameness</small>
+- **Lamp** · Hebrews 9:2 · Mentioned in Hebrews 9:2. · *0.3333333333333333 verses*
+- **Lampstand** · Hebrews 9:2 · Mentioned in Hebrews 9:2. · *0.3333333333333333 verses*<br><small>aliases: Candlestick</small>
+- **Life** · Hebrews 7:3 · Mentioned in Hebrews 7:3. · *1 verses*
+- **Lion** · Hebrews 11:33 · Mentioned in Hebrews 11:33. · *0.3333333333333333 verses*
+- **Lips** · Hebrews 13:15 · Mentioned in Hebrews 13:15. · *0.3333333333333333 verses*<br><small>aliases: Lip</small>
+- **Loins** · Hebrews 7:5 · Mentioned in Hebrews 7:5. · *0.6666666666666666 verses*
+- **Love of money** · Hebrews 13:5 · Mentioned in Hebrews 13:5. · *0.3333333333333333 verses*
+- **Manna** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.3333333333333333 verses*
+- **Mantle** · Hebrews 1:12 · Mentioned in Hebrews 1:12. · *0.3333333333333333 verses*
+- **Marrow** · Hebrews 4:12 · Mentioned in Hebrews 4:12. · *0.3333333333333333 verses*
+- **Meal** · Hebrews 12:16 · Mentioned in Hebrews 12:16. · *0.3333333333333333 verses*<br><small>forms: Flour</small>
+- **Mercy** · Hebrews 4:16 · Mentioned in Hebrews 4:16. · *1 verses*
+- **Milk** · Hebrews 5:12 · Mentioned in Hebrews 5:12. · *0.6666666666666666 verses*
+- **Mocking** · Hebrews 11:36 · Mentioned in Hebrews 11:36. · *0.3333333333333333 verses*<br><small>forms: Scoffing</small>
+- **Mount Zion** · Hebrews 12:22 · Named in Hebrews 12:22. · *1 verses*<br><small>aliases: Sion</small>
+- **Mouth** · Hebrews 11:33 · Mentioned in Hebrews 11:33. · *0.3333333333333333 verses*
+- **Obedience** · Hebrews 5:8 · Mentioned in Hebrews 5:8. · *0.3333333333333333 verses*
+- **Oil** · Hebrews 1:9 · Mentioned in Hebrews 1:9. · *0.3333333333333333 verses*<br><small>forms: Olive oil</small>
+- **Oppression** · Hebrews 10:33 · Mentioned in Hebrews 10:33. · *0.3333333333333333 verses*
+- **Passover** · Hebrews 11:28 · Mentioned in Hebrews 11:28. · *0.3333333333333333 verses*
+- **Patience** · Hebrews 6:12 · Mentioned in Hebrews 6:12. · *1 verses*<br><small>forms: Longsuffering</small>
+- **Perseverance** · Hebrews 6:12; Hebrews 10:36 · Mentioned in Hebrews 6:12. · *1 verses*<br><small>aliases: Endurance · forms: Steadfastness</small>
+- **Pharaoh** · Hebrews 11:24 · Named in Hebrews 11:24. · *1 verses*
+- **Pot** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.3333333333333333 verses*
+- **Praise** · Hebrews 2:12 · Mentioned in Hebrews 2:12. · *0.6666666666666666 verses*
+- **Prayer** · Hebrews 5:7 · Mentioned in Hebrews 5:7. · *0.3333333333333333 verses*
+- **Prophet** · Hebrews 1:1 · Mentioned in Hebrews 1:1. · *0.6666666666666666 verses*
+- **Rain** · Hebrews 6:7 · Mentioned in Hebrews 6:7. · *0.3333333333333333 verses*
+- **Rebellion** · Hebrews 3:8 · Mentioned in Hebrews 3:8. · *0.6666666666666666 verses*
+- **Reconciliation** · Hebrews 2:17 · Mentioned in Hebrews 2:17. · *0.3333333333333333 verses*
+- **Red Sea** · Hebrews 11:29 · Named in Hebrews 11:29. · *1 verses*
+- **Redemption** · Hebrews 9:12 · Mentioned in Hebrews 9:12. · *0.6666666666666666 verses*
+- **Repentance** · Hebrews 6:1 · Mentioned in Hebrews 6:1. · *1 verses*
+- **Resurrection** · Hebrews 6:2 · Mentioned in Hebrews 6:2. · *0.6666666666666666 verses*
+- **Reverence** · Hebrews 12:9 · Mentioned in Hebrews 12:9. · *0.6666666666666666 verses*
+- **Rod** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.3333333333333333 verses*
+- **Sabbath** · Hebrews 4:9 · Mentioned in Hebrews 4:9. · *0.3333333333333333 verses*
+- **Samson** · Hebrews 11:32 · Named in the closing list of the faithful. · *1 verses*
+- **Samuel** · Hebrews 11:32 · Named in the closing list of the faithful. · *1 verses*
+- **Sand** · Hebrews 11:12 · Mentioned in Hebrews 11:12. · *0.3333333333333333 verses*
+- **Sarah** · Hebrews 11:11 · Received power to conceive when she was past age. · *1 verses*<br><small>aliases: Sara · forms: Sarai</small>
+- **Scarlet** · Hebrews 9:19 · Mentioned in Hebrews 9:19. · *0.3333333333333333 verses*
+- **Scepter** · Hebrews 1:8 · Mentioned in Hebrews 1:8. · *0.3333333333333333 verses*<br><small>aliases: Sceptre</small>
+- **Scroll** · Hebrews 10:7 · Mentioned in Hebrews 10:7. · *0.3333333333333333 verses*
+- **Sea** · Hebrews 11:12 · Mentioned in Hebrews 11:12. · *0.6666666666666666 verses*
+- **Servant** · Hebrews 1:7 · Mentioned in Hebrews 1:7. · *1 verses*
+- **Sheep** · Hebrews 11:37 · Mentioned in Hebrews 11:37. · *0.6666666666666666 verses*
+- **Shepherd** · Hebrews 13:20 · Mentioned in Hebrews 13:20. · *0.3333333333333333 verses*
+- **Ship** · Hebrews 11:7 · Mentioned in Hebrews 11:7. · *0.3333333333333333 verses*
+- **Shore** · Hebrews 11:12 · Mentioned in Hebrews 11:12. · *0.3333333333333333 verses*<br><small>aliases: Seashore</small>
+- **Show bread** · Hebrews 9:2 · Mentioned in Hebrews 9:2. · *0.3333333333333333 verses*<br><small>aliases: Shewbread</small>
+- **Side** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.3333333333333333 verses*
+- **Skin** · Hebrews 11:37 · Mentioned in Hebrews 11:37. · *0.3333333333333333 verses*
+- **Sky** · Hebrews 11:12 · Mentioned in Hebrews 11:12. · *0.3333333333333333 verses*<br><small>forms: Firmament, Expanse</small>
+- **Spot** · Hebrews 9:14 · Mentioned in Hebrews 9:14. · *0.3333333333333333 verses*<br><small>forms: Bright spot</small>
+- **Staff** · Hebrews 11:21 · Mentioned in Hebrews 11:21. · *0.3333333333333333 verses*
+- **Star** · Hebrews 11:12 · Mentioned in Hebrews 11:12. · *0.3333333333333333 verses*<br><small>aliases: Stars</small>
+- **Storm** · Hebrews 12:18 · Mentioned in Hebrews 12:18. · *0.3333333333333333 verses*<br><small>aliases: Tempest</small>
+- **Stranger** · Hebrews 11:13 · Mentioned in Hebrews 11:13. · *0.6666666666666666 verses*<br><small>forms: Foreigner, Sojourner</small>
+- **Strife** · Hebrews 6:16 · Mentioned in Hebrews 6:16. · *0.3333333333333333 verses*
+- **Sword** · Hebrews 4:12 · Mentioned in Hebrews 4:12. · *1 verses*
+- **Table** · Hebrews 9:2 · Mentioned in Hebrews 9:2. · *0.6666666666666666 verses*
+- **Tablets** · Hebrews 9:4 · Mentioned in Hebrews 9:4. · *0.3333333333333333 verses*<br><small>forms: Tables of stone</small>
+- **Teacher** · Hebrews 5:12 · Mentioned in Hebrews 5:12. · *0.3333333333333333 verses*
+- **Tent** · Hebrews 11:9 · Mentioned in Hebrews 11:9. · *0.3333333333333333 verses*
+- **Thistles** · Hebrews 6:8 · Mentioned in Hebrews 6:8. · *0.3333333333333333 verses*<br><small>aliases: Thistle</small>
+- **Thorns** · Hebrews 6:8 · Mentioned in Hebrews 6:8. · *0.3333333333333333 verses*<br><small>aliases: Thorn</small>
+- **Timothy** · Hebrews 13:23 · Named in Hebrews 13:23. · *1 verses*<br><small>forms: Timotheus</small>
+- **Trumpet** · Hebrews 12:19 · Mentioned in Hebrews 12:19. · *0.3333333333333333 verses*
+- **Trust** · Hebrews 2:13 · Mentioned in Hebrews 2:13. · *0.6666666666666666 verses*
+- **Truth** · Hebrews 10:26 · Mentioned in Hebrews 10:26. · *0.3333333333333333 verses*
+- **Uprightness** · Hebrews 1:8 · Mentioned in Hebrews 1:8. · *0.3333333333333333 verses*
+- **Veil** · Hebrews 6:19 · Mentioned in Hebrews 6:19. · *1 verses*
+- **Vengeance** · Hebrews 10:30 · Mentioned in Hebrews 10:30. · *0.3333333333333333 verses*<br><small>forms: Revenge</small>
+- **Violence** · Hebrews 11:34 · Mentioned in Hebrews 11:34. · *0.3333333333333333 verses*
+- **Wall** · Hebrews 11:30 · Mentioned in Hebrews 11:30. · *0.3333333333333333 verses*
+- **Water** · Hebrews 9:19 · Mentioned in Hebrews 9:19. · *0.6666666666666666 verses*
+- **Wilderness** · Hebrews 3:8 · Mentioned in Hebrews 3:8. · *0.6666666666666666 verses*
+- **Wind** · Hebrews 1:7 · Mentioned in Hebrews 1:7. · *0.3333333333333333 verses*
+- **Wool** · Hebrews 9:19 · Mentioned in Hebrews 9:19. · *0.3333333333333333 verses*
+- **Wrath** · Hebrews 3:11 · Mentioned in Hebrews 3:11. · *1 verses*
+
+### Near misses
+
+- **Paul**: Hebrews never names its writer.
+- **Hall of faith**: A later nickname for Hebrews 11, not a phrase in the book.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Isaiah.
+
+`isaiah-anything` · Books of the Bible · 616 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 12 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 49 |
+| 🪙 Lost Coin (60) | 122 |
+| 💎 Hidden Treasure (85) | 432 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Shear-Jashub. Isaiah took his son Shear-jashub, whose name means a remnant will return, to meet King Ahaz (Isaiah 7:3).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Assyria** · Isaiah 7:17 · Named in Isaiah 7:17. · *33 verses*<br><small>forms: Assur</small>
+- **Canaan** · Isaiah 11:10; Isaiah 19:18 · Named in Isaiah 19:18. · *17 verses*<br><small>aliases: Gentile · forms: Chanaan, Glorious Land</small>
+- **Hand** · Isaiah 1:12 · Mentioned in Isaiah 1:12. · *34.333333333333336 verses*
+- **Hezekiah** · Isaiah 1:1 · Named in Isaiah 1:1. · *30 verses*<br><small>forms: Ezekias</small>
+- **House** · Isaiah 2:2 · Mentioned in Isaiah 2:2. · *21.666666666666668 verses*
+- **Immanuel** · Isaiah 7:14 · Mentioned in Isaiah 7:14. · *0.6666666666666666 verses*<br><small>forms: Emmanuel</small>
+- **Isaiah** · Isaiah 1:1 · Saw the Lord in the temple and answered his call. · *16 verses*<br><small>forms: Esaias</small>
+- **Jacob** · Isaiah 2:3 · Named in Isaiah 2:3. · *40 verses*
+- **Jerusalem** · Isaiah 1:1; Isaiah 36:11 · Named in Isaiah 1:1. · *47 verses*
+- **Judah** · Isaiah 1:1 · Named in Isaiah 1:1. · *26 verses*<br><small>forms: Judas</small>
+- **King** · Isaiah 1:1 · Mentioned in Isaiah 1:1. · *23.666666666666668 verses*
+- **Water** · Isaiah 1:22 · Mentioned in Isaiah 1:22. · *18.333333333333332 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Ahaz** · Isaiah 1:1 · Named in Isaiah 1:1. · *7 verses*<br><small>forms: Achaz</small>
+- **Amoz** · Isaiah 1:1 · Named in Isaiah 1:1. · *7 verses*
+- **Arm** · Isaiah 9:20 · Mentioned in Isaiah 9:20. · *6 verses*
+- **Babylon** · Isaiah 13:1 · Named in Isaiah 13:1. · *13 verses*
+- **Back** · Isaiah 3:11 · Mentioned in Isaiah 3:11. · *5.333333333333333 verses*
+- **Blood** · Isaiah 1:11 · Mentioned in Isaiah 1:11. · *5 verses*
+- **Bread** · Isaiah 3:1 · Mentioned in Isaiah 3:1. · *5 verses*
+- **Brook** · Isaiah 11:15; Isaiah 15:7 · Mentioned in Isaiah 11:15. · *5.666666666666667 verses*<br><small>aliases: Stream</small>
+- **Chaldean** · Isaiah 13:19 · Named in Isaiah 13:19. · *7 verses*<br><small>aliases: Chaldeans, Chaldees · forms: Chaldea, Chaldaeans</small>
+- **Cyrus** · Isaiah 44:28 · Named in Isaiah 44:28. · *2 verses*
+- **Damascus** · Isaiah 7:8 · Named in Isaiah 7:8. · *5 verses*<br><small>forms: Syria-damascus</small>
+- **Darkness** · Isaiah 5:20 · Mentioned in Isaiah 5:20. · *5.333333333333333 verses*
+- **David** · Isaiah 7:2 · Named in Isaiah 7:2. · *10 verses*
+- **Dust** · Isaiah 2:10 · Mentioned in Isaiah 2:10. · *5.666666666666667 verses*
+- **Ear** · Isaiah 1:2 · Mentioned in Isaiah 1:2. · *9.666666666666666 verses*
+- **Eliakim** · Isaiah 22:20 · Son of Hilkiah. · *5 verses*
+- **Eye** · Isaiah 1:15 · Mentioned in Isaiah 1:15. · *12.666666666666666 verses*
+- **Face** · Isaiah 3:9 · Mentioned in Isaiah 3:9. · *8 verses*
+- **Field** · Isaiah 1:8 · Mentioned in Isaiah 1:8. · *6.333333333333333 verses*
+- **Fire** · Isaiah 1:7 · Mentioned in Isaiah 1:7. · *11.333333333333334 verses*
+- **Flesh** · Isaiah 9:20 · Mentioned in Isaiah 9:20. · *5 verses*
+- **Foot** · Isaiah 1:6; Isaiah 3:16 · Mentioned in Isaiah 1:6. · *7.666666666666667 verses*<br><small>aliases: Feet</small>
+- **Gate** · Isaiah 3:26 · Mentioned in Isaiah 3:26. · *5 verses*
+- **Head** · Isaiah 1:5 · Mentioned in Isaiah 1:5. · *6.333333333333333 verses*
+- **Heart** · Isaiah 1:5 · Mentioned in Isaiah 1:5. · *13.333333333333334 verses*
+- **Hill** · Isaiah 2:2 · Mentioned in Isaiah 2:2. · *5.666666666666667 verses*
+- **Image** · Isaiah 10:10 · Mentioned in Isaiah 10:10. · *5.333333333333333 verses*<br><small>forms: Statue</small>
+- **Island** · Isaiah 11:11; Isaiah 20:6 · Mentioned in Isaiah 11:11. · *6.333333333333333 verses*<br><small>aliases: Isle</small>
+- **Lebanon** · Isaiah 2:13 · Named in Isaiah 2:13. · *9 verses*
+- **Moab** · Isaiah 11:14 · Named in Isaiah 11:14. · *16 verses*
+- **Mount Zion** · Isaiah 1:8; Isaiah 4:5; Isaiah 8:18 · Named in Isaiah 4:5. · *94 verses*<br><small>aliases: Israel · forms: Sion</small>
+- **Mountain** · Isaiah 2:2 · Mentioned in Isaiah 2:2. · *15.666666666666666 verses*
+- **Mouth** · Isaiah 1:20 · Mentioned in Isaiah 1:20. · *8 verses*
+- **Philistia** · Isaiah 9:12; Isaiah 14:29 · Named in Isaiah 9:12. · *5 verses*<br><small>aliases: Palestina, Philistine, Philistines · forms: Palestine</small>
+- **Prince** · Isaiah 1:23 · Mentioned in Isaiah 1:23. · *5.666666666666667 verses*
+- **Rabshakeh** · Isaiah 36:2 · Named in Isaiah 36:2. · *8 verses*
+- **River** · Isaiah 7:18 · Mentioned in Isaiah 7:18. · *8.666666666666666 verses*
+- **Rock** · Isaiah 32:2 · Mentioned in Isaiah 32:2. · *6 verses*
+- **Samaria** · Isaiah 7:9 · Named in Isaiah 7:9. · *7 verses*<br><small>forms: Samaritans, Samaritan</small>
+- **Sea** · Isaiah 5:30 · Mentioned in Isaiah 5:30. · *9 verses*
+- **Seraphim** · Isaiah 6:2 · Mentioned in Isaiah 6:2. · *0.6666666666666666 verses*<br><small>aliases: Seraphims · forms: Seraph</small>
+- **Servant** · Isaiah 14:2 · Mentioned in Isaiah 14:2. · *12.666666666666666 verses*
+- **Sword** · Isaiah 1:20 · Mentioned in Isaiah 1:20. · *6 verses*
+- **Syria** · Isaiah 7:1 · Named in Isaiah 7:1. · *6 verses*<br><small>forms: Syria-damascus</small>
+- **Tarshish** · Isaiah 2:16 · Named in Isaiah 2:16. · *7 verses*<br><small>forms: Tharshish</small>
+- **Tree** · Isaiah 6:13; Isaiah 7:2 · Mentioned in Isaiah 6:13. · *7.666666666666667 verses*<br><small>aliases: Trees</small>
+- **Wall** · Isaiah 2:15 · Mentioned in Isaiah 2:15. · *6.333333333333333 verses*
+- **Wilderness** · Isaiah 14:17 · Mentioned in Isaiah 14:17. · *7 verses*
+- **Wine** · Isaiah 1:22 · Mentioned in Isaiah 1:22. · *8.333333333333334 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Abraham** · Isaiah 29:22 · Named in Isaiah 29:22. · *4 verses*<br><small>forms: Abram</small>
+- **Altar** · Isaiah 6:6 · Mentioned in Isaiah 6:6. · *3 verses*
+- **Ariel** · Isaiah 29:1 · Named in Isaiah 29:1. · *3 verses*
+- **Arpad** · Isaiah 10:9; Isaiah 36:19 · Named in Isaiah 10:9. · *3 verses*<br><small>aliases: Arphad</small>
+- **Asaph** · Isaiah 36:3 · Named in Isaiah 36:3. · *2 verses*
+- **Bashan** · Isaiah 2:13 · Named in Isaiah 2:13. · *2 verses*
+- **Blind** · Isaiah 29:9 · Mentioned in Isaiah 29:9. · *3.3333333333333335 verses*<br><small>forms: Blindness</small>
+- **Book** · Isaiah 29:11 · Mentioned in Isaiah 29:11. · *1.6666666666666667 verses*
+- **Bozrah** · Isaiah 34:6 · Named in Isaiah 34:6. · *2 verses*
+- **Briers** · Isaiah 5:6 · Mentioned in Isaiah 5:6. · *2.6666666666666665 verses*
+- **Cattle** · Isaiah 7:25 · Mentioned in Isaiah 7:25. · *1.6666666666666667 verses*
+- **Cedar** · Isaiah 2:13 · Mentioned in Isaiah 2:13. · *2 verses*
+- **Chariot** · Isaiah 2:7 · Mentioned in Isaiah 2:7. · *4 verses*
+- **Chittim** · Isaiah 23:1 · Named in Isaiah 23:1. · *2 verses*<br><small>forms: Cyprus</small>
+- **Cloud** · Isaiah 4:5; Isaiah 5:6 · Mentioned in Isaiah 4:5. · *3 verses*<br><small>aliases: Clouds</small>
+- **Counselor** · Isaiah 1:26 · Mentioned in Isaiah 1:26. · *2 verses*<br><small>aliases: Counsellor</small>
+- **Crown** · Isaiah 3:17 · Mentioned in Isaiah 3:17. · *2 verses*
+- **Cypress** · Isaiah 14:8 · Mentioned in Isaiah 14:8. · *2 verses*
+- **Desert** · Isaiah 13:21 · Mentioned in Isaiah 13:21. · *4 verses*
+- **Donkey** · Isaiah 1:3 · Mentioned in Isaiah 1:3. · *2 verses*<br><small>aliases: Ass</small>
+- **Dragon** · Isaiah 13:22 · Mentioned in Isaiah 13:22. · *2 verses*
+- **Eden** · Isaiah 37:12 · Named in Isaiah 37:12. · *2 verses*<br><small>forms: Garden of Eden</small>
+- **Edom** · Isaiah 11:14 · Named in Isaiah 11:14. · *4 verses*<br><small>forms: Esau</small>
+- **Elam** · Isaiah 11:11 · Named in Isaiah 11:11. · *3 verses*
+- **Elealeh** · Isaiah 15:4 · Named in Isaiah 15:4. · *2 verses*
+- **Fat** · Isaiah 1:11 · Mentioned in Isaiah 1:11. · *4 verses*
+- **Fir** · Isaiah 14:8 · Mentioned in Isaiah 14:8. · *2 verses*
+- **Forest** · Isaiah 7:2 · Mentioned in Isaiah 7:2. · *4.666666666666667 verses*
+- **Fortress** · Isaiah 13:22; Isaiah 23:4; Isaiah 25:12 · Mentioned in Isaiah 13:22. · *4 verses*<br><small>aliases: Stronghold, Fort</small>
+- **Foundation** · Isaiah 6:4 · Mentioned in Isaiah 6:4. · *3.6666666666666665 verses*
+- **Garment** · Isaiah 3:23 · Mentioned in Isaiah 3:23. · *4.666666666666667 verses*
+- **Gold** · Isaiah 2:7 · Mentioned in Isaiah 2:7. · *4 verses*
+- **Gomorrah** · Isaiah 1:9 · Named in Isaiah 1:9. · *3 verses*<br><small>forms: Gomorrha</small>
+- **Grain** · Isaiah 17:5 · Mentioned in Isaiah 17:5. · *2.3333333333333335 verses*<br><small>aliases: Corn</small>
+- **Grass** · Isaiah 5:24 · Mentioned in Isaiah 5:24. · *3.3333333333333335 verses*
+- **Hamath** · Isaiah 10:9 · Named in Isaiah 10:9. · *4 verses*
+- **Heshbon** · Isaiah 15:4 · Named in Isaiah 15:4. · *3 verses*
+- **High place** · Isaiah 15:2 · Mentioned in Isaiah 15:2. · *2 verses*
+- **Highway** · Isaiah 7:3 · Mentioned in Isaiah 7:3. · *3 verses*
+- **Hilkiah** · Isaiah 22:20 · Named in Isaiah 22:20. · *3 verses*
+- **Horse** · Isaiah 2:7 · Mentioned in Isaiah 2:7. · *3.3333333333333335 verses*
+- **Idol** · Isaiah 2:8 · Mentioned in Isaiah 2:8. · *4.333333333333333 verses*
+- **Jazer** · Isaiah 16:8 · Named in Isaiah 16:8. · *2 verses*<br><small>forms: Jaazer</small>
+- **Jesse** · Isaiah 11:1 · Named in Isaiah 11:1. · *2 verses*
+- **Joah** · Isaiah 36:3 · Named in Isaiah 36:3. · *3 verses*
+- **Jotham** · Isaiah 1:1 · Named in Isaiah 1:1. · *2 verses*<br><small>forms: Joatham</small>
+- **Judge** · Isaiah 1:17 · Mentioned in Isaiah 1:17. · *4 verses*
+- **Kedar** · Isaiah 21:16 · Named in Isaiah 21:16. · *4 verses*
+- **Kir** · Isaiah 15:1 · Named in Isaiah 15:1. · *4 verses*
+- **Kir-hareseth** · Isaiah 16:7; Isaiah 16:11 · Named in Isaiah 16:7. · *2 verses*<br><small>aliases: Kir Heres, Kir-haresh · forms: Kir Haraseth</small>
+- **Lachish** · Isaiah 36:2 · Named in Isaiah 36:2. · *2 verses*
+- **Lamb** · Isaiah 1:11 · Mentioned in Isaiah 1:11. · *3 verses*
+- **Lion** · Isaiah 5:29 · Mentioned in Isaiah 5:29. · *3.3333333333333335 verses*
+- **Lips** · Isaiah 6:5 · Mentioned in Isaiah 6:5. · *3 verses*<br><small>aliases: Lip</small>
+- **Loins** · Isaiah 5:27 · Mentioned in Isaiah 5:27. · *2 verses*
+- **Maher-shalal-hash-baz** · Isaiah 8:1 · Named in Isaiah 8:1. · *2 verses*
+- **Meadow** · Isaiah 5:17; Isaiah 19:7 · Mentioned in Isaiah 5:17. · *2 verses*<br><small>aliases: Pasture</small>
+- **Meat** · Isaiah 9:20; Isaiah 22:13 · Mentioned in Isaiah 9:20. · *3 verses*
+- **Media** · Isaiah 13:17; Isaiah 21:2 · Named in Isaiah 21:2. · *2 verses*<br><small>aliases: Medes</small>
+- **Messenger** · Isaiah 14:32 · Mentioned in Isaiah 14:32. · *2.3333333333333335 verses*
+- **Midian** · Isaiah 9:4 · Named in Isaiah 9:4. · *3 verses*
+- **Moon** · Isaiah 1:13 · Mentioned in Isaiah 1:13. · *3 verses*
+- **Moses** · Isaiah 63:11 · Named in Isaiah 63:11. · *2 verses*
+- **Mud** · Isaiah 10:6; Isaiah 29:16; Isaiah 57:20 · Mentioned in Isaiah 10:6. · *2 verses*<br><small>aliases: Mire, Clay</small>
+- **Nebo** · Isaiah 15:2 · Named in Isaiah 15:2. · *2 verses*
+- **Neck** · Isaiah 3:16 · Mentioned in Isaiah 3:16. · *2.3333333333333335 verses*
+- **Nile** · Isaiah 19:7; Isaiah 23:3 · Named in Isaiah 19:7. · *4 verses*<br><small>aliases: Sihor</small>
+- **Oak** · Isaiah 1:29 · Mentioned in Isaiah 1:29. · *2 verses*
+- **Oil** · Isaiah 1:6 · Mentioned in Isaiah 1:6. · *2.3333333333333335 verses*<br><small>forms: Olive oil</small>
+- **Owl** · Isaiah 13:21 · Mentioned in Isaiah 13:21. · *2 verses*
+- **Palace** · Isaiah 13:22 · Mentioned in Isaiah 13:22. · *2 verses*
+- **Pharaoh** · Isaiah 19:11 · Named in Isaiah 19:11. · *4 verses*
+- **Pool** · Isaiah 7:3 · Mentioned in Isaiah 7:3. · *2.6666666666666665 verses*
+- **Priest** · Isaiah 8:2 · Mentioned in Isaiah 8:2. · *2 verses*
+- **Prophet** · Isaiah 3:2 · Mentioned in Isaiah 3:2. · *2.6666666666666665 verses*
+- **Put** · Isaiah 1:16; Isaiah 66:19 · Named in Isaiah 66:19. · *3 verses*<br><small>forms: Libyans, Phut</small>
+- **Rahab** · Isaiah 30:7 · Named in Isaiah 30:7. · *2 verses*<br><small>forms: Rachab</small>
+- **Rain** · Isaiah 4:6 · Mentioned in Isaiah 4:6. · *2 verses*
+- **Reed** · Isaiah 9:14; Isaiah 19:6 · Mentioned in Isaiah 9:14. · *2.3333333333333335 verses*<br><small>aliases: Reeds</small>
+- **Remaliah** · Isaiah 7:1 · Named in Isaiah 7:1. · *5 verses*
+- **Rezin** · Isaiah 7:1 · King of Syria. · *5 verses*
+- **Rod** · Isaiah 9:4 · Mentioned in Isaiah 9:4. · *3.6666666666666665 verses*
+- **Sabbath** · Isaiah 1:13 · Mentioned in Isaiah 1:13. · *2 verses*
+- **Sackcloth** · Isaiah 3:24 · Mentioned in Isaiah 3:24. · *3 verses*
+- **Sela** · Isaiah 16:1 · Named in Isaiah 16:1. · *2 verses*<br><small>aliases: Selah · forms: Jokthe-el</small>
+- **Sepharvaim** · Isaiah 36:19 · Named in Isaiah 36:19. · *2 verses*
+- **Sharon** · Isaiah 33:9 · Named in Isaiah 33:9. · *3 verses*<br><small>forms: Saron</small>
+- **Sheba** · Isaiah 43:3; Isaiah 45:14; Isaiah 60:6 · Named in Isaiah 43:3. · *2 verses*<br><small>aliases: Sabeans</small>
+- **Shebna** · Isaiah 22:15 · Named in Isaiah 22:15. · *5 verses*
+- **Sheep** · Isaiah 7:21 · Mentioned in Isaiah 7:21. · *2.3333333333333335 verses*
+- **Shepherd** · Isaiah 13:20 · Mentioned in Isaiah 13:20. · *2.3333333333333335 verses*
+- **Ship** · Isaiah 2:16 · Mentioned in Isaiah 2:16. · *2 verses*
+- **Shoulder** · Isaiah 9:4 · Mentioned in Isaiah 9:4. · *3 verses*
+- **Sibmah** · Isaiah 16:8 · Named in Isaiah 16:8. · *2 verses*<br><small>forms: Sebam, Shebam, Shibmah</small>
+- **Sidon** · Isaiah 23:2 · Named in Isaiah 23:2. · *3 verses*<br><small>aliases: Zidon · forms: Great Sidon</small>
+- **Silver** · Isaiah 1:22 · Mentioned in Isaiah 1:22. · *4.333333333333333 verses*
+- **Sky** · Isaiah 13:10 · Mentioned in Isaiah 13:10. · *2 verses*<br><small>forms: Firmament, Expanse</small>
+- **Smoke** · Isaiah 4:5 · Mentioned in Isaiah 4:5. · *2.6666666666666665 verses*
+- **Sodom** · Isaiah 1:9 · Named in Isaiah 1:9. · *4 verses*<br><small>forms: Sodoma</small>
+- **Sores** · Isaiah 1:6 · Mentioned in Isaiah 1:6. · *2.3333333333333335 verses*<br><small>aliases: Sore</small>
+- **Staff** · Isaiah 3:1 · Mentioned in Isaiah 3:1. · *3 verses*
+- **Stone** · Isaiah 5:2 · Mentioned in Isaiah 5:2. · *4.333333333333333 verses*
+- **Storm** · Isaiah 4:6; Isaiah 28:2 · Mentioned in Isaiah 4:6. · *2.6666666666666665 verses*<br><small>aliases: Tempest</small>
+- **Stranger** · Isaiah 1:7; Isaiah 2:6 · Mentioned in Isaiah 1:7. · *4 verses*<br><small>aliases: Foreigner · forms: Sojourner</small>
+- **Street** · Isaiah 5:25 · Mentioned in Isaiah 5:25. · *2.6666666666666665 verses*
+- **Strong drink** · Isaiah 5:11 · Mentioned in Isaiah 5:11. · *2 verses*
+- **Sun** · Isaiah 13:10 · Mentioned in Isaiah 13:10. · *3.3333333333333335 verses*
+- **Tent** · Isaiah 13:20 · Mentioned in Isaiah 13:20. · *2 verses*
+- **Thorns** · Isaiah 5:6 · Mentioned in Isaiah 5:6. · *4 verses*<br><small>aliases: Thorn</small>
+- **Throne** · Isaiah 6:1 · Mentioned in Isaiah 6:1. · *2.6666666666666665 verses*
+- **Tongue** · Isaiah 3:8 · Mentioned in Isaiah 3:8. · *5 verses*
+- **Tower** · Isaiah 2:15; Isaiah 21:5 · Mentioned in Isaiah 2:15. · *2.6666666666666665 verses*<br><small>aliases: Watchtower</small>
+- **Tyre** · Isaiah 23:1 · Named in Isaiah 23:1. · *5 verses*<br><small>forms: Tyrus</small>
+- **Uzziah** · Isaiah 1:1 · Named in Isaiah 1:1. · *3 verses*<br><small>forms: Azariah, Ozias</small>
+- **Valley** · Isaiah 7:19 · Mentioned in Isaiah 7:19. · *4.666666666666667 verses*<br><small>forms: Vale</small>
+- **Vine** · Isaiah 5:2 · Mentioned in Isaiah 5:2. · *2.6666666666666665 verses*<br><small>forms: Grapevine</small>
+- **Virgin** · Isaiah 7:14 · Mentioned in Isaiah 7:14. · *2 verses*
+- **Whirlwind** · Isaiah 5:28 · Mentioned in Isaiah 5:28. · *2.3333333333333335 verses*
+- **Wind** · Isaiah 7:2 · Mentioned in Isaiah 7:2. · *3.6666666666666665 verses*
+- **Womb** · Isaiah 13:18 · Mentioned in Isaiah 13:18. · *3 verses*
+- **Yoke** · Isaiah 9:4 · Mentioned in Isaiah 9:4. · *2 verses*
+- **Zoan** · Isaiah 19:11 · Named in Isaiah 19:11. · *3 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Acacia** · Isaiah 41:19 · Mentioned in Isaiah 41:19. · *0.3333333333333333 verses*<br><small>forms: Shittim</small>
+- **Acre** · Isaiah 5:10 · Mentioned in Isaiah 5:10. · *0.3333333333333333 verses*
+- **Adder** · Isaiah 14:29 · Mentioned in Isaiah 14:29. · *0.6666666666666666 verses*
+- **Agate** · Isaiah 54:12 · Mentioned in Isaiah 54:12. · *0.3333333333333333 verses*
+- **Aiath** · Isaiah 10:28 · Named in Isaiah 10:28. · *1 verses*
+- **Ambassador** · Isaiah 18:2 · Mentioned in Isaiah 18:2. · *1.3333333333333333 verses*
+- **Ammon** · Isaiah 11:14 · Named in Isaiah 11:14. · *1 verses*<br><small>forms: Ammonitess</small>
+- **Anathoth** · Isaiah 10:30 · Named in Isaiah 10:30. · *1 verses*
+- **Angel** · Isaiah 37:36 · Mentioned in Isaiah 37:36. · *0.6666666666666666 verses*<br><small>forms: Angels</small>
+- **Ankle** · Isaiah 3:20 · Mentioned in Isaiah 3:20. · *0.3333333333333333 verses*
+- **Ankle chains** · Isaiah 3:20 · Mentioned in Isaiah 3:20. · *0.3333333333333333 verses*
+- **Anklets** · Isaiah 3:18 · Mentioned in Isaiah 3:18. · *0.3333333333333333 verses*
+- **Antelope** · Isaiah 51:20 · Mentioned in Isaiah 51:20. · *0.3333333333333333 verses*
+- **Anvil** · Isaiah 41:7 · Mentioned in Isaiah 41:7. · *0.3333333333333333 verses*
+- **Ar** · Isaiah 15:1 · Named in Isaiah 15:1. · *1 verses*
+- **Arabia** · Isaiah 21:13 · Named in Isaiah 21:13. · *1 verses*
+- **Ararat** · Isaiah 37:38 · Named in Isaiah 37:38. · *1 verses*<br><small>aliases: Armenia</small>
+- **Archer** · Isaiah 21:17 · Mentioned in Isaiah 21:17. · *0.6666666666666666 verses*
+- **Armour** · Isaiah 9:5; Isaiah 22:8 · Mentioned in Isaiah 9:5. · *1.3333333333333333 verses*<br><small>aliases: Armor</small>
+- **Arnon** · Isaiah 16:2 · Named in Isaiah 16:2. · *1 verses*
+- **Aroer** · Isaiah 17:2 · Named in Isaiah 17:2. · *1 verses*
+- **Arrow** · Isaiah 5:28 · Mentioned in Isaiah 5:28. · *1.3333333333333333 verses*
+- **Ashdod** · Isaiah 20:1 · Named in Isaiah 20:1. · *1 verses*<br><small>forms: Azotus</small>
+- **Asherah** · Isaiah 17:8 · Mentioned in Isaiah 17:8. · *0.6666666666666666 verses*<br><small>forms: Asherim</small>
+- **Ashes** · Isaiah 44:20 · Mentioned in Isaiah 44:20. · *1 verses*
+- **Asp** · Isaiah 11:8 · Mentioned in Isaiah 11:8. · *0.3333333333333333 verses*
+- **Astrologer** · Isaiah 47:13 · Mentioned in Isaiah 47:13. · *0.3333333333333333 verses*
+- **Axe** · Isaiah 10:15 · Mentioned in Isaiah 10:15. · *0.6666666666666666 verses*<br><small>aliases: Ax</small>
+- **Bag** · Isaiah 46:6 · Mentioned in Isaiah 46:6. · *0.3333333333333333 verses*
+- **Baladan** · Isaiah 39:1 · Named in Isaiah 39:1. · *1 verses*
+- **Barley** · Isaiah 28:25 · Mentioned in Isaiah 28:25. · *0.3333333333333333 verses*
+- **Basket** · Isaiah 40:12 · Mentioned in Isaiah 40:12. · *0.3333333333333333 verses*
+- **Bat** · Isaiah 2:20 · Mentioned in Isaiah 2:20. · *0.3333333333333333 verses*
+- **Bath** · Isaiah 5:10 · Mentioned in Isaiah 5:10. · *0.3333333333333333 verses*<br><small>forms: Baths</small>
+- **Beard** · Isaiah 7:20 · Mentioned in Isaiah 7:20. · *0.6666666666666666 verses*
+- **Bed** · Isaiah 28:20 · Mentioned in Isaiah 28:20. · *1.3333333333333333 verses*
+- **Bee** · Isaiah 7:18 · Mentioned in Isaiah 7:18. · *0.3333333333333333 verses*
+- **Beer-elim** · Isaiah 15:8 · Named in Isaiah 15:8. · *1 verses*
+- **Bel** · Isaiah 46:1 · Mentioned in Isaiah 46:1. · *0.3333333333333333 verses*
+- **Belly** · Isaiah 46:3 · Mentioned in Isaiah 46:3. · *0.3333333333333333 verses*<br><small>forms: Stomach</small>
+- **Belt** · Isaiah 3:24 · Mentioned in Isaiah 3:24. · *1.3333333333333333 verses*
+- **Bittern** · Isaiah 14:23 · Mentioned in Isaiah 14:23. · *0.6666666666666666 verses*
+- **Blanket** · Isaiah 28:20 · Mentioned in Isaiah 28:20. · *0.3333333333333333 verses*
+- **Boil** · Isaiah 38:21 · Mentioned in Isaiah 38:21. · *0.6666666666666666 verses*<br><small>forms: Boils</small>
+- **Bones** · Isaiah 38:13 · Mentioned in Isaiah 38:13. · *1 verses*<br><small>aliases: Bone</small>
+- **Bonnet** · Isaiah 3:20 · Mentioned in Isaiah 3:20. · *0.3333333333333333 verses*
+- **Bosom** · Isaiah 40:11 · Mentioned in Isaiah 40:11. · *1.3333333333333333 verses*
+- **Bowels** · Isaiah 16:11 · Mentioned in Isaiah 16:11. · *1.3333333333333333 verses*
+- **Bowl** · Isaiah 51:17 · Mentioned in Isaiah 51:17. · *0.6666666666666666 verses*
+- **Box tree** · Isaiah 41:19 · Mentioned in Isaiah 41:19. · *0.6666666666666666 verses*
+- **Bracelets** · Isaiah 3:19 · Mentioned in Isaiah 3:19. · *0.3333333333333333 verses*<br><small>aliases: Bracelet</small>
+- **Brambles** · Isaiah 34:13 · Mentioned in Isaiah 34:13. · *0.3333333333333333 verses*<br><small>aliases: Bramble</small>
+- **Brass** · Isaiah 45:2 · Mentioned in Isaiah 45:2. · *1 verses*
+- **Breast** · Isaiah 28:9 · Mentioned in Isaiah 28:9. · *1.3333333333333333 verses*
+- **Breastplate** · Isaiah 59:17 · Mentioned in Isaiah 59:17. · *0.3333333333333333 verses*
+- **Brick** · Isaiah 9:10 · Mentioned in Isaiah 9:10. · *0.6666666666666666 verses*
+- **Brimstone** · Isaiah 30:33 · Mentioned in Isaiah 30:33. · *0.6666666666666666 verses*<br><small>aliases: Sulfur</small>
+- **Bronze** · Isaiah 45:2 · Mentioned in Isaiah 45:2. · *1 verses*
+- **Brook of Egypt** · Isaiah 7:18; Isaiah 27:12 · Named in Isaiah 27:12. · *0 verses*<br><small>aliases: Stream of Egypt · forms: Lower, Proud</small>
+- **Broom** · Isaiah 14:23 · Mentioned in Isaiah 14:23. · *0.3333333333333333 verses*
+- **Broth** · Isaiah 65:4 · Mentioned in Isaiah 65:4. · *0.3333333333333333 verses*
+- **Brow** · Isaiah 48:4 · Mentioned in Isaiah 48:4. · *0.3333333333333333 verses*
+- **Bucket** · Isaiah 40:15 · Mentioned in Isaiah 40:15. · *0.3333333333333333 verses*
+- **Bull** · Isaiah 1:11 · Mentioned in Isaiah 1:11. · *1.3333333333333333 verses*<br><small>aliases: Bullock</small>
+- **Bulrushes** · Isaiah 18:2 · Mentioned in Isaiah 18:2. · *0.6666666666666666 verses*<br><small>aliases: Bulrush</small>
+- **Bulwark** · Isaiah 26:1 · Mentioned in Isaiah 26:1. · *0.3333333333333333 verses*<br><small>forms: Rampart</small>
+- **Bush** · Isaiah 7:19 · Mentioned in Isaiah 7:19. · *0.3333333333333333 verses*<br><small>forms: Burning bush</small>
+- **Butter** · Isaiah 7:15 · Mentioned in Isaiah 7:15. · *0.6666666666666666 verses*
+- **Cake of figs** · Isaiah 38:21 · Mentioned in Isaiah 38:21. · *0.3333333333333333 verses*<br><small>forms: Cakes of figs</small>
+- **Cakes** · Isaiah 16:7 · Mentioned in Isaiah 16:7. · *0.6666666666666666 verses*<br><small>aliases: Cake</small>
+- **Calf** · Isaiah 11:6 · Mentioned in Isaiah 11:6. · *0.6666666666666666 verses*
+- **Calno** · Isaiah 10:9 · Named in Isaiah 10:9. · *1 verses*<br><small>forms: Calneh</small>
+- **Camel** · Isaiah 21:7 · Mentioned in Isaiah 21:7. · *1.3333333333333333 verses*
+- **Cap** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *0.3333333333333333 verses*
+- **Captain** · Isaiah 3:3 · Mentioned in Isaiah 3:3. · *0.6666666666666666 verses*
+- **Carbuncle** · Isaiah 54:12 · Mentioned in Isaiah 54:12. · *0.3333333333333333 verses*
+- **Carchemish** · Isaiah 10:9 · Named in Isaiah 10:9. · *1 verses*
+- **Carpenter** · Isaiah 41:7 · Mentioned in Isaiah 41:7. · *0.6666666666666666 verses*
+- **Cart** · Isaiah 5:18 · Mentioned in Isaiah 5:18. · *1 verses*
+- **Caterpillar** · Isaiah 33:4 · Mentioned in Isaiah 33:4. · *0.3333333333333333 verses*
+- **Cauls** · Isaiah 3:18 · Mentioned in Isaiah 3:18. · *0.3333333333333333 verses*
+- **Cave** · Isaiah 2:19; Isaiah 2:21 · Mentioned in Isaiah 2:19. · *0.6666666666666666 verses*<br><small>aliases: Cavern</small>
+- **Chain** · Isaiah 3:19 · Mentioned in Isaiah 3:19. · *1.3333333333333333 verses*
+- **Changeable suits** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *0.3333333333333333 verses*
+- **Cheek** · Isaiah 50:6 · Mentioned in Isaiah 50:6. · *0.3333333333333333 verses*
+- **Cherubim** · Isaiah 37:16 · Mentioned in Isaiah 37:16. · *0.3333333333333333 verses*<br><small>aliases: Cherubims · forms: Cherub</small>
+- **Chief** · Isaiah 14:9 · Mentioned in Isaiah 14:9. · *0.6666666666666666 verses*
+- **Cistern** · Isaiah 30:14 · Mentioned in Isaiah 30:14. · *0.6666666666666666 verses*
+- **City of David** · Isaiah 22:9 · Named in Isaiah 22:9. · *0 verses*<br><small>forms: City of Judah</small>
+- **City of Destruction** · Isaiah 19:18 · Named in Isaiah 19:18. · *0 verses*
+- **Cloak** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *0.3333333333333333 verses*
+- **Coal** · Isaiah 6:6; Isaiah 44:12 · Mentioned in Isaiah 6:6. · *1.6666666666666667 verses*<br><small>aliases: Coals, Live coal</small>
+- **Cobra** · Isaiah 11:8 · Mentioned in Isaiah 11:8. · *0.3333333333333333 verses*
+- **Cockatrice** · Isaiah 11:8 · Mentioned in Isaiah 11:8. · *1 verses*
+- **Commander** · Isaiah 55:4 · Mentioned in Isaiah 55:4. · *0.3333333333333333 verses*
+- **Conduit** · Isaiah 7:3; Isaiah 36:2 · Mentioned in Isaiah 7:3. · *0.6666666666666666 verses*<br><small>aliases: Aqueduct</small>
+- **Consumption** · Isaiah 10:22 · Mentioned in Isaiah 10:22. · *1 verses*
+- **Cord** · Isaiah 5:18 · Mentioned in Isaiah 5:18. · *1 verses*
+- **Cormorant** · Isaiah 34:11 · Mentioned in Isaiah 34:11. · *0.3333333333333333 verses*
+- **Cornerstone** · Isaiah 19:13 · Mentioned in Isaiah 19:13. · *0.6666666666666666 verses*
+- **Craftsman** · Isaiah 3:3 · Mentioned in Isaiah 3:3. · *0.3333333333333333 verses*<br><small>forms: Artisan</small>
+- **Crane** · Isaiah 38:14 · Mentioned in Isaiah 38:14. · *0.3333333333333333 verses*
+- **Crisping pins** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *0.3333333333333333 verses*
+- **Cucumbers** · Isaiah 1:8 · Mentioned in Isaiah 1:8. · *0.3333333333333333 verses*
+- **Cumin** · Isaiah 28:25 · Mentioned in Isaiah 28:25. · *0.6666666666666666 verses*<br><small>aliases: Cummin</small>
+- **Cup** · Isaiah 22:24 · Mentioned in Isaiah 22:24. · *1 verses*
+- **Cush** · Isaiah 11:11 · Named in Isaiah 11:11. · *1 verses*
+- **Dawn** · Isaiah 14:12 · Mentioned in Isaiah 14:12. · *1 verses*<br><small>forms: Daybreak</small>
+- **Deaf** · Isaiah 29:18 · Mentioned in Isaiah 29:18. · *1.6666666666666667 verses*<br><small>forms: Deafness</small>
+- **Dedanim** · Isaiah 21:13 · Named in Isaiah 21:13. · *1 verses*
+- **Deer** · Isaiah 35:6 · Mentioned in Isaiah 35:6. · *0.3333333333333333 verses*
+- **Dew** · Isaiah 18:4 · Mentioned in Isaiah 18:4. · *0.6666666666666666 verses*
+- **Diadem** · Isaiah 28:5 · Mentioned in Isaiah 28:5. · *0.6666666666666666 verses*
+- **Dibon** · Isaiah 15:2 · Named in Isaiah 15:2. · *1 verses*<br><small>forms: Dibon Gad</small>
+- **Dill** · Isaiah 28:25 · Mentioned in Isaiah 28:25. · *0.6666666666666666 verses*<br><small>forms: Anise</small>
+- **Dimon** · Isaiah 15:9 · Named in Isaiah 15:9. · *1 verses*
+- **Ditch** · Isaiah 22:11 · Mentioned in Isaiah 22:11. · *0.3333333333333333 verses*<br><small>forms: Trench</small>
+- **Diviner** · Isaiah 3:2 · Mentioned in Isaiah 3:2. · *0.6666666666666666 verses*
+- **Dog** · Isaiah 56:10 · Mentioned in Isaiah 56:10. · *1 verses*
+- **Door** · Isaiah 6:4 · Mentioned in Isaiah 6:4. · *1.6666666666666667 verses*
+- **Dove** · Isaiah 38:14 · Mentioned in Isaiah 38:14. · *1 verses*
+- **Dromedary** · Isaiah 60:6 · Mentioned in Isaiah 60:6. · *0.3333333333333333 verses*
+- **Drought** · Isaiah 58:11 · Mentioned in Isaiah 58:11. · *0.3333333333333333 verses*
+- **Dumah** · Isaiah 21:11 · Named in Isaiah 21:11. · *1 verses*
+- **Eagle** · Isaiah 40:31 · Mentioned in Isaiah 40:31. · *0.3333333333333333 verses*
+- **Earrings** · Isaiah 3:19 · Mentioned in Isaiah 3:19. · *0.6666666666666666 verses*<br><small>aliases: Earring</small>
+- **Earthquake** · Isaiah 29:6 · Mentioned in Isaiah 29:6. · *0.3333333333333333 verses*
+- **East wind** · Isaiah 27:8 · Mentioned in Isaiah 27:8. · *0.3333333333333333 verses*
+- **Eggs** · Isaiah 10:14 · Mentioned in Isaiah 10:14. · *0.6666666666666666 verses*<br><small>aliases: Egg</small>
+- **Eglaim** · Isaiah 15:8 · Named in Isaiah 15:8. · *1 verses*
+- **Eglath-shelishiyah** · Isaiah 15:5 · Named in Isaiah 15:5. · *1 verses*
+- **Egyptian Sea** · Isaiah 11:15 · Named in Isaiah 11:15. · *0 verses*
+- **Elder** · Isaiah 3:2 · Mentioned in Isaiah 3:2. · *1.6666666666666667 verses*
+- **Elders** · Isaiah 3:14 · Mentioned in Isaiah 3:14. · *1 verses*
+- **Ephah** · Isaiah 5:10 · Named in Isaiah 60:6. · *1 verses*
+- **Eunuch** · Isaiah 39:7 · Mentioned in Isaiah 39:7. · *1 verses*
+- **Euphrates** · Isaiah 27:12 · Named in Isaiah 27:12. · *1 verses*<br><small>forms: Great River</small>
+- **Fatherless** · Isaiah 1:17 · Mentioned in Isaiah 1:17. · *1.3333333333333333 verses*<br><small>forms: Orphan</small>
+- **Fig tree** · Isaiah 9:10 · Mentioned in Isaiah 9:10. · *1.6666666666666667 verses*<br><small>aliases: Fig</small>
+- **Figs** · Isaiah 38:21 · Mentioned in Isaiah 38:21. · *0.3333333333333333 verses*
+- **Fine linen** · Isaiah 3:23 · Mentioned in Isaiah 3:23. · *0.3333333333333333 verses*
+- **Finger** · Isaiah 2:8 · Mentioned in Isaiah 2:8. · *1.3333333333333333 verses*
+- **Fish** · Isaiah 19:8 · Mentioned in Isaiah 19:8. · *1 verses*
+- **Fishermen** · Isaiah 19:8 · Mentioned in Isaiah 19:8. · *0.3333333333333333 verses*<br><small>aliases: Fishers · forms: Fisherman</small>
+- **Fist** · Isaiah 58:4 · Mentioned in Isaiah 58:4. · *0.3333333333333333 verses*
+- **Flax** · Isaiah 19:9 · Mentioned in Isaiah 19:9. · *0.6666666666666666 verses*
+- **Flint** · Isaiah 5:28 · Mentioned in Isaiah 5:28. · *0.6666666666666666 verses*
+- **Flood** · Isaiah 8:7 · Mentioned in Isaiah 8:7. · *1.3333333333333333 verses*
+- **Flour** · Isaiah 28:28; Isaiah 47:2 · Mentioned in Isaiah 28:28. · *0.6666666666666666 verses*<br><small>aliases: Meal</small>
+- **Flute** · Isaiah 5:12 · Mentioned in Isaiah 5:12. · *0.6666666666666666 verses*
+- **Fool** · Isaiah 19:11 · Mentioned in Isaiah 19:11. · *1.6666666666666667 verses*
+- **Footstool** · Isaiah 66:1 · Mentioned in Isaiah 66:1. · *0.3333333333333333 verses*
+- **Fork** · Isaiah 30:24 · Mentioned in Isaiah 30:24. · *0.3333333333333333 verses*
+- **Fortified city** · Isaiah 25:2 · Mentioned in Isaiah 25:2. · *1.3333333333333333 verses*<br><small>forms: Fenced city</small>
+- **Fountain** · Isaiah 41:18 · Mentioned in Isaiah 41:18. · *0.3333333333333333 verses*
+- **Frankincense** · Isaiah 43:23 · Mentioned in Isaiah 43:23. · *1 verses*
+- **Fuller** · Isaiah 7:3 · Mentioned in Isaiah 7:3. · *0.6666666666666666 verses*
+- **Fuller’s Field** · Isaiah 7:3 · Named in Isaiah 7:3. · *0 verses*
+- **Furnace** · Isaiah 31:9 · Mentioned in Isaiah 31:9. · *0.6666666666666666 verses*
+- **Galilee** · Isaiah 9:1 · Named in Isaiah 9:1. · *1 verses*<br><small>forms: Galilean, Galileans</small>
+- **Gallim** · Isaiah 10:30 · Named in Isaiah 10:30. · *1 verses*
+- **Gazelle** · Isaiah 13:14 · Mentioned in Isaiah 13:14. · *0.3333333333333333 verses*<br><small>aliases: Roe</small>
+- **Geba** · Isaiah 10:29 · Named in Isaiah 10:29. · *1 verses*<br><small>forms: Gaba</small>
+- **Gebim** · Isaiah 10:31 · Named in Isaiah 10:31. · *1 verses*
+- **Gibeah** · Isaiah 10:29 · Named in Isaiah 10:29. · *1 verses*
+- **Girdle** · Isaiah 3:24 · Mentioned in Isaiah 3:24. · *1.3333333333333333 verses*
+- **Goat** · Isaiah 1:11 · Mentioned in Isaiah 1:11. · *1.6666666666666667 verses*
+- **Goldsmith** · Isaiah 40:19 · Mentioned in Isaiah 40:19. · *1 verses*
+- **Governor** · Isaiah 60:17 · Mentioned in Isaiah 60:17. · *0.3333333333333333 verses*
+- **Gozan** · Isaiah 37:12 · Named in Isaiah 37:12. · *1 verses*
+- **Grapes** · Isaiah 5:2 · Mentioned in Isaiah 5:2. · *1.3333333333333333 verses*
+- **Grasshopper** · Isaiah 40:22 · Mentioned in Isaiah 40:22. · *0.3333333333333333 verses*
+- **Great owl** · Isaiah 34:15 · Mentioned in Isaiah 34:15. · *0.3333333333333333 verses*
+- **Guard** · Isaiah 52:12 · Mentioned in Isaiah 52:12. · *0.6666666666666666 verses*
+- **Hailstones** · Isaiah 30:30 · Mentioned in Isaiah 30:30. · *0.3333333333333333 verses*
+- **Hair** · Isaiah 3:24 · Mentioned in Isaiah 3:24. · *1.3333333333333333 verses*
+- **Hammer** · Isaiah 41:7 · Mentioned in Isaiah 41:7. · *0.6666666666666666 verses*
+- **Hanes** · Isaiah 30:4 · Named in Isaiah 30:4. · *1 verses*
+- **Haran** · Isaiah 37:12 · Named in Isaiah 37:12. · *1 verses*<br><small>forms: Charran</small>
+- **Harp** · Isaiah 5:12 · Mentioned in Isaiah 5:12. · *1.6666666666666667 verses*
+- **Headdress** · Isaiah 3:18; Isaiah 3:20 · Mentioned in Isaiah 3:18. · *0.6666666666666666 verses*<br><small>aliases: Headband</small>
+- **Hedge** · Isaiah 5:5 · Mentioned in Isaiah 5:5. · *1 verses*<br><small>forms: Fence</small>
+- **Heifer** · Isaiah 15:5 · Mentioned in Isaiah 15:5. · *0.3333333333333333 verses*
+- **Helmet** · Isaiah 59:17 · Mentioned in Isaiah 59:17. · *0.3333333333333333 verses*
+- **Hena** · Isaiah 37:13 · Named in Isaiah 37:13. · *1 verses*
+- **Hephzibah** · Isaiah 62:4 · Named in Isaiah 62:4. · *1 verses*
+- **Hireling** · Isaiah 16:14 · Mentioned in Isaiah 16:14. · *0.6666666666666666 verses*<br><small>forms: Hired servant</small>
+- **Homer** · Isaiah 5:10 · Mentioned in Isaiah 5:10. · *0.3333333333333333 verses*
+- **Honey** · Isaiah 7:15 · Mentioned in Isaiah 7:15. · *0.6666666666666666 verses*
+- **Hood** · Isaiah 3:23 · Mentioned in Isaiah 3:23. · *0.3333333333333333 verses*
+- **Hook** · Isaiah 2:4 · Mentioned in Isaiah 2:4. · *1 verses*<br><small>forms: Fishhook</small>
+- **Horonaim** · Isaiah 15:5 · Named in Isaiah 15:5. · *1 verses*
+- **Housetop** · Isaiah 15:3 · Mentioned in Isaiah 15:3. · *1 verses*<br><small>forms: Roof</small>
+- **Hut** · Isaiah 1:8 · Mentioned in Isaiah 1:8. · *1.3333333333333333 verses*<br><small>aliases: Cottage, Lodge</small>
+- **Iron** · Isaiah 10:34 · Mentioned in Isaiah 10:34. · *1.3333333333333333 verses*
+- **Ivvah** · Isaiah 37:13 · Named in Isaiah 37:13. · *1 verses*<br><small>aliases: Ivah</small>
+- **Jackal** · Isaiah 13:21 · Mentioned in Isaiah 13:21. · *1.6666666666666667 verses*
+- **Jahaz** · Isaiah 15:4 · Named in Isaiah 15:4. · *1 verses*<br><small>forms: Jahazah, Jahzah</small>
+- **Javan** · Isaiah 66:19 · Named in Isaiah 66:19. · *1 verses*
+- **Jaw** · Isaiah 30:28 · Mentioned in Isaiah 30:28. · *0.3333333333333333 verses*<br><small>forms: Jawbone</small>
+- **Jordan** · Isaiah 9:1 · Named in Isaiah 9:1. · *1 verses*
+- **Keeper** · Isaiah 27:3 · Mentioned in Isaiah 27:3. · *0.3333333333333333 verses*
+- **Key** · Isaiah 22:22 · Mentioned in Isaiah 22:22. · *0.3333333333333333 verses*
+- **Kidneys** · Isaiah 11:5; Isaiah 34:6 · Mentioned in Isaiah 11:5. · *0.6666666666666666 verses*<br><small>aliases: Reins</small>
+- **Kite** · Isaiah 34:15 · Mentioned in Isaiah 34:15. · *0.3333333333333333 verses*
+- **Knee** · Isaiah 35:3 · Mentioned in Isaiah 35:3. · *1 verses*
+- **Laish** · Isaiah 10:30 · Named in Isaiah 10:30. · *1 verses*
+- **Laishah** · Isaiah 10:30 · Named in Isaiah 10:30. · *1 verses*
+- **Lame** · Isaiah 33:23 · Mentioned in Isaiah 33:23. · *0.6666666666666666 verses*<br><small>forms: Lameness</small>
+- **Lamp** · Isaiah 62:1 · Mentioned in Isaiah 62:1. · *0.3333333333333333 verses*
+- **Leg** · Isaiah 3:20 · Mentioned in Isaiah 3:20. · *0.6666666666666666 verses*
+- **Leopard** · Isaiah 11:6 · Mentioned in Isaiah 11:6. · *0.3333333333333333 verses*
+- **Leviathan** · Isaiah 27:1 · Mentioned in Isaiah 27:1. · *0.3333333333333333 verses*
+- **Levite** · Isaiah 66:21 · Mentioned in Isaiah 66:21. · *0.3333333333333333 verses*
+- **Libnah** · Isaiah 37:8 · Named in Isaiah 37:8. · *1 verses*
+- **Linen** · Isaiah 3:23 · Mentioned in Isaiah 3:23. · *0.3333333333333333 verses*
+- **Lock** · Isaiah 47:2 · Mentioned in Isaiah 47:2. · *0.3333333333333333 verses*
+- **Locust** · Isaiah 33:4 · Mentioned in Isaiah 33:4. · *0.3333333333333333 verses*
+- **Locusts** · Isaiah 33:4 · Mentioned in Isaiah 33:4. · *0.3333333333333333 verses*
+- **Loom** · Isaiah 38:12 · Mentioned in Isaiah 38:12. · *0.3333333333333333 verses*
+- **Lower Pool** · Isaiah 22:9 · Named in Isaiah 22:9. · *0 verses*
+- **Lud** · Isaiah 66:19 · Named in Isaiah 66:19. · *1 verses*<br><small>forms: Ludim</small>
+- **Luhith** · Isaiah 15:5 · Named in Isaiah 15:5. · *1 verses*<br><small>aliases: Ascent of Luhith</small>
+- **Lyre** · Isaiah 5:12 · Mentioned in Isaiah 5:12. · *0.3333333333333333 verses*
+- **Madmenah** · Isaiah 10:31 · Named in Isaiah 10:31. · *1 verses*
+- **Maggot** · Isaiah 14:11 · Mentioned in Isaiah 14:11. · *0.3333333333333333 verses*
+- **Manasseh** · Isaiah 9:21 · Named in Isaiah 9:21. · *1 verses*<br><small>forms: Manasses</small>
+- **Mantle** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *0.6666666666666666 verses*
+- **Market** · Isaiah 23:3 · Mentioned in Isaiah 23:3. · *0.3333333333333333 verses*<br><small>forms: Marketplace</small>
+- **Marrow** · Isaiah 25:6 · Mentioned in Isaiah 25:6. · *0.3333333333333333 verses*
+- **Mattock** · Isaiah 7:25 · Mentioned in Isaiah 7:25. · *0.3333333333333333 verses*
+- **Measuring line** · Isaiah 28:17 · Mentioned in Isaiah 28:17. · *0.6666666666666666 verses*
+- **Mede** · Isaiah 13:17 · Named in Isaiah 13:17. · *1 verses*
+- **Medeba** · Isaiah 15:2 · Named in Isaiah 15:2. · *1 verses*
+- **Melons** · Isaiah 1:8 · Mentioned in Isaiah 1:8. · *0.3333333333333333 verses*
+- **Memphis** · Isaiah 19:13 · Named in Isaiah 19:13. · *1 verses*<br><small>aliases: Noph</small>
+- **Merchant** · Isaiah 23:2 · Mentioned in Isaiah 23:2. · *1.3333333333333333 verses*
+- **Merodach-baladan** · Isaiah 39:1 · Named in Isaiah 39:1. · *1 verses*
+- **Michmash** · Isaiah 10:28 · Named in Isaiah 10:28. · *1 verses*<br><small>forms: Michmas</small>
+- **Migron** · Isaiah 10:28 · Named in Isaiah 10:28. · *1 verses*
+- **Milk** · Isaiah 7:22 · Mentioned in Isaiah 7:22. · *1.6666666666666667 verses*
+- **Millstone** · Isaiah 47:2 · Mentioned in Isaiah 47:2. · *0.3333333333333333 verses*
+- **Mirror** · Isaiah 3:23 · Mentioned in Isaiah 3:23. · *0.3333333333333333 verses*
+- **Mixed wine** · Isaiah 65:11 · Mentioned in Isaiah 65:11. · *0.3333333333333333 verses*<br><small>forms: Spiced wine</small>
+- **Mole** · Isaiah 2:20 · Mentioned in Isaiah 2:20. · *0.3333333333333333 verses*
+- **Mortar** · Isaiah 41:25 · Mentioned in Isaiah 41:25. · *0.3333333333333333 verses*
+- **Moth** · Isaiah 50:9 · Mentioned in Isaiah 50:9. · *0.6666666666666666 verses*
+- **Mount Perazim** · Isaiah 28:21 · Named in Isaiah 28:21. · *1 verses*
+- **Mouse** · Isaiah 66:17 · Mentioned in Isaiah 66:17. · *0.3333333333333333 verses*
+- **Mufflers** · Isaiah 3:19 · Mentioned in Isaiah 3:19. · *0.3333333333333333 verses*
+- **Mule** · Isaiah 66:20 · Mentioned in Isaiah 66:20. · *0.3333333333333333 verses*
+- **Mute** · Isaiah 35:6 · Mentioned in Isaiah 35:6. · *1 verses*<br><small>aliases: Dumb</small>
+- **Myrtle** · Isaiah 41:19 · Mentioned in Isaiah 41:19. · *0.6666666666666666 verses*
+- **Nail** · Isaiah 22:23 · Mentioned in Isaiah 22:23. · *1 verses*
+- **Nails** · Isaiah 41:7 · Mentioned in Isaiah 41:7. · *0.3333333333333333 verses*<br><small>forms: Fingernails</small>
+- **Naphtali** · Isaiah 9:1 · Named in Isaiah 9:1. · *1 verses*
+- **Nebaioth** · Isaiah 60:7 · Named in Isaiah 60:7. · *1 verses*
+- **Necklace** · Isaiah 3:18; Isaiah 3:19 · Mentioned in Isaiah 3:18. · *1.6666666666666667 verses*<br><small>aliases: Chains</small>
+- **Net** · Isaiah 19:8 · Mentioned in Isaiah 19:8. · *0.6666666666666666 verses*
+- **Nettles** · Isaiah 34:13 · Mentioned in Isaiah 34:13. · *0.3333333333333333 verses*
+- **New moon** · Isaiah 1:13 · Mentioned in Isaiah 1:13. · *1 verses*
+- **New wine** · Isaiah 24:7 · Mentioned in Isaiah 24:7. · *1.3333333333333333 verses*
+- **Nimrim** · Isaiah 15:6 · Named in Isaiah 15:6. · *1 verses*
+- **Nineveh** · Isaiah 37:37 · Named in Isaiah 37:37. · *1 verses*<br><small>forms: Huzzab, Nineve</small>
+- **Nisroch** · Isaiah 37:38 · Mentioned in Isaiah 37:38. · *0.3333333333333333 verses*
+- **Noah** · Isaiah 54:9 · Named in Isaiah 54:9. · *1 verses*
+- **Nob** · Isaiah 10:32 · Named in Isaiah 10:32. · *1 verses*
+- **Nose** · Isaiah 3:21 · Mentioned in Isaiah 3:21. · *1 verses*
+- **Nose ring** · Isaiah 3:21 · Mentioned in Isaiah 3:21. · *0.3333333333333333 verses*
+- **Nostrils** · Isaiah 2:22 · Mentioned in Isaiah 2:22. · *0.3333333333333333 verses*
+- **Nurse** · Isaiah 60:16 · Mentioned in Isaiah 60:16. · *1 verses*
+- **Oar** · Isaiah 33:21 · Mentioned in Isaiah 33:21. · *0.3333333333333333 verses*
+- **Officer** · Isaiah 60:17 · Mentioned in Isaiah 60:17. · *0.3333333333333333 verses*
+- **Oil tree** · Isaiah 41:19 · Mentioned in Isaiah 41:19. · *0.3333333333333333 verses*
+- **Old Pool** · Isaiah 22:11 · Named in Isaiah 22:11. · *0 verses*
+- **Olive tree** · Isaiah 17:6 · Mentioned in Isaiah 17:6. · *0.6666666666666666 verses*<br><small>aliases: Olive</small>
+- **Olives** · Isaiah 17:6 · Mentioned in Isaiah 17:6. · *0.3333333333333333 verses*
+- **Ophir** · Isaiah 13:12 · Named in Isaiah 13:12. · *1 verses*
+- **Oreb** · Isaiah 10:26 · Named in Isaiah 10:26. · *1 verses*
+- **Ostrich** · Isaiah 13:21 · Mentioned in Isaiah 13:21. · *1 verses*
+- **Ox** · Isaiah 1:3 · Mentioned in Isaiah 1:3. · *1.6666666666666667 verses*
+- **Oxen** · Isaiah 7:25 · Mentioned in Isaiah 7:25. · *1.3333333333333333 verses*
+- **Papyrus** · Isaiah 18:2 · Mentioned in Isaiah 18:2. · *0.3333333333333333 verses*
+- **Pathros** · Isaiah 11:11 · Named in Isaiah 11:11. · *1 verses*
+- **Pekah** · Isaiah 7:1 · Joined Rezin of Syria against Judah. · *1 verses*
+- **Pelican** · Isaiah 34:11 · Mentioned in Isaiah 34:11. · *0.3333333333333333 verses*
+- **Pen** · Isaiah 8:1 · Mentioned in Isaiah 8:1. · *0.3333333333333333 verses*
+- **Pig** · Isaiah 65:4 · Mentioned in Isaiah 65:4. · *1 verses*<br><small>aliases: Swine</small>
+- **Pillar** · Isaiah 19:10 · Mentioned in Isaiah 19:10. · *0.6666666666666666 verses*
+- **Pipe** · Isaiah 5:12 · Mentioned in Isaiah 5:12. · *0.6666666666666666 verses*
+- **Pitcher** · Isaiah 22:24 · Mentioned in Isaiah 22:24. · *0.3333333333333333 verses*
+- **Plowman** · Isaiah 28:24 · Mentioned in Isaiah 28:24. · *0.3333333333333333 verses*
+- **Plowshare** · Isaiah 2:4 · Mentioned in Isaiah 2:4. · *0.3333333333333333 verses*
+- **Plumb line** · Isaiah 28:17 · Mentioned in Isaiah 28:17. · *0.6666666666666666 verses*
+- **Porcupine** · Isaiah 14:23 · Mentioned in Isaiah 14:23. · *0.6666666666666666 verses*
+- **Pot** · Isaiah 45:9 · Mentioned in Isaiah 45:9. · *0.3333333333333333 verses*
+- **Potter** · Isaiah 29:16 · Mentioned in Isaiah 29:16. · *1.3333333333333333 verses*
+- **Prison** · Isaiah 24:22; Isaiah 42:7 · Mentioned in Isaiah 24:22. · *1.6666666666666667 verses*<br><small>aliases: Dungeon</small>
+- **Prophetess** · Isaiah 8:3 · Mentioned in Isaiah 8:3. · *0.3333333333333333 verses*
+- **Pruning hook** · Isaiah 2:4 · Mentioned in Isaiah 2:4. · *0.6666666666666666 verses*
+- **Pul** · Isaiah 66:19 · Named in Isaiah 66:19. · *1 verses*
+- **Purse** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *0.3333333333333333 verses*
+- **Queen** · Isaiah 49:23 · Mentioned in Isaiah 49:23. · *0.3333333333333333 verses*
+- **Raiment** · Isaiah 14:19 · Mentioned in Isaiah 14:19. · *0.6666666666666666 verses*
+- **Ram** · Isaiah 1:11 · Mentioned in Isaiah 1:11. · *1 verses*
+- **Ramah** · Isaiah 10:29 · Named in Isaiah 10:29. · *1 verses*<br><small>forms: Rama, Ramath</small>
+- **Rash** · Isaiah 32:4 · Mentioned in Isaiah 32:4. · *0.3333333333333333 verses*
+- **Raven** · Isaiah 34:11 · Mentioned in Isaiah 34:11. · *0.3333333333333333 verses*
+- **Razor** · Isaiah 7:20 · Mentioned in Isaiah 7:20. · *0.3333333333333333 verses*
+- **Recorder** · Isaiah 36:3 · Mentioned in Isaiah 36:3. · *0.6666666666666666 verses*
+- **Rezeph** · Isaiah 37:12 · Named in Isaiah 37:12. · *1 verses*
+- **Rie** · Isaiah 28:25 · Mentioned in Isaiah 28:25. · *0.3333333333333333 verses*
+- **Ring** · Isaiah 3:21 · Mentioned in Isaiah 3:21. · *0.3333333333333333 verses*
+- **Robe** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *1.3333333333333333 verses*
+- **Rope** · Isaiah 3:24 · Mentioned in Isaiah 3:24. · *0.6666666666666666 verses*
+- **Round tires** · Isaiah 3:18 · Mentioned in Isaiah 3:18. · *0.3333333333333333 verses*
+- **Ruby** · Isaiah 54:12 · Mentioned in Isaiah 54:12. · *0.3333333333333333 verses*<br><small>aliases: Rubies</small>
+- **Rushes** · Isaiah 35:7 · Mentioned in Isaiah 35:7. · *0.3333333333333333 verses*
+- **Sand** · Isaiah 10:22 · Mentioned in Isaiah 10:22. · *1 verses*
+- **Sandals** · Isaiah 5:27 · Mentioned in Isaiah 5:27. · *1 verses*<br><small>aliases: Sandal</small>
+- **Sapphire** · Isaiah 54:11 · Mentioned in Isaiah 54:11. · *0.3333333333333333 verses*
+- **Sarah** · Isaiah 51:2 · Named in Isaiah 51:2. · *1 verses*<br><small>forms: Sarai, Sara</small>
+- **Sash** · Isaiah 3:20 · Mentioned in Isaiah 3:20. · *0.3333333333333333 verses*
+- **Saul** · Isaiah 10:29 · Named in Isaiah 10:29. · *1 verses*
+- **Scab** · Isaiah 3:17 · Mentioned in Isaiah 3:17. · *0.3333333333333333 verses*<br><small>forms: Scabs</small>
+- **Scales** · Isaiah 40:12 · Mentioned in Isaiah 40:12. · *0.3333333333333333 verses*<br><small>forms: Balances</small>
+- **Scarlet** · Isaiah 1:18 · Mentioned in Isaiah 1:18. · *0.3333333333333333 verses*
+- **Scepter** · Isaiah 14:5 · Mentioned in Isaiah 14:5. · *0.3333333333333333 verses*<br><small>aliases: Sceptre</small>
+- **Scourge** · Isaiah 10:26 · Mentioned in Isaiah 10:26. · *1 verses*<br><small>forms: Whip</small>
+- **Screech owl** · Isaiah 34:14 · Mentioned in Isaiah 34:14. · *0.3333333333333333 verses*
+- **Scribe** · Isaiah 33:18 · Mentioned in Isaiah 33:18. · *1.3333333333333333 verses*
+- **Scroll** · Isaiah 34:4 · Mentioned in Isaiah 34:4. · *0.3333333333333333 verses*
+- **Seba** · Isaiah 43:3 · Named in Isaiah 43:3. · *1 verses*
+- **Seer** · Isaiah 29:10 · Mentioned in Isaiah 29:10. · *0.6666666666666666 verses*
+- **Sharezer** · Isaiah 37:38 · Named in Isaiah 37:38. · *1 verses*
+- **Shawl** · Isaiah 3:23 · Mentioned in Isaiah 3:23. · *0.3333333333333333 verses*
+- **Shearer** · Isaiah 53:7 · Mentioned in Isaiah 53:7. · *0.3333333333333333 verses*<br><small>forms: Sheepshearer</small>
+- **Shekel** · Isaiah 7:23 · Mentioned in Isaiah 7:23. · *0.3333333333333333 verses*
+- **Shelter** · Isaiah 1:8 · Mentioned in Isaiah 1:8. · *0.6666666666666666 verses*<br><small>forms: Booth</small>
+- **Shield** · Isaiah 21:5 · Mentioned in Isaiah 21:5. · *1 verses*
+- **Shihor** · Isaiah 23:3 · Named in Isaiah 23:3. · *1 verses*<br><small>aliases: Sihor</small>
+- **Shiloah** · Isaiah 8:6 · Named in Isaiah 8:6. · *1 verses*
+- **Shinar** · Isaiah 11:11 · Named in Isaiah 11:11. · *1 verses*<br><small>forms: Babylonish</small>
+- **Shoes** · Isaiah 5:27 · Mentioned in Isaiah 5:27. · *0.6666666666666666 verses*<br><small>aliases: Shoe</small>
+- **Side** · Isaiah 14:13 · Mentioned in Isaiah 14:13. · *1.6666666666666667 verses*
+- **Siege works** · Isaiah 29:3; Isaiah 37:33 · Mentioned in Isaiah 29:3. · *0.6666666666666666 verses*<br><small>aliases: Mound</small>
+- **Signet** · Isaiah 3:21 · Mentioned in Isaiah 3:21. · *0.3333333333333333 verses*
+- **Signet ring** · Isaiah 3:21 · Mentioned in Isaiah 3:21. · *0.3333333333333333 verses*
+- **Sinew** · Isaiah 48:4 · Mentioned in Isaiah 48:4. · *0.3333333333333333 verses*
+- **Sinim** · Isaiah 49:12 · Named in Isaiah 49:12. · *1 verses*<br><small>forms: Syene</small>
+- **Skirt** · Isaiah 47:2 · Mentioned in Isaiah 47:2. · *0.3333333333333333 verses*
+- **Smith** · Isaiah 44:12 · Mentioned in Isaiah 44:12. · *0.6666666666666666 verses*<br><small>aliases: Blacksmith</small>
+- **Snake** · Isaiah 14:29; Isaiah 34:15 · Mentioned in Isaiah 14:29. · *1.6666666666666667 verses*<br><small>aliases: Serpent</small>
+- **Snow** · Isaiah 1:18 · Mentioned in Isaiah 1:18. · *0.6666666666666666 verses*
+- **Soldier** · Isaiah 15:4 · Mentioned in Isaiah 15:4. · *0.3333333333333333 verses*
+- **Sole** · Isaiah 1:6 · Mentioned in Isaiah 1:6. · *1 verses*
+- **Sower** · Isaiah 55:10 · Mentioned in Isaiah 55:10. · *0.3333333333333333 verses*
+- **Span** · Isaiah 40:12 · Mentioned in Isaiah 40:12. · *0.3333333333333333 verses*
+- **Spear** · Isaiah 2:4 · Mentioned in Isaiah 2:4. · *0.3333333333333333 verses*
+- **Spelt** · Isaiah 28:25 · Mentioned in Isaiah 28:25. · *0.6666666666666666 verses*<br><small>aliases: Fitches</small>
+- **Spider** · Isaiah 59:5 · Mentioned in Isaiah 59:5. · *0.3333333333333333 verses*
+- **Star** · Isaiah 13:10 · Mentioned in Isaiah 13:10. · *0.6666666666666666 verses*<br><small>aliases: Stars</small>
+- **Steps** · Isaiah 26:6 · Mentioned in Isaiah 26:6. · *0.6666666666666666 verses*<br><small>forms: Stairs, Staircase</small>
+- **Stomacher** · Isaiah 3:24 · Mentioned in Isaiah 3:24. · *0.3333333333333333 verses*
+- **Stringed instruments** · Isaiah 14:11 · Mentioned in Isaiah 14:11. · *0.6666666666666666 verses*<br><small>forms: Strings</small>
+- **Sweet wine** · Isaiah 49:26 · Mentioned in Isaiah 49:26. · *0.3333333333333333 verses*
+- **Swelling** · Isaiah 30:13 · Mentioned in Isaiah 30:13. · *0.3333333333333333 verses*
+- **Swine's flesh** · Isaiah 65:4 · Mentioned in Isaiah 65:4. · *0.6666666666666666 verses*<br><small>aliases: Pig's meat</small>
+- **Sycamore** · Isaiah 9:10 · Mentioned in Isaiah 9:10. · *0.3333333333333333 verses*<br><small>aliases: Sycomore</small>
+- **Tabeal** · Isaiah 7:6 · Named in Isaiah 7:6. · *1 verses*
+- **Tabeel** · Isaiah 7:6 · Named in Isaiah 7:6. · *1 verses*
+- **Tabernacle** · Isaiah 4:6 · Mentioned in Isaiah 4:6. · *1 verses*
+- **Table** · Isaiah 21:5 · Mentioned in Isaiah 21:5. · *1.3333333333333333 verses*
+- **Tablets** · Isaiah 3:20 · Mentioned in Isaiah 3:20. · *0.3333333333333333 verses*<br><small>forms: Tables of stone</small>
+- **Tabret** · Isaiah 5:12 · Mentioned in Isaiah 5:12. · *1 verses*
+- **Tambourine** · Isaiah 5:12 · Mentioned in Isaiah 5:12. · *1 verses*
+- **Tartan** · Isaiah 20:1 · Named in Isaiah 20:1. · *1 verses*
+- **Teacher** · Isaiah 30:20 · Mentioned in Isaiah 30:20. · *0.6666666666666666 verses*
+- **Teeth** · Isaiah 41:15 · Mentioned in Isaiah 41:15. · *0.3333333333333333 verses*<br><small>forms: Tooth</small>
+- **Teil tree** · Isaiah 6:13 · Mentioned in Isaiah 6:13. · *0.3333333333333333 verses*
+- **Telassar** · Isaiah 37:12 · Named in Isaiah 37:12. · *1 verses*<br><small>forms: Thelasar</small>
+- **Tema** · Isaiah 21:14 · Named in Isaiah 21:14. · *1 verses*
+- **Temple** · Isaiah 6:1 · Mentioned in Isaiah 6:1. · *1 verses*
+- **Terebinth** · Isaiah 6:13 · Mentioned in Isaiah 6:13. · *0.3333333333333333 verses*
+- **Thigh** · Isaiah 21:3 · Mentioned in Isaiah 21:3. · *0.6666666666666666 verses*
+- **Thistles** · Isaiah 34:13 · Mentioned in Isaiah 34:13. · *0.3333333333333333 verses*<br><small>aliases: Thistle</small>
+- **Threshold** · Isaiah 6:4 · Mentioned in Isaiah 6:4. · *0.3333333333333333 verses*
+- **Thunder** · Isaiah 29:6 · Mentioned in Isaiah 29:6. · *0.6666666666666666 verses*
+- **Tin** · Isaiah 1:25 · Mentioned in Isaiah 1:25. · *0.3333333333333333 verses*
+- **Tirhakah** · Isaiah 37:9 · Named in Isaiah 37:9. · *1 verses*
+- **Tomb** · Isaiah 14:19; Isaiah 22:16 · Mentioned in Isaiah 14:19. · *0.6666666666666666 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Tongs** · Isaiah 6:6 · Mentioned in Isaiah 6:6. · *0.6666666666666666 verses*
+- **Tophet** · Isaiah 30:33 · Named in Isaiah 30:33. · *1 verses*<br><small>forms: Topheth</small>
+- **Torch** · Isaiah 7:4 · Mentioned in Isaiah 7:4. · *0.6666666666666666 verses*
+- **Trader** · Isaiah 23:8 · Mentioned in Isaiah 23:8. · *0.3333333333333333 verses*
+- **Treasurer** · Isaiah 22:15 · Mentioned in Isaiah 22:15. · *0.3333333333333333 verses*
+- **Trumpet** · Isaiah 18:3 · Mentioned in Isaiah 18:3. · *1 verses*
+- **Tubal** · Isaiah 66:19 · Named in Isaiah 66:19. · *1 verses*
+- **Unicorn** · Isaiah 34:7 · Mentioned in Isaiah 34:7. · *0.3333333333333333 verses*<br><small>forms: Wild ox</small>
+- **Upper Pool** · Isaiah 7:3 · Named in Isaiah 7:3. · *0 verses*
+- **Uriah** · Isaiah 8:2 · Named in Isaiah 8:2. · *1 verses*<br><small>forms: Urijah, Urias</small>
+- **Valley of Achor** · Isaiah 65:10 · Named in Isaiah 65:10. · *0 verses*
+- **Valley of Gibeon** · Isaiah 28:21 · Named in Isaiah 28:21. · *0 verses*
+- **Valley of Rephaim** · Isaiah 17:5 · Named in Isaiah 17:5. · *0 verses*
+- **Veil** · Isaiah 3:19 · Mentioned in Isaiah 3:19. · *1 verses*
+- **Vinedresser** · Isaiah 61:5 · Mentioned in Isaiah 61:5. · *0.3333333333333333 verses*
+- **Viol** · Isaiah 5:12 · Mentioned in Isaiah 5:12. · *0.6666666666666666 verses*
+- **Viper** · Isaiah 11:8 · Mentioned in Isaiah 11:8. · *1 verses*
+- **Vulture** · Isaiah 34:15 · Mentioned in Isaiah 34:15. · *0.3333333333333333 verses*
+- **Waist** · Isaiah 5:27 · Mentioned in Isaiah 5:27. · *1.3333333333333333 verses*
+- **Watchman** · Isaiah 21:6 · Mentioned in Isaiah 21:6. · *1 verses*
+- **Way of Holiness** · Isaiah 35:8 · Named in Isaiah 35:8. · *1 verses*<br><small>aliases: Holy Way</small>
+- **Weaver** · Isaiah 38:12 · Mentioned in Isaiah 38:12. · *0.3333333333333333 verses*
+- **Wheat** · Isaiah 17:5 · Mentioned in Isaiah 17:5. · *0.6666666666666666 verses*
+- **Wheel** · Isaiah 5:28 · Mentioned in Isaiah 5:28. · *1 verses*
+- **Widow** · Isaiah 1:17 · Mentioned in Isaiah 1:17. · *1.6666666666666667 verses*
+- **Wild donkey** · Isaiah 32:14 · Mentioned in Isaiah 32:14. · *0.3333333333333333 verses*<br><small>aliases: Wild ass</small>
+- **Wild goat** · Isaiah 13:21 · Mentioned in Isaiah 13:21. · *0.6666666666666666 verses*
+- **Willow** · Isaiah 15:7 · Mentioned in Isaiah 15:7. · *0.6666666666666666 verses*
+- **Wimples** · Isaiah 3:22 · Mentioned in Isaiah 3:22. · *0.3333333333333333 verses*
+- **Window** · Isaiah 24:18 · Mentioned in Isaiah 24:18. · *1 verses*
+- **Winepress** · Isaiah 5:2 · Mentioned in Isaiah 5:2. · *0.6666666666666666 verses*
+- **Wines on the lees** · Isaiah 25:6 · Mentioned in Isaiah 25:6. · *0.3333333333333333 verses*
+- **Wise men** · Isaiah 19:12 · Mentioned in Isaiah 19:12. · *1 verses*<br><small>forms: Magi</small>
+- **Wolf** · Isaiah 11:6 · Mentioned in Isaiah 11:6. · *0.6666666666666666 verses*
+- **Wool** · Isaiah 1:18 · Mentioned in Isaiah 1:18. · *0.6666666666666666 verses*
+- **Worm** · Isaiah 14:11 · Mentioned in Isaiah 14:11. · *1.3333333333333333 verses*
+- **Worms** · Isaiah 14:11 · Mentioned in Isaiah 14:11. · *0.3333333333333333 verses*
+- **Wounds** · Isaiah 1:6 · Mentioned in Isaiah 1:6. · *1 verses*<br><small>aliases: Wound</small>
+- **Zebulun** · Isaiah 9:1 · Named in Isaiah 9:1. · *1 verses*
+- **Zechariah** · Isaiah 8:2 · Named in Isaiah 8:2. · *1 verses*<br><small>forms: Zachariah, Zacharias, Zechariah the prophet, Zechariah the priest</small>
+- **Zoar** · Isaiah 15:5 · Named in Isaiah 15:5. · *1 verses*<br><small>forms: Bela</small>
+
+### Near misses
+
+- **Jeremiah, Ezekiel**: Prophets with books of their own, after Isaiah.
+- **Suffering Servant**: A later label for the servant of Isaiah 52–53; try "servant".
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Jeremiah.
+
+`jeremiah-anything` · Books of the Bible · 529 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 11 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 42 |
+| 🪙 Lost Coin (60) | 106 |
+| 💎 Hidden Treasure (85) | 369 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Ebed-melech. Ebed-melech the Ethiopian drew Jeremiah out of the cistern with ropes and rags (Jeremiah 38:7–13).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Babylon** · Jeremiah 20:4 · Named in Jeremiah 20:4. · *149 verses*
+- **Chaldea** · Jeremiah 21:4; Jeremiah 50:10 · Named in Jeremiah 21:4. · *46 verses*<br><small>aliases: Chaldean, Chaldeans · forms: Chaldaeans, Chaldees</small>
+- **Egypt** · Jeremiah 2:6; Jeremiah 43:2 · Named in Jeremiah 2:6. · *54 verses*<br><small>aliases: Proud · forms: Lower, Rahab</small>
+- **House** · Jeremiah 2:4 · Mentioned in Jeremiah 2:4. · *37.666666666666664 verses*
+- **Jeremiah** · Jeremiah 1:1 · Called before his birth to be a prophet to the nations. · *117 verses*<br><small>forms: Jeremias</small>
+- **Jerusalem** · Jeremiah 1:3; Jeremiah 32:12 · Named in Jeremiah 1:3. · *99 verses*
+- **Judah** · Jeremiah 1:2 · Named in Jeremiah 1:2. · *166 verses*<br><small>forms: Judas</small>
+- **King** · Jeremiah 1:2 · Mentioned in Jeremiah 1:2. · *71 verses*
+- **Moab** · Jeremiah 9:26 · Named in Jeremiah 9:26. · *33 verses*
+- **Nebuchadnezzar** · Jeremiah 21:2 · Named in Jeremiah 21:2. · *37 verses*
+- **Zion** · Jeremiah 2:3; Jeremiah 3:14 · Named in Jeremiah 3:14. · *140 verses*<br><small>aliases: Israel · forms: Sion</small>
+
+### 🍞 Five Loaves (30)
+
+- **Ahikam** · Jeremiah 26:24 · Named in Jeremiah 26:24. · *16 verses*
+- **Ammon** · Jeremiah 9:26 · Named in Jeremiah 9:26. · *10 verses*<br><small>forms: Ammonitess</small>
+- **Back** · Jeremiah 2:27 · Mentioned in Jeremiah 2:27. · *10 verses*
+- **Baruch** · Jeremiah 32:12 · Named in Jeremiah 32:12. · *21 verses*
+- **Benjamin** · Jeremiah 1:1 · Named in Jeremiah 1:1. · *10 verses*
+- **Captain** · Jeremiah 13:21 · Mentioned in Jeremiah 13:21. · *11 verses*
+- **David** · Jeremiah 13:13 · Named in Jeremiah 13:13. · *15 verses*
+- **Ear** · Jeremiah 2:2 · Mentioned in Jeremiah 2:2. · *8.333333333333334 verses*
+- **Edom** · Jeremiah 9:26 · Named in Jeremiah 9:26. · *8 verses*
+- **Euphrates** · Jeremiah 13:4 · Named in Jeremiah 13:4. · *8 verses*<br><small>forms: Great River</small>
+- **Eye** · Jeremiah 3:2 · Mentioned in Jeremiah 3:2. · *9.666666666666666 verses*
+- **Face** · Jeremiah 1:8 · Mentioned in Jeremiah 1:8. · *9.333333333333334 verses*
+- **Field** · Jeremiah 4:17 · Mentioned in Jeremiah 4:17. · *10.333333333333334 verses*
+- **Fire** · Jeremiah 4:4 · Mentioned in Jeremiah 4:4. · *14 verses*
+- **Gate** · Jeremiah 1:15 · Mentioned in Jeremiah 1:15. · *8.666666666666666 verses*
+- **Gedaliah** · Jeremiah 38:1 · Named in Jeremiah 38:1. · *23 verses*
+- **Guard** · Jeremiah 32:2 · Mentioned in Jeremiah 32:2. · *9.333333333333334 verses*
+- **Hananiah** · Jeremiah 28:1 · Named in Jeremiah 28:1. · *10 verses*
+- **Hand** · Jeremiah 1:9 · Mentioned in Jeremiah 1:9. · *29 verses*
+- **Heart** · Jeremiah 3:10 · Mentioned in Jeremiah 3:10. · *19.333333333333332 verses*
+- **Ishmael** · Jeremiah 40:8 · Son of Nethaniah. · *19 verses*
+- **Jacob** · Jeremiah 2:4 · Named in Jeremiah 2:4. · *13 verses*
+- **Jehoiachin** · Jeremiah 22:24; Jeremiah 24:1; Jeremiah 52:31 · Named in Jeremiah 22:24. · *9 verses*<br><small>aliases: Jeconiah, Coniah · forms: Jechoniah, Jechonias</small>
+- **Jehoiakim** · Jeremiah 1:3 · Named in Jeremiah 1:3. · *23 verses*<br><small>forms: Eliakim</small>
+- **Johanan** · Jeremiah 40:8 · Named in Jeremiah 40:8. · *14 verses*
+- **Josiah** · Jeremiah 1:2 · Named in Jeremiah 1:2. · *16 verses*<br><small>forms: Josias</small>
+- **Kareah** · Jeremiah 40:8 · Named in Jeremiah 40:8. · *13 verses*
+- **Mizpah** · Jeremiah 40:6 · Named in Jeremiah 40:6. · *12 verses*<br><small>forms: Galeed, Jegar Sahadutha</small>
+- **Mouth** · Jeremiah 1:9 · Mentioned in Jeremiah 1:9. · *8 verses*
+- **Nebuzaradan** · Jeremiah 39:9 · Named in Jeremiah 39:9. · *12 verses*
+- **Nethaniah** · Jeremiah 36:14 · Named in Jeremiah 36:14. · *15 verses*
+- **No** · Jeremiah 46:25 · Named in Jeremiah 46:25. · *16 verses*<br><small>forms: No Amon</small>
+- **Pharaoh** · Jeremiah 25:19 · Named in Jeremiah 25:19. · *10 verses*
+- **Potter** · Jeremiah 18:2 · Mentioned in Jeremiah 18:2. · *2 verses*
+- **Priest** · Jeremiah 1:1 · Mentioned in Jeremiah 1:1. · *12.666666666666666 verses*
+- **Prince** · Jeremiah 1:18 · Mentioned in Jeremiah 1:18. · *15 verses*
+- **Prophet** · Jeremiah 1:5 · Mentioned in Jeremiah 1:5. · *29 verses*
+- **Servant** · Jeremiah 2:14 · Mentioned in Jeremiah 2:14. · *9.666666666666666 verses*
+- **Shaphan** · Jeremiah 26:24 · Named in Jeremiah 26:24. · *11 verses*
+- **Sword** · Jeremiah 2:30 · Mentioned in Jeremiah 2:30. · *20.666666666666668 verses*
+- **Water** · Jeremiah 2:13 · Mentioned in Jeremiah 2:13. · *8.666666666666666 verses*
+- **Zedekiah** · Jeremiah 1:3 · Named in Jeremiah 1:3. · *48 verses*<br><small>forms: Mattaniah</small>
+
+### 🪙 Lost Coin (60)
+
+- **Achbor** · Jeremiah 26:22 · Named in Jeremiah 26:22. · *2 verses*
+- **Ahab** · Jeremiah 29:21 · Named in Jeremiah 29:21. · *2 verses*
+- **Amon** · Jeremiah 1:2 · Named in Jeremiah 1:2. · *3 verses*<br><small>forms: Amos</small>
+- **Anathoth** · Jeremiah 1:1 · Named in Jeremiah 1:1. · *7 verses*
+- **Arabah** · Jeremiah 39:4 · Named in Jeremiah 39:4. · *2 verses*
+- **Ashkelon** · Jeremiah 25:20 · Named in Jeremiah 25:20. · *3 verses*<br><small>forms: Askelon</small>
+- **Assyria** · Jeremiah 2:18 · Named in Jeremiah 2:18. · *4 verses*<br><small>forms: Assur</small>
+- **Baal** · Jeremiah 2:8 · Mentioned in Jeremiah 2:8. · *4 verses*
+- **Belt** · Jeremiah 1:17 · Mentioned in Jeremiah 1:17. · *2.6666666666666665 verses*
+- **Blood** · Jeremiah 2:34 · Mentioned in Jeremiah 2:34. · *3.3333333333333335 verses*
+- **Book** · Jeremiah 25:13 · Mentioned in Jeremiah 25:13. · *4.666666666666667 verses*
+- **Bozrah** · Jeremiah 48:24 · Named in Jeremiah 48:24. · *3 verses*
+- **Bread** · Jeremiah 5:17 · Mentioned in Jeremiah 5:17. · *2.6666666666666665 verses*
+- **Bronze** · Jeremiah 1:18 · Mentioned in Jeremiah 1:18. · *2.6666666666666665 verses*
+- **Chariot** · Jeremiah 4:13 · Mentioned in Jeremiah 4:13. · *2.6666666666666665 verses*
+- **Chief** · Jeremiah 13:21 · Mentioned in Jeremiah 13:21. · *2.6666666666666665 verses*
+- **Cup** · Jeremiah 16:7 · Mentioned in Jeremiah 16:7. · *2.6666666666666665 verses*
+- **Damascus** · Jeremiah 49:23 · Named in Jeremiah 49:23. · *3 verses*<br><small>forms: Syria-damascus</small>
+- **Ebed** · Jeremiah 38:7 · Named in Jeremiah 38:7. · *6 verses*
+- **Elam** · Jeremiah 25:25 · Named in Jeremiah 25:25. · *7 verses*
+- **Elishama** · Jeremiah 36:12 · Named in Jeremiah 36:12. · *4 verses*
+- **Elnathan** · Jeremiah 26:22 · Named in Jeremiah 26:22. · *3 verses*
+- **Fig tree** · Jeremiah 5:17 · Mentioned in Jeremiah 5:17. · *2.6666666666666665 verses*<br><small>aliases: Fig</small>
+- **Figs** · Jeremiah 8:13 · Mentioned in Jeremiah 8:13. · *2.3333333333333335 verses*
+- **Flesh** · Jeremiah 7:21 · Mentioned in Jeremiah 7:21. · *3.3333333333333335 verses*
+- **Fortress** · Jeremiah 6:27; Jeremiah 16:19; Jeremiah 52:4 · Mentioned in Jeremiah 6:27. · *2.3333333333333335 verses*<br><small>aliases: Stronghold, Fort</small>
+- **Gaza** · Jeremiah 25:20 · Named in Jeremiah 25:20. · *3 verses*<br><small>aliases: Azzah</small>
+- **Gemariah** · Jeremiah 29:3 · Son of Hilkiah. · *5 verses*
+- **Gibeon** · Jeremiah 28:1 · Named in Jeremiah 28:1. · *3 verses*
+- **Gilead** · Jeremiah 8:22 · Named in Jeremiah 8:22. · *4 verses*
+- **Girdle** · Jeremiah 13:1 · Mentioned in Jeremiah 13:1. · *2.3333333333333335 verses*
+- **Gomorrah** · Jeremiah 23:14 · Named in Jeremiah 23:14. · *3 verses*<br><small>forms: Gomorrha</small>
+- **Governor** · Jeremiah 20:1 · Mentioned in Jeremiah 20:1. · *3 verses*
+- **Hamath** · Jeremiah 39:5 · Named in Jeremiah 39:5. · *4 verses*
+- **Hazor** · Jeremiah 49:28 · Named in Jeremiah 49:28. · *3 verses*
+- **Head** · Jeremiah 2:16 · Mentioned in Jeremiah 2:16. · *4.666666666666667 verses*
+- **Heshbon** · Jeremiah 48:2 · Named in Jeremiah 48:2. · *4 verses*
+- **Hezekiah** · Jeremiah 15:4 · Named in Jeremiah 15:4. · *3 verses*<br><small>forms: Ezekias</small>
+- **High place** · Jeremiah 3:2 · Mentioned in Jeremiah 3:2. · *4 verses*
+- **Hill** · Jeremiah 2:20 · Mentioned in Jeremiah 2:20. · *5.333333333333333 verses*
+- **Horonaim** · Jeremiah 48:3 · Named in Jeremiah 48:3. · *3 verses*
+- **Horse** · Jeremiah 4:13 · Mentioned in Jeremiah 4:13. · *5.666666666666667 verses*
+- **Image** · Jeremiah 8:19 · Mentioned in Jeremiah 8:19. · *2.6666666666666665 verses*<br><small>forms: Statue</small>
+- **Iron** · Jeremiah 1:18 · Mentioned in Jeremiah 1:18. · *2.3333333333333335 verses*
+- **Jehudi** · Jeremiah 36:14 · Son of Nethaniah. · *3 verses*
+- **Jonadab** · Jeremiah 35:6 · Son of Rechab. · *7 verses*
+- **Jonathan** · Jeremiah 37:15 · Named in Jeremiah 37:15. · *4 verses*
+- **Jordan** · Jeremiah 12:5 · Named in Jeremiah 12:5. · *3 verses*
+- **Lebanon** · Jeremiah 18:14 · Named in Jeremiah 18:14. · *4 verses*
+- **Lion** · Jeremiah 2:15 · Mentioned in Jeremiah 2:15. · *3.3333333333333335 verses*
+- **Loins** · Jeremiah 1:17 · Mentioned in Jeremiah 1:17. · *2.3333333333333335 verses*
+- **Maaseiah** · Jeremiah 21:1 · Named in Jeremiah 21:1. · *7 verses*
+- **Meat** · Jeremiah 7:21 · Mentioned in Jeremiah 7:21. · *2.3333333333333335 verses*
+- **Mede** · Jeremiah 25:25 · Named in Jeremiah 25:25. · *3 verses*
+- **Medes** · Jeremiah 25:25 · Named in Jeremiah 25:25. · *3 verses*<br><small>forms: Media</small>
+- **Memphis** · Jeremiah 2:16 · Named in Jeremiah 2:16. · *4 verses*<br><small>aliases: Noph</small>
+- **Mountain** · Jeremiah 3:6 · Mentioned in Jeremiah 3:6. · *5.333333333333333 verses*
+- **Neck** · Jeremiah 7:26 · Mentioned in Jeremiah 7:26. · *4 verses*
+- **Nehelamite** · Jeremiah 29:24 · Named in Jeremiah 29:24. · *3 verses*
+- **Nile** · Jeremiah 2:18; Jeremiah 46:7 · Named in Jeremiah 2:18. · *3 verses*<br><small>aliases: Sihor</small>
+- **Pashhur** · Jeremiah 20:1 · The priest who put Jeremiah in the stocks. · *6 verses*
+- **Pashur** · Jeremiah 20:1 · Son of Immer. · *6 verses*
+- **Pastor** · Jeremiah 2:8 · Mentioned in Jeremiah 2:8. · *2.6666666666666665 verses*
+- **Pestilence** · Jeremiah 14:12 · Mentioned in Jeremiah 14:12. · *5.666666666666667 verses*
+- **Pillar** · Jeremiah 1:18 · Mentioned in Jeremiah 1:18. · *2.3333333333333335 verses*
+- **Prison** · Jeremiah 29:26; Jeremiah 37:16 · Mentioned in Jeremiah 29:26. · *7.333333333333333 verses*<br><small>aliases: Dungeon</small>
+- **Put** · Jeremiah 46:9 · Named in Jeremiah 46:9. · *5 verses*<br><small>aliases: Libyans · forms: Phut, Pul</small>
+- **Queen** · Jeremiah 7:18 · Mentioned in Jeremiah 7:18. · *2.3333333333333335 verses*
+- **Rechab** · Jeremiah 35:6 · Named in Jeremiah 35:6. · *5 verses*
+- **Riblah** · Jeremiah 39:5 · Named in Jeremiah 39:5. · *6 verses*<br><small>forms: Diblah, Diblath</small>
+- **River** · Jeremiah 2:18 · Mentioned in Jeremiah 2:18. · *2.6666666666666665 verses*
+- **Rock** · Jeremiah 4:29 · Mentioned in Jeremiah 4:29. · *3.3333333333333335 verses*
+- **Samaria** · Jeremiah 23:13 · Named in Jeremiah 23:13. · *3 verses*<br><small>forms: Samaritans, Samaritan</small>
+- **Scribe** · Jeremiah 8:8 · Mentioned in Jeremiah 8:8. · *3.3333333333333335 verses*
+- **Scroll** · Jeremiah 36:2 · Mentioned in Jeremiah 36:2. · *4 verses*
+- **Sea** · Jeremiah 5:22 · Mentioned in Jeremiah 5:22. · *5.666666666666667 verses*
+- **Seraiah** · Jeremiah 36:26 · Named in Jeremiah 36:26. · *5 verses*
+- **Shallum** · Jeremiah 22:11 · Named in Jeremiah 22:11. · *3 verses*
+- **Shelemiah** · Jeremiah 36:14 · Named in Jeremiah 36:14. · *5 verses*
+- **Shemaiah** · Jeremiah 26:20 · Named in Jeremiah 26:20. · *5 verses*
+- **Shepherd** · Jeremiah 3:15 · Mentioned in Jeremiah 3:15. · *6.333333333333333 verses*
+- **Shiloh** · Jeremiah 7:12 · Named in Jeremiah 7:12. · *5 verses*
+- **Side** · Jeremiah 6:22 · Mentioned in Jeremiah 6:22. · *3 verses*
+- **Sidon** · Jeremiah 25:22 · Named in Jeremiah 25:22. · *3 verses*<br><small>aliases: Zidon · forms: Great Sidon</small>
+- **Sky** · Jeremiah 4:25 · Mentioned in Jeremiah 4:25. · *7 verses*<br><small>forms: Firmament, Expanse</small>
+- **Sodom** · Jeremiah 23:14 · Named in Jeremiah 23:14. · *3 verses*<br><small>forms: Sodoma</small>
+- **Stranger** · Jeremiah 2:25; Jeremiah 7:6 · Mentioned in Jeremiah 2:25. · *3.3333333333333335 verses*<br><small>aliases: Foreigner · forms: Sojourner</small>
+- **Street** · Jeremiah 5:1 · Mentioned in Jeremiah 5:1. · *6 verses*
+- **Tahpanhes** · Jeremiah 2:16 · Named in Jeremiah 2:16. · *6 verses*<br><small>aliases: Tahapanes · forms: Tehaphnehes</small>
+- **Tent** · Jeremiah 4:20 · Mentioned in Jeremiah 4:20. · *2.6666666666666665 verses*
+- **Throne** · Jeremiah 1:15 · Mentioned in Jeremiah 1:15. · *5.333333333333333 verses*
+- **Topheth** · Jeremiah 7:31 · Named in Jeremiah 7:31. · *7 verses*<br><small>aliases: Tophet</small>
+- **Tree** · Jeremiah 1:11; Jeremiah 5:17 · Mentioned in Jeremiah 1:11. · *4.666666666666667 verses*<br><small>aliases: Trees</small>
+- **Trumpet** · Jeremiah 4:5 · Mentioned in Jeremiah 4:5. · *2.3333333333333335 verses*
+- **Tyre** · Jeremiah 25:22 · Named in Jeremiah 25:22. · *3 verses*<br><small>aliases: Tyrus</small>
+- **Uriah** · Jeremiah 26:20 · Prophesied in Jeremiah's day and was killed by Jehoiakim. · *3 verses*<br><small>aliases: Urijah · forms: Urias</small>
+- **Valley** · Jeremiah 2:23; Jeremiah 33:13 · Mentioned in Jeremiah 2:23. · *4.333333333333333 verses*<br><small>aliases: Vale</small>
+- **Virgin** · Jeremiah 2:32 · Mentioned in Jeremiah 2:32. · *2.6666666666666665 verses*
+- **Waist** · Jeremiah 1:17 · Mentioned in Jeremiah 1:17. · *2.3333333333333335 verses*
+- **Wall** · Jeremiah 1:15 · Mentioned in Jeremiah 1:15. · *4.666666666666667 verses*
+- **Wilderness** · Jeremiah 2:2 · Mentioned in Jeremiah 2:2. · *7.333333333333333 verses*
+- **Wind** · Jeremiah 2:24 · Mentioned in Jeremiah 2:24. · *4.333333333333333 verses*
+- **Wine** · Jeremiah 13:12 · Mentioned in Jeremiah 13:12. · *4.333333333333333 verses*
+- **Wounds** · Jeremiah 6:7 · Mentioned in Jeremiah 6:7. · *2.3333333333333335 verses*<br><small>aliases: Wound</small>
+- **Yoke** · Jeremiah 2:20 · Mentioned in Jeremiah 2:20. · *5.333333333333333 verses*
+- **Zephaniah** · Jeremiah 21:1 · Son of Maaseiah. · *5 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Abarim** · Jeremiah 22:20 · Named in Jeremiah 22:20. · *1 verses*
+- **Abdeel** · Jeremiah 36:26 · Named in Jeremiah 36:26. · *1 verses*
+- **Abraham** · Jeremiah 33:26 · Named in Jeremiah 33:26. · *1 verses*<br><small>forms: Abram</small>
+- **Adder** · Jeremiah 8:17 · Mentioned in Jeremiah 8:17. · *0.3333333333333333 verses*
+- **Ai** · Jeremiah 49:3 · Named in Jeremiah 49:3. · *1 verses*<br><small>forms: Hai</small>
+- **Almond tree** · Jeremiah 1:11 · Mentioned in Jeremiah 1:11. · *0.3333333333333333 verses*<br><small>aliases: Almond</small>
+- **Altar** · Jeremiah 11:13 · Mentioned in Jeremiah 11:13. · *1 verses*
+- **Ambassador** · Jeremiah 49:14 · Mentioned in Jeremiah 49:14. · *0.3333333333333333 verses*
+- **Arabia** · Jeremiah 25:24 · Named in Jeremiah 25:24. · *1 verses*
+- **Ararat** · Jeremiah 51:27 · Named in Jeremiah 51:27. · *1 verses*<br><small>forms: Armenia</small>
+- **Archer** · Jeremiah 4:29 · Mentioned in Jeremiah 4:29. · *1 verses*
+- **Ark** · Jeremiah 3:16 · Mentioned in Jeremiah 3:16. · *0.3333333333333333 verses*
+- **Arm** · Jeremiah 17:5 · Mentioned in Jeremiah 17:5. · *2 verses*
+- **Arm pit** · Jeremiah 38:12 · Mentioned in Jeremiah 38:12. · *0.3333333333333333 verses*<br><small>aliases: Armholes</small>
+- **Armory** · Jeremiah 50:25 · Mentioned in Jeremiah 50:25. · *0.3333333333333333 verses*<br><small>aliases: Armoury</small>
+- **Arnon** · Jeremiah 48:20 · Named in Jeremiah 48:20. · *1 verses*
+- **Aroer** · Jeremiah 48:19 · Named in Jeremiah 48:19. · *1 verses*
+- **Arpad** · Jeremiah 49:23 · Named in Jeremiah 49:23. · *1 verses*<br><small>forms: Arphad</small>
+- **Arrow** · Jeremiah 9:8 · Mentioned in Jeremiah 9:8. · *1.3333333333333333 verses*
+- **Asa** · Jeremiah 41:9 · Named in Jeremiah 41:9. · *1 verses*<br><small>forms: Asaph</small>
+- **Ashdod** · Jeremiah 25:20 · Named in Jeremiah 25:20. · *1 verses*<br><small>forms: Azotus</small>
+- **Asherah** · Jeremiah 17:2 · Mentioned in Jeremiah 17:2. · *0.3333333333333333 verses*<br><small>forms: Asherim</small>
+- **Ashes** · Jeremiah 6:26 · Mentioned in Jeremiah 6:26. · *1 verses*
+- **Ashkenaz** · Jeremiah 51:27 · Named in Jeremiah 51:27. · *1 verses*<br><small>aliases: Ashchenaz</small>
+- **Axe** · Jeremiah 10:3 · Mentioned in Jeremiah 10:3. · *1 verses*<br><small>aliases: Ax</small>
+- **Azariah** · Jeremiah 43:2 · Named in Jeremiah 43:2. · *1 verses*<br><small>forms: Azariah son of Oded</small>
+- **Azekah** · Jeremiah 34:7 · Named in Jeremiah 34:7. · *1 verses*
+- **Baalis** · Jeremiah 40:14 · Named in Jeremiah 40:14. · *1 verses*
+- **Baasha** · Jeremiah 41:9 · Named in Jeremiah 41:9. · *1 verses*
+- **Baker** · Jeremiah 37:21 · Mentioned in Jeremiah 37:21. · *0.3333333333333333 verses*
+- **Balances** · Jeremiah 32:10 · Mentioned in Jeremiah 32:10. · *0.3333333333333333 verses*<br><small>forms: Scales</small>
+- **Balm** · Jeremiah 8:22 · Mentioned in Jeremiah 8:22. · *1 verses*
+- **Barley** · Jeremiah 41:8 · Mentioned in Jeremiah 41:8. · *0.3333333333333333 verses*
+- **Bashan** · Jeremiah 22:20 · Named in Jeremiah 22:20. · *2 verses*
+- **Basin** · Jeremiah 52:18 · Mentioned in Jeremiah 52:18. · *0.6666666666666666 verses*<br><small>forms: Laver</small>
+- **Basket** · Jeremiah 6:9 · Mentioned in Jeremiah 6:9. · *1 verses*
+- **Battlement** · Jeremiah 5:10 · Mentioned in Jeremiah 5:10. · *0.3333333333333333 verses*<br><small>forms: Parapet</small>
+- **Beard** · Jeremiah 25:23 · Mentioned in Jeremiah 25:23. · *1.3333333333333333 verses*
+- **Bel** · Jeremiah 50:2 · Mentioned in Jeremiah 50:2. · *0.6666666666666666 verses*
+- **Bellows** · Jeremiah 6:29 · Mentioned in Jeremiah 6:29. · *0.3333333333333333 verses*
+- **Belly** · Jeremiah 1:5 · Mentioned in Jeremiah 1:5. · *0.6666666666666666 verses*<br><small>forms: Stomach</small>
+- **Ben-hadad** · Jeremiah 49:27 · Named in Jeremiah 49:27. · *1 verses*
+- **Benjamin Gate** · Jeremiah 20:2; Jeremiah 37:13 · Named in Jeremiah 20:2. · *0 verses*<br><small>aliases: Gate of Benjamin</small>
+- **Beth-diblathaim** · Jeremiah 48:22 · Named in Jeremiah 48:22. · *1 verses*
+- **Beth-gamul** · Jeremiah 48:23 · Named in Jeremiah 48:23. · *1 verses*
+- **Beth-haccherem** · Jeremiah 6:1 · Named in Jeremiah 6:1. · *1 verses*<br><small>aliases: Beth Haccerem</small>
+- **Beth-meon** · Jeremiah 48:23 · Named in Jeremiah 48:23. · *1 verses*
+- **Bethel** · Jeremiah 48:13 · Named in Jeremiah 48:13. · *1 verses*
+- **Bethlehem** · Jeremiah 41:17 · Named in Jeremiah 41:17. · *1 verses*<br><small>forms: Beth-lehem Ephratah, Beth-lehem-judah, Bethlehem Ephrathah</small>
+- **Blind** · Jeremiah 31:8 · Mentioned in Jeremiah 31:8. · *0.3333333333333333 verses*<br><small>forms: Blindness</small>
+- **Blue** · Jeremiah 10:9 · Mentioned in Jeremiah 10:9. · *0.3333333333333333 verses*
+- **Bones** · Jeremiah 8:1 · Mentioned in Jeremiah 8:1. · *1.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Bosom** · Jeremiah 32:18 · Mentioned in Jeremiah 32:18. · *0.3333333333333333 verses*
+- **Bottle** · Jeremiah 13:12 · Mentioned in Jeremiah 13:12. · *1.3333333333333333 verses*
+- **Bowels** · Jeremiah 4:19 · Mentioned in Jeremiah 4:19. · *0.6666666666666666 verses*
+- **Bowl** · Jeremiah 35:5 · Mentioned in Jeremiah 35:5. · *1 verses*
+- **Brass** · Jeremiah 6:28 · Mentioned in Jeremiah 6:28. · *1.6666666666666667 verses*
+- **Brazier** · Jeremiah 36:22 · Mentioned in Jeremiah 36:22. · *0.6666666666666666 verses*
+- **Brick** · Jeremiah 43:9 · Mentioned in Jeremiah 43:9. · *0.3333333333333333 verses*
+- **Brickkiln** · Jeremiah 43:9 · Mentioned in Jeremiah 43:9. · *0.3333333333333333 verses*
+- **Brook** · Jeremiah 15:18; Jeremiah 47:2 · Mentioned in Jeremiah 15:18. · *1 verses*<br><small>aliases: Stream</small>
+- **Bull** · Jeremiah 31:18; Jeremiah 50:11 · Mentioned in Jeremiah 31:18. · *1.6666666666666667 verses*<br><small>aliases: Bullock</small>
+- **Bulwark** · Jeremiah 50:15 · Mentioned in Jeremiah 50:15. · *0.3333333333333333 verses*<br><small>forms: Rampart</small>
+- **Bush** · Jeremiah 17:6 · Mentioned in Jeremiah 17:6. · *0.6666666666666666 verses*<br><small>forms: Burning bush</small>
+- **Buz** · Jeremiah 25:23 · Named in Jeremiah 25:23. · *1 verses*
+- **Cakes** · Jeremiah 7:18 · Mentioned in Jeremiah 7:18. · *0.6666666666666666 verses*<br><small>aliases: Cake</small>
+- **Calf** · Jeremiah 31:18 · Mentioned in Jeremiah 31:18. · *1 verses*
+- **Camel** · Jeremiah 49:29 · Mentioned in Jeremiah 49:29. · *0.6666666666666666 verses*
+- **Candle** · Jeremiah 25:10 · Mentioned in Jeremiah 25:10. · *0.3333333333333333 verses*
+- **Caphtor** · Jeremiah 47:4 · Named in Jeremiah 47:4. · *1 verses*<br><small>forms: Caphthorim, Caphtorim, Caphtorims</small>
+- **Carchemish** · Jeremiah 46:2 · Named in Jeremiah 46:2. · *1 verses*
+- **Carpenter** · Jeremiah 24:1 · Mentioned in Jeremiah 24:1. · *0.6666666666666666 verses*
+- **Cattle** · Jeremiah 9:10 · Mentioned in Jeremiah 9:10. · *0.6666666666666666 verses*
+- **Cauldron** · Jeremiah 1:13 · Mentioned in Jeremiah 1:13. · *0.3333333333333333 verses*
+- **Cedar** · Jeremiah 22:7 · Mentioned in Jeremiah 22:7. · *1.3333333333333333 verses*
+- **Chain** · Jeremiah 39:7 · Mentioned in Jeremiah 39:7. · *1.3333333333333333 verses*
+- **Chains** · Jeremiah 39:7 · Mentioned in Jeremiah 39:7. · *1.3333333333333333 verses*<br><small>forms: Necklace</small>
+- **Chemosh** · Jeremiah 48:7 · Mentioned in Jeremiah 48:7. · *1 verses*
+- **Chimham** · Jeremiah 41:17 · Named in Jeremiah 41:17. · *1 verses*
+- **Chittim** · Jeremiah 2:10 · Named in Jeremiah 2:10. · *1 verses*<br><small>forms: Cyprus</small>
+- **Cistern** · Jeremiah 2:13 · Mentioned in Jeremiah 2:13. · *0.6666666666666666 verses*
+- **Cloud** · Jeremiah 4:13 · Mentioned in Jeremiah 4:13. · *0.3333333333333333 verses*<br><small>aliases: Clouds</small>
+- **Coat** · Jeremiah 46:4 · Mentioned in Jeremiah 46:4. · *0.6666666666666666 verses*
+- **Coat of mail** · Jeremiah 51:3 · Mentioned in Jeremiah 51:3. · *0.3333333333333333 verses*
+- **Cockatrice** · Jeremiah 8:17 · Mentioned in Jeremiah 8:17. · *0.3333333333333333 verses*
+- **Cord** · Jeremiah 10:20 · Mentioned in Jeremiah 10:20. · *1.6666666666666667 verses*
+- **Cornerstone** · Jeremiah 51:26 · Mentioned in Jeremiah 51:26. · *0.3333333333333333 verses*
+- **Crane** · Jeremiah 8:7 · Mentioned in Jeremiah 8:7. · *0.3333333333333333 verses*
+- **Crown** · Jeremiah 2:16 · Mentioned in Jeremiah 2:16. · *1 verses*
+- **Cubit** · Jeremiah 52:21 · Mentioned in Jeremiah 52:21. · *0.6666666666666666 verses*
+- **Cush** · Jeremiah 46:9 · Named in Jeremiah 46:9. · *1 verses*
+- **Dan** · Jeremiah 4:15 · Named in Jeremiah 4:15. · *2 verses*<br><small>forms: Dan Jaan, Laish, Leshem, Vedan</small>
+- **Darkness** · Jeremiah 2:31 · Mentioned in Jeremiah 2:31. · *1 verses*
+- **Dedan** · Jeremiah 25:23 · Named in Jeremiah 25:23. · *2 verses*<br><small>forms: Dedanim</small>
+- **Delaiah** · Jeremiah 36:12 · Son of Shemaiah. · *2 verses*
+- **Deputy** · Jeremiah 51:23 · Mentioned in Jeremiah 51:23. · *1 verses*<br><small>forms: Proconsul</small>
+- **Desert** · Jeremiah 2:6 · Mentioned in Jeremiah 2:6. · *2 verses*
+- **Diamond** · Jeremiah 17:1 · Mentioned in Jeremiah 17:1. · *0.3333333333333333 verses*
+- **Dibon** · Jeremiah 48:18 · Named in Jeremiah 48:18. · *2 verses*<br><small>forms: Dibon Gad</small>
+- **Diviner** · Jeremiah 27:9 · Mentioned in Jeremiah 27:9. · *0.6666666666666666 verses*
+- **Dog** · Jeremiah 15:3 · Mentioned in Jeremiah 15:3. · *0.3333333333333333 verses*
+- **Donkey** · Jeremiah 2:24 · Mentioned in Jeremiah 2:24. · *1 verses*<br><small>aliases: Ass</small>
+- **Door** · Jeremiah 35:4 · Mentioned in Jeremiah 35:4. · *0.6666666666666666 verses*
+- **Dough** · Jeremiah 7:18 · Mentioned in Jeremiah 7:18. · *0.3333333333333333 verses*
+- **Dove** · Jeremiah 48:28 · Mentioned in Jeremiah 48:28. · *0.3333333333333333 verses*
+- **Dragon** · Jeremiah 9:11 · Mentioned in Jeremiah 9:11. · *2 verses*
+- **Dromedary** · Jeremiah 2:23 · Mentioned in Jeremiah 2:23. · *0.3333333333333333 verses*
+- **Drought** · Jeremiah 2:6 · Mentioned in Jeremiah 2:6. · *1.3333333333333333 verses*
+- **Dust** · Jeremiah 25:34 · Mentioned in Jeremiah 25:34. · *0.3333333333333333 verses*
+- **Eagle** · Jeremiah 4:13 · Mentioned in Jeremiah 4:13. · *1.3333333333333333 verses*
+- **East wind** · Jeremiah 18:17 · Mentioned in Jeremiah 18:17. · *0.3333333333333333 verses*
+- **Eggs** · Jeremiah 17:11 · Mentioned in Jeremiah 17:11. · *0.3333333333333333 verses*<br><small>aliases: Egg</small>
+- **Eglath-shelishiyah** · Jeremiah 48:34 · Named in Jeremiah 48:34. · *1 verses*
+- **Ekron** · Jeremiah 25:20 · Named in Jeremiah 25:20. · *1 verses*
+- **Elasah** · Jeremiah 29:3 · Son of Shaphan. · *1 verses*
+- **Elder** · Jeremiah 19:1 · Mentioned in Jeremiah 19:1. · *1 verses*
+- **Elders** · Jeremiah 19:1 · Mentioned in Jeremiah 19:1. · *1 verses*
+- **Elealeh** · Jeremiah 48:34 · Named in Jeremiah 48:34. · *1 verses*
+- **Engraver** · Jeremiah 10:9 · Mentioned in Jeremiah 10:9. · *0.3333333333333333 verses*
+- **Esau** · Jeremiah 49:8 · Named in Jeremiah 49:8. · *2 verses*
+- **Eunuch** · Jeremiah 29:2 · Mentioned in Jeremiah 29:2. · *1.6666666666666667 verses*
+- **Evil-merodach** · Jeremiah 52:31 · King of Babylon. · *1 verses*
+- **Eyelids** · Jeremiah 9:18 · Mentioned in Jeremiah 9:18. · *0.3333333333333333 verses*
+- **Farmer** · Jeremiah 31:24; Jeremiah 51:23 · Mentioned in Jeremiah 31:24. · *1 verses*<br><small>aliases: Husbandman</small>
+- **Fat** · Jeremiah 5:28 · Mentioned in Jeremiah 5:28. · *0.6666666666666666 verses*
+- **Fatherless** · Jeremiah 5:28 · Mentioned in Jeremiah 5:28. · *1.3333333333333333 verses*<br><small>forms: Orphan</small>
+- **Fence** · Jeremiah 49:3 · Mentioned in Jeremiah 49:3. · *0.3333333333333333 verses*<br><small>aliases: Hedge</small>
+- **Fetters** · Jeremiah 39:7 · Mentioned in Jeremiah 39:7. · *0.6666666666666666 verses*
+- **Finger** · Jeremiah 52:21 · Mentioned in Jeremiah 52:21. · *0.3333333333333333 verses*
+- **Firstfruits** · Jeremiah 2:3 · Mentioned in Jeremiah 2:3. · *0.3333333333333333 verses*<br><small>aliases: First fruits</small>
+- **Fish** · Jeremiah 16:16 · Mentioned in Jeremiah 16:16. · *0.3333333333333333 verses*
+- **Fishermen** · Jeremiah 16:16 · Mentioned in Jeremiah 16:16. · *0.3333333333333333 verses*<br><small>aliases: Fishers · forms: Fisherman</small>
+- **Flood** · Jeremiah 46:7 · Mentioned in Jeremiah 46:7. · *1 verses*
+- **Flute** · Jeremiah 48:36 · Mentioned in Jeremiah 48:36. · *0.3333333333333333 verses*
+- **Fool** · Jeremiah 17:11 · Mentioned in Jeremiah 17:11. · *0.6666666666666666 verses*
+- **Foot** · Jeremiah 2:25 · Mentioned in Jeremiah 2:25. · *2 verses*<br><small>aliases: Feet</small>
+- **Forehead** · Jeremiah 3:3 · Mentioned in Jeremiah 3:3. · *0.3333333333333333 verses*
+- **Forest** · Jeremiah 5:6 · Mentioned in Jeremiah 5:6. · *2 verses*
+- **Fortified city** · Jeremiah 1:18; Jeremiah 5:17 · Mentioned in Jeremiah 1:18. · *1.6666666666666667 verses*<br><small>aliases: Fenced city</small>
+- **Foundation** · Jeremiah 31:37 · Mentioned in Jeremiah 31:37. · *1 verses*
+- **Fountain** · Jeremiah 2:13 · Mentioned in Jeremiah 2:13. · *1.6666666666666667 verses*
+- **Fowler** · Jeremiah 5:26 · Mentioned in Jeremiah 5:26. · *0.3333333333333333 verses*
+- **Frankincense** · Jeremiah 6:20 · Mentioned in Jeremiah 6:20. · *1 verses*
+- **Frost** · Jeremiah 36:30 · Mentioned in Jeremiah 36:30. · *0.3333333333333333 verses*
+- **Furnace** · Jeremiah 11:4 · Mentioned in Jeremiah 11:4. · *0.3333333333333333 verses*
+- **Gad** · Jeremiah 49:1 · Named in Jeremiah 49:1. · *1 verses*
+- **Gall** · Jeremiah 8:14 · Mentioned in Jeremiah 8:14. · *1 verses*
+- **Gareb** · Jeremiah 31:39 · Named in Jeremiah 31:39. · *1 verses*
+- **Garment** · Jeremiah 36:24 · Mentioned in Jeremiah 36:24. · *1.6666666666666667 verses*
+- **Geruth Chimham** · Jeremiah 41:17 · Named in Jeremiah 41:17. · *1 verses*
+- **Goah** · Jeremiah 31:39 · Named in Jeremiah 31:39. · *1 verses*<br><small>aliases: Goath</small>
+- **Goat** · Jeremiah 50:8 · Mentioned in Jeremiah 50:8. · *0.6666666666666666 verses*
+- **Gold** · Jeremiah 4:30 · Mentioned in Jeremiah 4:30. · *1.3333333333333333 verses*
+- **Goldsmith** · Jeremiah 10:9 · Mentioned in Jeremiah 10:9. · *1 verses*
+- **Grain** · Jeremiah 31:12 · Mentioned in Jeremiah 31:12. · *0.6666666666666666 verses*<br><small>forms: Corn</small>
+- **Grapes** · Jeremiah 8:13 · Mentioned in Jeremiah 8:13. · *1.6666666666666667 verses*
+- **Grass** · Jeremiah 14:5 · Mentioned in Jeremiah 14:5. · *1 verses*
+- **Grasshopper** · Jeremiah 46:23 · Mentioned in Jeremiah 46:23. · *0.3333333333333333 verses*
+- **Hadad** · Jeremiah 49:27 · Named in Jeremiah 49:27. · *1 verses*
+- **Hair** · Jeremiah 7:29 · Mentioned in Jeremiah 7:29. · *0.6666666666666666 verses*
+- **Hammer** · Jeremiah 10:4 · Mentioned in Jeremiah 10:4. · *1 verses*
+- **Hamutal** · Jeremiah 52:1 · Named in Jeremiah 52:1. · *1 verses*
+- **Hanan** · Jeremiah 35:4 · Named in Jeremiah 35:4. · *1 verses*
+- **Heel** · Jeremiah 13:22 · Mentioned in Jeremiah 13:22. · *0.3333333333333333 verses*
+- **Heifer** · Jeremiah 46:20 · Mentioned in Jeremiah 46:20. · *1 verses*
+- **Helmet** · Jeremiah 46:4 · Mentioned in Jeremiah 46:4. · *0.3333333333333333 verses*
+- **Hewer** · Jeremiah 46:22 · Mentioned in Jeremiah 46:22. · *0.3333333333333333 verses*<br><small>forms: Stonecutter</small>
+- **Highway** · Jeremiah 31:21 · Mentioned in Jeremiah 31:21. · *0.3333333333333333 verses*
+- **Hilkiah** · Jeremiah 1:1 · Named in Jeremiah 1:1. · *2 verses*
+- **Holon** · Jeremiah 48:21 · Named in Jeremiah 48:21. · *1 verses*<br><small>forms: Hilen</small>
+- **Honey** · Jeremiah 11:5 · Mentioned in Jeremiah 11:5. · *1 verses*
+- **Horn** · Jeremiah 17:1 · Mentioned in Jeremiah 17:1. · *0.6666666666666666 verses*
+- **Horse Gate** · Jeremiah 31:40 · Named in Jeremiah 31:40. · *0 verses*
+- **Hunter** · Jeremiah 16:16 · Mentioned in Jeremiah 16:16. · *0.3333333333333333 verses*
+- **Idol** · Jeremiah 8:19 · Mentioned in Jeremiah 8:19. · *1.6666666666666667 verses*
+- **Immer** · Jeremiah 20:1 · Named in Jeremiah 20:1. · *1 verses*
+- **Ink** · Jeremiah 36:18 · Mentioned in Jeremiah 36:18. · *0.3333333333333333 verses*
+- **Isaac** · Jeremiah 33:26 · Named in Jeremiah 33:26. · *1 verses*
+- **Island** · Jeremiah 2:10 · Mentioned in Jeremiah 2:10. · *1.6666666666666667 verses*<br><small>aliases: Isle</small>
+- **Jaaz-aniah** · Jeremiah 35:3 · Son of Jeremiah. · *1 verses*
+- **Jackal** · Jeremiah 9:11 · Mentioned in Jeremiah 9:11. · *1.6666666666666667 verses*
+- **Jahaz** · Jeremiah 48:21; Jeremiah 48:34 · Named in Jeremiah 48:21. · *2 verses*<br><small>aliases: Jahazah, Jahzah</small>
+- **Jazer** · Jeremiah 48:32 · Named in Jeremiah 48:32. · *1 verses*<br><small>forms: Jaazer</small>
+- **Jehoiada** · Jeremiah 29:26 · Named in Jeremiah 29:26. · *1 verses*
+- **Jehucal** · Jeremiah 37:3 · Son of Shelemiah. · *1 verses*
+- **Jerahmeel** · Jeremiah 36:26 · Named in Jeremiah 36:26. · *1 verses*
+- **Jericho** · Jeremiah 39:5 · Named in Jeremiah 39:5. · *2 verses*
+- **Judge** · Jeremiah 2:35 · Mentioned in Jeremiah 2:35. · *1 verses*
+- **Juniper** · Jeremiah 48:6 · Mentioned in Jeremiah 48:6. · *0.3333333333333333 verses*
+- **Kedar** · Jeremiah 2:10 · Named in Jeremiah 2:10. · *2 verses*
+- **Keeper** · Jeremiah 4:17 · Mentioned in Jeremiah 4:17. · *1.3333333333333333 verses*
+- **Kerioth** · Jeremiah 48:24 · Named in Jeremiah 48:24. · *2 verses*
+- **Kidron** · Jeremiah 31:40 · Named in Jeremiah 31:40. · *1 verses*<br><small>forms: Cedron</small>
+- **Kir Heres** · Jeremiah 48:31 · Named in Jeremiah 48:31. · *2 verses*<br><small>forms: Kir-hareseth, Kir Haraseth, Kir-haresh</small>
+- **Kiriath-jearim** · Jeremiah 26:20 · Named in Jeremiah 26:20. · *1 verses*<br><small>aliases: Kiriath, Kirjath, Kirjath Jearim · forms: Kiriath Arim, Kiriath Baal, Kiriatharim, Kirjath Arim, Kirjath Baal</small>
+- **Kiriathaim** · Jeremiah 48:1 · Named in Jeremiah 48:1. · *2 verses*<br><small>forms: Kirjathaim</small>
+- **Lachish** · Jeremiah 34:7 · Named in Jeremiah 34:7. · *1 verses*
+- **Lamb** · Jeremiah 11:19 · Mentioned in Jeremiah 11:19. · *0.6666666666666666 verses*
+- **Lame** · Jeremiah 31:8 · Mentioned in Jeremiah 31:8. · *0.3333333333333333 verses*<br><small>forms: Lameness</small>
+- **Lamp** · Jeremiah 25:10 · Mentioned in Jeremiah 25:10. · *0.6666666666666666 verses*
+- **Lampstand** · Jeremiah 52:19 · Mentioned in Jeremiah 52:19. · *0.3333333333333333 verses*<br><small>aliases: Candlestick</small>
+- **Leb-kamai** · Jeremiah 51:1 · Named in Jeremiah 51:1. · *1 verses*
+- **Leopard** · Jeremiah 5:6 · Mentioned in Jeremiah 5:6. · *0.6666666666666666 verses*
+- **Levite** · Jeremiah 33:18 · Mentioned in Jeremiah 33:18. · *1 verses*
+- **Libnah** · Jeremiah 52:1 · Named in Jeremiah 52:1. · *1 verses*
+- **Lightning** · Jeremiah 10:13 · Mentioned in Jeremiah 10:13. · *0.6666666666666666 verses*
+- **Linen** · Jeremiah 13:1 · Mentioned in Jeremiah 13:1. · *0.3333333333333333 verses*
+- **Lips** · Jeremiah 17:16 · Mentioned in Jeremiah 17:16. · *0.3333333333333333 verses*<br><small>aliases: Lip</small>
+- **Locust** · Jeremiah 46:23 · Mentioned in Jeremiah 46:23. · *1 verses*
+- **Locusts** · Jeremiah 46:23 · Mentioned in Jeremiah 46:23. · *1 verses*
+- **Lodge** · Jeremiah 4:14 · Mentioned in Jeremiah 4:14. · *0.3333333333333333 verses*<br><small>forms: Hut, Cottage</small>
+- **Lodging place** · Jeremiah 9:2 · Mentioned in Jeremiah 9:2. · *0.3333333333333333 verses*<br><small>forms: Inn</small>
+- **Lowland** · Jeremiah 17:26 · Named in Jeremiah 17:26. · *0 verses*
+- **Ludim** · Jeremiah 46:9 · Named in Jeremiah 46:9. · *1 verses*
+- **Luhith** · Jeremiah 48:5 · Named in Jeremiah 48:5. · *1 verses*<br><small>aliases: Ascent of Luhith</small>
+- **Madmen** · Jeremiah 48:2 · Named in Jeremiah 48:2. · *1 verses*
+- **Magor-missabib** · Jeremiah 20:3 · Named in Jeremiah 20:3. · *1 verses*
+- **Malcam** · Jeremiah 49:1 · Named in Jeremiah 49:1. · *2 verses*
+- **Malchiah** · Jeremiah 38:1 · Named in Jeremiah 38:1. · *2 verses*
+- **Manasseh** · Jeremiah 15:4 · Named in Jeremiah 15:4. · *1 verses*<br><small>forms: Manasses</small>
+- **Mattan** · Jeremiah 38:1 · Named in Jeremiah 38:1. · *1 verses*
+- **Meal** · Jeremiah 14:12 · Mentioned in Jeremiah 14:12. · *1.3333333333333333 verses*<br><small>forms: Flour</small>
+- **Measuring line** · Jeremiah 31:39 · Mentioned in Jeremiah 31:39. · *0.3333333333333333 verses*
+- **Mephaath** · Jeremiah 48:21 · Named in Jeremiah 48:21. · *1 verses*
+- **Merathaim** · Jeremiah 50:21 · Named in Jeremiah 50:21. · *1 verses*
+- **Messenger** · Jeremiah 27:3 · Mentioned in Jeremiah 27:3. · *0.6666666666666666 verses*
+- **Micah** · Jeremiah 26:18 · Named in Jeremiah 26:18. · *1 verses*
+- **Micaiah** · Jeremiah 36:11 · Named in Jeremiah 36:11. · *2 verses*
+- **Michaiah** · Jeremiah 36:11 · Son of Gemariah. · *2 verses*
+- **Middle Gate** · Jeremiah 39:3 · Named in Jeremiah 39:3. · *0 verses*
+- **Migdol** · Jeremiah 44:1 · Named in Jeremiah 44:1. · *2 verses*
+- **Milk** · Jeremiah 11:5 · Mentioned in Jeremiah 11:5. · *0.6666666666666666 verses*
+- **Millstone** · Jeremiah 25:10 · Mentioned in Jeremiah 25:10. · *0.3333333333333333 verses*
+- **Minni** · Jeremiah 51:27 · Named in Jeremiah 51:27. · *1 verses*
+- **Mire** · Jeremiah 18:4; Jeremiah 38:6 · Mentioned in Jeremiah 18:4. · *1.6666666666666667 verses*<br><small>aliases: Clay · forms: Mud</small>
+- **Misgab** · Jeremiah 48:1 · Named in Jeremiah 48:1. · *1 verses*
+- **Molech** · Jeremiah 32:35 · Mentioned in Jeremiah 32:35. · *0.3333333333333333 verses*<br><small>forms: Moloch</small>
+- **Moon** · Jeremiah 8:2 · Mentioned in Jeremiah 8:2. · *0.6666666666666666 verses*
+- **Mortar** · Jeremiah 43:9 · Mentioned in Jeremiah 43:9. · *0.3333333333333333 verses*
+- **Moses** · Jeremiah 15:1 · Named in Jeremiah 15:1. · *1 verses*
+- **Mound** · Jeremiah 6:6 · Mentioned in Jeremiah 6:6. · *0.6666666666666666 verses*<br><small>forms: Siege works</small>
+- **Mount Ephraim** · Jeremiah 4:15 · Named in Jeremiah 4:15. · *0 verses*
+- **Nail** · Jeremiah 10:4 · Mentioned in Jeremiah 10:4. · *0.3333333333333333 verses*
+- **Nails** · Jeremiah 10:4 · Mentioned in Jeremiah 10:4. · *0.3333333333333333 verses*<br><small>forms: Fingernails</small>
+- **Nebo** · Jeremiah 48:1 · Named in Jeremiah 48:1. · *2 verses*
+- **Nebushasban** · Jeremiah 39:13 · Named in Jeremiah 39:13. · *1 verses*
+- **Nergal-sharezer** · Jeremiah 39:3 · King of Babylon. · *2 verses*
+- **New Gate** · Jeremiah 26:10 · Named in Jeremiah 26:10. · *0 verses*
+- **New wine** · Jeremiah 31:12 · Mentioned in Jeremiah 31:12. · *0.3333333333333333 verses*
+- **Nimrim** · Jeremiah 48:34 · Named in Jeremiah 48:34. · *1 verses*
+- **Officer** · Jeremiah 20:1 · Mentioned in Jeremiah 20:1. · *1.6666666666666667 verses*
+- **Oil** · Jeremiah 31:12 · Mentioned in Jeremiah 31:12. · *1 verses*<br><small>forms: Olive oil</small>
+- **Olive tree** · Jeremiah 11:16 · Mentioned in Jeremiah 11:16. · *0.3333333333333333 verses*<br><small>aliases: Olive</small>
+- **Ostrich** · Jeremiah 50:39 · Mentioned in Jeremiah 50:39. · *0.3333333333333333 verses*
+- **Owl** · Jeremiah 50:39 · Mentioned in Jeremiah 50:39. · *0.3333333333333333 verses*
+- **Ox** · Jeremiah 11:19 · Mentioned in Jeremiah 11:19. · *0.3333333333333333 verses*
+- **Oxen** · Jeremiah 51:23 · Mentioned in Jeremiah 51:23. · *0.3333333333333333 verses*
+- **Palace** · Jeremiah 6:5 · Mentioned in Jeremiah 6:5. · *1.6666666666666667 verses*
+- **Palm tree** · Jeremiah 10:5 · Mentioned in Jeremiah 10:5. · *0.3333333333333333 verses*
+- **Pan** · Jeremiah 52:19 · Mentioned in Jeremiah 52:19. · *0.3333333333333333 verses*
+- **Partridge** · Jeremiah 17:11 · Mentioned in Jeremiah 17:11. · *0.3333333333333333 verses*
+- **Pasture** · Jeremiah 9:10 · Mentioned in Jeremiah 9:10. · *1.6666666666666667 verses*<br><small>forms: Meadow</small>
+- **Pathros** · Jeremiah 44:1 · Named in Jeremiah 44:1. · *2 verses*
+- **Pekod** · Jeremiah 50:21 · Named in Jeremiah 50:21. · *1 verses*
+- **Pen** · Jeremiah 8:8 · Mentioned in Jeremiah 8:8. · *0.6666666666666666 verses*
+- **Physician** · Jeremiah 8:22 · Mentioned in Jeremiah 8:22. · *0.3333333333333333 verses*
+- **Pipe** · Jeremiah 48:36 · Mentioned in Jeremiah 48:36. · *0.3333333333333333 verses*
+- **Plague** · Jeremiah 19:8 · Mentioned in Jeremiah 19:8. · *1 verses*
+- **Pomegranate** · Jeremiah 52:22 · Mentioned in Jeremiah 52:22. · *0.6666666666666666 verses*
+- **Pot** · Jeremiah 1:13 · Mentioned in Jeremiah 1:13. · *1.3333333333333333 verses*
+- **Purple** · Jeremiah 10:9 · Mentioned in Jeremiah 10:9. · *0.3333333333333333 verses*
+- **Rabbah** · Jeremiah 49:2 · Named in Jeremiah 49:2. · *2 verses*<br><small>forms: Rabbath</small>
+- **Rabmag** · Jeremiah 39:3 · Named in Jeremiah 39:3. · *2 verses*
+- **Rabsaris** · Jeremiah 39:3 · Named in Jeremiah 39:3. · *2 verses*
+- **Rachel** · Jeremiah 31:15 · Jacob's wife, the mother of Joseph and Benjamin. · *1 verses*<br><small>aliases: Rahel</small>
+- **Rain** · Jeremiah 3:3 · Mentioned in Jeremiah 3:3. · *2 verses*
+- **Ram** · Jeremiah 51:40 · Mentioned in Jeremiah 51:40. · *0.3333333333333333 verses*
+- **Ramah** · Jeremiah 31:15 · Named in Jeremiah 31:15. · *2 verses*<br><small>forms: Rama, Ramath</small>
+- **Red Sea** · Jeremiah 49:21 · Named in Jeremiah 49:21. · *1 verses*
+- **Reed** · Jeremiah 51:32 · Mentioned in Jeremiah 51:32. · *0.3333333333333333 verses*<br><small>aliases: Reeds</small>
+- **Reins** · Jeremiah 11:20 · Mentioned in Jeremiah 11:20. · *1.3333333333333333 verses*<br><small>forms: Kidneys</small>
+- **Rod** · Jeremiah 1:11 · Mentioned in Jeremiah 1:11. · *1.3333333333333333 verses*
+- **Roof** · Jeremiah 19:13; Jeremiah 48:38 · Mentioned in Jeremiah 19:13. · *1 verses*<br><small>aliases: Housetop</small>
+- **Rushes** · Jeremiah 8:6 · Mentioned in Jeremiah 8:6. · *0.3333333333333333 verses*
+- **Sabbath** · Jeremiah 17:21 · Mentioned in Jeremiah 17:21. · *1.3333333333333333 verses*
+- **Sackcloth** · Jeremiah 4:8 · Mentioned in Jeremiah 4:8. · *1.3333333333333333 verses*
+- **Salt** · Jeremiah 17:6 · Mentioned in Jeremiah 17:6. · *0.3333333333333333 verses*
+- **Samuel** · Jeremiah 15:1 · Named in Jeremiah 15:1. · *1 verses*
+- **Sand** · Jeremiah 5:22 · Mentioned in Jeremiah 5:22. · *1 verses*
+- **Scarlet** · Jeremiah 4:30 · Mentioned in Jeremiah 4:30. · *0.3333333333333333 verses*
+- **Serpent** · Jeremiah 8:17 · Mentioned in Jeremiah 8:17. · *0.6666666666666666 verses*<br><small>forms: Snake</small>
+- **Sharezer** · Jeremiah 39:3 · Named in Jeremiah 39:3. · *2 verses*
+- **Sheba** · Jeremiah 6:20 · Named in Jeremiah 6:20. · *1 verses*<br><small>forms: Sabeans, Seba</small>
+- **Shechem** · Jeremiah 41:5 · Named in Jeremiah 41:5. · *1 verses*<br><small>forms: Sichem, Sychem</small>
+- **Sheep** · Jeremiah 12:3 · Mentioned in Jeremiah 12:3. · *1.3333333333333333 verses*
+- **Shekel** · Jeremiah 32:9 · Mentioned in Jeremiah 32:9. · *0.3333333333333333 verses*
+- **Shephatiah** · Jeremiah 38:1 · Named in Jeremiah 38:1. · *1 verses*
+- **Sheshach** · Jeremiah 25:26 · Named in Jeremiah 25:26. · *2 verses*
+- **Shield** · Jeremiah 46:3 · Mentioned in Jeremiah 46:3. · *1 verses*
+- **Shore** · Jeremiah 47:7 · Mentioned in Jeremiah 47:7. · *0.3333333333333333 verses*<br><small>aliases: Seashore</small>
+- **Sibmah** · Jeremiah 48:32 · Named in Jeremiah 48:32. · *1 verses*<br><small>forms: Sebam, Shebam, Shibmah</small>
+- **Sickle** · Jeremiah 50:16 · Mentioned in Jeremiah 50:16. · *0.3333333333333333 verses*
+- **Signet** · Jeremiah 22:24 · Mentioned in Jeremiah 22:24. · *0.3333333333333333 verses*
+- **Silver** · Jeremiah 6:30 · Mentioned in Jeremiah 6:30. · *1.6666666666666667 verses*
+- **Skin** · Jeremiah 13:23 · Mentioned in Jeremiah 13:23. · *0.3333333333333333 verses*
+- **Skirt** · Jeremiah 2:34 · Mentioned in Jeremiah 2:34. · *1 verses*
+- **Slave** · Jeremiah 2:14 · Mentioned in Jeremiah 2:14. · *0.3333333333333333 verses*
+- **Smith** · Jeremiah 24:1 · Mentioned in Jeremiah 24:1. · *0.6666666666666666 verses*<br><small>forms: Blacksmith</small>
+- **Snow** · Jeremiah 18:14 · Mentioned in Jeremiah 18:14. · *0.3333333333333333 verses*
+- **Snuffers** · Jeremiah 52:18 · Mentioned in Jeremiah 52:18. · *0.3333333333333333 verses*
+- **Solomon** · Jeremiah 52:20 · Named in Jeremiah 52:20. · *1 verses*
+- **Sore** · Jeremiah 13:17 · Mentioned in Jeremiah 13:17. · *1.3333333333333333 verses*<br><small>forms: Sores</small>
+- **Sower** · Jeremiah 50:16 · Mentioned in Jeremiah 50:16. · *0.3333333333333333 verses*
+- **Spear** · Jeremiah 6:23 · Mentioned in Jeremiah 6:23. · *1 verses*
+- **Spoon** · Jeremiah 52:18 · Mentioned in Jeremiah 52:18. · *0.6666666666666666 verses*
+- **Spot** · Jeremiah 13:23 · Mentioned in Jeremiah 13:23. · *0.3333333333333333 verses*<br><small>forms: Bright spot</small>
+- **Staff** · Jeremiah 48:17 · Mentioned in Jeremiah 48:17. · *0.3333333333333333 verses*
+- **Stall** · Jeremiah 46:21 · Mentioned in Jeremiah 46:21. · *0.3333333333333333 verses*
+- **Star** · Jeremiah 31:35 · Mentioned in Jeremiah 31:35. · *0.3333333333333333 verses*<br><small>aliases: Stars</small>
+- **Steel** · Jeremiah 15:12 · Mentioned in Jeremiah 15:12. · *0.3333333333333333 verses*
+- **Steps** · Jeremiah 10:23 · Mentioned in Jeremiah 10:23. · *0.3333333333333333 verses*<br><small>forms: Stairs, Staircase</small>
+- **Stone** · Jeremiah 2:27 · Mentioned in Jeremiah 2:27. · *2 verses*
+- **Storehouse** · Jeremiah 50:26 · Mentioned in Jeremiah 50:26. · *0.3333333333333333 verses*<br><small>forms: Treasure house, Store city</small>
+- **Stork** · Jeremiah 8:7 · Mentioned in Jeremiah 8:7. · *0.3333333333333333 verses*
+- **Storm** · Jeremiah 23:19 · Mentioned in Jeremiah 23:19. · *1 verses*<br><small>forms: Tempest</small>
+- **Sun** · Jeremiah 8:2 · Mentioned in Jeremiah 8:2. · *1 verses*
+- **Swelling** · Jeremiah 12:5 · Mentioned in Jeremiah 12:5. · *1 verses*
+- **Tabernacle** · Jeremiah 10:20 · Mentioned in Jeremiah 10:20. · *0.3333333333333333 verses*
+- **Table** · Jeremiah 17:1 · Mentioned in Jeremiah 17:1. · *0.3333333333333333 verses*
+- **Tabret** · Jeremiah 31:4 · Mentioned in Jeremiah 31:4. · *0.3333333333333333 verses*
+- **Tambourine** · Jeremiah 31:4 · Mentioned in Jeremiah 31:4. · *0.3333333333333333 verses*
+- **Tarshish** · Jeremiah 10:9 · Named in Jeremiah 10:9. · *1 verses*<br><small>forms: Tharshish</small>
+- **Teeth** · Jeremiah 31:29 · Mentioned in Jeremiah 31:29. · *0.6666666666666666 verses*<br><small>forms: Tooth</small>
+- **Tekoa** · Jeremiah 6:1 · Named in Jeremiah 6:1. · *1 verses*<br><small>forms: Tekoah</small>
+- **Tema** · Jeremiah 25:23 · Named in Jeremiah 25:23. · *1 verses*
+- **Teman** · Jeremiah 49:7 · Named in Jeremiah 49:7. · *2 verses*
+- **Temple** · Jeremiah 7:4 · Mentioned in Jeremiah 7:4. · *1.3333333333333333 verses*
+- **The valley of slaughter** · Jeremiah 7:32 · Named in Jeremiah 7:32. · *0 verses*<br><small>aliases: Valley of Slaughter · forms: Valley of Hinnom</small>
+- **Thigh** · Jeremiah 31:19 · Mentioned in Jeremiah 31:19. · *0.3333333333333333 verses*
+- **Thorns** · Jeremiah 4:3 · Mentioned in Jeremiah 4:3. · *0.6666666666666666 verses*<br><small>aliases: Thorn</small>
+- **Threshing floor** · Jeremiah 51:33 · Mentioned in Jeremiah 51:33. · *0.3333333333333333 verses*
+- **Threshold** · Jeremiah 35:4 · Mentioned in Jeremiah 35:4. · *0.6666666666666666 verses*
+- **Throat** · Jeremiah 2:25 · Mentioned in Jeremiah 2:25. · *0.3333333333333333 verses*
+- **Tomb** · Jeremiah 5:16 · Mentioned in Jeremiah 5:16. · *0.3333333333333333 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Tongue** · Jeremiah 9:3 · Mentioned in Jeremiah 9:3. · *1.6666666666666667 verses*
+- **Tower** · Jeremiah 6:27 · Mentioned in Jeremiah 6:27. · *0.6666666666666666 verses*<br><small>forms: Watchtower</small>
+- **Tower of Hananel** · Jeremiah 31:38 · Named in Jeremiah 31:38. · *0 verses*
+- **Treasury** · Jeremiah 10:13 · Mentioned in Jeremiah 10:13. · *1 verses*
+- **Turtledove** · Jeremiah 8:7 · Mentioned in Jeremiah 8:7. · *0.3333333333333333 verses*
+- **Uphaz** · Jeremiah 10:9 · Named in Jeremiah 10:9. · *1 verses*
+- **Uz** · Jeremiah 25:20 · Named in Jeremiah 25:20. · *1 verses*
+- **Vapor** · Jeremiah 10:13 · Mentioned in Jeremiah 10:13. · *0.6666666666666666 verses*<br><small>aliases: Vapour · forms: Mist</small>
+- **Vine** · Jeremiah 2:21 · Mentioned in Jeremiah 2:21. · *2 verses*<br><small>forms: Grapevine</small>
+- **Vinedresser** · Jeremiah 52:16 · Mentioned in Jeremiah 52:16. · *0.3333333333333333 verses*
+- **Wheat** · Jeremiah 12:13 · Mentioned in Jeremiah 12:13. · *1.3333333333333333 verses*
+- **Wheel** · Jeremiah 18:3 · Mentioned in Jeremiah 18:3. · *0.6666666666666666 verses*
+- **Whirlwind** · Jeremiah 4:13 · Mentioned in Jeremiah 4:13. · *1.3333333333333333 verses*
+- **Widow** · Jeremiah 7:6 · Mentioned in Jeremiah 7:6. · *1.6666666666666667 verses*
+- **Wild donkey** · Jeremiah 2:24 · Mentioned in Jeremiah 2:24. · *0.6666666666666666 verses*<br><small>aliases: Wild ass</small>
+- **Window** · Jeremiah 9:21 · Mentioned in Jeremiah 9:21. · *0.6666666666666666 verses*
+- **Winepress** · Jeremiah 48:33 · Mentioned in Jeremiah 48:33. · *0.3333333333333333 verses*
+- **Winter house** · Jeremiah 36:22 · Mentioned in Jeremiah 36:22. · *0.3333333333333333 verses*
+- **Wise men** · Jeremiah 8:9 · Mentioned in Jeremiah 8:9. · *1.3333333333333333 verses*<br><small>forms: Magi</small>
+- **Wolf** · Jeremiah 5:6 · Mentioned in Jeremiah 5:6. · *0.3333333333333333 verses*
+- **Womb** · Jeremiah 1:5 · Mentioned in Jeremiah 1:5. · *1 verses*
+- **Woodcutter** · Jeremiah 46:22 · Mentioned in Jeremiah 46:22. · *0.3333333333333333 verses*<br><small>aliases: Hewers of wood</small>
+- **Wormwood** · Jeremiah 9:15 · Mentioned in Jeremiah 9:15. · *0.6666666666666666 verses*
+- **Zimri** · Jeremiah 25:25 · Named in Jeremiah 25:25. · *1 verses*
+- **Zoar** · Jeremiah 48:34 · Named in Jeremiah 48:34. · *1 verses*<br><small>forms: Bela</small>
+
+### Near misses
+
+- **Lamentations**: A book of its own after Jeremiah.
+- **Daniel, Shadrach**: They come in the book of Daniel.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Job.
+
+`job-anything` · Books of the Bible · 379 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 13 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 32 |
+| 🪙 Lost Coin (60) | 74 |
+| 💎 Hidden Treasure (85) | 259 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Jemimah. After his trials Job had three daughters, Jemimah, Keziah and Keren-happuch, the fairest women in the land (Job 42:14–15).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Darkness** · Job 3:4 · Mentioned in Job 3:4. · *9.666666666666666 verses*
+- **Eye** · Job 2:12 · Mentioned in Job 2:12. · *13 verses*
+- **Face** · Job 1:11 · Mentioned in Job 1:11. · *9.333333333333334 verses*
+- **Hand** · Job 1:10 · Mentioned in Job 1:10. · *22.333333333333332 verses*
+- **Heart** · Job 1:5 · Mentioned in Job 1:5. · *9.666666666666666 verses*
+- **House** · Job 1:4 · Mentioned in Job 1:4. · *8.333333333333334 verses*
+- **Job** · Job 1:1 · Named in Job 1:1. · *50 verses*
+- **Life** · Job 2:4 · Mentioned in Job 2:4. · *8.333333333333334 verses*
+- **Mouth** · Job 3:1 · Mentioned in Job 3:1. · *11.666666666666666 verses*
+- **Satan** · Job 1:6 · Mentioned in Job 1:6. · *3.6666666666666665 verses*
+- **Water** · Job 3:24 · Mentioned in Job 3:24. · *9.333333333333334 verses*
+- **Wisdom** · Job 4:21 · Mentioned in Job 4:21. · *7.666666666666667 verses*
+- **Word** · Job 2:13 · Mentioned in Job 2:13. · *14.333333333333334 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Back** · Job 1:7 · Mentioned in Job 1:7. · *4.333333333333333 verses*
+- **Behemoth** · Job 40:15 · Mentioned in Job 40:15. · *0.3333333333333333 verses*
+- **Bildad** · Job 2:11 · Named in Job 2:11. · *5 verses*
+- **Bones** · Job 2:5; Job 4:14 · Mentioned in Job 2:5. · *4.333333333333333 verses*<br><small>aliases: Bone</small>
+- **Cloud** · Job 3:5; Job 20:6 · Mentioned in Job 3:5. · *6.333333333333333 verses*<br><small>aliases: Clouds</small>
+- **Death** · Job 3:5 · Mentioned in Job 3:5. · *5.333333333333333 verses*
+- **Dust** · Job 2:12 · Mentioned in Job 2:12. · *6.666666666666667 verses*
+- **Ear** · Job 4:12 · Mentioned in Job 4:12. · *5.333333333333333 verses*
+- **Elihu** · Job 32:2 · Son of Barachel. · *7 verses*
+- **Eliphaz** · Job 2:11 · Named in Job 2:11. · *6 verses*
+- **Flesh** · Job 2:5 · Mentioned in Job 2:5. · *5.666666666666667 verses*
+- **Foot** · Job 2:7; Job 12:5 · Mentioned in Job 2:7. · *4 verses*<br><small>aliases: Feet</small>
+- **Gold** · Job 3:15 · Mentioned in Job 3:15. · *4 verses*
+- **Heaven** · Job 1:16 · Mentioned in Job 1:16. · *7 verses*
+- **Hope** · Job 4:6 · Mentioned in Job 4:6. · *5.333333333333333 verses*
+- **Judgment** · Job 8:3 · Mentioned in Job 8:3. · *6 verses*
+- **Knowledge** · Job 15:2 · Mentioned in Job 15:2. · *5 verses*
+- **Leviathan** · Job 3:8 · Mentioned in Job 3:8. · *0.6666666666666666 verses*
+- **Naamathite** · Job 2:11 · Named in Job 2:11. · *4 verses*
+- **Peace** · Job 5:23 · Mentioned in Job 5:23. · *4 verses*
+- **Servant** · Job 1:8 · Mentioned in Job 1:8. · *4.333333333333333 verses*
+- **Sky** · Job 1:16 · Mentioned in Job 1:16. · *4.666666666666667 verses*<br><small>forms: Firmament, Expanse</small>
+- **Spirit** · Job 3:11 · Mentioned in Job 3:11. · *7 verses*
+- **Stone** · Job 5:23 · Mentioned in Job 5:23. · *4.666666666666667 verses*
+- **Sword** · Job 1:15 · Mentioned in Job 1:15. · *4.333333333333333 verses*
+- **Tabernacle** · Job 5:24 · Mentioned in Job 5:24. · *4.333333333333333 verses*
+- **Tent** · Job 4:21 · Mentioned in Job 4:21. · *5 verses*
+- **Understanding** · Job 12:3 · Mentioned in Job 12:3. · *6.333333333333333 verses*
+- **Uz** · Job 1:1 · Named in Job 1:1. · *1 verses*
+- **Wind** · Job 1:19 · Mentioned in Job 1:19. · *4.333333333333333 verses*
+- **Wrath** · Job 5:2 · Mentioned in Job 5:2. · *5.333333333333333 verses*
+- **Zophar** · Job 2:11 · Named in Job 2:11. · *4 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Anger** · Job 4:9 · Mentioned in Job 4:9. · *2.6666666666666665 verses*
+- **Arm** · Job 22:9 · Mentioned in Job 22:9. · *2 verses*
+- **Ashes** · Job 2:8 · Mentioned in Job 2:8. · *1.3333333333333333 verses*
+- **Barachel** · Job 32:2 · Named in Job 32:2. · *2 verses*
+- **Bed** · Job 7:13 · Mentioned in Job 7:13. · *1.3333333333333333 verses*
+- **Belly** · Job 3:11 · Mentioned in Job 3:11. · *2.6666666666666665 verses*<br><small>forms: Stomach</small>
+- **Bitterness** · Job 7:11 · Mentioned in Job 7:11. · *1.3333333333333333 verses*
+- **Brass** · Job 6:12 · Mentioned in Job 6:12. · *1.3333333333333333 verses*
+- **Bread** · Job 15:23 · Mentioned in Job 15:23. · *2.3333333333333335 verses*
+- **Breast** · Job 3:12 · Mentioned in Job 3:12. · *1.3333333333333333 verses*
+- **Bronze** · Job 6:12 · Mentioned in Job 6:12. · *1.3333333333333333 verses*
+- **Brook** · Job 6:15 · Mentioned in Job 6:15. · *2.3333333333333335 verses*<br><small>aliases: Stream</small>
+- **Cord** · Job 4:21 · Mentioned in Job 4:21. · *1.6666666666666667 verses*
+- **Counsel** · Job 5:13 · Mentioned in Job 5:13. · *3.6666666666666665 verses*
+- **Curse** · Job 1:11 · Mentioned in Job 1:11. · *1.6666666666666667 verses*
+- **Disobedience** · Job 7:21 · Mentioned in Job 7:21. · *2 verses*
+- **Donkey** · Job 1:3 · Mentioned in Job 1:3. · *2.6666666666666665 verses*<br><small>aliases: Ass</small>
+- **Door** · Job 3:10 · Mentioned in Job 3:10. · *2.6666666666666665 verses*
+- **Fatherless** · Job 6:27 · Mentioned in Job 6:27. · *2.3333333333333335 verses*<br><small>forms: Orphan</small>
+- **Field** · Job 5:10 · Mentioned in Job 5:10. · *2 verses*
+- **Fire** · Job 1:16 · Mentioned in Job 1:16. · *3 verses*
+- **Flood** · Job 14:11 · Mentioned in Job 14:11. · *2.3333333333333335 verses*
+- **Foundation** · Job 4:19 · Mentioned in Job 4:19. · *1.3333333333333333 verses*
+- **Garment** · Job 13:28 · Mentioned in Job 13:28. · *2 verses*
+- **Gate** · Job 5:4 · Mentioned in Job 5:4. · *1.6666666666666667 verses*
+- **Glory** · Job 19:9 · Mentioned in Job 19:9. · *1.3333333333333333 verses*
+- **Grain** · Job 5:26 · Mentioned in Job 5:26. · *1.6666666666666667 verses*<br><small>aliases: Corn</small>
+- **Head** · Job 1:20 · Mentioned in Job 1:20. · *3.3333333333333335 verses*
+- **Hell** · Job 7:9; Job 11:8 · Mentioned in Job 7:9. · *2.6666666666666665 verses*<br><small>aliases: Sheol · forms: Hades</small>
+- **Integrity** · Job 2:3 · Mentioned in Job 2:3. · *1.6666666666666667 verses*
+- **Iron** · Job 19:24 · Mentioned in Job 19:24. · *2 verses*
+- **Joy** · Job 8:19 · Mentioned in Job 8:19. · *2 verses*
+- **Judge** · Job 9:15 · Mentioned in Job 9:15. · *3 verses*
+- **Justice** · Job 8:3 · Mentioned in Job 8:3. · *3.3333333333333335 verses*
+- **King** · Job 3:14 · Mentioned in Job 3:14. · *2.6666666666666665 verses*
+- **Lamp** · Job 12:5 · Mentioned in Job 12:5. · *1.6666666666666667 verses*
+- **Lies** · Job 11:3; Job 21:34 · Mentioned in Job 11:3. · *2.6666666666666665 verses*<br><small>aliases: Falsehood · forms: Lying</small>
+- **Lightning** · Job 28:26 · Mentioned in Job 28:26. · *2.6666666666666665 verses*
+- **Lion** · Job 4:10 · Mentioned in Job 4:10. · *1.6666666666666667 verses*
+- **Lips** · Job 2:10 · Mentioned in Job 2:10. · *3.3333333333333335 verses*<br><small>aliases: Lip</small>
+- **Loins** · Job 12:18 · Mentioned in Job 12:18. · *1.6666666666666667 verses*
+- **Mark** · Job 21:5 · Named in Job 21:5. · *2 verses*<br><small>forms: John Mark</small>
+- **Meat** · Job 2:5; Job 6:7 · Mentioned in Job 2:5. · *3.3333333333333335 verses*
+- **Mountain** · Job 9:5 · Mentioned in Job 9:5. · *2.3333333333333335 verses*
+- **Mud** · Job 4:19; Job 41:30 · Mentioned in Job 4:19. · *3 verses*<br><small>aliases: Mire, Clay</small>
+- **Ophir** · Job 22:24 · Named in Job 22:24. · *2 verses*
+- **Ox** · Job 6:5 · Mentioned in Job 6:5. · *1.6666666666666667 verses*
+- **Pride** · Job 33:17; Job 35:15 · Mentioned in Job 33:17. · *1.6666666666666667 verses*<br><small>aliases: Arrogance</small>
+- **Prince** · Job 3:15 · Mentioned in Job 3:15. · *2.6666666666666665 verses*
+- **Rahab** · Job 9:13 · Named in Job 9:13. · *2 verses*<br><small>forms: Rachab</small>
+- **Rain** · Job 5:10 · Mentioned in Job 5:10. · *2.6666666666666665 verses*
+- **Righteousness** · Job 6:29 · Mentioned in Job 6:29. · *3.3333333333333335 verses*
+- **River** · Job 14:11 · Mentioned in Job 14:11. · *1.6666666666666667 verses*
+- **Rock** · Job 39:28 · Mentioned in Job 39:28. · *4 verses*
+- **Sea** · Job 6:3 · Mentioned in Job 6:3. · *4 verses*
+- **Sheba** · Job 1:15; Job 6:19 · Named in Job 6:19. · *2 verses*<br><small>aliases: Sabeans · forms: Seba</small>
+- **Sheep** · Job 1:3 · Mentioned in Job 1:3. · *1.6666666666666667 verses*
+- **Side** · Job 1:10 · Mentioned in Job 1:10. · *2 verses*
+- **Silver** · Job 3:15 · Mentioned in Job 3:15. · *2 verses*
+- **Sin** · Job 1:22 · Mentioned in Job 1:22. · *3.6666666666666665 verses*
+- **Skin** · Job 2:4 · Mentioned in Job 2:4. · *3 verses*
+- **Snow** · Job 6:16 · Mentioned in Job 6:16. · *1.6666666666666667 verses*
+- **Star** · Job 3:9 · Mentioned in Job 3:9. · *1.6666666666666667 verses*<br><small>aliases: Stars</small>
+- **Steps** · Job 14:16 · Mentioned in Job 14:16. · *2 verses*<br><small>forms: Stairs, Staircase</small>
+- **Storm** · Job 9:17 · Mentioned in Job 9:17. · *2.3333333333333335 verses*<br><small>aliases: Tempest</small>
+- **Teeth** · Job 4:10 · Mentioned in Job 4:10. · *2 verses*<br><small>forms: Tooth</small>
+- **Thunder** · Job 26:14 · Mentioned in Job 26:14. · *2.6666666666666665 verses*
+- **Tongue** · Job 5:21 · Mentioned in Job 5:21. · *3.6666666666666665 verses*
+- **Tree** · Job 14:7; Job 40:21 · Mentioned in Job 14:7. · *2.3333333333333335 verses*<br><small>aliases: Trees</small>
+- **Trust** · Job 4:18 · Mentioned in Job 4:18. · *2.3333333333333335 verses*
+- **Widow** · Job 22:9 · Mentioned in Job 22:9. · *2 verses*
+- **Wilderness** · Job 1:19 · Mentioned in Job 1:19. · *2 verses*
+- **Womb** · Job 1:21 · Mentioned in Job 1:21. · *3.3333333333333335 verses*
+- **Worm** · Job 7:5 · Mentioned in Job 7:5. · *2 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Adam** · Job 31:33 · Named in Job 31:33. · *1 verses*
+- **Angel** · Job 4:18 · Mentioned in Job 4:18. · *0.6666666666666666 verses*<br><small>aliases: Angels</small>
+- **Archer** · Job 16:13 · Mentioned in Job 16:13. · *0.3333333333333333 verses*
+- **Arcturus** · Job 9:9 · Mentioned in Job 9:9. · *0.6666666666666666 verses*
+- **Arrow** · Job 6:4 · Mentioned in Job 6:4. · *1 verses*
+- **Asp** · Job 20:14 · Mentioned in Job 20:14. · *0.6666666666666666 verses*
+- **Bag** · Job 14:17 · Mentioned in Job 14:17. · *0.3333333333333333 verses*
+- **Balances** · Job 6:2; Job 41:15 · Mentioned in Job 6:2. · *0.6666666666666666 verses*<br><small>aliases: Scales</small>
+- **Barley** · Job 31:40 · Mentioned in Job 31:40. · *0.3333333333333333 verses*
+- **Barn** · Job 39:12 · Mentioned in Job 39:12. · *0.3333333333333333 verses*
+- **Belt** · Job 12:18 · Mentioned in Job 12:18. · *0.6666666666666666 verses*
+- **Blessing** · Job 29:13 · Mentioned in Job 29:13. · *0.3333333333333333 verses*
+- **Blind** · Job 29:15 · Mentioned in Job 29:15. · *0.3333333333333333 verses*<br><small>forms: Blindness</small>
+- **Blood** · Job 16:18 · Mentioned in Job 16:18. · *0.6666666666666666 verses*
+- **Boasting** · Job 11:3 · Mentioned in Job 11:3. · *0.3333333333333333 verses*
+- **Boils** · Job 2:7 · Mentioned in Job 2:7. · *0.6666666666666666 verses*<br><small>aliases: Boil</small>
+- **Book** · Job 19:23 · Mentioned in Job 19:23. · *0.6666666666666666 verses*
+- **Booth** · Job 24:8; Job 27:18 · Mentioned in Job 24:8. · *0.6666666666666666 verses*<br><small>aliases: Shelter</small>
+- **Bosom** · Job 31:33 · Mentioned in Job 31:33. · *0.3333333333333333 verses*
+- **Bottle** · Job 32:19 · Mentioned in Job 32:19. · *0.6666666666666666 verses*
+- **Bowels** · Job 20:14 · Mentioned in Job 20:14. · *0.6666666666666666 verses*
+- **Bribery** · Job 15:34; Job 36:18 · Mentioned in Job 15:34. · *0.6666666666666666 verses*<br><small>aliases: Bribe</small>
+- **Briers** · Job 31:40 · Mentioned in Job 31:40. · *0.3333333333333333 verses*
+- **Brimstone** · Job 18:15 · Mentioned in Job 18:15. · *0.3333333333333333 verses*<br><small>aliases: Sulfur</small>
+- **Broom** · Job 30:4 · Mentioned in Job 30:4. · *0.3333333333333333 verses*
+- **Bull** · Job 21:10; Job 42:8 · Mentioned in Job 21:10. · *0.6666666666666666 verses*<br><small>aliases: Bullock</small>
+- **Bush** · Job 30:4 · Mentioned in Job 30:4. · *0.6666666666666666 verses*<br><small>forms: Burning bush</small>
+- **Butter** · Job 20:17 · Mentioned in Job 20:17. · *0.6666666666666666 verses*
+- **Calf** · Job 21:10 · Mentioned in Job 21:10. · *0.3333333333333333 verses*
+- **Camel** · Job 1:3 · Mentioned in Job 1:3. · *1 verses*
+- **Candle** · Job 18:6 · Mentioned in Job 18:6. · *1 verses*
+- **Captain** · Job 39:25 · Mentioned in Job 39:25. · *0.3333333333333333 verses*
+- **Cattle** · Job 36:33 · Mentioned in Job 36:33. · *0.3333333333333333 verses*
+- **Cave** · Job 30:6 · Mentioned in Job 30:6. · *0.3333333333333333 verses*<br><small>forms: Cavern</small>
+- **Cedar** · Job 40:17 · Mentioned in Job 40:17. · *0.3333333333333333 verses*
+- **Chaldean** · Job 1:17 · Named in Job 1:17. · *1 verses*<br><small>aliases: Chaldeans · forms: Chaldea, Chaldaeans, Chaldees</small>
+- **Cheek** · Job 16:10 · Mentioned in Job 16:10. · *0.3333333333333333 verses*
+- **Cheese** · Job 10:10 · Mentioned in Job 10:10. · *0.3333333333333333 verses*
+- **Chief** · Job 12:24 · Mentioned in Job 12:24. · *1 verses*
+- **Cliff** · Job 39:28 · Mentioned in Job 39:28. · *0.3333333333333333 verses*<br><small>aliases: Crag</small>
+- **Coal** · Job 41:21 · Mentioned in Job 41:21. · *0.3333333333333333 verses*<br><small>aliases: Coals · forms: Live coal</small>
+- **Coat** · Job 30:18 · Mentioned in Job 30:18. · *0.3333333333333333 verses*
+- **Cobra** · Job 20:14 · Mentioned in Job 20:14. · *0.6666666666666666 verses*
+- **Cockle** · Job 31:40 · Mentioned in Job 31:40. · *0.3333333333333333 verses*
+- **Colt** · Job 11:12 · Mentioned in Job 11:12. · *0.3333333333333333 verses*
+- **Commandment** · Job 23:12 · Mentioned in Job 23:12. · *0.3333333333333333 verses*<br><small>forms: Commandments</small>
+- **Copper** · Job 28:2 · Mentioned in Job 28:2. · *0.3333333333333333 verses*
+- **Coral** · Job 28:18 · Mentioned in Job 28:18. · *0.3333333333333333 verses*
+- **Cornerstone** · Job 38:6 · Mentioned in Job 38:6. · *0.3333333333333333 verses*
+- **Counselor** · Job 3:14 · Mentioned in Job 3:14. · *0.6666666666666666 verses*<br><small>aliases: Counsellor</small>
+- **Covenant** · Job 31:1 · Mentioned in Job 31:1. · *0.6666666666666666 verses*
+- **Crown** · Job 2:7 · Mentioned in Job 2:7. · *1 verses*
+- **Crystal** · Job 28:17 · Mentioned in Job 28:17. · *0.6666666666666666 verses*
+- **Dawn** · Job 38:12 · Mentioned in Job 38:12. · *0.3333333333333333 verses*<br><small>forms: Daybreak</small>
+- **Deceit** · Job 15:35 · Mentioned in Job 15:35. · *1 verses*<br><small>forms: Guile</small>
+- **Desert** · Job 24:5 · Mentioned in Job 24:5. · *0.3333333333333333 verses*
+- **Devotion** · Job 15:4 · Mentioned in Job 15:4. · *0.3333333333333333 verses*
+- **Dew** · Job 29:19 · Mentioned in Job 29:19. · *0.6666666666666666 verses*
+- **Diadem** · Job 29:14 · Mentioned in Job 29:14. · *0.3333333333333333 verses*
+- **Discipline** · Job 36:10 · Mentioned in Job 36:10. · *0.3333333333333333 verses*
+- **Ditch** · Job 9:31 · Mentioned in Job 9:31. · *0.3333333333333333 verses*<br><small>forms: Trench</small>
+- **Dog** · Job 30:1 · Mentioned in Job 30:1. · *0.3333333333333333 verses*
+- **Dragon** · Job 30:29 · Mentioned in Job 30:29. · *0.3333333333333333 verses*
+- **Drought** · Job 24:19 · Mentioned in Job 24:19. · *0.3333333333333333 verses*
+- **Eagle** · Job 9:26 · Mentioned in Job 9:26. · *0.6666666666666666 verses*
+- **Earring** · Job 42:11 · Mentioned in Job 42:11. · *0.3333333333333333 verses*<br><small>forms: Earrings</small>
+- **Ears of grain** · Job 24:24 · Mentioned in Job 24:24. · *0.3333333333333333 verses*<br><small>aliases: Ears of corn</small>
+- **East wind** · Job 15:2 · Mentioned in Job 15:2. · *1 verses*
+- **Eggs** · Job 6:6; Job 39:14 · Mentioned in Job 6:6. · *0.6666666666666666 verses*<br><small>aliases: Egg</small>
+- **Elder** · Job 12:20 · Mentioned in Job 12:20. · *1 verses*
+- **Elders** · Job 12:20 · Mentioned in Job 12:20. · *0.3333333333333333 verses*
+- **Envy** · Job 5:2 · Mentioned in Job 5:2. · *0.3333333333333333 verses*
+- **Ethiopia** · Job 28:19 · Named in Job 28:19. · *1 verses*
+- **Eyelids** · Job 3:9 · Mentioned in Job 3:9. · *1 verses*
+- **Falcon** · Job 28:7 · Mentioned in Job 28:7. · *0.3333333333333333 verses*
+- **Fat** · Job 15:27 · Mentioned in Job 15:27. · *0.3333333333333333 verses*
+- **Fathom** · Job 11:7 · Mentioned in Job 11:7. · *0.3333333333333333 verses*
+- **Fetters** · Job 36:8 · Mentioned in Job 36:8. · *0.3333333333333333 verses*
+- **Fish** · Job 12:8 · Mentioned in Job 12:8. · *1 verses*
+- **Flattery** · Job 17:5 · Mentioned in Job 17:5. · *0.3333333333333333 verses*
+- **Folly** · Job 4:18 · Mentioned in Job 4:18. · *1 verses*<br><small>forms: Foolishness</small>
+- **Fool** · Job 12:17 · Mentioned in Job 12:17. · *0.6666666666666666 verses*
+- **Frost** · Job 37:10 · Mentioned in Job 37:10. · *0.6666666666666666 verses*
+- **Gall** · Job 16:13 · Mentioned in Job 16:13. · *1 verses*
+- **Girdle** · Job 12:18 · Mentioned in Job 12:18. · *0.3333333333333333 verses*
+- **Goat** · Job 39:1 · Mentioned in Job 39:1. · *0.3333333333333333 verses*
+- **Grass** · Job 5:25 · Mentioned in Job 5:25. · *1.3333333333333333 verses*
+- **Grasshopper** · Job 39:20 · Mentioned in Job 39:20. · *0.3333333333333333 verses*
+- **Guard** · Job 7:12 · Mentioned in Job 7:12. · *0.3333333333333333 verses*
+- **Hail** · Job 38:22 · Mentioned in Job 38:22. · *0.3333333333333333 verses*<br><small>forms: Hailstones</small>
+- **Hair** · Job 4:15 · Mentioned in Job 4:15. · *0.6666666666666666 verses*
+- **Harp** · Job 21:12 · Mentioned in Job 21:12. · *0.6666666666666666 verses*
+- **Hawk** · Job 39:26 · Mentioned in Job 39:26. · *0.3333333333333333 verses*
+- **Hedge** · Job 1:10 · Mentioned in Job 1:10. · *0.3333333333333333 verses*<br><small>forms: Fence</small>
+- **Heel** · Job 13:27 · Mentioned in Job 13:27. · *1 verses*
+- **High place** · Job 25:2 · Mentioned in Job 25:2. · *0.3333333333333333 verses*
+- **Hill** · Job 15:7 · Mentioned in Job 15:7. · *0.3333333333333333 verses*
+- **Hireling** · Job 7:1 · Mentioned in Job 7:1. · *1 verses*<br><small>forms: Hired servant</small>
+- **Honey** · Job 20:17 · Mentioned in Job 20:17. · *0.3333333333333333 verses*
+- **Honor** · Job 14:21 · Mentioned in Job 14:21. · *1 verses*<br><small>aliases: Honour</small>
+- **Hook** · Job 41:1 · Mentioned in Job 41:1. · *0.6666666666666666 verses*<br><small>aliases: Fishhook</small>
+- **Horn** · Job 16:15 · Mentioned in Job 16:15. · *0.3333333333333333 verses*
+- **Horse** · Job 39:18 · Mentioned in Job 39:18. · *0.6666666666666666 verses*
+- **Ice** · Job 6:16 · Mentioned in Job 6:16. · *1 verses*
+- **Image** · Job 4:16 · Mentioned in Job 4:16. · *0.3333333333333333 verses*<br><small>forms: Statue</small>
+- **Inheritance** · Job 31:2 · Mentioned in Job 31:2. · *0.6666666666666666 verses*
+- **Injustice** · Job 5:16 · Mentioned in Job 5:16. · *1.3333333333333333 verses*
+- **Instruction** · Job 22:22 · Mentioned in Job 22:22. · *1 verses*
+- **Interpreter** · Job 33:23 · Mentioned in Job 33:23. · *0.3333333333333333 verses*
+- **Island** · Job 22:30 · Mentioned in Job 22:30. · *0.3333333333333333 verses*<br><small>forms: Isle</small>
+- **Jackal** · Job 30:29 · Mentioned in Job 30:29. · *0.3333333333333333 verses*
+- **Javelin** · Job 39:23 · Mentioned in Job 39:23. · *0.6666666666666666 verses*
+- **Jaw** · Job 29:17 · Mentioned in Job 29:17. · *1 verses*<br><small>forms: Jawbone</small>
+- **Jealousy** · Job 5:2 · Mentioned in Job 5:2. · *0.3333333333333333 verses*
+- **Jemima** · Job 42:14 · Named in Job 42:14. · *1 verses*
+- **Jordan** · Job 40:23 · Named in Job 40:23. · *1 verses*
+- **Juniper** · Job 30:4 · Mentioned in Job 30:4. · *0.3333333333333333 verses*
+- **Juniper roots** · Job 30:4 · Mentioned in Job 30:4. · *0.3333333333333333 verses*<br><small>forms: Broom roots</small>
+- **Keeper** · Job 27:18 · Mentioned in Job 27:18. · *0.3333333333333333 verses*
+- **Keren-happuch** · Job 42:14 · Job's third daughter after his restoration. · *1 verses*
+- **Keziah** · Job 42:14 · Job's second daughter after his restoration. · *1 verses*<br><small>aliases: Kezia</small>
+- **Kidneys** · Job 16:13 · Mentioned in Job 16:13. · *0.6666666666666666 verses*<br><small>aliases: Reins</small>
+- **Kindness** · Job 6:14 · Mentioned in Job 6:14. · *1.3333333333333333 verses*
+- **Knee** · Job 3:12 · Mentioned in Job 3:12. · *0.6666666666666666 verses*
+- **Lame** · Job 29:15 · Mentioned in Job 29:15. · *0.3333333333333333 verses*<br><small>forms: Lameness</small>
+- **Law** · Job 22:22 · Mentioned in Job 22:22. · *0.6666666666666666 verses*
+- **Liver** · Job 20:25 · Mentioned in Job 20:25. · *0.3333333333333333 verses*
+- **Locust** · Job 39:20 · Mentioned in Job 39:20. · *0.3333333333333333 verses*
+- **Lodge** · Job 24:7 · Mentioned in Job 24:7. · *0.6666666666666666 verses*<br><small>forms: Hut, Cottage</small>
+- **Love** · Job 39:13 · Mentioned in Job 39:13. · *0.3333333333333333 verses*
+- **Mallows** · Job 30:4 · Mentioned in Job 30:4. · *0.3333333333333333 verses*
+- **Mantle** · Job 1:20 · Mentioned in Job 1:20. · *0.6666666666666666 verses*
+- **Marrow** · Job 21:24 · Mentioned in Job 21:24. · *0.3333333333333333 verses*
+- **Marsh** · Job 40:21 · Mentioned in Job 40:21. · *0.3333333333333333 verses*<br><small>aliases: Fen · forms: Swamp</small>
+- **Merchant** · Job 41:6 · Mentioned in Job 41:6. · *0.3333333333333333 verses*
+- **Mercy** · Job 37:13 · Mentioned in Job 37:13. · *0.3333333333333333 verses*
+- **Messenger** · Job 1:14 · Mentioned in Job 1:14. · *0.6666666666666666 verses*
+- **Milk** · Job 10:10 · Mentioned in Job 10:10. · *0.6666666666666666 verses*
+- **Millstone** · Job 41:24 · Mentioned in Job 41:24. · *0.3333333333333333 verses*
+- **Mirror** · Job 37:18 · Mentioned in Job 37:18. · *0.3333333333333333 verses*
+- **Moon** · Job 25:5 · Mentioned in Job 25:5. · *0.6666666666666666 verses*
+- **Morning star** · Job 38:7 · Mentioned in Job 38:7. · *0.3333333333333333 verses*<br><small>forms: Day star</small>
+- **Moth** · Job 4:19 · Mentioned in Job 4:19. · *1 verses*
+- **Navel** · Job 40:16 · Mentioned in Job 40:16. · *0.3333333333333333 verses*
+- **Neck** · Job 15:26 · Mentioned in Job 15:26. · *1.3333333333333333 verses*
+- **Net** · Job 18:8 · Mentioned in Job 18:8. · *0.6666666666666666 verses*
+- **Nettles** · Job 30:7 · Mentioned in Job 30:7. · *0.3333333333333333 verses*
+- **Nose** · Job 40:24 · Mentioned in Job 40:24. · *0.6666666666666666 verses*
+- **Nostrils** · Job 4:9 · Mentioned in Job 4:9. · *1.3333333333333333 verses*
+- **Nurse** · Job 3:12 · Mentioned in Job 3:12. · *0.3333333333333333 verses*
+- **Oil** · Job 24:11 · Mentioned in Job 24:11. · *0.6666666666666666 verses*<br><small>forms: Olive oil</small>
+- **Olive tree** · Job 15:33 · Mentioned in Job 15:33. · *0.3333333333333333 verses*<br><small>aliases: Olive</small>
+- **Onyx** · Job 28:16 · Mentioned in Job 28:16. · *0.3333333333333333 verses*
+- **Oppression** · Job 35:9 · Mentioned in Job 35:9. · *0.6666666666666666 verses*
+- **Organ** · Job 21:12 · Mentioned in Job 21:12. · *0.6666666666666666 verses*
+- **Orion** · Job 9:9 · Mentioned in Job 9:9. · *0.6666666666666666 verses*
+- **Ostrich** · Job 30:29 · Mentioned in Job 30:29. · *0.6666666666666666 verses*
+- **Owl** · Job 30:29 · Mentioned in Job 30:29. · *0.3333333333333333 verses*
+- **Oxen** · Job 1:3 · Mentioned in Job 1:3. · *1 verses*
+- **Papyrus** · Job 8:11 · Mentioned in Job 8:11. · *0.3333333333333333 verses*
+- **Partiality** · Job 13:8 · Mentioned in Job 13:8. · *0.6666666666666666 verses*<br><small>forms: Favoritism</small>
+- **Pasture** · Job 39:8 · Mentioned in Job 39:8. · *0.3333333333333333 verses*<br><small>forms: Meadow</small>
+- **Peacock** · Job 39:13 · Mentioned in Job 39:13. · *0.3333333333333333 verses*
+- **Pearl** · Job 28:18 · Mentioned in Job 28:18. · *0.3333333333333333 verses*
+- **Pen** · Job 19:24 · Mentioned in Job 19:24. · *0.3333333333333333 verses*
+- **Physician** · Job 13:4 · Mentioned in Job 13:4. · *0.3333333333333333 verses*
+- **Pillar** · Job 9:6 · Mentioned in Job 9:6. · *0.6666666666666666 verses*
+- **Pipe** · Job 21:12 · Mentioned in Job 21:12. · *0.6666666666666666 verses*
+- **Pleiades** · Job 9:9 · Mentioned in Job 9:9. · *0.6666666666666666 verses*
+- **Pot** · Job 41:20 · Mentioned in Job 41:20. · *0.6666666666666666 verses*
+- **Prayer** · Job 15:4 · Mentioned in Job 15:4. · *1 verses*
+- **Priest** · Job 12:19 · Mentioned in Job 12:19. · *0.3333333333333333 verses*
+- **Raiment** · Job 27:16 · Mentioned in Job 27:16. · *0.3333333333333333 verses*
+- **Ram** · Job 32:2 · Named in Job 32:2. · *1 verses*<br><small>forms: Aram</small>
+- **Rash** · Job 6:3 · Mentioned in Job 6:3. · *0.3333333333333333 verses*
+- **Raven** · Job 38:41 · Mentioned in Job 38:41. · *0.3333333333333333 verses*
+- **Rebellion** · Job 34:37 · Mentioned in Job 34:37. · *0.3333333333333333 verses*
+- **Rebuke** · Job 26:11; Job 37:13 · Mentioned in Job 26:11. · *0.6666666666666666 verses*<br><small>aliases: Correction</small>
+- **Reed** · Job 8:12; Job 41:20 · Mentioned in Job 8:12. · *1 verses*<br><small>aliases: Reeds</small>
+- **Ring** · Job 42:11 · Mentioned in Job 42:11. · *0.3333333333333333 verses*
+- **Robe** · Job 1:20 · Mentioned in Job 1:20. · *1 verses*
+- **Rod** · Job 9:34 · Mentioned in Job 9:34. · *0.6666666666666666 verses*
+- **Roof** · Job 29:10 · Mentioned in Job 29:10. · *0.3333333333333333 verses*<br><small>forms: Housetop</small>
+- **Rope** · Job 41:2 · Mentioned in Job 41:2. · *0.3333333333333333 verses*
+- **Ruby** · Job 28:18 · Mentioned in Job 28:18. · *0.3333333333333333 verses*<br><small>aliases: Rubies</small>
+- **Rushes** · Job 8:11 · Mentioned in Job 8:11. · *0.3333333333333333 verses*
+- **Sackcloth** · Job 16:15 · Mentioned in Job 16:15. · *0.3333333333333333 verses*
+- **Salt** · Job 6:6 · Mentioned in Job 6:6. · *1 verses*
+- **Salvation** · Job 13:16 · Mentioned in Job 13:16. · *0.3333333333333333 verses*
+- **Sand** · Job 6:3 · Mentioned in Job 6:3. · *0.6666666666666666 verses*
+- **Sapphire** · Job 28:6 · Mentioned in Job 28:6. · *0.6666666666666666 verses*
+- **Scourge** · Job 5:21 · Mentioned in Job 5:21. · *0.6666666666666666 verses*<br><small>forms: Whip</small>
+- **Sea monster** · Job 7:12 · Mentioned in Job 7:12. · *0.3333333333333333 verses*
+- **Serpent** · Job 26:13 · Mentioned in Job 26:13. · *0.3333333333333333 verses*<br><small>forms: Snake</small>
+- **Shield** · Job 15:26 · Mentioned in Job 15:26. · *0.6666666666666666 verses*
+- **Ship** · Job 9:26 · Mentioned in Job 9:26. · *0.3333333333333333 verses*
+- **Shoulder** · Job 31:22 · Mentioned in Job 31:22. · *0.6666666666666666 verses*
+- **Shuttle** · Job 7:6 · Mentioned in Job 7:6. · *0.3333333333333333 verses*
+- **Sinew** · Job 10:11 · Mentioned in Job 10:11. · *1 verses*
+- **Smoke** · Job 41:20 · Mentioned in Job 41:20. · *0.3333333333333333 verses*
+- **Sole** · Job 2:7 · Mentioned in Job 2:7. · *0.6666666666666666 verses*
+- **Sores** · Job 2:7 · Mentioned in Job 2:7. · *0.6666666666666666 verses*<br><small>aliases: Sore</small>
+- **Spear** · Job 39:23 · Mentioned in Job 39:23. · *1.3333333333333333 verses*
+- **Spider** · Job 8:14 · Mentioned in Job 8:14. · *0.3333333333333333 verses*
+- **Spot** · Job 11:15 · Mentioned in Job 11:15. · *0.3333333333333333 verses*<br><small>forms: Bright spot</small>
+- **Steel** · Job 20:24 · Mentioned in Job 20:24. · *0.3333333333333333 verses*
+- **Storehouse** · Job 38:22 · Mentioned in Job 38:22. · *0.3333333333333333 verses*<br><small>forms: Treasure house, Store city</small>
+- **Stranger** · Job 15:19; Job 31:32 · Mentioned in Job 15:19. · *1.3333333333333333 verses*<br><small>aliases: Foreigner · forms: Sojourner</small>
+- **Street** · Job 18:17 · Mentioned in Job 18:17. · *1 verses*
+- **Strife** · Job 33:19 · Mentioned in Job 33:19. · *0.3333333333333333 verses*
+- **Stronghold** · Job 39:28 · Mentioned in Job 39:28. · *0.3333333333333333 verses*<br><small>forms: Fortress, Fort</small>
+- **Sun** · Job 8:16 · Mentioned in Job 8:16. · *1.3333333333333333 verses*
+- **Table** · Job 36:16 · Mentioned in Job 36:16. · *0.3333333333333333 verses*
+- **Tabret** · Job 17:6 · Mentioned in Job 17:6. · *0.3333333333333333 verses*
+- **Tambourine** · Job 21:12 · Mentioned in Job 21:12. · *0.3333333333333333 verses*
+- **Taskmaster** · Job 3:18 · Mentioned in Job 3:18. · *0.3333333333333333 verses*
+- **Teacher** · Job 36:22 · Mentioned in Job 36:22. · *0.3333333333333333 verses*
+- **Tema** · Job 6:19 · Named in Job 6:19. · *1 verses*
+- **Thigh** · Job 15:27 · Mentioned in Job 15:27. · *1 verses*
+- **Thistles** · Job 31:40 · Mentioned in Job 31:40. · *0.3333333333333333 verses*<br><small>aliases: Thistle</small>
+- **Thorns** · Job 5:5 · Mentioned in Job 5:5. · *0.6666666666666666 verses*<br><small>aliases: Thorn</small>
+- **Threshing floor** · Job 39:12 · Mentioned in Job 39:12. · *0.3333333333333333 verses*
+- **Threshing sledge** · Job 41:30 · Mentioned in Job 41:30. · *0.3333333333333333 verses*
+- **Throne** · Job 26:9 · Mentioned in Job 26:9. · *0.6666666666666666 verses*
+- **Timbrel** · Job 21:12 · Mentioned in Job 21:12. · *0.3333333333333333 verses*
+- **Tomb** · Job 21:32 · Mentioned in Job 21:32. · *0.3333333333333333 verses*<br><small>forms: Sepulchre, Sepulcher</small>
+- **Topaz** · Job 28:19 · Mentioned in Job 28:19. · *0.3333333333333333 verses*
+- **Torch** · Job 41:19 · Mentioned in Job 41:19. · *0.3333333333333333 verses*
+- **Torrent** · Job 14:19 · Mentioned in Job 14:19. · *0.3333333333333333 verses*
+- **Trader** · Job 41:6 · Mentioned in Job 41:6. · *0.3333333333333333 verses*
+- **Trumpet** · Job 39:24 · Mentioned in Job 39:24. · *0.6666666666666666 verses*
+- **Truth** · Job 9:2 · Mentioned in Job 9:2. · *0.3333333333333333 verses*
+- **Tunic** · Job 30:18 · Mentioned in Job 30:18. · *0.3333333333333333 verses*
+- **Unicorn** · Job 39:9 · Mentioned in Job 39:9. · *0.6666666666666666 verses*<br><small>aliases: Wild ox</small>
+- **Uprightness** · Job 4:6 · Mentioned in Job 4:6. · *1.3333333333333333 verses*
+- **Valley** · Job 21:33 · Mentioned in Job 21:33. · *1.3333333333333333 verses*<br><small>forms: Vale</small>
+- **Vapor** · Job 36:27 · Mentioned in Job 36:27. · *0.6666666666666666 verses*<br><small>aliases: Vapour · forms: Mist</small>
+- **Vine** · Job 15:33 · Mentioned in Job 15:33. · *0.3333333333333333 verses*<br><small>forms: Grapevine</small>
+- **Violence** · Job 16:17 · Mentioned in Job 16:17. · *0.3333333333333333 verses*
+- **Viper** · Job 20:16 · Mentioned in Job 20:16. · *0.3333333333333333 verses*
+- **Vow** · Job 22:27 · Mentioned in Job 22:27. · *0.3333333333333333 verses*
+- **Vulture** · Job 28:7 · Mentioned in Job 28:7. · *0.3333333333333333 verses*
+- **Waist** · Job 12:18 · Mentioned in Job 12:18. · *0.3333333333333333 verses*
+- **Wall** · Job 24:11 · Mentioned in Job 24:11. · *0.3333333333333333 verses*
+- **Watchman** · Job 27:18 · Mentioned in Job 27:18. · *0.3333333333333333 verses*
+- **Weaver** · Job 7:6 · Mentioned in Job 7:6. · *0.3333333333333333 verses*
+- **Whale** · Job 7:12 · Mentioned in Job 7:12. · *0.3333333333333333 verses*
+- **Wheat** · Job 31:40 · Mentioned in Job 31:40. · *0.3333333333333333 verses*
+- **Whirlwind** · Job 37:9 · Mentioned in Job 37:9. · *1 verses*
+- **Wild donkey** · Job 6:5 · Mentioned in Job 6:5. · *1.3333333333333333 verses*<br><small>aliases: Wild ass</small>
+- **Wild goat** · Job 39:1 · Mentioned in Job 39:1. · *0.3333333333333333 verses*
+- **Willow** · Job 40:22 · Mentioned in Job 40:22. · *0.3333333333333333 verses*
+- **Wine** · Job 1:13 · Mentioned in Job 1:13. · *1.3333333333333333 verses*
+- **Winepress** · Job 24:11 · Mentioned in Job 24:11. · *0.3333333333333333 verses*
+- **Wineskin** · Job 32:19 · Mentioned in Job 32:19. · *0.3333333333333333 verses*
+- **Wise men** · Job 15:18 · Mentioned in Job 15:18. · *0.6666666666666666 verses*<br><small>forms: Magi</small>
+- **Worms** · Job 7:5 · Mentioned in Job 7:5. · *1 verses*
+- **Wounds** · Job 5:18 · Mentioned in Job 5:18. · *1 verses*<br><small>aliases: Wound</small>
+- **Yoke** · Job 1:3 · Mentioned in Job 1:3. · *0.6666666666666666 verses*
+
+### Near misses
+
+- **Job's wife**: She speaks in Job 2:9, but the book never gives her name.
+- **Jonah, Nineveh**: That is the book of Jonah.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of John.
+
+`john-anything` · Books of the Bible · 226 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 10 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 20 |
+| 🪙 Lost Coin (60) | 43 |
+| 💎 Hidden Treasure (85) | 152 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Salim. John baptized at Aenon near Salim, because there was much water there (John 3:23).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Galilee** · John 1:43; John 4:45 · Named in John 1:43. · *16 verses*<br><small>aliases: Galilean, Galileans · forms: Chinneroth, Sea of Chinnereth, Sea of Chinneroth</small>
+- **Jesus** · John 1:17 · Named in John 1:17. · *245 verses*<br><small>aliases: Jesus Christ · forms: Christ child</small>
+- **John** · John 1:6 · Named in John 1:6. · *19 verses*<br><small>forms: John son of Zebedee, John the Baptist</small>
+- **Lazarus** · John 11:1 · Named in John 11:1. · *11 verses*
+- **Mary** · John 11:1; John 19:25 · Named in John 11:1. · *14 verses*<br><small>aliases: Mary Magdalene, Magdalene, Mary the wife of Clopas · forms: Mary Magdalene, Virgin Mary, Mary the mother of Jesus, Mary mother of Jesus, Mary the mother of James, Mary the wife of Clopas, Mary of Clopas</small>
+- **Moses** · John 1:17 · Named in John 1:17. · *12 verses*
+- **Peter** · John 1:40; John 1:42 · Named in John 1:40. · *32 verses*<br><small>aliases: Simon Peter, Cephas</small>
+- **Philip** · John 1:43 · From Bethsaida; brought Nathanael to Jesus. · *11 verses*<br><small>forms: Philip the tetrarch, Herod Philip</small>
+- **Pilate** · John 18:29 · Named in John 18:29. · *20 verses*<br><small>forms: Pontius Pilate</small>
+- **Simon** · John 1:40 · Named in John 1:40. · *25 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Abraham** · John 8:33 · Named in John 8:33. · *9 verses*<br><small>forms: Abram</small>
+- **Bethany** · John 1:28 · Named in John 1:28. · *4 verses*<br><small>aliases: Bethabara</small>
+- **Blind** · John 5:3 · Mentioned in John 5:3. · *6 verses*<br><small>forms: Blindness</small>
+- **Bread** · John 6:5 · Mentioned in John 6:5. · *6 verses*
+- **Caiaphas** · John 11:49 · High priest at Jesus' trial. · *5 verses*
+- **Capernaum** · John 2:12 · Named in John 2:12. · *5 verses*
+- **Eye** · John 4:35 · Mentioned in John 4:35. · *5.666666666666667 verses*
+- **Hand** · John 2:13 · Mentioned in John 2:13. · *7.666666666666667 verses*
+- **Jerusalem** · John 1:19 · Named in John 1:19. · *13 verses*
+- **Juda** · John 6:71 · Named in John 6:71. · *9 verses*<br><small>forms: Judah</small>
+- **Judas** · John 6:71 · Named in John 6:71. · *9 verses*<br><small>aliases: Judas Iscariot</small>
+- **Judea** · John 3:22; John 7:1 · Named in John 3:22. · *7 verses*<br><small>aliases: Jewry · forms: Judaea</small>
+- **Martha** · John 11:1 · Mary's sister, who welcomed Jesus into her home. · *9 verses*
+- **Nathanael** · John 1:45 · Named in John 1:45. · *6 verses*
+- **Nicodemus** · John 3:1 · A Pharisee and a ruler of the Jews. · *5 verses*
+- **Priest** · John 1:19 · Mentioned in John 1:19. · *7 verses*
+- **Samaria** · John 4:4; John 4:9 · Named in John 4:4. · *7 verses*<br><small>aliases: Samaritans, Samaritan</small>
+- **Sheep** · John 2:14 · Mentioned in John 2:14. · *6.333333333333333 verses*
+- **Thomas** · John 11:16 · Named in John 11:16. · *8 verses*<br><small>aliases: Didymus</small>
+- **Water** · John 1:26 · Mentioned in John 1:26. · *7.333333333333333 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Andrew** · John 1:40 · Peter's brother, who brought him to Jesus. · *4 verses*
+- **Anna** · John 18:13 · Named in John 18:13. · *2 verses*
+- **Annas** · John 18:13 · High priest and father-in-law of Caiaphas. · *2 verses*
+- **Back** · John 1:22 · Mentioned in John 1:22. · *2.3333333333333335 verses*
+- **Bethsaida** · John 1:44 · Named in John 1:44. · *2 verses*
+- **Blood** · John 1:13 · Mentioned in John 1:13. · *2 verses*
+- **Boat** · John 6:17 · Mentioned in John 6:17. · *3 verses*
+- **Caesar** · John 19:12 · Named in John 19:12. · *2 verses*<br><small>forms: Caesar Augustus, Augustus, Emperor</small>
+- **Cana** · John 2:1 · Named in John 2:1. · *4 verses*
+- **Chief** · John 7:32 · Mentioned in John 7:32. · *3.6666666666666665 verses*
+- **Demon** · John 7:20 · Mentioned in John 7:20. · *2 verses*<br><small>forms: Demons</small>
+- **Devil** · John 6:70 · Mentioned in John 6:70. · *3 verses*
+- **Door** · John 10:1 · Mentioned in John 10:1. · *2.6666666666666665 verses*
+- **Elijah** · John 1:21 · Named in John 1:21. · *2 verses*<br><small>aliases: Elias</small>
+- **Fish** · John 21:9 · Mentioned in John 21:9. · *2.6666666666666665 verses*
+- **Flesh** · John 1:13 · Mentioned in John 1:13. · *4 verses*
+- **Foot** · John 11:2; John 11:44 · Mentioned in John 11:2. · *4 verses*<br><small>aliases: Feet</small>
+- **Garment** · John 13:4 · Mentioned in John 13:4. · *2 verses*
+- **Heart** · John 12:40 · Mentioned in John 12:40. · *2 verses*
+- **High priest** · John 11:49 · Mentioned in John 11:49. · *3.3333333333333335 verses*
+- **House** · John 2:16 · Mentioned in John 2:16. · *3 verses*
+- **Isaiah** · John 1:23 · Named in John 1:23. · *4 verses*<br><small>aliases: Esaias</small>
+- **Jacob** · John 4:5 · Named in John 4:5. · *3 verses*
+- **Jonah** · John 1:42; John 21:15 · Named in John 1:42. · *4 verses*<br><small>aliases: Jonas</small>
+- **Jordan** · John 1:28 · Named in John 1:28. · *3 verses*
+- **Joseph** · John 1:45 · Named in John 1:45. · *4 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Judge** · John 3:17 · Mentioned in John 3:17. · *4 verses*
+- **King** · John 1:49 · Mentioned in John 1:49. · *4.333333333333333 verses*
+- **Nazareth** · John 1:45 · Named in John 1:45. · *5 verses*<br><small>forms: Nazarene</small>
+- **Officer** · John 7:32 · Mentioned in John 7:32. · *2.6666666666666665 verses*
+- **Passover** · John 2:13 · Mentioned in John 2:13. · *3 verses*
+- **Prophet** · John 1:21 · Mentioned in John 1:21. · *4.666666666666667 verses*
+- **Rabbi** · John 1:38 · Mentioned in John 1:38. · *2.6666666666666665 verses*
+- **Sabbath** · John 5:9 · Mentioned in John 5:9. · *3 verses*
+- **Sea** · John 6:1 · Mentioned in John 6:1. · *3 verses*
+- **Servant** · John 2:5 · Mentioned in John 2:5. · *4.333333333333333 verses*
+- **Side** · John 6:1 · Mentioned in John 6:1. · *3 verses*
+- **Stone** · John 1:42 · Mentioned in John 1:42. · *4.333333333333333 verses*
+- **Teacher** · John 1:38 · Mentioned in John 1:38. · *2.6666666666666665 verses*
+- **Temple** · John 2:14 · Mentioned in John 2:14. · *4.666666666666667 verses*
+- **Tiberias** · John 6:23 · Named in John 6:23. · *3 verses*
+- **Tomb** · John 5:28; John 19:41 · Mentioned in John 5:28. · *4.666666666666667 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Zion** · John 1:31; John 12:15 · Named in John 12:15. · *5 verses*<br><small>aliases: Israel, Sion</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Aloes** · John 19:39 · Mentioned in John 19:39. · *0.3333333333333333 verses*
+- **Angel** · John 1:51 · Mentioned in John 1:51. · *1.3333333333333333 verses*<br><small>aliases: Angels</small>
+- **Arimathaea** · John 19:38 · Named in John 19:38. · *1 verses*
+- **Arm** · John 12:38 · Mentioned in John 12:38. · *0.3333333333333333 verses*
+- **Bag** · John 12:6 · Mentioned in John 12:6. · *0.6666666666666666 verses*
+- **Barabbas** · John 18:40 · Named in John 18:40. · *1 verses*
+- **Barley** · John 6:9 · Mentioned in John 6:9. · *0.6666666666666666 verses*
+- **Barley loaves** · John 6:9 · Mentioned in John 6:9. · *0.6666666666666666 verses*<br><small>forms: Barley bread</small>
+- **Basin** · John 13:5 · Mentioned in John 13:5. · *0.3333333333333333 verses*<br><small>forms: Laver</small>
+- **Basket** · John 6:13 · Mentioned in John 6:13. · *0.3333333333333333 verses*
+- **Bed** · John 5:8 · Mentioned in John 5:8. · *1.6666666666666667 verses*
+- **Belly** · John 7:38 · Mentioned in John 7:38. · *0.3333333333333333 verses*<br><small>forms: Stomach</small>
+- **Bethesda** · John 5:2 · Named in John 5:2. · *1 verses*
+- **Bethlehem** · John 7:42 · Named in John 7:42. · *1 verses*<br><small>forms: Beth-lehem Ephratah, Beth-lehem-judah, Bethlehem Ephrathah</small>
+- **Bone** · John 19:36 · Mentioned in John 19:36. · *0.3333333333333333 verses*<br><small>forms: Bones</small>
+- **Book** · John 20:30 · Mentioned in John 20:30. · *0.6666666666666666 verses*
+- **Booth** · John 7:2 · Mentioned in John 7:2. · *0.3333333333333333 verses*<br><small>forms: Shelter</small>
+- **Bosom** · John 1:18 · Mentioned in John 1:18. · *0.6666666666666666 verses*
+- **Breast** · John 13:25 · Mentioned in John 13:25. · *0.6666666666666666 verses*
+- **Brook** · John 18:1 · Mentioned in John 18:1. · *0.3333333333333333 verses*<br><small>forms: Stream</small>
+- **Captain** · John 18:12 · Mentioned in John 18:12. · *0.3333333333333333 verses*
+- **Cattle** · John 4:12 · Mentioned in John 4:12. · *0.3333333333333333 verses*
+- **Cave** · John 11:38 · Mentioned in John 11:38. · *0.3333333333333333 verses*<br><small>forms: Cavern</small>
+- **Chest** · John 13:23 · Mentioned in John 13:23. · *1 verses*
+- **Clopas** · John 19:25 · Named as the husband of one of the Marys at the cross. · *1 verses*<br><small>aliases: Cleophas</small>
+- **Coal** · John 18:18 · Mentioned in John 18:18. · *0.6666666666666666 verses*<br><small>aliases: Coals · forms: Live coal</small>
+- **Coat** · John 19:23 · Mentioned in John 19:23. · *0.6666666666666666 verses*
+- **Colt** · John 12:15 · Mentioned in John 12:15. · *0.3333333333333333 verses*
+- **Cord** · John 2:15 · Mentioned in John 2:15. · *0.3333333333333333 verses*
+- **Counselor** · John 14:16 · Mentioned in John 14:16. · *1.3333333333333333 verses*<br><small>forms: Counsellor</small>
+- **Cross** · John 19:17 · Mentioned in John 19:17. · *1.3333333333333333 verses*
+- **Crown** · John 19:2 · Mentioned in John 19:2. · *0.6666666666666666 verses*
+- **Cubit** · John 21:8 · Mentioned in John 21:8. · *0.3333333333333333 verses*
+- **Cup** · John 18:11 · Mentioned in John 18:11. · *0.3333333333333333 verses*
+- **Darkness** · John 1:5 · Mentioned in John 1:5. · *1.6666666666666667 verses*
+- **David** · John 7:42 · Named in John 7:42. · *1 verses*
+- **Denarii** · John 6:7; John 12:5 · Mentioned in John 6:7. · *0.6666666666666666 verses*<br><small>aliases: Pence · forms: Denarius, Penny</small>
+- **Desert** · John 6:31 · Mentioned in John 6:31. · *0.3333333333333333 verses*
+- **Donkey** · John 12:14 · Mentioned in John 12:14. · *0.6666666666666666 verses*<br><small>aliases: Ass</small>
+- **Dove** · John 1:32 · Mentioned in John 1:32. · *1 verses*
+- **Ear** · John 18:10 · Mentioned in John 18:10. · *0.6666666666666666 verses*
+- **Ephraim** · John 11:54 · Named in John 11:54. · *1 verses*
+- **Face** · John 11:44 · Mentioned in John 11:44. · *0.3333333333333333 verses*
+- **Farmer** · John 15:1 · Mentioned in John 15:1. · *0.3333333333333333 verses*<br><small>aliases: Husbandman</small>
+- **Feast of Tabernacles** · John 7:2 · Mentioned in John 7:2. · *0.3333333333333333 verses*<br><small>aliases: Feast of Booths</small>
+- **Fever** · John 4:52 · Mentioned in John 4:52. · *0.3333333333333333 verses*
+- **Field** · John 4:35 · Mentioned in John 4:35. · *0.3333333333333333 verses*
+- **Fig tree** · John 1:48 · Mentioned in John 1:48. · *0.6666666666666666 verses*<br><small>aliases: Fig</small>
+- **Finger** · John 8:6 · Mentioned in John 8:6. · *1.3333333333333333 verses*
+- **Fire** · John 15:6 · Mentioned in John 15:6. · *1 verses*
+- **Firkin** · John 2:6 · Mentioned in John 2:6. · *0.3333333333333333 verses*<br><small>aliases: Firkins</small>
+- **Foundation** · John 17:24 · Mentioned in John 17:24. · *0.3333333333333333 verses*
+- **Furlong** · John 6:19 · Mentioned in John 6:19. · *0.6666666666666666 verses*<br><small>aliases: Stadia · forms: Stadium</small>
+- **Gabbatha** · John 19:13 · Named in John 19:13. · *1 verses*
+- **Gardener** · John 20:15 · Mentioned in John 20:15. · *0.3333333333333333 verses*
+- **Gate** · John 5:2 · Mentioned in John 5:2. · *0.6666666666666666 verses*
+- **Golgotha** · John 19:17 · Named in John 19:17. · *1 verses*<br><small>aliases: Place of a Skull, The Place of a Skull · forms: Calvary</small>
+- **Governor** · John 2:8 · Mentioned in John 2:8. · *0.6666666666666666 verses*
+- **Grain** · John 12:24 · Mentioned in John 12:24. · *0.3333333333333333 verses*<br><small>aliases: Corn</small>
+- **Grass** · John 6:10 · Mentioned in John 6:10. · *0.3333333333333333 verses*
+- **Grave clothes** · John 11:44 · Mentioned in John 11:44. · *0.3333333333333333 verses*
+- **Hair** · John 11:2 · Mentioned in John 11:2. · *0.6666666666666666 verses*
+- **Head** · John 13:9 · Mentioned in John 13:9. · *1.6666666666666667 verses*
+- **Heel** · John 13:18 · Mentioned in John 13:18. · *0.3333333333333333 verses*
+- **Hireling** · John 10:12 · Mentioned in John 10:12. · *0.6666666666666666 verses*<br><small>forms: Hired servant</small>
+- **Hyssop** · John 19:29 · Mentioned in John 19:29. · *0.3333333333333333 verses*
+- **Infirmity** · John 5:5 · Mentioned in John 5:5. · *0.3333333333333333 verses*<br><small>forms: Infirmities</small>
+- **Judgment hall** · John 18:28 · Mentioned in John 18:28. · *1 verses*<br><small>aliases: Praetorium</small>
+- **Kidron** · John 18:1 · Named in John 18:1. · *1 verses*<br><small>aliases: Cedron</small>
+- **Lamb** · John 1:29 · Mentioned in John 1:29. · *1 verses*
+- **Lame** · John 5:3 · Mentioned in John 5:3. · *0.3333333333333333 verses*<br><small>forms: Lameness</small>
+- **Lamp** · John 5:35 · Mentioned in John 5:35. · *0.3333333333333333 verses*
+- **Lantern** · John 18:3 · Mentioned in John 18:3. · *0.3333333333333333 verses*
+- **Leg** · John 19:31 · Mentioned in John 19:31. · *1 verses*
+- **Levite** · John 1:19 · Mentioned in John 1:19. · *0.3333333333333333 verses*
+- **Linen** · John 19:40 · Mentioned in John 19:40. · *1.3333333333333333 verses*
+- **Linen cloth** · John 19:40 · Mentioned in John 19:40. · *1.3333333333333333 verses*<br><small>forms: Shroud</small>
+- **Malchus** · John 18:10 · The high priest's servant whose ear was cut off. · *1 verses*
+- **Manna** · John 6:31 · Mentioned in John 6:31. · *1 verses*
+- **Marketplace** · John 2:16; John 5:2 · Mentioned in John 2:16. · *0.6666666666666666 verses*<br><small>aliases: Market</small>
+- **Meat** · John 1:13; John 4:8 · Mentioned in John 1:13. · *2 verses*
+- **Mount of Olives** · John 8:1 · Named in John 8:1. · *1 verses*<br><small>aliases: Mount · forms: Mount of Corruption, Olivet</small>
+- **Mountain** · John 4:20 · Mentioned in John 4:20. · *1.3333333333333333 verses*
+- **Mouth** · John 19:29 · Mentioned in John 19:29. · *0.3333333333333333 verses*
+- **Mud** · John 9:6 · Mentioned in John 9:6. · *1.3333333333333333 verses*<br><small>aliases: Clay · forms: Mire</small>
+- **Myrrh** · John 19:39 · Mentioned in John 19:39. · *0.3333333333333333 verses*
+- **Nail** · John 20:25 · Mentioned in John 20:25. · *0.3333333333333333 verses*
+- **Nails** · John 20:25 · Mentioned in John 20:25. · *0.3333333333333333 verses*<br><small>forms: Fingernails</small>
+- **Napkin** · John 11:44 · Mentioned in John 11:44. · *0.6666666666666666 verses*
+- **Net** · John 21:6 · Mentioned in John 21:6. · *1 verses*
+- **Olive** · John 8:1 · Mentioned in John 8:1. · *0.3333333333333333 verses*<br><small>forms: Olive tree</small>
+- **Orphan** · John 14:18 · Mentioned in John 14:18. · *0.3333333333333333 verses*<br><small>forms: Fatherless</small>
+- **Oxen** · John 2:14 · Mentioned in John 2:14. · *0.6666666666666666 verses*
+- **Palace** · John 18:15 · Mentioned in John 18:15. · *0.3333333333333333 verses*
+- **Palm tree** · John 12:13 · Mentioned in John 12:13. · *0.3333333333333333 verses*
+- **Paralyzed** · John 5:3 · Mentioned in John 5:3. · *0.3333333333333333 verses*<br><small>forms: Palsy, Paralysis, Paralytic</small>
+- **Pasture** · John 10:9 · Mentioned in John 10:9. · *0.3333333333333333 verses*<br><small>forms: Meadow</small>
+- **Pavement** · John 19:13 · Mentioned in John 19:13. · *0.3333333333333333 verses*
+- **Pool** · John 5:2 · Mentioned in John 5:2. · *1.6666666666666667 verses*
+- **Porch** · John 5:2 · Mentioned in John 5:2. · *0.6666666666666666 verses*<br><small>forms: Portico</small>
+- **Porter** · John 10:3 · Mentioned in John 10:3. · *0.3333333333333333 verses*<br><small>aliases: Gatekeeper · forms: Doorkeeper</small>
+- **Pot** · John 2:6 · Mentioned in John 2:6. · *1 verses*
+- **Prince** · John 12:31 · Mentioned in John 12:31. · *1 verses*
+- **Prison** · John 3:24 · Mentioned in John 3:24. · *0.3333333333333333 verses*<br><small>forms: Dungeon</small>
+- **Purple** · John 19:2 · Mentioned in John 19:2. · *0.6666666666666666 verses*
+- **Raiment** · John 19:24 · Mentioned in John 19:24. · *0.3333333333333333 verses*
+- **River** · John 7:38 · Mentioned in John 7:38. · *0.3333333333333333 verses*
+- **Robe** · John 19:2 · Mentioned in John 19:2. · *0.6666666666666666 verses*
+- **Rooster** · John 13:38 · Mentioned in John 13:38. · *0.6666666666666666 verses*
+- **Sandal** · John 1:27 · Mentioned in John 1:27. · *0.3333333333333333 verses*<br><small>forms: Sandals</small>
+- **Satan** · John 13:27 · Mentioned in John 13:27. · *0.3333333333333333 verses*
+- **Scribe** · John 8:3 · Mentioned in John 8:3. · *0.3333333333333333 verses*
+- **Serpent** · John 3:14 · Mentioned in John 3:14. · *0.3333333333333333 verses*<br><small>forms: Snake</small>
+- **Sheep Gate** · John 5:2 · Named in John 5:2. · *0 verses*
+- **Sheepfold** · John 10:1 · Mentioned in John 10:1. · *0.3333333333333333 verses*
+- **Shepherd** · John 10:2 · Mentioned in John 10:2. · *1.6666666666666667 verses*
+- **Ship** · John 6:17 · Mentioned in John 6:17. · *2 verses*
+- **Shoe** · John 1:27 · Mentioned in John 1:27. · *0.3333333333333333 verses*<br><small>forms: Shoes</small>
+- **Shore** · John 21:4 · Mentioned in John 21:4. · *0.3333333333333333 verses*<br><small>forms: Seashore</small>
+- **Siloam** · John 9:7 · Named in John 9:7. · *2 verses*<br><small>forms: King’s Pool, Pool of Shelah, Siloah</small>
+- **Skull** · John 19:17 · Mentioned in John 19:17. · *0.3333333333333333 verses*
+- **Sky** · John 12:28 · Mentioned in John 12:28. · *0.3333333333333333 verses*<br><small>forms: Firmament, Expanse</small>
+- **Soldier** · John 18:3 · Mentioned in John 18:3. · *2 verses*
+- **Solomon** · John 10:23 · Named in John 10:23. · *1 verses*
+- **Solomon’s Porch** · John 10:23 · Named in John 10:23. · *0 verses*
+- **Spear** · John 19:34 · Mentioned in John 19:34. · *0.3333333333333333 verses*
+- **Spikenard** · John 12:3 · Mentioned in John 12:3. · *0.3333333333333333 verses*<br><small>aliases: Nard</small>
+- **Steps** · John 5:7 · Mentioned in John 5:7. · *0.3333333333333333 verses*<br><small>forms: Stairs, Staircase</small>
+- **Stranger** · John 10:5 · Mentioned in John 10:5. · *0.3333333333333333 verses*<br><small>forms: Foreigner, Sojourner</small>
+- **Sword** · John 18:10 · Mentioned in John 18:10. · *0.6666666666666666 verses*
+- **Sychar** · John 4:5 · Named in John 4:5. · *1 verses*
+- **Synagogue** · John 6:59 · Mentioned in John 6:59. · *1.6666666666666667 verses*
+- **Tabernacle** · John 7:2 · Mentioned in John 7:2. · *0.3333333333333333 verses*
+- **Table** · John 2:15 · Mentioned in John 2:15. · *1.3333333333333333 verses*
+- **Thorns** · John 19:2 · Mentioned in John 19:2. · *0.6666666666666666 verses*<br><small>aliases: Thorn</small>
+- **Tongue** · John 5:2 · Mentioned in John 5:2. · *0.3333333333333333 verses*
+- **Torch** · John 18:3 · Mentioned in John 18:3. · *0.3333333333333333 verses*
+- **Treasury** · John 8:20 · Mentioned in John 8:20. · *0.3333333333333333 verses*
+- **Tree** · John 1:48; John 12:13 · Mentioned in John 1:48. · *1 verses*<br><small>aliases: Trees</small>
+- **Tunic** · John 19:23 · Mentioned in John 19:23. · *0.3333333333333333 verses*
+- **Vine** · John 15:1 · Mentioned in John 15:1. · *1 verses*<br><small>forms: Grapevine</small>
+- **Vinegar** · John 19:29 · Mentioned in John 19:29. · *0.6666666666666666 verses*
+- **Waist** · John 13:4 · Mentioned in John 13:4. · *0.3333333333333333 verses*
+- **Wheat** · John 12:24 · Mentioned in John 12:24. · *0.3333333333333333 verses*
+- **Whip** · John 2:15 · Mentioned in John 2:15. · *0.3333333333333333 verses*<br><small>aliases: Scourge</small>
+- **Wilderness** · John 1:23 · Mentioned in John 1:23. · *1.6666666666666667 verses*
+- **Wind** · John 3:8 · Mentioned in John 3:8. · *0.6666666666666666 verses*
+- **Wine** · John 2:3 · Mentioned in John 2:3. · *1.3333333333333333 verses*
+- **Wolf** · John 10:12 · Mentioned in John 10:12. · *0.3333333333333333 verses*
+- **Womb** · John 3:4 · Mentioned in John 3:4. · *0.3333333333333333 verses*
+- **Wound** · John 19:40 · Mentioned in John 19:40. · *0.3333333333333333 verses*<br><small>forms: Wounds</small>
+- **Zebedee** · John 21:2 · Named through his wife and sons. · *1 verses*
+
+### Near misses
+
+- **Zacchaeus, Good Samaritan**: Only Luke tells those stories.
+- **Good shepherd**: Jesus calls himself the good shepherd (John 10:11); try "shepherd".
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Joshua.
+
+`joshua-anything` · Books of the Bible · 563 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 12 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 43 |
+| 🪙 Lost Coin (60) | 112 |
+| 💎 Hidden Treasure (85) | 395 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Achsah. Caleb gave his daughter Achsah to Othniel, who took Kiriath Sepher, and she asked her father for springs of water (Joshua 15:16–19).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Gad** · Joshua 4:12 · Named in Joshua 4:12. · *23 verses*
+- **Hebron** · Joshua 10:3; Joshua 14:15 · Named in Joshua 10:3. · *16 verses*<br><small>aliases: Kiriath Arba, Kirjath Arba · forms: Arbah</small>
+- **Jericho** · Joshua 2:1 · Named in Joshua 2:1. · *26 verses*
+- **Jordan** · Joshua 1:2 · Named in Joshua 1:2. · *58 verses*
+- **Joshua** · Joshua 1:1 · Named in Joshua 1:1. · *151 verses*
+- **Judah** · Joshua 7:1 · Named in Joshua 7:1. · *22 verses*<br><small>forms: Judas</small>
+- **King** · Joshua 2:2 · Mentioned in Joshua 2:2. · *20.666666666666668 verses*
+- **Manasseh** · Joshua 1:12 · Named in Joshua 1:12. · *37 verses*<br><small>forms: Manasses</small>
+- **Moses** · Joshua 1:1 · Named in Joshua 1:1. · *51 verses*
+- **Rahab** · Joshua 2:1 · Hid the spies at Jericho and is named in the line of David. · *5 verses*<br><small>forms: Rachab</small>
+- **Reuben** · Joshua 4:12 · Named in Joshua 4:12. · *21 verses*
+- **Side** · Joshua 1:14 · Mentioned in Joshua 1:14. · *16 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Aaron** · Joshua 21:4 · Named in Joshua 21:4. · *6 verses*
+- **Achan** · Joshua 7:1 · Named in Joshua 7:1. · *6 verses*
+- **Ai** · Joshua 7:2 · Named in Joshua 7:2. · *27 verses*<br><small>forms: Hai</small>
+- **Arabah** · Joshua 8:14 · Named in Joshua 8:14. · *11 verses*
+- **Ark** · Joshua 3:3 · Mentioned in Joshua 3:3. · *8.333333333333334 verses*
+- **Asher** · Joshua 17:7 · Named in Joshua 17:7. · *8 verses*
+- **Bashan** · Joshua 9:10 · Named in Joshua 9:10. · *13 verses*
+- **Benjamin** · Joshua 18:11 · Named in Joshua 18:11. · *6 verses*
+- **Beth-horon** · Joshua 10:10 · Named in Joshua 10:10. · *7 verses*
+- **Bethel** · Joshua 7:2 · Named in Joshua 7:2. · *10 verses*
+- **Caleb** · Joshua 14:6 · Son of Jephunneh. · *9 verses*
+- **Canaan** · Joshua 5:12 · Named in Joshua 5:12. · *8 verses*<br><small>forms: Chanaan, Gentile, Glorious Land</small>
+- **Debir** · Joshua 10:3; Joshua 15:15; Joshua 15:49 · King of Eglon. · *11 verses*<br><small>aliases: Kiriath Sannah, Kiriath Sepher, Kirjath Sannah, Kirjath Sepher</small>
+- **Eglon** · Joshua 10:3 · Named in Joshua 10:3. · *8 verses*
+- **Eleazar** · Joshua 14:1 · Named in Joshua 14:1. · *8 verses*
+- **Gibeon** · Joshua 9:3 · Named in Joshua 9:3. · *13 verses*
+- **Gilead** · Joshua 12:2 · Named in Joshua 12:2. · *15 verses*
+- **Gilgal** · Joshua 4:19 · Named in Joshua 4:19. · *13 verses*
+- **Hand** · Joshua 1:7 · Mentioned in Joshua 1:7. · *12 verses*
+- **Hazor** · Joshua 11:1 · Named in Joshua 11:1. · *9 verses*
+- **Heshbon** · Joshua 9:10 · Named in Joshua 9:10. · *9 verses*
+- **Hill** · Joshua 5:3 · Mentioned in Joshua 5:3. · *8.666666666666666 verses*
+- **House** · Joshua 2:1 · Mentioned in Joshua 2:1. · *7.333333333333333 verses*
+- **Issachar** · Joshua 17:10 · Named in Joshua 17:10. · *6 verses*
+- **Jarmuth** · Joshua 10:3 · Named in Joshua 10:3. · *6 verses*
+- **Jerusalem** · Joshua 10:1 · Named in Joshua 10:1. · *8 verses*
+- **Joseph** · Joshua 14:4 · Named in Joshua 14:4. · *11 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Kiriath-jearim** · Joshua 9:17; Joshua 15:60 · Named in Joshua 9:17. · *14 verses*<br><small>aliases: Kiriath, Kiriath Baal, Kirjath, Kirjath Baal, Kirjath Jearim · forms: Kiriath Arim, Kiriatharim, Kirjath Arim</small>
+- **Lachish** · Joshua 10:3 · Named in Joshua 10:3. · *10 verses*
+- **Lebanon** · Joshua 1:4 · Named in Joshua 1:4. · *6 verses*
+- **Libnah** · Joshua 10:29 · Named in Joshua 10:29. · *7 verses*
+- **Makkedah** · Joshua 10:10 · Named in Joshua 10:10. · *8 verses*
+- **Mountain** · Joshua 2:16 · Mentioned in Joshua 2:16. · *6.666666666666667 verses*
+- **Nun** · Joshua 1:1 · Named in Joshua 1:1. · *10 verses*
+- **Pasture** · Joshua 14:4 · Mentioned in Joshua 14:4. · *11 verses*<br><small>forms: Meadow</small>
+- **Priest** · Joshua 3:3 · Mentioned in Joshua 3:3. · *11.666666666666666 verses*
+- **Sea** · Joshua 1:4 · Mentioned in Joshua 1:4. · *9.333333333333334 verses*
+- **Servant** · Joshua 1:1 · Mentioned in Joshua 1:1. · *8 verses*
+- **Shechem** · Joshua 17:2 · Named in Joshua 17:2. · *7 verses*<br><small>forms: Sichem, Sychem</small>
+- **Shiloh** · Joshua 18:1 · Named in Joshua 18:1. · *9 verses*
+- **Stone** · Joshua 4:3 · Mentioned in Joshua 4:3. · *6.666666666666667 verses*
+- **Valley** · Joshua 7:24; Joshua 10:40 · Mentioned in Joshua 7:24. · *9 verses*<br><small>aliases: Vale</small>
+- **Water** · Joshua 2:10 · Mentioned in Joshua 2:10. · *6.666666666666667 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Abraham** · Joshua 24:2 · Named in Joshua 24:2. · *2 verses*<br><small>forms: Abram</small>
+- **Achshaph** · Joshua 11:1 · Named in Joshua 11:1. · *3 verses*
+- **Achzib** · Joshua 15:44 · Named in Joshua 15:44. · *2 verses*
+- **Addar** · Joshua 15:3 · Named in Joshua 15:3. · *3 verses*<br><small>aliases: Adar</small>
+- **Adullam** · Joshua 12:15 · Named in Joshua 12:15. · *2 verses*
+- **Adummim** · Joshua 15:7 · Named in Joshua 15:7. · *2 verses*<br><small>aliases: Ascent of Adummim</small>
+- **Aijalon** · Joshua 10:12 · Named in Joshua 19:42. · *3 verses*<br><small>aliases: Ajalon</small>
+- **Ain** · Joshua 15:32 · Named in Joshua 15:32. · *3 verses*
+- **Altar** · Joshua 8:30 · Mentioned in Joshua 8:30. · *4 verses*
+- **Ammon** · Joshua 12:2 · Named in Joshua 12:2. · *3 verses*<br><small>forms: Ammonitess</small>
+- **Anab** · Joshua 11:21 · Named in Joshua 11:21. · *2 verses*
+- **Anak** · Joshua 15:13 · Named in Joshua 15:13. · *3 verses*
+- **Aphek** · Joshua 12:18 · Named in Joshua 12:18. · *3 verses*<br><small>forms: Antipatris</small>
+- **Arba** · Joshua 14:15 · Named in Joshua 14:15. · *5 verses*
+- **Aroer** · Joshua 12:2 · Named in Joshua 12:2. · *4 verses*
+- **Ashan** · Joshua 15:42 · Named in Joshua 15:42. · *2 verses*
+- **Ashdod** · Joshua 11:22 · Named in Joshua 11:22. · *3 verses*<br><small>forms: Azotus</small>
+- **Ashnah** · Joshua 15:33 · Named in Joshua 15:33. · *2 verses*
+- **Ashtaroth** · Joshua 9:10 · Named in Joshua 9:10. · *4 verses*<br><small>forms: Astaroth</small>
+- **Ataroth** · Joshua 16:2 · Named in Joshua 16:2. · *4 verses*
+- **Ataroth-addar** · Joshua 16:5; Joshua 18:13 · Named in Joshua 16:5. · *2 verses*<br><small>aliases: Ataroth-adar</small>
+- **Avvim** · Joshua 18:23 · Named in Joshua 18:23. · *2 verses*<br><small>aliases: Avim</small>
+- **Azekah** · Joshua 10:10 · Named in Joshua 10:10. · *3 verses*
+- **Baal** · Joshua 11:17 · Mentioned in Joshua 11:17. · *2 verses*
+- **Baal-gad** · Joshua 11:17 · Named in Joshua 11:17. · *3 verses*
+- **Baalah** · Joshua 15:9 · Named in Joshua 15:9. · *4 verses*
+- **Baalath** · Joshua 19:44 · Named in Joshua 19:44. · *2 verses*
+- **Back** · Joshua 7:8 · Mentioned in Joshua 7:8. · *2.3333333333333335 verses*
+- **Balaam** · Joshua 13:22 · Named in Joshua 13:22. · *3 verses*
+- **Beeroth** · Joshua 9:17 · Named in Joshua 9:17. · *2 verses*
+- **Beersheba** · Joshua 15:28 · Named in Joshua 15:28. · *2 verses*<br><small>forms: Shebah, Shibah</small>
+- **Beor** · Joshua 13:22 · Named in Joshua 13:22. · *2 verses*
+- **Beth Shean** · Joshua 17:11 · Named in Joshua 17:11. · *2 verses*<br><small>forms: Beth-shan</small>
+- **Beth-arabah** · Joshua 15:6 · Named in Joshua 15:6. · *3 verses*
+- **Beth-aven** · Joshua 7:2 · Named in Joshua 7:2. · *2 verses*
+- **Beth-dagon** · Joshua 15:41 · Named in Joshua 15:41. · *2 verses*
+- **Beth-hoglah** · Joshua 15:6 · Named in Joshua 15:6. · *3 verses*<br><small>aliases: Beth-hogla</small>
+- **Beth-jeshimoth** · Joshua 12:3 · Named in Joshua 12:3. · *2 verses*<br><small>forms: Beth Jesimoth</small>
+- **Beth-shemesh** · Joshua 15:10 · Named in Joshua 15:10. · *4 verses*
+- **Bezer** · Joshua 20:8 · Named in Joshua 20:8. · *2 verses*
+- **Book** · Joshua 1:8 · Mentioned in Joshua 1:8. · *2.3333333333333335 verses*
+- **Carmel** · Joshua 15:55 · Named in Joshua 15:55. · *3 verses*<br><small>forms: Carmelitess</small>
+- **Carmi** · Joshua 7:1 · Named in Joshua 7:1. · *2 verses*
+- **Cattle** · Joshua 1:14 · Mentioned in Joshua 1:14. · *2.6666666666666665 verses*
+- **Cave** · Joshua 10:16 · Mentioned in Joshua 10:16. · *2 verses*<br><small>forms: Cavern</small>
+- **Chariot** · Joshua 11:4 · Mentioned in Joshua 11:4. · *2 verses*
+- **Chephirah** · Joshua 9:17 · Named in Joshua 9:17. · *2 verses*
+- **Chinnereth** · Joshua 11:2; Joshua 19:35 · Named in Joshua 11:2. · *4 verses*<br><small>aliases: Chinneroth · forms: Cinneroth</small>
+- **Daberath** · Joshua 19:12; Joshua 21:28 · Named in Joshua 19:12. · *2 verses*<br><small>aliases: Dabareh</small>
+- **Dan** · Joshua 19:40; Joshua 19:47 · Named in Joshua 19:40. · *5 verses*<br><small>aliases: Leshem · forms: Dan Jaan, Laish, Vedan</small>
+- **Dibon** · Joshua 13:9 · Named in Joshua 13:9. · *2 verses*<br><small>forms: Dibon Gad</small>
+- **Dor** · Joshua 12:23 · Named in Joshua 12:23. · *3 verses*
+- **Ebal** · Joshua 8:30 · Named in Joshua 8:30. · *2 verses*
+- **Edom** · Joshua 15:1 · Named in Joshua 15:1. · *2 verses*
+- **Edrei** · Joshua 12:4 · Named in Joshua 12:4. · *4 verses*
+- **Ekron** · Joshua 13:3 · Named in Joshua 13:3. · *5 verses*
+- **Elder** · Joshua 7:6 · Mentioned in Joshua 7:6. · *2.6666666666666665 verses*
+- **Elders** · Joshua 7:6 · Mentioned in Joshua 7:6. · *2.6666666666666665 verses*
+- **En-gannim** · Joshua 15:34 · Named in Joshua 15:34. · *3 verses*
+- **Fire** · Joshua 6:24 · Mentioned in Joshua 6:24. · *3 verses*
+- **Foot** · Joshua 1:3; Joshua 3:13 · Mentioned in Joshua 1:3. · *3.3333333333333335 verses*<br><small>aliases: Feet</small>
+- **Galilee** · Joshua 12:3; Joshua 20:7 · Named in Joshua 20:7. · *4 verses*<br><small>aliases: Chinneroth, Sea of Chinneroth · forms: Galilean, Galileans, Sea of Tiberias</small>
+- **Gath** · Joshua 11:22 · Named in Joshua 11:22. · *5 verses*
+- **Gath-rimmon** · Joshua 19:45 · Named in Joshua 19:45. · *3 verses*
+- **Gaza** · Joshua 10:41 · Named in Joshua 10:41. · *3 verses*<br><small>forms: Azzah</small>
+- **Gezer** · Joshua 10:33 · Named in Joshua 10:33. · *5 verses*<br><small>forms: Gazer</small>
+- **Goshen** · Joshua 10:41 · Named in Joshua 10:41. · *3 verses*
+- **Head** · Joshua 2:19 · Mentioned in Joshua 2:19. · *3.6666666666666665 verses*
+- **Heart** · Joshua 2:11 · Mentioned in Joshua 2:11. · *3 verses*
+- **Hepher** · Joshua 12:17 · Named in Joshua 12:17. · *4 verses*
+- **Hoglah** · Joshua 15:6 · Named in Joshua 15:6. · *4 verses*
+- **Hormah** · Joshua 12:14 · Named in Joshua 12:14. · *3 verses*
+- **Iphtah** · Joshua 15:43 · Named in Joshua 15:43. · *3 verses*<br><small>aliases: Jiphtah</small>
+- **Jephunneh** · Joshua 14:6 · Named in Joshua 14:6. · *5 verses*
+- **Jezreel** · Joshua 15:56 · Named in Joshua 15:56. · *3 verses*<br><small>forms: Jezreelitess</small>
+- **Jokneam** · Joshua 12:22 · Named in Joshua 12:22. · *3 verses*
+- **Kadesh-barnea** · Joshua 10:41 · Named in Joshua 10:41. · *4 verses*<br><small>forms: En Mishpat</small>
+- **Kanah** · Joshua 16:8 · Named in Joshua 16:8. · *3 verses*
+- **Kedesh** · Joshua 12:22 · Named in Joshua 12:22. · *5 verses*
+- **Kohath** · Joshua 21:5 · Named in Joshua 21:5. · *3 verses*
+- **Levi** · Joshua 13:14 · Named in Joshua 13:14. · *3 verses*
+- **Levite** · Joshua 3:3 · Mentioned in Joshua 3:3. · *4.666666666666667 verses*
+- **Machir** · Joshua 13:31 · Named in Joshua 13:31. · *3 verses*
+- **Mahanaim** · Joshua 13:26 · Named in Joshua 13:26. · *3 verses*
+- **Merari** · Joshua 21:7 · Named in Joshua 21:7. · *3 verses*
+- **Mizpah** · Joshua 11:3 · Named in Joshua 11:3. · *3 verses*<br><small>forms: Galeed, Jegar Sahadutha</small>
+- **Mizpeh** · Joshua 11:8 · Named in Joshua 15:38. · *5 verses*
+- **Mount Hermon** · Joshua 11:3; Joshua 11:17 · Named in Joshua 11:3. · *5 verses*<br><small>forms: Mount Sion, Mount Siyon, Sion, Sirion</small>
+- **Naphtali** · Joshua 19:32 · Named in Joshua 19:32. · *5 verses*
+- **Og** · Joshua 2:10 · Named in Joshua 2:10. · *6 verses*
+- **Phinehas** · Joshua 22:13 · Named in Joshua 22:13. · *5 verses*
+- **Prince** · Joshua 5:15 · Mentioned in Joshua 5:15. · *3.3333333333333335 verses*
+- **Ramah** · Joshua 18:25; Joshua 19:8 · Named in Joshua 18:25. · *5 verses*<br><small>aliases: Ramath · forms: Rama</small>
+- **Red Sea** · Joshua 2:10 · Named in Joshua 2:10. · *3 verses*
+- **Rehob** · Joshua 19:28 · Named in Joshua 19:28. · *3 verses*
+- **Rimmon** · Joshua 15:32; Joshua 19:7; Joshua 19:13 · Named in Joshua 15:32. · *6 verses*<br><small>aliases: Remmon, Remmon-methoar</small>
+- **River** · Joshua 1:4 · Mentioned in Joshua 1:4. · *5.666666666666667 verses*
+- **Salt Sea** · Joshua 3:16 · Named in Joshua 3:16. · *5 verses*
+- **Shimron** · Joshua 11:1 · Named in Joshua 11:1. · *3 verses*
+- **Silver** · Joshua 6:19 · Mentioned in Joshua 6:19. · *2.3333333333333335 verses*
+- **Simeon** · Joshua 19:1 · Named in Joshua 19:1. · *5 verses*
+- **Sun** · Joshua 1:4 · Mentioned in Joshua 1:4. · *2.3333333333333335 verses*
+- **Sword** · Joshua 5:13 · Mentioned in Joshua 5:13. · *5.666666666666667 verses*
+- **Taanach** · Joshua 12:21; Joshua 21:25 · Named in Joshua 12:21. · *3 verses*<br><small>aliases: Tanach</small>
+- **Tappuah** · Joshua 12:17 · Named in Joshua 12:17. · *6 verses*
+- **Tent** · Joshua 3:14 · Mentioned in Joshua 3:14. · *3.6666666666666665 verses*
+- **Timnah** · Joshua 15:10; Joshua 19:43; Joshua 19:50 · Named in Joshua 15:10. · *5 verses*<br><small>aliases: Thimnathah, Timnath</small>
+- **Trumpet** · Joshua 6:4 · Mentioned in Joshua 6:4. · *2.6666666666666665 verses*
+- **Wilderness** · Joshua 1:4 · Mentioned in Joshua 1:4. · *5 verses*
+- **Zabdi** · Joshua 7:1 · Named in Joshua 7:1. · *3 verses*
+- **Zebulun** · Joshua 19:10 · Named in Joshua 19:10. · *6 verses*
+- **Zerah** · Joshua 7:1 · Named in Joshua 7:1. · *4 verses*<br><small>forms: Zara</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Abdon** · Joshua 21:30 · Named in Joshua 21:30. · *1 verses*
+- **Adadah** · Joshua 15:22 · Named in Joshua 15:22. · *1 verses*
+- **Adam** · Joshua 3:16 · Named in Joshua 3:16. · *1 verses*
+- **Adamah** · Joshua 19:36 · Named in Joshua 19:36. · *1 verses*
+- **Adami-nekeb** · Joshua 19:33 · Named in Joshua 19:33. · *1 verses*<br><small>aliases: Adami, Nekeb</small>
+- **Adithaim** · Joshua 15:36 · Named in Joshua 15:36. · *1 verses*
+- **Ahiman** · Joshua 15:14 · Named in Joshua 15:14. · *1 verses*
+- **Akrabbim** · Joshua 15:3 · Named in Joshua 15:3. · *1 verses*<br><small>aliases: Ascent of Akrabbim, Maaleh-acrabbim</small>
+- **Allammelech** · Joshua 19:26 · Named in Joshua 19:26. · *1 verses*<br><small>aliases: Alammelech</small>
+- **Allon** · Joshua 19:33 · Named in Joshua 19:33. · *1 verses*
+- **Almon** · Joshua 21:18 · Named in Joshua 21:18. · *1 verses*
+- **Amad** · Joshua 19:26 · Named in Joshua 19:26. · *1 verses*
+- **Amam** · Joshua 15:26 · Named in Joshua 15:26. · *1 verses*
+- **Ambassador** · Joshua 9:4 · Mentioned in Joshua 9:4. · *0.3333333333333333 verses*
+- **Anaharath** · Joshua 19:19 · Named in Joshua 19:19. · *1 verses*
+- **Anath** · Joshua 19:38 · Named in Joshua 19:38. · *1 verses*
+- **Anathoth** · Joshua 21:18 · Named in Joshua 21:18. · *1 verses*
+- **Anim** · Joshua 15:50 · Named in Joshua 15:50. · *1 verses*
+- **Aphekah** · Joshua 15:53 · Named in Joshua 15:53. · *1 verses*
+- **Arab** · Joshua 15:52 · Named in Joshua 15:52. · *1 verses*
+- **Arad** · Joshua 12:14 · Named in Joshua 12:14. · *1 verses*
+- **Azmon** · Joshua 15:4 · Named in Joshua 15:4. · *1 verses*
+- **Aznoth-tabor** · Joshua 19:34 · Named in Joshua 19:34. · *1 verses*
+- **Baal-meon** · Joshua 13:17 · Named in Joshua 13:17. · *1 verses*<br><small>aliases: Beth Baal Meon</small>
+- **Baalath-beer** · Joshua 19:8 · Named in Joshua 19:8. · *1 verses*
+- **Babylonish** · Joshua 7:21 · Named in Joshua 7:21. · *1 verses*<br><small>forms: Shinar</small>
+- **Balah** · Joshua 19:3 · Named in Joshua 19:3. · *1 verses*
+- **Balak** · Joshua 24:9 · Son of Zippor. · *1 verses*
+- **Bamoth-baal** · Joshua 13:17 · Named in Joshua 13:17. · *1 verses*
+- **Bealoth** · Joshua 15:24 · Named in Joshua 15:24. · *1 verses*<br><small>forms: Aloth</small>
+- **Beeshterah** · Joshua 21:27 · Named in Joshua 21:27. · *0 verses*
+- **Bene-berak** · Joshua 19:45 · Named in Joshua 19:45. · *1 verses*
+- **Beten** · Joshua 19:25 · Named in Joshua 19:25. · *1 verses*
+- **Beth-anath** · Joshua 19:38 · Named in Joshua 19:38. · *1 verses*
+- **Beth-anoth** · Joshua 15:59 · Named in Joshua 15:59. · *1 verses*
+- **Beth-emek** · Joshua 19:27 · Named in Joshua 19:27. · *1 verses*
+- **Beth-haram** · Joshua 13:27 · Named in Joshua 13:27. · *1 verses*<br><small>aliases: Beth-aram · forms: Beth Haran</small>
+- **Beth-horon the nether** · Joshua 16:3 · Named in Joshua 16:3. · *0 verses*
+- **Beth-horon the upper** · Joshua 16:5 · Named in Joshua 16:5. · *0 verses*
+- **Beth-lebaoth** · Joshua 19:6 · Named in Joshua 19:6. · *1 verses*
+- **Beth-marcaboth** · Joshua 19:5 · Named in Joshua 19:5. · *1 verses*
+- **Beth-nimrah** · Joshua 13:27 · Named in Joshua 13:27. · *1 verses*
+- **Beth-pazzez** · Joshua 19:21 · Named in Joshua 19:21. · *1 verses*
+- **Beth-pelet** · Joshua 15:27 · Named in Joshua 15:27. · *1 verses*<br><small>aliases: Beth-palet · forms: Beth-phelet</small>
+- **Beth-peor** · Joshua 13:20 · Named in Joshua 13:20. · *1 verses*
+- **Beth-tappuah** · Joshua 15:53 · Named in Joshua 15:53. · *1 verses*
+- **Beth-zur** · Joshua 15:58 · Named in Joshua 15:58. · *1 verses*
+- **Bethlehem** · Joshua 19:15 · Named in Joshua 19:15. · *1 verses*<br><small>forms: Beth-lehem Ephratah, Beth-lehem-judah, Bethlehem Ephrathah</small>
+- **Bethul** · Joshua 19:4 · Named in Joshua 19:4. · *1 verses*
+- **Betonim** · Joshua 13:26 · Named in Joshua 13:26. · *1 verses*
+- **Biziothiah** · Joshua 15:28 · Named in Joshua 15:28. · *1 verses*<br><small>aliases: Bizjothjah</small>
+- **Blood** · Joshua 2:19 · Mentioned in Joshua 2:19. · *1.3333333333333333 verses*
+- **Bones** · Joshua 24:32 · Mentioned in Joshua 24:32. · *0.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Bottle** · Joshua 9:4 · Mentioned in Joshua 9:4. · *0.6666666666666666 verses*
+- **Bozkath** · Joshua 15:39 · Named in Joshua 15:39. · *1 verses*<br><small>forms: Boscath</small>
+- **Brass** · Joshua 6:19 · Mentioned in Joshua 6:19. · *1 verses*
+- **Bread** · Joshua 9:5 · Mentioned in Joshua 9:5. · *0.6666666666666666 verses*
+- **Bronze** · Joshua 6:19 · Mentioned in Joshua 6:19. · *1 verses*
+- **Brook** · Joshua 15:4 · Mentioned in Joshua 15:4. · *1.6666666666666667 verses*<br><small>forms: Stream</small>
+- **Brook of Egypt** · Joshua 2:10; Joshua 15:4 · Named in Joshua 15:4. · *0 verses*<br><small>forms: Stream of Egypt, Lower, Proud</small>
+- **Cabbon** · Joshua 15:40 · Named in Joshua 15:40. · *1 verses*
+- **Cabul** · Joshua 19:27 · Named in Joshua 19:27. · *1 verses*
+- **Cain** · Joshua 15:57 · Named in Joshua 15:57. · *1 verses*
+- **Cakes** · Joshua 5:11 · Mentioned in Joshua 5:11. · *0.3333333333333333 verses*<br><small>aliases: Cake</small>
+- **Captain** · Joshua 5:14 · Mentioned in Joshua 5:14. · *1 verses*
+- **Chephar-ammoni** · Joshua 18:24 · Named in Joshua 18:24. · *1 verses*<br><small>aliases: Chephar-haammonai</small>
+- **Chesalon** · Joshua 15:10 · Named in Joshua 15:10. · *1 verses*
+- **Chesil** · Joshua 15:30 · Named in Joshua 15:30. · *1 verses*
+- **Chesulloth** · Joshua 19:18 · Named in Joshua 19:18. · *1 verses*
+- **Chief** · Joshua 10:24 · Mentioned in Joshua 10:24. · *1 verses*
+- **Chisloth-tabor** · Joshua 19:12 · Named in Joshua 19:12. · *1 verses*
+- **Chitlish** · Joshua 15:40 · Named in Joshua 15:40. · *1 verses*<br><small>aliases: Kithlish</small>
+- **City of refuge** · Joshua 21:13 · Mentioned in Joshua 21:13. · *1.6666666666666667 verses*
+- **City of Salt** · Joshua 15:62 · Named in Joshua 15:62. · *0 verses*
+- **Commander** · Joshua 5:14 · Mentioned in Joshua 5:14. · *0.3333333333333333 verses*
+- **Cord** · Joshua 2:15 · Mentioned in Joshua 2:15. · *0.3333333333333333 verses*
+- **Cubit** · Joshua 3:4 · Mentioned in Joshua 3:4. · *0.3333333333333333 verses*
+- **Dabbesheth** · Joshua 19:11 · Named in Joshua 19:11. · *1 verses*<br><small>aliases: Dabbasheth</small>
+- **Dagon** · Joshua 15:41 · Mentioned in Joshua 15:41. · *0.6666666666666666 verses*
+- **Dannah** · Joshua 15:49 · Named in Joshua 15:49. · *1 verses*
+- **Darkness** · Joshua 24:7 · Mentioned in Joshua 24:7. · *0.3333333333333333 verses*
+- **Dilean** · Joshua 15:38 · Named in Joshua 15:38. · *1 verses*
+- **Dimnah** · Joshua 21:35 · Named in Joshua 21:35. · *1 verses*
+- **Dimonah** · Joshua 15:22 · Named in Joshua 15:22. · *1 verses*
+- **Donkey** · Joshua 6:21 · Mentioned in Joshua 6:21. · *1.3333333333333333 verses*<br><small>aliases: Ass</small>
+- **Door** · Joshua 2:19 · Mentioned in Joshua 2:19. · *0.6666666666666666 verses*
+- **Drawers of water** · Joshua 9:21 · Mentioned in Joshua 9:21. · *1 verses*<br><small>forms: Water drawer</small>
+- **Dumah** · Joshua 15:52 · Named in Joshua 15:52. · *1 verses*
+- **Dust** · Joshua 7:6 · Mentioned in Joshua 7:6. · *0.3333333333333333 verses*
+- **Ear** · Joshua 20:4 · Mentioned in Joshua 20:4. · *0.3333333333333333 verses*
+- **Ebez** · Joshua 19:20 · Named in Joshua 19:20. · *1 verses*<br><small>aliases: Abez</small>
+- **Ebron** · Joshua 19:28 · Named in Joshua 19:28. · *1 verses*
+- **Eder** · Joshua 15:21 · Named in Joshua 15:21. · *1 verses*<br><small>forms: Edar, Tower of Eder</small>
+- **Eleph** · Joshua 18:28 · Named in Joshua 18:28. · *1 verses*
+- **Elon** · Joshua 19:43 · Named in Joshua 19:43. · *1 verses*
+- **Eltekeh** · Joshua 19:44; Joshua 21:23 · Named in Joshua 19:44. · *2 verses*<br><small>aliases: Elteke</small>
+- **Eltekon** · Joshua 15:59 · Named in Joshua 15:59. · *1 verses*
+- **Eltolad** · Joshua 15:30 · Named in Joshua 15:30. · *2 verses*<br><small>forms: Tolad</small>
+- **Emek-keziz** · Joshua 18:21 · Named in Joshua 18:21. · *1 verses*<br><small>aliases: Keziz</small>
+- **En-dor** · Joshua 17:11 · Named in Joshua 17:11. · *1 verses*
+- **En-haddah** · Joshua 19:21 · Named in Joshua 19:21. · *1 verses*
+- **En-hazor** · Joshua 19:37 · Named in Joshua 19:37. · *1 verses*
+- **En-rogel** · Joshua 15:7 · Named in Joshua 15:7. · *2 verses*
+- **En-shemesh** · Joshua 15:7 · Named in Joshua 15:7. · *2 verses*
+- **En-tappuah** · Joshua 17:7 · Named in Joshua 17:7. · *1 verses*
+- **Enam** · Joshua 15:34 · Named in Joshua 15:34. · *1 verses*
+- **Engedi** · Joshua 15:62 · Named in Joshua 15:62. · *0 verses*
+- **Ephron** · Joshua 15:9 · Named in Joshua 15:9. · *1 verses*
+- **Esau** · Joshua 24:4 · Named in Joshua 24:4. · *1 verses*
+- **Eshan** · Joshua 15:52 · Named in Joshua 15:52. · *1 verses*<br><small>aliases: Eshean</small>
+- **Eshtaol** · Joshua 15:33 · Named in Joshua 15:33. · *2 verses*
+- **Eshtemoa** · Joshua 15:50; Joshua 21:14 · Named in Joshua 15:50. · *2 verses*<br><small>aliases: Eshtemoh</small>
+- **Eth-kazin** · Joshua 19:13 · Named in Joshua 19:13. · *1 verses*<br><small>aliases: Ittah-kazin</small>
+- **Ether** · Joshua 15:42 · Named in Joshua 15:42. · *2 verses*
+- **Euphrates** · Joshua 1:4 · Named in Joshua 1:4. · *1 verses*<br><small>aliases: Great River</small>
+- **Eye** · Joshua 5:13 · Mentioned in Joshua 5:13. · *1 verses*
+- **Ezem** · Joshua 15:29 · Named in Joshua 15:29. · *2 verses*<br><small>aliases: Azem</small>
+- **Face** · Joshua 5:14 · Mentioned in Joshua 5:14. · *1.3333333333333333 verses*
+- **Field** · Joshua 8:24 · Mentioned in Joshua 8:24. · *1 verses*
+- **Flax** · Joshua 2:6 · Mentioned in Joshua 2:6. · *0.3333333333333333 verses*
+- **Flint** · Joshua 5:2 · Mentioned in Joshua 5:2. · *0.6666666666666666 verses*
+- **Flood** · Joshua 24:2 · Mentioned in Joshua 24:2. · *1.3333333333333333 verses*
+- **Forest** · Joshua 17:15 · Mentioned in Joshua 17:15. · *0.6666666666666666 verses*
+- **Fortified city** · Joshua 10:20 · Mentioned in Joshua 10:20. · *1.3333333333333333 verses*<br><small>aliases: Fenced city</small>
+- **Foundation** · Joshua 6:26 · Mentioned in Joshua 6:26. · *0.3333333333333333 verses*
+- **Fountain** · Joshua 15:9 · Mentioned in Joshua 15:9. · *0.3333333333333333 verses*
+- **Gaash** · Joshua 24:30 · Named in Joshua 24:30. · *1 verses*
+- **Garment** · Joshua 7:21 · Mentioned in Joshua 7:21. · *1.3333333333333333 verses*
+- **Gate** · Joshua 2:5 · Mentioned in Joshua 2:5. · *2 verses*
+- **Gath-hepher** · Joshua 19:13 · Named in Joshua 19:13. · *1 verses*<br><small>aliases: Gittah-hepher</small>
+- **Geba** · Joshua 18:24 · Named in Joshua 18:24. · *2 verses*<br><small>aliases: Gaba</small>
+- **Geder** · Joshua 12:13 · Named in Joshua 12:13. · *1 verses*
+- **Gederah** · Joshua 15:36 · Named in Joshua 15:36. · *1 verses*
+- **Gederoth** · Joshua 15:41 · Named in Joshua 15:41. · *1 verses*
+- **Gederothaim** · Joshua 15:36 · Named in Joshua 15:36. · *1 verses*
+- **Gedor** · Joshua 15:58 · Named in Joshua 15:58. · *1 verses*
+- **Geliloth** · Joshua 18:17 · Named in Joshua 18:17. · *1 verses*
+- **Gershon** · Joshua 21:6 · Named in Joshua 21:6. · *2 verses*
+- **Geshur** · Joshua 12:5; Joshua 13:13 · Named in Joshua 12:5. · *1 verses*
+- **Gibbethon** · Joshua 19:44 · Named in Joshua 19:44. · *2 verses*
+- **Gibeah** · Joshua 15:57 · Named in Joshua 15:57. · *1 verses*
+- **Gibeath** · Joshua 18:28 · Named in Joshua 18:28. · *1 verses*
+- **Giloh** · Joshua 15:51 · Named in Joshua 15:51. · *1 verses*
+- **Goiim** · Joshua 12:23 · Named in Joshua 12:23. · *1 verses*
+- **Golan** · Joshua 20:8 · Named in Joshua 20:8. · *2 verses*
+- **Gold** · Joshua 6:19 · Mentioned in Joshua 6:19. · *1.6666666666666667 verses*
+- **Grain** · Joshua 5:11 · Mentioned in Joshua 5:11. · *0.6666666666666666 verses*<br><small>aliases: Corn</small>
+- **Great Sea** · Joshua 1:4 · Named in Joshua 1:4. · *0 verses*<br><small>forms: Western Sea</small>
+- **Guard** · Joshua 6:13 · Mentioned in Joshua 6:13. · *0.6666666666666666 verses*
+- **Hadashah** · Joshua 15:37 · Named in Joshua 15:37. · *1 verses*
+- **Hailstones** · Joshua 10:11 · Mentioned in Joshua 10:11. · *0.3333333333333333 verses*<br><small>forms: Hail</small>
+- **Halhul** · Joshua 15:58 · Named in Joshua 15:58. · *1 verses*
+- **Hali** · Joshua 19:25 · Named in Joshua 19:25. · *1 verses*
+- **Hammath** · Joshua 19:35 · Named in Joshua 19:35. · *1 verses*<br><small>forms: Hemath</small>
+- **Hammon** · Joshua 19:28 · Named in Joshua 19:28. · *1 verses*
+- **Hammoth-dor** · Joshua 21:32 · Named in Joshua 21:32. · *1 verses*
+- **Hamor** · Joshua 24:32 · Named in Joshua 24:32. · *1 verses*
+- **Hamstring** · Joshua 11:6 · Mentioned in Joshua 11:6. · *0.3333333333333333 verses*<br><small>aliases: Hough</small>
+- **Hannathon** · Joshua 19:14 · Named in Joshua 19:14. · *1 verses*
+- **Hapharaim** · Joshua 19:19 · Named in Joshua 19:19. · *1 verses*
+- **Hazar-gaddah** · Joshua 15:27 · Named in Joshua 15:27. · *1 verses*
+- **Hazar-shual** · Joshua 15:28 · Named in Joshua 15:28. · *2 verses*
+- **Hazar-susah** · Joshua 19:5 · Named in Joshua 19:5. · *1 verses*<br><small>forms: Hazar Susim</small>
+- **Hazor-hadattah** · Joshua 15:25 · Named in Joshua 15:25. · *1 verses*<br><small>aliases: Hadattah</small>
+- **Heleph** · Joshua 19:33 · Named in Joshua 19:33. · *1 verses*
+- **Helkath** · Joshua 19:25 · Named in Joshua 19:25. · *2 verses*
+- **Heshmon** · Joshua 15:27 · Named in Joshua 15:27. · *1 verses*
+- **Hewer** · Joshua 9:21 · Mentioned in Joshua 9:21. · *1 verses*<br><small>forms: Stonecutter</small>
+- **Hezron** · Joshua 15:3 · Named in Joshua 15:3. · *2 verses*<br><small>forms: Esrom</small>
+- **Hoham** · Joshua 10:3 · King of Hebron. · *1 verses*
+- **Holon** · Joshua 15:51 · Named in Joshua 15:51. · *2 verses*<br><small>forms: Hilen</small>
+- **Honey** · Joshua 5:6 · Mentioned in Joshua 5:6. · *0.3333333333333333 verses*
+- **Horem** · Joshua 19:38 · Named in Joshua 19:38. · *1 verses*
+- **Horn** · Joshua 6:4 · Mentioned in Joshua 6:4. · *1.6666666666666667 verses*
+- **Hornet** · Joshua 24:12 · Mentioned in Joshua 24:12. · *0.3333333333333333 verses*
+- **Horse** · Joshua 11:4 · Mentioned in Joshua 11:4. · *1 verses*
+- **Hosah** · Joshua 19:29 · Named in Joshua 19:29. · *1 verses*
+- **Hukkok** · Joshua 19:34 · Named in Joshua 19:34. · *1 verses*
+- **Humtah** · Joshua 15:54 · Named in Joshua 15:54. · *1 verses*
+- **Hur** · Joshua 13:21 · Named in Joshua 13:21. · *1 verses*
+- **Ibleam** · Joshua 17:11 · Named in Joshua 17:11. · *1 verses*
+- **Idalah** · Joshua 19:15 · Named in Joshua 19:15. · *1 verses*
+- **Iim** · Joshua 15:29 · Named in Joshua 15:29. · *1 verses*
+- **Ir-shemesh** · Joshua 19:41 · Named in Joshua 19:41. · *1 verses*
+- **Iron** · Joshua 6:19 · Named in Joshua 19:38. · *1 verses*
+- **Irpeel** · Joshua 18:27 · Named in Joshua 18:27. · *1 verses*
+- **Isaac** · Joshua 24:3 · Named in Joshua 24:3. · *2 verses*
+- **Ithlah** · Joshua 19:42 · Named in Joshua 19:42. · *1 verses*<br><small>aliases: Jethlah</small>
+- **Ithnan** · Joshua 15:23 · Named in Joshua 15:23. · *1 verses*
+- **Jabbok** · Joshua 12:2 · Named in Joshua 12:2. · *1 verses*
+- **Jabin** · Joshua 11:1 · King of Hazor. · *1 verses*
+- **Jabneel** · Joshua 15:11 · Named in Joshua 15:11. · *2 verses*<br><small>forms: Jabneh</small>
+- **Jacob** · Joshua 24:4 · Named in Joshua 24:4. · *2 verses*
+- **Jagur** · Joshua 15:21 · Named in Joshua 15:21. · *1 verses*
+- **Jahaz** · Joshua 13:18 · Named in Joshua 13:18. · *2 verses*<br><small>aliases: Jahazah · forms: Jahzah</small>
+- **Jair** · Joshua 13:30 · Named in Joshua 13:30. · *1 verses*
+- **Janim** · Joshua 15:53 · Named in Joshua 15:53. · *1 verses*<br><small>aliases: Janum</small>
+- **Janoah** · Joshua 16:6 · Named in Joshua 16:6. · *2 verses*<br><small>aliases: Janohah</small>
+- **Japhia** · Joshua 10:3 · King of Lachish. · *2 verses*
+- **Jattir** · Joshua 15:48 · Named in Joshua 15:48. · *2 verses*
+- **Javelin** · Joshua 8:18 · Mentioned in Joshua 8:18. · *0.6666666666666666 verses*
+- **Jazer** · Joshua 13:25 · Named in Joshua 13:25. · *2 verses*<br><small>forms: Jaazer</small>
+- **Jebusi** · Joshua 15:8; Joshua 18:16 · Named in Joshua 15:8. · *2 verses*<br><small>forms: Jebus</small>
+- **Jehud** · Joshua 19:45 · Named in Joshua 19:45. · *1 verses*
+- **Jiphthah-el** · Joshua 19:14 · Named in Joshua 19:14. · *2 verses*<br><small>aliases: Valley of Iphtah El</small>
+- **Jokdeam** · Joshua 15:56 · Named in Joshua 15:56. · *1 verses*
+- **Joktheel** · Joshua 15:38 · Named in Joshua 15:38. · *1 verses*
+- **Joppa** · Joshua 19:46 · Named in Joshua 19:46. · *1 verses*<br><small>aliases: Japho</small>
+- **Judge** · Joshua 8:33 · Mentioned in Joshua 8:33. · *1 verses*
+- **Juttah** · Joshua 15:55 · Named in Joshua 15:55. · *2 verses*
+- **Kabzeel** · Joshua 15:21 · Named in Joshua 15:21. · *1 verses*<br><small>forms: Jekabzeel</small>
+- **Kain** · Joshua 15:57 · Named in Joshua 15:57. · *1 verses*
+- **Karka** · Joshua 15:3 · Named in Joshua 15:3. · *1 verses*<br><small>aliases: Karkaa</small>
+- **Kartah** · Joshua 21:34 · Named in Joshua 21:34. · *1 verses*
+- **Kartan** · Joshua 21:32 · Named in Joshua 21:32. · *1 verses*
+- **Kattath** · Joshua 19:15 · Named in Joshua 19:15. · *1 verses*
+- **Kedemoth** · Joshua 13:18 · Named in Joshua 13:18. · *2 verses*
+- **Keilah** · Joshua 15:44 · Named in Joshua 15:44. · *1 verses*
+- **Kenaz** · Joshua 15:17 · Named in Joshua 15:17. · *1 verses*
+- **Kerioth-hezron** · Joshua 15:25 · Named in Joshua 15:25. · *1 verses*
+- **Kibzaim** · Joshua 21:22 · Named in Joshua 21:22. · *1 verses*
+- **Kinah** · Joshua 15:22 · Named in Joshua 15:22. · *1 verses*
+- **Kiriathaim** · Joshua 13:19 · Named in Joshua 13:19. · *1 verses*<br><small>aliases: Kirjathaim</small>
+- **Kishion** · Joshua 19:20 · Named in Joshua 19:20. · *2 verses*
+- **Lahmam** · Joshua 15:40 · Named in Joshua 15:40. · *1 verses*
+- **Lakkum** · Joshua 19:33 · Named in Joshua 19:33. · *1 verses*<br><small>aliases: Lakum</small>
+- **Lasharon** · Joshua 12:18 · Named in Joshua 12:18. · *1 verses*
+- **Lebaoth** · Joshua 15:32 · Named in Joshua 15:32. · *2 verses*
+- **Lodge** · Joshua 4:3 · Mentioned in Joshua 4:3. · *0.3333333333333333 verses*<br><small>forms: Hut, Cottage</small>
+- **Lodging place** · Joshua 4:3 · Mentioned in Joshua 4:3. · *0.3333333333333333 verses*<br><small>forms: Inn</small>
+- **Lowland** · Joshua 9:1 · Named in Joshua 9:1. · *0 verses*
+- **Luz** · Joshua 16:2 · Named in Joshua 16:2. · *2 verses*
+- **Maacath** · Joshua 12:5; Joshua 13:13 · Named in Joshua 12:5. · *1 verses*<br><small>forms: Maacah, Aram Maacah, Maachah, Syria-maachah</small>
+- **Maarath** · Joshua 15:59 · Named in Joshua 15:59. · *1 verses*
+- **Madmannah** · Joshua 15:31 · Named in Joshua 15:31. · *1 verses*
+- **Madon** · Joshua 11:1 · Named in Joshua 11:1. · *2 verses*
+- **Mahlah** · Joshua 17:3 · Named in Joshua 17:3. · *1 verses*
+- **Manna** · Joshua 5:12 · Mentioned in Joshua 5:12. · *0.3333333333333333 verses*
+- **Maon** · Joshua 15:55 · Named in Joshua 15:55. · *1 verses*
+- **Maralah** · Joshua 19:11 · Named in Joshua 19:11. · *1 verses*
+- **Mareshah** · Joshua 15:44 · Named in Joshua 15:44. · *1 verses*
+- **Me-jarkon** · Joshua 19:46 · Named in Joshua 19:46. · *1 verses*
+- **Meal** · Joshua 22:23 · Mentioned in Joshua 22:23. · *0.6666666666666666 verses*<br><small>forms: Flour</small>
+- **Mearah** · Joshua 13:4 · Named in Joshua 13:4. · *1 verses*
+- **Meat** · Joshua 22:23 · Mentioned in Joshua 22:23. · *0.6666666666666666 verses*<br><small>forms: Flesh</small>
+- **Medeba** · Joshua 13:9 · Named in Joshua 13:9. · *2 verses*
+- **Megiddo** · Joshua 12:21 · Named in Joshua 12:21. · *2 verses*<br><small>forms: Megiddon</small>
+- **Mephaath** · Joshua 13:18 · Named in Joshua 13:18. · *2 verses*
+- **Messenger** · Joshua 6:17 · Mentioned in Joshua 6:17. · *1 verses*
+- **Michmethath** · Joshua 16:6 · Named in Joshua 16:6. · *2 verses*<br><small>aliases: Michmethah</small>
+- **Middin** · Joshua 15:61 · Named in Joshua 15:61. · *1 verses*
+- **Midian** · Joshua 13:21 · Named in Joshua 13:21. · *1 verses*
+- **Migdal-el** · Joshua 19:38 · Named in Joshua 19:38. · *1 verses*
+- **Migdal-gad** · Joshua 15:37 · Named in Joshua 15:37. · *1 verses*
+- **Milcah** · Joshua 17:3 · Named in Joshua 17:3. · *1 verses*
+- **Milk** · Joshua 5:6 · Mentioned in Joshua 5:6. · *0.3333333333333333 verses*
+- **Mishal** · Joshua 19:26 · Named in Joshua 19:26. · *2 verses*<br><small>aliases: Misheal · forms: Mashal</small>
+- **Misrephoth-maim** · Joshua 11:8 · Named in Joshua 11:8. · *2 verses*
+- **Moab** · Joshua 13:32 · Named in Joshua 13:32. · *2 verses*
+- **Moladah** · Joshua 15:26 · Named in Joshua 15:26. · *2 verses*
+- **Moon** · Joshua 10:12 · Mentioned in Joshua 10:12. · *0.6666666666666666 verses*
+- **Mound** · Joshua 11:13 · Mentioned in Joshua 11:13. · *0.3333333333333333 verses*<br><small>forms: Siege works</small>
+- **Mount Gerizim** · Joshua 8:33 · Named in Joshua 8:33. · *1 verses*
+- **Mount Halak** · Joshua 11:17 · Named in Joshua 11:17. · *2 verses*
+- **Mount Jearim** · Joshua 15:10 · Named in Joshua 15:10. · *1 verses*
+- **Mount Seir** · Joshua 11:17; Joshua 15:10 · Named in Joshua 11:17. · *2 verses*
+- **Mouth** · Joshua 1:8 · Mentioned in Joshua 1:8. · *2 verses*
+- **Mozah** · Joshua 18:26 · Named in Joshua 18:26. · *1 verses*
+- **Naamah** · Joshua 15:41 · Named in Joshua 15:41. · *1 verses*
+- **Naarah** · Joshua 16:7 · Named in Joshua 16:7. · *1 verses*<br><small>aliases: Naarath</small>
+- **Nahalal** · Joshua 19:15 · Named in Joshua 19:15. · *2 verses*<br><small>aliases: Nahallal · forms: Nahalol</small>
+- **Nahor** · Joshua 24:2 · Named in Joshua 24:2. · *1 verses*
+- **Neah** · Joshua 19:13 · Named in Joshua 19:13. · *1 verses*
+- **Neck** · Joshua 10:24 · Mentioned in Joshua 10:24. · *0.3333333333333333 verses*
+- **Neiel** · Joshua 19:27 · Named in Joshua 19:27. · *1 verses*
+- **Nephtoah** · Joshua 15:9 · Named in Joshua 15:9. · *2 verses*
+- **Nezib** · Joshua 15:43 · Named in Joshua 15:43. · *1 verses*
+- **Nibshan** · Joshua 15:62 · Named in Joshua 15:62. · *1 verses*
+- **Noah** · Joshua 17:3 · Named in Joshua 17:3. · *1 verses*
+- **Oak** · Joshua 19:33 · Mentioned in Joshua 19:33. · *0.6666666666666666 verses*
+- **Officer** · Joshua 1:10 · Mentioned in Joshua 1:10. · *1.6666666666666667 verses*
+- **Olive** · Joshua 24:13 · Mentioned in Joshua 24:13. · *0.3333333333333333 verses*<br><small>forms: Olive tree</small>
+- **Ophni** · Joshua 18:24 · Named in Joshua 18:24. · *1 verses*
+- **Ophrah** · Joshua 18:23 · Named in Joshua 18:23. · *1 verses*
+- **Othniel** · Joshua 15:17 · Named in Joshua 15:17. · *1 verses*
+- **Ox** · Joshua 6:21 · Mentioned in Joshua 6:21. · *0.3333333333333333 verses*
+- **Oxen** · Joshua 7:24 · Mentioned in Joshua 7:24. · *0.3333333333333333 verses*
+- **Parah** · Joshua 18:23 · Named in Joshua 18:23. · *1 verses*
+- **Parched grain** · Joshua 5:11 · Mentioned in Joshua 5:11. · *0.3333333333333333 verses*<br><small>aliases: Parched corn</small>
+- **Passover** · Joshua 5:10 · Mentioned in Joshua 5:10. · *0.6666666666666666 verses*
+- **Pelet** · Joshua 15:27 · Named in Joshua 15:27. · *1 verses*
+- **Peor** · Joshua 22:17 · Named in Joshua 22:17. · *2 verses*
+- **Pieces of silver** · Joshua 24:32 · Mentioned in Joshua 24:32. · *0.3333333333333333 verses*<br><small>forms: Piece of silver</small>
+- **Pisgah** · Joshua 12:3 · Named in Joshua 12:3. · *2 verses*<br><small>aliases: Ashdoth-pisgah</small>
+- **Plague** · Joshua 22:17 · Mentioned in Joshua 22:17. · *0.3333333333333333 verses*
+- **Rabbah** · Joshua 13:25 · Named in Joshua 13:25. · *2 verses*<br><small>forms: Rabbath</small>
+- **Rabbith** · Joshua 19:20 · Named in Joshua 19:20. · *1 verses*
+- **Raiment** · Joshua 22:8 · Mentioned in Joshua 22:8. · *0.3333333333333333 verses*
+- **Rakkath** · Joshua 19:35 · Named in Joshua 19:35. · *1 verses*
+- **Rakkon** · Joshua 19:46 · Named in Joshua 19:46. · *1 verses*
+- **Ram** · Joshua 6:4 · Mentioned in Joshua 6:4. · *1.6666666666666667 verses*
+- **Ram's horn** · Joshua 6:5 · Mentioned in Joshua 6:5. · *0.3333333333333333 verses*<br><small>forms: Shofar</small>
+- **Ramath-mizpeh** · Joshua 13:26 · Named in Joshua 13:26. · *1 verses*
+- **Ramoth** · Joshua 20:8 · Named in Joshua 20:8. · *2 verses*
+- **Rekem** · Joshua 13:21 · Named in Joshua 13:21. · *2 verses*
+- **Remeth** · Joshua 19:21 · Named in Joshua 19:21. · *1 verses*
+- **River Arnon** · Joshua 12:1 · Named in Joshua 12:1. · *0 verses*
+- **Robe** · Joshua 7:21 · Mentioned in Joshua 7:21. · *0.6666666666666666 verses*
+- **Roof** · Joshua 2:6 · Mentioned in Joshua 2:6. · *0.6666666666666666 verses*<br><small>forms: Housetop</small>
+- **Sack** · Joshua 9:4 · Mentioned in Joshua 9:4. · *0.3333333333333333 verses*
+- **Salecah** · Joshua 12:5 · Named in Joshua 12:5. · *2 verses*<br><small>aliases: Salcah · forms: Salchah</small>
+- **Salt** · Joshua 3:16 · Mentioned in Joshua 3:16. · *2 verses*
+- **Sand** · Joshua 11:4 · Mentioned in Joshua 11:4. · *0.3333333333333333 verses*
+- **Sandals** · Joshua 5:15 · Mentioned in Joshua 5:15. · *1 verses*<br><small>aliases: Sandal</small>
+- **Sansannah** · Joshua 15:31 · Named in Joshua 15:31. · *1 verses*
+- **Sarid** · Joshua 19:10 · Named in Joshua 19:10. · *2 verses*
+- **Scarlet** · Joshua 2:18 · Mentioned in Joshua 2:18. · *0.6666666666666666 verses*
+- **Scarlet thread** · Joshua 2:18; Joshua 2:21 · Mentioned in Joshua 2:18. · *0.6666666666666666 verses*<br><small>aliases: Scarlet line · forms: Scarlet cord, Scarlet rope</small>
+- **Scourge** · Joshua 23:13 · Mentioned in Joshua 23:13. · *0.3333333333333333 verses*<br><small>forms: Whip</small>
+- **Secacah** · Joshua 15:61 · Named in Joshua 15:61. · *1 verses*
+- **Shaalabbin** · Joshua 19:42 · Named in Joshua 19:42. · *1 verses*<br><small>forms: Shaalbim</small>
+- **Shaaraim** · Joshua 15:36 · Named in Joshua 15:36. · *1 verses*<br><small>aliases: Sharaim</small>
+- **Shahazumah** · Joshua 19:22 · Named in Joshua 19:22. · *1 verses*<br><small>aliases: Shahazimah</small>
+- **Shamir** · Joshua 15:48 · Named in Joshua 15:48. · *1 verses*
+- **Sharuhen** · Joshua 19:6 · Named in Joshua 19:6. · *1 verses*
+- **Sheba** · Joshua 19:2 · Named in Joshua 19:2. · *1 verses*<br><small>forms: Sabeans, Seba</small>
+- **Shebarim** · Joshua 7:5 · Named in Joshua 7:5. · *1 verses*
+- **Sheep** · Joshua 6:21 · Mentioned in Joshua 6:21. · *0.6666666666666666 verses*
+- **Shekel** · Joshua 7:21 · Mentioned in Joshua 7:21. · *0.3333333333333333 verses*
+- **Shema** · Joshua 15:26 · Named in Joshua 15:26. · *1 verses*
+- **Sheshai** · Joshua 15:14 · Named in Joshua 15:14. · *1 verses*
+- **Shihor** · Joshua 13:3 · Named in Joshua 13:3. · *2 verses*<br><small>aliases: Sihor</small>
+- **Shihor-libnath** · Joshua 19:26 · Named in Joshua 19:26. · *1 verses*
+- **Shikkeron** · Joshua 15:11 · Named in Joshua 15:11. · *1 verses*<br><small>aliases: Shicron</small>
+- **Shilhim** · Joshua 15:32 · Named in Joshua 15:32. · *1 verses*
+- **Shimron-meron** · Joshua 12:20 · Named in Joshua 12:20. · *1 verses*
+- **Shion** · Joshua 19:19 · Named in Joshua 19:19. · *1 verses*
+- **Shittim** · Joshua 2:1 · Named in Joshua 2:1. · *2 verses*
+- **Shoes** · Joshua 5:15; Joshua 9:5 · Mentioned in Joshua 5:15. · *1 verses*<br><small>aliases: Shoe</small>
+- **Shore** · Joshua 9:1; Joshua 11:4 · Mentioned in Joshua 9:1. · *1.3333333333333333 verses*<br><small>aliases: Seashore</small>
+- **Shoulder** · Joshua 4:5 · Mentioned in Joshua 4:5. · *0.3333333333333333 verses*
+- **Shunem** · Joshua 19:18 · Named in Joshua 19:18. · *1 verses*
+- **Sibmah** · Joshua 13:19 · Named in Joshua 13:19. · *1 verses*<br><small>forms: Sebam, Shebam, Shibmah</small>
+- **Sidon** · Joshua 11:8 · Named in Joshua 11:8. · *2 verses*<br><small>aliases: Great Sidon, Zidon</small>
+- **Sky** · Joshua 10:11 · Mentioned in Joshua 10:11. · *0.6666666666666666 verses*<br><small>forms: Firmament, Expanse</small>
+- **Slave** · Joshua 9:23 · Mentioned in Joshua 9:23. · *0.3333333333333333 verses*
+- **Smoke** · Joshua 8:20 · Mentioned in Joshua 8:20. · *0.6666666666666666 verses*
+- **Socoh** · Joshua 15:35 · Named in Joshua 15:35. · *2 verses*<br><small>forms: Shocho, Shochoh, Shoco, Soco, Sochoh</small>
+- **Sole** · Joshua 1:3 · Mentioned in Joshua 1:3. · *1 verses*
+- **Sore** · Joshua 9:24 · Mentioned in Joshua 9:24. · *0.3333333333333333 verses*<br><small>forms: Sores</small>
+- **Spear** · Joshua 8:18 · Mentioned in Joshua 8:18. · *0.6666666666666666 verses*
+- **Stranger** · Joshua 8:33 · Mentioned in Joshua 8:33. · *1 verses*<br><small>aliases: Foreigner · forms: Sojourner</small>
+- **Street** · Joshua 2:19 · Mentioned in Joshua 2:19. · *0.3333333333333333 verses*
+- **Succoth** · Joshua 13:27 · Named in Joshua 13:27. · *1 verses*
+- **Taanath-shiloh** · Joshua 16:6 · Named in Joshua 16:6. · *1 verses*
+- **Tabernacle** · Joshua 18:1 · Mentioned in Joshua 18:1. · *1.3333333333333333 verses*
+- **Talmai** · Joshua 15:14 · Named in Joshua 15:14. · *1 verses*
+- **Taralah** · Joshua 18:27 · Named in Joshua 18:27. · *1 verses*
+- **Telem** · Joshua 15:24 · Named in Joshua 15:24. · *1 verses*<br><small>forms: Telaim</small>
+- **Terah** · Joshua 24:2 · Named in Joshua 24:2. · *1 verses*
+- **Thorns** · Joshua 23:13 · Mentioned in Joshua 23:13. · *0.3333333333333333 verses*<br><small>aliases: Thorn</small>
+- **Timnath Serah** · Joshua 19:50 · Named in Joshua 19:50. · *2 verses*<br><small>forms: Timnath-heres</small>
+- **Tirzah** · Joshua 12:24 · Named in Joshua 12:24. · *2 verses*
+- **Tongue** · Joshua 10:21 · Mentioned in Joshua 10:21. · *0.3333333333333333 verses*
+- **Towns of Jair** · Joshua 13:30 · Named in Joshua 13:30. · *0 verses*<br><small>forms: Havvoth-jair, Bashan-havoth-jair, Havoth Jair</small>
+- **Treasury** · Joshua 6:19 · Mentioned in Joshua 6:19. · *0.6666666666666666 verses*
+- **Tree** · Joshua 8:29; Joshua 10:26 · Mentioned in Joshua 8:29. · *1 verses*<br><small>aliases: Trees</small>
+- **Tyre** · Joshua 19:29 · Named in Joshua 19:29. · *1 verses*<br><small>forms: Tyrus</small>
+- **Ummah** · Joshua 19:30 · Named in Joshua 19:30. · *1 verses*
+- **Valley of Achor** · Joshua 7:24 · Named in Joshua 7:24. · *0 verses*
+- **Valley of Hinnom** · Joshua 15:8 · Named in Joshua 15:8. · *0 verses*<br><small>forms: The valley of slaughter, Valley of Slaughter</small>
+- **Valley of Rephaim** · Joshua 15:8 · Named in Joshua 15:8. · *0 verses*
+- **Wall** · Joshua 2:15 · Mentioned in Joshua 2:15. · *1 verses*
+- **Waters of Merom** · Joshua 11:5 · Named in Joshua 11:5. · *0 verses*
+- **Window** · Joshua 2:15 · Mentioned in Joshua 2:15. · *1 verses*
+- **Wine** · Joshua 9:4 · Mentioned in Joshua 9:4. · *0.6666666666666666 verses*
+- **Wineskin** · Joshua 9:4 · Mentioned in Joshua 9:4. · *0.6666666666666666 verses*
+- **Woodcutter** · Joshua 9:21 · Mentioned in Joshua 9:21. · *1 verses*<br><small>aliases: Hewers of wood</small>
+- **Zaanannim** · Joshua 19:33 · Named in Joshua 19:33. · *1 verses*<br><small>forms: Zaanaim</small>
+- **Zanoah** · Joshua 15:34 · Named in Joshua 15:34. · *2 verses*
+- **Zaphon** · Joshua 13:27 · Named in Joshua 13:27. · *1 verses*
+- **Zarethan** · Joshua 3:16 · Named in Joshua 3:16. · *1 verses*<br><small>aliases: Zaretan · forms: Zartanah, Zarthan</small>
+- **Zelah** · Joshua 18:28 · Named in Joshua 18:28. · *1 verses*<br><small>forms: Zela</small>
+- **Zemaraim** · Joshua 18:22 · Named in Joshua 18:22. · *1 verses*
+- **Zenan** · Joshua 15:37 · Named in Joshua 15:37. · *1 verses*
+- **Zer** · Joshua 19:35 · Named in Joshua 19:35. · *1 verses*
+- **Zereth-shahar** · Joshua 13:19 · Named in Joshua 13:19. · *1 verses*<br><small>aliases: Zareth-shahar</small>
+- **Ziddim** · Joshua 19:35 · Named in Joshua 19:35. · *1 verses*
+- **Ziklag** · Joshua 15:31 · Named in Joshua 15:31. · *2 verses*
+- **Zin** · Joshua 15:1 · Named in Joshua 15:1. · *2 verses*<br><small>forms: Wilderness of Kadesh</small>
+- **Zior** · Joshua 15:54 · Named in Joshua 15:54. · *1 verses*
+- **Ziph** · Joshua 15:24 · Named in Joshua 15:24. · *2 verses*
+- **Zippor** · Joshua 24:9 · Named in Joshua 24:9. · *1 verses*
+- **Zorah** · Joshua 15:33 · Named in Joshua 15:33. · *2 verses*<br><small>aliases: Zoreah · forms: Zareah</small>
+- **Zur** · Joshua 13:21 · Named in Joshua 13:21. · *2 verses*
+
+### Near misses
+
+- **Moses' staff, burning bush**: That is Exodus; in Joshua, Moses has died (Joshua 1:1–2).
+- **Gideon, Samson, Deborah**: They come in Judges, after Joshua.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a feature of the land, sea or sky, or a kind of weather, mentioned in the Bible.
+
+`land-and-sky` · Creation · 61 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 7 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 9 |
+| 🪙 Lost Coin (60) | 9 |
+| 💎 Hidden Treasure (85) | 35 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Arcturus. God asks Job whether he can guide Arcturus with its sons (Job 38:32, KJV; the WEB says the Bear).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Fire** · Genesis 19:24; Genesis 22:6 · Mentioned in Genesis 19:24. · *524 verses*
+- **Moon** · Genesis 37:9; Numbers 29:6 · Mentioned in Genesis 37:9. · *66 verses*
+- **Mountain** · Genesis 7:19; Genesis 7:20 · Mentioned in Genesis 7:19. · *390 verses*
+- **Rain** · Genesis 2:5; Genesis 7:4 · Mentioned in Genesis 2:5. · *89 verses*
+- **Sea** · Exodus 14:21 · Mentioned in Exodus 14:21. · *390 verses*
+- **Star** · Genesis 1:16; Genesis 15:5 · Mentioned in Genesis 1:16. · *64 verses*<br><small>aliases: Stars</small>
+- **Sun** · Genesis 15:12; Genesis 15:17 · Mentioned in Genesis 15:12. · *157 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Cloud** · Genesis 9:13; Genesis 9:14; Deuteronomy 4:11 · Mentioned in Genesis 9:13. · *152 verses*<br><small>aliases: Clouds</small>
+- **Field** · Genesis 2:5; Genesis 2:19 · Mentioned in Genesis 2:5. · *348 verses*
+- **Flood** · Genesis 7:17 · Mentioned in Genesis 7:17. · *61 verses*
+- **Rainbow** · Genesis 9:13 · Mentioned in Genesis 9:13. · *6 verses*
+- **River** · Genesis 2:10; Genesis 2:13 · Mentioned in Genesis 2:10. · *235 verses*
+- **Sky** · Genesis 1:6; Genesis 1:7; Genesis 1:8 · Mentioned in Genesis 1:6. · *267 verses*<br><small>aliases: Firmament, Expanse</small>
+- **Well** · Genesis 4:7; Genesis 12:13 · Mentioned in Genesis 4:7. · *327 verses*
+- **Wilderness** · Genesis 14:6; Genesis 16:7 · Mentioned in Genesis 14:6. · *304 verses*
+- **Wind** · Genesis 8:1; Genesis 41:6 · Mentioned in Genesis 8:1. · *152 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Brook** · Genesis 32:23; Exodus 7:19 · Mentioned in Genesis 32:23. · *103 verses*<br><small>aliases: Stream</small>
+- **Darkness** · Genesis 1:2; Genesis 1:4 · Mentioned in Genesis 1:2. · *150 verses*
+- **Deep** · Genesis 1:2; Genesis 2:21; Exodus 15:5 · Mentioned in Genesis 1:2. · *97 verses*<br><small>aliases: Depths</small>
+- **Dust** · Genesis 2:7; Genesis 3:14 · Mentioned in Genesis 2:7. · *113 verses*
+- **Hill** · Genesis 7:19; Genesis 14:10 · Mentioned in Genesis 7:19. · *203 verses*
+- **Meadow** · Genesis 41:2; Genesis 41:18; Genesis 47:4 · Mentioned in Genesis 41:2. · *115 verses*<br><small>aliases: Pasture</small>
+- **Rock** · Exodus 17:6; Exodus 33:21 · Mentioned in Exodus 17:6. · *139 verses*
+- **Spring** · Genesis 7:11; Genesis 8:2; Genesis 24:13 · Mentioned in Genesis 7:11. · *108 verses*<br><small>aliases: Fountain</small>
+- **Valley** · Genesis 14:3; Genesis 14:8 · Mentioned in Genesis 14:3. · *182 verses*<br><small>aliases: Vale</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Brimstone** · Genesis 19:24; Deuteronomy 29:23 · Mentioned in Genesis 19:24. · *14 verses*<br><small>aliases: Sulfur</small>
+- **Cave** · Genesis 19:30; Genesis 23:9; Isaiah 2:21 · Mentioned in Genesis 19:30. · *42 verses*<br><small>aliases: Cavern</small>
+- **Cliff** · 1 Samuel 14:4; 1 Samuel 14:5; 2 Chronicles 20:16 · Mentioned in 1 Samuel 14:4. · *7 verses*<br><small>aliases: Crag</small>
+- **Dawn** · Judges 19:25; 1 Samuel 9:26 · Mentioned in Judges 19:25. · *23 verses*<br><small>aliases: Daybreak</small>
+- **Desert** · Exodus 3:1; Exodus 5:3 · Mentioned in Exodus 3:1. · *67 verses*
+- **Dew** · Judges 6:37 · Mentioned in Judges 6:37. · *35 verses*
+- **Drought** · Genesis 31:40; Deuteronomy 8:15 · Mentioned in Genesis 31:40. · *11 verses*
+- **Earthquake** · Matthew 28:2 · Mentioned in Matthew 28:2. · *17 verses*
+- **East wind** · Genesis 41:6; Genesis 41:23 · Mentioned in Genesis 41:6. · *19 verses*
+- **Ford** · Genesis 32:22; Joshua 2:7 · Mentioned in Genesis 32:22. · *8 verses*
+- **Forest** · Deuteronomy 19:5; Joshua 17:15 · Mentioned in Deuteronomy 19:5. · *56 verses*
+- **Frost** · Genesis 31:40; Exodus 16:14 · Mentioned in Genesis 31:40. · *8 verses*
+- **Hail** · Exodus 9:23 · Mentioned in Exodus 9:23. · *36 verses*<br><small>forms: Hailstones</small>
+- **Hillside** · Numbers 21:15; Deuteronomy 3:17; 2 Samuel 13:34 · Mentioned in Numbers 21:15. · *9 verses*<br><small>aliases: Slope</small>
+- **Ice** · Job 6:16; Job 37:10 · Mentioned in Job 6:16. · *4 verses*
+- **Island** · Genesis 10:5; Esther 10:1 · Mentioned in Genesis 10:5. · *49 verses*<br><small>aliases: Isle</small>
+- **Lake** · Luke 5:1; Luke 5:2 · Mentioned in Luke 5:1. · *10 verses*
+- **Lightning** · Exodus 9:23; Exodus 9:24 · Mentioned in Exodus 9:23. · *41 verses*
+- **Marsh** · Genesis 41:2; Genesis 41:18; Job 40:21; Ezekiel 47:11 · Mentioned in Genesis 41:2. · *4 verses*<br><small>aliases: Swamp, Fen</small>
+- **Mist** · Genesis 2:6; Job 36:27 · Mentioned in Genesis 2:6. · *13 verses*<br><small>aliases: Vapor, Vapour</small>
+- **Morning star** · Revelation 22:16 · Mentioned in Revelation 22:16. · *4 verses*<br><small>forms: Day star</small>
+- **Mud** · 2 Samuel 22:43; 1 Kings 7:46; Job 41:30 · Mentioned in 2 Samuel 22:43. · *49 verses*<br><small>aliases: Mire, Clay</small>
+- **Orion** · Job 38:31 · Mentioned in Job 38:31. · *3 verses*
+- **Plain** · Genesis 11:2; Genesis 12:6 · Mentioned in Genesis 11:2. · *97 verses*
+- **Pleiades** · Job 38:31 · Mentioned in Job 38:31. · *3 verses*
+- **Ravine** · Proverbs 23:20; Zechariah 1:8 · Mentioned in Proverbs 23:20. · *2 verses*<br><small>aliases: Gorge</small>
+- **Sand** · Genesis 22:17; Genesis 32:12 · Mentioned in Genesis 22:17. · *30 verses*
+- **Shore** · Genesis 22:17; Exodus 14:30 · Mentioned in Genesis 22:17. · *25 verses*<br><small>aliases: Seashore</small>
+- **Smoke** · Genesis 19:28; Exodus 19:18 · Mentioned in Genesis 19:28. · *41 verses*
+- **Snow** · Isaiah 1:18 · Mentioned in Isaiah 1:18. · *24 verses*
+- **Storm** · Mark 4:37 · Mentioned in Mark 4:37. · *36 verses*<br><small>forms: Tempest</small>
+- **Thunder** · Exodus 9:23; Exodus 9:29 · Mentioned in Exodus 9:23. · *36 verses*
+- **Torrent** · Job 14:19 · Mentioned in Job 14:19. · *1 verses*
+- **Wave** · Exodus 29:24; Exodus 29:26; 2 Samuel 22:5; Psalm 42:7 · Mentioned in Exodus 29:24. · *81 verses*<br><small>aliases: Waves, Billows</small>
+- **Whirlwind** · 2 Kings 2:11 · Mentioned in 2 Kings 2:11. · *29 verses*
+
+### Near misses
+
+- **Ocean**: The Bible says "sea" and "the deep"; try one of those.
+- **Volcano, tornado, comet**: Not named in the Bible; try "whirlwind" or "earthquake".
+
+---
+
+## Name a person, place, or thing named in the book of Matthew.
+
+`matthew-anything` · Books of the Bible · 405 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 12 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 31 |
+| 🪙 Lost Coin (60) | 80 |
+| 💎 Hidden Treasure (85) | 281 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Azor. Azor, son of Eliakim and father of Zadok, is a link in Jesus' genealogy after the exile (Matthew 1:13–14).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Bethlehem** · Matthew 2:1 · Named in Matthew 2:1. · *5 verses*<br><small>forms: Beth-lehem Ephratah, Beth-lehem-judah, Bethlehem Ephrathah</small>
+- **David** · Matthew 1:1 · Called David the king. · *15 verses*
+- **Hand** · Matthew 3:2 · Mentioned in Matthew 3:2. · *14 verses*
+- **House** · Matthew 2:11 · Mentioned in Matthew 2:11. · *12.666666666666666 verses*
+- **Jesus** · Matthew 1:1 · Named in Matthew 1:1. · *172 verses*<br><small>aliases: Jesus Christ · forms: Christ child</small>
+- **John** · Matthew 3:1 · Named in Matthew 3:1. · *26 verses*<br><small>aliases: John the Baptist · forms: John son of Zebedee</small>
+- **Judea** · Matthew 1:2; Matthew 2:1; Matthew 2:2 · Named in Matthew 2:1. · *17 verses*<br><small>aliases: Juda, Judaea · forms: Jewry</small>
+- **Mary** · Matthew 1:16; Matthew 27:56 · Of whom Jesus was born. · *8 verses*<br><small>aliases: Mary Magdalene, Magdalene · forms: Mary Magdalene, Virgin Mary, Mary the mother of Jesus, Mary mother of Jesus, Mary the mother of James, Mary the wife of Clopas, Mary the mother of Mark, Mary of Clopas</small>
+- **Peter** · Matthew 4:18; Matthew 16:16 · Named in Matthew 4:18. · *24 verses*<br><small>aliases: Simon Peter · forms: Cephas</small>
+- **Prophet** · Matthew 1:22 · Mentioned in Matthew 1:22. · *13 verses*
+- **Servant** · Matthew 8:6 · Mentioned in Matthew 8:6. · *14.333333333333334 verses*
+- **Zion** · Matthew 2:6; Matthew 21:5 · Named in Matthew 21:5. · *13 verses*<br><small>aliases: Israel, Sion</small>
+
+### 🍞 Five Loaves (30)
+
+- **Abraham** · Matthew 1:1 · The genealogy begins with him. · *6 verses*<br><small>forms: Abram</small>
+- **Angel** · Matthew 1:20; Matthew 4:6 · Mentioned in Matthew 1:20. · *6.333333333333333 verses*<br><small>aliases: Angels</small>
+- **Barabbas** · Matthew 27:16 · Named in Matthew 27:16. · *5 verses*
+- **Bread** · Matthew 4:3 · Mentioned in Matthew 4:3. · *5 verses*
+- **Canaan** · Matthew 4:15; Matthew 15:22 · Named in Matthew 15:22. · *11 verses*<br><small>aliases: Gentile · forms: Chanaan, Glorious Land</small>
+- **Chief** · Matthew 2:4 · Mentioned in Matthew 2:4. · *6.666666666666667 verses*
+- **Cross** · Matthew 27:32 · Mentioned in Matthew 27:32. · *1.6666666666666667 verses*
+- **Demon** · Matthew 4:24 · Mentioned in Matthew 4:24. · *5.666666666666667 verses*<br><small>aliases: Demons</small>
+- **Devil** · Matthew 4:1 · Mentioned in Matthew 4:1. · *7.666666666666667 verses*
+- **Elijah** · Matthew 11:14 · Named in Matthew 11:14. · *9 verses*<br><small>aliases: Elias</small>
+- **Eye** · Matthew 5:29 · Mentioned in Matthew 5:29. · *6.333333333333333 verses*
+- **Galilee** · Matthew 2:22; Matthew 26:69 · Named in Matthew 2:22. · *17 verses*<br><small>aliases: Galilean · forms: Galileans, Chinneroth, Sea of Chinnereth, Sea of Chinneroth, Sea of Tiberias</small>
+- **Heart** · Matthew 5:8 · Mentioned in Matthew 5:8. · *5.666666666666667 verses*
+- **Herod** · Matthew 2:1 · King when Jesus was born. · *12 verses*<br><small>forms: Herod the Great, Herod Antipas</small>
+- **Isaiah** · Matthew 3:3 · Named in Matthew 3:3. · *6 verses*<br><small>aliases: Esaias</small>
+- **Jacob** · Matthew 1:2 · Father of Judah and his brothers; Joseph's father also bears the name (Matthew 1:16). · *5 verses*
+- **James** · Matthew 4:21 · Son of Zebedee. · *6 verses*<br><small>forms: James son of Zebedee</small>
+- **Jerusalem** · Matthew 2:1; Matthew 2:2 · Named in Matthew 2:1. · *12 verses*
+- **Jonah** · Matthew 12:39 · Named in Matthew 12:39. · *5 verses*<br><small>aliases: Jonas</small>
+- **Jordan** · Matthew 3:5 · Named in Matthew 3:5. · *6 verses*
+- **Joseph** · Matthew 1:16 · The husband of Mary. · *9 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Judah** · Matthew 1:2 · Father of Perez and Zerah by Tamar. · *9 verses*<br><small>aliases: Juda</small>
+- **Judas** · Matthew 1:2; Matthew 10:4 · Named in Matthew 1:2. · *8 verses*<br><small>aliases: Judas Iscariot</small>
+- **King** · Matthew 1:6 · Mentioned in Matthew 1:6. · *7.333333333333333 verses*
+- **Moses** · Matthew 8:4 · Named in Matthew 8:4. · *7 verses*
+- **Pilate** · Matthew 27:2 · Named in Matthew 27:2. · *8 verses*<br><small>aliases: Pontius Pilate</small>
+- **Priest** · Matthew 2:4 · Mentioned in Matthew 2:4. · *9 verses*
+- **Scribe** · Matthew 2:4 · Mentioned in Matthew 2:4. · *8 verses*
+- **Sea** · Matthew 4:13 · Mentioned in Matthew 4:13. · *5.666666666666667 verses*
+- **Simon** · Matthew 4:18 · Named in Matthew 4:18. · *9 verses*
+- **Temple** · Matthew 4:5 · Mentioned in Matthew 4:5. · *5.666666666666667 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Altar** · Matthew 5:23 · Mentioned in Matthew 5:23. · *2 verses*
+- **Andrew** · Matthew 4:18 · Named in Matthew 4:18. · *2 verses*
+- **Aram** · Matthew 1:3 · Named in Matthew 1:3. · *2 verses*
+- **Asa** · Matthew 1:7 · Father of Jehoshaphat. · *2 verses*<br><small>forms: Asaph</small>
+- **Babylon** · Matthew 1:11 · Named in Matthew 1:11. · *3 verses*
+- **Back** · Matthew 2:12 · Mentioned in Matthew 2:12. · *3 verses*
+- **Basket** · Matthew 5:15 · Mentioned in Matthew 5:15. · *1.6666666666666667 verses*
+- **Bethany** · Matthew 21:17 · Named in Matthew 21:17. · *2 verses*<br><small>forms: Bethabara</small>
+- **Blind** · Matthew 9:27 · Mentioned in Matthew 9:27. · *4.666666666666667 verses*<br><small>forms: Blindness</small>
+- **Blood** · Matthew 9:20 · Mentioned in Matthew 9:20. · *3.3333333333333335 verses*
+- **Boat** · Matthew 4:21 · Mentioned in Matthew 4:21. · *4.333333333333333 verses*
+- **Caesar** · Matthew 22:17 · Named in Matthew 22:17. · *2 verses*<br><small>forms: Caesar Augustus, Augustus, Emperor</small>
+- **Caiaphas** · Matthew 26:3 · Named in Matthew 26:3. · *2 verses*
+- **Capernaum** · Matthew 4:13 · Named in Matthew 4:13. · *4 verses*
+- **Cup** · Matthew 10:42 · Mentioned in Matthew 10:42. · *2.6666666666666665 verses*
+- **Darkness** · Matthew 4:16 · Mentioned in Matthew 4:16. · *2.3333333333333335 verses*
+- **Denarius** · Matthew 5:26; Matthew 18:28; Matthew 20:2 · Mentioned in Matthew 5:26. · *2.3333333333333335 verses*<br><small>aliases: Denarii, Penny, Pence</small>
+- **Ear** · Matthew 10:27 · Mentioned in Matthew 10:27. · *3 verses*
+- **Egypt** · Matthew 2:13 · Named in Matthew 2:13. · *4 verses*<br><small>forms: Lower, Proud</small>
+- **Elder** · Matthew 15:2 · Mentioned in Matthew 15:2. · *4.333333333333333 verses*
+- **Elders** · Matthew 15:2 · Mentioned in Matthew 15:2. · *4.333333333333333 verses*
+- **Eliud** · Matthew 1:14 · Named in the generations after the exile. · *2 verses*
+- **Face** · Matthew 6:16 · Mentioned in Matthew 6:16. · *3 verses*
+- **Farmer** · Matthew 13:3 · Mentioned in Matthew 13:3. · *2.6666666666666665 verses*<br><small>forms: Husbandman</small>
+- **Field** · Matthew 6:28 · Mentioned in Matthew 6:28. · *4.666666666666667 verses*
+- **Fire** · Matthew 3:10 · Mentioned in Matthew 3:10. · *4 verses*
+- **Fish** · Matthew 7:10 · Mentioned in Matthew 7:10. · *2.6666666666666665 verses*
+- **Foot** · Matthew 4:6; Matthew 5:13 · Mentioned in Matthew 4:6. · *4 verses*<br><small>aliases: Feet</small>
+- **Garment** · Matthew 9:16 · Mentioned in Matthew 9:16. · *3.3333333333333335 verses*
+- **Governor** · Matthew 2:6 · Mentioned in Matthew 2:6. · *3.3333333333333335 verses*
+- **Head** · Matthew 5:36 · Mentioned in Matthew 5:36. · *4.333333333333333 verses*
+- **Herodias** · Matthew 14:3 · Named in Matthew 14:3. · *2 verses*
+- **Hezekiah** · Matthew 1:9 · Son of Ahaz. · *2 verses*<br><small>aliases: Ezekias</small>
+- **High priest** · Matthew 26:3 · Mentioned in Matthew 26:3. · *2.3333333333333335 verses*
+- **Isaac** · Matthew 1:2 · Son of Abraham. · *3 verses*
+- **Jechoniah** · Matthew 1:11 · Named in Matthew 1:11. · *2 verses*<br><small>aliases: Jechonias · forms: Jehoiachin, Jeconiah, Coniah</small>
+- **Jeremiah** · Matthew 2:17; Matthew 16:14 · Named in Matthew 2:17. · *3 verses*<br><small>aliases: Jeremias</small>
+- **Jesse** · Matthew 1:5 · Father of David. · *2 verses*
+- **Josiah** · Matthew 1:10 · Father of Jechoniah at the time of the exile. · *2 verses*<br><small>aliases: Josias</small>
+- **Lamp** · Matthew 5:15 · Mentioned in Matthew 5:15. · *2.3333333333333335 verses*
+- **Matthew** · Matthew 9:9 · Named in Matthew 9:9. · *2 verses*<br><small>forms: Levi</small>
+- **Meat** · Matthew 3:4 · Mentioned in Matthew 3:4. · *3.3333333333333335 verses*
+- **Mount of Olives** · Matthew 21:1 · Named in Matthew 21:1. · *3 verses*<br><small>aliases: Mount · forms: Mount of Corruption, Olivet</small>
+- **Mountain** · Matthew 4:8 · Mentioned in Matthew 4:8. · *4 verses*
+- **Mouth** · Matthew 4:4 · Mentioned in Matthew 4:4. · *3.6666666666666665 verses*
+- **Naphtali** · Matthew 4:13 · Named in Matthew 4:13. · *2 verses*
+- **Nazareth** · Matthew 2:23 · Named in Matthew 2:23. · *4 verses*<br><small>aliases: Nazarene</small>
+- **Noah** · Matthew 24:37 · Named in Matthew 24:37. · *2 verses*
+- **Philip** · Matthew 10:3 · From Bethsaida; brought Nathanael to Jesus. · *2 verses*<br><small>forms: Philip the tetrarch, Herod Philip</small>
+- **Prison** · Matthew 4:12 · Mentioned in Matthew 4:12. · *3.3333333333333335 verses*<br><small>forms: Dungeon</small>
+- **Raiment** · Matthew 3:4 · Mentioned in Matthew 3:4. · *2.3333333333333335 verses*
+- **Ram** · Matthew 1:3 · Son of Hezron. · *2 verses*
+- **Sabbath** · Matthew 12:1 · Mentioned in Matthew 12:1. · *3 verses*
+- **Salmon** · Matthew 1:4 · Father of Boaz by Rahab. · *2 verses*
+- **Sheep** · Matthew 7:15 · Mentioned in Matthew 7:15. · *4 verses*
+- **Ship** · Matthew 4:21 · Mentioned in Matthew 4:21. · *4.666666666666667 verses*
+- **Side** · Matthew 8:18 · Mentioned in Matthew 8:18. · *2.6666666666666665 verses*
+- **Sidon** · Matthew 11:21 · Named in Matthew 11:21. · *3 verses*<br><small>forms: Great Sidon, Zidon</small>
+- **Silver** · Matthew 10:9 · Mentioned in Matthew 10:9. · *2.3333333333333335 verses*
+- **Sky** · Matthew 6:26 · Mentioned in Matthew 6:26. · *3 verses*<br><small>forms: Firmament, Expanse</small>
+- **Sodom** · Matthew 10:15 · Named in Matthew 10:15. · *3 verses*<br><small>forms: Sodoma</small>
+- **Solomon** · Matthew 1:6 · Son of David. · *4 verses*
+- **Stone** · Matthew 3:9 · Mentioned in Matthew 3:9. · *3.6666666666666665 verses*
+- **Stranger** · Matthew 17:25 · Mentioned in Matthew 17:25. · *2.3333333333333335 verses*<br><small>forms: Foreigner, Sojourner</small>
+- **Synagogue** · Matthew 4:23 · Mentioned in Matthew 4:23. · *3 verses*
+- **Talent** · Matthew 18:24 · Mentioned in Matthew 18:24. · *3 verses*
+- **Tares** · Matthew 13:25 · Mentioned in Matthew 13:25. · *2.6666666666666665 verses*<br><small>aliases: Darnel</small>
+- **Tax collector** · Matthew 5:46 · Mentioned in Matthew 5:46. · *3 verses*<br><small>aliases: Publican</small>
+- **Teacher** · Matthew 8:19 · Mentioned in Matthew 8:19. · *4 verses*
+- **Teeth** · Matthew 5:38; Matthew 8:12 · Mentioned in Matthew 5:38. · *2.6666666666666665 verses*<br><small>aliases: Tooth</small>
+- **Tomb** · Matthew 8:28; Matthew 23:27 · Mentioned in Matthew 8:28. · *3.6666666666666665 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Tree** · Matthew 3:10 · Mentioned in Matthew 3:10. · *3.6666666666666665 verses*<br><small>aliases: Trees</small>
+- **Tyre** · Matthew 11:21 · Named in Matthew 11:21. · *3 verses*<br><small>forms: Tyrus</small>
+- **Uzziah** · Matthew 1:8 · Father of Jotham. · *2 verses*<br><small>aliases: Ozias · forms: Azariah</small>
+- **Water** · Matthew 3:11 · Mentioned in Matthew 3:11. · *2.6666666666666665 verses*
+- **Wilderness** · Matthew 3:1 · Mentioned in Matthew 3:1. · *2 verses*
+- **Wind** · Matthew 7:25 · Mentioned in Matthew 7:25. · *3 verses*
+- **Zebedee** · Matthew 4:21 · Named in Matthew 4:21. · *5 verses*
+- **Zebulun** · Matthew 4:13 · Named in Matthew 4:13. · *2 verses*
+- **Zerubbabel** · Matthew 1:12 · Son of Shealtiel, in the generations after the exile. · *2 verses*<br><small>aliases: Zorobabel</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Abel** · Matthew 23:35 · Named in Matthew 23:35. · *1 verses*
+- **Abijah** · Matthew 1:7 · Son of Rehoboam. · *1 verses*<br><small>aliases: Abia · forms: Abijam</small>
+- **Abiud** · Matthew 1:13 · Son of Zerubbabel. · *1 verses*<br><small>forms: Abihud</small>
+- **Achim** · Matthew 1:14 · Named in the generations after the exile. · *1 verses*
+- **Ahaz** · Matthew 1:9 · Father of Hezekiah. · *1 verses*<br><small>aliases: Achaz</small>
+- **Alabaster** · Matthew 26:7 · Mentioned in Matthew 26:7. · *0.3333333333333333 verses*
+- **Alphaeus** · Matthew 10:3 · Named in Matthew 10:3. · *1 verses*
+- **Amminadab** · Matthew 1:4 · Father of Nahshon. · *1 verses*<br><small>aliases: Aminadab</small>
+- **Amon** · Matthew 1:10 · Son of Manasseh. · *1 verses*<br><small>forms: Amos</small>
+- **Apostle** · Matthew 10:2 · Mentioned in Matthew 10:2. · *0.3333333333333333 verses*
+- **Archelaus** · Matthew 2:22 · Reigned over Judea after his father Herod. · *1 verses*
+- **Arimathaea** · Matthew 27:57 · Named in Matthew 27:57. · *1 verses*
+- **Ark** · Matthew 24:38 · Mentioned in Matthew 24:38. · *0.3333333333333333 verses*
+- **Ashes** · Matthew 11:21 · Mentioned in Matthew 11:21. · *0.3333333333333333 verses*
+- **Assarion** · Matthew 10:29 · Mentioned in Matthew 10:29. · *0.3333333333333333 verses*
+- **Axe** · Matthew 3:10 · Mentioned in Matthew 3:10. · *0.3333333333333333 verses*<br><small>aliases: Ax</small>
+- **Bag** · Matthew 10:10 · Mentioned in Matthew 10:10. · *0.3333333333333333 verses*
+- **Banker** · Matthew 25:27 · Mentioned in Matthew 25:27. · *0.3333333333333333 verses*<br><small>aliases: Exchangers</small>
+- **Barn** · Matthew 3:12 · Mentioned in Matthew 3:12. · *1 verses*
+- **Bartholomew** · Matthew 10:3 · Listed among the Twelve. · *1 verses*
+- **Beam** · Matthew 7:3 · Mentioned in Matthew 7:3. · *1 verses*
+- **Bed** · Matthew 9:2 · Mentioned in Matthew 9:2. · *0.6666666666666666 verses*
+- **Belly** · Matthew 12:40 · Mentioned in Matthew 12:40. · *0.6666666666666666 verses*<br><small>forms: Stomach</small>
+- **Belt** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.6666666666666666 verses*
+- **Bethphage** · Matthew 21:1 · Named in Matthew 21:1. · *1 verses*
+- **Bethsaida** · Matthew 11:21 · Named in Matthew 11:21. · *1 verses*
+- **Boaz** · Matthew 1:5 · Father of Obed by Ruth. · *1 verses*<br><small>aliases: Booz</small>
+- **Bones** · Matthew 23:27 · Mentioned in Matthew 23:27. · *0.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Book** · Matthew 1:1 · Mentioned in Matthew 1:1. · *0.3333333333333333 verses*
+- **Bottle** · Matthew 9:17 · Mentioned in Matthew 9:17. · *0.3333333333333333 verses*
+- **Brass** · Matthew 10:9 · Mentioned in Matthew 10:9. · *0.3333333333333333 verses*
+- **Builder** · Matthew 21:42 · Mentioned in Matthew 21:42. · *0.3333333333333333 verses*
+- **Bushel** · Matthew 5:15 · Mentioned in Matthew 5:15. · *0.3333333333333333 verses*
+- **Caesarea Philippi** · Matthew 16:13 · Named in Matthew 16:13. · *1 verses*
+- **Camel** · Matthew 3:4 · Mentioned in Matthew 3:4. · *1 verses*
+- **Camel's hair** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Candle** · Matthew 5:15 · Mentioned in Matthew 5:15. · *0.3333333333333333 verses*
+- **Candlestick** · Matthew 5:15 · Mentioned in Matthew 5:15. · *0.3333333333333333 verses*<br><small>forms: Lampstand</small>
+- **Carpenter** · Matthew 13:55 · Mentioned in Matthew 13:55. · *0.3333333333333333 verses*
+- **Cattle** · Matthew 22:4 · Mentioned in Matthew 22:4. · *0.3333333333333333 verses*
+- **Centurion** · Matthew 8:5 · Mentioned in Matthew 8:5. · *1.3333333333333333 verses*
+- **Cheek** · Matthew 5:39 · Mentioned in Matthew 5:39. · *0.3333333333333333 verses*
+- **Chicks** · Matthew 23:37 · Mentioned in Matthew 23:37. · *0.3333333333333333 verses*<br><small>aliases: Chickens</small>
+- **Chorazin** · Matthew 11:21 · Named in Matthew 11:21. · *1 verses*
+- **Cliff** · Matthew 8:32 · Mentioned in Matthew 8:32. · *0.3333333333333333 verses*<br><small>forms: Crag</small>
+- **Cloak** · Matthew 5:40 · Mentioned in Matthew 5:40. · *0.3333333333333333 verses*
+- **Cloud** · Matthew 17:5; Matthew 24:30 · Mentioned in Matthew 17:5. · *1 verses*<br><small>aliases: Clouds</small>
+- **Coat** · Matthew 5:40 · Mentioned in Matthew 5:40. · *0.6666666666666666 verses*
+- **Colt** · Matthew 21:2 · Mentioned in Matthew 21:2. · *1 verses*
+- **Crown** · Matthew 27:29 · Mentioned in Matthew 27:29. · *0.3333333333333333 verses*
+- **Crumbs** · Matthew 15:27 · Mentioned in Matthew 15:27. · *0.3333333333333333 verses*
+- **Cubit** · Matthew 6:27 · Mentioned in Matthew 6:27. · *0.3333333333333333 verses*
+- **Cumin** · Matthew 23:23 · Mentioned in Matthew 23:23. · *0.3333333333333333 verses*<br><small>aliases: Cummin</small>
+- **Cyrene** · Matthew 27:32 · Named in Matthew 27:32. · *1 verses*
+- **Daniel** · Matthew 24:15 · Exile in Babylon; Jesus calls him Daniel the prophet. · *1 verses*
+- **Dawn** · Matthew 28:1 · Mentioned in Matthew 28:1. · *0.3333333333333333 verses*<br><small>forms: Daybreak</small>
+- **Deaf** · Matthew 11:5 · Mentioned in Matthew 11:5. · *0.3333333333333333 verses*<br><small>forms: Deafness</small>
+- **Decapolis** · Matthew 4:25 · Named in Matthew 4:25. · *1 verses*
+- **Desert** · Matthew 14:13 · Mentioned in Matthew 14:13. · *1 verses*
+- **Didrachma** · Matthew 17:24 · Mentioned in Matthew 17:24. · *0.3333333333333333 verses*
+- **Dill** · Matthew 23:23 · Mentioned in Matthew 23:23. · *0.3333333333333333 verses*<br><small>aliases: Anise</small>
+- **Ditch** · Matthew 15:14 · Mentioned in Matthew 15:14. · *0.3333333333333333 verses*<br><small>forms: Trench</small>
+- **Dog** · Matthew 7:6 · Mentioned in Matthew 7:6. · *1 verses*
+- **Donkey** · Matthew 21:2 · Mentioned in Matthew 21:2. · *1 verses*<br><small>aliases: Ass</small>
+- **Door** · Matthew 6:6 · Mentioned in Matthew 6:6. · *1.6666666666666667 verses*
+- **Dove** · Matthew 3:16 · Mentioned in Matthew 3:16. · *1 verses*
+- **Dust** · Matthew 10:14 · Mentioned in Matthew 10:14. · *0.6666666666666666 verses*
+- **Eagle** · Matthew 24:28 · Mentioned in Matthew 24:28. · *0.3333333333333333 verses*
+- **Ears of corn** · Matthew 12:1 · Mentioned in Matthew 12:1. · *0.3333333333333333 verses*<br><small>forms: Ears of grain</small>
+- **Earthquake** · Matthew 24:7 · Mentioned in Matthew 24:7. · *1 verses*
+- **Eleazar** · Matthew 1:15 · Named in the generations after the exile. · *1 verses*
+- **Eli** · Matthew 27:46 · Named in Matthew 27:46. · *1 verses*
+- **Eliakim** · Matthew 1:13 · Named in the generations after the exile. · *1 verses*
+- **Epileptic** · Matthew 4:24 · Mentioned in Matthew 4:24. · *0.6666666666666666 verses*<br><small>aliases: Lunatick · forms: Epilepsy</small>
+- **Eunuch** · Matthew 19:12 · Mentioned in Matthew 19:12. · *0.3333333333333333 verses*
+- **Farthing** · Matthew 5:26 · Mentioned in Matthew 5:26. · *0.6666666666666666 verses*<br><small>forms: Quadrans</small>
+- **Feast of Unleavened Bread** · Matthew 26:17 · Mentioned in Matthew 26:17. · *0.3333333333333333 verses*
+- **Fever** · Matthew 8:14 · Mentioned in Matthew 8:14. · *0.6666666666666666 verses*
+- **Field of Blood** · Matthew 27:8 · Named in Matthew 27:8. · *0 verses*<br><small>aliases: The field of blood · forms: Akeldama, Aceldama</small>
+- **Fig tree** · Matthew 7:16; Matthew 21:19 · Mentioned in Matthew 7:16. · *1.6666666666666667 verses*<br><small>aliases: Fig</small>
+- **Figs** · Matthew 7:16 · Mentioned in Matthew 7:16. · *0.3333333333333333 verses*
+- **Finger** · Matthew 23:4 · Mentioned in Matthew 23:4. · *0.3333333333333333 verses*
+- **Fishermen** · Matthew 4:18 · Mentioned in Matthew 4:18. · *1 verses*<br><small>aliases: Fishers · forms: Fisherman</small>
+- **Fist** · Matthew 26:67 · Mentioned in Matthew 26:67. · *0.3333333333333333 verses*
+- **Flax** · Matthew 12:20 · Mentioned in Matthew 12:20. · *0.3333333333333333 verses*
+- **Flesh** · Matthew 16:17 · Mentioned in Matthew 16:17. · *1.6666666666666667 verses*
+- **Flood** · Matthew 7:25 · Mentioned in Matthew 7:25. · *1.3333333333333333 verses*
+- **Flute** · Matthew 9:23 · Mentioned in Matthew 9:23. · *0.6666666666666666 verses*
+- **Fool** · Matthew 5:22 · Mentioned in Matthew 5:22. · *1 verses*
+- **Footstool** · Matthew 5:35 · Mentioned in Matthew 5:35. · *0.6666666666666666 verses*
+- **Fork** · Matthew 3:12 · Mentioned in Matthew 3:12. · *0.3333333333333333 verses*
+- **Foundation** · Matthew 13:35 · Mentioned in Matthew 13:35. · *0.6666666666666666 verses*
+- **Fox** · Matthew 8:20 · Mentioned in Matthew 8:20. · *0.3333333333333333 verses*
+- **Frankincense** · Matthew 2:11 · Mentioned in Matthew 2:11. · *0.3333333333333333 verses*
+- **Fringe** · Matthew 9:20 · Mentioned in Matthew 9:20. · *1 verses*
+- **Furnace** · Matthew 13:42 · Mentioned in Matthew 13:42. · *0.6666666666666666 verses*
+- **Gall** · Matthew 27:34 · Mentioned in Matthew 27:34. · *0.3333333333333333 verses*
+- **Garner** · Matthew 3:12 · Mentioned in Matthew 3:12. · *0.3333333333333333 verses*<br><small>forms: Granary</small>
+- **Gate** · Matthew 7:13 · Mentioned in Matthew 7:13. · *1 verses*
+- **Gennesaret** · Matthew 14:34 · Named in Matthew 14:34. · *1 verses*<br><small>forms: Lake of Gennesaret</small>
+- **Gergesenes** · Matthew 8:28 · Named in Matthew 8:28. · *1 verses*
+- **Gethsemane** · Matthew 26:36 · Named in Matthew 26:36. · *1 verses*
+- **Girdle** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Gnat** · Matthew 23:24 · Mentioned in Matthew 23:24. · *0.3333333333333333 verses*
+- **Goat** · Matthew 25:32 · Mentioned in Matthew 25:32. · *0.6666666666666666 verses*
+- **Gold** · Matthew 2:11 · Mentioned in Matthew 2:11. · *1.3333333333333333 verses*
+- **Golgotha** · Matthew 27:33 · Named in Matthew 27:33. · *1 verses*<br><small>aliases: Place of a Skull, The Place of a Skull · forms: Calvary</small>
+- **Gomorrah** · Matthew 10:15 · Named in Matthew 10:15. · *1 verses*<br><small>aliases: Gomorrha</small>
+- **Grain** · Matthew 12:1 · Mentioned in Matthew 12:1. · *1.3333333333333333 verses*<br><small>aliases: Corn</small>
+- **Grapes** · Matthew 7:16 · Mentioned in Matthew 7:16. · *0.3333333333333333 verses*
+- **Grass** · Matthew 6:30 · Mentioned in Matthew 6:30. · *0.6666666666666666 verses*
+- **Guard** · Matthew 27:65 · Mentioned in Matthew 27:65. · *1.3333333333333333 verses*
+- **Hair** · Matthew 3:4 · Mentioned in Matthew 3:4. · *1 verses*
+- **Hedge** · Matthew 21:33 · Mentioned in Matthew 21:33. · *0.3333333333333333 verses*<br><small>forms: Fence</small>
+- **Hem** · Matthew 9:20 · Mentioned in Matthew 9:20. · *0.6666666666666666 verses*
+- **Hen** · Matthew 23:37 · Mentioned in Matthew 23:37. · *0.3333333333333333 verses*
+- **Hezron** · Matthew 1:3 · Son of Perez. · *1 verses*<br><small>aliases: Esrom</small>
+- **Highway** · Matthew 22:9 · Mentioned in Matthew 22:9. · *0.6666666666666666 verses*
+- **Hill** · Matthew 5:14 · Mentioned in Matthew 5:14. · *0.3333333333333333 verses*
+- **Holy Place** · Matthew 24:15 · Named in Matthew 24:15. · *0 verses*
+- **Honey** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Hook** · Matthew 17:27 · Mentioned in Matthew 17:27. · *0.3333333333333333 verses*<br><small>forms: Fishhook</small>
+- **Image** · Matthew 22:20 · Mentioned in Matthew 22:20. · *0.3333333333333333 verses*<br><small>forms: Statue</small>
+- **Immanuel** · Matthew 1:23 · Mentioned in Matthew 1:23. · *0.3333333333333333 verses*<br><small>aliases: Emmanuel</small>
+- **Infirmity** · Matthew 8:17 · Mentioned in Matthew 8:17. · *0.3333333333333333 verses*<br><small>aliases: Infirmities</small>
+- **Issue of blood** · Matthew 9:20 · Mentioned in Matthew 9:20. · *0.3333333333333333 verses*<br><small>forms: Bleeding, Flow of blood</small>
+- **Jar** · Matthew 26:7 · Mentioned in Matthew 26:7. · *0.3333333333333333 verses*
+- **Jehoshaphat** · Matthew 1:8 · Son of Asa. · *1 verses*<br><small>aliases: Josaphat</small>
+- **Jericho** · Matthew 20:29 · Named in Matthew 20:29. · *1 verses*
+- **Joram** · Matthew 1:8 · Son of Jehoshaphat. · *1 verses*<br><small>forms: Jehoram</small>
+- **Jotham** · Matthew 1:9 · Son of Uzziah. · *1 verses*<br><small>aliases: Joatham</small>
+- **Judge** · Matthew 5:25 · Mentioned in Matthew 5:25. · *1.3333333333333333 verses*
+- **Keeper** · Matthew 28:4 · Mentioned in Matthew 28:4. · *0.3333333333333333 verses*
+- **Key** · Matthew 16:19 · Mentioned in Matthew 16:19. · *0.3333333333333333 verses*
+- **Knee** · Matthew 27:29 · Mentioned in Matthew 27:29. · *0.3333333333333333 verses*
+- **Lame** · Matthew 11:5 · Mentioned in Matthew 11:5. · *1.3333333333333333 verses*<br><small>forms: Lameness</small>
+- **Lawyer** · Matthew 22:35 · Mentioned in Matthew 22:35. · *0.3333333333333333 verses*
+- **Leather** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Leprosy** · Matthew 8:2; Matthew 8:3 · Mentioned in Matthew 8:2. · *1.6666666666666667 verses*<br><small>aliases: Leper</small>
+- **Lightning** · Matthew 24:27 · Mentioned in Matthew 24:27. · *0.6666666666666666 verses*
+- **Lily** · Matthew 6:28 · Mentioned in Matthew 6:28. · *0.3333333333333333 verses*<br><small>aliases: Lilies</small>
+- **Linen** · Matthew 27:59 · Mentioned in Matthew 27:59. · *0.3333333333333333 verses*
+- **Linen cloth** · Matthew 27:59 · Mentioned in Matthew 27:59. · *0.3333333333333333 verses*<br><small>forms: Shroud</small>
+- **Lips** · Matthew 15:8 · Mentioned in Matthew 15:8. · *0.3333333333333333 verses*<br><small>aliases: Lip</small>
+- **Locust** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Locusts** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Lodge** · Matthew 13:32 · Mentioned in Matthew 13:32. · *0.3333333333333333 verses*<br><small>forms: Hut, Cottage</small>
+- **Loins** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Manasseh** · Matthew 1:10 · Son of Hezekiah. · *1 verses*<br><small>aliases: Manasses</small>
+- **Marketplace** · Matthew 11:16 · Mentioned in Matthew 11:16. · *1 verses*<br><small>aliases: Market</small>
+- **Mary the mother of James and Joses** · Matthew 1:16; Matthew 27:56 · Named in Matthew 1:16. · *0 verses*<br><small>forms: Mary mother of James</small>
+- **Matthan** · Matthew 1:15 · Grandfather of Joseph. · *1 verses*
+- **Meal** · Matthew 13:33 · Mentioned in Matthew 13:33. · *0.3333333333333333 verses*<br><small>forms: Flour</small>
+- **Merchant** · Matthew 13:45 · Mentioned in Matthew 13:45. · *0.3333333333333333 verses*
+- **Messenger** · Matthew 11:10 · Mentioned in Matthew 11:10. · *0.3333333333333333 verses*
+- **Mile** · Matthew 5:41 · Mentioned in Matthew 5:41. · *0.3333333333333333 verses*
+- **Millstone** · Matthew 18:6 · Mentioned in Matthew 18:6. · *0.3333333333333333 verses*
+- **Minstrel** · Matthew 9:23 · Mentioned in Matthew 9:23. · *0.3333333333333333 verses*
+- **Money changer** · Matthew 21:12 · Mentioned in Matthew 21:12. · *0.3333333333333333 verses*
+- **Moon** · Matthew 24:29 · Mentioned in Matthew 24:29. · *0.3333333333333333 verses*
+- **Moth** · Matthew 6:19 · Mentioned in Matthew 6:19. · *0.6666666666666666 verses*
+- **Mustard** · Matthew 13:31 · Mentioned in Matthew 13:31. · *0.6666666666666666 verses*
+- **Mute** · Matthew 9:32 · Mentioned in Matthew 9:32. · *1.6666666666666667 verses*<br><small>aliases: Dumb</small>
+- **Myrrh** · Matthew 2:11 · Mentioned in Matthew 2:11. · *0.3333333333333333 verses*
+- **Nahshon** · Matthew 1:4 · Father of Salmon. · *1 verses*<br><small>aliases: Naasson</small>
+- **Neck** · Matthew 18:6 · Mentioned in Matthew 18:6. · *0.3333333333333333 verses*
+- **Needle** · Matthew 19:24 · Mentioned in Matthew 19:24. · *0.3333333333333333 verses*
+- **Net** · Matthew 4:18 · Mentioned in Matthew 4:18. · *1.3333333333333333 verses*
+- **New wine** · Matthew 9:17 · Mentioned in Matthew 9:17. · *0.3333333333333333 verses*
+- **Nineveh** · Matthew 12:41 · Named in Matthew 12:41. · *1 verses*<br><small>forms: Huzzab, Nineve</small>
+- **Obed** · Matthew 1:5 · Father of Jesse. · *1 verses*
+- **Officer** · Matthew 5:25 · Mentioned in Matthew 5:25. · *0.6666666666666666 verses*
+- **Oil** · Matthew 25:3 · Mentioned in Matthew 25:3. · *1 verses*<br><small>forms: Olive oil</small>
+- **Olive** · Matthew 21:1 · Mentioned in Matthew 21:1. · *1 verses*<br><small>forms: Olive tree</small>
+- **Oven** · Matthew 6:30 · Mentioned in Matthew 6:30. · *0.3333333333333333 verses*
+- **Oxen** · Matthew 22:4 · Mentioned in Matthew 22:4. · *0.3333333333333333 verses*
+- **Palace** · Matthew 26:3 · Mentioned in Matthew 26:3. · *1 verses*
+- **Palsy** · Matthew 4:24; Matthew 8:6 · Mentioned in Matthew 4:24. · *1.3333333333333333 verses*<br><small>aliases: Paralyzed, Paralytic · forms: Paralysis</small>
+- **Passover** · Matthew 26:2 · Mentioned in Matthew 26:2. · *1.3333333333333333 verses*
+- **Pearl** · Matthew 7:6 · Mentioned in Matthew 7:6. · *1 verses*
+- **Pen** · Matthew 5:18 · Mentioned in Matthew 5:18. · *0.3333333333333333 verses*
+- **Perez** · Matthew 1:3 · Son of Judah and Tamar. · *1 verses*<br><small>aliases: Phares</small>
+- **Pestilence** · Matthew 24:7 · Mentioned in Matthew 24:7. · *0.3333333333333333 verses*
+- **Phylacteries** · Matthew 23:5 · Mentioned in Matthew 23:5. · *0.3333333333333333 verses*
+- **Physician** · Matthew 9:12 · Mentioned in Matthew 9:12. · *0.3333333333333333 verses*
+- **Pieces of silver** · Matthew 26:15 · Mentioned in Matthew 26:15. · *1.6666666666666667 verses*<br><small>forms: Piece of silver</small>
+- **Pig** · Matthew 7:6 · Mentioned in Matthew 7:6. · *1.3333333333333333 verses*<br><small>aliases: Swine</small>
+- **Plague** · Matthew 24:7 · Mentioned in Matthew 24:7. · *0.3333333333333333 verses*
+- **Porch** · Matthew 26:71 · Mentioned in Matthew 26:71. · *0.3333333333333333 verses*<br><small>forms: Portico</small>
+- **Potter** · Matthew 27:7 · Mentioned in Matthew 27:7. · *0.6666666666666666 verses*
+- **Praetorium** · Matthew 27:27 · Mentioned in Matthew 27:27. · *0.3333333333333333 verses*<br><small>forms: Judgment hall</small>
+- **Prince** · Matthew 2:6 · Mentioned in Matthew 2:6. · *1.3333333333333333 verses*
+- **Purse** · Matthew 10:9 · Mentioned in Matthew 10:9. · *0.3333333333333333 verses*
+- **Queen** · Matthew 12:42 · Mentioned in Matthew 12:42. · *0.3333333333333333 verses*
+- **Rabbi** · Matthew 23:7 · Mentioned in Matthew 23:7. · *1.3333333333333333 verses*
+- **Rachel** · Matthew 2:18 · Named in Matthew 2:18. · *1 verses*<br><small>forms: Rahel</small>
+- **Rahab** · Matthew 1:5 · Mother of Boaz. · *1 verses*<br><small>aliases: Rachab</small>
+- **Rain** · Matthew 5:45 · Mentioned in Matthew 5:45. · *1 verses*
+- **Ramah** · Matthew 2:18 · Named in Matthew 2:18. · *1 verses*<br><small>aliases: Rama · forms: Ramath</small>
+- **Reaper** · Matthew 13:30 · Mentioned in Matthew 13:30. · *0.6666666666666666 verses*
+- **Reed** · Matthew 11:7 · Mentioned in Matthew 11:7. · *1.6666666666666667 verses*<br><small>forms: Reeds</small>
+- **Rehoboam** · Matthew 1:7 · Son of Solomon. · *1 verses*<br><small>aliases: Roboam</small>
+- **Robe** · Matthew 27:28 · Mentioned in Matthew 27:28. · *0.6666666666666666 verses*
+- **Rock** · Matthew 7:24 · Mentioned in Matthew 7:24. · *1.6666666666666667 verses*
+- **Roof** · Matthew 8:8; Matthew 10:27 · Mentioned in Matthew 8:8. · *1 verses*<br><small>aliases: Housetop</small>
+- **Rooster** · Matthew 26:34 · Mentioned in Matthew 26:34. · *1 verses*
+- **Ruth** · Matthew 1:5 · Mother of Obed. · *1 verses*
+- **Sackcloth** · Matthew 11:21 · Mentioned in Matthew 11:21. · *0.3333333333333333 verses*
+- **Salt** · Matthew 5:13 · Mentioned in Matthew 5:13. · *0.3333333333333333 verses*
+- **Sand** · Matthew 7:26 · Mentioned in Matthew 7:26. · *0.3333333333333333 verses*
+- **Sandals** · Matthew 3:11 · Mentioned in Matthew 3:11. · *0.6666666666666666 verses*<br><small>aliases: Sandal</small>
+- **Satan** · Matthew 4:10 · Mentioned in Matthew 4:10. · *1 verses*
+- **Scarlet** · Matthew 27:28 · Mentioned in Matthew 27:28. · *0.3333333333333333 verses*
+- **Scourge** · Matthew 10:17 · Mentioned in Matthew 10:17. · *1 verses*<br><small>forms: Whip</small>
+- **Serpent** · Matthew 7:10 · Mentioned in Matthew 7:10. · *1 verses*<br><small>forms: Snake</small>
+- **Shealtiel** · Matthew 1:12 · Father of Zerubbabel. · *1 verses*<br><small>aliases: Salathiel</small>
+- **Shepherd** · Matthew 2:6 · Mentioned in Matthew 2:6. · *1.3333333333333333 verses*
+- **Shoes** · Matthew 3:11 · Mentioned in Matthew 3:11. · *0.6666666666666666 verses*<br><small>aliases: Shoe</small>
+- **Shore** · Matthew 13:2 · Mentioned in Matthew 13:2. · *0.6666666666666666 verses*<br><small>forms: Seashore</small>
+- **Shoulder** · Matthew 23:4 · Mentioned in Matthew 23:4. · *0.3333333333333333 verses*
+- **Show bread** · Matthew 12:4 · Mentioned in Matthew 12:4. · *0.3333333333333333 verses*<br><small>aliases: Shewbread</small>
+- **Simon the Zealot** · Matthew 4:18; Matthew 10:4 · Named in Matthew 4:18. · *0 verses*<br><small>forms: Simon the Cananaean, Simon Zelotes</small>
+- **Skin** · Matthew 9:17 · Mentioned in Matthew 9:17. · *0.3333333333333333 verses*
+- **Skull** · Matthew 27:33 · Mentioned in Matthew 27:33. · *0.3333333333333333 verses*
+- **Snow** · Matthew 28:3 · Mentioned in Matthew 28:3. · *0.3333333333333333 verses*
+- **Soldier** · Matthew 8:9 · Mentioned in Matthew 8:9. · *1 verses*
+- **Sore** · Matthew 17:6 · Mentioned in Matthew 17:6. · *1 verses*<br><small>forms: Sores</small>
+- **Sower** · Matthew 13:3 · Mentioned in Matthew 13:3. · *0.6666666666666666 verses*
+- **Sparrow** · Matthew 10:29 · Mentioned in Matthew 10:29. · *0.6666666666666666 verses*
+- **Staff** · Matthew 10:10 · Mentioned in Matthew 10:10. · *0.3333333333333333 verses*
+- **Star** · Matthew 2:2; Matthew 24:29 · Mentioned in Matthew 2:2. · *1.6666666666666667 verses*<br><small>aliases: Stars</small>
+- **Stater** · Matthew 17:27 · Mentioned in Matthew 17:27. · *0.3333333333333333 verses*
+- **Steward** · Matthew 20:8 · Mentioned in Matthew 20:8. · *0.3333333333333333 verses*
+- **Storm** · Matthew 8:24 · Mentioned in Matthew 8:24. · *0.3333333333333333 verses*<br><small>aliases: Tempest</small>
+- **Street** · Matthew 6:2 · Mentioned in Matthew 6:2. · *1 verses*
+- **Sun** · Matthew 5:45 · Mentioned in Matthew 5:45. · *1.6666666666666667 verses*
+- **Sword** · Matthew 10:34 · Mentioned in Matthew 10:34. · *1.6666666666666667 verses*
+- **Syria** · Matthew 4:24 · Named in Matthew 4:24. · *1 verses*<br><small>forms: Syria-damascus</small>
+- **Tabernacle** · Matthew 17:4 · Mentioned in Matthew 17:4. · *0.3333333333333333 verses*
+- **Table** · Matthew 14:9 · Mentioned in Matthew 14:9. · *1.6666666666666667 verses*
+- **Tamar** · Matthew 1:3 · Mother of Perez and Zerah. · *1 verses*<br><small>aliases: Thamar</small>
+- **Tent** · Matthew 17:4 · Mentioned in Matthew 17:4. · *0.3333333333333333 verses*
+- **Tetrarch** · Matthew 14:1 · Mentioned in Matthew 14:1. · *0.3333333333333333 verses*
+- **Thaddaeus** · Matthew 1:2; Matthew 10:3 · Named in Matthew 1:2. · *1 verses*<br><small>aliases: Lebbaeus · forms: Judas son of James, Jude</small>
+- **Thistles** · Matthew 7:16 · Mentioned in Matthew 7:16. · *0.3333333333333333 verses*<br><small>aliases: Thistle</small>
+- **Thomas** · Matthew 10:3 · Named in Matthew 10:3. · *1 verses*<br><small>forms: Didymus</small>
+- **Thorns** · Matthew 7:16 · Mentioned in Matthew 7:16. · *1.3333333333333333 verses*<br><small>aliases: Thorn</small>
+- **Threshing floor** · Matthew 3:12 · Mentioned in Matthew 3:12. · *0.3333333333333333 verses*
+- **Throat** · Matthew 18:28 · Mentioned in Matthew 18:28. · *0.3333333333333333 verses*
+- **Throne** · Matthew 5:34 · Mentioned in Matthew 5:34. · *1.3333333333333333 verses*
+- **Tower** · Matthew 21:33 · Mentioned in Matthew 21:33. · *0.3333333333333333 verses*<br><small>forms: Watchtower</small>
+- **Treasury** · Matthew 27:6 · Mentioned in Matthew 27:6. · *0.3333333333333333 verses*
+- **Trumpet** · Matthew 6:2 · Mentioned in Matthew 6:2. · *0.6666666666666666 verses*
+- **Unclean spirit** · Matthew 10:1 · Mentioned in Matthew 10:1. · *0.6666666666666666 verses*
+- **Unleavened bread** · Matthew 26:17 · Mentioned in Matthew 26:17. · *0.3333333333333333 verses*
+- **Uriah** · Matthew 1:6 · Solomon's mother is identified as the one who had been his wife. · *1 verses*<br><small>aliases: Urias · forms: Urijah</small>
+- **Veil** · Matthew 27:51 · Mentioned in Matthew 27:51. · *0.3333333333333333 verses*
+- **Vine** · Matthew 26:29 · Mentioned in Matthew 26:29. · *0.3333333333333333 verses*<br><small>forms: Grapevine</small>
+- **Vinegar** · Matthew 27:34 · Mentioned in Matthew 27:34. · *0.6666666666666666 verses*
+- **Viper** · Matthew 3:7 · Mentioned in Matthew 3:7. · *1 verses*
+- **Virgin** · Matthew 1:23 · Mentioned in Matthew 1:23. · *1.3333333333333333 verses*
+- **Vulture** · Matthew 24:28 · Mentioned in Matthew 24:28. · *0.3333333333333333 verses*
+- **Waist** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Wedding garment** · Matthew 22:11 · Mentioned in Matthew 22:11. · *0.6666666666666666 verses*
+- **Whale** · Matthew 12:40 · Mentioned in Matthew 12:40. · *0.3333333333333333 verses*
+- **Wheat** · Matthew 3:12 · Mentioned in Matthew 3:12. · *1.3333333333333333 verses*
+- **Widow** · Matthew 23:13 · Mentioned in Matthew 23:13. · *0.6666666666666666 verses*
+- **Wild honey** · Matthew 3:4 · Mentioned in Matthew 3:4. · *0.3333333333333333 verses*
+- **Wine** · Matthew 9:17 · Mentioned in Matthew 9:17. · *1 verses*
+- **Winepress** · Matthew 21:33 · Mentioned in Matthew 21:33. · *0.3333333333333333 verses*
+- **Wineskin** · Matthew 9:17 · Mentioned in Matthew 9:17. · *0.3333333333333333 verses*
+- **Winnowing fork** · Matthew 3:12 · Mentioned in Matthew 3:12. · *0.3333333333333333 verses*
+- **Wise men** · Matthew 2:1 · Mentioned in Matthew 2:1. · *1.3333333333333333 verses*<br><small>forms: Magi</small>
+- **Withered hand** · Matthew 12:10 · Mentioned in Matthew 12:10. · *0.3333333333333333 verses*
+- **Womb** · Matthew 19:12 · Mentioned in Matthew 19:12. · *0.3333333333333333 verses*
+- **Yeast** · Matthew 13:33 · Mentioned in Matthew 13:33. · *1.3333333333333333 verses*<br><small>aliases: Leaven</small>
+- **Yoke** · Matthew 11:29 · Mentioned in Matthew 11:29. · *0.6666666666666666 verses*
+- **Zachariah** · Matthew 23:35 · Named in Matthew 23:35. · *1 verses*<br><small>forms: Zechariah, Zechariah the prophet</small>
+- **Zacharias** · Matthew 23:35 · Named in Matthew 23:35. · *1 verses*<br><small>forms: Zechariah the priest, Zechariah father of John</small>
+- **Zadok** · Matthew 1:14 · Named in the generations after the exile. · *1 verses*<br><small>aliases: Sadoc</small>
+- **Zerah** · Matthew 1:3 · Twin brother of Perez. · *1 verses*<br><small>aliases: Zara</small>
+
+### Near misses
+
+- **Zacchaeus, Good Samaritan, Prodigal son**: Only Luke tells those stories (Luke 19; 10; 15).
+- **Nicodemus**: Only John tells of him.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Numbers.
+
+`numbers-anything` · Books of the Bible · 495 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 11 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 39 |
+| 🪙 Lost Coin (60) | 98 |
+| 💎 Hidden Treasure (85) | 346 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Eldad. Eldad and Medad stayed in the camp and prophesied there, and Moses wished all the LORD's people were prophets (Numbers 11:26–29).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Aaron** · Numbers 1:3 · Named in Numbers 1:3. · *97 verses*
+- **Balak** · Numbers 22:2 · Son of Zippor. · *37 verses*
+- **Eleazar** · Numbers 3:2 · Named in Numbers 3:2. · *34 verses*
+- **Lamb** · Numbers 6:12 · Mentioned in Numbers 6:12. · *20.666666666666668 verses*
+- **Meat** · Numbers 4:14 · Mentioned in Numbers 4:14. · *20.333333333333332 verses*
+- **Moab** · Numbers 21:11 · Named in Numbers 21:11. · *30 verses*
+- **Moses** · Numbers 1:1 · Named in Numbers 1:1. · *217 verses*
+- **Priest** · Numbers 3:3 · Mentioned in Numbers 3:3. · *22 verses*
+- **Prince** · Numbers 1:16 · Mentioned in Numbers 1:16. · *22 verses*
+- **Tabernacle** · Numbers 1:1 · Mentioned in Numbers 1:1. · *30.666666666666668 verses*
+- **Tent** · Numbers 1:1 · Mentioned in Numbers 1:1. · *26.333333333333332 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Asher** · Numbers 1:13 · Named in Numbers 1:13. · *11 verses*
+- **Balaam** · Numbers 22:5 · Named in Numbers 22:5. · *49 verses*
+- **Benjamin** · Numbers 1:11 · Named in Numbers 1:11. · *10 verses*
+- **Bull** · Numbers 7:15 · Mentioned in Numbers 7:15. · *17.666666666666668 verses*<br><small>aliases: Bullock</small>
+- **Caleb** · Numbers 13:6 · Son of Jephunneh. · *9 verses*
+- **Canaan** · Numbers 13:2 · Named in Numbers 13:2. · *11 verses*<br><small>forms: Chanaan, Gentile, Glorious Land</small>
+- **Cattle** · Numbers 3:41 · Mentioned in Numbers 3:41. · *10 verses*
+- **Dan** · Numbers 1:12 · Named in Numbers 1:12. · *10 verses*
+- **Edom** · Numbers 20:14 · Named in Numbers 20:14. · *9 verses*<br><small>forms: Esau</small>
+- **Eliab** · Numbers 1:9 · Son of Helon. · *9 verses*
+- **Fire** · Numbers 3:4 · Mentioned in Numbers 3:4. · *12 verses*
+- **Flour** · Numbers 4:16; Numbers 6:15 · Mentioned in Numbers 4:16. · *18.666666666666668 verses*<br><small>aliases: Meal</small>
+- **Gad** · Numbers 1:14 · Named in Numbers 1:14. · *20 verses*
+- **Gershon** · Numbers 3:17 · Named in Numbers 3:17. · *11 verses*
+- **Gilead** · Numbers 32:1 · Named in Numbers 32:1. · *9 verses*
+- **Goat** · Numbers 7:16 · Mentioned in Numbers 7:16. · *14.666666666666666 verses*
+- **Hand** · Numbers 4:28 · Mentioned in Numbers 4:28. · *14 verses*
+- **Head** · Numbers 1:4 · Mentioned in Numbers 1:4. · *11.666666666666666 verses*
+- **House** · Numbers 1:2 · Mentioned in Numbers 1:2. · *18 verses*
+- **Issachar** · Numbers 1:8 · Named in Numbers 1:8. · *10 verses*
+- **Jordan** · Numbers 13:29 · Named in Numbers 13:29. · *20 verses*
+- **Joseph** · Numbers 1:10 · Named in Numbers 1:10. · *12 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Joshua** · Numbers 11:28 · Named in Numbers 11:28. · *11 verses*
+- **Judah** · Numbers 1:7 · Named in Numbers 1:7. · *12 verses*<br><small>forms: Judas</small>
+- **Kohath** · Numbers 3:17 · Named in Numbers 3:17. · *11 verses*
+- **Korah** · Numbers 16:1 · Son of Izhar. · *15 verses*
+- **Levi** · Numbers 1:49 · Named in Numbers 1:49. · *15 verses*
+- **Levite** · Numbers 1:47 · Mentioned in Numbers 1:47. · *16 verses*
+- **Manasseh** · Numbers 1:10 · Named in Numbers 1:10. · *19 verses*<br><small>forms: Manasses</small>
+- **Merari** · Numbers 3:17 · Named in Numbers 3:17. · *12 verses*
+- **Miriam** · Numbers 12:1 · Named in Numbers 12:1. · *7 verses*
+- **Mount Hor** · Numbers 20:22 · Named in Numbers 20:22. · *11 verses*
+- **Naphtali** · Numbers 1:15 · Named in Numbers 1:15. · *10 verses*
+- **Nun** · Numbers 11:28 · Named in Numbers 11:28. · *11 verses*
+- **Oil** · Numbers 4:9 · Mentioned in Numbers 4:9. · *10.666666666666666 verses*<br><small>forms: Olive oil</small>
+- **Reuben** · Numbers 1:5 · Named in Numbers 1:5. · *19 verses*
+- **Shekel** · Numbers 3:47 · Mentioned in Numbers 3:47. · *10 verses*
+- **Water** · Numbers 5:17 · Mentioned in Numbers 5:17. · *12.333333333333334 verses*
+- **Wilderness** · Numbers 1:1 · Mentioned in Numbers 1:1. · *14.666666666666666 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Abarim** · Numbers 27:12 · Named in Numbers 27:12. · *4 verses*
+- **Abidan** · Numbers 1:11 · Named in Numbers 1:11. · *5 verses*
+- **Abihu** · Numbers 3:2 · Named in Numbers 3:2. · *4 verses*
+- **Abiram** · Numbers 16:1 · Named in Numbers 16:1. · *6 verses*
+- **Abronah** · Numbers 33:34 · Named in Numbers 33:34. · *2 verses*<br><small>aliases: Ebronah</small>
+- **Ahiezer** · Numbers 1:12 · Named in Numbers 1:12. · *5 verses*
+- **Ahira** · Numbers 1:15 · Named in Numbers 1:15. · *5 verses*
+- **Altar** · Numbers 3:26 · Mentioned in Numbers 3:26. · *8.666666666666666 verses*
+- **Ammihud** · Numbers 1:10 · Named in Numbers 1:10. · *7 verses*
+- **Amminadab** · Numbers 1:7 · Named in Numbers 1:7. · *5 verses*<br><small>forms: Aminadab</small>
+- **Ammishaddai** · Numbers 1:12 · Named in Numbers 1:12. · *5 verses*
+- **Amram** · Numbers 3:19 · Named in Numbers 3:19. · *3 verses*
+- **Anak** · Numbers 13:22 · Named in Numbers 13:22. · *3 verses*
+- **Angel** · Numbers 20:16 · Mentioned in Numbers 20:16. · *3.6666666666666665 verses*<br><small>forms: Angels</small>
+- **Arnon** · Numbers 21:13 · Named in Numbers 21:13. · *6 verses*
+- **Back** · Numbers 9:7 · Mentioned in Numbers 9:7. · *2.6666666666666665 verses*
+- **Badger** · Numbers 4:6 · Mentioned in Numbers 4:6. · *2.3333333333333335 verses*
+- **Beor** · Numbers 22:5 · Named in Numbers 22:5. · *4 verses*
+- **Blood** · Numbers 18:17 · Mentioned in Numbers 18:17. · *3.3333333333333335 verses*
+- **Bowl** · Numbers 4:7 · Mentioned in Numbers 4:7. · *5 verses*
+- **Bread** · Numbers 4:7 · Mentioned in Numbers 4:7. · *3 verses*
+- **Captain** · Numbers 2:3 · Mentioned in Numbers 2:3. · *5.666666666666667 verses*
+- **Censer** · Numbers 4:14 · Mentioned in Numbers 4:14. · *2.6666666666666665 verses*
+- **Chief** · Numbers 3:24 · Mentioned in Numbers 3:24. · *4 verses*
+- **Cloud** · Numbers 9:15 · Mentioned in Numbers 9:15. · *5.333333333333333 verses*<br><small>forms: Clouds</small>
+- **Dibon** · Numbers 21:30; Numbers 33:45 · Named in Numbers 21:30. · *5 verses*<br><small>aliases: Dibon Gad</small>
+- **Donkey** · Numbers 16:15 · Mentioned in Numbers 16:15. · *5.333333333333333 verses*<br><small>aliases: Ass</small>
+- **Door** · Numbers 3:25 · Mentioned in Numbers 3:25. · *5.666666666666667 verses*
+- **Elder** · Numbers 11:16 · Mentioned in Numbers 11:16. · *2.3333333333333335 verses*
+- **Elders** · Numbers 11:16 · Mentioned in Numbers 11:16. · *2.3333333333333335 verses*
+- **Elishama** · Numbers 1:10 · Named in Numbers 1:10. · *5 verses*
+- **Ephah** · Numbers 5:15 · Mentioned in Numbers 5:15. · *2.3333333333333335 verses*
+- **Eshcol** · Numbers 13:23 · Named in Numbers 13:23. · *3 verses*
+- **Etham** · Numbers 33:6 · Named in Numbers 33:6. · *3 verses*
+- **Eye** · Numbers 5:13 · Mentioned in Numbers 5:13. · *5 verses*
+- **Face** · Numbers 6:25 · Mentioned in Numbers 6:25. · *5.333333333333333 verses*
+- **Field** · Numbers 16:14 · Mentioned in Numbers 16:14. · *2.6666666666666665 verses*
+- **Fine flour** · Numbers 6:15 · Mentioned in Numbers 6:15. · *8.666666666666666 verses*
+- **Flesh** · Numbers 8:7 · Mentioned in Numbers 8:7. · *4.666666666666667 verses*
+- **Gamaliel** · Numbers 1:10 · Named in Numbers 1:10. · *5 verses*
+- **Gold** · Numbers 7:14 · Mentioned in Numbers 7:14. · *4 verses*
+- **Hazeroth** · Numbers 11:35 · Named in Numbers 11:35. · *4 verses*
+- **Helon** · Numbers 1:9 · Named in Numbers 1:9. · *5 verses*
+- **Hepher** · Numbers 26:32 · Named in Numbers 26:32. · *3 verses*
+- **Heshbon** · Numbers 21:25 · Named in Numbers 21:25. · *8 verses*
+- **Hin** · Numbers 15:4 · Mentioned in Numbers 15:4. · *3 verses*
+- **Hoglah** · Numbers 26:33 · A daughter of Zelophehad. · *3 verses*
+- **Ithamar** · Numbers 3:2 · Named in Numbers 3:2. · *6 verses*
+- **Iye-abarim** · Numbers 21:11; Numbers 33:45 · Named in Numbers 21:11. · *3 verses*<br><small>aliases: Ije Abarim, Iyim</small>
+- **Jacob** · Numbers 23:7 · Named in Numbers 23:7. · *8 verses*
+- **Jazer** · Numbers 21:32 · Named in Numbers 21:32. · *4 verses*<br><small>aliases: Jaazer</small>
+- **Jephunneh** · Numbers 13:6 · Named in Numbers 13:6. · *7 verses*
+- **Jericho** · Numbers 22:1 · Named in Numbers 22:1. · *9 verses*
+- **Kibroth-hattaavah** · Numbers 11:34 · Named in Numbers 11:34. · *4 verses*
+- **King** · Numbers 20:14 · Mentioned in Numbers 20:14. · *5.666666666666667 verses*
+- **Ladle** · Numbers 7:14 · Mentioned in Numbers 7:14. · *4.666666666666667 verses*
+- **Machir** · Numbers 26:29 · Named in Numbers 26:29. · *5 verses*
+- **Mahlah** · Numbers 26:33 · A daughter of Zelophehad. · *3 verses*
+- **Meribah** · Numbers 20:13 · Named in Numbers 20:13. · *3 verses*<br><small>forms: Meribah Kadesh, Meribath Kadesh, Waters of Meribah-kadesh, Waters of Meribath-kadesh</small>
+- **Midian** · Numbers 22:4 · Named in Numbers 22:4. · *8 verses*
+- **Milcah** · Numbers 26:33 · Nahor's wife; also a daughter of Zelophehad. · *3 verses*
+- **Mountain** · Numbers 13:17 · Mentioned in Numbers 13:17. · *3.3333333333333335 verses*
+- **Mouth** · Numbers 12:8 · Mentioned in Numbers 12:8. · *4 verses*
+- **Nadab** · Numbers 3:2 · Named in Numbers 3:2. · *4 verses*
+- **Nahshon** · Numbers 1:7 · Named in Numbers 1:7. · *5 verses*<br><small>forms: Naasson</small>
+- **Nebo** · Numbers 32:3 · Named in Numbers 32:3. · *3 verses*
+- **Nethaneel** · Numbers 1:8 · Son of Zuar. · *5 verses*
+- **Noah** · Numbers 26:33 · A daughter of Zelophehad. · *3 verses*
+- **Oboth** · Numbers 21:10 · Named in Numbers 21:10. · *4 verses*
+- **Oxen** · Numbers 7:3 · Mentioned in Numbers 7:3. · *6.666666666666667 verses*
+- **Pagiel** · Numbers 1:13 · Named in Numbers 1:13. · *5 verses*
+- **Paran** · Numbers 10:12 · Named in Numbers 10:12. · *4 verses*
+- **Passover** · Numbers 9:2 · Mentioned in Numbers 9:2. · *3.3333333333333335 verses*
+- **Pedahzur** · Numbers 1:10 · Named in Numbers 1:10. · *5 verses*
+- **Peor** · Numbers 23:28 · Named in Numbers 23:28. · *5 verses*
+- **Perez** · Numbers 26:20 · Named in Numbers 26:20. · *4 verses*<br><small>aliases: Pharez · forms: Phares</small>
+- **Phinehas** · Numbers 25:7 · Aaron's grandson. · *3 verses*
+- **Plague** · Numbers 8:19 · Mentioned in Numbers 8:19. · *4.333333333333333 verses*
+- **Red Sea** · Numbers 33:10 · Named in Numbers 33:10. · *4 verses*
+- **Rod** · Numbers 17:8 · Mentioned in Numbers 17:8. · *3.6666666666666665 verses*
+- **Sea** · Numbers 11:22 · Mentioned in Numbers 11:22. · *5 verses*
+- **Servant** · Numbers 11:11 · Mentioned in Numbers 11:11. · *4.333333333333333 verses*
+- **Sheep** · Numbers 18:17 · Mentioned in Numbers 18:17. · *3.3333333333333335 verses*
+- **Side** · Numbers 2:3 · Mentioned in Numbers 2:3. · *7.666666666666667 verses*
+- **Silver** · Numbers 7:13 · Mentioned in Numbers 7:13. · *6 verses*
+- **Simeon** · Numbers 1:6 · Named in Numbers 1:6. · *9 verses*
+- **Skin** · Numbers 4:6 · Mentioned in Numbers 4:6. · *3.3333333333333335 verses*
+- **Spoon** · Numbers 4:7 · Mentioned in Numbers 4:7. · *5 verses*
+- **Stranger** · Numbers 1:51; Numbers 9:14; Numbers 35:15 · Mentioned in Numbers 1:51. · *5 verses*<br><small>aliases: Foreigner, Sojourner</small>
+- **Sword** · Numbers 14:3 · Mentioned in Numbers 14:3. · *3 verses*
+- **Tirzah** · Numbers 26:33 · A daughter of Zelophehad. · *3 verses*
+- **Trumpet** · Numbers 10:2 · Mentioned in Numbers 10:2. · *2.3333333333333335 verses*
+- **Valley** · Numbers 13:23 · Mentioned in Numbers 13:23. · *3 verses*<br><small>forms: Vale</small>
+- **Wine** · Numbers 6:3 · Mentioned in Numbers 6:3. · *3.3333333333333335 verses*
+- **Zebulun** · Numbers 1:9 · Named in Numbers 1:9. · *9 verses*
+- **Zin** · Numbers 13:21 · Named in Numbers 13:21. · *6 verses*<br><small>forms: Wilderness of Kadesh</small>
+- **Zippor** · Numbers 22:2 · Named in Numbers 22:2. · *5 verses*
+- **Zurishaddai** · Numbers 1:6 · Named in Numbers 1:6. · *5 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Abel** · Numbers 33:49 · Named in Numbers 33:49. · *1 verses*
+- **Abel-shittim** · Numbers 33:49 · Named in Numbers 33:49. · *1 verses*
+- **Abihail** · Numbers 3:35 · Named in Numbers 3:35. · *1 verses*
+- **Abraham** · Numbers 32:11 · Named in Numbers 32:11. · *1 verses*<br><small>forms: Abram</small>
+- **Addar** · Numbers 34:4 · Named in Numbers 34:4. · *1 verses*
+- **Agag** · Numbers 24:7 · Named in Numbers 24:7. · *1 verses*
+- **Ahihud** · Numbers 34:27 · Named in Numbers 34:27. · *1 verses*
+- **Ahiman** · Numbers 13:22 · Named in Numbers 13:22. · *1 verses*
+- **Ain** · Numbers 34:11 · Named in Numbers 34:11. · *1 verses*
+- **Akrabbim** · Numbers 34:4 · Named in Numbers 34:4. · *1 verses*<br><small>aliases: Ascent of Akrabbim · forms: Maaleh-acrabbim</small>
+- **Almon-diblathaim** · Numbers 33:46 · Named in Numbers 33:46. · *2 verses*
+- **Almond** · Numbers 17:8 · Mentioned in Numbers 17:8. · *0.3333333333333333 verses*<br><small>forms: Almond tree</small>
+- **Almonds** · Numbers 17:8 · Mentioned in Numbers 17:8. · *0.3333333333333333 verses*
+- **Aloes** · Numbers 24:6 · Mentioned in Numbers 24:6. · *0.3333333333333333 verses*
+- **Alush** · Numbers 33:13 · Named in Numbers 33:13. · *2 verses*
+- **Amalek** · Numbers 13:29 · Named in Numbers 13:29. · *2 verses*
+- **Ammiel** · Numbers 13:12 · Named in Numbers 13:12. · *1 verses*
+- **Ammon** · Numbers 21:24 · Named in Numbers 21:24. · *1 verses*<br><small>forms: Ammonitess</small>
+- **Ar** · Numbers 21:15 · Named in Numbers 21:15. · *2 verses*
+- **Arad** · Numbers 21:1 · Named in Numbers 21:1. · *2 verses*
+- **Aram** · Numbers 23:7 · Named in Numbers 23:7. · *1 verses*
+- **Ard** · Numbers 26:40 · Named in Numbers 26:40. · *1 verses*
+- **Ark** · Numbers 3:31 · Mentioned in Numbers 3:31. · *2 verses*
+- **Arm** · Numbers 31:3 · Mentioned in Numbers 31:3. · *0.6666666666666666 verses*
+- **Aroer** · Numbers 32:34 · Named in Numbers 32:34. · *1 verses*
+- **Arrow** · Numbers 24:8 · Mentioned in Numbers 24:8. · *0.3333333333333333 verses*
+- **Ashes** · Numbers 4:13 · Mentioned in Numbers 4:13. · *1.3333333333333333 verses*
+- **Asshur** · Numbers 24:22 · Named in Numbers 24:22. · *2 verses*<br><small>forms: Assur</small>
+- **Ataroth** · Numbers 32:3 · Named in Numbers 32:3. · *2 verses*
+- **Atharim** · Numbers 21:1 · Named in Numbers 21:1. · *1 verses*
+- **Atroth-shophan** · Numbers 32:35 · Named in Numbers 32:35. · *1 verses*<br><small>aliases: Atroth, Shophan</small>
+- **Azmon** · Numbers 34:4 · Named in Numbers 34:4. · *2 verses*
+- **Baal** · Numbers 22:41 · Mentioned in Numbers 22:41. · *1.6666666666666667 verses*
+- **Baal-meon** · Numbers 32:38 · Named in Numbers 32:38. · *1 verses*<br><small>forms: Beth Baal Meon</small>
+- **Baal-zephon** · Numbers 33:7 · Named in Numbers 33:7. · *1 verses*
+- **Bamoth** · Numbers 21:19 · Named in Numbers 21:19. · *2 verses*
+- **Barley** · Numbers 5:15 · Mentioned in Numbers 5:15. · *0.3333333333333333 verses*
+- **Bashan** · Numbers 21:33 · Named in Numbers 21:33. · *2 verses*
+- **Basin** · Numbers 4:14 · Mentioned in Numbers 4:14. · *0.3333333333333333 verses*<br><small>forms: Laver</small>
+- **Basket** · Numbers 6:15 · Mentioned in Numbers 6:15. · *1 verses*
+- **Bdellium** · Numbers 11:7 · Mentioned in Numbers 11:7. · *0.3333333333333333 verses*
+- **Becher** · Numbers 26:35 · Named in Numbers 26:35. · *1 verses*
+- **Beer** · Numbers 21:16 · Named in Numbers 21:16. · *1 verses*
+- **Bela** · Numbers 26:38 · Named in Numbers 26:38. · *2 verses*
+- **Belly** · Numbers 5:21 · Mentioned in Numbers 5:21. · *1.3333333333333333 verses*<br><small>forms: Stomach</small>
+- **Bene-jaakan** · Numbers 33:31 · Named in Numbers 33:31. · *2 verses*
+- **Beon** · Numbers 32:3 · Named in Numbers 32:3. · *1 verses*
+- **Beriah** · Numbers 26:44 · Named in Numbers 26:44. · *2 verses*
+- **Beth Haran** · Numbers 32:36 · Named in Numbers 32:36. · *1 verses*<br><small>forms: Beth-haram, Beth-aram</small>
+- **Beth-jeshimoth** · Numbers 33:49 · Named in Numbers 33:49. · *1 verses*<br><small>aliases: Beth Jesimoth</small>
+- **Beth-nimrah** · Numbers 32:36 · Named in Numbers 32:36. · *1 verses*
+- **Bit** · Numbers 21:6 · Mentioned in Numbers 21:6. · *0.3333333333333333 verses*
+- **Bitter herbs** · Numbers 9:11 · Mentioned in Numbers 9:11. · *0.3333333333333333 verses*
+- **Blue** · Numbers 4:6 · Mentioned in Numbers 4:6. · *2 verses*
+- **Bones** · Numbers 9:12; Numbers 24:8 · Mentioned in Numbers 9:12. · *1.3333333333333333 verses*<br><small>aliases: Bone</small>
+- **Book** · Numbers 5:23 · Mentioned in Numbers 5:23. · *0.6666666666666666 verses*
+- **Bosom** · Numbers 11:12 · Mentioned in Numbers 11:12. · *0.3333333333333333 verses*
+- **Bowels** · Numbers 5:22 · Mentioned in Numbers 5:22. · *0.3333333333333333 verses*
+- **Bracelets** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*<br><small>aliases: Bracelet</small>
+- **Brass** · Numbers 21:9 · Mentioned in Numbers 21:9. · *0.6666666666666666 verses*
+- **Breast** · Numbers 6:20 · Mentioned in Numbers 6:20. · *0.6666666666666666 verses*
+- **Bronze** · Numbers 16:39 · Mentioned in Numbers 16:39. · *1 verses*
+- **Brook** · Numbers 13:23; Numbers 21:15 · Mentioned in Numbers 13:23. · *1.6666666666666667 verses*<br><small>aliases: Stream</small>
+- **Brook of Egypt** · Numbers 1:1; Numbers 34:5 · Named in Numbers 34:5. · *0 verses*<br><small>forms: Stream of Egypt, Lower, Proud, Rahab</small>
+- **Bucket** · Numbers 24:7 · Mentioned in Numbers 24:7. · *0.3333333333333333 verses*
+- **Cakes** · Numbers 6:15 · Mentioned in Numbers 6:15. · *1.3333333333333333 verses*<br><small>aliases: Cake</small>
+- **Carmi** · Numbers 26:6 · Named in Numbers 26:6. · *1 verses*
+- **Castle** · Numbers 31:10 · Mentioned in Numbers 31:10. · *0.3333333333333333 verses*<br><small>forms: Citadel</small>
+- **Cedar** · Numbers 19:6 · Mentioned in Numbers 19:6. · *0.6666666666666666 verses*
+- **Chain** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*
+- **Chemosh** · Numbers 21:29 · Mentioned in Numbers 21:29. · *0.3333333333333333 verses*
+- **Cherubim** · Numbers 7:89 · Mentioned in Numbers 7:89. · *0.3333333333333333 verses*<br><small>aliases: Cherubims · forms: Cherub</small>
+- **City of refuge** · Numbers 35:25 · Mentioned in Numbers 35:25. · *1.6666666666666667 verses*
+- **Cord** · Numbers 3:26 · Mentioned in Numbers 3:26. · *1.6666666666666667 verses*
+- **Coriander** · Numbers 11:7 · Mentioned in Numbers 11:7. · *0.3333333333333333 verses*
+- **Cozbi** · Numbers 25:15 · A Midianite woman killed by Phinehas. · *2 verses*
+- **Cubit** · Numbers 11:31 · Mentioned in Numbers 11:31. · *1 verses*
+- **Cucumbers** · Numbers 11:5 · Mentioned in Numbers 11:5. · *0.3333333333333333 verses*
+- **Cup** · Numbers 4:7 · Mentioned in Numbers 4:7. · *0.3333333333333333 verses*
+- **Desert** · Numbers 20:1 · Mentioned in Numbers 20:1. · *1.6666666666666667 verses*
+- **Dew** · Numbers 11:9 · Mentioned in Numbers 11:9. · *0.3333333333333333 verses*
+- **Dophkah** · Numbers 33:12 · Named in Numbers 33:12. · *2 verses*
+- **Dough** · Numbers 15:20 · Mentioned in Numbers 15:20. · *0.6666666666666666 verses*
+- **Dust** · Numbers 5:17 · Mentioned in Numbers 5:17. · *0.6666666666666666 verses*
+- **Ear** · Numbers 11:1 · Mentioned in Numbers 11:1. · *1 verses*
+- **Earrings** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*<br><small>aliases: Earring</small>
+- **Edrei** · Numbers 21:33 · Named in Numbers 21:33. · *1 verses*
+- **Elealeh** · Numbers 32:3 · Named in Numbers 32:3. · *2 verses*
+- **Elidad** · Numbers 34:21 · Son of Chislon. · *1 verses*
+- **Elim** · Numbers 33:9 · Named in Numbers 33:9. · *2 verses*
+- **Elon** · Numbers 26:26 · Named in Numbers 26:26. · *1 verses*
+- **Ephod** · Numbers 34:23 · Mentioned in Numbers 34:23. · *0.3333333333333333 verses*
+- **Ewe** · Numbers 6:14 · Mentioned in Numbers 6:14. · *0.3333333333333333 verses*
+- **Ezion-geber** · Numbers 33:35 · Named in Numbers 33:35. · *2 verses*<br><small>aliases: Ezion-gaber</small>
+- **Fat** · Numbers 13:20 · Mentioned in Numbers 13:20. · *0.6666666666666666 verses*
+- **Feast of Weeks** · Numbers 28:26 · Mentioned in Numbers 28:26. · *0.3333333333333333 verses*
+- **Fig** · Numbers 13:23 · Mentioned in Numbers 13:23. · *0.6666666666666666 verses*<br><small>forms: Fig tree</small>
+- **Figs** · Numbers 13:23 · Mentioned in Numbers 13:23. · *0.6666666666666666 verses*
+- **Finger** · Numbers 19:4 · Mentioned in Numbers 19:4. · *0.3333333333333333 verses*
+- **Firstfruits** · Numbers 18:12 · Mentioned in Numbers 18:12. · *0.6666666666666666 verses*<br><small>aliases: First fruits</small>
+- **Fish** · Numbers 11:5 · Mentioned in Numbers 11:5. · *0.6666666666666666 verses*
+- **Foot** · Numbers 11:21; Numbers 20:19 · Mentioned in Numbers 11:21. · *1 verses*<br><small>aliases: Feet</small>
+- **Fortified city** · Numbers 32:17 · Mentioned in Numbers 32:17. · *0.6666666666666666 verses*<br><small>aliases: Fenced city</small>
+- **Fountain** · Numbers 33:9 · Mentioned in Numbers 33:9. · *0.3333333333333333 verses*
+- **Frankincense** · Numbers 5:15 · Mentioned in Numbers 5:15. · *0.3333333333333333 verses*
+- **Fringe** · Numbers 15:38 · Mentioned in Numbers 15:38. · *0.6666666666666666 verses*
+- **Garlic** · Numbers 11:5 · Mentioned in Numbers 11:5. · *0.3333333333333333 verses*
+- **Garment** · Numbers 15:38 · Mentioned in Numbers 15:38. · *1.3333333333333333 verses*
+- **Gate** · Numbers 4:26 · Mentioned in Numbers 4:26. · *0.3333333333333333 verses*
+- **Geber** · Numbers 33:35 · Named in Numbers 33:35. · *2 verses*
+- **Gerah** · Numbers 3:47 · Mentioned in Numbers 3:47. · *0.6666666666666666 verses*
+- **Goats' hair** · Numbers 31:20 · Mentioned in Numbers 31:20. · *0.3333333333333333 verses*
+- **Grain** · Numbers 18:12; Numbers 18:27 · Mentioned in Numbers 18:12. · *0.6666666666666666 verses*<br><small>aliases: Corn</small>
+- **Grapes** · Numbers 6:3 · Mentioned in Numbers 6:3. · *1.3333333333333333 verses*
+- **Grass** · Numbers 22:4 · Mentioned in Numbers 22:4. · *0.3333333333333333 verses*
+- **Grasshopper** · Numbers 13:33 · Mentioned in Numbers 13:33. · *0.3333333333333333 verses*
+- **Great Sea** · Numbers 13:29; Numbers 34:6 · Named in Numbers 13:29. · *0 verses*<br><small>forms: Western Sea</small>
+- **Guard** · Numbers 10:25 · Mentioned in Numbers 10:25. · *0.3333333333333333 verses*
+- **Hair** · Numbers 5:18 · Mentioned in Numbers 5:18. · *1.6666666666666667 verses*
+- **Hamul** · Numbers 26:21 · Named in Numbers 26:21. · *1 verses*
+- **Hanniel** · Numbers 34:23 · Named in Numbers 34:23. · *1 verses*
+- **Haradah** · Numbers 33:24 · Named in Numbers 33:24. · *2 verses*
+- **Haran** · Numbers 32:36 · Named in Numbers 32:36. · *1 verses*
+- **Hashmonah** · Numbers 33:29 · Named in Numbers 33:29. · *2 verses*
+- **Havvoth-jair** · Numbers 32:41 · Named in Numbers 32:41. · *1 verses*<br><small>aliases: Havoth Jair · forms: Bashan-havoth-jair, Towns of Jair</small>
+- **Hazar-addar** · Numbers 34:4 · Named in Numbers 34:4. · *1 verses*
+- **Hazar-enan** · Numbers 34:9 · Named in Numbers 34:9. · *2 verses*<br><small>forms: Hazar-enon</small>
+- **Heart** · Numbers 15:39 · Mentioned in Numbers 15:39. · *1 verses*
+- **Heber** · Numbers 26:45 · Named in Numbers 26:45. · *1 verses*
+- **Hebron** · Numbers 3:19 · Named in Numbers 3:19. · *2 verses*<br><small>forms: Arba, Arbah, Kiriath Arba, Kirjath Arba</small>
+- **Heifer** · Numbers 19:2 · Mentioned in Numbers 19:2. · *2 verses*
+- **Hezron** · Numbers 26:6 · Named in Numbers 26:6. · *2 verses*<br><small>forms: Esrom</small>
+- **High place** · Numbers 21:28 · Mentioned in Numbers 21:28. · *1.3333333333333333 verses*
+- **High priest** · Numbers 35:25 · Mentioned in Numbers 35:25. · *0.6666666666666666 verses*
+- **Highway** · Numbers 20:17 · Mentioned in Numbers 20:17. · *1 verses*
+- **Hill** · Numbers 13:17 · Mentioned in Numbers 13:17. · *1.6666666666666667 verses*
+- **Hobab** · Numbers 10:29 · Named in Numbers 10:29. · *1 verses*
+- **Holy Place** · Numbers 28:7 · Named in Numbers 28:7. · *0 verses*
+- **Homer** · Numbers 11:32 · Mentioned in Numbers 11:32. · *0.3333333333333333 verses*
+- **Honey** · Numbers 13:27 · Mentioned in Numbers 13:27. · *1.3333333333333333 verses*
+- **Hook** · Numbers 4:14 · Mentioned in Numbers 4:14. · *0.3333333333333333 verses*<br><small>forms: Fishhook</small>
+- **Hor-haggidgad** · Numbers 33:32 · Named in Numbers 33:32. · *2 verses*<br><small>aliases: Hor Hagidgad · forms: Gudgodah</small>
+- **Hormah** · Numbers 14:45 · Named in Numbers 14:45. · *2 verses*
+- **Hoshea** · Numbers 13:8 · Son of Nun. · *2 verses*
+- **Hur** · Numbers 31:8 · Named in Numbers 31:8. · *1 verses*
+- **Hyssop** · Numbers 19:6 · Mentioned in Numbers 19:6. · *0.6666666666666666 verses*
+- **Idol** · Numbers 33:52 · Mentioned in Numbers 33:52. · *0.3333333333333333 verses*
+- **Igal** · Numbers 13:7 · Named in Numbers 13:7. · *1 verses*
+- **Image** · Numbers 33:52 · Mentioned in Numbers 33:52. · *0.3333333333333333 verses*<br><small>forms: Statue</small>
+- **Iron** · Numbers 31:22 · Mentioned in Numbers 31:22. · *0.6666666666666666 verses*
+- **Isaac** · Numbers 32:11 · Named in Numbers 32:11. · *1 verses*
+- **Izhar** · Numbers 3:19 · Named in Numbers 3:19. · *2 verses*
+- **Jaakan** · Numbers 33:31 · Named in Numbers 33:31. · *2 verses*
+- **Jabbok** · Numbers 21:24 · Named in Numbers 21:24. · *1 verses*
+- **Jachin** · Numbers 26:12 · Named in Numbers 26:12. · *1 verses*
+- **Jahaz** · Numbers 21:23 · Named in Numbers 21:23. · *1 verses*<br><small>forms: Jahazah, Jahzah</small>
+- **Jahzeel** · Numbers 26:48 · Named in Numbers 26:48. · *1 verses*
+- **Jair** · Numbers 32:41 · Named in Numbers 32:41. · *1 verses*
+- **Jashub** · Numbers 26:24 · Named in Numbers 26:24. · *1 verses*
+- **Javelin** · Numbers 25:7 · Mentioned in Numbers 25:7. · *0.3333333333333333 verses*
+- **Jeshimon** · Numbers 21:20 · Named in Numbers 21:20. · *2 verses*
+- **Jochebed** · Numbers 26:59 · The mother of Moses, Aaron and Miriam. · *1 verses*
+- **Jogbehah** · Numbers 32:35 · Named in Numbers 32:35. · *1 verses*
+- **Jotbathah** · Numbers 33:33 · Named in Numbers 33:33. · *2 verses*<br><small>forms: Jotbath</small>
+- **Jubilee** · Numbers 36:4 · Mentioned in Numbers 36:4. · *0.3333333333333333 verses*
+- **Judge** · Numbers 25:5 · Mentioned in Numbers 25:5. · *0.6666666666666666 verses*
+- **Juice** · Numbers 6:3 · Mentioned in Numbers 6:3. · *0.3333333333333333 verses*
+- **Juice of grapes** · Numbers 6:3 · Mentioned in Numbers 6:3. · *0.3333333333333333 verses*<br><small>aliases: Liquor of grapes</small>
+- **Kadesh-barnea** · Numbers 32:8 · Named in Numbers 32:8. · *2 verses*<br><small>forms: En Mishpat</small>
+- **Kain** · Numbers 24:22 · Named in Numbers 24:22. · *1 verses*<br><small>forms: Cain</small>
+- **Kehelathah** · Numbers 33:22 · Named in Numbers 33:22. · *2 verses*
+- **Kemuel** · Numbers 34:24 · Named in Numbers 34:24. · *1 verses*
+- **Kenath** · Numbers 32:42 · Named in Numbers 32:42. · *1 verses*
+- **King’s Highway** · Numbers 20:17 · Named in Numbers 20:17. · *0 verses*
+- **Kiriath-huzoth** · Numbers 22:39 · Named in Numbers 22:39. · *1 verses*<br><small>aliases: Kirjath Huzoth</small>
+- **Kiriathaim** · Numbers 32:37 · Named in Numbers 32:37. · *1 verses*<br><small>aliases: Kirjathaim</small>
+- **Kittim** · Numbers 24:24 · Named in Numbers 24:24. · *1 verses*<br><small>aliases: Chittim</small>
+- **Lamp** · Numbers 3:31 · Mentioned in Numbers 3:31. · *1.6666666666666667 verses*
+- **Lampstand** · Numbers 3:31 · Mentioned in Numbers 3:31. · *1.6666666666666667 verses*<br><small>aliases: Candlestick</small>
+- **Leeks** · Numbers 11:5 · Mentioned in Numbers 11:5. · *0.3333333333333333 verses*
+- **Leper** · Numbers 5:2 · Mentioned in Numbers 5:2. · *0.3333333333333333 verses*<br><small>forms: Leprosy</small>
+- **Libnah** · Numbers 33:20 · Named in Numbers 33:20. · *2 verses*
+- **Libni** · Numbers 3:18 · Named in Numbers 3:18. · *1 verses*
+- **Lign aloes** · Numbers 24:6 · Mentioned in Numbers 24:6. · *0.3333333333333333 verses*
+- **Lion** · Numbers 23:24 · Mentioned in Numbers 23:24. · *0.6666666666666666 verses*
+- **Lips** · Numbers 30:6 · Mentioned in Numbers 30:6. · *1 verses*<br><small>aliases: Lip</small>
+- **Lock** · Numbers 6:5 · Mentioned in Numbers 6:5. · *0.3333333333333333 verses*
+- **Lodge** · Numbers 22:8 · Mentioned in Numbers 22:8. · *0.3333333333333333 verses*<br><small>forms: Hut, Cottage</small>
+- **Makheloth** · Numbers 33:25 · Named in Numbers 33:25. · *2 verses*
+- **Manna** · Numbers 11:6 · Mentioned in Numbers 11:6. · *1 verses*
+- **Marah** · Numbers 33:8 · Named in Numbers 33:8. · *2 verses*
+- **Mattanah** · Numbers 21:18 · Named in Numbers 21:18. · *2 verses*
+- **Medad** · Numbers 11:26 · Prophesied in the camp in Moses' day. · *2 verses*
+- **Medeba** · Numbers 21:30 · Named in Numbers 21:30. · *1 verses*
+- **Melons** · Numbers 11:5 · Mentioned in Numbers 11:5. · *0.3333333333333333 verses*
+- **Messenger** · Numbers 20:14 · Mentioned in Numbers 20:14. · *1.3333333333333333 verses*
+- **Michael** · Numbers 13:13 · Named in Numbers 13:13. · *1 verses*
+- **Migdol** · Numbers 33:7 · Named in Numbers 33:7. · *1 verses*
+- **Milk** · Numbers 13:27 · Mentioned in Numbers 13:27. · *1.3333333333333333 verses*
+- **Mithkah** · Numbers 33:28 · Named in Numbers 33:28. · *2 verses*<br><small>aliases: Mithcah</small>
+- **Moon** · Numbers 29:6 · Mentioned in Numbers 29:6. · *0.3333333333333333 verses*
+- **Mortar** · Numbers 11:8 · Mentioned in Numbers 11:8. · *0.3333333333333333 verses*
+- **Moseroth** · Numbers 33:30 · Named in Numbers 33:30. · *2 verses*<br><small>forms: Mosera, Moserah</small>
+- **Mount Shepher** · Numbers 33:23 · Named in Numbers 33:23. · *2 verses*<br><small>aliases: Mount Shapher, Shapher</small>
+- **Mount Sinai** · Numbers 1:1; Numbers 3:1 · Named in Numbers 3:1. · *2 verses*<br><small>forms: Sina</small>
+- **Mushi** · Numbers 3:20 · Named in Numbers 3:20. · *1 verses*
+- **Naaman** · Numbers 26:40 · Named in Numbers 26:40. · *1 verses*
+- **Nahaliel** · Numbers 21:19 · Named in Numbers 21:19. · *1 verses*
+- **Necklace** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*<br><small>aliases: Chains</small>
+- **Nemuel** · Numbers 26:9 · Named in Numbers 26:9. · *2 verses*
+- **New moon** · Numbers 29:6 · Mentioned in Numbers 29:6. · *0.3333333333333333 verses*
+- **Nimrah** · Numbers 32:3 · Named in Numbers 32:3. · *2 verses*
+- **Nobah** · Numbers 32:42 · Named in Numbers 32:42. · *1 verses*
+- **Nophah** · Numbers 21:30 · Named in Numbers 21:30. · *1 verses*
+- **Nostrils** · Numbers 11:20 · Mentioned in Numbers 11:20. · *0.3333333333333333 verses*
+- **Nurse** · Numbers 11:12 · Mentioned in Numbers 11:12. · *0.3333333333333333 verses*
+- **Officer** · Numbers 11:16 · Mentioned in Numbers 11:16. · *1 verses*
+- **Og** · Numbers 21:33 · King of Bashan. · *2 verses*
+- **Onan** · Numbers 26:19 · Named in Numbers 26:19. · *1 verses*
+- **Onions** · Numbers 11:5 · Mentioned in Numbers 11:5. · *0.3333333333333333 verses*
+- **Ox** · Numbers 7:3 · Mentioned in Numbers 7:3. · *1.3333333333333333 verses*
+- **Ozni** · Numbers 26:16 · Named in Numbers 26:16. · *1 verses*
+- **Pallu** · Numbers 26:5 · Named in Numbers 26:5. · *2 verses*
+- **Palm tree** · Numbers 33:9 · Mentioned in Numbers 33:9. · *0.3333333333333333 verses*
+- **Paltiel** · Numbers 34:26 · Named in Numbers 34:26. · *1 verses*
+- **Pan** · Numbers 4:14 · Mentioned in Numbers 4:14. · *0.6666666666666666 verses*
+- **Pasture** · Numbers 35:2 · Mentioned in Numbers 35:2. · *1.6666666666666667 verses*<br><small>forms: Meadow</small>
+- **Pedahel** · Numbers 34:28 · Son of Ammihud. · *1 verses*
+- **Peleth** · Numbers 16:1 · Named in Numbers 16:1. · *1 verses*
+- **Pestilence** · Numbers 14:12 · Mentioned in Numbers 14:12. · *0.3333333333333333 verses*
+- **Pethor** · Numbers 22:5 · Named in Numbers 22:5. · *1 verses*
+- **Pi-hahiroth** · Numbers 33:7 · Named in Numbers 33:7. · *2 verses*<br><small>aliases: Hahiroth</small>
+- **Pigeon** · Numbers 6:10 · Mentioned in Numbers 6:10. · *0.3333333333333333 verses*
+- **Pillar** · Numbers 3:36 · Mentioned in Numbers 3:36. · *2 verses*
+- **Pisgah** · Numbers 21:20 · Named in Numbers 21:20. · *2 verses*<br><small>forms: Ashdoth-pisgah</small>
+- **Pomegranate** · Numbers 13:23 · Mentioned in Numbers 13:23. · *0.6666666666666666 verses*
+- **Pot** · Numbers 11:8 · Mentioned in Numbers 11:8. · *0.3333333333333333 verses*
+- **Prophet** · Numbers 11:29 · Mentioned in Numbers 11:29. · *0.6666666666666666 verses*
+- **Punon** · Numbers 33:42 · Named in Numbers 33:42. · *2 verses*
+- **Purple** · Numbers 4:13 · Mentioned in Numbers 4:13. · *0.3333333333333333 verses*
+- **Quail** · Numbers 11:31 · Mentioned in Numbers 11:31. · *0.6666666666666666 verses*
+- **Raguel** · Numbers 10:29 · Named in Numbers 10:29. · *1 verses*
+- **Raiment** · Numbers 31:20 · Mentioned in Numbers 31:20. · *0.3333333333333333 verses*
+- **Ram** · Numbers 5:8 · Named in Numbers 23:7. · *0 verses*
+- **Rameses** · Numbers 33:3 · Named in Numbers 33:3. · *2 verses*<br><small>forms: Raamses</small>
+- **Raphu** · Numbers 13:9 · Named in Numbers 13:9. · *1 verses*
+- **Rash** · Numbers 30:6 · Mentioned in Numbers 30:6. · *0.6666666666666666 verses*
+- **Razor** · Numbers 6:5 · Mentioned in Numbers 6:5. · *0.6666666666666666 verses*
+- **Rehob** · Numbers 13:21 · Named in Numbers 13:21. · *1 verses*
+- **Rekem** · Numbers 31:8 · Named in Numbers 31:8. · *1 verses*
+- **Rephidim** · Numbers 33:14 · Named in Numbers 33:14. · *2 verses*
+- **Reuel** · Numbers 2:14 · Named in Numbers 2:14. · *2 verses*
+- **Riblah** · Numbers 34:11 · Named in Numbers 34:11. · *1 verses*<br><small>forms: Diblah, Diblath</small>
+- **Rimmon** · Numbers 33:19 · Named in Numbers 33:19. · *2 verses*
+- **Rimmon-perez** · Numbers 33:19 · Named in Numbers 33:19. · *2 verses*<br><small>aliases: Rimmon-parez</small>
+- **Ring** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*
+- **Rissah** · Numbers 33:21 · Named in Numbers 33:21. · *2 verses*
+- **Rithmah** · Numbers 33:18 · Named in Numbers 33:18. · *2 verses*
+- **River** · Numbers 22:5 · Named in Numbers 22:5. · *1 verses*<br><small>forms: Rehoboth-by-the-River</small>
+- **Rock** · Numbers 20:8 · Mentioned in Numbers 20:8. · *1.6666666666666667 verses*
+- **Sabbath** · Numbers 15:32 · Mentioned in Numbers 15:32. · *1 verses*
+- **Salt** · Numbers 18:19 · Mentioned in Numbers 18:19. · *1 verses*
+- **Salt Sea** · Numbers 34:3 · Named in Numbers 34:3. · *2 verses*
+- **Sarah** · Numbers 26:46 · Named in Numbers 26:46. · *1 verses*<br><small>forms: Sarai, Sara</small>
+- **Scarlet** · Numbers 4:8 · Mentioned in Numbers 4:8. · *0.6666666666666666 verses*
+- **Scepter** · Numbers 21:18; Numbers 24:17 · Mentioned in Numbers 21:18. · *0.6666666666666666 verses*<br><small>aliases: Sceptre</small>
+- **Sea of Chinnereth** · Numbers 34:11 · Named in Numbers 34:11. · *0 verses*<br><small>forms: Sea of Galilee, Chinneroth, Sea of Chinneroth, Sea of Tiberias</small>
+- **Serah** · Numbers 26:46 · Asher's daughter, who went down to Egypt. · *1 verses*
+- **Sered** · Numbers 26:26 · Named in Numbers 26:26. · *1 verses*
+- **Shammua** · Numbers 13:4 · Named in Numbers 13:4. · *1 verses*<br><small>forms: Shimea</small>
+- **Shaphat** · Numbers 13:5 · Named in Numbers 13:5. · *1 verses*
+- **Shechem** · Numbers 26:31 · Named in Numbers 26:31. · *1 verses*
+- **Sheepfold** · Numbers 32:16 · Mentioned in Numbers 32:16. · *0.3333333333333333 verses*
+- **Shelah** · Numbers 26:20 · Named in Numbers 26:20. · *1 verses*
+- **Shemuel** · Numbers 34:20 · Son of Ammihud. · *1 verses*
+- **Shepham** · Numbers 34:10 · Named in Numbers 34:10. · *2 verses*
+- **Shepherd** · Numbers 27:17 · Mentioned in Numbers 27:17. · *0.3333333333333333 verses*
+- **Sheshai** · Numbers 13:22 · Named in Numbers 13:22. · *1 verses*
+- **Sheth** · Numbers 24:17 · Named in Numbers 24:17. · *1 verses*
+- **Shimei** · Numbers 3:18 · Named in Numbers 3:18. · *1 verses*
+- **Ship** · Numbers 24:24 · Mentioned in Numbers 24:24. · *0.3333333333333333 verses*
+- **Shiphtan** · Numbers 34:24 · Named in Numbers 34:24. · *1 verses*
+- **Shittim** · Numbers 25:1 · Named in Numbers 25:1. · *2 verses*
+- **Shoulder** · Numbers 6:19 · Mentioned in Numbers 6:19. · *1.3333333333333333 verses*
+- **Show bread** · Numbers 4:7 · Mentioned in Numbers 4:7. · *0.3333333333333333 verses*<br><small>aliases: Shewbread</small>
+- **Sibmah** · Numbers 32:3; Numbers 32:38 · Named in Numbers 32:3. · *2 verses*<br><small>aliases: Sebam, Shebam, Shibmah</small>
+- **Signet** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*
+- **Signet ring** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*
+- **Sin** · Numbers 33:11 · Named in Numbers 33:11. · *2 verses*
+- **Snake** · Numbers 21:6 · Mentioned in Numbers 21:6. · *1.3333333333333333 verses*<br><small>aliases: Serpent</small>
+- **Snow** · Numbers 12:10 · Mentioned in Numbers 12:10. · *0.3333333333333333 verses*
+- **Snuffers** · Numbers 4:9 · Mentioned in Numbers 4:9. · *0.3333333333333333 verses*
+- **Sore** · Numbers 22:3 · Mentioned in Numbers 22:3. · *0.3333333333333333 verses*<br><small>forms: Sores</small>
+- **Spear** · Numbers 25:7 · Mentioned in Numbers 25:7. · *0.3333333333333333 verses*
+- **Spot** · Numbers 19:2 · Mentioned in Numbers 19:2. · *2 verses*<br><small>forms: Bright spot</small>
+- **Staff** · Numbers 13:23 · Mentioned in Numbers 13:23. · *0.6666666666666666 verses*
+- **Star** · Numbers 24:17 · Mentioned in Numbers 24:17. · *0.3333333333333333 verses*<br><small>forms: Stars</small>
+- **Stone** · Numbers 14:10 · Mentioned in Numbers 14:10. · *2 verses*
+- **Strong drink** · Numbers 6:3 · Mentioned in Numbers 6:3. · *0.6666666666666666 verses*
+- **Stronghold** · Numbers 13:19 · Mentioned in Numbers 13:19. · *0.3333333333333333 verses*<br><small>forms: Fortress, Fort</small>
+- **Succoth** · Numbers 33:5 · Named in Numbers 33:5. · *2 verses*
+- **Sun** · Numbers 2:3 · Mentioned in Numbers 2:3. · *0.6666666666666666 verses*
+- **Suphah** · Numbers 21:14 · Named in Numbers 21:14. · *1 verses*
+- **Susi** · Numbers 13:11 · Named in Numbers 13:11. · *1 verses*
+- **Taberah** · Numbers 11:3 · Named in Numbers 11:3. · *1 verses*
+- **Table** · Numbers 3:31 · Mentioned in Numbers 3:31. · *0.6666666666666666 verses*
+- **Tablets** · Numbers 31:50 · Mentioned in Numbers 31:50. · *0.3333333333333333 verses*<br><small>forms: Tables of stone</small>
+- **Tahath** · Numbers 33:26 · Named in Numbers 33:26. · *2 verses*
+- **Talmai** · Numbers 13:22 · Named in Numbers 13:22. · *1 verses*
+- **Teeth** · Numbers 11:33 · Mentioned in Numbers 11:33. · *0.3333333333333333 verses*<br><small>forms: Tooth</small>
+- **Terah** · Numbers 33:27 · Named in Numbers 33:27. · *2 verses*<br><small>aliases: Tarah</small>
+- **Thigh** · Numbers 5:21 · Mentioned in Numbers 5:21. · *1.6666666666666667 verses*
+- **Thorns** · Numbers 33:55 · Mentioned in Numbers 33:55. · *0.3333333333333333 verses*<br><small>aliases: Thorn</small>
+- **Threshing floor** · Numbers 15:20 · Mentioned in Numbers 15:20. · *1 verses*
+- **Tin** · Numbers 31:22 · Mentioned in Numbers 31:22. · *0.3333333333333333 verses*
+- **Tola** · Numbers 26:23 · Named in Numbers 26:23. · *1 verses*
+- **Tongs** · Numbers 4:9 · Mentioned in Numbers 4:9. · *0.3333333333333333 verses*
+- **Tree** · Numbers 6:4; Numbers 24:6 · Mentioned in Numbers 6:4. · *1 verses*<br><small>aliases: Trees</small>
+- **Turtledove** · Numbers 6:10 · Mentioned in Numbers 6:10. · *0.3333333333333333 verses*
+- **Unicorn** · Numbers 23:22 · Mentioned in Numbers 23:22. · *0.6666666666666666 verses*<br><small>aliases: Wild ox</small>
+- **Unleavened bread** · Numbers 6:15 · Mentioned in Numbers 6:15. · *1.3333333333333333 verses*
+- **Urim** · Numbers 27:21 · Mentioned in Numbers 27:21. · *0.3333333333333333 verses*
+- **Uzziel** · Numbers 3:19 · Named in Numbers 3:19. · *2 verses*
+- **Valley of Zered** · Numbers 21:12 · Named in Numbers 21:12. · *0 verses*
+- **Veil** · Numbers 4:5 · Mentioned in Numbers 4:5. · *0.6666666666666666 verses*
+- **Vine** · Numbers 6:4 · Mentioned in Numbers 6:4. · *0.6666666666666666 verses*<br><small>aliases: Grapevine</small>
+- **Vinegar** · Numbers 6:3 · Mentioned in Numbers 6:3. · *0.3333333333333333 verses*
+- **Wafers** · Numbers 6:15 · Mentioned in Numbers 6:15. · *0.3333333333333333 verses*
+- **Wagon** · Numbers 7:3 · Mentioned in Numbers 7:3. · *1.3333333333333333 verses*
+- **Wall** · Numbers 22:24 · Mentioned in Numbers 22:24. · *1 verses*
+- **Wheat** · Numbers 18:12 · Mentioned in Numbers 18:12. · *0.3333333333333333 verses*
+- **Widow** · Numbers 30:9 · Mentioned in Numbers 30:9. · *0.3333333333333333 verses*
+- **Wind** · Numbers 11:31 · Mentioned in Numbers 11:31. · *0.3333333333333333 verses*
+- **Winepress** · Numbers 18:27 · Mentioned in Numbers 18:27. · *0.6666666666666666 verses*
+- **Womb** · Numbers 3:12 · Mentioned in Numbers 3:12. · *1.3333333333333333 verses*
+- **Yoke** · Numbers 19:2 · Mentioned in Numbers 19:2. · *0.3333333333333333 verses*
+- **Zaccur** · Numbers 13:4 · Named in Numbers 13:4. · *1 verses*
+- **Zalmonah** · Numbers 33:41 · Named in Numbers 33:41. · *2 verses*
+- **Zedad** · Numbers 34:8 · Named in Numbers 34:8. · *1 verses*
+- **Zerah** · Numbers 26:13 · Named in Numbers 26:13. · *2 verses*<br><small>forms: Zara</small>
+- **Zimri** · Numbers 25:14 · Son of Salu. · *1 verses*
+- **Ziphron** · Numbers 34:9 · Named in Numbers 34:9. · *1 verses*
+- **Zoan** · Numbers 13:22 · Named in Numbers 13:22. · *1 verses*
+- **Zophim** · Numbers 23:14 · Named in Numbers 23:14. · *1 verses*
+- **Zur** · Numbers 25:15 · Named in Numbers 25:15. · *2 verses*
+- **Zuriel** · Numbers 3:35 · Named in Numbers 3:35. · *1 verses*
+
+### Near misses
+
+- **Talking donkey, Balaam's donkey**: Numbers just calls her a donkey (Numbers 22:28); try "donkey".
+- **Goliath, David**: They come much later, in 1 Samuel.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Proverbs.
+
+`proverbs-anything` · Books of the Bible · 323 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 14 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 28 |
+| 🪙 Lost Coin (60) | 61 |
+| 💎 Hidden Treasure (85) | 219 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Lemuel. Proverbs 31 is the words of King Lemuel, which his mother taught him (Proverbs 31:1).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Ant** · Proverbs 6:6 · Mentioned in Proverbs 6:6. · *0.6666666666666666 verses*
+- **Eye** · Proverbs 3:7 · Mentioned in Proverbs 3:7. · *14 verses*
+- **Fool** · Proverbs 1:7 · Mentioned in Proverbs 1:7. · *21 verses*
+- **Hand** · Proverbs 1:24 · Mentioned in Proverbs 1:24. · *11.333333333333334 verses*
+- **Heart** · Proverbs 2:2 · Mentioned in Proverbs 2:2. · *28 verses*
+- **King** · Proverbs 1:1 · Mentioned in Proverbs 1:1. · *10.666666666666666 verses*
+- **Knowledge** · Proverbs 1:4 · Mentioned in Proverbs 1:4. · *14.333333333333334 verses*
+- **Life** · Proverbs 1:19 · Mentioned in Proverbs 1:19. · *14.333333333333334 verses*
+- **Lips** · Proverbs 4:24 · Mentioned in Proverbs 4:24. · *14.666666666666666 verses*<br><small>aliases: Lip</small>
+- **Mouth** · Proverbs 2:6 · Mentioned in Proverbs 2:6. · *16.666666666666668 verses*
+- **Solomon** · Proverbs 1:1 · Named in Proverbs 1:1. · *3 verses*
+- **Understanding** · Proverbs 1:2 · Mentioned in Proverbs 1:2. · *18.666666666666668 verses*
+- **Wisdom** · Proverbs 1:2 · Mentioned in Proverbs 1:2. · *18.333333333333332 verses*
+- **Word** · Proverbs 1:2 · Mentioned in Proverbs 1:2. · *15 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Bread** · Proverbs 4:17 · Mentioned in Proverbs 4:17. · *5.333333333333333 verses*
+- **Counsel** · Proverbs 1:5 · Mentioned in Proverbs 1:5. · *5.333333333333333 verses*
+- **Death** · Proverbs 2:18 · Mentioned in Proverbs 2:18. · *6.666666666666667 verses*
+- **Ear** · Proverbs 2:2 · Mentioned in Proverbs 2:2. · *5 verses*
+- **Folly** · Proverbs 5:23; Proverbs 12:23 · Mentioned in Proverbs 5:23. · *7 verses*<br><small>aliases: Foolishness</small>
+- **Foot** · Proverbs 1:15; Proverbs 1:16 · Mentioned in Proverbs 1:15. · *5.333333333333333 verses*<br><small>aliases: Feet</small>
+- **Gold** · Proverbs 3:14 · Mentioned in Proverbs 3:14. · *3.6666666666666665 verses*
+- **Honey** · Proverbs 5:3 · Mentioned in Proverbs 5:3. · *1.3333333333333333 verses*
+- **Honor** · Proverbs 3:9 · Mentioned in Proverbs 3:9. · *6.666666666666667 verses*<br><small>aliases: Honour</small>
+- **House** · Proverbs 1:13 · Mentioned in Proverbs 1:13. · *10 verses*
+- **Instruction** · Proverbs 1:2 · Mentioned in Proverbs 1:2. · *9.333333333333334 verses*
+- **Judgment** · Proverbs 1:3 · Mentioned in Proverbs 1:3. · *7 verses*
+- **Justice** · Proverbs 1:3 · Mentioned in Proverbs 1:3. · *5.333333333333333 verses*
+- **Law** · Proverbs 1:8 · Mentioned in Proverbs 1:8. · *4.333333333333333 verses*
+- **Love** · Proverbs 1:22 · Mentioned in Proverbs 1:22. · *9.666666666666666 verses*
+- **Lying** · Proverbs 6:17; Proverbs 6:19; Proverbs 30:8 · Mentioned in Proverbs 6:17. · *6.333333333333333 verses*<br><small>aliases: Lies, Falsehood</small>
+- **Rebuke** · Proverbs 3:11; Proverbs 9:8 · Mentioned in Proverbs 3:11. · *6.333333333333333 verses*<br><small>aliases: Correction</small>
+- **Righteousness** · Proverbs 1:3 · Mentioned in Proverbs 1:3. · *7.333333333333333 verses*
+- **Servant** · Proverbs 11:29 · Mentioned in Proverbs 11:29. · *4.666666666666667 verses*
+- **Silver** · Proverbs 2:4 · Mentioned in Proverbs 2:4. · *4 verses*
+- **Sin** · Proverbs 5:22 · Mentioned in Proverbs 5:22. · *5 verses*
+- **Sluggard** · Proverbs 6:6 · Mentioned in Proverbs 6:6. · *4.666666666666667 verses*
+- **Spirit** · Proverbs 1:23 · Mentioned in Proverbs 1:23. · *6 verses*
+- **Strife** · Proverbs 10:12 · Mentioned in Proverbs 10:12. · *5.333333333333333 verses*
+- **Tongue** · Proverbs 6:17 · Mentioned in Proverbs 6:17. · *6.333333333333333 verses*
+- **Water** · Proverbs 5:15 · Mentioned in Proverbs 5:15. · *5 verses*
+- **Wine** · Proverbs 3:10 · Mentioned in Proverbs 3:10. · *3.6666666666666665 verses*
+- **Wrath** · Proverbs 11:4 · Mentioned in Proverbs 11:4. · *5.666666666666667 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Anger** · Proverbs 14:29 · Mentioned in Proverbs 14:29. · *4 verses*
+- **Back** · Proverbs 10:13 · Mentioned in Proverbs 10:13. · *2.6666666666666665 verses*
+- **Bed** · Proverbs 7:16 · Mentioned in Proverbs 7:16. · *1.3333333333333333 verses*
+- **Belly** · Proverbs 13:25; Proverbs 18:20 · Mentioned in Proverbs 13:25. · *2 verses*<br><small>aliases: Stomach</small>
+- **Blessing** · Proverbs 10:6 · Mentioned in Proverbs 10:6. · *2 verses*
+- **Blood** · Proverbs 1:11 · Mentioned in Proverbs 1:11. · *2.3333333333333335 verses*
+- **Bones** · Proverbs 3:8 · Mentioned in Proverbs 3:8. · *2.3333333333333335 verses*<br><small>aliases: Bone</small>
+- **Bosom** · Proverbs 5:20 · Mentioned in Proverbs 5:20. · *2 verses*
+- **Bribe** · Proverbs 15:27 · Mentioned in Proverbs 15:27. · *1.6666666666666667 verses*<br><small>forms: Bribery</small>
+- **Cloud** · Proverbs 3:20 · Mentioned in Proverbs 3:20. · *1.3333333333333333 verses*<br><small>aliases: Clouds</small>
+- **Commandment** · Proverbs 2:1 · Mentioned in Proverbs 2:1. · *3.6666666666666665 verses*<br><small>aliases: Commandments</small>
+- **Contention** · Proverbs 13:10 · Mentioned in Proverbs 13:10. · *3 verses*
+- **Counselor** · Proverbs 11:14 · Mentioned in Proverbs 11:14. · *1.3333333333333333 verses*<br><small>aliases: Counsellor</small>
+- **Crown** · Proverbs 4:9 · Mentioned in Proverbs 4:9. · *2 verses*
+- **Curse** · Proverbs 3:33 · Mentioned in Proverbs 3:33. · *3 verses*
+- **Deceit** · Proverbs 12:5 · Mentioned in Proverbs 12:5. · *2.6666666666666665 verses*<br><small>forms: Guile</small>
+- **Discipline** · Proverbs 3:11 · Mentioned in Proverbs 3:11. · *2.3333333333333335 verses*
+- **Discretion** · Proverbs 1:4 · Mentioned in Proverbs 1:4. · *2.6666666666666665 verses*
+- **Door** · Proverbs 5:8 · Mentioned in Proverbs 5:8. · *1.6666666666666667 verses*
+- **Egypt** · Proverbs 7:16; Proverbs 21:24 · Named in Proverbs 7:16. · *2 verses*<br><small>aliases: Proud · forms: Lower, Rahab</small>
+- **Face** · Proverbs 7:13 · Mentioned in Proverbs 7:13. · *3.6666666666666665 verses*
+- **False witness** · Proverbs 6:19 · Mentioned in Proverbs 6:19. · *2.6666666666666665 verses*
+- **Field** · Proverbs 8:26 · Mentioned in Proverbs 8:26. · *2.3333333333333335 verses*
+- **Fire** · Proverbs 6:27 · Mentioned in Proverbs 6:27. · *2 verses*
+- **Flesh** · Proverbs 4:22 · Mentioned in Proverbs 4:22. · *1.6666666666666667 verses*
+- **Fountain** · Proverbs 5:16 · Mentioned in Proverbs 5:16. · *3 verses*
+- **Garment** · Proverbs 20:16 · Mentioned in Proverbs 20:16. · *1.6666666666666667 verses*
+- **Gate** · Proverbs 1:21 · Mentioned in Proverbs 1:21. · *3 verses*
+- **Glory** · Proverbs 3:35 · Mentioned in Proverbs 3:35. · *3.3333333333333335 verses*
+- **Grace** · Proverbs 1:9 · Mentioned in Proverbs 1:9. · *1.6666666666666667 verses*
+- **Guard** · Proverbs 2:8 · Mentioned in Proverbs 2:8. · *2 verses*
+- **Head** · Proverbs 1:9 · Mentioned in Proverbs 1:9. · *2.6666666666666665 verses*
+- **Heaven** · Proverbs 3:19 · Mentioned in Proverbs 3:19. · *1.6666666666666667 verses*
+- **Hell** · Proverbs 1:12; Proverbs 5:5 · Mentioned in Proverbs 1:12. · *3 verses*<br><small>aliases: Sheol · forms: Hades</small>
+- **Hope** · Proverbs 10:28 · Mentioned in Proverbs 10:28. · *3 verses*
+- **Integrity** · Proverbs 2:7 · Mentioned in Proverbs 2:7. · *2.6666666666666665 verses*
+- **Joy** · Proverbs 10:28 · Mentioned in Proverbs 10:28. · *3.6666666666666665 verses*
+- **Lamp** · Proverbs 6:23 · Mentioned in Proverbs 6:23. · *2.3333333333333335 verses*
+- **Lion** · Proverbs 19:12 · Mentioned in Proverbs 19:12. · *2.3333333333333335 verses*
+- **Meat** · Proverbs 4:22; Proverbs 6:8 · Mentioned in Proverbs 4:22. · *2.6666666666666665 verses*
+- **Mercy** · Proverbs 3:3 · Mentioned in Proverbs 3:3. · *3.6666666666666665 verses*
+- **Neck** · Proverbs 1:9 · Mentioned in Proverbs 1:9. · *1.6666666666666667 verses*
+- **Peace** · Proverbs 3:2 · Mentioned in Proverbs 3:2. · *3.3333333333333335 verses*
+- **Praise** · Proverbs 27:2 · Mentioned in Proverbs 27:2. · *1.6666666666666667 verses*
+- **Pride** · Proverbs 8:13 · Mentioned in Proverbs 8:13. · *2.3333333333333335 verses*<br><small>aliases: Arrogance</small>
+- **Prince** · Proverbs 8:15 · Mentioned in Proverbs 8:15. · *4 verses*
+- **Prudence** · Proverbs 1:4 · Mentioned in Proverbs 1:4. · *1.6666666666666667 verses*
+- **Quarreling** · Proverbs 13:10; Proverbs 17:14 · Mentioned in Proverbs 13:10. · *1.6666666666666667 verses*<br><small>aliases: Quarrels</small>
+- **Rain** · Proverbs 16:15 · Mentioned in Proverbs 16:15. · *1.6666666666666667 verses*
+- **Rod** · Proverbs 10:13 · Mentioned in Proverbs 10:13. · *3 verses*
+- **Sacrifice** · Proverbs 7:14 · Mentioned in Proverbs 7:14. · *1.6666666666666667 verses*
+- **Stone** · Proverbs 17:8 · Mentioned in Proverbs 17:8. · *2.3333333333333335 verses*
+- **Stranger** · Proverbs 2:16 · Mentioned in Proverbs 2:16. · *3.6666666666666665 verses*<br><small>aliases: Foreigner · forms: Sojourner</small>
+- **Street** · Proverbs 1:20 · Mentioned in Proverbs 1:20. · *2 verses*
+- **Throne** · Proverbs 16:12 · Mentioned in Proverbs 16:12. · *1.6666666666666667 verses*
+- **Tree** · Proverbs 3:18 · Mentioned in Proverbs 3:18. · *1.6666666666666667 verses*<br><small>forms: Trees</small>
+- **Trust** · Proverbs 3:5 · Mentioned in Proverbs 3:5. · *3 verses*
+- **Truth** · Proverbs 3:3 · Mentioned in Proverbs 3:3. · *3.6666666666666665 verses*
+- **Violence** · Proverbs 3:31 · Mentioned in Proverbs 3:31. · *3.3333333333333335 verses*
+- **Wind** · Proverbs 11:29 · Mentioned in Proverbs 11:29. · *1.6666666666666667 verses*
+- **Wounds** · Proverbs 6:33 · Mentioned in Proverbs 6:33. · *2.3333333333333335 verses*<br><small>aliases: Wound</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Adder** · Proverbs 23:32 · Mentioned in Proverbs 23:32. · *0.3333333333333333 verses*
+- **Adultery** · Proverbs 6:32 · Mentioned in Proverbs 6:32. · *0.3333333333333333 verses*
+- **Agur** · Proverbs 30:1 · Son of Jakeh; Proverbs 30 is his. · *1 verses*
+- **Aloes** · Proverbs 7:17 · Mentioned in Proverbs 7:17. · *0.3333333333333333 verses*
+- **Ambassador** · Proverbs 13:17 · Mentioned in Proverbs 13:17. · *0.3333333333333333 verses*
+- **Apple** · Proverbs 7:2 · Mentioned in Proverbs 7:2. · *0.6666666666666666 verses*<br><small>forms: Apple tree</small>
+- **Apples** · Proverbs 7:2; Proverbs 25:11 · Mentioned in Proverbs 7:2. · *0.3333333333333333 verses*
+- **Archer** · Proverbs 26:10 · Mentioned in Proverbs 26:10. · *0.3333333333333333 verses*
+- **Arm** · Proverbs 31:17 · Mentioned in Proverbs 31:17. · *0.6666666666666666 verses*
+- **Arrow** · Proverbs 7:23 · Mentioned in Proverbs 7:23. · *1 verses*
+- **Atonement** · Proverbs 14:9 · Mentioned in Proverbs 14:9. · *0.3333333333333333 verses*<br><small>forms: Propitiation</small>
+- **Bag** · Proverbs 7:20 · Mentioned in Proverbs 7:20. · *0.6666666666666666 verses*
+- **Balances** · Proverbs 16:11 · Mentioned in Proverbs 16:11. · *1 verses*<br><small>aliases: Scales</small>
+- **Barn** · Proverbs 3:10 · Mentioned in Proverbs 3:10. · *0.3333333333333333 verses*
+- **Bit** · Proverbs 23:32 · Mentioned in Proverbs 23:32. · *0.3333333333333333 verses*
+- **Bitterness** · Proverbs 14:10 · Mentioned in Proverbs 14:10. · *0.6666666666666666 verses*
+- **Breast** · Proverbs 5:19 · Mentioned in Proverbs 5:19. · *0.3333333333333333 verses*
+- **Brook** · Proverbs 5:16; Proverbs 18:4 · Mentioned in Proverbs 5:16. · *0.6666666666666666 verses*<br><small>aliases: Stream</small>
+- **Bush** · Proverbs 26:9 · Mentioned in Proverbs 26:9. · *0.3333333333333333 verses*<br><small>forms: Burning bush</small>
+- **Butter** · Proverbs 30:33 · Mentioned in Proverbs 30:33. · *0.3333333333333333 verses*
+- **Calf** · Proverbs 15:17 · Mentioned in Proverbs 15:17. · *0.3333333333333333 verses*
+- **Candle** · Proverbs 20:27 · Mentioned in Proverbs 20:27. · *1 verses*
+- **Castle** · Proverbs 18:19 · Mentioned in Proverbs 18:19. · *0.3333333333333333 verses*<br><small>forms: Citadel</small>
+- **Chain** · Proverbs 1:9 · Mentioned in Proverbs 1:9. · *0.3333333333333333 verses*
+- **Chains** · Proverbs 1:9 · Mentioned in Proverbs 1:9. · *0.3333333333333333 verses*<br><small>forms: Necklace</small>
+- **Chief** · Proverbs 1:21 · Mentioned in Proverbs 1:21. · *1 verses*
+- **Cinnamon** · Proverbs 7:17 · Mentioned in Proverbs 7:17. · *0.3333333333333333 verses*
+- **Cistern** · Proverbs 5:15 · Mentioned in Proverbs 5:15. · *0.3333333333333333 verses*
+- **Cloak** · Proverbs 21:14 · Mentioned in Proverbs 21:14. · *0.3333333333333333 verses*
+- **Coal** · Proverbs 6:28 · Mentioned in Proverbs 6:28. · *1 verses*<br><small>aliases: Coals · forms: Live coal</small>
+- **Contentment** · Proverbs 19:23 · Mentioned in Proverbs 19:23. · *0.3333333333333333 verses*
+- **Cord** · Proverbs 5:22 · Mentioned in Proverbs 5:22. · *0.3333333333333333 verses*
+- **Covenant** · Proverbs 2:17 · Mentioned in Proverbs 2:17. · *0.3333333333333333 verses*
+- **Covetousness** · Proverbs 28:16 · Mentioned in Proverbs 28:16. · *0.3333333333333333 verses*<br><small>forms: Coveting, Greed</small>
+- **Craftsman** · Proverbs 8:30 · Mentioned in Proverbs 8:30. · *0.3333333333333333 verses*<br><small>forms: Artisan</small>
+- **Cup** · Proverbs 23:31 · Mentioned in Proverbs 23:31. · *0.3333333333333333 verses*
+- **Cursing** · Proverbs 29:24 · Mentioned in Proverbs 29:24. · *0.3333333333333333 verses*
+- **Darkness** · Proverbs 2:13 · Mentioned in Proverbs 2:13. · *1.3333333333333333 verses*
+- **David** · Proverbs 1:1 · Named in Proverbs 1:1. · *1 verses*
+- **Deer** · Proverbs 5:19 · Mentioned in Proverbs 5:19. · *0.3333333333333333 verses*
+- **Desert** · Proverbs 21:19 · Mentioned in Proverbs 21:19. · *0.3333333333333333 verses*
+- **Dew** · Proverbs 3:20 · Mentioned in Proverbs 3:20. · *0.6666666666666666 verses*
+- **Diligence** · Proverbs 4:23 · Mentioned in Proverbs 4:23. · *0.3333333333333333 verses*
+- **Discernment** · Proverbs 2:3 · Mentioned in Proverbs 2:3. · *0.6666666666666666 verses*
+- **Disobedience** · Proverbs 10:19 · Mentioned in Proverbs 10:19. · *0.6666666666666666 verses*
+- **Distaff** · Proverbs 31:19 · Mentioned in Proverbs 31:19. · *0.3333333333333333 verses*
+- **Ditch** · Proverbs 23:27 · Mentioned in Proverbs 23:27. · *0.3333333333333333 verses*<br><small>forms: Trench</small>
+- **Dog** · Proverbs 26:11 · Mentioned in Proverbs 26:11. · *0.6666666666666666 verses*
+- **Donkey** · Proverbs 26:3 · Mentioned in Proverbs 26:3. · *0.3333333333333333 verses*<br><small>aliases: Ass</small>
+- **Dust** · Proverbs 8:26 · Mentioned in Proverbs 8:26. · *0.3333333333333333 verses*
+- **Eagle** · Proverbs 23:5 · Mentioned in Proverbs 23:5. · *1 verses*
+- **Earring** · Proverbs 25:12 · Mentioned in Proverbs 25:12. · *0.3333333333333333 verses*<br><small>forms: Earrings</small>
+- **Elder** · Proverbs 31:23 · Mentioned in Proverbs 31:23. · *0.3333333333333333 verses*
+- **Elders** · Proverbs 31:23 · Mentioned in Proverbs 31:23. · *0.3333333333333333 verses*
+- **Envy** · Proverbs 3:31 · Mentioned in Proverbs 3:31. · *1.3333333333333333 verses*
+- **Equity** · Proverbs 1:3 · Mentioned in Proverbs 1:3. · *1 verses*<br><small>forms: Fairness</small>
+- **Eyelids** · Proverbs 4:25 · Mentioned in Proverbs 4:25. · *1.3333333333333333 verses*
+- **Faithfulness** · Proverbs 14:22 · Mentioned in Proverbs 14:22. · *0.6666666666666666 verses*
+- **Fat** · Proverbs 11:25 · Mentioned in Proverbs 11:25. · *1.3333333333333333 verses*
+- **Fatherless** · Proverbs 23:10 · Mentioned in Proverbs 23:10. · *0.3333333333333333 verses*<br><small>forms: Orphan</small>
+- **Fig tree** · Proverbs 27:18 · Mentioned in Proverbs 27:18. · *0.3333333333333333 verses*<br><small>aliases: Fig</small>
+- **Filthiness** · Proverbs 30:12 · Mentioned in Proverbs 30:12. · *0.3333333333333333 verses*
+- **Fine linen** · Proverbs 7:16 · Mentioned in Proverbs 7:16. · *1 verses*
+- **Finger** · Proverbs 6:13 · Mentioned in Proverbs 6:13. · *0.6666666666666666 verses*
+- **Firstfruits** · Proverbs 3:9 · Mentioned in Proverbs 3:9. · *0.3333333333333333 verses*<br><small>aliases: First fruits</small>
+- **Fist** · Proverbs 30:4 · Mentioned in Proverbs 30:4. · *0.3333333333333333 verses*
+- **Flattery** · Proverbs 6:24 · Mentioned in Proverbs 6:24. · *0.3333333333333333 verses*
+- **Flax** · Proverbs 31:13 · Mentioned in Proverbs 31:13. · *0.3333333333333333 verses*
+- **Fortified city** · Proverbs 18:19 · Mentioned in Proverbs 18:19. · *0.3333333333333333 verses*<br><small>forms: Fenced city</small>
+- **Fortress** · Proverbs 10:29; Proverbs 14:26 · Mentioned in Proverbs 10:29. · *1 verses*<br><small>aliases: Stronghold · forms: Fort</small>
+- **Foundation** · Proverbs 8:29 · Mentioned in Proverbs 8:29. · *0.6666666666666666 verses*
+- **Fowler** · Proverbs 6:5 · Mentioned in Proverbs 6:5. · *0.3333333333333333 verses*
+- **Furnace** · Proverbs 17:3 · Mentioned in Proverbs 17:3. · *0.6666666666666666 verses*
+- **Gazelle** · Proverbs 5:19; Proverbs 6:5 · Mentioned in Proverbs 5:19. · *0.6666666666666666 verses*<br><small>aliases: Roe</small>
+- **Girdle** · Proverbs 31:24 · Mentioned in Proverbs 31:24. · *0.3333333333333333 verses*
+- **Goat** · Proverbs 27:26 · Mentioned in Proverbs 27:26. · *1 verses*
+- **Goats' milk** · Proverbs 27:27 · Mentioned in Proverbs 27:27. · *0.3333333333333333 verses*
+- **Goodness** · Proverbs 20:6 · Mentioned in Proverbs 20:6. · *0.3333333333333333 verses*
+- **Gorge** · Proverbs 23:20 · Mentioned in Proverbs 23:20. · *0.3333333333333333 verses*<br><small>forms: Ravine</small>
+- **Gossip** · Proverbs 11:13 · Mentioned in Proverbs 11:13. · *1 verses*<br><small>forms: Whispering</small>
+- **Grain** · Proverbs 11:26 · Mentioned in Proverbs 11:26. · *0.6666666666666666 verses*<br><small>aliases: Corn</small>
+- **Grass** · Proverbs 19:12 · Mentioned in Proverbs 19:12. · *0.6666666666666666 verses*
+- **Greyhound** · Proverbs 30:31 · Mentioned in Proverbs 30:31. · *0.3333333333333333 verses*
+- **Hair** · Proverbs 16:31 · Mentioned in Proverbs 16:31. · *0.6666666666666666 verses*
+- **Hatred** · Proverbs 10:12 · Mentioned in Proverbs 10:12. · *1.3333333333333333 verses*
+- **Hedge** · Proverbs 15:19 · Mentioned in Proverbs 15:19. · *0.3333333333333333 verses*<br><small>forms: Fence</small>
+- **Hezekiah** · Proverbs 25:1 · Named in Proverbs 25:1. · *1 verses*<br><small>forms: Ezekias</small>
+- **High place** · Proverbs 8:2 · Mentioned in Proverbs 8:2. · *0.6666666666666666 verses*
+- **Highway** · Proverbs 15:19 · Mentioned in Proverbs 15:19. · *0.6666666666666666 verses*
+- **Hill** · Proverbs 8:25 · Mentioned in Proverbs 8:25. · *0.6666666666666666 verses*
+- **Honeycomb** · Proverbs 5:3 · Mentioned in Proverbs 5:3. · *1.3333333333333333 verses*
+- **Horse** · Proverbs 21:31 · Mentioned in Proverbs 21:31. · *0.6666666666666666 verses*
+- **Housetop** · Proverbs 21:9 · Mentioned in Proverbs 21:9. · *0.6666666666666666 verses*<br><small>forms: Roof</small>
+- **Humility** · Proverbs 11:2 · Mentioned in Proverbs 11:2. · *1.3333333333333333 verses*
+- **Hunter** · Proverbs 6:5 · Mentioned in Proverbs 6:5. · *0.3333333333333333 verses*
+- **Hyrax** · Proverbs 30:26 · Mentioned in Proverbs 30:26. · *0.3333333333333333 verses*<br><small>forms: Coney</small>
+- **Idleness** · Proverbs 31:27 · Mentioned in Proverbs 31:27. · *0.3333333333333333 verses*
+- **Infirmity** · Proverbs 18:14 · Mentioned in Proverbs 18:14. · *0.3333333333333333 verses*<br><small>forms: Infirmities</small>
+- **Inheritance** · Proverbs 13:22 · Mentioned in Proverbs 13:22. · *1.3333333333333333 verses*
+- **Injustice** · Proverbs 13:23 · Mentioned in Proverbs 13:23. · *0.6666666666666666 verses*
+- **Iron** · Proverbs 27:17 · Mentioned in Proverbs 27:17. · *0.3333333333333333 verses*
+- **Jakeh** · Proverbs 30:1 · Named in Proverbs 30:1. · *1 verses*
+- **Jaw** · Proverbs 30:14 · Mentioned in Proverbs 30:14. · *0.3333333333333333 verses*<br><small>forms: Jawbone</small>
+- **Jealousy** · Proverbs 6:34 · Mentioned in Proverbs 6:34. · *0.6666666666666666 verses*
+- **Judah** · Proverbs 25:1 · Named in Proverbs 25:1. · *1 verses*<br><small>forms: Judas</small>
+- **Judge** · Proverbs 8:16 · Mentioned in Proverbs 8:16. · *1 verses*
+- **Kindness** · Proverbs 3:3 · Mentioned in Proverbs 3:3. · *1.3333333333333333 verses*
+- **Knife** · Proverbs 23:2 · Mentioned in Proverbs 23:2. · *0.3333333333333333 verses*
+- **Lamb** · Proverbs 27:26 · Mentioned in Proverbs 27:26. · *0.3333333333333333 verses*
+- **Lame** · Proverbs 25:19 · Mentioned in Proverbs 25:19. · *0.6666666666666666 verses*<br><small>forms: Lameness</small>
+- **Lap** · Proverbs 6:27 · Mentioned in Proverbs 6:27. · *0.6666666666666666 verses*
+- **Lattice** · Proverbs 7:6 · Mentioned in Proverbs 7:6. · *0.3333333333333333 verses*
+- **Laziness** · Proverbs 12:24; Proverbs 19:15 · Mentioned in Proverbs 12:24. · *0.6666666666666666 verses*<br><small>aliases: Slothfulness · forms: Sloth</small>
+- **Leech** · Proverbs 30:15 · Mentioned in Proverbs 30:15. · *0.3333333333333333 verses*<br><small>aliases: Horseleach</small>
+- **Leg** · Proverbs 26:7 · Mentioned in Proverbs 26:7. · *0.3333333333333333 verses*
+- **Linen** · Proverbs 7:16 · Mentioned in Proverbs 7:16. · *1 verses*
+- **Liver** · Proverbs 7:23 · Mentioned in Proverbs 7:23. · *0.3333333333333333 verses*
+- **Lizard** · Proverbs 30:28 · Mentioned in Proverbs 30:28. · *0.3333333333333333 verses*
+- **Locust** · Proverbs 30:27 · Mentioned in Proverbs 30:27. · *0.3333333333333333 verses*
+- **Locusts** · Proverbs 30:27 · Mentioned in Proverbs 30:27. · *0.3333333333333333 verses*
+- **Loins** · Proverbs 31:17 · Mentioned in Proverbs 31:17. · *0.3333333333333333 verses*
+- **Lust** · Proverbs 6:25 · Mentioned in Proverbs 6:25. · *0.3333333333333333 verses*
+- **Malice** · Proverbs 26:26 · Mentioned in Proverbs 26:26. · *0.3333333333333333 verses*
+- **Marrow** · Proverbs 3:8 · Mentioned in Proverbs 3:8. · *0.3333333333333333 verses*
+- **Merchant** · Proverbs 31:14 · Mentioned in Proverbs 31:14. · *0.6666666666666666 verses*
+- **Messenger** · Proverbs 13:17 · Mentioned in Proverbs 13:17. · *1.3333333333333333 verses*
+- **Milk** · Proverbs 27:27 · Mentioned in Proverbs 27:27. · *0.6666666666666666 verses*
+- **Mixed wine** · Proverbs 23:30 · Mentioned in Proverbs 23:30. · *0.3333333333333333 verses*<br><small>forms: Spiced wine</small>
+- **Moon** · Proverbs 7:20 · Mentioned in Proverbs 7:20. · *0.3333333333333333 verses*
+- **Mortar** · Proverbs 27:22 · Mentioned in Proverbs 27:22. · *0.3333333333333333 verses*
+- **Mountain** · Proverbs 8:25 · Mentioned in Proverbs 8:25. · *0.6666666666666666 verses*
+- **Mute** · Proverbs 31:8 · Mentioned in Proverbs 31:8. · *0.3333333333333333 verses*<br><small>aliases: Dumb</small>
+- **Myrrh** · Proverbs 7:17 · Mentioned in Proverbs 7:17. · *0.3333333333333333 verses*
+- **Navel** · Proverbs 3:8 · Mentioned in Proverbs 3:8. · *0.3333333333333333 verses*
+- **Net** · Proverbs 1:17 · Mentioned in Proverbs 1:17. · *1 verses*
+- **Nettles** · Proverbs 24:31 · Mentioned in Proverbs 24:31. · *0.3333333333333333 verses*
+- **New wine** · Proverbs 3:10 · Mentioned in Proverbs 3:10. · *0.3333333333333333 verses*
+- **Nose** · Proverbs 30:33 · Mentioned in Proverbs 30:33. · *0.3333333333333333 verses*
+- **Oath** · Proverbs 29:24 · Mentioned in Proverbs 29:24. · *0.3333333333333333 verses*
+- **Obedience** · Proverbs 30:17 · Mentioned in Proverbs 30:17. · *0.3333333333333333 verses*
+- **Oil** · Proverbs 5:3 · Mentioned in Proverbs 5:3. · *1.3333333333333333 verses*<br><small>forms: Olive oil</small>
+- **Overseer** · Proverbs 6:7 · Mentioned in Proverbs 6:7. · *0.3333333333333333 verses*<br><small>forms: Bishop</small>
+- **Ox** · Proverbs 7:22 · Mentioned in Proverbs 7:22. · *1 verses*
+- **Oxen** · Proverbs 14:4 · Mentioned in Proverbs 14:4. · *0.3333333333333333 verses*
+- **Palace** · Proverbs 30:28 · Mentioned in Proverbs 30:28. · *0.3333333333333333 verses*
+- **Partiality** · Proverbs 24:23 · Mentioned in Proverbs 24:23. · *0.6666666666666666 verses*<br><small>forms: Favoritism</small>
+- **Patience** · Proverbs 25:15 · Mentioned in Proverbs 25:15. · *0.3333333333333333 verses*<br><small>forms: Longsuffering</small>
+- **Pig** · Proverbs 11:22 · Mentioned in Proverbs 11:22. · *0.3333333333333333 verses*<br><small>aliases: Swine</small>
+- **Pillar** · Proverbs 9:1 · Mentioned in Proverbs 9:1. · *0.3333333333333333 verses*
+- **Pot** · Proverbs 17:3 · Mentioned in Proverbs 17:3. · *0.6666666666666666 verses*
+- **Prayer** · Proverbs 15:8 · Mentioned in Proverbs 15:8. · *1 verses*
+- **Purity** · Proverbs 22:11 · Mentioned in Proverbs 22:11. · *0.3333333333333333 verses*
+- **Purple** · Proverbs 31:22 · Mentioned in Proverbs 31:22. · *0.3333333333333333 verses*
+- **Purse** · Proverbs 1:14 · Mentioned in Proverbs 1:14. · *0.3333333333333333 verses*
+- **Rash** · Proverbs 20:25 · Mentioned in Proverbs 20:25. · *0.3333333333333333 verses*
+- **Raven** · Proverbs 30:17 · Mentioned in Proverbs 30:17. · *0.3333333333333333 verses*
+- **Rebellion** · Proverbs 17:11 · Mentioned in Proverbs 17:11. · *0.6666666666666666 verses*
+- **Reins** · Proverbs 23:16 · Mentioned in Proverbs 23:16. · *0.3333333333333333 verses*<br><small>forms: Kidneys</small>
+- **Ring** · Proverbs 11:22 · Mentioned in Proverbs 11:22. · *0.3333333333333333 verses*
+- **River** · Proverbs 5:16 · Mentioned in Proverbs 5:16. · *0.6666666666666666 verses*
+- **Robbery** · Proverbs 21:7 · Mentioned in Proverbs 21:7. · *0.3333333333333333 verses*
+- **Rock** · Proverbs 30:19 · Mentioned in Proverbs 30:19. · *0.6666666666666666 verses*
+- **Ruby** · Proverbs 3:15 · Mentioned in Proverbs 3:15. · *1.3333333333333333 verses*<br><small>aliases: Rubies</small>
+- **Rushes** · Proverbs 21:5 · Mentioned in Proverbs 21:5. · *0.3333333333333333 verses*
+- **Sand** · Proverbs 27:3 · Mentioned in Proverbs 27:3. · *0.3333333333333333 verses*
+- **Sash** · Proverbs 31:24 · Mentioned in Proverbs 31:24. · *0.3333333333333333 verses*
+- **Scarlet** · Proverbs 31:21 · Mentioned in Proverbs 31:21. · *0.3333333333333333 verses*
+- **Sea** · Proverbs 8:29 · Mentioned in Proverbs 8:29. · *1 verses*
+- **Shield** · Proverbs 2:7 · Mentioned in Proverbs 2:7. · *0.6666666666666666 verses*
+- **Ship** · Proverbs 30:19 · Mentioned in Proverbs 30:19. · *0.6666666666666666 verses*
+- **Side** · Proverbs 8:30 · Mentioned in Proverbs 8:30. · *0.3333333333333333 verses*
+- **Silk** · Proverbs 31:22 · Mentioned in Proverbs 31:22. · *0.3333333333333333 verses*
+- **Simplicity** · Proverbs 1:22 · Mentioned in Proverbs 1:22. · *0.3333333333333333 verses*
+- **Sky** · Proverbs 3:20 · Mentioned in Proverbs 3:20. · *0.6666666666666666 verses*<br><small>forms: Firmament, Expanse</small>
+- **Slander** · Proverbs 10:18; Proverbs 25:23 · Mentioned in Proverbs 10:18. · *1 verses*<br><small>aliases: Backbiting</small>
+- **Slave** · Proverbs 12:24 · Mentioned in Proverbs 12:24. · *0.3333333333333333 verses*
+- **Smoke** · Proverbs 10:26 · Mentioned in Proverbs 10:26. · *0.3333333333333333 verses*
+- **Snake** · Proverbs 23:32 · Mentioned in Proverbs 23:32. · *0.6666666666666666 verses*<br><small>aliases: Serpent</small>
+- **Snow** · Proverbs 25:13 · Mentioned in Proverbs 25:13. · *1 verses*
+- **Sound judgment** · Proverbs 18:1 · Mentioned in Proverbs 18:1. · *0.3333333333333333 verses*
+- **Sparrow** · Proverbs 26:2 · Mentioned in Proverbs 26:2. · *0.3333333333333333 verses*
+- **Spider** · Proverbs 30:28 · Mentioned in Proverbs 30:28. · *0.3333333333333333 verses*
+- **Spindle** · Proverbs 31:19 · Mentioned in Proverbs 31:19. · *0.3333333333333333 verses*
+- **Steps** · Proverbs 4:12 · Mentioned in Proverbs 4:12. · *1.3333333333333333 verses*<br><small>forms: Stairs, Staircase</small>
+- **Storm** · Proverbs 1:27 · Mentioned in Proverbs 1:27. · *0.3333333333333333 verses*<br><small>forms: Tempest</small>
+- **Strong drink** · Proverbs 20:1 · Mentioned in Proverbs 20:1. · *1 verses*
+- **Sword** · Proverbs 5:4 · Mentioned in Proverbs 5:4. · *1.3333333333333333 verses*
+- **Tabernacle** · Proverbs 14:11 · Mentioned in Proverbs 14:11. · *0.3333333333333333 verses*
+- **Table** · Proverbs 3:3 · Mentioned in Proverbs 3:3. · *1 verses*
+- **Teacher** · Proverbs 5:13 · Mentioned in Proverbs 5:13. · *0.3333333333333333 verses*
+- **Teeth** · Proverbs 10:26; Proverbs 25:19 · Mentioned in Proverbs 10:26. · *1 verses*<br><small>aliases: Tooth</small>
+- **Tent** · Proverbs 14:11 · Mentioned in Proverbs 14:11. · *0.3333333333333333 verses*
+- **Thorns** · Proverbs 15:19 · Mentioned in Proverbs 15:19. · *1.3333333333333333 verses*<br><small>aliases: Thorn</small>
+- **Throat** · Proverbs 23:2 · Mentioned in Proverbs 23:2. · *0.3333333333333333 verses*
+- **Torch** · Proverbs 26:18 · Mentioned in Proverbs 26:18. · *0.3333333333333333 verses*
+- **Tower** · Proverbs 18:10 · Mentioned in Proverbs 18:10. · *0.3333333333333333 verses*<br><small>forms: Watchtower</small>
+- **Treasury** · Proverbs 8:21 · Mentioned in Proverbs 8:21. · *0.3333333333333333 verses*
+- **Uprightness** · Proverbs 2:13 · Mentioned in Proverbs 2:13. · *1 verses*
+- **Usury** · Proverbs 28:8 · Mentioned in Proverbs 28:8. · *0.3333333333333333 verses*
+- **Valley** · Proverbs 30:17 · Mentioned in Proverbs 30:17. · *0.3333333333333333 verses*<br><small>forms: Vale</small>
+- **Vapor** · Proverbs 21:6 · Mentioned in Proverbs 21:6. · *0.3333333333333333 verses*<br><small>forms: Mist, Vapour</small>
+- **Vengeance** · Proverbs 6:34 · Mentioned in Proverbs 6:34. · *0.3333333333333333 verses*<br><small>forms: Revenge</small>
+- **Vinegar** · Proverbs 10:26 · Mentioned in Proverbs 10:26. · *0.6666666666666666 verses*
+- **Viper** · Proverbs 23:32 · Mentioned in Proverbs 23:32. · *0.3333333333333333 verses*
+- **Vow** · Proverbs 7:14 · Mentioned in Proverbs 7:14. · *1 verses*
+- **Waist** · Proverbs 31:17 · Mentioned in Proverbs 31:17. · *0.3333333333333333 verses*
+- **Wall** · Proverbs 18:11 · Mentioned in Proverbs 18:11. · *1 verses*
+- **Wheat** · Proverbs 27:22 · Mentioned in Proverbs 27:22. · *0.3333333333333333 verses*
+- **Wheel** · Proverbs 20:26 · Mentioned in Proverbs 20:26. · *0.3333333333333333 verses*
+- **Whip** · Proverbs 26:3 · Mentioned in Proverbs 26:3. · *0.3333333333333333 verses*<br><small>forms: Scourge</small>
+- **Whirlwind** · Proverbs 1:27 · Mentioned in Proverbs 1:27. · *0.6666666666666666 verses*
+- **Widow** · Proverbs 15:25 · Mentioned in Proverbs 15:25. · *0.3333333333333333 verses*
+- **Wilderness** · Proverbs 21:19 · Mentioned in Proverbs 21:19. · *0.3333333333333333 verses*
+- **Window** · Proverbs 7:6 · Mentioned in Proverbs 7:6. · *0.3333333333333333 verses*
+- **Wise men** · Proverbs 10:14 · Mentioned in Proverbs 10:14. · *1 verses*<br><small>forms: Magi</small>
+- **Womb** · Proverbs 30:16 · Mentioned in Proverbs 30:16. · *0.6666666666666666 verses*
+- **Wool** · Proverbs 31:13 · Mentioned in Proverbs 31:13. · *0.3333333333333333 verses*
+- **Wormwood** · Proverbs 5:4 · Mentioned in Proverbs 5:4. · *0.3333333333333333 verses*
+- **Zeal** · Proverbs 19:2 · Mentioned in Proverbs 19:2. · *0.3333333333333333 verses*
+
+### Near misses
+
+- **Proverbs 31 woman, wife of noble character**: Proverbs 31 describes her (Proverbs 31:10) but gives her no name.
+- **Ecclesiastes, the Preacher**: That is the book of Ecclesiastes.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Psalms.
+
+`psalms-anything` · Books of the Bible · 547 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 13 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 43 |
+| 🪙 Lost Coin (60) | 107 |
+| 💎 Hidden Treasure (85) | 383 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Doeg. Psalm 52 is titled for the time Doeg the Edomite told Saul that David had come to Ahimelech's house (Psalm 52:1).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **David** · Psalm 3:1 · Named in Psalm 3:1. · *86 verses*
+- **Hand** · Psalm 7:3 · Mentioned in Psalm 7:3. · *42.666666666666664 verses*
+- **Heart** · Psalm 4:4 · Mentioned in Psalm 4:4. · *45.333333333333336 verses*
+- **Heaven** · Psalm 2:4 · Mentioned in Psalm 2:4. · *25 verses*
+- **Jacob** · Psalm 14:7 · Named in Psalm 14:7. · *34 verses*
+- **Kindness** · Psalm 5:7 · Mentioned in Psalm 5:7. · *41.333333333333336 verses*
+- **Mercy** · Psalm 4:1 · Mentioned in Psalm 4:1. · *40.333333333333336 verses*
+- **Mount Zion** · Psalm 2:6; Psalm 14:7; Psalm 48:2; Psalm 65:1 · Named in Psalm 48:2. · *65 verses*<br><small>aliases: Israel</small>
+- **Mouth** · Psalm 5:9 · Mentioned in Psalm 5:9. · *23 verses*
+- **Praise** · Psalm 7:17 · Mentioned in Psalm 7:17. · *55.333333333333336 verses*
+- **Righteousness** · Psalm 4:1 · Mentioned in Psalm 4:1. · *24 verses*
+- **Shepherd** · Psalm 23:1 · Mentioned in Psalm 23:1. · *2 verses*
+- **Word** · Psalm 5:1 · Mentioned in Psalm 5:1. · *29.333333333333332 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Anger** · Psalm 2:5 · Mentioned in Psalm 2:5. · *10 verses*
+- **Asaph** · Psalm 50:1 · Named in Psalm 50:1. · *12 verses*
+- **Back** · Psalm 6:10 · Mentioned in Psalm 6:10. · *12.333333333333334 verses*
+- **Chief** · Psalm 4:1 · Mentioned in Psalm 4:1. · *19.333333333333332 verses*
+- **Commandment** · Psalm 19:8; Psalm 78:7 · Mentioned in Psalm 19:8. · *10.666666666666666 verses*<br><small>aliases: Commandments</small>
+- **Death** · Psalm 6:5 · Mentioned in Psalm 6:5. · *9.666666666666666 verses*
+- **Ear** · Psalm 5:1 · Mentioned in Psalm 5:1. · *11 verses*
+- **Egypt** · Psalm 68:31 · Named in Psalm 68:31. · *15 verses*<br><small>forms: Lower, Proud</small>
+- **Eye** · Psalm 6:7 · Mentioned in Psalm 6:7. · *18.666666666666668 verses*
+- **Face** · Psalm 4:6 · Mentioned in Psalm 4:6. · *13.333333333333334 verses*
+- **Fire** · Psalm 11:6 · Mentioned in Psalm 11:6. · *9.666666666666666 verses*
+- **Foot** · Psalm 8:6; Psalm 9:15 · Mentioned in Psalm 8:6. · *12 verses*<br><small>aliases: Feet</small>
+- **Glory** · Psalm 3:3 · Mentioned in Psalm 3:3. · *19.333333333333332 verses*
+- **Harp** · Psalm 33:2 · Mentioned in Psalm 33:2. · *4.333333333333333 verses*
+- **Head** · Psalm 3:3 · Mentioned in Psalm 3:3. · *9.666666666666666 verses*
+- **Hope** · Psalm 9:18 · Mentioned in Psalm 9:18. · *9.333333333333334 verses*
+- **House** · Psalm 5:7 · Mentioned in Psalm 5:7. · *16.666666666666668 verses*
+- **Jerusalem** · Psalm 51:18 · Named in Psalm 51:18. · *17 verses*
+- **Joy** · Psalm 5:11 · Mentioned in Psalm 5:11. · *10.666666666666666 verses*
+- **Judah** · Psalm 48:11 · Named in Psalm 48:11. · *10 verses*<br><small>forms: Judas</small>
+- **Judge** · Psalm 2:10 · Mentioned in Psalm 2:10. · *10.666666666666666 verses*
+- **Judgment** · Psalm 1:5 · Mentioned in Psalm 1:5. · *21 verses*
+- **King** · Psalm 2:2 · Mentioned in Psalm 2:2. · *21 verses*
+- **Korah** · Psalm 42:1 · Named in Psalm 42:1. · *11 verses*
+- **Law** · Psalm 1:2 · Mentioned in Psalm 1:2. · *13.333333333333334 verses*
+- **Life** · Psalm 7:5 · Mentioned in Psalm 7:5. · *11.333333333333334 verses*
+- **Lion** · Psalm 7:2 · Mentioned in Psalm 7:2. · *3.6666666666666665 verses*
+- **Lips** · Psalm 8:2 · Mentioned in Psalm 8:2. · *9.666666666666666 verses*<br><small>aliases: Lip</small>
+- **Love** · Psalm 4:2 · Mentioned in Psalm 4:2. · *13 verses*
+- **Lying** · Psalm 4:2; Psalm 5:6; Psalm 31:6 · Mentioned in Psalm 4:2. · *9.666666666666666 verses*<br><small>aliases: Lies, Falsehood</small>
+- **Mountain** · Psalm 11:1 · Mentioned in Psalm 11:1. · *11.666666666666666 verses*
+- **Musician** · Psalm 4:1 · Mentioned in Psalm 4:1. · *18.333333333333332 verses*
+- **Prayer** · Psalm 4:1 · Mentioned in Psalm 4:1. · *10.666666666666666 verses*
+- **Rock** · Psalm 18:2 · Mentioned in Psalm 18:2. · *10 verses*
+- **Salvation** · Psalm 3:8 · Mentioned in Psalm 3:8. · *22 verses*
+- **Sea** · Psalm 8:8 · Mentioned in Psalm 8:8. · *11.666666666666666 verses*
+- **Servant** · Psalm 18:1 · Mentioned in Psalm 18:1. · *19.333333333333332 verses*
+- **Sin** · Psalm 4:4 · Mentioned in Psalm 4:4. · *11 verses*
+- **Tongue** · Psalm 5:9 · Mentioned in Psalm 5:9. · *11.666666666666666 verses*
+- **Trust** · Psalm 2:12 · Mentioned in Psalm 2:12. · *20.333333333333332 verses*
+- **Truth** · Psalm 15:2 · Mentioned in Psalm 15:2. · *14.666666666666666 verses*
+- **Water** · Psalm 1:3 · Mentioned in Psalm 1:3. · *17.333333333333332 verses*
+- **Wrath** · Psalm 2:5 · Mentioned in Psalm 2:5. · *9.333333333333334 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Aaron** · Psalm 77:20 · Named in Psalm 77:20. · *9 verses*
+- **Abraham** · Psalm 47:9 · Named in Psalm 47:9. · *4 verses*<br><small>forms: Abram</small>
+- **Angel** · Psalm 8:5 · Mentioned in Psalm 8:5. · *3.6666666666666665 verses*<br><small>aliases: Angels</small>
+- **Arm** · Psalm 10:15 · Mentioned in Psalm 10:15. · *3.6666666666666665 verses*
+- **Arrow** · Psalm 7:13 · Mentioned in Psalm 7:13. · *5.333333333333333 verses*
+- **Babylon** · Psalm 87:4 · Named in Psalm 87:4. · *3 verses*
+- **Bashan** · Psalm 22:12 · Named in Psalm 22:12. · *5 verses*
+- **Bed** · Psalm 4:4 · Mentioned in Psalm 4:4. · *2.6666666666666665 verses*
+- **Blessing** · Psalm 3:8 · Mentioned in Psalm 3:8. · *2.3333333333333335 verses*
+- **Blood** · Psalm 9:12 · Mentioned in Psalm 9:12. · *4.333333333333333 verses*
+- **Bones** · Psalm 3:7; Psalm 6:2 · Mentioned in Psalm 3:7. · *5.333333333333333 verses*<br><small>aliases: Bone</small>
+- **Bow** · Psalm 7:12 · Mentioned in Psalm 7:12. · *7 verses*
+- **Bread** · Psalm 14:4 · Mentioned in Psalm 14:4. · *5 verses*
+- **Brook** · Psalm 1:3; Psalm 42:1 · Mentioned in Psalm 1:3. · *4 verses*<br><small>aliases: Stream</small>
+- **Bull** · Psalm 22:12; Psalm 50:9 · Mentioned in Psalm 22:12. · *2.6666666666666665 verses*<br><small>aliases: Bullock</small>
+- **Canaan** · Psalm 105:11 · Named in Psalm 105:11. · *3 verses*<br><small>forms: Chanaan, Gentile, Glorious Land</small>
+- **Cloud** · Psalm 18:11 · Mentioned in Psalm 18:11. · *5.666666666666667 verses*<br><small>aliases: Clouds</small>
+- **Compassion** · Psalm 77:9 · Mentioned in Psalm 77:9. · *3 verses*
+- **Cord** · Psalm 2:3 · Mentioned in Psalm 2:3. · *2.3333333333333335 verses*
+- **Counsel** · Psalm 1:1 · Mentioned in Psalm 1:1. · *6.666666666666667 verses*
+- **Covenant** · Psalm 19:7 · Mentioned in Psalm 19:7. · *8.666666666666666 verses*
+- **Crown** · Psalm 7:16 · Mentioned in Psalm 7:16. · *2.3333333333333335 verses*
+- **Darkness** · Psalm 11:2 · Mentioned in Psalm 11:2. · *5.666666666666667 verses*
+- **Dawn** · Psalm 46:5 · Mentioned in Psalm 46:5. · *2.3333333333333335 verses*<br><small>forms: Daybreak</small>
+- **Deceit** · Psalm 10:7; Psalm 32:2 · Mentioned in Psalm 10:7. · *4.666666666666667 verses*<br><small>aliases: Guile</small>
+- **Desert** · Psalm 28:4 · Mentioned in Psalm 28:4. · *3.6666666666666665 verses*
+- **Dust** · Psalm 7:5 · Mentioned in Psalm 7:5. · *4.666666666666667 verses*
+- **Edom** · Psalm 60:1 · Named in Psalm 60:1. · *7 verses*<br><small>forms: Esau</small>
+- **Faithfulness** · Psalm 5:9 · Mentioned in Psalm 5:9. · *7.333333333333333 verses*
+- **Fat** · Psalm 17:10 · Mentioned in Psalm 17:10. · *2.6666666666666665 verses*
+- **Fatherless** · Psalm 10:14 · Mentioned in Psalm 10:14. · *2.6666666666666665 verses*<br><small>forms: Orphan</small>
+- **Field** · Psalm 8:7 · Mentioned in Psalm 8:7. · *4.333333333333333 verses*
+- **Flesh** · Psalm 16:9 · Mentioned in Psalm 16:9. · *6 verses*
+- **Flood** · Psalm 6:6 · Mentioned in Psalm 6:6. · *4.333333333333333 verses*
+- **Fool** · Psalm 14:1 · Mentioned in Psalm 14:1. · *2.3333333333333335 verses*
+- **Fortress** · Psalm 18:2; Psalm 18:45 · Mentioned in Psalm 18:2. · *4 verses*<br><small>aliases: Stronghold · forms: Fort</small>
+- **Foundation** · Psalm 11:3 · Mentioned in Psalm 11:3. · *3.3333333333333335 verses*
+- **Garment** · Psalm 22:18 · Mentioned in Psalm 22:18. · *3.3333333333333335 verses*
+- **Gate** · Psalm 9:13 · Mentioned in Psalm 9:13. · *4.666666666666667 verses*
+- **Gath** · Psalm 56:1 · Named in Psalm 56:1. · *4 verses*
+- **Gold** · Psalm 19:10 · Mentioned in Psalm 19:10. · *3.6666666666666665 verses*
+- **Goodness** · Psalm 16:2 · Mentioned in Psalm 16:2. · *6.333333333333333 verses*
+- **Grass** · Psalm 37:2 · Mentioned in Psalm 37:2. · *4 verses*
+- **Ham** · Psalm 78:51 · Named in Psalm 78:51. · *4 verses*
+- **Hell** · Psalm 6:5; Psalm 9:17 · Mentioned in Psalm 6:5. · *5 verses*<br><small>aliases: Sheol · forms: Hades</small>
+- **Hill** · Psalm 2:6 · Mentioned in Psalm 2:6. · *8.666666666666666 verses*
+- **Holiness** · Psalm 29:2 · Mentioned in Psalm 29:2. · *3.6666666666666665 verses*
+- **Honor** · Psalm 7:5; Psalm 8:5 · Mentioned in Psalm 7:5. · *7.333333333333333 verses*<br><small>aliases: Honour</small>
+- **Horn** · Psalm 18:2 · Mentioned in Psalm 18:2. · *4.666666666666667 verses*
+- **Inheritance** · Psalm 2:8 · Mentioned in Psalm 2:8. · *6 verses*
+- **Jeduthun** · Psalm 39:1 · Named in Psalm 39:1. · *3 verses*
+- **Jordan** · Psalm 42:6 · Named in Psalm 42:6. · *3 verses*
+- **Joseph** · Psalm 77:15 · Named in Psalm 77:15. · *5 verses*<br><small>forms: Joseph son of Jacob</small>
+- **Justice** · Psalm 25:9 · Mentioned in Psalm 25:9. · *6 verses*
+- **Kingdom** · Psalm 22:28 · Mentioned in Psalm 22:28. · *4 verses*
+- **Knowledge** · Psalm 14:4 · Mentioned in Psalm 14:4. · *2.6666666666666665 verses*
+- **Lebanon** · Psalm 29:5 · Named in Psalm 29:5. · *5 verses*
+- **Lightning** · Psalm 18:14 · Mentioned in Psalm 18:14. · *2.6666666666666665 verses*
+- **Lyre** · Psalm 6:1 · Mentioned in Psalm 6:1. · *3 verses*
+- **Manasseh** · Psalm 60:7 · Named in Psalm 60:7. · *3 verses*<br><small>forms: Manasses</small>
+- **Meat** · Psalm 16:9; Psalm 42:3 · Mentioned in Psalm 16:9. · *5.666666666666667 verses*
+- **Meribah** · Psalm 81:7 · Named in Psalm 81:7. · *3 verses*<br><small>forms: Meribah Kadesh, Meribath Kadesh, Waters of Meribah-kadesh, Waters of Meribath-kadesh</small>
+- **Moab** · Psalm 60:8 · Named in Psalm 60:8. · *3 verses*
+- **Moon** · Psalm 8:3 · Mentioned in Psalm 8:3. · *3 verses*
+- **Moses** · Psalm 77:20 · Named in Psalm 77:20. · *8 verses*
+- **Net** · Psalm 9:15 · Mentioned in Psalm 9:15. · *3.3333333333333335 verses*
+- **Oil** · Psalm 23:5 · Mentioned in Psalm 23:5. · *3 verses*<br><small>forms: Olive oil</small>
+- **Oppression** · Psalm 10:7 · Mentioned in Psalm 10:7. · *3.6666666666666665 verses*
+- **Pasture** · Psalm 23:2 · Mentioned in Psalm 23:2. · *3 verses*<br><small>forms: Meadow</small>
+- **Peace** · Psalm 4:8 · Mentioned in Psalm 4:8. · *9 verses*
+- **Philistia** · Psalm 60:8; Psalm 83:7 · Named in Psalm 60:8. · *5 verses*<br><small>aliases: Philistine, Philistines · forms: Palestina, Palestine</small>
+- **Pride** · Psalm 10:2 · Mentioned in Psalm 10:2. · *3.3333333333333335 verses*<br><small>aliases: Arrogance</small>
+- **Prince** · Psalm 45:16 · Mentioned in Psalm 45:16. · *5 verses*
+- **Psaltery** · Psalm 33:2 · Mentioned in Psalm 33:2. · *2.6666666666666665 verses*
+- **Rain** · Psalm 11:6 · Mentioned in Psalm 11:6. · *2.6666666666666665 verses*
+- **Rebuke** · Psalm 6:1 · Mentioned in Psalm 6:1. · *3.6666666666666665 verses*<br><small>forms: Correction</small>
+- **Red Sea** · Psalm 106:7 · Named in Psalm 106:7. · *5 verses*
+- **River** · Psalm 1:3 · Mentioned in Psalm 1:3. · *5.666666666666667 verses*
+- **Sacrifice** · Psalm 4:5 · Mentioned in Psalm 4:5. · *6 verses*
+- **Saul** · Psalm 18:1 · Named in Psalm 18:1. · *5 verses*
+- **Sheep** · Psalm 8:7 · Mentioned in Psalm 8:7. · *3.6666666666666665 verses*
+- **Shield** · Psalm 3:3 · Mentioned in Psalm 3:3. · *7 verses*
+- **Side** · Psalm 3:6 · Mentioned in Psalm 3:6. · *4.666666666666667 verses*
+- **Silver** · Psalm 12:6 · Mentioned in Psalm 12:6. · *2.6666666666666665 verses*
+- **Sky** · Psalm 8:8; Psalm 19:1 · Mentioned in Psalm 8:8. · *7 verses*<br><small>aliases: Firmament, Expanse</small>
+- **Smoke** · Psalm 18:8 · Mentioned in Psalm 18:8. · *2.6666666666666665 verses*
+- **Sore** · Psalm 2:5 · Mentioned in Psalm 2:5. · *4 verses*<br><small>forms: Sores</small>
+- **Spirit** · Psalm 31:5 · Mentioned in Psalm 31:5. · *7 verses*
+- **Steps** · Psalm 17:5 · Mentioned in Psalm 17:5. · *4 verses*<br><small>forms: Stairs, Staircase</small>
+- **Stranger** · Psalm 18:44; Psalm 39:12 · Mentioned in Psalm 18:44. · *4 verses*<br><small>aliases: Foreigner, Sojourner</small>
+- **Stringed instruments** · Psalm 4:1; Psalm 11:2 · Mentioned in Psalm 4:1. · *4.333333333333333 verses*<br><small>aliases: Strings</small>
+- **Sun** · Psalm 19:4 · Mentioned in Psalm 19:4. · *5.333333333333333 verses*
+- **Sword** · Psalm 7:12 · Mentioned in Psalm 7:12. · *6.666666666666667 verses*
+- **Tabernacle** · Psalm 15:1 · Mentioned in Psalm 15:1. · *5.333333333333333 verses*
+- **Temple** · Psalm 5:7 · Mentioned in Psalm 5:7. · *4 verses*
+- **Tent** · Psalm 19:4 · Mentioned in Psalm 19:4. · *5.333333333333333 verses*
+- **Thanksgiving** · Psalm 26:7 · Mentioned in Psalm 26:7. · *3.3333333333333335 verses*<br><small>forms: Thankfulness, Gratitude</small>
+- **Throne** · Psalm 9:4 · Mentioned in Psalm 9:4. · *5.666666666666667 verses*
+- **Tower** · Psalm 9:9 · Mentioned in Psalm 9:9. · *3 verses*<br><small>forms: Watchtower</small>
+- **Tree** · Psalm 1:3; Psalm 74:5 · Mentioned in Psalm 1:3. · *3.6666666666666665 verses*<br><small>aliases: Trees</small>
+- **Tyre** · Psalm 45:12 · Named in Psalm 45:12. · *3 verses*<br><small>forms: Tyrus</small>
+- **Understanding** · Psalm 32:9 · Mentioned in Psalm 32:9. · *5 verses*
+- **Valley** · Psalm 23:4 · Mentioned in Psalm 23:4. · *2.6666666666666665 verses*<br><small>forms: Vale</small>
+- **Vow** · Psalm 22:25 · Mentioned in Psalm 22:25. · *3.3333333333333335 verses*
+- **Wilderness** · Psalm 29:8 · Mentioned in Psalm 29:8. · *7.333333333333333 verses*
+- **Wind** · Psalm 1:4 · Mentioned in Psalm 1:4. · *5.666666666666667 verses*
+- **Wisdom** · Psalm 37:30 · Mentioned in Psalm 37:30. · *2.6666666666666665 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Abimelech** · Psalm 34:1 · Named in Psalm 34:1. · *1 verses*
+- **Abiram** · Psalm 106:17 · Named in Psalm 106:17. · *1 verses*
+- **Absalom** · Psalm 3:1 · Named in Psalm 3:1. · *1 verses*
+- **Adder** · Psalm 58:4 · Mentioned in Psalm 58:4. · *1 verses*
+- **Ahimelech** · Psalm 52:1 · Named in Psalm 52:1. · *1 verses*
+- **Aloes** · Psalm 45:8 · Mentioned in Psalm 45:8. · *0.3333333333333333 verses*
+- **Altar** · Psalm 26:6 · Mentioned in Psalm 26:6. · *1.6666666666666667 verses*
+- **Amalek** · Psalm 83:7 · Named in Psalm 83:7. · *1 verses*
+- **Ammon** · Psalm 83:7 · Named in Psalm 83:7. · *1 verses*<br><small>forms: Ammonitess</small>
+- **Apple** · Psalm 17:8 · Mentioned in Psalm 17:8. · *0.3333333333333333 verses*<br><small>forms: Apple tree, Apples</small>
+- **Apple of the eye** · Psalm 17:8 · Mentioned in Psalm 17:8. · *0.3333333333333333 verses*<br><small>forms: Apple of his eye</small>
+- **Aram** · Psalm 60:1 · Named in Psalm 60:1. · *1 verses*
+- **Aram-naharaim** · Psalm 60:1 · Named in Psalm 60:1. · *1 verses*
+- **Ark** · Psalm 132:8 · Mentioned in Psalm 132:8. · *0.3333333333333333 verses*
+- **Ashes** · Psalm 102:9 · Mentioned in Psalm 102:9. · *0.6666666666666666 verses*
+- **Assur** · Psalm 83:8 · Named in Psalm 83:8. · *1 verses*<br><small>forms: Asshur</small>
+- **Axe** · Psalm 74:5 · Mentioned in Psalm 74:5. · *0.6666666666666666 verses*<br><small>aliases: Ax</small>
+- **Baal** · Psalm 106:28 · Mentioned in Psalm 106:28. · *0.3333333333333333 verses*
+- **Badger** · Psalm 104:18 · Mentioned in Psalm 104:18. · *0.3333333333333333 verses*
+- **Balances** · Psalm 62:9 · Mentioned in Psalm 62:9. · *0.3333333333333333 verses*<br><small>forms: Scales</small>
+- **Barn** · Psalm 144:13 · Mentioned in Psalm 144:13. · *0.3333333333333333 verses*
+- **Basin** · Psalm 60:8 · Mentioned in Psalm 60:8. · *0.3333333333333333 verses*<br><small>forms: Laver</small>
+- **Basket** · Psalm 81:6 · Mentioned in Psalm 81:6. · *0.3333333333333333 verses*
+- **Bath** · Psalm 51:1 · Mentioned in Psalm 51:1. · *0.3333333333333333 verses*<br><small>forms: Baths</small>
+- **Bath-sheba** · Psalm 51:1 · Named in Psalm 51:1. · *1 verses*<br><small>forms: Bathshua</small>
+- **Bay tree** · Psalm 37:35 · Mentioned in Psalm 37:35. · *0.3333333333333333 verses*
+- **Beam** · Psalm 104:3 · Mentioned in Psalm 104:3. · *0.3333333333333333 verses*
+- **Beard** · Psalm 133:2 · Mentioned in Psalm 133:2. · *0.3333333333333333 verses*
+- **Bee** · Psalm 118:12 · Mentioned in Psalm 118:12. · *0.3333333333333333 verses*
+- **Belly** · Psalm 17:14 · Mentioned in Psalm 17:14. · *1.3333333333333333 verses*<br><small>forms: Stomach</small>
+- **Belt** · Psalm 109:19 · Mentioned in Psalm 109:19. · *0.3333333333333333 verses*
+- **Benjamin** · Psalm 68:27 · Named in Psalm 68:27. · *2 verses*
+- **Billows** · Psalm 42:7 · Mentioned in Psalm 42:7. · *0.3333333333333333 verses*
+- **Bit** · Psalm 32:9 · Mentioned in Psalm 32:9. · *0.3333333333333333 verses*
+- **Blind** · Psalm 146:8 · Mentioned in Psalm 146:8. · *0.3333333333333333 verses*<br><small>forms: Blindness</small>
+- **Bloodshed** · Psalm 51:14 · Mentioned in Psalm 51:14. · *0.3333333333333333 verses*
+- **Bolt** · Psalm 18:14 · Mentioned in Psalm 18:14. · *0.3333333333333333 verses*
+- **Book** · Psalm 40:7 · Mentioned in Psalm 40:7. · *1.3333333333333333 verses*
+- **Bosom** · Psalm 35:13 · Mentioned in Psalm 35:13. · *1.6666666666666667 verses*
+- **Bottle** · Psalm 56:8 · Mentioned in Psalm 56:8. · *0.6666666666666666 verses*
+- **Bowels** · Psalm 22:14 · Mentioned in Psalm 22:14. · *1 verses*
+- **Brass** · Psalm 107:16 · Mentioned in Psalm 107:16. · *0.3333333333333333 verses*
+- **Breast** · Psalm 22:9 · Mentioned in Psalm 22:9. · *0.3333333333333333 verses*
+- **Bribe** · Psalm 15:5 · Mentioned in Psalm 15:5. · *0.6666666666666666 verses*<br><small>forms: Bribery</small>
+- **Brimstone** · Psalm 11:6 · Mentioned in Psalm 11:6. · *0.3333333333333333 verses*<br><small>aliases: Sulfur</small>
+- **Bronze** · Psalm 18:34 · Mentioned in Psalm 18:34. · *0.6666666666666666 verses*
+- **Builder** · Psalm 118:22 · Mentioned in Psalm 118:22. · *0.3333333333333333 verses*
+- **Butter** · Psalm 55:21 · Mentioned in Psalm 55:21. · *0.3333333333333333 verses*
+- **Calf** · Psalm 29:6 · Mentioned in Psalm 29:6. · *0.6666666666666666 verses*
+- **Candle** · Psalm 18:28 · Mentioned in Psalm 18:28. · *0.3333333333333333 verses*
+- **Cart** · Psalm 65:11 · Mentioned in Psalm 65:11. · *0.3333333333333333 verses*
+- **Cassia** · Psalm 45:8 · Mentioned in Psalm 45:8. · *0.3333333333333333 verses*
+- **Caterpillar** · Psalm 78:46 · Mentioned in Psalm 78:46. · *0.3333333333333333 verses*
+- **Cattle** · Psalm 8:7 · Mentioned in Psalm 8:7. · *2 verses*
+- **Cave** · Psalm 57:1 · Mentioned in Psalm 57:1. · *0.6666666666666666 verses*<br><small>forms: Cavern</small>
+- **Cedar** · Psalm 29:5 · Mentioned in Psalm 29:5. · *1.6666666666666667 verses*
+- **Chain** · Psalm 68:6 · Mentioned in Psalm 68:6. · *1.6666666666666667 verses*
+- **Chains** · Psalm 68:6 · Mentioned in Psalm 68:6. · *1.3333333333333333 verses*<br><small>forms: Necklace</small>
+- **Chariot** · Psalm 20:7 · Mentioned in Psalm 20:7. · *1.6666666666666667 verses*
+- **Cheek** · Psalm 3:7 · Mentioned in Psalm 3:7. · *0.3333333333333333 verses*
+- **Cherub** · Psalm 18:10; Psalm 80:1 · Mentioned in Psalm 18:10. · *1 verses*<br><small>aliases: Cherubim, Cherubims</small>
+- **Chest** · Psalm 74:11 · Mentioned in Psalm 74:11. · *0.3333333333333333 verses*
+- **Citadel** · Psalm 48:3 · Mentioned in Psalm 48:3. · *0.3333333333333333 verses*<br><small>forms: Castle</small>
+- **Cloak** · Psalm 102:26 · Mentioned in Psalm 102:26. · *0.6666666666666666 verses*
+- **Coal** · Psalm 11:6 · Mentioned in Psalm 11:6. · *2 verses*<br><small>aliases: Coals · forms: Live coal</small>
+- **Cobra** · Psalm 58:4 · Mentioned in Psalm 58:4. · *0.6666666666666666 verses*
+- **Complaining** · Psalm 144:14 · Mentioned in Psalm 144:14. · *0.3333333333333333 verses*
+- **Conspiracy** · Psalm 64:2 · Mentioned in Psalm 64:2. · *0.3333333333333333 verses*
+- **Contention** · Psalm 80:6 · Mentioned in Psalm 80:6. · *0.3333333333333333 verses*
+- **Cornerstone** · Psalm 118:22 · Mentioned in Psalm 118:22. · *0.3333333333333333 verses*
+- **Cornet** · Psalm 98:6 · Mentioned in Psalm 98:6. · *0.3333333333333333 verses*
+- **Counselor** · Psalm 119:24 · Mentioned in Psalm 119:24. · *0.3333333333333333 verses*<br><small>aliases: Counsellor</small>
+- **Courage** · Psalm 27:14 · Mentioned in Psalm 27:14. · *0.6666666666666666 verses*<br><small>forms: Boldness</small>
+- **Covetousness** · Psalm 119:36 · Mentioned in Psalm 119:36. · *0.3333333333333333 verses*<br><small>forms: Coveting, Greed</small>
+- **Cup** · Psalm 23:5 · Mentioned in Psalm 23:5. · *2 verses*
+- **Curse** · Psalm 59:12 · Mentioned in Psalm 59:12. · *1.3333333333333333 verses*
+- **Cursing** · Psalm 10:7 · Mentioned in Psalm 10:7. · *1.3333333333333333 verses*
+- **Cush** · Psalm 7:1 · Named in Psalm 7:1. · *1 verses*
+- **Cymbals** · Psalm 150:5 · Mentioned in Psalm 150:5. · *0.3333333333333333 verses*<br><small>aliases: Cymbal</small>
+- **Cypress** · Psalm 104:17 · Mentioned in Psalm 104:17. · *0.3333333333333333 verses*
+- **Deaf** · Psalm 28:1 · Mentioned in Psalm 28:1. · *1 verses*<br><small>forms: Deafness</small>
+- **Deer** · Psalm 18:33 · Mentioned in Psalm 18:33. · *1 verses*
+- **Demon** · Psalm 106:37 · Mentioned in Psalm 106:37. · *0.3333333333333333 verses*<br><small>aliases: Demons</small>
+- **Devil** · Psalm 106:37 · Mentioned in Psalm 106:37. · *0.3333333333333333 verses*
+- **Dew** · Psalm 110:3 · Mentioned in Psalm 110:3. · *0.6666666666666666 verses*
+- **Discipline** · Psalm 6:1 · Mentioned in Psalm 6:1. · *1.3333333333333333 verses*
+- **Discretion** · Psalm 112:5 · Mentioned in Psalm 112:5. · *0.3333333333333333 verses*
+- **Disobedience** · Psalm 32:1 · Mentioned in Psalm 32:1. · *1.3333333333333333 verses*
+- **Ditch** · Psalm 7:15 · Mentioned in Psalm 7:15. · *0.3333333333333333 verses*<br><small>forms: Trench</small>
+- **Dog** · Psalm 22:16 · Mentioned in Psalm 22:16. · *1.6666666666666667 verses*
+- **Donkey** · Psalm 104:11 · Mentioned in Psalm 104:11. · *0.3333333333333333 verses*<br><small>aliases: Ass</small>
+- **Door** · Psalm 24:7 · Mentioned in Psalm 24:7. · *1.3333333333333333 verses*
+- **Doorkeeper** · Psalm 84:10 · Mentioned in Psalm 84:10. · *0.3333333333333333 verses*<br><small>forms: Porter, Gatekeeper</small>
+- **Dove** · Psalm 55:6 · Mentioned in Psalm 55:6. · *1.3333333333333333 verses*
+- **Dragon** · Psalm 44:19 · Mentioned in Psalm 44:19. · *1.3333333333333333 verses*
+- **Drought** · Psalm 32:4 · Mentioned in Psalm 32:4. · *0.3333333333333333 verses*
+- **Eagle** · Psalm 103:5 · Mentioned in Psalm 103:5. · *0.3333333333333333 verses*
+- **East wind** · Psalm 48:7 · Mentioned in Psalm 48:7. · *0.6666666666666666 verses*
+- **Elder** · Psalm 105:22 · Mentioned in Psalm 105:22. · *0.6666666666666666 verses*
+- **Elders** · Psalm 105:22 · Mentioned in Psalm 105:22. · *0.6666666666666666 verses*
+- **Embroidered work** · Psalm 45:14 · Mentioned in Psalm 45:14. · *0.3333333333333333 verses*<br><small>forms: Embroidery</small>
+- **En-dor** · Psalm 83:10 · Named in Psalm 83:10. · *1 verses*
+- **Envy** · Psalm 68:16 · Mentioned in Psalm 68:16. · *0.3333333333333333 verses*
+- **Ephratah** · Psalm 132:6 · Named in Psalm 132:6. · *1 verses*
+- **Ephrathah** · Psalm 132:6 · Named in Psalm 132:6. · *1 verses*
+- **Equity** · Psalm 17:2 · Mentioned in Psalm 17:2. · *2 verses*<br><small>forms: Fairness</small>
+- **Ethan** · Psalm 89:1 · Named in Psalm 89:1. · *1 verses*
+- **Ewe** · Psalm 78:71 · Mentioned in Psalm 78:71. · *0.3333333333333333 verses*
+- **Eyelids** · Psalm 11:4 · Mentioned in Psalm 11:4. · *1 verses*
+- **False witness** · Psalm 27:12 · Mentioned in Psalm 27:12. · *0.6666666666666666 verses*
+- **Fence** · Psalm 62:3; Psalm 80:12 · Mentioned in Psalm 62:3. · *1 verses*<br><small>aliases: Hedge</small>
+- **Fetters** · Psalm 105:18 · Mentioned in Psalm 105:18. · *0.6666666666666666 verses*
+- **Fig tree** · Psalm 78:47 · Mentioned in Psalm 78:47. · *0.6666666666666666 verses*<br><small>aliases: Fig</small>
+- **Finger** · Psalm 8:3 · Mentioned in Psalm 8:3. · *0.6666666666666666 verses*
+- **Fir** · Psalm 68:13 · Mentioned in Psalm 68:13. · *0.6666666666666666 verses*
+- **Firstfruits** · Psalm 105:36 · Mentioned in Psalm 105:36. · *0.3333333333333333 verses*<br><small>aliases: First fruits</small>
+- **Fish** · Psalm 8:8 · Mentioned in Psalm 8:8. · *0.6666666666666666 verses*
+- **Flint** · Psalm 114:8 · Mentioned in Psalm 114:8. · *0.3333333333333333 verses*
+- **Flute** · Psalm 5:1 · Mentioned in Psalm 5:1. · *0.6666666666666666 verses*
+- **Folly** · Psalm 38:5; Psalm 49:13 · Mentioned in Psalm 38:5. · *1.3333333333333333 verses*<br><small>aliases: Foolishness</small>
+- **Footstool** · Psalm 99:5 · Mentioned in Psalm 99:5. · *1 verses*
+- **Forest** · Psalm 29:9 · Mentioned in Psalm 29:9. · *1.3333333333333333 verses*
+- **Forgiveness** · Psalm 130:4 · Mentioned in Psalm 130:4. · *0.3333333333333333 verses*
+- **Fortified city** · Psalm 108:10 · Mentioned in Psalm 108:10. · *0.3333333333333333 verses*<br><small>forms: Fenced city</small>
+- **Fountain** · Psalm 36:9 · Mentioned in Psalm 36:9. · *1.3333333333333333 verses*
+- **Fowler** · Psalm 91:3 · Mentioned in Psalm 91:3. · *0.6666666666666666 verses*
+- **Fox** · Psalm 63:10 · Mentioned in Psalm 63:10. · *0.3333333333333333 verses*
+- **Fraud** · Psalm 10:7 · Mentioned in Psalm 10:7. · *0.3333333333333333 verses*
+- **Frog** · Psalm 78:45 · Mentioned in Psalm 78:45. · *0.6666666666666666 verses*
+- **Frost** · Psalm 78:47 · Mentioned in Psalm 78:47. · *0.6666666666666666 verses*
+- **Furnace** · Psalm 12:6 · Mentioned in Psalm 12:6. · *0.6666666666666666 verses*
+- **Gall** · Psalm 69:21 · Mentioned in Psalm 69:21. · *0.3333333333333333 verses*
+- **Garner** · Psalm 144:13 · Mentioned in Psalm 144:13. · *0.3333333333333333 verses*<br><small>forms: Granary</small>
+- **Gebal** · Psalm 83:7 · Named in Psalm 83:7. · *1 verses*
+- **Gentleness** · Psalm 18:35 · Mentioned in Psalm 18:35. · *0.3333333333333333 verses*
+- **Gilead** · Psalm 60:7 · Named in Psalm 60:7. · *2 verses*
+- **Girdle** · Psalm 109:19 · Mentioned in Psalm 109:19. · *0.3333333333333333 verses*
+- **Goat** · Psalm 50:9 · Mentioned in Psalm 50:9. · *1.3333333333333333 verses*
+- **Governor** · Psalm 22:28 · Mentioned in Psalm 22:28. · *0.3333333333333333 verses*
+- **Grace** · Psalm 45:2 · Mentioned in Psalm 45:2. · *0.6666666666666666 verses*
+- **Grain** · Psalm 4:7 · Mentioned in Psalm 4:7. · *1.6666666666666667 verses*<br><small>aliases: Corn</small>
+- **Grasshopper** · Psalm 105:34 · Mentioned in Psalm 105:34. · *0.3333333333333333 verses*
+- **Guard** · Psalm 91:11 · Mentioned in Psalm 91:11. · *0.6666666666666666 verses*
+- **Hailstones** · Psalm 18:12 · Mentioned in Psalm 18:12. · *0.6666666666666666 verses*
+- **Hair** · Psalm 40:12 · Mentioned in Psalm 40:12. · *0.6666666666666666 verses*
+- **Hammer** · Psalm 74:6 · Mentioned in Psalm 74:6. · *0.3333333333333333 verses*
+- **Handbreadth** · Psalm 39:5 · Mentioned in Psalm 39:5. · *0.3333333333333333 verses*<br><small>forms: Handbreath</small>
+- **Hatred** · Psalm 25:19 · Mentioned in Psalm 25:19. · *1.3333333333333333 verses*
+- **Heel** · Psalm 41:9 · Mentioned in Psalm 41:9. · *0.6666666666666666 verses*
+- **Helmet** · Psalm 108:8 · Mentioned in Psalm 108:8. · *0.3333333333333333 verses*
+- **Hem** · Psalm 139:5 · Mentioned in Psalm 139:5. · *0.3333333333333333 verses*
+- **Heman** · Psalm 88:1 · Named in Psalm 88:1. · *1 verses*
+- **Heth** · Psalm 119:56 · Named in Psalm 119:56. · *1 verses*
+- **High place** · Psalm 18:33 · Mentioned in Psalm 18:33. · *0.6666666666666666 verses*
+- **Hill Mizar** · Psalm 42:6 · Named in Psalm 42:6. · *1 verses*<br><small>aliases: Mizar</small>
+- **Holy Place** · Psalm 68:17 · Named in Psalm 68:17. · *1 verses*
+- **Honey** · Psalm 19:10 · Mentioned in Psalm 19:10. · *1 verses*
+- **Honeycomb** · Psalm 19:10 · Mentioned in Psalm 19:10. · *0.3333333333333333 verses*
+- **Horse** · Psalm 20:7 · Mentioned in Psalm 20:7. · *1.6666666666666667 verses*
+- **Humility** · Psalm 45:4 · Mentioned in Psalm 45:4. · *0.3333333333333333 verses*
+- **Hyssop** · Psalm 51:7 · Mentioned in Psalm 51:7. · *0.3333333333333333 verses*
+- **Ice** · Psalm 147:17 · Mentioned in Psalm 147:17. · *0.3333333333333333 verses*
+- **Idol** · Psalm 96:5 · Mentioned in Psalm 96:5. · *2 verses*
+- **Image** · Psalm 73:20 · Mentioned in Psalm 73:20. · *1.6666666666666667 verses*<br><small>forms: Statue</small>
+- **Infirmity** · Psalm 77:10 · Mentioned in Psalm 77:10. · *0.3333333333333333 verses*<br><small>forms: Infirmities</small>
+- **Injustice** · Psalm 58:2 · Mentioned in Psalm 58:2. · *0.6666666666666666 verses*
+- **Innocence** · Psalm 26:6 · Mentioned in Psalm 26:6. · *0.6666666666666666 verses*
+- **Instruction** · Psalm 50:17 · Mentioned in Psalm 50:17. · *0.3333333333333333 verses*
+- **Integrity** · Psalm 7:8 · Mentioned in Psalm 7:8. · *2 verses*
+- **Iron** · Psalm 2:9 · Mentioned in Psalm 2:9. · *1.6666666666666667 verses*
+- **Isaac** · Psalm 105:9 · Named in Psalm 105:9. · *1 verses*
+- **Island** · Psalm 72:10 · Mentioned in Psalm 72:10. · *0.6666666666666666 verses*<br><small>aliases: Isle</small>
+- **Ivory palace** · Psalm 45:8 · Mentioned in Psalm 45:8. · *0.3333333333333333 verses*<br><small>forms: Ivory house</small>
+- **Jaar** · Psalm 132:6 · Named in Psalm 132:6. · *1 verses*
+- **Jabin** · Psalm 83:9 · Named in Psalm 83:9. · *1 verses*
+- **Jackal** · Psalm 44:19 · Mentioned in Psalm 44:19. · *0.6666666666666666 verses*
+- **Jaw** · Psalm 22:15 · Mentioned in Psalm 22:15. · *0.3333333333333333 verses*<br><small>forms: Jawbone</small>
+- **Jealousy** · Psalm 78:58 · Mentioned in Psalm 78:58. · *0.6666666666666666 verses*
+- **Jesse** · Psalm 72:20 · Named in Psalm 72:20. · *1 verses*
+- **Joab** · Psalm 60:1 · Named in Psalm 60:1. · *1 verses*
+- **Juniper** · Psalm 120:4 · Mentioned in Psalm 120:4. · *0.3333333333333333 verses*
+- **Kedar** · Psalm 120:5 · Named in Psalm 120:5. · *1 verses*
+- **Keeper** · Psalm 121:5 · Mentioned in Psalm 121:5. · *0.3333333333333333 verses*
+- **Kishon** · Psalm 83:9 · Named in Psalm 83:9. · *1 verses*<br><small>aliases: Kison</small>
+- **Knee** · Psalm 109:24 · Mentioned in Psalm 109:24. · *0.3333333333333333 verses*
+- **Lamb** · Psalm 37:20 · Mentioned in Psalm 37:20. · *1 verses*
+- **Lamp** · Psalm 18:28 · Mentioned in Psalm 18:28. · *1 verses*
+- **Leg** · Psalm 147:10 · Mentioned in Psalm 147:10. · *0.3333333333333333 verses*
+- **Levi** · Psalm 135:20 · Named in Psalm 135:20. · *1 verses*
+- **Leviathan** · Psalm 74:14 · Mentioned in Psalm 74:14. · *0.6666666666666666 verses*
+- **Lice** · Psalm 105:31 · Mentioned in Psalm 105:31. · *0.3333333333333333 verses*
+- **Lily** · Psalm 45:1 · Mentioned in Psalm 45:1. · *1.3333333333333333 verses*<br><small>aliases: Lilies</small>
+- **Locust** · Psalm 78:46 · Mentioned in Psalm 78:46. · *1 verses*
+- **Locusts** · Psalm 105:34 · Mentioned in Psalm 105:34. · *0.3333333333333333 verses*
+- **Lodge** · Psalm 55:7 · Mentioned in Psalm 55:7. · *0.3333333333333333 verses*<br><small>forms: Hut, Cottage</small>
+- **Loins** · Psalm 38:7 · Mentioned in Psalm 38:7. · *1 verses*
+- **Longsuffering** · Psalm 86:15 · Mentioned in Psalm 86:15. · *0.3333333333333333 verses*<br><small>forms: Patience</small>
+- **Lot** · Psalm 83:8 · Named in Psalm 83:8. · *1 verses*
+- **Lust** · Psalm 78:18 · Mentioned in Psalm 78:18. · *1 verses*
+- **Lute** · Psalm 57:8 · Mentioned in Psalm 57:8. · *0.6666666666666666 verses*
+- **Mahalath** · Psalm 53:1 · Named in Psalm 53:1. · *2 verses*
+- **Malice** · Psalm 55:10 · Mentioned in Psalm 55:10. · *0.6666666666666666 verses*
+- **Manna** · Psalm 78:24 · Mentioned in Psalm 78:24. · *0.3333333333333333 verses*
+- **Mantle** · Psalm 109:29 · Mentioned in Psalm 109:29. · *0.3333333333333333 verses*
+- **Mark** · Psalm 37:37 · Named in Psalm 37:37. · *2 verses*<br><small>forms: John Mark</small>
+- **Marrow** · Psalm 63:5 · Mentioned in Psalm 63:5. · *0.3333333333333333 verses*
+- **Massah** · Psalm 95:8 · Named in Psalm 95:8. · *1 verses*
+- **Meekness** · Psalm 45:4 · Mentioned in Psalm 45:4. · *0.3333333333333333 verses*
+- **Melchizedek** · Psalm 110:4 · Named in Psalm 110:4. · *1 verses*
+- **Meshech** · Psalm 120:5 · Named in Psalm 120:5. · *1 verses*<br><small>aliases: Mesech · forms: Meshech Tubal</small>
+- **Messenger** · Psalm 104:4 · Mentioned in Psalm 104:4. · *0.3333333333333333 verses*
+- **Midian** · Psalm 83:9 · Named in Psalm 83:9. · *1 verses*
+- **Minstrel** · Psalm 68:25 · Mentioned in Psalm 68:25. · *0.3333333333333333 verses*
+- **Mire** · Psalm 12:6; Psalm 18:42 · Mentioned in Psalm 12:6. · *1.6666666666666667 verses*<br><small>aliases: Clay · forms: Mud</small>
+- **Most Holy Place** · Psalm 28:2 · Named in Psalm 28:2. · *1 verses*<br><small>aliases: Most Holy · forms: Holy Sanctuary, Holiest, Holiest of All, Holy of Holies</small>
+- **Moth** · Psalm 39:11 · Mentioned in Psalm 39:11. · *0.3333333333333333 verses*
+- **Mule** · Psalm 32:9 · Mentioned in Psalm 32:9. · *0.3333333333333333 verses*
+- **Murder** · Psalm 10:8 · Mentioned in Psalm 10:8. · *0.6666666666666666 verses*
+- **Mute** · Psalm 31:18; Psalm 38:13 · Mentioned in Psalm 31:18. · *1.3333333333333333 verses*<br><small>aliases: Dumb</small>
+- **Myrrh** · Psalm 45:8 · Mentioned in Psalm 45:8. · *0.3333333333333333 verses*
+- **Naphtali** · Psalm 68:27 · Named in Psalm 68:27. · *1 verses*
+- **Nathan** · Psalm 51:1 · Named in Psalm 51:1. · *1 verses*
+- **Neck** · Psalm 18:40 · Mentioned in Psalm 18:40. · *1.6666666666666667 verses*
+- **Negev** · Psalm 126:4 · Named in Psalm 126:4. · *1 verses*
+- **New moon** · Psalm 81:3 · Mentioned in Psalm 81:3. · *0.3333333333333333 verses*
+- **New wine** · Psalm 4:7 · Mentioned in Psalm 4:7. · *0.3333333333333333 verses*
+- **Nose** · Psalm 115:6 · Mentioned in Psalm 115:6. · *0.3333333333333333 verses*
+- **Nostrils** · Psalm 18:8 · Mentioned in Psalm 18:8. · *0.6666666666666666 verses*
+- **Nun** · Psalm 119:104 · Named in Psalm 119:104. · *1 verses*
+- **Oath** · Psalm 15:4 · Mentioned in Psalm 15:4. · *0.6666666666666666 verses*
+- **Og** · Psalm 135:11 · King of Bashan. · *2 verses*
+- **Olive tree** · Psalm 52:8 · Mentioned in Psalm 52:8. · *0.6666666666666666 verses*<br><small>aliases: Olive</small>
+- **Ophir** · Psalm 45:9 · Named in Psalm 45:9. · *1 verses*
+- **Oreb** · Psalm 83:11 · Named in Psalm 83:11. · *1 verses*
+- **Organ** · Psalm 150:4 · Mentioned in Psalm 150:4. · *0.3333333333333333 verses*
+- **Oven** · Psalm 21:9 · Mentioned in Psalm 21:9. · *0.3333333333333333 verses*
+- **Owl** · Psalm 102:6 · Mentioned in Psalm 102:6. · *0.3333333333333333 verses*
+- **Ox** · Psalm 29:6 · Mentioned in Psalm 29:6. · *1.3333333333333333 verses*
+- **Oxen** · Psalm 8:7 · Mentioned in Psalm 8:7. · *1 verses*
+- **Palace** · Psalm 45:8 · Mentioned in Psalm 45:8. · *2.3333333333333335 verses*
+- **Palm tree** · Psalm 92:12 · Mentioned in Psalm 92:12. · *0.3333333333333333 verses*
+- **Partiality** · Psalm 82:2 · Mentioned in Psalm 82:2. · *0.3333333333333333 verses*<br><small>forms: Favoritism</small>
+- **Pelican** · Psalm 102:6 · Mentioned in Psalm 102:6. · *0.3333333333333333 verses*
+- **Pen** · Psalm 45:1 · Mentioned in Psalm 45:1. · *0.6666666666666666 verses*
+- **Peor** · Psalm 106:28 · Named in Psalm 106:28. · *1 verses*
+- **Pestilence** · Psalm 78:50 · Mentioned in Psalm 78:50. · *1 verses*
+- **Pharaoh** · Psalm 135:9 · Named in Psalm 135:9. · *2 verses*
+- **Phinehas** · Psalm 106:30 · Named in Psalm 106:30. · *1 verses*
+- **Pieces of silver** · Psalm 68:30 · Mentioned in Psalm 68:30. · *0.3333333333333333 verses*<br><small>forms: Piece of silver</small>
+- **Pillar** · Psalm 75:3 · Mentioned in Psalm 75:3. · *1 verses*
+- **Plague** · Psalm 38:11 · Mentioned in Psalm 38:11. · *1.6666666666666667 verses*
+- **Pool** · Psalm 84:6 · Mentioned in Psalm 84:6. · *1 verses*
+- **Pot** · Psalm 58:9 · Mentioned in Psalm 58:9. · *1.3333333333333333 verses*
+- **Potter** · Psalm 2:9 · Mentioned in Psalm 2:9. · *0.3333333333333333 verses*
+- **Priest** · Psalm 78:64 · Mentioned in Psalm 78:64. · *1.6666666666666667 verses*
+- **Prison** · Psalm 66:11 · Mentioned in Psalm 66:11. · *0.6666666666666666 verses*<br><small>forms: Dungeon</small>
+- **Promise** · Psalm 77:8 · Mentioned in Psalm 77:8. · *2 verses*
+- **Prophet** · Psalm 51:1 · Mentioned in Psalm 51:1. · *1 verses*
+- **Quail** · Psalm 105:40 · Mentioned in Psalm 105:40. · *0.3333333333333333 verses*
+- **Queen** · Psalm 45:9 · Mentioned in Psalm 45:9. · *0.3333333333333333 verses*
+- **Rahab** · Psalm 87:4 · Named in Psalm 87:4. · *2 verses*<br><small>forms: Rachab</small>
+- **Raiment** · Psalm 45:14 · Mentioned in Psalm 45:14. · *0.3333333333333333 verses*
+- **Ram** · Psalm 60:1; Psalm 66:15 · Named in Psalm 60:1. · *0 verses*
+- **Ram's horn** · Psalm 98:6 · Mentioned in Psalm 98:6. · *0.3333333333333333 verses*<br><small>forms: Shofar</small>
+- **Rampart** · Psalm 48:13; Psalm 91:4 · Mentioned in Psalm 48:13. · *0.6666666666666666 verses*<br><small>aliases: Bulwark</small>
+- **Raven** · Psalm 147:9 · Mentioned in Psalm 147:9. · *0.3333333333333333 verses*
+- **Razor** · Psalm 52:2 · Mentioned in Psalm 52:2. · *0.3333333333333333 verses*
+- **Reaper** · Psalm 129:7 · Mentioned in Psalm 129:7. · *0.3333333333333333 verses*
+- **Redemption** · Psalm 49:8 · Mentioned in Psalm 49:8. · *1 verses*
+- **Reed** · Psalm 68:30 · Mentioned in Psalm 68:30. · *0.3333333333333333 verses*<br><small>aliases: Reeds</small>
+- **Reins** · Psalm 7:9 · Mentioned in Psalm 7:9. · *1.6666666666666667 verses*<br><small>forms: Kidneys</small>
+- **Reverence** · Psalm 5:7 · Mentioned in Psalm 5:7. · *0.6666666666666666 verses*
+- **Robbery** · Psalm 62:10 · Mentioned in Psalm 62:10. · *0.3333333333333333 verses*
+- **Robe** · Psalm 109:29 · Mentioned in Psalm 109:29. · *0.6666666666666666 verses*
+- **Rod** · Psalm 23:4 · Mentioned in Psalm 23:4. · *2 verses*
+- **Roof** · Psalm 22:15; Psalm 102:7 · Mentioned in Psalm 22:15. · *1.3333333333333333 verses*<br><small>aliases: Housetop</small>
+- **Rope** · Psalm 119:61 · Mentioned in Psalm 119:61. · *0.3333333333333333 verses*
+- **Sabbath** · Psalm 92:1 · Mentioned in Psalm 92:1. · *0.3333333333333333 verses*
+- **Sackcloth** · Psalm 30:11 · Mentioned in Psalm 30:11. · *1 verses*
+- **Salem** · Psalm 76:2 · Named in Psalm 76:2. · *1 verses*
+- **Salmon** · Psalm 68:14 · Named in Psalm 68:14. · *1 verses*
+- **Samuel** · Psalm 99:6 · Named in Psalm 99:6. · *1 verses*
+- **Sand** · Psalm 78:27 · Mentioned in Psalm 78:27. · *0.6666666666666666 verses*
+- **Sandal** · Psalm 60:8 · Mentioned in Psalm 60:8. · *0.6666666666666666 verses*<br><small>forms: Sandals</small>
+- **Satan** · Psalm 109:6 · Mentioned in Psalm 109:6. · *0.3333333333333333 verses*
+- **Scepter** · Psalm 45:6 · Mentioned in Psalm 45:6. · *1.3333333333333333 verses*<br><small>aliases: Sceptre</small>
+- **Scoffing** · Psalm 44:13 · Mentioned in Psalm 44:13. · *1 verses*<br><small>forms: Mocking</small>
+- **Scourge** · Psalm 39:10 · Mentioned in Psalm 39:10. · *0.3333333333333333 verses*<br><small>forms: Whip</small>
+- **Scroll** · Psalm 40:7 · Mentioned in Psalm 40:7. · *0.3333333333333333 verses*
+- **Sea monster** · Psalm 74:13 · Mentioned in Psalm 74:13. · *0.3333333333333333 verses*
+- **Seba** · Psalm 72:10 · Named in Psalm 72:10. · *1 verses*
+- **Sheba** · Psalm 72:10 · Named in Psalm 72:10. · *2 verses*<br><small>forms: Sabeans</small>
+- **Shechem** · Psalm 60:6 · Named in Psalm 60:6. · *2 verses*<br><small>forms: Sichem, Sychem</small>
+- **Sheepfold** · Psalm 78:70 · Mentioned in Psalm 78:70. · *0.3333333333333333 verses*
+- **Shelter** · Psalm 31:20 · Mentioned in Psalm 31:20. · *1.3333333333333333 verses*<br><small>forms: Booth</small>
+- **Shiloh** · Psalm 78:60 · Named in Psalm 78:60. · *1 verses*
+- **Ship** · Psalm 48:7 · Mentioned in Psalm 48:7. · *1 verses*
+- **Shoe** · Psalm 60:8 · Mentioned in Psalm 60:8. · *0.6666666666666666 verses*<br><small>forms: Shoes</small>
+- **Shoulder** · Psalm 81:6 · Mentioned in Psalm 81:6. · *0.3333333333333333 verses*
+- **Singer** · Psalm 68:25 · Mentioned in Psalm 68:25. · *0.6666666666666666 verses*
+- **Sion** · Psalm 29:6; Psalm 65:1 · Named in Psalm 29:6. · *2 verses*<br><small>aliases: Sirion · forms: Mount Hermon, Mount Sion, Mount Siyon</small>
+- **Sisera** · Psalm 83:9 · Named in Psalm 83:9. · *1 verses*
+- **Skin** · Psalm 102:5 · Mentioned in Psalm 102:5. · *0.3333333333333333 verses*
+- **Skirt** · Psalm 133:2 · Mentioned in Psalm 133:2. · *0.3333333333333333 verses*
+- **Slander** · Psalm 15:3 · Mentioned in Psalm 15:3. · *1.6666666666666667 verses*<br><small>forms: Backbiting</small>
+- **Slave** · Psalm 105:17 · Mentioned in Psalm 105:17. · *0.3333333333333333 verses*
+- **Snail** · Psalm 58:8 · Mentioned in Psalm 58:8. · *0.3333333333333333 verses*
+- **Snake** · Psalm 58:4 · Mentioned in Psalm 58:4. · *1 verses*<br><small>aliases: Serpent</small>
+- **Snow** · Psalm 51:7 · Mentioned in Psalm 51:7. · *1.3333333333333333 verses*
+- **Solomon** · Psalm 72:1 · Named in Psalm 72:1. · *2 verses*
+- **Sparrow** · Psalm 84:3 · Mentioned in Psalm 84:3. · *0.6666666666666666 verses*
+- **Spear** · Psalm 35:3 · Mentioned in Psalm 35:3. · *1 verses*
+- **Staff** · Psalm 23:4 · Mentioned in Psalm 23:4. · *0.6666666666666666 verses*
+- **Stall** · Psalm 50:9 · Mentioned in Psalm 50:9. · *0.3333333333333333 verses*
+- **Star** · Psalm 8:3 · Mentioned in Psalm 8:3. · *1.3333333333333333 verses*<br><small>aliases: Stars</small>
+- **Steel** · Psalm 18:34 · Mentioned in Psalm 18:34. · *0.3333333333333333 verses*
+- **Stone** · Psalm 18:12 · Mentioned in Psalm 18:12. · *2.3333333333333335 verses*
+- **Storehouse** · Psalm 33:7 · Mentioned in Psalm 33:7. · *0.3333333333333333 verses*<br><small>forms: Treasure house, Store city</small>
+- **Stork** · Psalm 104:17 · Mentioned in Psalm 104:17. · *0.3333333333333333 verses*
+- **Storm** · Psalm 11:6; Psalm 55:8 · Mentioned in Psalm 11:6. · *1.3333333333333333 verses*<br><small>aliases: Tempest</small>
+- **Street** · Psalm 18:42 · Mentioned in Psalm 18:42. · *1.6666666666666667 verses*
+- **Strife** · Psalm 31:20 · Mentioned in Psalm 31:20. · *1.3333333333333333 verses*
+- **Stubbornness** · Psalm 81:12 · Mentioned in Psalm 81:12. · *0.3333333333333333 verses*
+- **Swelling** · Psalm 46:3 · Mentioned in Psalm 46:3. · *0.3333333333333333 verses*
+- **Sycamore** · Psalm 78:47 · Mentioned in Psalm 78:47. · *0.3333333333333333 verses*<br><small>aliases: Sycomore</small>
+- **Synagogue** · Psalm 74:8 · Mentioned in Psalm 74:8. · *0.3333333333333333 verses*
+- **Table** · Psalm 23:5 · Mentioned in Psalm 23:5. · *1.3333333333333333 verses*
+- **Tambourine** · Psalm 68:25 · Mentioned in Psalm 68:25. · *1.3333333333333333 verses*
+- **Tarshish** · Psalm 48:7 · Named in Psalm 48:7. · *2 verses*<br><small>forms: Tharshish</small>
+- **Teacher** · Psalm 119:99 · Mentioned in Psalm 119:99. · *0.3333333333333333 verses*
+- **Teeth** · Psalm 3:7 · Mentioned in Psalm 3:7. · *2.3333333333333335 verses*<br><small>forms: Tooth</small>
+- **Ten-stringed lute** · Psalm 92:3 · Mentioned in Psalm 92:3. · *0.3333333333333333 verses*
+- **Ten-stringed lyre** · Psalm 33:2; Psalm 144:9 · Mentioned in Psalm 33:2. · *1 verses*<br><small>aliases: Instrument of ten strings</small>
+- **Thigh** · Psalm 45:3 · Mentioned in Psalm 45:3. · *0.3333333333333333 verses*
+- **Thorns** · Psalm 58:9 · Mentioned in Psalm 58:9. · *0.6666666666666666 verses*<br><small>aliases: Thorn</small>
+- **Throat** · Psalm 5:9 · Mentioned in Psalm 5:9. · *1 verses*
+- **Thunder** · Psalm 29:3 · Mentioned in Psalm 29:3. · *1.6666666666666667 verses*
+- **Timbrel** · Psalm 68:25 · Mentioned in Psalm 68:25. · *1.3333333333333333 verses*
+- **Tomb** · Psalm 5:9 · Mentioned in Psalm 5:9. · *0.3333333333333333 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Torch** · Psalm 102:3 · Mentioned in Psalm 102:3. · *0.3333333333333333 verses*
+- **Treasury** · Psalm 135:7 · Mentioned in Psalm 135:7. · *0.3333333333333333 verses*
+- **Trumpet** · Psalm 47:5 · Mentioned in Psalm 47:5. · *1.3333333333333333 verses*
+- **Turtledove** · Psalm 74:19 · Mentioned in Psalm 74:19. · *0.3333333333333333 verses*
+- **Unicorn** · Psalm 22:21; Psalm 29:6 · Mentioned in Psalm 22:21. · *1 verses*<br><small>aliases: Wild ox</small>
+- **Unity** · Psalm 133:1 · Mentioned in Psalm 133:1. · *0.3333333333333333 verses*
+- **Uprightness** · Psalm 9:8 · Mentioned in Psalm 9:8. · *1.6666666666666667 verses*
+- **Usury** · Psalm 15:5 · Mentioned in Psalm 15:5. · *0.3333333333333333 verses*
+- **Valley of Baca** · Psalm 84:6 · Named in Psalm 84:6. · *0 verses*<br><small>aliases: Valley of Weeping</small>
+- **Valley of Salt** · Psalm 60:1 · Named in Psalm 60:1. · *0 verses*
+- **Valley of Succoth** · Psalm 60:6 · Named in Psalm 60:6. · *0 verses*
+- **Vapour** · Psalm 135:7 · Mentioned in Psalm 135:7. · *0.6666666666666666 verses*<br><small>forms: Mist, Vapor</small>
+- **Vengeance** · Psalm 18:47 · Mentioned in Psalm 18:47. · *2 verses*<br><small>forms: Revenge</small>
+- **Vine** · Psalm 78:47 · Mentioned in Psalm 78:47. · *1.6666666666666667 verses*<br><small>forms: Grapevine</small>
+- **Vinegar** · Psalm 69:21 · Mentioned in Psalm 69:21. · *0.3333333333333333 verses*
+- **Violence** · Psalm 7:16 · Mentioned in Psalm 7:16. · *2.3333333333333335 verses*
+- **Viper** · Psalm 140:3 · Mentioned in Psalm 140:3. · *0.3333333333333333 verses*
+- **Virgin** · Psalm 45:14 · Mentioned in Psalm 45:14. · *0.6666666666666666 verses*
+- **Waist** · Psalm 38:7 · Mentioned in Psalm 38:7. · *0.3333333333333333 verses*
+- **Wall** · Psalm 18:29 · Mentioned in Psalm 18:29. · *2 verses*
+- **Watchman** · Psalm 127:1 · Mentioned in Psalm 127:1. · *0.3333333333333333 verses*
+- **Wheat** · Psalm 81:16 · Mentioned in Psalm 81:16. · *0.6666666666666666 verses*
+- **Wheel** · Psalm 83:13 · Mentioned in Psalm 83:13. · *0.3333333333333333 verses*
+- **Whirlwind** · Psalm 58:9 · Mentioned in Psalm 58:9. · *0.6666666666666666 verses*
+- **Widow** · Psalm 68:5 · Mentioned in Psalm 68:5. · *1.6666666666666667 verses*
+- **Wild donkey** · Psalm 104:11 · Mentioned in Psalm 104:11. · *0.3333333333333333 verses*<br><small>aliases: Wild ass</small>
+- **Wild goat** · Psalm 104:18 · Mentioned in Psalm 104:18. · *0.3333333333333333 verses*
+- **Wilderness of Kadesh** · Psalm 29:8 · Named in Psalm 29:8. · *0 verses*<br><small>forms: Zin</small>
+- **Willow** · Psalm 137:2 · Mentioned in Psalm 137:2. · *0.3333333333333333 verses*
+- **Wine** · Psalm 4:7 · Mentioned in Psalm 4:7. · *1.6666666666666667 verses*
+- **Wineskin** · Psalm 119:83 · Mentioned in Psalm 119:83. · *0.3333333333333333 verses*
+- **Wise men** · Psalm 49:10 · Mentioned in Psalm 49:10. · *0.3333333333333333 verses*<br><small>forms: Magi</small>
+- **Womb** · Psalm 22:9 · Mentioned in Psalm 22:9. · *2.3333333333333335 verses*
+- **Wool** · Psalm 147:16 · Mentioned in Psalm 147:16. · *0.3333333333333333 verses*
+- **Worm** · Psalm 22:6 · Mentioned in Psalm 22:6. · *0.3333333333333333 verses*
+- **Wounds** · Psalm 38:5 · Mentioned in Psalm 38:5. · *1.3333333333333333 verses*<br><small>aliases: Wound</small>
+- **Zalmon** · Psalm 68:14 · Named in Psalm 68:14. · *1 verses*
+- **Zalmunna** · Psalm 83:11 · Named in Psalm 83:11. · *1 verses*
+- **Zeal** · Psalm 69:9 · Mentioned in Psalm 69:9. · *0.6666666666666666 verses*
+- **Zebah** · Psalm 83:11 · Named in Psalm 83:11. · *1 verses*
+- **Zebulun** · Psalm 68:27 · Named in Psalm 68:27. · *1 verses*
+- **Zeeb** · Psalm 83:11 · Named in Psalm 83:11. · *1 verses*
+- **Zoan** · Psalm 78:12 · Named in Psalm 78:12. · *2 verses*
+- **Zobah** · Psalm 60:1 · Named in Psalm 60:1. · *1 verses*<br><small>aliases: Aram Zobah · forms: Hadadezer, Zoba</small>
+
+### Near misses
+
+- **Goliath**: David's fight with Goliath is in 1 Samuel 17; the Psalms never name him.
+- **Selah**: A word in the Psalms whose meaning is uncertain, not a person, place, or thing.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a person, place, or thing named in the book of Romans.
+
+`romans-anything` · Books of the Bible · 211 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 11 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 20 |
+| 🪙 Lost Coin (60) | 40 |
+| 💎 Hidden Treasure (85) | 139 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Tertius. Tertius, who wrote the letter down for Paul, adds his own greeting (Romans 16:22).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Abraham** · Romans 4:1 · Named in Romans 4:1. · *10 verses*<br><small>forms: Abram</small>
+- **Death** · Romans 1:32 · Mentioned in Romans 1:32. · *7.333333333333333 verses*
+- **Faith** · Romans 1:5 · Mentioned in Romans 1:5. · *12.333333333333334 verses*
+- **Flesh** · Romans 1:3 · Mentioned in Romans 1:3. · *8 verses*
+- **Glory** · Romans 1:23 · Mentioned in Romans 1:23. · *7 verses*
+- **Jesus** · Romans 1:1 · Named in Romans 1:1. · *41 verses*<br><small>aliases: Jesus Christ · forms: Christ child</small>
+- **Law** · Romans 2:12 · Mentioned in Romans 2:12. · *17.333333333333332 verses*
+- **Paul** · Romans 1:1 · Called to be an apostle after the resurrection. · *1 verses*<br><small>forms: Saul, Saul of Tarsus</small>
+- **Righteousness** · Romans 1:17 · Mentioned in Romans 1:17. · *11 verses*
+- **Sin** · Romans 3:9 · Mentioned in Romans 3:9. · *14 verses*
+- **Spirit** · Romans 1:4 · Mentioned in Romans 1:4. · *9.333333333333334 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Adam** · Romans 5:14 · Named in Romans 5:14. · *1 verses*
+- **Circumcision** · Romans 2:25 · Mentioned in Romans 2:25. · *4 verses*
+- **Gospel** · Romans 1:1 · Mentioned in Romans 1:1. · *4.333333333333333 verses*
+- **Grace** · Romans 1:5 · Mentioned in Romans 1:5. · *6.666666666666667 verses*
+- **Heart** · Romans 1:21 · Mentioned in Romans 1:21. · *5 verses*
+- **Hope** · Romans 4:18 · Mentioned in Romans 4:18. · *4 verses*
+- **Isaiah** · Romans 9:27 · Named in Romans 9:27. · *5 verses*<br><small>aliases: Esaias</small>
+- **Jerusalem** · Romans 3:9; Romans 15:19 · Named in Romans 15:19. · *4 verses*
+- **Judge** · Romans 2:1 · Mentioned in Romans 2:1. · *3.3333333333333335 verses*
+- **Judgment** · Romans 1:32 · Mentioned in Romans 1:32. · *3.6666666666666665 verses*
+- **Life** · Romans 2:7 · Mentioned in Romans 2:7. · *6.333333333333333 verses*
+- **Love** · Romans 5:5 · Mentioned in Romans 5:5. · *4 verses*
+- **Mercy** · Romans 9:15 · Mentioned in Romans 9:15. · *3.3333333333333335 verses*
+- **Moses** · Romans 5:14 · Named in Romans 5:14. · *4 verses*
+- **Peace** · Romans 1:7 · Mentioned in Romans 1:7. · *4 verses*
+- **Phoebe** · Romans 16:1 · A servant of the church at Cenchreae and a helper of many. · *1 verses*<br><small>aliases: Phebe</small>
+- **Rome** · Romans 1:7 · Named in Romans 1:7. · *2 verses*
+- **Servant** · Romans 1:1 · Mentioned in Romans 1:1. · *4.333333333333333 verses*
+- **Wrath** · Romans 1:18 · Mentioned in Romans 1:18. · *3.3333333333333335 verses*
+- **Zion** · Romans 9:33; Romans 11:26 · Named in Romans 9:33. · *11 verses*<br><small>aliases: Israel, Sion</small>
+
+### 🪙 Lost Coin (60)
+
+- **Achaia** · Romans 15:26 · Named in Romans 15:26. · *2 verses*
+- **Amplias** · Romans 16:8 · Named in Romans 16:8. · *1 verses*
+- **Andronicus** · Romans 16:7 · A kinsman and fellow prisoner. · *1 verses*
+- **Apelles** · Romans 16:10 · Approved in Christ. · *1 verses*
+- **Apostle** · Romans 1:1 · Mentioned in Romans 1:1. · *1 verses*
+- **Aquila** · Romans 16:3 · A tentmaker from Pontus who worked alongside Paul. · *1 verses*
+- **Aristobulus** · Romans 16:10 · Paul greets those of his household. · *1 verses*
+- **Asyncritus** · Romans 16:14 · Greeted with the brothers who are with him. · *1 verses*
+- **Benjamin** · Romans 11:1 · Named in Romans 11:1. · *1 verses*
+- **Blessing** · Romans 4:6 · Mentioned in Romans 4:6. · *1 verses*
+- **Blood** · Romans 3:15 · Mentioned in Romans 3:15. · *1 verses*
+- **Cenchreae** · Romans 16:1 · Named in Romans 16:1. · *1 verses*<br><small>aliases: Cenchrea</small>
+- **Commandment** · Romans 7:8; Romans 13:9 · Mentioned in Romans 7:8. · *3 verses*<br><small>aliases: Commandments</small>
+- **Covenant** · Romans 1:31 · Mentioned in Romans 1:31. · *1 verses*
+- **Covetousness** · Romans 1:29; Romans 7:7 · Mentioned in Romans 1:29. · *1 verses*<br><small>aliases: Coveting · forms: Greed</small>
+- **David** · Romans 1:3 · Named in Romans 1:3. · *3 verses*
+- **Disobedience** · Romans 4:15 · Mentioned in Romans 4:15. · *1.6666666666666667 verses*
+- **Elijah** · Romans 11:2 · Named in Romans 11:2. · *1 verses*<br><small>aliases: Elias</small>
+- **Honor** · Romans 2:7 · Mentioned in Romans 2:7. · *1.6666666666666667 verses*<br><small>aliases: Honour</small>
+- **Isaac** · Romans 9:7 · Named in Romans 9:7. · *2 verses*
+- **Jacob** · Romans 9:13 · Named in Romans 9:13. · *2 verses*
+- **Jealousy** · Romans 10:19 · Mentioned in Romans 10:19. · *1.3333333333333333 verses*
+- **Joy** · Romans 5:11 · Mentioned in Romans 5:11. · *1.3333333333333333 verses*
+- **Knowledge** · Romans 1:28 · Mentioned in Romans 1:28. · *2 verses*
+- **Lust** · Romans 1:24 · Mentioned in Romans 1:24. · *1.6666666666666667 verses*
+- **Meat** · Romans 1:3; Romans 14:15 · Mentioned in Romans 1:3. · *1.3333333333333333 verses*
+- **Mouth** · Romans 3:14 · Mentioned in Romans 3:14. · *2 verses*
+- **Obedience** · Romans 1:5 · Mentioned in Romans 1:5. · *2.3333333333333335 verses*
+- **Patience** · Romans 2:4 · Mentioned in Romans 2:4. · *2.3333333333333335 verses*<br><small>aliases: Longsuffering</small>
+- **Perseverance** · Romans 2:7 · Mentioned in Romans 2:7. · *1.6666666666666667 verses*<br><small>forms: Endurance, Steadfastness</small>
+- **Praise** · Romans 2:29 · Mentioned in Romans 2:29. · *1.3333333333333333 verses*
+- **Prayer** · Romans 1:9 · Mentioned in Romans 1:9. · *1.3333333333333333 verses*
+- **Promise** · Romans 4:13 · Mentioned in Romans 4:13. · *2.6666666666666665 verses*
+- **Prophet** · Romans 1:2 · Mentioned in Romans 1:2. · *1.6666666666666667 verses*
+- **Salvation** · Romans 1:16 · Mentioned in Romans 1:16. · *1.3333333333333333 verses*
+- **Sarah** · Romans 4:19 · Named in Romans 4:19. · *2 verses*<br><small>aliases: Sara · forms: Sarai</small>
+- **Spain** · Romans 15:24 · Named in Romans 15:24. · *2 verses*
+- **Truth** · Romans 1:18 · Mentioned in Romans 1:18. · *2.6666666666666665 verses*
+- **Unbelief** · Romans 3:3 · Mentioned in Romans 3:3. · *2 verses*
+- **Word** · Romans 3:4 · Mentioned in Romans 3:4. · *2.6666666666666665 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Adultery** · Romans 2:22 · Mentioned in Romans 2:22. · *0.6666666666666666 verses*
+- **Altar** · Romans 11:3 · Mentioned in Romans 11:3. · *0.3333333333333333 verses*
+- **Angel** · Romans 8:38 · Mentioned in Romans 8:38. · *0.3333333333333333 verses*<br><small>aliases: Angels</small>
+- **Anger** · Romans 10:19 · Mentioned in Romans 10:19. · *0.3333333333333333 verses*
+- **Armour** · Romans 13:12 · Mentioned in Romans 13:12. · *0.3333333333333333 verses*<br><small>aliases: Armor</small>
+- **Asp** · Romans 3:13 · Mentioned in Romans 3:13. · *0.3333333333333333 verses*
+- **Atonement** · Romans 3:25; Romans 5:11 · Mentioned in Romans 3:25. · *0.6666666666666666 verses*<br><small>aliases: Propitiation</small>
+- **Baal** · Romans 11:4 · Mentioned in Romans 11:4. · *0.3333333333333333 verses*
+- **Back** · Romans 2:6 · Mentioned in Romans 2:6. · *0.6666666666666666 verses*
+- **Baptism** · Romans 6:4 · Mentioned in Romans 6:4. · *0.3333333333333333 verses*
+- **Belly** · Romans 16:18 · Mentioned in Romans 16:18. · *0.3333333333333333 verses*<br><small>forms: Stomach</small>
+- **Bitterness** · Romans 3:14 · Mentioned in Romans 3:14. · *0.3333333333333333 verses*
+- **Blindness** · Romans 2:19; Romans 11:25 · Mentioned in Romans 2:19. · *0.6666666666666666 verses*<br><small>aliases: Blind</small>
+- **Boasting** · Romans 3:27 · Mentioned in Romans 3:27. · *0.6666666666666666 verses*
+- **Brotherly love** · Romans 12:10 · Mentioned in Romans 12:10. · *0.3333333333333333 verses*<br><small>forms: Brotherly kindness</small>
+- **Chamberlain** · Romans 16:23 · Mentioned in Romans 16:23. · *0.3333333333333333 verses*
+- **Clay** · Romans 9:21 · Mentioned in Romans 9:21. · *0.3333333333333333 verses*<br><small>forms: Mud, Mire</small>
+- **Coal** · Romans 12:20 · Mentioned in Romans 12:20. · *0.3333333333333333 verses*<br><small>aliases: Coals · forms: Live coal</small>
+- **Compassion** · Romans 9:15 · Mentioned in Romans 9:15. · *0.3333333333333333 verses*
+- **Counselor** · Romans 11:34 · Mentioned in Romans 11:34. · *0.3333333333333333 verses*<br><small>aliases: Counsellor</small>
+- **Covenantbreakers** · Romans 1:31 · Mentioned in Romans 1:31. · *0.3333333333333333 verses*<br><small>forms: Covenant breaking</small>
+- **Curse** · Romans 12:14 · Mentioned in Romans 12:14. · *0.3333333333333333 verses*
+- **Cursing** · Romans 3:14 · Mentioned in Romans 3:14. · *0.3333333333333333 verses*
+- **Darkness** · Romans 2:19 · Mentioned in Romans 2:19. · *0.6666666666666666 verses*
+- **Deceit** · Romans 1:29 · Mentioned in Romans 1:29. · *0.6666666666666666 verses*<br><small>forms: Guile</small>
+- **Diligence** · Romans 12:8 · Mentioned in Romans 12:8. · *0.6666666666666666 verses*
+- **Divisions** · Romans 16:17 · Mentioned in Romans 16:17. · *0.3333333333333333 verses*<br><small>forms: Factions, Heresies</small>
+- **Drunkenness** · Romans 13:13 · Mentioned in Romans 13:13. · *0.3333333333333333 verses*
+- **Ear** · Romans 11:8 · Mentioned in Romans 11:8. · *0.3333333333333333 verses*
+- **Elder** · Romans 9:12 · Mentioned in Romans 9:12. · *0.3333333333333333 verses*
+- **Envy** · Romans 1:29 · Mentioned in Romans 1:29. · *0.3333333333333333 verses*
+- **Epaenetus** · Romans 16:5 · Paul calls him his beloved. · *1 verses*<br><small>forms: Epenetus</small>
+- **Erastus** · Romans 16:23 · Sent ahead into Macedonia with Timothy. · *1 verses*
+- **Esau** · Romans 9:13 · Named in Romans 9:13. · *1 verses*
+- **Eye** · Romans 3:18 · Mentioned in Romans 3:18. · *1 verses*
+- **Faithfulness** · Romans 3:3 · Mentioned in Romans 3:3. · *0.3333333333333333 verses*
+- **False witness** · Romans 13:9 · Mentioned in Romans 13:9. · *0.3333333333333333 verses*
+- **Feet** · Romans 3:15 · Mentioned in Romans 3:15. · *1 verses*<br><small>forms: Foot</small>
+- **Fire** · Romans 12:20 · Mentioned in Romans 12:20. · *0.3333333333333333 verses*
+- **Firstfruits** · Romans 8:23 · Mentioned in Romans 8:23. · *0.6666666666666666 verses*<br><small>aliases: First fruits</small>
+- **Fool** · Romans 1:22 · Mentioned in Romans 1:22. · *0.3333333333333333 verses*
+- **Forbearance** · Romans 2:4 · Mentioned in Romans 2:4. · *0.6666666666666666 verses*
+- **Foreigner** · Romans 1:14 · Mentioned in Romans 1:14. · *0.3333333333333333 verses*<br><small>forms: Stranger, Sojourner</small>
+- **Fornication** · Romans 1:29 · Mentioned in Romans 1:29. · *0.3333333333333333 verses*<br><small>aliases: Sexual immorality</small>
+- **Foundation** · Romans 15:20 · Mentioned in Romans 15:20. · *0.3333333333333333 verses*
+- **Gaius** · Romans 16:23 · Host to Paul and to the whole church. · *1 verses*
+- **Generosity** · Romans 12:8 · Mentioned in Romans 12:8. · *0.3333333333333333 verses*<br><small>forms: Liberality</small>
+- **Gomorrah** · Romans 9:29 · Named in Romans 9:29. · *1 verses*<br><small>aliases: Gomorrha</small>
+- **Goodness** · Romans 2:4 · Mentioned in Romans 2:4. · *1 verses*
+- **Hand** · Romans 8:34 · Mentioned in Romans 8:34. · *1 verses*
+- **Head** · Romans 12:20 · Mentioned in Romans 12:20. · *0.3333333333333333 verses*
+- **Heaven** · Romans 1:18 · Mentioned in Romans 1:18. · *0.6666666666666666 verses*
+- **Hermas** · Romans 16:14 · Greeted with the brothers who are with him. · *1 verses*
+- **Hermes** · Romans 16:14 · Greeted with the brothers who are with him. · *1 verses*<br><small>forms: Mercury</small>
+- **Herodion** · Romans 16:11 · A relative of Paul. · *1 verses*
+- **Holiness** · Romans 1:4 · Mentioned in Romans 1:4. · *1 verses*
+- **Hosea** · Romans 9:25 · Named in Romans 9:25. · *1 verses*<br><small>aliases: Osee</small>
+- **Hospitality** · Romans 12:13 · Mentioned in Romans 12:13. · *0.3333333333333333 verses*
+- **House** · Romans 16:5 · Mentioned in Romans 16:5. · *0.3333333333333333 verses*
+- **Hypocrisy** · Romans 12:9 · Mentioned in Romans 12:9. · *0.3333333333333333 verses*
+- **Idol** · Romans 2:22 · Mentioned in Romans 2:22. · *0.3333333333333333 verses*
+- **Illyricum** · Romans 15:19 · Named in Romans 15:19. · *1 verses*
+- **Image** · Romans 1:23 · Mentioned in Romans 1:23. · *1 verses*<br><small>forms: Statue</small>
+- **Infirmity** · Romans 6:19; Romans 8:26 · Mentioned in Romans 6:19. · *1 verses*<br><small>aliases: Infirmities</small>
+- **Jason** · Romans 16:21 · A relative of Paul who sends greetings. · *1 verses*
+- **Jesse** · Romans 15:12 · Named in Romans 15:12. · *1 verses*
+- **Judea** · Romans 3:9; Romans 15:31 · Named in Romans 15:31. · *1 verses*<br><small>aliases: Judaea · forms: Jewry, Juda, Judah</small>
+- **Julia** · Romans 16:15 · Greeted among the saints at Rome. · *1 verses*
+- **Junia** · Romans 16:7 · A relative and fellow prisoner; some translations read Junias. · *1 verses*<br><small>forms: Junias</small>
+- **Kingdom** · Romans 14:17 · Mentioned in Romans 14:17. · *0.3333333333333333 verses*
+- **Knee** · Romans 11:4 · Mentioned in Romans 11:4. · *0.6666666666666666 verses*
+- **Lips** · Romans 3:13 · Mentioned in Romans 3:13. · *0.3333333333333333 verses*<br><small>aliases: Lip</small>
+- **Lucius** · Romans 16:21 · A relative of Paul who sends greetings. · *1 verses*
+- **Lying** · Romans 9:1 · Mentioned in Romans 9:1. · *0.3333333333333333 verses*<br><small>forms: Lies, Falsehood</small>
+- **Macedonia** · Romans 15:26 · Named in Romans 15:26. · *1 verses*
+- **Malice** · Romans 1:29 · Mentioned in Romans 1:29. · *0.3333333333333333 verses*
+- **Mary** · Romans 16:6 · Paul says she laboured much. · *1 verses*<br><small>forms: Mary Magdalene, Virgin Mary, Mary the mother of Jesus, Mary mother of Jesus, Mary the mother of James, Mary the wife of Clopas, Mary the mother of Mark, Magdalene, Mary of Clopas</small>
+- **Murder** · Romans 1:29 · Mentioned in Romans 1:29. · *0.6666666666666666 verses*
+- **Narcissus** · Romans 16:11 · Paul greets those of his household who are in the Lord. · *1 verses*
+- **Neck** · Romans 16:4 · Mentioned in Romans 16:4. · *0.3333333333333333 verses*
+- **Nereus** · Romans 16:15 · Greeted along with his sister. · *1 verses*
+- **Olive tree** · Romans 11:17 · Mentioned in Romans 11:17. · *0.6666666666666666 verses*<br><small>aliases: Olive</small>
+- **Olympas** · Romans 16:15 · Greeted with the saints who are with him. · *1 verses*
+- **Oppression** · Romans 2:9 · Mentioned in Romans 2:9. · *0.6666666666666666 verses*
+- **Partiality** · Romans 2:11 · Mentioned in Romans 2:11. · *0.3333333333333333 verses*<br><small>forms: Favoritism</small>
+- **Patrobas** · Romans 16:14 · Greeted with the brothers who are with him. · *1 verses*
+- **Persis** · Romans 16:12 · Worked hard in the Lord. · *1 verses*
+- **Pharaoh** · Romans 9:17 · Named in Romans 9:17. · *1 verses*
+- **Philologus** · Romans 16:15 · Greeted with the saints who are with him. · *1 verses*
+- **Phlegon** · Romans 16:14 · Greeted with the brothers who are with him. · *1 verses*
+- **Potter** · Romans 9:21 · Mentioned in Romans 9:21. · *0.3333333333333333 verses*
+- **Priest** · Romans 15:16 · Mentioned in Romans 15:16. · *0.3333333333333333 verses*
+- **Priscilla** · Romans 16:3 · A tentmaker who, with her husband, hosted and worked with Paul. · *1 verses*<br><small>aliases: Prisca</small>
+- **Quartus** · Romans 16:23 · Called simply the brother. · *1 verses*
+- **Rebekah** · Romans 9:10 · Isaac's wife, the mother of Esau and Jacob. · *1 verses*<br><small>aliases: Rebecca</small>
+- **Reconciliation** · Romans 5:11 · Mentioned in Romans 5:11. · *0.3333333333333333 verses*
+- **Redemption** · Romans 3:24 · Mentioned in Romans 3:24. · *0.6666666666666666 verses*
+- **Repentance** · Romans 2:4 · Mentioned in Romans 2:4. · *0.6666666666666666 verses*
+- **Resurrection** · Romans 1:4 · Mentioned in Romans 1:4. · *0.6666666666666666 verses*
+- **Reveling** · Romans 13:13 · Mentioned in Romans 13:13. · *0.3333333333333333 verses*<br><small>forms: Revelings, Orgies, Carousing</small>
+- **Revenge** · Romans 3:5; Romans 12:19 · Mentioned in Romans 3:5. · *0.6666666666666666 verses*<br><small>aliases: Vengeance</small>
+- **Rock** · Romans 9:33 · Mentioned in Romans 9:33. · *0.3333333333333333 verses*
+- **Rufus** · Romans 16:13 · Greeted along with his mother. · *1 verses*
+- **Sacrifice** · Romans 3:25 · Mentioned in Romans 3:25. · *0.6666666666666666 verses*
+- **Sand** · Romans 9:27 · Mentioned in Romans 9:27. · *0.3333333333333333 verses*
+- **Satan** · Romans 16:20 · Mentioned in Romans 16:20. · *0.3333333333333333 verses*
+- **Sea** · Romans 9:27 · Mentioned in Romans 9:27. · *0.3333333333333333 verses*
+- **Sheep** · Romans 8:36 · Mentioned in Romans 8:36. · *0.3333333333333333 verses*
+- **Simplicity** · Romans 12:8 · Mentioned in Romans 12:8. · *0.3333333333333333 verses*
+- **Sodom** · Romans 9:29 · Named in Romans 9:29. · *1 verses*<br><small>aliases: Sodoma</small>
+- **Sosipater** · Romans 16:21 · A relative of Paul who sends greetings. · *1 verses*
+- **Stachys** · Romans 16:9 · Paul's beloved. · *1 verses*
+- **Steps** · Romans 4:12 · Mentioned in Romans 4:12. · *0.3333333333333333 verses*<br><small>forms: Stairs, Staircase</small>
+- **Stone** · Romans 9:32 · Mentioned in Romans 9:32. · *0.6666666666666666 verses*
+- **Strife** · Romans 1:29 · Mentioned in Romans 1:29. · *0.6666666666666666 verses*
+- **Sword** · Romans 8:35 · Mentioned in Romans 8:35. · *0.6666666666666666 verses*
+- **Table** · Romans 11:9 · Mentioned in Romans 11:9. · *0.3333333333333333 verses*
+- **Teacher** · Romans 2:20 · Mentioned in Romans 2:20. · *0.3333333333333333 verses*
+- **Temple** · Romans 2:22 · Mentioned in Romans 2:22. · *0.3333333333333333 verses*
+- **Temples** · Romans 2:22 · Mentioned in Romans 2:22. · *0.3333333333333333 verses*
+- **Throat** · Romans 3:13 · Mentioned in Romans 3:13. · *0.3333333333333333 verses*
+- **Timothy** · Romans 16:21 · Paul's fellow worker sends greetings. · *1 verses*<br><small>aliases: Timotheus</small>
+- **Tomb** · Romans 3:13 · Mentioned in Romans 3:13. · *0.3333333333333333 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+- **Tongue** · Romans 3:13 · Mentioned in Romans 3:13. · *0.6666666666666666 verses*
+- **Treasurer** · Romans 16:23 · Mentioned in Romans 16:23. · *0.3333333333333333 verses*
+- **Tree** · Romans 11:17 · Mentioned in Romans 11:17. · *0.6666666666666666 verses*<br><small>forms: Trees</small>
+- **Trust** · Romans 15:12 · Mentioned in Romans 15:12. · *0.6666666666666666 verses*
+- **Tryphaena** · Romans 16:12 · A worker in the Lord at Rome. · *1 verses*<br><small>aliases: Tryphena</small>
+- **Tryphosa** · Romans 16:12 · A worker in the Lord at Rome. · *1 verses*
+- **Uncleanness** · Romans 1:24 · Mentioned in Romans 1:24. · *0.6666666666666666 verses*<br><small>forms: Impurity</small>
+- **Understanding** · Romans 1:31 · Mentioned in Romans 1:31. · *0.6666666666666666 verses*
+- **Urbanus** · Romans 16:9 · Called a fellow worker in Christ. · *1 verses*<br><small>aliases: Urbane</small>
+- **Vegetables** · Romans 14:2 · Mentioned in Romans 14:2. · *0.3333333333333333 verses*<br><small>forms: Pulse</small>
+- **Viper** · Romans 3:13 · Mentioned in Romans 3:13. · *0.3333333333333333 verses*
+- **Wantonness** · Romans 13:13 · Mentioned in Romans 13:13. · *0.3333333333333333 verses*
+- **Wine** · Romans 14:21 · Mentioned in Romans 14:21. · *0.3333333333333333 verses*
+- **Wisdom** · Romans 11:33 · Mentioned in Romans 11:33. · *0.3333333333333333 verses*
+- **Womb** · Romans 4:19 · Mentioned in Romans 4:19. · *0.3333333333333333 verses*
+- **Zeal** · Romans 10:2 · Mentioned in Romans 10:2. · *0.3333333333333333 verses*
+
+### Near misses
+
+- **Timothy's mother, Lois, Eunice**: They are named in 2 Timothy 1:5.
+- **Corinth, Galatia**: Paul wrote other letters to those churches; Romans does not name them.
+- **God, the LORD, Lord, Yahweh, Jehovah**: God is not one of the answers in this net; name someone or something he made, called or spoke to.
+
+---
+
+## Name a sin or vice the Bible warns against.
+
+`sins` · Words & Virtues · 74 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 7 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 10 |
+| 🪙 Lost Coin (60) | 10 |
+| 💎 Hidden Treasure (85) | 46 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Menstealers. Paul's list of the lawless includes kidnappers, "menstealers" in the KJV (1 Timothy 1:10).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Adultery** · Exodus 20:14 · Mentioned in Exodus 20:14. · *39 verses*
+- **Lying** · Proverbs 6:17 · Mentioned in Proverbs 6:17. · *80 verses*<br><small>forms: Lies, Falsehood</small>
+- **Murder** · Exodus 20:13 · Mentioned in Exodus 20:13. · *22 verses*
+- **Pride** · Mark 7:22 · Mentioned in Mark 7:22. · *60 verses*<br><small>forms: Arrogance</small>
+- **Theft** · Mark 7:21 · Mentioned in Mark 7:21. · *6 verses*<br><small>forms: Stealing</small>
+- **Violence** · Genesis 6:11; Genesis 6:13 · Mentioned in Genesis 6:11. · *69 verses*
+- **Wrath** · 2 Corinthians 12:20 · Mentioned in 2 Corinthians 12:20. · *257 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Anger** · 2 Corinthians 12:20 · Mentioned in 2 Corinthians 12:20. · *260 verses*
+- **Deceit** · Mark 7:22 · Mentioned in Mark 7:22. · *52 verses*<br><small>forms: Guile</small>
+- **Disobedience** · Colossians 3:6 · Mentioned in Colossians 3:6. · *46 verses*
+- **Envy** · Romans 1:29 · Mentioned in Romans 1:29. · *24 verses*
+- **Folly** · Genesis 34:7; Mark 7:22 · Mentioned in Mark 7:22. · *61 verses*<br><small>aliases: Foolishness</small>
+- **Idolatry** · Galatians 5:20 · Mentioned in Galatians 5:20. · *6 verses*
+- **Jealousy** · Romans 13:13 · Mentioned in Romans 13:13. · *44 verses*
+- **Lust** · 1 Timothy 6:9 · Mentioned in 1 Timothy 6:9. · *44 verses*
+- **Oppression** · Psalm 62:10 · Mentioned in Psalm 62:10. · *51 verses*
+- **Revenge** · Leviticus 19:18; Deuteronomy 32:42 · Mentioned in Leviticus 19:18. · *52 verses*<br><small>aliases: Vengeance</small>
+
+### 🪙 Lost Coin (60)
+
+- **Bitterness** · Ephesians 4:31 · Mentioned in Ephesians 4:31. · *28 verses*
+- **Boasting** · Job 11:3; Isaiah 16:6 · Mentioned in Job 11:3. · *24 verses*
+- **Bribery** · Exodus 23:8; Deuteronomy 10:17; Job 15:34 · Mentioned in Exodus 23:8. · *25 verses*<br><small>aliases: Bribe</small>
+- **Covetousness** · Mark 7:22 · Mentioned in Mark 7:22. · *21 verses*<br><small>aliases: Coveting · forms: Greed</small>
+- **Divisions** · Romans 16:17 · Mentioned in Romans 16:17. · *39 verses*<br><small>forms: Factions, Heresies</small>
+- **False witness** · Exodus 20:16 · Mentioned in Exodus 20:16. · *25 verses*
+- **Fornication** · Mark 7:21 · Mentioned in Mark 7:21. · *35 verses*<br><small>forms: Sexual immorality</small>
+- **Lewdness** · Judges 20:6; Mark 7:22 · Mentioned in Mark 7:22. · *22 verses*<br><small>aliases: Lasciviousness</small>
+- **Strife** · Romans 1:29 · Mentioned in Romans 1:29. · *46 verses*
+- **Uncleanness** · Galatians 5:19 · Mentioned in Galatians 5:19. · *37 verses*<br><small>forms: Impurity</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Blasphemy** · Mark 7:22 · Mentioned in Mark 7:22. · *20 verses*
+- **Bloodshed** · Exodus 22:2; Exodus 22:3 · Mentioned in Exodus 22:2. · *5 verses*
+- **Complaining** · Philippians 2:14 · Mentioned in Philippians 2:14. · *4 verses*
+- **Conspiracy** · 2 Samuel 15:12; 2 Kings 12:20 · Mentioned in 2 Samuel 15:12. · *12 verses*
+- **Contention** · Proverbs 13:10 · Mentioned in Proverbs 13:10. · *18 verses*
+- **Covenantbreakers** · Romans 1:31 · Mentioned in Romans 1:31. · *1 verses*<br><small>forms: Covenant breaking</small>
+- **Cursing** · Psalm 10:7 · Mentioned in Psalm 10:7. · *14 verses*
+- **Dishonesty** · 2 Corinthians 4:2 · Mentioned in 2 Corinthians 4:2. · *1 verses*
+- **Drunkenness** · Romans 13:13 · Mentioned in Romans 13:13. · *7 verses*
+- **Evil speaking** · Ephesians 4:31 · Mentioned in Ephesians 4:31. · *2 verses*
+- **Extortion** · Ecclesiastes 7:7; Ezekiel 22:12 · Mentioned in Ecclesiastes 7:7. · *5 verses*
+- **Filthiness** · Ephesians 5:4 · Mentioned in Ephesians 5:4. · *15 verses*
+- **Flattery** · Job 17:5; Proverbs 6:24 · Mentioned in Job 17:5. · *6 verses*
+- **Fraud** · Psalm 10:7; James 5:4 · Mentioned in Psalm 10:7. · *2 verses*
+- **Glutton** · Proverbs 23:21 · Mentioned in Proverbs 23:21. · *5 verses*<br><small>forms: Gluttony, Gluttonous</small>
+- **Gossip** · Proverbs 11:13; 2 Corinthians 12:20 · Mentioned in 2 Corinthians 12:20. · *6 verses*<br><small>aliases: Whispering</small>
+- **Hardness of heart** · Mark 16:14 · Mentioned in Mark 16:14. · *3 verses*
+- **Hatred** · Galatians 5:20 · Mentioned in Galatians 5:20. · *19 verses*
+- **Haughtiness** · Isaiah 2:11; Isaiah 2:17 · Mentioned in Isaiah 2:11. · *5 verses*
+- **Hypocrisy** · 1 Peter 2:1 · Mentioned in 1 Peter 2:1. · *10 verses*
+- **Idleness** · Proverbs 31:27; Ecclesiastes 10:18 · Mentioned in Proverbs 31:27. · *3 verses*
+- **Injustice** · Leviticus 19:15; Job 5:16 · Mentioned in Leviticus 19:15. · *11 verses*
+- **Insolence** · Isaiah 10:12 · Mentioned in Isaiah 10:12. · *1 verses*
+- **Jesting** · Ephesians 5:4 · Mentioned in Ephesians 5:4. · *1 verses*<br><small>forms: Coarse jesting</small>
+- **Laziness** · Proverbs 12:24; Proverbs 19:15 · Mentioned in Proverbs 12:24. · *3 verses*<br><small>aliases: Slothfulness · forms: Sloth</small>
+- **Licentiousness** · 2 Peter 2:18 · Mentioned in 2 Peter 2:18. · *1 verses*
+- **Love of money** · 1 Timothy 6:10 · Mentioned in 1 Timothy 6:10. · *2 verses*
+- **Malice** · Romans 1:29 · Mentioned in Romans 1:29. · *10 verses*
+- **Murmuring** · Philippians 2:14 · Mentioned in Philippians 2:14. · *11 verses*<br><small>forms: Grumbling</small>
+- **Partiality** · Leviticus 19:15; Deuteronomy 1:17 · Mentioned in Leviticus 19:15. · *18 verses*<br><small>aliases: Favoritism</small>
+- **Perjurers** · 1 Timothy 1:10 · Mentioned in 1 Timothy 1:10. · *2 verses*<br><small>forms: Perjury</small>
+- **Quarreling** · Proverbs 13:10; Proverbs 17:14 · Mentioned in Proverbs 13:10. · *5 verses*<br><small>aliases: Quarrels</small>
+- **Rebellion** · 1 Samuel 15:23 · Mentioned in 1 Samuel 15:23. · *20 verses*
+- **Reveling** · Romans 13:13 · Mentioned in Romans 13:13. · *2 verses*<br><small>forms: Revelings, Orgies, Carousing</small>
+- **Rivalry** · Galatians 5:20 · Mentioned in Galatians 5:20. · *2 verses*
+- **Robbery** · Psalm 62:10 · Mentioned in Psalm 62:10. · *13 verses*
+- **Scoffing** · Genesis 21:9; Psalm 44:13 · Mentioned in Genesis 21:9. · *9 verses*<br><small>aliases: Mocking</small>
+- **Sedition** · Galatians 5:20 · Mentioned in Galatians 5:20. · *7 verses*
+- **Selfish ambition** · James 3:14 · Mentioned in James 3:14. · *3 verses*
+- **Slander** · 2 Corinthians 12:20 · Mentioned in 2 Corinthians 12:20. · *15 verses*<br><small>aliases: Backbiting</small>
+- **Sorcery** · Galatians 5:20 · Mentioned in Galatians 5:20. · *15 verses*<br><small>aliases: Witchcraft</small>
+- **Stubbornness** · Deuteronomy 9:27; Deuteronomy 29:19 · Mentioned in Deuteronomy 9:27. · *12 verses*
+- **Treachery** · 1 Kings 16:20; 2 Kings 9:23 · Mentioned in 1 Kings 16:20. · *4 verses*<br><small>aliases: Treason</small>
+- **Unbelief** · Matthew 13:58; Matthew 17:20 · Mentioned in Matthew 13:58. · *16 verses*
+- **Usury** · Exodus 22:25; Leviticus 25:36 · Mentioned in Exodus 22:25. · *17 verses*
+- **Wantonness** · Romans 13:13 · Mentioned in Romans 13:13. · *2 verses*
+
+### Near misses
+
+- **Sin, iniquity, transgression, wickedness, evil**: That is the word for sin itself; name a particular one.
+- **Seven deadly sins**: The "seven deadly sins" are a later list, not a passage of Scripture; Proverbs 6:16–19 lists seven things the LORD hates.
+
+---
+
+## Name a kind of building or structure mentioned in the Bible.
+
+`structures` · Objects & Treasures · 73 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 6 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 9 |
+| 🪙 Lost Coin (60) | 10 |
+| 💎 Hidden Treasure (85) | 47 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Draught house. Jehu's men broke down the house of Baal and made it a draught house, a latrine, "to this day" (2 Kings 10:27, KJV).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Gate** · Genesis 19:1; Genesis 22:17 · Mentioned in Genesis 19:1. · *352 verses*
+- **House** · Genesis 7:1; Genesis 12:1 · Mentioned in Genesis 7:1. · *1860 verses*
+- **Tabernacle** · Exodus 26:1 · Mentioned in Exodus 26:1. · *328 verses*
+- **Temple** · Judges 4:21; 1 Kings 6:1 · Mentioned in 1 Kings 6:1. · *222 verses*
+- **Tower** · Genesis 11:4 · Mentioned in Genesis 11:4. · *67 verses*<br><small>forms: Watchtower</small>
+- **Wall** · Genesis 49:6; Genesis 49:22 · Mentioned in Genesis 49:6. · *233 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Altar** · Genesis 8:20; Genesis 12:7 · Mentioned in Genesis 8:20. · *367 verses*
+- **Court** · Exodus 8:13; Exodus 23:2; Mark 14:66 · Mentioned in Exodus 8:13. · *144 verses*<br><small>aliases: Courtyard</small>
+- **Manger** · Luke 2:7 · Mentioned in Luke 2:7. · *3 verses*
+- **Palace** · 1 Kings 16:18; 1 Kings 21:1 · Mentioned in 1 Kings 16:18. · *81 verses*
+- **Pillar** · Genesis 19:26; Genesis 28:18 · Mentioned in Genesis 19:26. · *126 verses*
+- **Prison** · Genesis 39:20 · Mentioned in Genesis 39:20. · *90 verses*<br><small>forms: Dungeon</small>
+- **Synagogue** · Luke 4:16 · Mentioned in Luke 4:16. · *70 verses*
+- **Tent** · Genesis 4:20; Genesis 9:21 · Mentioned in Genesis 4:20. · *351 verses*
+- **Tomb** · Matthew 27:60 · Mentioned in Matthew 27:60. · *81 verses*<br><small>aliases: Sepulchre · forms: Sepulcher</small>
+
+### 🪙 Lost Coin (60)
+
+- **Chamber** · Genesis 43:30; Judges 3:24 · Mentioned in Genesis 43:30. · *104 verses*
+- **Doorpost** · Exodus 12:7; Exodus 12:22 · Mentioned in Exodus 12:7. · *48 verses*<br><small>aliases: Post</small>
+- **Fortified city** · Numbers 32:17; Numbers 32:36 · Mentioned in Numbers 32:17. · *41 verses*<br><small>aliases: Fenced city</small>
+- **Fortress** · Numbers 13:19; Judges 6:2; 2 Samuel 5:9; 2 Samuel 22:2 · Mentioned in Numbers 13:19. · *99 verses*<br><small>aliases: Stronghold, Fort</small>
+- **Foundation** · Exodus 9:18; Deuteronomy 32:22 · Mentioned in Exodus 9:18. · *88 verses*
+- **High place** · Leviticus 26:30; Numbers 21:28 · Mentioned in Leviticus 26:30. · *111 verses*
+- **Roof** · Genesis 6:16; Genesis 19:8; 1 Samuel 9:25 · Mentioned in Genesis 6:16. · *46 verses*<br><small>aliases: Housetop</small>
+- **Stairs** · Exodus 20:26; 2 Samuel 22:37; 1 Kings 6:8 · Mentioned in Exodus 20:26. · *57 verses*<br><small>aliases: Steps · forms: Staircase</small>
+- **Street** · Genesis 19:2; Deuteronomy 13:16 · Mentioned in Genesis 19:2. · *101 verses*
+- **Window** · Genesis 6:16; Genesis 7:11 · Mentioned in Genesis 6:16. · *42 verses*
+
+### 💎 Hidden Treasure (85)
+
+- **Armory** · Nehemiah 3:19; Song of Solomon 4:4 · Mentioned in Nehemiah 3:19. · *3 verses*<br><small>aliases: Armoury</small>
+- **Banqueting house** · Song of Solomon 2:4 · Mentioned in Song of Solomon 2:4. · *1 verses*<br><small>aliases: Banquet hall</small>
+- **Barn** · Deuteronomy 28:8; Job 39:12 · Mentioned in Deuteronomy 28:8. · *12 verses*
+- **Battlement** · Deuteronomy 22:8; 2 Chronicles 26:15 · Mentioned in Deuteronomy 22:8. · *5 verses*<br><small>forms: Parapet</small>
+- **Beam** · Judges 16:14; 1 Samuel 17:7 · Mentioned in Judges 16:14. · *31 verses*
+- **Bedchamber** · Exodus 8:3; 2 Samuel 4:7 · Mentioned in Exodus 8:3. · *6 verses*<br><small>aliases: Bedroom</small>
+- **Booth** · Genesis 33:17; Exodus 9:19 · Mentioned in Genesis 33:17. · *28 verses*<br><small>aliases: Shelter</small>
+- **Brick** · Genesis 11:3; Exodus 1:14 · Mentioned in Genesis 11:3. · *13 verses*
+- **Brickkiln** · 2 Samuel 12:31; Jeremiah 43:9 · Mentioned in 2 Samuel 12:31. · *3 verses*
+- **Cistern** · Leviticus 11:36; Deuteronomy 6:11 · Mentioned in Leviticus 11:36. · *11 verses*
+- **Citadel** · Genesis 25:16; Numbers 31:10; Nehemiah 2:8 · Mentioned in Genesis 25:16. · *26 verses*<br><small>aliases: Castle</small>
+- **City of refuge** · Numbers 35:25; Numbers 35:26 · Mentioned in Numbers 35:25. · *11 verses*
+- **Conduit** · 2 Kings 18:17; 2 Kings 20:20; Isaiah 36:2 · Mentioned in 2 Kings 18:17. · *4 verses*<br><small>aliases: Aqueduct</small>
+- **Cornerstone** · Job 38:6; Psalm 118:22 · Mentioned in Job 38:6. · *10 verses*
+- **Ditch** · 1 Samuel 17:20; 1 Samuel 26:5; 2 Kings 3:16 · Mentioned in 1 Samuel 17:20. · *15 verses*<br><small>aliases: Trench</small>
+- **Fence** · 1 Chronicles 4:23; Job 1:10; Psalm 62:3 · Mentioned in 1 Chronicles 4:23. · *19 verses*<br><small>aliases: Hedge</small>
+- **Furnace** · Genesis 15:17; Genesis 19:28 · Mentioned in Genesis 15:17. · *34 verses*
+- **Garner** · Psalm 144:13; Joel 1:17 · Mentioned in Psalm 144:13. · *4 verses*<br><small>aliases: Granary</small>
+- **Hall** · 1 Kings 7:6; 2 Chronicles 4:22 · Mentioned in 1 Kings 7:6. · *10 verses*
+- **Highway** · Numbers 20:17; Numbers 20:19 · Mentioned in Numbers 20:17. · *30 verses*
+- **Hut** · Genesis 24:23; Genesis 24:25; Isaiah 1:8 · Mentioned in Genesis 24:23. · *37 verses*<br><small>aliases: Cottage, Lodge</small>
+- **Inn** · Luke 2:7 · Mentioned in Luke 2:7. · *5 verses*<br><small>forms: Lodging place</small>
+- **Ivory house** · 1 Kings 22:39; Psalm 45:8 · Mentioned in 1 Kings 22:39. · *2 verses*<br><small>aliases: Ivory palace</small>
+- **Judgment hall** · Matthew 27:27; Mark 15:16; John 18:28 · Mentioned in Matthew 27:27. · *6 verses*<br><small>aliases: Praetorium</small>
+- **Kiln** · 2 Samuel 12:31; Nahum 3:14 · Mentioned in 2 Samuel 12:31. · *2 verses*
+- **Lattice** · Judges 5:28; 1 Kings 6:4 · Mentioned in Judges 5:28. · *5 verses*
+- **Lintel** · Exodus 12:7; Exodus 12:22 · Mentioned in Exodus 12:7. · *6 verses*
+- **Marketplace** · Isaiah 23:3; Ezekiel 27:13; Matthew 11:16 · Mentioned in Isaiah 23:3. · *22 verses*<br><small>aliases: Market</small>
+- **Oven** · Exodus 8:3; Leviticus 2:4 · Mentioned in Exodus 8:3. · *13 verses*
+- **Pavement** · 2 Kings 16:17; 2 Chronicles 7:3 · Mentioned in 2 Kings 16:17. · *7 verses*
+- **Porch** · Judges 3:23; 1 Kings 6:3 · Mentioned in Judges 3:23. · *36 verses*<br><small>forms: Portico</small>
+- **Rafter** · Song of Solomon 1:17 · Mentioned in Song of Solomon 1:17. · *1 verses*
+- **Rampart** · Deuteronomy 20:20; 2 Samuel 20:15 · Mentioned in Deuteronomy 20:20. · *12 verses*<br><small>aliases: Bulwark</small>
+- **School** · Acts 19:9 · Mentioned in Acts 19:9. · *1 verses*
+- **Sheepfold** · Numbers 32:16; Numbers 32:24 · Mentioned in Numbers 32:16. · *23 verses*<br><small>aliases: Fold</small>
+- **Shrine** · 2 Kings 10:25; 2 Kings 23:7 · Mentioned in 2 Kings 10:25. · *6 verses*
+- **Siege works** · Joshua 11:13; 2 Samuel 20:15; Isaiah 29:3 · Mentioned in Joshua 11:13. · *12 verses*<br><small>aliases: Mound</small>
+- **Stall** · 1 Kings 4:26; 2 Chronicles 9:25 · Mentioned in 1 Kings 4:26. · *9 verses*
+- **Storehouse** · Genesis 41:56; Deuteronomy 28:8; 2 Chronicles 8:4; Ezra 5:17 · Mentioned in Genesis 41:56. · *22 verses*<br><small>aliases: Treasure house, Store city</small>
+- **Summer house** · Amos 3:15 · Mentioned in Amos 3:15. · *1 verses*
+- **Theater** · Acts 19:29 · Mentioned in Acts 19:29. · *2 verses*<br><small>aliases: Theatre</small>
+- **Threshing floor** · Genesis 50:10; Numbers 15:20 · Mentioned in Genesis 50:10. · *35 verses*
+- **Threshold** · Judges 19:27; 1 Samuel 5:4 · Mentioned in Judges 19:27. · *32 verses*
+- **Treasury** · Joshua 6:19; Joshua 6:24 · Mentioned in Joshua 6:19. · *28 verses*
+- **Upper room** · Acts 1:13 · Mentioned in Acts 1:13. · *15 verses*
+- **Winepress** · Numbers 18:27; Numbers 18:30 · Mentioned in Numbers 18:27. · *17 verses*
+- **Winter house** · Jeremiah 36:22; Amos 3:15 · Mentioned in Jeremiah 36:22. · *2 verses*
+
+### Near misses
+
+- **Church building, cathedral**: The New Testament church met in homes (Romans 16:5); try "house" or "synagogue".
+- **Pyramid, ziggurat**: The Bible never names them; try the tower of Babel's "tower".
+
+---
+
+## Name a virtue or good quality the Bible commends.
+
+`virtues` · Words & Virtues · 63 answers
+
+| Tier | Count |
+| --- | --- |
+| 🌱 Mustard Seed (10) | 5 |
+| 🪑 Best Seat (15) | 0 |
+| 🍞 Five Loaves (30) | 7 |
+| 🪙 Lost Coin (60) | 10 |
+| 💎 Hidden Treasure (85) | 40 |
+| 🐑 The Lost Sheep (100) | 1 |
+
+**🐑 The Lost Sheep:** Simplicity. Paul feared the Corinthians would be led away from the simplicity that is in Christ (2 Corinthians 11:3, KJV).
+
+**🪑 Best Seat:** none
+
+### 🌱 Mustard Seed (10)
+
+- **Faith** · Galatians 5:22 · Mentioned in Galatians 5:22. · *236 verses*
+- **Hope** · 1 Corinthians 13:7 · Mentioned in 1 Corinthians 13:7. · *148 verses*
+- **Joy** · Galatians 5:22 · Mentioned in Galatians 5:22. · *180 verses*
+- **Love** · Galatians 5:22 · Mentioned in Galatians 5:22. · *384 verses*
+- **Peace** · Galatians 5:22 · Mentioned in Galatians 5:22. · *420 verses*
+
+### 🍞 Five Loaves (30)
+
+- **Humility** · Colossians 3:12 · Mentioned in Colossians 3:12. · *17 verses*
+- **Kindness** · Galatians 5:22 · Mentioned in Galatians 5:22. · *219 verses*
+- **Mercy** · Colossians 3:12 · Mentioned in Colossians 3:12. · *317 verses*
+- **Patience** · Galatians 5:22 · Mentioned in Galatians 5:22. · *51 verses*<br><small>aliases: Longsuffering</small>
+- **Righteousness** · 1 Timothy 6:11 · Mentioned in 1 Timothy 6:11. · *317 verses*
+- **Understanding** · Proverbs 1:2 · Mentioned in Proverbs 1:2. · *181 verses*
+- **Wisdom** · Proverbs 1:2 · Mentioned in Proverbs 1:2. · *226 verses*
+
+### 🪙 Lost Coin (60)
+
+- **Compassion** · Colossians 3:12 · Mentioned in Colossians 3:12. · *62 verses*
+- **Courage** · Numbers 13:20; Deuteronomy 31:6; Ecclesiastes 8:1 · Mentioned in Numbers 13:20. · *45 verses*<br><small>aliases: Boldness</small>
+- **Goodness** · Galatians 5:22 · Mentioned in Galatians 5:22. · *51 verses*
+- **Grace** · Titus 2:11 · Mentioned in Titus 2:11. · *160 verses*
+- **Holiness** · Titus 2:3 · Mentioned in Titus 2:3. · *46 verses*
+- **Honor** · Romans 12:10 · Mentioned in Romans 12:10. · *167 verses*<br><small>aliases: Honour</small>
+- **Justice** · Proverbs 1:3 · Mentioned in Proverbs 1:3. · *128 verses*
+- **Knowledge** · 2 Peter 1:5 · Mentioned in 2 Peter 1:5. · *180 verses*
+- **Trust** · Proverbs 3:5 · Mentioned in Proverbs 3:5. · *167 verses*
+- **Valor** · Deuteronomy 3:18; Joshua 1:14 · Mentioned in Deuteronomy 3:18. · *44 verses*<br><small>aliases: Valour</small>
+
+### 💎 Hidden Treasure (85)
+
+- **Brotherly love** · Romans 12:10; 2 Peter 1:7 · Mentioned in 2 Peter 1:7. · *4 verses*<br><small>aliases: Brotherly kindness</small>
+- **Charity** · 2 Peter 1:7 · Mentioned in 2 Peter 1:7. · *24 verses*
+- **Contentment** · 1 Timothy 6:6 · Mentioned in 1 Timothy 6:6. · *2 verses*
+- **Devotion** · Job 15:4; Acts 17:23 · Mentioned in Job 15:4. · *2 verses*
+- **Diligence** · 2 Peter 1:5 · Mentioned in 2 Peter 1:5. · *20 verses*
+- **Discernment** · Philippians 1:9 · Mentioned in Philippians 1:9. · *5 verses*
+- **Discretion** · Proverbs 1:4 · Mentioned in Proverbs 1:4. · *15 verses*
+- **Equity** · Proverbs 1:3 · Mentioned in Proverbs 1:3. · *14 verses*<br><small>forms: Fairness</small>
+- **Faithfulness** · 1 Samuel 26:23 · Mentioned in 1 Samuel 26:23. · *33 verses*
+- **Fidelity** · Titus 2:10 · Mentioned in Titus 2:10. · *1 verses*
+- **Forbearance** · Romans 2:4; Romans 3:25 · Mentioned in Romans 2:4. · *2 verses*
+- **Forgiveness** · Psalm 130:4; Daniel 9:9 · Mentioned in Psalm 130:4. · *10 verses*
+- **Generosity** · Romans 12:8 · Mentioned in Romans 12:8. · *5 verses*<br><small>forms: Liberality</small>
+- **Gentleness** · Galatians 5:22 · Mentioned in Galatians 5:22. · *12 verses*
+- **Godliness** · 2 Peter 1:6 · Mentioned in 2 Peter 1:6. · *16 verses*
+- **Honesty** · 1 Timothy 2:2 · Mentioned in 1 Timothy 2:2. · *1 verses*
+- **Hospitality** · Romans 12:13 · Mentioned in Romans 12:13. · *5 verses*
+- **Innocence** · Genesis 20:5; Psalm 26:6 · Mentioned in Genesis 20:5. · *4 verses*
+- **Integrity** · Titus 2:7 · Mentioned in Titus 2:7. · *23 verses*
+- **Lowliness** · Colossians 3:12 · Mentioned in Colossians 3:12. · *3 verses*
+- **Meekness** · Galatians 5:23 · Mentioned in Galatians 5:23. · *14 verses*
+- **Moderation** · Philippians 4:5 · Mentioned in Philippians 4:5. · *1 verses*
+- **Modesty** · 1 Timothy 2:9 · Mentioned in 1 Timothy 2:9. · *2 verses*
+- **Obedience** · Romans 6:16 · Mentioned in Romans 6:16. · *19 verses*
+- **Perseverance** · 2 Peter 1:6 · Mentioned in 2 Peter 1:6. · *25 verses*<br><small>forms: Endurance, Steadfastness</small>
+- **Prudence** · Proverbs 1:4 · Mentioned in Proverbs 1:4. · *8 verses*
+- **Purity** · Proverbs 22:11; Hosea 8:5 · Mentioned in Proverbs 22:11. · *4 verses*
+- **Readiness** · Acts 17:11; 2 Corinthians 8:11 · Mentioned in Acts 17:11. · *6 verses*
+- **Repentance** · Matthew 3:8 · Mentioned in Matthew 3:8. · *26 verses*
+- **Reverence** · Leviticus 19:30; Leviticus 26:2 · Mentioned in Leviticus 19:30. · *16 verses*
+- **Self-control** · Galatians 5:23 · Mentioned in Galatians 5:23. · *8 verses*<br><small>aliases: Temperance</small>
+- **Sincerity** · Titus 2:7 · Mentioned in Titus 2:7. · *7 verses*
+- **Sobriety** · Acts 26:25; 1 Timothy 2:9 · Mentioned in Acts 26:25. · *3 verses*<br><small>aliases: Soberness</small>
+- **Sound judgment** · Proverbs 18:1 · Mentioned in Proverbs 18:1. · *1 verses*
+- **Submission** · 1 Timothy 2:11 · Mentioned in 1 Timothy 2:11. · *3 verses*
+- **Thankfulness** · Acts 24:3; Colossians 3:15 · Mentioned in Colossians 3:15. · *2 verses*<br><small>forms: Thanksgiving, Gratitude</small>
+- **Unity** · Ephesians 4:3 · Mentioned in Ephesians 4:3. · *3 verses*
+- **Uprightness** · Deuteronomy 9:5; 1 Kings 3:6 · Mentioned in Deuteronomy 9:5. · *22 verses*
+- **Virtue** · 2 Peter 1:5 · Mentioned in 2 Peter 1:5. · *6 verses*
+- **Zeal** · 2 Corinthians 7:11 · Mentioned in 2 Corinthians 7:11. · *20 verses*
+
+### Near misses
+
+- **Optimism, self-esteem, tolerance**: Not a word the WEB or KJV uses for a virtue.
+- **Cardinal virtues, prudence, justice, fortitude, temperance**: That list comes from Greek philosophy, but several of the words are in Scripture; name one.
+

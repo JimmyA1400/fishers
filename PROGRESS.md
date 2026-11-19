@@ -6,7 +6,7 @@
 11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-11.4: draft the first batch of 20 new open prompts (non-People/Places categories first: they are the tightest) under "Waiting for my review"; after each approved batch, tighten scripts/schedule-rules.json and rebuild the schedule.
+11.4: batch 1 approved 2026-11-19 and wired in locally (115 prompts, 58 open; schedule rebuilt with cooldown 12, frozen through 2026-11-20); all checks pass. Waiting for your OK to commit and deploy (you asked that nothing be committed without approval). Open question: the twin rule keeps isaiah-anything and psalms-anything out of the dailies entirely (see "Blocked on me").
 
 ## Checklist
 
@@ -98,11 +98,13 @@
 - [x] 11.0.3 Hotfix: shipped as the schedule itself, live in 32a67a6 (CI run 44480502317 green, schedule check in the test job). Live check 2026-11-19: schedule.json matches the repo; today unchanged; tomorrow 2026-11-20 = schedule.json and shares nothing with the 7 days before it; archive 11-17 and 11-18 replay what aired; Endless #1 has nothing due in the next 9 days (the bank is too small for 14); smoke OK
 - [x] 11.1-3 Families (`tools/families.js`, 27 families, every prompt has `family`; `--check` in `npm run verify`), rules and checker (`js/schedule.js`), `scripts/build-schedule.js` -> `data/schedule.json` (2026-11-17 to 2027-12-24, 403 days; 11-17..11-19 backfilled from the old picker), game reads it, runtime fallback past the end
 - [ ] 11.4 Pool growth (batches of 20 for your review)
+  - [x] Batch 1 (20 open prompts) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` tightened to cooldown 12 (closed sets still up to 4). Checks: verify all verified, validate 0 errors / 18 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged. Not committed yet.
+  - [ ] Batch 2
 - [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
-- [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.txt`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
+- [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.list`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
 - [ ] 11.7 Ship, verify live, report
 
-**Pool math.** 7 prompts a day with a 30-day cooldown needs 7 x 30 = 210 prompts in rotation; with at most 1 closed set a day, 6 of the 7 must be open prompts, so a 30-day cooldown needs 180 open prompts plus 30 closed sets. The pool today is 95: 39 open and 56 closed. At 6 open a day, 39 open prompts give each one a turn every 6.5 days. So the 14-day hard floor with at most 1 closed set a day needs at least 84 open prompts. **The current pool cannot meet the rules in section 1**; see "Blocked on me".
+**Pool math.** 7 prompts a day with a 30-day cooldown needs 7 x 30 = 210 prompts in rotation; with at most 1 closed set a day, 6 of the 7 must be open prompts, so a 30-day cooldown needs 180 open prompts plus 30 closed sets. Before batch 1 the pool was 95: 38 open and 57 closed (38 open prompts at 6 a day come back every 6.3 days); after batch 1 it is 115, 58 open. So the 14-day hard floor with at most 1 closed set a day needs at least 84 open prompts. **The current pool cannot meet the rules in section 1**; see "Blocked on me".
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
@@ -116,7 +118,45 @@
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
-- **Pool size vs the freshness rules (section 11).** With today's 95 prompts the rules you set cannot all hold, so `scripts/schedule-rules.json` relaxes two of them until new prompts are approved: cooldown 9 days (target 14+, floor 7) and up to 4 closed sets a day (target 1). The cost: most days have 4 closed sets. Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown, 84 for the 14-day floor).
+- **Twins starve two batch-1 prompts.** Under the twin rule as specified (50% of the smaller prompt's answers), `isaiah-anything` and `psalms-anything` are twins of 9-10 other book prompts, so one of those always aired in the last 12 days and the two never get a daily in the 400-day schedule (Daniel 2 times, John 3, Job 6). They still appear in Endless and Practice. Measuring against the larger prompt (4 twin pairs instead of 44) lets every book prompt air 11-24 times a year at the same cooldown. Your call: keep the rule, or switch `twinBasis` to 'larger'.
+- **Pool size vs the freshness rules (section 11).** With 115 prompts (after batch 1) the rules you set cannot all hold, so `scripts/schedule-rules.json` relaxes two of them until new prompts are approved: cooldown 12 days (was 9 before batch 1) (target 14+, floor 7) and up to 4 closed sets a day (target 1). The cost: most days have 4 closed sets. Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown, 84 for the 14-day floor).
 
 ## Waiting for my review
-- Nothing.
+### Batch 1: 20 new open prompts (drafted 2026-11-19; APPROVED 2026-11-19, in the game and schedule locally, not committed yet)
+Full bank with every answer, tier, reference and note: `review/batch-1.md` (built by `node tools/build-prompts.js --pending batch-1 --out review/batch-1.json`). Sources: `tools/batches/batch-1.js`, `tools/lib/things.js`; generated files now in `content/generated/` (were `content/pending/batch-1/` during review).
+
+| ID | Prompt | Category | Answers | Lost Sheep | First Mustard Seeds |
+| --- | --- | --- | --- | --- | --- |
+| `exodus-anything` | Name a person, place, or thing named in the book of Exodus. | Books of the Bible | 406 | Aholiab | Moses, Egypt, Aaron, Pharaoh |
+| `numbers-anything` | Name a person, place, or thing named in the book of Numbers. | Books of the Bible | 495 | Eldad | Moses, Aaron, Balak, Eleazar |
+| `joshua-anything` | Name a person, place, or thing named in the book of Joshua. | Books of the Bible | 563 | Achsah | Joshua, Jordan, Moses, Manasseh |
+| `1samuel-anything` | Name a person, place, or thing named in the book of 1 Samuel. | Books of the Bible | 383 | Ichabod | Saul, David, Philistine, Samuel |
+| `job-anything` | Name a person, place, or thing named in the book of Job. | Books of the Bible | 379 | Jemimah | Job, Hand, Word, Eye |
+| `psalms-anything` | Name a person, place, or thing named in the book of Psalms. | Books of the Bible | 547 | Doeg | David, Mount Zion, Praise, Heart |
+| `proverbs-anything` | Name a person, place, or thing named in the book of Proverbs. | Books of the Bible | 323 | Lemuel | Heart, Fool, Understanding, Wisdom |
+| `isaiah-anything` | Name a person, place, or thing named in the book of Isaiah. | Books of the Bible | 616 | Shear-Jashub | Jerusalem, Jacob, Hand, Assyria |
+| `jeremiah-anything` | Name a person, place, or thing named in the book of Jeremiah. | Books of the Bible | 529 | Ebed-melech | Judah, Babylon, Zion, Jeremiah |
+| `ezekiel-anything` | Name a person, place, or thing named in the book of Ezekiel. | Books of the Bible | 444 | Jaaz-aniah | House, Egypt, Hand, Side |
+| `daniel-anything` | Name a person, place, or thing named in the book of Daniel. | Books of the Bible | 196 | Melzar | Daniel, King, Nebuchadnezzar, Abednego |
+| `matthew-anything` | Name a person, place, or thing named in the book of Matthew. | Books of the Bible | 405 | Azor | Jesus, John, Peter, Judea |
+| `john-anything` | Name a person, place, or thing named in the book of John. | Books of the Bible | 226 | Salim | Jesus, Peter, Simon, Pilate |
+| `acts-anything` | Name a person, place, or thing named in the book of Acts. | Books of the Bible | 403 | Rhoda | Paul, Jesus, Jerusalem, Peter |
+| `romans-anything` | Name a person, place, or thing named in the book of Romans. | Books of the Bible | 211 | Tertius | Jesus, Law, Sin, Faith |
+| `hebrews-anything` | Name a person, place, or thing named in the book of Hebrews. | Books of the Bible | 207 | Salem | Jesus, Moses, Faith, Priest |
+| `sins` | Name a sin or vice the Bible warns against. | Words & Virtues | 74 | Menstealers | Wrath, Lying, Violence, Pride |
+| `virtues` | Name a virtue or good quality the Bible commends. | Words & Virtues | 63 | Simplicity | Peace, Love, Faith, Joy |
+| `structures` | Name a kind of building or structure mentioned in the Bible. | Objects & Treasures | 73 | Draught house | House, Gate, Tabernacle, Wall |
+| `land-and-sky` | Name a feature of the land, sea or sky, or a kind of weather, mentioned in the Bible. | Creation | 61 | Arcturus | Fire, Mountain, Sea, Sun |
+
+Checks on the batch: `tools/verify.js` all verified (every name and alias found at its cited verse in the WEB or KJV); `tools/validate.js` 0 errors, 18 warnings (Mustard Seed counts of 13-15 in some book prompts; "Israel" landing on Jacob; "Emmanuel" landing on Jesus). Every common answer I tried lands (Moses, Sinai, the burning bush, Goliath's sling, Job's boils, wisdom in Proverbs, the wise men, Meshach).
+
+How the book prompts work: every person whose name the book's verses use, every place OpenBible lists in the book, and every listed thing (objects, clothing, creatures, food, plants, buildings, land and sky, beings such as Satan and the cherubim, feasts, false gods, occupations, body parts, illnesses; abstract words for Job, Psalms, Proverbs, Romans and Hebrews) that the book's verses use, each cited at a verse in the book. Words that are also common verbs ("bow", "saw", "lead", "bear") are left out unless a verse is given. Tiers count only that book's verses; things count at a third, so people and places come first. All tiers are estimates.
+
+Decisions for you:
+1. **God is not an answer** in the book prompts (as in the people prompts); typing God gets a near miss. Say if you want God counted.
+2. **Twins.** Measured as you specified (50% of the smaller prompt's answers, same family), the book prompts are mostly twins of each other: they share the big names and common things. The schedule treats twins as one prompt for the cooldown, so they spread out but rarely air. Measuring against the larger prompt instead makes only 2 pairs twins, and gains only one cooldown day. I kept your definition.
+3. **New category "Creation"** for land-and-sky.
+
+What batch 1 buys (simulated, rules otherwise as specified): best cooldown 9 -> 12 days with up to 4 closed sets a day (average 13.2 -> 15.9). The limit is still open prompts outside People and Places: a 14-day cooldown with 1 closed set a day needs about 84 open prompts; with batch 1 there are 58.
+
+Found on the way (uncommitted fixes, waiting with the batch): `content/prompt-ids.txt` was read by `tools/build-prompts.js` as a prompt file and broke any rebuild of the bank (renamed to `content/prompt-ids.list`; the live site was not affected); the schedule check and test recomputed the three aired days from the current pool, which would fail as soon as any prompt is added (they are now fixed lists).

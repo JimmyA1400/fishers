@@ -4,6 +4,9 @@
  *     node tools/build-prompts.js                 -> data/prompts.json
  *     node tools/build-prompts.js --only a,b      -> just those prompts
  *     node tools/build-prompts.js --out file.json
+ *     node tools/build-prompts.js --pending batch-1 --out review/batch-1.json
+ *                                                 -> the live bank plus a batch waiting for review
+ *                                                    (content/pending/batch-1/); never into data/
  *
  * Source format (one file per prompt or several per file):
  *
@@ -21,7 +24,8 @@
  * flags: closed (a fixed set), nouns (common nouns: singular and plural agree),
  *        phrase (description matching),
  *        described (names are labels; verify anchors), books (answers are the
- *        66 book names), ignore=word,word
+ *        66 book names), ignore=word,word, within=EXO,NUM (book-scoped:
+ *        familiarity counts only those books' verses)
  *
  * Tiers, mechanically: every answer gets a familiarity score, the number of
  * verses in the WEB and KJV that use its name or aliases (or its anchors).
@@ -40,6 +44,8 @@ const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
 const OUT = path.resolve(opt('--out', path.join(ROOT, 'data', 'prompts.json')));
 const ONLY = opt('--only', '') ? new Set(opt('--only').split(',')) : null;
+const PENDING = opt('--pending', '');
+if (PENDING && OUT === path.join(ROOT, 'data', 'prompts.json')) throw new Error('--pending needs --out: a batch waiting for review never goes into data/prompts.json');
 
 const BOOK_NAME = new Map(B.BOOKS.map(b => [b[0], b[1]]));
 
@@ -85,6 +91,7 @@ function parse(text, file) {
         id: f[0], category: f[1], prompt: f[2].replace(/(\d)-(\d)/g, '$1–$2'), theme: f[3],
         closed: flags.includes('closed'), described: flags.includes('described') || flags.includes('books'),
         books: flags.includes('books'), nouns: flags.includes('nouns'),
+        within: (flags.find(x => x.startsWith('within=')) || '').replace('within=', '').split(',').filter(Boolean),
         match: flags.includes('phrase') ? 'phrase' : 'exact', ignoreWords: ignore,
         answers: [], nearMisses: [], file: where
       };
@@ -112,7 +119,19 @@ function parse(text, file) {
 function familiarity(p, a) {
   if (p.books) return 0;
   const phrases = p.described ? (a.anchor || []) : [a.name].concat(a.aliases);
-  return phrases.length ? B.verseCount(phrases) : 0;
+  if (!phrases.length) return 0;
+  // A book-scoped prompt (flag within=EXO) counts only that book's verses:
+  // in 1 Samuel, Saul is more familiar than Jerusalem.
+  if (p.within && p.within.length) {
+    // Names count where the text capitalizes them ("No" the city, not "no");
+    // things (derive.js notes them "Mentioned in") count at a third, because
+    // a player reaches for the book's people and places before its hands and houses.
+    const thing = /^Mentioned in /.test(a.note || '');
+    const inside = new Set();
+    for (const n of phrases) for (const k of B.versesWith(n, !thing)) if (p.within.includes(k.split(' ')[0])) inside.add(k);
+    return thing ? inside.size / 3 : inside.size;
+  }
+  return B.verseCount(phrases);
 }
 
 function assignTiers(p) {
@@ -173,6 +192,10 @@ function main() {
   const files = fs.readdirSync(dir).filter(f => f.endsWith('.txt') && f !== 'people-hand.txt').map(f => path.join(dir, f));
   const gen = path.join(dir, 'generated');
   if (fs.existsSync(gen)) fs.readdirSync(gen).filter(f => f.endsWith('.txt')).forEach(f => files.push(path.join(gen, f)));
+  if (PENDING) {
+    const pend = path.join(dir, 'pending', PENDING);
+    fs.readdirSync(pend).filter(f => f.endsWith('.txt')).forEach(f => files.push(path.join(pend, f)));
+  }
   for (const file of files.sort()) {
     prompts = prompts.concat(parse(fs.readFileSync(file, 'utf8'), path.relative(ROOT, file)));
   }
@@ -223,7 +246,7 @@ function main() {
   // Each Lost Sheep carries the WEB text of its first passage ("Learn more").
   require('./add-passages').apply(data);
   // Every prompt's family (and retired flag) for the daily schedule.
-  require('./families').apply(data);
+  require('./families').apply(data, PENDING);
   fs.writeFileSync(OUT, JSON.stringify(data) + '\n');
   console.log('Wrote ' + path.relative(ROOT, OUT) + ': ' + out.length + ' prompts, ' +
     out.reduce((s, p) => s + p.answers.length, 0) + ' answers');
