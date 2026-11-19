@@ -31,8 +31,10 @@ function arg(name, def) {
   return i > 0 ? process.argv[i + 1] : def;
 }
 
+// --data and --rules try out a pool or rules (a batch under review) without
+// touching data/: --data review/batch-1.json --rules '{"cooldown":12}' --out /tmp/s.json
 function load() {
-  return JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'prompts.json'), 'utf8'));
+  return JSON.parse(fs.readFileSync(path.resolve(ROOT, arg('data', path.join('data', 'prompts.json'))), 'utf8'));
 }
 function overrides() {
   const f = path.join(__dirname, 'schedule-rules.json');
@@ -205,11 +207,11 @@ function main() {
   const swaps = Number(arg('swaps', 40000));
   const out = arg('out', OUT);
   const old = fs.existsSync(out) ? JSON.parse(fs.readFileSync(out, 'utf8')) : null;
-  const rules = Object.assign({}, overrides() || {});
+  const rules = Object.assign({}, arg('rules', '') ? JSON.parse(arg('rules')) : overrides() || {});
   const sched0 = { rules };
   const R = S.rulesFor(sched0);
   if (R.cooldown < S.FLOOR) throw new Error('cooldown ' + R.cooldown + ' is below the absolute floor of ' + S.FLOOR);
-  const twins = S.computeTwins(data, R.twinOverlap);
+  const twins = S.computeTwins(data, R.twinOverlap, R.twinBasis);
   const ix = S.index(data, { rules, twins });
 
   // Frozen: dates on or before tomorrow that the old schedule has; past
@@ -218,7 +220,7 @@ function main() {
   const kept = [];
   for (let k = EPOCH; k <= freeze; k = D.addDays(k, 1)) {
     if (old && old.days[k]) kept.push(old.days[k].slice());
-    else if (k <= today) kept.push(D.pickDaily(data, k, CFG).map((p) => p.id));
+    else if (k <= today) kept.push(D.pickDaily(data, k, CFG).map((p) => p.id));   // only right with the pool of the day (first build)
     else break;
   }
   const endI = D.dayNumber(end, EPOCH), fromI = kept.length;

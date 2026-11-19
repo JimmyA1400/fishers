@@ -1,5 +1,5 @@
 {
-  "_why": "Interim, until approved new prompts grow the pool. With 95 prompts (39 open) the target rules cannot all hold: at most 1 closed set a day leaves 6 open slots, and 39 open prompts at 6 a day come back every 6.5 days. These settings are the strongest the current pool allows; every other rule is as specified. Delete a line once the pool supports the target (see PROGRESS.md section 11).",
-  "cooldown": 9,
+  "_why": "Interim, until approved new prompts grow the pool. With 115 prompts (58 open, after batch 1) the target rules cannot all hold: at most 1 closed set a day needs about 84 open prompts for a 14-day cooldown. These settings are the strongest the current pool allows; every other rule is as specified. Delete a line once the pool supports the target (see PROGRESS.md section 11).",
+  "cooldown": 12,
   "closedMax": 4
 }

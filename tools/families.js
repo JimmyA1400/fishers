@@ -19,7 +19,14 @@ const path = require('path');
 
 const FAMILIES = {
   'books-of-the-bible': ['books', 'ot-books', 'nt-books', 'nt-letters'],
-  'book-scoped': ['revelation'],
+  'book-scoped': ['revelation',
+    // batch 1, approved 2026-11-19
+    'exodus-anything', 'numbers-anything', 'joshua-anything', '1samuel-anything', 'job-anything', 'psalms-anything',
+    'proverbs-anything', 'isaiah-anything', 'jeremiah-anything', 'ezekiel-anything', 'daniel-anything', 'matthew-anything',
+    'john-anything', 'acts-anything', 'romans-anything', 'hebrews-anything'],
+  'sins-virtues': ['sins', 'virtues'],
+  'structures': ['structures'],
+  'land-and-sky': ['land-and-sky'],
   'people-broad': ['people-all', 'people-ot', 'people-nt'],
   'people-by-book': ['people-genesis', 'people-law', 'people-joshua-ruth', 'people-samuel', 'people-kings',
     'people-chronicles', 'people-exile', 'people-prophets', 'people-gospels', 'people-acts', 'people-letters'],
@@ -52,17 +59,24 @@ const FAMILIES = {
 };
 const RETIRED = [];
 
+// Families for prompts in batches waiting for review (content/pending/).
+// Moved into FAMILIES when a batch is approved.
+const PENDING = {
+  // (none: batch 1 was approved 2026-11-19 and is in FAMILIES)
+};
+
 const FAMILY_OF = {};
 for (const [f, ids] of Object.entries(FAMILIES)) for (const id of ids) {
   if (FAMILY_OF[id]) throw new Error(id + ' is in two families');
   FAMILY_OF[id] = f;
 }
 
-function apply(data) {
-  const missing = [];
+function apply(data, pending) {
+  const missing = [], of = Object.assign({}, FAMILY_OF);
+  if (pending) for (const [f, ids] of Object.entries(PENDING[pending] || {})) for (const id of ids) of[id] = f;
   for (const p of data.prompts) {
-    if (!FAMILY_OF[p.id]) { missing.push(p.id); continue; }
-    p.family = FAMILY_OF[p.id];
+    if (!of[p.id]) { missing.push(p.id); continue; }
+    p.family = of[p.id];
     if (RETIRED.includes(p.id)) p.retired = true; else delete p.retired;
   }
   if (missing.length) throw new Error('No family for: ' + missing.join(', ') + ' (add them in tools/families.js)');
@@ -72,7 +86,7 @@ function apply(data) {
   return data;
 }
 
-module.exports = { apply, FAMILIES, RETIRED };
+module.exports = { apply, FAMILIES, RETIRED, PENDING };
 
 if (require.main === module) {
   const FILE = path.join(__dirname, '..', 'data', 'prompts.json');

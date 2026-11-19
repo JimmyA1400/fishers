@@ -31,7 +31,8 @@
     closedMax: 1,
     categoryMax: { People: 2, Places: 2 },
     minCategories: 4,
-    twinOverlap: 0.5
+    twinOverlap: 0.5,
+    twinBasis: 'smaller'  // the share is of the smaller prompt's answers ('larger': of the larger's)
   };
   var FLOOR = 7;         // the absolute floor for any cooldown setting
 
@@ -51,7 +52,7 @@
   }
   // Prompts in the same family sharing at least `overlap` of the smaller
   // prompt's answers.
-  function computeTwins(data, overlap) {
+  function computeTwins(data, overlap, basis) {
     var fam = {}, out = {};
     data.prompts.forEach(function (p) { (fam[p.family || p.id] = fam[p.family || p.id] || []).push(p); });
     Object.keys(fam).forEach(function (f) {
@@ -59,7 +60,7 @@
       for (var i = 0; i < list.length; i++) for (var j = i + 1; j < list.length; j++) {
         var n = 0, a = sets[i], b = sets[j];
         for (var k in a) if (b[k]) n++;
-        if (n / Math.min(sizes[i], sizes[j]) >= overlap) {
+        if (n / (basis === 'larger' ? Math.max(sizes[i], sizes[j]) : Math.min(sizes[i], sizes[j])) >= overlap) {
           (out[list[i].id] = out[list[i].id] || []).push(list[j].id);
           (out[list[j].id] = out[list[j].id] || []).push(list[i].id);
         }
@@ -74,7 +75,7 @@
     if (ixCache && ixCache.data === data && ixCache.sched === sched) return ixCache.ix;
     var byId = {}, active = [];
     data.prompts.forEach(function (p) { byId[p.id] = p; if (!p.retired) active.push(p.id); });
-    var tw = (sched && sched.twins) || computeTwins(data, rulesFor(sched).twinOverlap);
+    var tw = (sched && sched.twins) || computeTwins(data, rulesFor(sched).twinOverlap, rulesFor(sched).twinBasis);
     var twins = {};
     data.prompts.forEach(function (p) { twins[p.id] = [p.id].concat(tw[p.id] || []); });
     var ix = {

@@ -14,10 +14,11 @@ const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'prompts.json'),
 const sched = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'schedule.json'), 'utf8'));
 const CFG = { epoch: '2026-11-17', promptsPerDay: 7 };
 
-test('the days that aired before the schedule are exactly what the old picker gave', () => {
-  for (const k of ['2026-11-17', '2026-11-18', '2026-11-19']) {
-    assert.deepEqual(sched.days[k], D.pickDaily(data, k, CFG).map((p) => p.id), k);
-  }
+test('the days that aired before the schedule are exactly what aired', () => {
+  // Recorded from the old picker on 2026-11-19; fixed, because the pool grows.
+  assert.deepEqual(sched.days['2026-11-17'], ['places-joshua', 'people-joshua-ruth', 'creatures', 'nations', 'parables-miracles', 'occupations', 'armor-of-god']);
+  assert.deepEqual(sched.days['2026-11-18'], ['occupations', 'new-names', 'revelation', 'plants', 'body-parts', 'objects', 'people-gospels']);
+  assert.deepEqual(sched.days['2026-11-19'], ['revelation', 'food', 'nations', 'giants', 'clothing', 'places-prophets', 'parables-miracles']);
 });
 
 test('a simulated year with the real pool passes every hard rule in force', () => {
@@ -38,12 +39,12 @@ test('the checker catches broken rules', () => {
 });
 
 test('every scheduled and every bank prompt ID is in the permanent ledger', () => {
-  const ledger = fs.readFileSync(path.join(ROOT, 'content', 'prompt-ids.txt'), 'utf8')
+  const ledger = fs.readFileSync(path.join(ROOT, 'content', 'prompt-ids.list'), 'utf8')
     .split(/\r?\n/).map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
   const bank = new Set(data.prompts.map((p) => p.id));
   assert.equal(new Set(ledger).size, ledger.length, 'no ID twice in the ledger');
   for (const id of ledger) assert.ok(bank.has(id), id + ' left the bank (retire it with "retired": true instead)');
-  for (const id of bank) assert.ok(ledger.includes(id), id + ' is new: append it to content/prompt-ids.txt');
+  for (const id of bank) assert.ok(ledger.includes(id), id + ' is new: append it to content/prompt-ids.list');
   for (const [k, ids] of Object.entries(sched.days)) for (const id of ids) assert.ok(bank.has(id), k + ': ' + id);
 });
 

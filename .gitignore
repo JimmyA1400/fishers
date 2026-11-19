@@ -26,3 +26,6 @@ tools/.scratch/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# built review banks (rebuild with tools/build-prompts.js --pending)
+review/*.json
