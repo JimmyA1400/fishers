@@ -55,14 +55,22 @@ const FAMILIES = {
   'signs-wonders': ['plagues', 'diseases', 'blindness', 'from-heaven', 'raised-from-dead'],
   'virtues-gifts': ['fruit-of-the-spirit', 'armor-of-god', 'spiritual-gifts'],
   'nations': ['nations'],
-  'trades': ['occupations', 'shepherds']
+  'trades': ['occupations', 'shepherds'],
+  // batch 2, approved 2026-11-19
+  'story-scoped': ['creation-to-flood', 'abraham-story', 'jacob-story', 'joseph-story', 'david-solomon', 'elijah-elisha',
+    'christmas-story', 'sermon-on-the-mount', 'passion-week'],
+  'people-by-letter': ['people-a', 'people-j', 'people-m', 'people-s'],
+  'places-by-letter': ['places-a', 'places-b', 'places-c', 'places-s'],
+  'family-words': ['family-words'],
+  'feelings': ['feelings'],
+  'times-seasons': ['times-seasons']
 };
 const RETIRED = [];
 
 // Families for prompts in batches waiting for review (content/pending/).
 // Moved into FAMILIES when a batch is approved.
 const PENDING = {
-  // (none: batch 1 was approved 2026-11-19 and is in FAMILIES)
+  // (none: batches 1 and 2 were approved 2026-11-19 and are in FAMILIES)
 };
 
 const FAMILY_OF = {};

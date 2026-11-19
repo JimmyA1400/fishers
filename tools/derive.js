@@ -249,7 +249,7 @@ function finalize(cfg, answers, books) {
   const ignore = ((cfg.flags || '').match(/ignore=(\S+)/) || [])[1];
   const words = ignore ? ignore.split(',') : [];
   sk = n => M.keyOf(n.replace(TYPE_WORDS, '').replace(/ (River|Brook|Valley)$/i, ''), words);
-  const inBooks = k => books.has(k.split(' ')[0]);
+  const inBooks = B.inScope([...books]);
   // Merge answers that share a name once type words are set aside.
   const merged = new Map();
   for (const a of answers) {
@@ -464,7 +464,7 @@ function main() {
 
   for (const cfg of CONFIG) {
     const books = new Set(cfg.books || ALL);
-    const inBooks = k => books.has(k.split(' ')[0]);
+    const inBooks = B.inScope([...books]);
     let answers = [];
     // 'book': every person, place and listed thing named in the prompt's books.
     if (cfg.kind === 'person' || cfg.kind === 'book') answers = answers.concat(personAnswers(cfg, people, inBooks));
@@ -474,9 +474,30 @@ function main() {
     for (const x of cfg.extra || []) {
       if (!answers.some(a => keyOfName(a.name) === keyOfName(x.name))) answers.push(Object.assign({}, x, { aliases: new Set(x.aliases || []) }));
     }
+    if (cfg.initial) answers = byInitial(answers, cfg.initial);
+    // Extra accepted spellings for answers found by name ("Chariot of fire").
+    for (const a of answers) if (cfg.addForms && cfg.addForms[a.name]) a.forms = (a.forms || []).concat(cfg.addForms[a.name]);
     const n = writePrompt(cfg, finalize(cfg, answers, books));
     console.log((cfg.id).padEnd(26) + n + ' answers');
   }
+}
+
+// A letter prompt ("a person whose name begins with J"): keep an answer if
+// its name or an alias begins with the letter, show that spelling, and
+// accept only the spellings that begin with it (Simon for S, not Peter).
+function byInitial(answers, letter) {
+  // A place goes by its own name, not its type word: Mount Sinai is an S,
+  // the Sea of Galilee a G.
+  const TYPE = /^(Mount|Mt\.?|Mountains? of|Sea of|River|Brook|Valley of|Plain of|Wilderness of|Desert of|Land of|Pool of|Hill of|Lake of|Isle of|Island of)\s+/i;
+  const starts = n => n.trim().replace(TYPE, '').charAt(0).toUpperCase() === letter;
+  const out = [];
+  for (const a of answers) {
+    const names = [a.name].concat([...(a.aliases || [])]);
+    const ok = names.filter(n => starts(n) && !/(ites?|ians?)$/i.test(n));   // not a gentilic (Babylonian, Syrians)
+    if (!ok.length) continue;
+    out.push(Object.assign({}, a, { name: ok[0], aliases: new Set(ok.slice(1)), forms: (a.forms || []).filter(starts) }));
+  }
+  return out;
 }
 
 function fullRef(key) {

@@ -116,6 +116,7 @@ function parse(text, file) {
   return prompts;
 }
 
+const SCOPES = new Map();
 function familiarity(p, a) {
   if (p.books) return 0;
   const phrases = p.described ? (a.anchor || []) : [a.name].concat(a.aliases);
@@ -128,7 +129,8 @@ function familiarity(p, a) {
     // a player reaches for the book's people and places before its hands and houses.
     const thing = /^Mentioned in /.test(a.note || '');
     const inside = new Set();
-    for (const n of phrases) for (const k of B.versesWith(n, !thing)) if (p.within.includes(k.split(' ')[0])) inside.add(k);
+    const key = p.within.join(','), inside_ = SCOPES.get(key) || SCOPES.set(key, B.inScope(p.within)).get(key);   // codes, or code:chapters (a story prompt)
+    for (const n of phrases) for (const k of B.versesWith(n, !thing)) if (inside_(k)) inside.add(k);
     return thing ? inside.size / 3 : inside.size;
   }
   return B.verseCount(phrases);

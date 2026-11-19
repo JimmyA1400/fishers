@@ -6,7 +6,7 @@
 11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-11.4: batch 1 live; twins now measured against the larger prompt; today reissued (all in 5a9278c). Next: draft batch 2 (20 more open prompts; ~84 open needed for the 14-day floor with 1 closed set a day).
+11.4: batch 2 approved 2026-11-19 and wired in locally (135 prompts, 78 open; schedule rebuilt with cooldown 16 and at most 3 closed sets a day, frozen through 2026-11-20); all checks pass. Waiting for your OK to commit and deploy. Next after that: batch 3 (toward 1 closed set a day).
 
 ## Checklist
 
@@ -100,7 +100,8 @@
 - [ ] 11.4 Pool growth (batches of 20 for your review)
   - [x] Batch 1 (20 open prompts) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` tightened to cooldown 12 (closed sets still up to 4). Checks: verify all verified, validate 0 errors / 18 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged. Live in 87d866c (CI run 44623602392 green; release gate 118/118 locally; live smoke OK on 87d866c; live prompts.json and schedule.json match the repo; 2026-11-19 and 11-20 unchanged, first new day 2026-11-21 with romans-anything).
   - [x] 2026-11-19, 5 pm Eastern: at your request, today was reissued (it repeated revelation from 11-18 and nations and parables-miracles from 11-17); 11-20 re-picked with it. Players who had already started keep the original seven. `build-schedule --repick`, and `REISSUED` in check-schedule records the change so CI accepts exactly it. Same commit: twins measured against the larger prompt (4 pairs instead of 44); every book prompt now airs 12-25 times a year, Isaiah and Psalms included. Live in 5a9278c (CI green, live schedule matches the repo, live smoke OK).
-  - [ ] Batch 2
+  - [x] Batch 2 (20 open prompts, six new families) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` cooldown 12 -> 16, closed sets 4 -> 3. Checks: verify all verified, validate 0 errors / 20 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged; every prompt airs (7-23 times in the next year). Not committed yet.
+  - [ ] Batch 3
 - [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
 - [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.list`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
 - [ ] 11.7 Ship, verify live, report
@@ -119,9 +120,51 @@
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
-- **Pool size vs the freshness rules (section 11).** With 115 prompts (after batch 1) the rules you set cannot all hold, so `scripts/schedule-rules.json` relaxes two of them until new prompts are approved: cooldown 12 days (was 9 before batch 1) (target 14+, floor 7) and up to 4 closed sets a day (target 1). The cost: most days have 4 closed sets. Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown, 84 for the 14-day floor).
+- **Pool size vs the freshness rules (section 11).** With 135 prompts (78 open, after batch 2) one rule still cannot hold: at most 1 closed set a day. `scripts/schedule-rules.json` allows up to 3 (was 4) and sets the cooldown to 16 days (above the 14-day floor; target 30). Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown).
 
 ## Waiting for my review
+### Batch 2: 20 new open prompts (drafted 2026-11-19; APPROVED 2026-11-19, in the game and schedule locally, not committed yet)
+Full bank with every answer, tier, reference and note: `review/batch-2.md` (built by `node tools/build-prompts.js --pending batch-2 --out review/batch-2.json`). Source: `tools/batches/batch-2.js`; generated files now in `content/generated/`.
+
+Why these: a family airs at most once a day, and the book-scoped family already has 17 prompts, so more book prompts would add nothing to the schedule. Batch 2 is six new families: Bible stories (9), people by first letter (4), places by first letter (4), family words, feelings, and times and seasons.
+
+| ID | Prompt | Category | Answers | Lost Sheep | First Mustard Seeds |
+| --- | --- | --- | --- | --- | --- |
+| `creation-to-flood` | Name a person, place, or thing in the Bible's first chapters, from the Creation to the Flood (Genesis 1–9). | Bible Stories | 125 | Gopher wood | Noah, Adam, Ark, Eden |
+| `abraham-story` | Name a person, place, or thing in the story of Abraham (Genesis 12–25). | Bible Stories | 240 | Beer-lahai-roi | Abraham, Sarah, Isaac, Lot |
+| `jacob-story` | Name a person, place, or thing in the story of Jacob and Esau (Genesis 25–36). | Bible Stories | 250 | Penuel | Jacob, Esau, Isaac, Laban |
+| `joseph-story` | Name a person, place, or thing in the story of Joseph (Genesis 37–50). | Bible Stories | 239 | Asenath | Joseph, Pharaoh, Egypt, Jacob |
+| `david-solomon` | Name a person, place, or thing in the reigns of David and Solomon (2 Samuel to 1 Kings 11). | Bible Stories | 592 | Rizpah | David, Zion, Solomon, Saul |
+| `elijah-elisha` | Name a person, place, or thing in the stories of Elijah and Elisha (1 Kings 17 to 2 Kings 13). | Bible Stories | 313 | Zarephath | Ahab, Elijah, Elisha, Samaria |
+| `christmas-story` | Name a person, place, or thing in the Christmas story (Matthew 1–2 and Luke 1–2). | Bible Stories | 133 | Anna | Mary, Joseph, Jesus, David |
+| `sermon-on-the-mount` | Name a person, place, or thing Jesus speaks of in the Sermon on the Mount (Matthew 5–7). | Bible Stories | 109 | Bushel | Heaven, Kingdom, Love, Lamp |
+| `passion-week` | Name a person, place, or thing in Luke's account of Jesus' last week, from Palm Sunday to the empty tomb (Luke 19–24). | Bible Stories | 152 | Joanna | Jesus, Jerusalem, Pilate, Peter |
+| `people-a` | Name a person in the Bible whose name begins with A. | People | 157 | Agabus | Aaron, Abraham, Adam, Abel |
+| `people-j` | Name a person in the Bible whose name begins with J. | People | 125 | Jabez | Jesus, Jacob, Joseph, Joshua |
+| `people-m` | Name a person in the Bible whose name begins with M. | People | 95 | Mahlon | Moses, Mary, Matthew |
+| `people-s` | Name a person in the Bible whose name begins with S. | People | 95 | Shamgar | Saul, Solomon, Samuel, Simon |
+| `places-b` | Name a place in the Bible whose name begins with B. | Places | 110 | Bochim | Babylon, Bethel, Bethlehem, Bethany |
+| `places-c` | Name a place in the Bible whose name begins with C. | Places | 62 | Cenchreae | Canaan, Capernaum, Calvary |
+| `places-a` | Name a place in the Bible whose name begins with A. | Places | 128 | Abel-meholah | Assyria, Ammon, Antioch, Athens |
+| `places-s` | Name a place in the Bible whose name begins with S. | Places | 100 | Shunem | Samaria, Syria, Sodom, Mount Sinai |
+| `family-words` | Name a family relationship the Bible mentions (like brother or mother-in-law). | Family & Home | 67 | Sister-in-law | Son, Child, Father, Brother |
+| `feelings` | Name a feeling or emotion the Bible mentions. | Words & Virtues | 74 | Heaviness | Fear, Love, Anger, Joy |
+| `times-seasons` | Name a time of day, a season, or a span of time the Bible mentions (like dawn or a year). | Days & Seasons | 75 | Cockcrowing | Day, Year, Forever, Night |
+
+Checks on the batch: `tools/verify.js` all verified; `tools/validate.js` 0 errors, 20 warnings (the 18 live ones, plus "Juda" landing on Judea in the Christmas story and "Rehoboth-by-the-River" on Rehoboth in Jacob's). Live prompts unchanged (the live bank rebuilds identically). I typed about 400 first guesses through the matcher; the ones that miss are words the WEB and KJV do not use, and most of those give a near-miss hint ("apple" in Eden, "donkey" at Christmas, "log" in Matthew 7, "happiness").
+
+How they work:
+- **Stories** are the book prompts scoped to chapters (`GEN:37-50`): every person, place and listed thing in those chapters, each cited there. Tiers count only those chapters.
+- **First letter** prompts take every person (or place) whose name or one of its spellings begins with the letter, and accept only those spellings: Simon counts for S, Peter does not. A place goes by its own name, not its type word: Mount Sinai is an S; the Sea of Galilee is a G, so not in S. Gentilics (Babylonian, Syrians) and compass words are left out. I dropped J places (44 answers, under the 60 an open prompt needs) for A.
+- **Words**: each answer cites a verse where the word has that sense (checked by hand; e.g. "wonder" cites Acts 3:10, not "signs and wonders").
+
+What batch 2 buys (simulated with the live schedule as the base, days through 2026-11-20 kept): cooldown 12 -> **16 days** with at most **3** closed sets a day (was 4), and every prompt airs. A 14-day cooldown with 3 closed sets, or 13 with 2, also works; 17 does not. Your target of 1 closed set a day still needs more open prompts.
+
+Decisions for you:
+1. **New categories** "Bible Stories", "Family & Home" and "Days & Seasons".
+2. **Overlap.** The stories share many answers with other prompts (the Christmas story with Matthew, the Genesis stories with the Genesis people and places prompts, the letter prompts with "a person named in the Bible"). They are different families, so your twin rule does not count them, and two can air on the same day.
+3. **God is not an answer** in the story prompts, as in the book prompts.
+
 ### Batch 1: 20 new open prompts (drafted 2026-11-19; APPROVED 2026-11-19, live in 87d866c)
 Full bank with every answer, tier, reference and note: `review/batch-1.md` (built by `node tools/build-prompts.js --pending batch-1 --out review/batch-1.json`). Sources: `tools/batches/batch-1.js`, `tools/lib/things.js`; generated files now in `content/generated/` (were `content/pending/batch-1/` during review).
 
