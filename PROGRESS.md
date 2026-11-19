@@ -6,7 +6,7 @@
 11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-11.4: batch 1 is live (87d866c). Next: your call on the twin measure (see "Blocked on me"), then draft batch 2 (20 more open prompts; ~84 open needed for the 14-day floor with 1 closed set a day).
+11.4: batch 1 live; twins now measured against the larger prompt; today reissued (all in 5a9278c). Next: draft batch 2 (20 more open prompts; ~84 open needed for the 14-day floor with 1 closed set a day).
 
 ## Checklist
 
@@ -99,6 +99,7 @@
 - [x] 11.1-3 Families (`tools/families.js`, 27 families, every prompt has `family`; `--check` in `npm run verify`), rules and checker (`js/schedule.js`), `scripts/build-schedule.js` -> `data/schedule.json` (2026-11-17 to 2027-12-24, 403 days; 11-17..11-19 backfilled from the old picker), game reads it, runtime fallback past the end
 - [ ] 11.4 Pool growth (batches of 20 for your review)
   - [x] Batch 1 (20 open prompts) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` tightened to cooldown 12 (closed sets still up to 4). Checks: verify all verified, validate 0 errors / 18 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged. Live in 87d866c (CI run 44623602392 green; release gate 118/118 locally; live smoke OK on 87d866c; live prompts.json and schedule.json match the repo; 2026-11-19 and 11-20 unchanged, first new day 2026-11-21 with romans-anything).
+  - [x] 2026-11-19, 5 pm Eastern: at your request, today was reissued (it repeated revelation from 11-18 and nations and parables-miracles from 11-17); 11-20 re-picked with it. Players who had already started keep the original seven. `build-schedule --repick`, and `REISSUED` in check-schedule records the change so CI accepts exactly it. Same commit: twins measured against the larger prompt (4 pairs instead of 44); every book prompt now airs 12-25 times a year, Isaiah and Psalms included. Live in 5a9278c (CI green, live schedule matches the repo, live smoke OK).
   - [ ] Batch 2
 - [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
 - [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.list`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
@@ -118,7 +119,6 @@
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
-- **Twins starve two batch-1 prompts.** Under the twin rule as specified (50% of the smaller prompt's answers), `isaiah-anything` and `psalms-anything` are twins of 9-10 other book prompts, so one of those always aired in the last 12 days and the two never get a daily in the 400-day schedule (Daniel 2 times, John 3, Job 6). They still appear in Endless and Practice. Measuring against the larger prompt (4 twin pairs instead of 44) lets every book prompt air 11-24 times a year at the same cooldown. Your call: keep the rule, or switch `twinBasis` to 'larger'.
 - **Pool size vs the freshness rules (section 11).** With 115 prompts (after batch 1) the rules you set cannot all hold, so `scripts/schedule-rules.json` relaxes two of them until new prompts are approved: cooldown 12 days (was 9 before batch 1) (target 14+, floor 7) and up to 4 closed sets a day (target 1). The cost: most days have 4 closed sets. Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown, 84 for the 14-day floor).
 
 ## Waiting for my review
