@@ -272,9 +272,24 @@ function shortRef(k) {
   return SINGLE_CHAPTER.has(m[1]) ? name + ' ' + m[3] : name + ' ' + m[2] + ':' + m[3];
 }
 
+// A scope is a list of book codes, each optionally with a chapter range:
+// ['EXO'], ['GEN:37-50'], ['MAT:1-2', 'LUK:1-2'], ['1KI:17-22', '2KI:1-13'].
+// Returns a test for verse keys ("GEN 37:3").
+function inScope(list) {
+  const parts = list.map((s) => {
+    const m = /^([0-9A-Z]{3})(?::(\d+)(?:-(\d+))?)?$/.exec(s);
+    if (!m) throw new Error('bad scope "' + s + '"');
+    return { code: m[1], from: m[2] ? +m[2] : 0, to: m[3] ? +m[3] : (m[2] ? +m[2] : Infinity) };
+  });
+  return (key) => {
+    const sp = key.indexOf(' '), code = key.slice(0, sp), ch = parseInt(key.slice(sp + 1), 10);
+    return parts.some((p) => p.code === code && ch >= p.from && ch <= p.to);
+  };
+}
+
 function verseText(key, tr) { return texts()[tr || 'WEB'].get(key); }
 
 module.exports = {
   BOOKS, BY_CODE, CACHE, texts, parseRef, verseKeys, chapterCount, words, phraseIn, foundAt,
-  verseCount, versesWith, keyOrder, shortRef, verseText, buildIndex
+  verseCount, versesWith, keyOrder, shortRef, verseText, buildIndex, inScope
 };
