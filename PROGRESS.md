@@ -6,7 +6,7 @@
 11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-11.0.3: deploy the schedule (merge fix/daily-freshness, watch CI, run the live check), then draft the first batch of 20 new prompts for review.
+11.4: draft the first batch of 20 new open prompts (non-People/Places categories first: they are the tightest) under "Waiting for my review"; after each approved batch, tighten scripts/schedule-rules.json and rebuild the schedule.
 
 ## Checklist
 
@@ -95,7 +95,7 @@
   - Aired so far: #1 2026-11-17, #2 2026-11-18 (`occupations` again after 1 day), #3 2026-11-19 (`revelation` from yesterday; `nations` and `parables-miracles` from 2 days ago).
   - Next 14 days under the old code: 14 of 14 repeat a prompt from the last 14 days, 13 share 1 to 4 prompts with the day before (2026-11-22 would have shared 4).
 - [x] 11.0.2 Today and past days are kept exactly as aired (they are backfilled into the schedule).
-- [ ] 11.0.3 Hotfix: shipped as the schedule itself (it was ready within hours). Tomorrow 2026-11-20 onward shares nothing with the 8 days before it; checked locally (today unchanged, tomorrow = schedule.json, archive 11-17/11-18 as aired). Live check pending
+- [x] 11.0.3 Hotfix: shipped as the schedule itself, live in 32a67a6 (CI run 44480502317 green, schedule check in the test job). Live check 2026-11-19: schedule.json matches the repo; today unchanged; tomorrow 2026-11-20 = schedule.json and shares nothing with the 7 days before it; archive 11-17 and 11-18 replay what aired; Endless #1 has nothing due in the next 9 days (the bank is too small for 14); smoke OK
 - [x] 11.1-3 Families (`tools/families.js`, 27 families, every prompt has `family`; `--check` in `npm run verify`), rules and checker (`js/schedule.js`), `scripts/build-schedule.js` -> `data/schedule.json` (2026-11-17 to 2027-12-24, 403 days; 11-17..11-19 backfilled from the old picker), game reads it, runtime fallback past the end
 - [ ] 11.4 Pool growth (batches of 20 for your review)
 - [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
