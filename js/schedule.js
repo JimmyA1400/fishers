@@ -32,7 +32,10 @@
     categoryMax: { People: 2, Places: 2 },
     minCategories: 4,
     twinOverlap: 0.5,
-    twinBasis: 'smaller'  // the share is of the smaller prompt's answers ('larger': of the larger's)
+    // The share is of the larger prompt's answers (changed from 'smaller' on
+    // 2026-11-19: measured against the smaller one, the big book prompts were
+    // twins of nearly every other book prompt and Isaiah and Psalms never aired).
+    twinBasis: 'larger'
   };
   var FLOOR = 7;         // the absolute floor for any cooldown setting
 

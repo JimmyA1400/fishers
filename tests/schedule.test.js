@@ -18,7 +18,9 @@ test('the days that aired before the schedule are exactly what aired', () => {
   // Recorded from the old picker on 2026-11-19; fixed, because the pool grows.
   assert.deepEqual(sched.days['2026-11-17'], ['places-joshua', 'people-joshua-ruth', 'creatures', 'nations', 'parables-miracles', 'occupations', 'armor-of-god']);
   assert.deepEqual(sched.days['2026-11-18'], ['occupations', 'new-names', 'revelation', 'plants', 'body-parts', 'objects', 'people-gospels']);
-  assert.deepEqual(sched.days['2026-11-19'], ['revelation', 'food', 'nations', 'giants', 'clothing', 'places-prophets', 'parables-miracles']);
+  // 11-19 was reissued mid-day at the owner's request (it repeated three
+  // prompts); before 5 pm Eastern it was [revelation, food, nations, giants, clothing, places-prophets, parables-miracles].
+  assert.deepEqual(sched.days['2026-11-19'], ['esther-people', 'people-exile', 'blindness', 'psalms-anything', 'ot-books', 'places-genesis', 'spiritual-gifts']);
 });
 
 test('a simulated year with the real pool passes every hard rule in force', () => {
