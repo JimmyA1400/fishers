@@ -6,7 +6,7 @@
 11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-11.4: batch 2 approved 2026-11-19 and wired in locally (135 prompts, 78 open; schedule rebuilt with cooldown 16 and at most 3 closed sets a day, frozen through 2026-11-20); all checks pass. Waiting for your OK to commit and deploy. Next after that: batch 3 (toward 1 closed set a day).
+11.4: batch 2 is live (9e3fc72). Next: draft batch 3 (toward at most 1 closed set a day), for your review.
 
 ## Checklist
 
@@ -100,7 +100,7 @@
 - [ ] 11.4 Pool growth (batches of 20 for your review)
   - [x] Batch 1 (20 open prompts) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` tightened to cooldown 12 (closed sets still up to 4). Checks: verify all verified, validate 0 errors / 18 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged. Live in 87d866c (CI run 44623602392 green; release gate 118/118 locally; live smoke OK on 87d866c; live prompts.json and schedule.json match the repo; 2026-11-19 and 11-20 unchanged, first new day 2026-11-21 with romans-anything).
   - [x] 2026-11-19, 5 pm Eastern: at your request, today was reissued (it repeated revelation from 11-18 and nations and parables-miracles from 11-17); 11-20 re-picked with it. Players who had already started keep the original seven. `build-schedule --repick`, and `REISSUED` in check-schedule records the change so CI accepts exactly it. Same commit: twins measured against the larger prompt (4 pairs instead of 44); every book prompt now airs 12-25 times a year, Isaiah and Psalms included. Live in 5a9278c (CI green, live schedule matches the repo, live smoke OK).
-  - [x] Batch 2 (20 open prompts, six new families) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` cooldown 12 -> 16, closed sets 4 -> 3. Checks: verify all verified, validate 0 errors / 20 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged; every prompt airs (7-23 times in the next year). Not committed yet.
+  - [x] Batch 2 (20 open prompts, six new families) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` cooldown 12 -> 16, closed sets 4 -> 3. Checks: verify all verified, validate 0 errors / 20 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged; every prompt airs (7-23 times in the next year). Live in 9e3fc72 (CI run 44630944040 green; release gate 118/118 locally; live smoke OK; live prompts.json and schedule.json match the repo; 2026-11-19 and 11-20 unchanged).
   - [ ] Batch 3
 - [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
 - [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.list`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
@@ -123,7 +123,7 @@
 - **Pool size vs the freshness rules (section 11).** With 135 prompts (78 open, after batch 2) one rule still cannot hold: at most 1 closed set a day. `scripts/schedule-rules.json` allows up to 3 (was 4) and sets the cooldown to 16 days (above the 14-day floor; target 30). Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown).
 
 ## Waiting for my review
-### Batch 2: 20 new open prompts (drafted 2026-11-19; APPROVED 2026-11-19, in the game and schedule locally, not committed yet)
+### Batch 2: 20 new open prompts (drafted 2026-11-19; APPROVED 2026-11-19, live in 9e3fc72)
 Full bank with every answer, tier, reference and note: `review/batch-2.md` (built by `node tools/build-prompts.js --pending batch-2 --out review/batch-2.json`). Source: `tools/batches/batch-2.js`; generated files now in `content/generated/`.
 
 Why these: a family airs at most once a day, and the book-scoped family already has 17 prompts, so more book prompts would add nothing to the schedule. Batch 2 is six new families: Bible stories (9), people by first letter (4), places by first letter (4), family words, feelings, and times and seasons.
