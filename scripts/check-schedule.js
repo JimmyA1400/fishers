@@ -25,7 +25,17 @@ const EPOCH = '2026-11-17';
 const AIRED = {   // what the old picker gave, recorded on 2026-11-19 (the pool will grow, so it is not recomputed)
   '2026-11-17': ['places-joshua', 'people-joshua-ruth', 'creatures', 'nations', 'parables-miracles', 'occupations', 'armor-of-god'],
   '2026-11-18': ['occupations', 'new-names', 'revelation', 'plants', 'body-parts', 'objects', 'people-gospels'],
-  '2026-11-19': ['revelation', 'food', 'nations', 'giants', 'clothing', 'places-prophets', 'parables-miracles']
+  '2026-11-19': ['esther-people', 'people-exile', 'blindness', 'psalms-anything', 'ot-books', 'places-genesis', 'spiritual-gifts']   // reissued, see below
+};
+// Frozen dates changed on purpose, on the owner's say-so. The base check
+// accepts a change to one of these only from exactly the `was` list.
+const REISSUED = {
+  // At 5 pm Eastern on the day: it repeated revelation from 11-18 and nations
+  // and parables-miracles from 11-17. Players who had started it keep the
+  // original seven (the game stores a day's prompts when play begins).
+  '2026-11-19': { was: ['revelation', 'food', 'nations', 'giants', 'clothing', 'places-prophets', 'parables-miracles'] },
+  // Not yet aired; re-picked with 11-19.
+  '2026-11-20': { was: ['measures-money', 'people-prophets', 'names-of-god', 'regions', 'psalm-writers', 'apostles', 'places-gospels'] }
 };
 const MIN_FUTURE = 60;
 
@@ -62,7 +72,9 @@ if (basePath) {
     for (const k of Object.keys(base.days).sort()) {
       if (k > until) break;
       n++;
-      if (JSON.stringify(base.days[k]) !== JSON.stringify(sched.days[k])) fail.push('frozen: ' + k + ' changed from the deployed schedule');
+      if (JSON.stringify(base.days[k]) === JSON.stringify(sched.days[k])) continue;
+      if (REISSUED[k] && JSON.stringify(base.days[k]) === JSON.stringify(REISSUED[k].was)) { console.log('Reissued on purpose: ' + k); continue; }
+      fail.push('frozen: ' + k + ' changed from the deployed schedule');
     }
     console.log('Frozen dates checked against ' + path.basename(basePath) + ': ' + n + ' (through ' + until + ')');
   } else console.log('No deployed schedule to compare (first schedule)');

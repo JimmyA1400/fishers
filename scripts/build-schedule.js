@@ -2,6 +2,8 @@
 /* Fishers: builds data/schedule.json, the daily cast for every date.
  *
  *     node scripts/build-schedule.js [--today YYYY-MM-DD] [--days 400] [--seed fishers] [--restarts 6] [--swaps 40000]
+ *     --repick YYYY-MM-DD   re-pick from that date on, even if it is frozen (only on the owner's
+ *                           say-so; record it in REISSUED in scripts/check-schedule.js)
  *
  * - Frozen: every date on or before tomorrow (Eastern) that the existing
  *   schedule.json already has is kept exactly. Past dates it does not have
@@ -216,7 +218,8 @@ function main() {
 
   // Frozen: dates on or before tomorrow that the old schedule has; past
   // dates it lacks come from the old picker (what aired).
-  const freeze = D.addDays(today, 1), end = D.addDays(today, horizon);
+  const repick = arg('repick', '');
+  const freeze = repick ? D.addDays(repick, -1) : D.addDays(today, 1), end = D.addDays(today, horizon);
   const kept = [];
   for (let k = EPOCH; k <= freeze; k = D.addDays(k, 1)) {
     if (old && old.days[k]) kept.push(old.days[k].slice());
