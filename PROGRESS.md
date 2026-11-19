@@ -6,7 +6,7 @@
 11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-11.4: batch 1 approved 2026-11-19 and wired in locally (115 prompts, 58 open; schedule rebuilt with cooldown 12, frozen through 2026-11-20); all checks pass. Waiting for your OK to commit and deploy (you asked that nothing be committed without approval). Open question: the twin rule keeps isaiah-anything and psalms-anything out of the dailies entirely (see "Blocked on me").
+11.4: batch 1 is live (87d866c). Next: your call on the twin measure (see "Blocked on me"), then draft batch 2 (20 more open prompts; ~84 open needed for the 14-day floor with 1 closed set a day).
 
 ## Checklist
 
@@ -98,7 +98,7 @@
 - [x] 11.0.3 Hotfix: shipped as the schedule itself, live in 32a67a6 (CI run 44480502317 green, schedule check in the test job). Live check 2026-11-19: schedule.json matches the repo; today unchanged; tomorrow 2026-11-20 = schedule.json and shares nothing with the 7 days before it; archive 11-17 and 11-18 replay what aired; Endless #1 has nothing due in the next 9 days (the bank is too small for 14); smoke OK
 - [x] 11.1-3 Families (`tools/families.js`, 27 families, every prompt has `family`; `--check` in `npm run verify`), rules and checker (`js/schedule.js`), `scripts/build-schedule.js` -> `data/schedule.json` (2026-11-17 to 2027-12-24, 403 days; 11-17..11-19 backfilled from the old picker), game reads it, runtime fallback past the end
 - [ ] 11.4 Pool growth (batches of 20 for your review)
-  - [x] Batch 1 (20 open prompts) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` tightened to cooldown 12 (closed sets still up to 4). Checks: verify all verified, validate 0 errors / 18 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged. Not committed yet.
+  - [x] Batch 1 (20 open prompts) approved 2026-11-19; in `content/generated/`, families in FAMILIES, IDs in the ledger; `scripts/schedule-rules.json` tightened to cooldown 12 (closed sets still up to 4). Checks: verify all verified, validate 0 errors / 18 warnings, 67 tests pass, schedule check OK, days through 2026-11-20 unchanged. Live in 87d866c (CI run 44623602392 green; release gate 118/118 locally; live smoke OK on 87d866c; live prompts.json and schedule.json match the repo; 2026-11-19 and 11-20 unchanged, first new day 2026-11-21 with romans-anything).
   - [ ] Batch 2
 - [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
 - [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.list`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
@@ -122,7 +122,7 @@
 - **Pool size vs the freshness rules (section 11).** With 115 prompts (after batch 1) the rules you set cannot all hold, so `scripts/schedule-rules.json` relaxes two of them until new prompts are approved: cooldown 12 days (was 9 before batch 1) (target 14+, floor 7) and up to 4 closed sets a day (target 1). The cost: most days have 4 closed sets. Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown, 84 for the 14-day floor).
 
 ## Waiting for my review
-### Batch 1: 20 new open prompts (drafted 2026-11-19; APPROVED 2026-11-19, in the game and schedule locally, not committed yet)
+### Batch 1: 20 new open prompts (drafted 2026-11-19; APPROVED 2026-11-19, live in 87d866c)
 Full bank with every answer, tier, reference and note: `review/batch-1.md` (built by `node tools/build-prompts.js --pending batch-1 --out review/batch-1.json`). Sources: `tools/batches/batch-1.js`, `tools/lib/things.js`; generated files now in `content/generated/` (were `content/pending/batch-1/` during review).
 
 | ID | Prompt | Category | Answers | Lost Sheep | First Mustard Seeds |
