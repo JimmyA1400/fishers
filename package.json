@@ -6,9 +6,12 @@
   "license": "MIT",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "verify": "node tools/verify.js && node tools/validate.js && node tools/add-passages.js --check",
+    "verify": "node tools/verify.js && node tools/validate.js && node tools/add-passages.js --check && node tools/families.js --check",
     "check": "npm test && npm run verify",
-    "build": "node tools/build-site.js --list"
+    "build": "node tools/build-site.js --list",
+    "schedule": "node scripts/build-schedule.js",
+    "schedule:check": "node scripts/check-schedule.js",
+    "week": "node scripts/print-week.js"
   },
   "engines": { "node": ">=20" }
 }

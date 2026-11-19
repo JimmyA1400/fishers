@@ -23,8 +23,10 @@ vm.runInContext(fs.readFileSync(path.join(H.REPO, 'js', 'config.js'), 'utf8'), s
 vm.runInContext(fs.readFileSync(path.join(H.REPO, 'js', 'daily.js'), 'utf8'), sandbox);
 const CFG = sandbox.window.FSH_CONFIG, D = sandbox.window.FSHDaily;
 const TODAY = D.dateKey(new Date());
-const dailyIds = D.pickDaily(data, TODAY, CFG).map((p) => p.id);
-const endless1Ids = D.pickEndless(data, 1, CFG).map((p) => p.id);
+data.schedule = JSON.parse(fs.readFileSync(path.join(H.REPO, 'data', 'schedule.json'), 'utf8'));
+const S = require(path.join(H.REPO, 'js', 'schedule.js'));
+const dailyIds = S.dailyIds(data, data.schedule, TODAY, CFG);
+const endless1Ids = S.endlessIds(data, data.schedule, 1, TODAY, CFG);
 
 // ---- the oracle: test answers for one prompt -----------------------------------
 function norm(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, '').trim(); }

@@ -6,7 +6,7 @@
 11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-11.0.3: ship the hotfix schedule (tomorrow 2026-11-20 onward has no prompt from the last 7 days), then build the rule-checked schedule.
+11.0.3: deploy the schedule (merge fix/daily-freshness, watch CI, run the live check), then draft the first batch of 20 new prompts for review.
 
 ## Checklist
 
@@ -95,11 +95,11 @@
   - Aired so far: #1 2026-11-17, #2 2026-11-18 (`occupations` again after 1 day), #3 2026-11-19 (`revelation` from yesterday; `nations` and `parables-miracles` from 2 days ago).
   - Next 14 days under the old code: 14 of 14 repeat a prompt from the last 14 days, 13 share 1 to 4 prompts with the day before (2026-11-22 would have shared 4).
 - [x] 11.0.2 Today and past days are kept exactly as aired (they are backfilled into the schedule).
-- [ ] 11.0.3 Hotfix: tomorrow onward fresh against the last 7 days; deployed and checked live
-- [ ] 11.1-3 Families, rules, `scripts/build-schedule.js`, `data/schedule.json`, game reads it, runtime fallback
+- [ ] 11.0.3 Hotfix: shipped as the schedule itself (it was ready within hours). Tomorrow 2026-11-20 onward shares nothing with the 8 days before it; checked locally (today unchanged, tomorrow = schedule.json, archive 11-17/11-18 as aired). Live check pending
+- [x] 11.1-3 Families (`tools/families.js`, 27 families, every prompt has `family`; `--check` in `npm run verify`), rules and checker (`js/schedule.js`), `scripts/build-schedule.js` -> `data/schedule.json` (2026-11-17 to 2027-12-24, 403 days; 11-17..11-19 backfilled from the old picker), game reads it, runtime fallback past the end
 - [ ] 11.4 Pool growth (batches of 20 for your review)
-- [ ] 11.5 Endless and Practice skip the next 14 dailies
-- [ ] 11.6 `scripts/check-schedule.js`, CI, unit tests, `scripts/print-week.js`
+- [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
+- [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.txt`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
 - [ ] 11.7 Ship, verify live, report
 
 **Pool math.** 7 prompts a day with a 30-day cooldown needs 7 x 30 = 210 prompts in rotation; with at most 1 closed set a day, 6 of the 7 must be open prompts, so a 30-day cooldown needs 180 open prompts plus 30 closed sets. The pool today is 95: 39 open and 56 closed. At 6 open a day, 39 open prompts give each one a turn every 6.5 days. So the 14-day hard floor with at most 1 closed set a day needs at least 84 open prompts. **The current pool cannot meet the rules in section 1**; see "Blocked on me".
@@ -116,7 +116,7 @@
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
-- Nothing yet.
+- **Pool size vs the freshness rules (section 11).** With today's 95 prompts the rules you set cannot all hold, so `scripts/schedule-rules.json` relaxes two of them until new prompts are approved: cooldown 9 days (target 14+, floor 7) and up to 4 closed sets a day (target 1). The cost: most days have 4 closed sets. Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown, 84 for the 14-day floor).
 
 ## Waiting for my review
 - Nothing.
