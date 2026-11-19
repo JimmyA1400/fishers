@@ -3,10 +3,10 @@
 **Live URL:** https://jimmya1400.github.io/fishers/  (repo: https://github.com/JimmyA1400/fishers)
 
 ## Current step
-10. After launch: backlog complete (2026-11-18)
+11. Daily-cast freshness (started 2026-11-19)
 
 ## Next action
-Nothing queued. The backlog is complete; see the optional items at the end of section 10.
+11.0.3: ship the hotfix schedule (tomorrow 2026-11-20 onward has no prompt from the last 7 days), then build the rule-checked schedule.
 
 ## Checklist
 
@@ -89,6 +89,20 @@ Nothing queued. The backlog is complete; see the optional items at the end of se
 - [x] Phone dialogs (your report 2026-11-18: How to fish cut off at the top, "Back to the boat" unreachable): fixed in e5350a6. Dialogs are sized with 100dvh minus safe-area insets, the title and close button are pinned, dialogs open at the top. `tests/playthrough/phone-ui.js` checks every dialog and page on iPhone SE, iPhone 13 and Pixel 7 with browser bars, 360x560 and landscape (203 checks). Found on the way: `overscroll-behavior: contain` can swallow the next tap, so it is not used
 - [x] No sink on iPhone (your report 2026-11-18: Safari "jumps to result"): a device asking for reduced motion used to get a cross-fade instead of the sink. Fixed in 6fb91c4: by default such devices get a calm sink (shorter, steady, no parallax, bubbles or wobble) and everyone else is unchanged; Settings > Animations offers match device / full / calm / off. Checked live: calm 21 depth steps to 850 m, full 39, off jumps. Not yet confirmed on your iPhone
 - Optional, only if you ask: custom domain; a shared group leaderboard or player percentile (needs a backend and your privacy approval); a feedback form; removing `noindex` so search engines list the game
+
+### 11. Daily-cast freshness
+- [x] 11.0.1 Cause of the repeats (`node scripts/list-dailies.js 2026-11-19`). The picker gave every category a turn in a shared rotation and walked each category's own prompts. Four categories have only one open prompt (Nations & Peoples: `nations`; Books of the Bible: `revelation`; Parables & Miracles: `parables-miracles`; Trades & Callings: `occupations`), so whenever their category came up, the same prompt came back, every 1 to 2 days. With 11 open categories and 6 open slots a day, that is most days.
+  - Aired so far: #1 2026-11-17, #2 2026-11-18 (`occupations` again after 1 day), #3 2026-11-19 (`revelation` from yesterday; `nations` and `parables-miracles` from 2 days ago).
+  - Next 14 days under the old code: 14 of 14 repeat a prompt from the last 14 days, 13 share 1 to 4 prompts with the day before (2026-11-22 would have shared 4).
+- [x] 11.0.2 Today and past days are kept exactly as aired (they are backfilled into the schedule).
+- [ ] 11.0.3 Hotfix: tomorrow onward fresh against the last 7 days; deployed and checked live
+- [ ] 11.1-3 Families, rules, `scripts/build-schedule.js`, `data/schedule.json`, game reads it, runtime fallback
+- [ ] 11.4 Pool growth (batches of 20 for your review)
+- [ ] 11.5 Endless and Practice skip the next 14 dailies
+- [ ] 11.6 `scripts/check-schedule.js`, CI, unit tests, `scripts/print-week.js`
+- [ ] 11.7 Ship, verify live, report
+
+**Pool math.** 7 prompts a day with a 30-day cooldown needs 7 x 30 = 210 prompts in rotation; with at most 1 closed set a day, 6 of the 7 must be open prompts, so a 30-day cooldown needs 180 open prompts plus 30 closed sets. The pool today is 95: 39 open and 56 closed. At 6 open a day, 39 open prompts give each one a turn every 6.5 days. So the 14-day hard floor with at most 1 closed set a day needs at least 84 open prompts. **The current pool cannot meet the rules in section 1**; see "Blocked on me".
 
 ## Decisions made
 - Git identity is set locally to the GitHub account `JimmyA1400` with its no-reply email, so no personal email appears in public commits.
