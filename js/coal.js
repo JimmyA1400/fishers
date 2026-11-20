@@ -12,6 +12,7 @@
 (function () {
   'use strict';
   var Net = window.FSHCoalNet;
+  var Art = window.FSHCoalArt;
   var SHORE = 'SHORE';
   var CODE_RE = /^[ABCDEFGHJKLMNPQRSTUVWXYZ]{4}$/;
   var COLORS = { ember: '#ee7a3f', gold: '#e9b04a', sea: '#4fa8de', reed: '#7cc06b', dawn: '#f293b4', olive: '#b5b44f', plum: '#ad8ce0', sand: '#dcc49a' };
@@ -126,7 +127,7 @@
     root.setAttribute('aria-label', 'Live Coal');
     root.hidden = true;
     root.innerHTML =
-      '<div class="coal-sky" aria-hidden="true"><div class="coal-stars"></div><div class="coal-hills"></div><div class="coal-sea"></div><div class="coal-sand"></div></div>' +
+      '<div class="coal-sky" aria-hidden="true">' + Art.scene() + '</div>' +
       '<header class="coal-top">' +
         '<button type="button" class="coal-icon" id="coal-back" aria-label="Back to Fishers">' +
           '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>' +
@@ -193,11 +194,13 @@
   function connectNow() {
     var id = Net.identity();
     main.innerHTML = '<div class="coal-card"><p class="coal-wait">Walking down to the shore…</p></div>';
-    conn = Net.connect({
+    // Messages from a connection we have since left (another room) are ignored.
+    var mine = Net.connect({
       code: code,
-      onMessage: onMessage,
-      onStatus: onStatus
+      onMessage: function (m) { if (conn === mine) onMessage(m); },
+      onStatus: function (st, extra) { if (conn === mine) onStatus(st, extra); }
     });
+    conn = mine;
     ui.joinSent = false;
     ui.id = id;
   }
@@ -498,24 +501,20 @@
     var meP = player(me);
     main.innerHTML =
       '<div class="coal-game">' +
-        '<div class="coal-head">' +
+        '<div class="coal-head glass">' +
           '<p class="coal-round" id="c-round"></p>' +
           '<h2 class="coal-cat" id="c-cat"></h2>' +
         '</div>' +
         '<div class="coal-stage" id="c-stage">' +
-          '<div class="coal-fire" aria-hidden="true">' +
-            '<div class="fire-glow"></div>' +
-            '<svg class="fire-logs" viewBox="0 0 120 50"><rect x="8" y="26" width="104" height="12" rx="6" transform="rotate(-9 60 32)"/><rect x="8" y="26" width="104" height="12" rx="6" transform="rotate(9 60 32)"/></svg>' +
-            '<div class="fire-coals"><i></i><i></i><i></i><i></i><i></i></div>' +
-            '<div class="fire-fish">' + fish('sand', 'grill') + fish('sand', 'grill b') + '</div>' +
-          '</div>' +
+          '<div class="coal-light" aria-hidden="true"></div>' +
+          '<div class="coal-fire" aria-hidden="true">' + Art.fire() + '</div>' +
           '<div class="coal-seats" id="c-seats"></div>' +
-          '<div class="coal-coal" id="c-coal" aria-hidden="true"><i></i></div>' +
+          '<div class="coal-coal" id="c-coal" aria-hidden="true"><div class="lc-halo"></div>' + Art.coal() + '<div class="lc-smoke"></div></div>' +
           '<div class="coal-intro" id="c-intro" hidden></div>' +
           '<div class="coal-banner" id="c-banner" hidden></div>' +
         '</div>' +
         '<div class="coal-bar" id="c-bar"></div>' +
-        '<details class="coal-said" id="c-said-box"><summary>Said this round <span id="c-said-n">0</span></summary><ol id="c-said"></ol></details>' +
+        '<details class="coal-said glass" id="c-said-box"><summary>Said this round <span id="c-said-n">0</span></summary><ol id="c-said"></ol></details>' +
         (meP && !meP.inGame ? '<p class="coal-note watch">You are watching. You will join the next game.</p>' : '') +
         '<button type="button" class="btn quiet coal-lobby-link" id="c-to-lobby">Room and players</button>' +
       '</div>';
@@ -530,7 +529,7 @@
   // Seats sit on an ellipse, clockwise from the top, in the server's order.
   function seatPos(i, n) {
     var a = -Math.PI / 2 + (i / n) * Math.PI * 2;
-    return { x: 50 + 41 * Math.cos(a), y: 50 + 39 * Math.sin(a) };
+    return { x: 50 + 42 * Math.cos(a), y: 54 + 40 * Math.sin(a) };
   }
   function drawSeats() {
     var g = room && room.game, box = $('#c-seats');
@@ -541,8 +540,8 @@
       var pos = seatPos(i, n);
       var cls = 'coal-seat' + (p.out ? ' out' : '') + (p.connected ? '' : ' away') + (id === me ? ' me' : '') + (id === g.holderId ? ' holder' : '');
       return '<div class="' + cls + '" data-seat="' + esc(id) + '" style="left:' + pos.x + '%;top:' + pos.y + '%">' +
-        '<svg class="seat-ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="ring-bg" cx="32" cy="32" r="28"/><circle class="ring" cx="32" cy="32" r="28" pathLength="100"/></svg>' +
-        '<span class="seat-fish">' + fish(p.color) + '</span>' +
+        '<span class="seat-fish">' + fish(p.color) +
+          '<svg class="seat-ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="sr-bg" cx="32" cy="32" r="29"/><circle class="sr-fg" cx="32" cy="32" r="29" pathLength="100"/></svg></span>' +
         '<span class="seat-name">' + esc(p.name) + (id === me ? ' <span class="sr-only">(you)</span>' : '') + '</span>' +
         '<span class="seat-secs mono" aria-hidden="true"></span>' +
         (p.out ? '<span class="seat-out">out</span>' : '') +
@@ -555,31 +554,31 @@
   function seatEl(id) { return id ? root.querySelector('[data-seat="' + (window.CSS && CSS.escape ? CSS.escape(id) : id) + '"]') : null; }
   function seatXY(id) {
     var g = room.game; var i = g.order.indexOf(id);
-    if (i === -1) return { x: 50, y: 52 };
+    if (i === -1) return { x: 50, y: 56 };
     return seatPos(i, g.order.length);
   }
 
   // The coal: placed by a seat, or flown in an arc to the next one (~300 ms).
   function placeCoal(id, show) {
     var c = $('#c-coal'); if (!c) return;
-    var p = id ? seatXY(id) : { x: 50, y: 52 };
-    var at = toward(p, 0.62);
+    var p = id ? seatXY(id) : { x: 50, y: 56 };
+    var at = toward(p, 0.56);
     c.style.left = at.x + '%'; c.style.top = at.y + '%';
     c.classList.toggle('lit', !!show);
   }
-  function toward(p, k) { return { x: 50 + (p.x - 50) * k, y: 52 + (p.y - 52) * k }; }
+  function toward(p, k) { return { x: 50 + (p.x - 50) * k, y: 56 + (p.y - 56) * k }; }
   function moveCoal(fromId, toId) {
     var c = $('#c-coal'); if (!c) return;
-    var to = toward(seatXY(toId), 0.62);
+    var to = toward(seatXY(toId), 0.56);
     if (!fromId || reduce || !c.animate) { placeCoal(toId, true); return; }
-    var from = toward(seatXY(fromId), 0.62);
+    var from = toward(seatXY(fromId), 0.56);
     var stage = $('#c-stage'), w = stage.clientWidth, h = stage.clientHeight;
     // A quadratic arc that bows up toward the fire.
     var mid = { x: (from.x + to.x) / 2, y: (from.y + to.y) / 2 - 18 };
     var frames = [];
     for (var k = 0; k <= 10; k++) {
       var t = k / 10, x = (1 - t) * (1 - t) * from.x + 2 * (1 - t) * t * mid.x + t * t * to.x, y = (1 - t) * (1 - t) * from.y + 2 * (1 - t) * t * mid.y + t * t * to.y;
-      frames.push({ transform: 'translate(' + ((x - to.x) / 100 * w) + 'px,' + ((y - to.y) / 100 * h) + 'px) scale(' + (1 + 0.35 * Math.sin(Math.PI * t)) + ')' });
+      frames.push({ transform: 'translate(-50%, -50%) translate(' + ((x - to.x) / 100 * w) + 'px,' + ((y - to.y) / 100 * h) + 'px) scale(' + (1 + 0.35 * Math.sin(Math.PI * t)) + ')' });
     }
     c.style.left = to.x + '%'; c.style.top = to.y + '%';
     c.classList.add('lit');
@@ -617,7 +616,7 @@
     if (!g || view !== 'game') return;
     var round = $('#c-round'), cat = $('#c-cat');
     if (g.prompt) {
-      round.innerHTML = 'Round ' + g.round + ' · <strong>' + secs(g.turnMs) + '</strong> a turn' + (g.prompt.category ? ' · ' + esc(g.prompt.category) : '');
+      round.innerHTML = 'Round ' + g.round + ' · <strong>' + secs(g.turnMs).replace(/\s/, '') + '</strong> turns' + (g.prompt.category ? ' · ' + esc(g.prompt.category) : '');
       if (cat.textContent !== g.prompt.text) cat.textContent = g.prompt.text;
     }
     root.querySelectorAll('.coal-seat').forEach(function (el) {
@@ -646,10 +645,11 @@
       bar.className = 'coal-bar mine';
       bar.innerHTML =
         '<p class="coal-feedback" id="c-feedback" aria-live="polite"></p>' +
-        '<form class="coal-answer" id="c-form" autocomplete="off" novalidate>' +
+        '<form class="coal-answer glass" id="c-form" autocomplete="off" novalidate>' +
+          '<div class="ring" id="c-ring" aria-hidden="true"><svg viewBox="0 0 44 44"><circle class="bg" cx="22" cy="22" r="20"/><circle class="fg" cx="22" cy="22" r="20"/></svg><span id="c-ring-n"></span></div>' +
           '<label class="sr-only" for="c-answer">Your answer: ' + esc(g.prompt ? g.prompt.text : '') + '</label>' +
-          '<input id="c-answer" type="text" inputmode="text" maxlength="60" placeholder="Your turn: name one…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="go" aria-describedby="c-feedback">' +
-          '<button type="submit" class="btn primary">Pass</button>' +
+          '<input id="c-answer" type="text" inputmode="text" maxlength="60" placeholder="your turn: name one…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="go" aria-describedby="c-feedback">' +
+          '<button type="submit" class="cast-btn">Pass</button>' +
         '</form>';
       var input = $('#c-answer');
       input.focus({ preventScroll: true });
@@ -671,8 +671,8 @@
       var line;
       if (g.stage === 'turn') line = '<strong>' + esc(nameOf(g.holderId)) + '</strong> is holding the coal…';
       else if (g.stage === 'intro') line = 'Get ready…';
-      else line = '&nbsp;';
-      bar.innerHTML = '<p class="coal-watching">' + line + '</p><p class="coal-typing" aria-hidden="true">' + (g.stage === 'turn' ? '<span id="c-typing"></span><i class="caret"></i>' : '') + '</p>';
+      else line = 'The next round is coming…';
+      bar.innerHTML = '<div class="coal-watch glass"><p class="coal-watching">' + line + '</p><p class="coal-typing" aria-hidden="true">' + (g.stage === 'turn' ? '<span id="c-typing"></span><i class="caret"></i>' : '') + '</p></div>';
       drawTyping();
     }
   }
@@ -752,9 +752,15 @@
         var rem = Math.max(0, g.deadline - now), frac = Math.max(0, Math.min(1, rem / g.turnMs));
         var seat = seatEl(g.holderId);
         if (seat) {
-          var ring = seat.querySelector('.ring'); if (ring) ring.style.strokeDashoffset = String(100 - frac * 100);
+          var ring = seat.querySelector('.sr-fg'); if (ring) ring.style.strokeDashoffset = String(100 - frac * 100);
           var sx = seat.querySelector('.seat-secs'); if (sx) sx.textContent = (rem / 1000).toFixed(rem < 3000 ? 1 : 0);
           seat.classList.toggle('low', rem < 3000);
+        }
+        var rg = g.holderId === me ? $('#c-ring') : null;
+        if (rg) {
+          rg.querySelector('.fg').style.strokeDashoffset = String(125.66 * (1 - frac));
+          $('#c-ring-n').textContent = Math.ceil(rem / 1000);
+          rg.classList.toggle('low', rem < 3000);
         }
         if (coal) {
           coal.style.setProperty('--heat', frac.toFixed(3));
@@ -783,10 +789,12 @@
     var rows = last.players.slice().sort(function (a, b) { return (a.place || 99) - (b.place || 99); });
     main.innerHTML =
       '<div class="coal-card coal-over">' +
-        '<div class="coal-winner" aria-hidden="true"><div class="fire-glow small"></div>' + fish(winner ? winner.color : 'sand', 'big') + '</div>' +
+        '<div class="coal-winner" aria-hidden="true"><div class="fire-glow"></div><div class="cw-fire">' + Art.fire() + '</div>' +
+          (winner ? '<div class="cw-fish">' + fish(winner.color, 'big') + '</div>' : '') + '</div>' +
         '<p class="coal-eyebrow">Game over · ' + last.rounds + ' round' + (last.rounds === 1 ? '' : 's') + '</p>' +
         '<h2 id="c-over-title" tabindex="-1">' + (winner ? esc(winner.id === me ? 'You are' : winner.name + ' is') + ' the last one by the fire' : 'The fire went out') + '</h2>' +
-        (winner ? '<p class="coal-lede">“Last one by the fire.”</p>' : '<p class="coal-lede">No winner this time.</p>') +
+        (winner ? '' : '<p class="coal-lede">No winner this time.</p>') +
+        '<p class="coal-verse">“They saw a fire of coals there, and fish laid thereon, and bread.” <span>John 21:9 (KJV)</span></p>' +
         '<ol class="coal-recap" aria-label="How everyone did">' +
           rows.map(function (p) {
             var r = p.rarest, t = r ? (TIERS[r.tier] || TIERS[1]) : null;

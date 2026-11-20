@@ -107,7 +107,7 @@ async function tabTo(page, sel, max = 40) {
   }
   check(true, 'two answers passed the coal');
   // Reduced motion: the coal does not flicker, the fire does not pulse.
-  const anim = await A.evaluate(() => getComputedStyle(document.querySelector('.fire-glow')).animationName);
+  const anim = await A.evaluate(() => getComputedStyle(document.querySelector('.coal-light')).animationName);
   check(anim === 'none', 'reduced motion: fire glow animation is ' + anim);
   // Wait for someone's coal to go out; with 2 players that ends the game.
   await until(async () => (await st(A)).view === 'over', 40000);
