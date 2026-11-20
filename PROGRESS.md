@@ -3,10 +3,10 @@
 **Live URL:** https://jimmya1400.github.io/fishers/  (repo: https://github.com/JimmyA1400/fishers)
 
 ## Current step
-11. Daily-cast freshness (started 2026-11-19)
+12. Live Coal, the multiplayer mode (started 2026-11-20, branch `claude/live-coal-multiplayer-b829fb`). Section 11 is paused at 11.4 (batch 3 not drafted yet).
 
 ## Next action
-11.4: batch 2 is live (9e3fc72). Next: draft batch 3 (toward at most 1 closed set a day), for your review.
+12.2: Worker + Durable Object shell around the engine, `wrangler dev`, bare-bones two-tab game.
 
 ## Checklist
 
@@ -105,6 +105,17 @@
 - [x] 11.5 Endless (`endlessIds`) and Practice skip prompts due as a daily in the next 14 days; Endless intro says casts refresh as new dailies air. With 95 prompts, 82 are in the next 14 dailies, so for now Endless uses the prompts due furthest out (10+ days) and Practice falls back to the latest-due prompts in a category; the full 14 days needs the bigger pool
 - [x] 11.6 `scripts/check-schedule.js` in CI (rules in force, 60+ days ahead, frozen dates vs the previous commit's schedule, aired days vs the old picker), `tests/schedule.test.js` (9 tests: aired days, a year of rules, checker catches breaks, ID ledger `content/prompt-ids.list`, retired prompts, fallback, freeze, Endless), `scripts/print-week.js`; 67 tests pass
 - [ ] 11.7 Ship, verify live, report
+
+### 12. Live Coal (realtime elimination mode)
+Spec: your message of 2026-11-20 (rules, lobbies, architecture, edge cases, screens, deploy, tests, build order). Server in `server/` (Cloudflare Worker + one SQLite-backed Durable Object `Room` per room); the site stays on Pages.
+- [x] 12.1 State machine + unit tests (no UI). `server/src/engine.js` is a pure `reduce(state, event, now, catalog)` with injected time and a seeded RNG in the state; `server/src/catalog.js` wraps `data/prompts.json` and the solo game's `js/matcher.js` (shared, not forked); `server/src/protocol.js` validates client messages and holds the rate limiter. `cd server && npm run test:unit`: 50 tests (timer schedule and presets, 40-minute floor, names, host rules and migration, only-holder submissions, clockwise pass, aliases as duplicates, same-name people as one answer, near miss / did-you-mean confirm, grace window and both alarm orders, the three round ends, never-repeated categories, category size and closed-set rules, early-easy / late-narrow, winner and recap, rematch with late joiners, disconnect / reconnect snapshot, everyone-leaves reset, kick while holding, typing, JSON round trip, protocol and rate limits).
+  - Rules as built: a turn times out when the server clock passes deadline + 250 ms; every event first resolves any timer already due, so an answer and an alarm landing together give the same result in either order. Round-end checks after an accepted answer: net empty first, then "everyone still in has answered 3 times". Duplicates are grouped by canonical answer name. The 3x+10 size rule applies to every category; closed sets additionally need 10 spare answers after one rotation (so the Twelve fit 2 players, the 66 books up to 18, and the seven churches and the plagues never qualify). Categories are ranked by "ease" (answers in tiers 1-3); round 1 draws from the friendliest third and each round slides 10% toward narrower ones. A player disconnected in the lobby is dropped after 60 s (a refresh keeps the seat); in a game the seat stays.
+- [ ] 12.2 Worker + Durable Object + local dev; two tabs can play a bare-bones game
+- [ ] 12.3 Lobby, The Shore, private rooms, names, reconnect
+- [ ] 12.4 Full game screen
+- [ ] 12.5 Phone polish, sound, accessibility
+- [ ] 12.6 CI + deploy; 4-player end-to-end on the live site and Worker
+- [ ] 12.7 Hand-off
 
 **Pool math.** 7 prompts a day with a 30-day cooldown needs 7 x 30 = 210 prompts in rotation; with at most 1 closed set a day, 6 of the 7 must be open prompts, so a 30-day cooldown needs 180 open prompts plus 30 closed sets. Before batch 1 the pool was 95: 38 open and 57 closed (38 open prompts at 6 a day come back every 6.3 days); after batch 1 it is 115, 58 open. So the 14-day hard floor with at most 1 closed set a day needs at least 84 open prompts. **The current pool cannot meet the rules in section 1**; see "Blocked on me".
 

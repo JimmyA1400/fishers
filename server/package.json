@@ -1,0 +1,14 @@
+{
+  "name": "fishers-live-coal",
+  "private": true,
+  "type": "module",
+  "description": "Live Coal: the realtime server for Fishers (a Cloudflare Worker with one Durable Object per room).",
+  "license": "MIT",
+  "scripts": {
+    "test:unit": "node --test test/unit/*.test.js",
+    "test:worker": "vitest run",
+    "test": "npm run test:unit && npm run test:worker",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  }
+}
