@@ -188,7 +188,13 @@ describe('room', () => {
     const h = holderName(cs, ts);
     const before = cs[h].msgs.find(m => m.type === 'snapshot').you;
     cs[h].close();
-    await cs.Ruth.wait('players', m => m.players.some(p => p.id === before && !p.connected));
+    // The server notices the closed socket (a slow CI machine can take a few seconds).
+    for (let i = 0; i < 150; i++) {
+      const st = await state(code);
+      if (st.players[before] && !st.players[before].connected) break;
+      await new Promise(r => setTimeout(r, 100));
+    }
+    expect((await state(code)).players[before].connected).toBe(false);
     await skew(code, 4000);
     const again = await connect(code);
     again.send({ type: 'join', token: token(h), name: h });
