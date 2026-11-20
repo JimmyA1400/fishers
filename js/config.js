@@ -14,7 +14,7 @@ window.FSH_CONFIG = {
   // Worker, see server/). The URL is public by nature. On localhost the game
   // uses a local `wrangler dev` instead; ?coal=<url> overrides both.
   liveCoal: {
-    server: 'https://fishers-live-coal.jimmya1400.workers.dev',
+    server: 'https://fishers-live-coal.fishes-595.workers.dev',
     localServer: 'http://127.0.0.1:8787'
   },
 

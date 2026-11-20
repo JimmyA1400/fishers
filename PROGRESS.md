@@ -6,7 +6,7 @@
 12. Live Coal, the multiplayer mode (started 2026-11-20, branch `claude/live-coal-multiplayer-b829fb`). Section 11 is paused at 11.4 (batch 3 not drafted yet).
 
 ## Next action
-12.6: merged to main (5ffdc84). CI run 44808648977: site and server tests green; the Worker deploy failed because the Cloudflare account has no workers.dev subdomain yet, so Pages was skipped (live site unchanged). Waiting on you to register the subdomain (see Blocked on me). Then rerun the failed jobs, fix the URL in js/config.js if the name differs from `jimmya1400`, and run the live e2e.
+12.6: subdomain registered (`fishes-595.workers.dev`); Worker URL set in js/config.js and pushed to main. Next: watch CI (Worker then Pages), check live /health, run the live e2e.
 
 ## Checklist
 
@@ -143,7 +143,7 @@ Spec: your message of 2026-11-20 (rules, lobbies, architecture, edge cases, scre
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
-- **Live Coal deploy (12.6): register a workers.dev subdomain.** Cloudflare dashboard > Workers & Pages (or https://dash.cloudflare.com/ > Workers & Pages > onboarding): choose a subdomain, ideally `jimmya1400` so the URL already in `js/config.js` works. Secrets are set (2026-11-20).
+- **Live Coal deploy (12.6): register a workers.dev subdomain.** Cloudflare dashboard > Workers & Pages (or https://dash.cloudflare.com/ > Workers & Pages > onboarding): choose a subdomain, done 2026-11-20: `fishes-595.workers.dev`. Secrets are set (2026-11-20).
 - (done 2026-11-20 except the subdomain) Earlier: wrangler here says "Not logged in. Your auth token has expired", and the repo has no Cloudflare secrets. Please:
   1. If you have no Cloudflare account yet, create a free one at https://dash.cloudflare.com/sign-up (the expired token suggests you may already have one).
   2. In a terminal: `cd "C:\Theology Game\.claude\worktrees\live-coal-multiplayer-b829fb\server"` then `npx wrangler login` and approve in the browser. If you have never used Workers, also open Workers & Pages in the dashboard once so it assigns your `<name>.workers.dev` subdomain.
