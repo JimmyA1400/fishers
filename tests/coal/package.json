@@ -1,0 +1,13 @@
+{
+  "name": "fishers-live-coal-e2e",
+  "private": true,
+  "description": "Live Coal end-to-end and load tests (Playwright, 4 players; a WebSocket load generator).",
+  "scripts": {
+    "e2e": "node e2e.js",
+    "load": "node load.js"
+  },
+  "dependencies": {
+    "playwright": "1.65.1",
+    "ws": "^8.18.0"
+  }
+}

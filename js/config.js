@@ -10,6 +10,14 @@ window.FSH_CONFIG = {
   // Fishers #1. Changing this renumbers and reshuffles every daily cast.
   epoch: '2026-11-17',
 
+  // Live Coal, the multiplayer mode: its realtime server (a Cloudflare
+  // Worker, see server/). The URL is public by nature. On localhost the game
+  // uses a local `wrangler dev` instead; ?coal=<url> overrides both.
+  liveCoal: {
+    server: 'https://fishers-live-coal.jimmya1400.workers.dev',
+    localServer: 'http://127.0.0.1:8787'
+  },
+
   // Optional answer logging, used later to replace the estimated tiers with
   // real frequencies. OFF by default: nothing leaves the player's device.
   // To turn it on, see "Collecting real rarity data" in README.md.

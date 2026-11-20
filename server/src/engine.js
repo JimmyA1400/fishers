@@ -346,7 +346,7 @@ function removePlayer(s, pid, now, fx, catalog, why) {
       g.nextHolder = holderNext;
     }
   }
-  if (!Object.keys(s.players).length) s.cleanupAt = now + CLEANUP_MS;
+  if (!Object.keys(s.players).length && s.cleanupAt == null) s.cleanupAt = now + CLEANUP_MS;
 }
 
 function roundDoneByRotation(s) {

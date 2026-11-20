@@ -20,10 +20,10 @@ var SHELL_FILES = [
   './',
   'index.html',
   'manifest.webmanifest',
-  'css/styles.css', 'css/world.css', 'css/hud.css',
+  'css/styles.css', 'css/world.css', 'css/hud.css', 'css/coal.css',
   'js/config.js', 'js/data-loader.js', 'js/matcher.js', 'js/round.js', 'js/typeahead.js', 'js/daily.js', 'js/schedule.js',
   'js/storage.js', 'js/scene.js', 'js/icons.js', 'js/share.js', 'js/sound.js', 'js/telemetry.js',
-  'js/pwa.js', 'js/game.js',
+  'js/pwa.js', 'js/game.js', 'js/coal-net.js', 'js/coal.js',
   'fonts/jetbrains-mono-latin-500-normal.woff2', 'fonts/jetbrains-mono-latin-700-normal.woff2',
   'assets/favicon.svg', 'assets/icons/favicon-32.png', 'assets/icons/icon-192.png',
   'assets/icons/icon-512.png', 'assets/icons/maskable-512.png', 'assets/icons/apple-touch-icon.png'

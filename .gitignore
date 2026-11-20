@@ -29,3 +29,7 @@ desktop.ini
 
 # built review banks (rebuild with tools/build-prompts.js --pending)
 review/*.json
+
+# Live Coal test output
+tests/coal/results/
+server/.wrangler/

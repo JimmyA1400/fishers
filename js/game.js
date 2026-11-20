@@ -318,11 +318,14 @@
             '<button type="button" class="link-btn" id="practice">Practice Waters</button><span aria-hidden="true">·</span>' +
             '<button type="button" class="link-btn" id="group">Group</button>' +
           '</nav>' +
+          '<button type="button" class="coal-home-btn" id="live-coal"><span aria-hidden="true">🔥</span> Live Coal <span class="coal-home-sub">play friends live</span></button>' +
         '</div>' +
         '<p class="home-castno">Cast #' + castNumber(d.date) + ' · ' + esc(shortDate(d.date)) + streakHtml() + '</p>' +
         '<p class="home-foot"><span class="foot-src">Scripture: WEB &amp; KJV, public domain ·</span><button type="button" class="link-btn" id="home-about">About &amp; credits</button></p>' +
       '</section>', null, 'home');
     document.getElementById('home-about').onclick = function () { openDialog(document.getElementById('dlg-about')); };
+    // Live Coal needs no prompt bank on this device: the server holds it.
+    document.getElementById('live-coal').onclick = function () { if (window.FSHCoal) window.FSHCoal.open(); };
     if (!data) {
       // Pressed before the bank arrives: remember it and carry on when it does.
       [['go', function () { play(dailySession(), true); }], ['endless', renderEndless], ['archive', renderArchive], ['practice', renderPracticeSetup], ['group', function () { renderGroup(''); }]]
@@ -1315,7 +1318,8 @@
     wireChrome();
     renderHome();
     var st = Store.get(), d = storedDaily();
-    if (!st.stats.played && !d.results.length && !d.startedAt) openDialog(document.getElementById('dlg-help'));
+    // Not over a Live Coal invite link: that screen explains itself.
+    if (!st.stats.played && !d.results.length && !d.startedAt && !/^#\/coal/.test(location.hash)) openDialog(document.getElementById('dlg-help'));
   }
 
   function boot(loaded) {
