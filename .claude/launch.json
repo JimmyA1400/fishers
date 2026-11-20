@@ -20,6 +20,22 @@
       ],
       "port": 8790,
       "url": "http://localhost:8790"
+    },
+    {
+      "name": "live-coal-server",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "server",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "8787",
+        "--ip",
+        "127.0.0.1"
+      ],
+      "port": 8787
     }
   ]
 }

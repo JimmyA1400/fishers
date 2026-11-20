@@ -1,5 +1,10 @@
-# Test, build and deploy Fishers to GitHub Pages.
-# Based on GitHub's static-site Pages starter workflow.
+# Test, build and deploy Fishers to GitHub Pages, and the Live Coal server to
+# Cloudflare Workers. Based on GitHub's static-site Pages starter workflow.
+#
+# Order: site tests and Live Coal server tests -> Worker deploy -> Pages
+# deploy, so the site never points at an older server protocol. The Worker
+# deploy needs the repo secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID;
+# without them it is skipped with a warning (the site still deploys).
 name: Deploy to Pages
 
 on:
@@ -41,8 +46,73 @@ jobs:
           git show HEAD^1:data/schedule.json > /tmp/base-schedule.json 2>/dev/null || : > /tmp/base-schedule.json
           node scripts/check-schedule.js --base /tmp/base-schedule.json
 
+  coal-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+      - name: Install
+        run: npm ci
+      - name: Rules engine unit tests
+        run: npm run test:unit
+      - name: Durable Object integration tests (workerd)
+        run: npx vitest run
+
+  coal-deploy:
+    needs: [test, coal-test]
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Check for Cloudflare secrets
+        id: cf
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$CF_TOKEN" ] && [ -n "$CF_ACCOUNT" ]; then echo "ok=true" >> "$GITHUB_OUTPUT";
+          else echo "::warning::CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID are not set; the Live Coal server was not deployed."; echo "ok=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Set up Node
+        if: steps.cf.outputs.ok == 'true'
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+      - name: Install
+        if: steps.cf.outputs.ok == 'true'
+        working-directory: server
+        run: npm ci
+      - name: Deploy the Worker (wrangler deploy)
+        if: steps.cf.outputs.ok == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: server
+          wranglerVersion: "4.165.0"
+          command: deploy
+      - name: Check the live Worker's protocol
+        if: steps.cf.outputs.ok == 'true'
+        run: |
+          url=$(node -e "const s=require('fs').readFileSync('js/config.js','utf8');console.log(/server: '([^']+)'/.exec(s)[1])")
+          want=$(node -e "const s=require('fs').readFileSync('js/coal-net.js','utf8');console.log(/var PROTOCOL = (\d+)/.exec(s)[1])")
+          for i in 1 2 3 4 5 6; do
+            got=$(curl -fsS "$url/health" | node -e "let d='';process.stdin.on('data',c=>d+=c).on('end',()=>console.log(JSON.parse(d).protocol))") && break
+            sleep 5
+          done
+          echo "Worker $url protocol $got, client protocol $want"
+          test "$got" = "$want"
+
   deploy:
-    needs: test
+    needs: [test, coal-deploy]
     runs-on: ubuntu-latest
     timeout-minutes: 8
     environment:

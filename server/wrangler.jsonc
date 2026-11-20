@@ -1,0 +1,20 @@
+{
+  // Live Coal: the realtime server for Fishers.
+  // Free plan: Durable Objects must be SQLite-backed (new_sqlite_classes).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fishers-live-coal",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-15",
+  "durable_objects": {
+    "bindings": [{ "name": "ROOMS", "class_name": "Room" }]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["Room"] }
+  ],
+  "vars": {
+    // WebSocket upgrades and /create are accepted only from these origins.
+    // "http://localhost" (no port) allows any port on localhost.
+    "ALLOWED_ORIGINS": "https://jimmya1400.github.io,http://localhost,http://127.0.0.1"
+  },
+  "observability": { "enabled": true }
+}
