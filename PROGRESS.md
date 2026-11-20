@@ -6,7 +6,7 @@
 12. Live Coal, the multiplayer mode (started 2026-11-20, branch `claude/live-coal-multiplayer-b829fb`). Section 11 is paused at 11.4 (batch 3 not drafted yet).
 
 ## Next action
-12.6: waiting on the Cloudflare login and the two GitHub secrets (see "Blocked on me"). Then: `cd server && npx wrangler deploy`, put the real workers.dev URL in `js/config.js` (`liveCoal.server`), merge to main, CI deploys Worker then Pages, run `node tests/coal/e2e.js --site https://jimmya1400.github.io/fishers/` (and `--rtt 300`) against live.
+12.6: secrets set 2026-11-20; merging to main so CI deploys the Worker then Pages. If the guessed workers.dev URL in js/config.js is wrong, the CI protocol check blocks Pages: read the real URL from the coal-deploy log, fix config, push again. Then the live e2e.
 
 ## Checklist
 
