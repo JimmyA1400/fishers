@@ -81,10 +81,14 @@ async function state(page) {
     };
   });
 }
+// The slow player's proxy is plain ws:// on 127.0.0.1, which an https page
+// may not open, so that one player loads the same build from SLOW_SITE
+// (default: the local copy on :8765) and still plays on the live Worker.
+const SLOW_SITE = String(arg('slow-site', /^https:/.test(SITE) ? 'http://localhost:8765/' : SITE)).replace(/\/?$/, '/');
 function url(code, proxy) {
   const q = [];
   if (proxy || SERVER) q.push('coal=' + encodeURIComponent(proxy || SERVER));
-  return SITE + (q.length ? '?' + q.join('&') : '') + '#/coal' + (code ? '/' + code : '');
+  return (proxy ? SLOW_SITE : SITE) + (q.length ? '?' + q.join('&') : '') + '#/coal' + (code ? '/' + code : '');
 }
 async function sitDown(page, name) {
   await page.waitForSelector('#c-name', { timeout: 20000 });

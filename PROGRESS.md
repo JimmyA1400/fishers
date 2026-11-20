@@ -3,10 +3,10 @@
 **Live URL:** https://jimmya1400.github.io/fishers/  (repo: https://github.com/JimmyA1400/fishers)
 
 ## Current step
-12. Live Coal, the multiplayer mode (started 2026-11-20, branch `claude/live-coal-multiplayer-b829fb`). Section 11 is paused at 11.4 (batch 3 not drafted yet).
+12. Live Coal is live (2026-11-20). Section 11 is paused at 11.4 (batch 3 not drafted yet).
 
 ## Next action
-12.6: subdomain registered (`fishes-595.workers.dev`); Worker URL set in js/config.js and pushed to main. Next: watch CI (Worker then Pages), check live /health, run the live e2e.
+Live Coal is live and handed off. Back to 11.4: draft batch 3 (toward at most 1 closed set a day), for your review.
 
 ## Checklist
 
@@ -126,8 +126,8 @@ Spec: your message of 2026-11-20 (rules, lobbies, architecture, edge cases, scre
     - duration: the room stays awake during play (it hibernates only when quiet): 840 s x 0.125 GB = ~105 GB-s per game
     - **50 games a day**: DO requests ~8,400 (8% of 100,000), Worker requests ~850 (under 1%), rows written ~20,000 (20%), duration ~5,250 GB-s (40% of 13,000). Duration is the tightest; ~120 such games a day would reach the free duration limit. Idle lobbies hibernate and cost almost nothing.
 - [x] 12.5b Design pass (your request 2026-11-20: closer to the theme, more realistic coals, as good as the main game). New `js/coal-art.js` draws everything as inline SVG in the main game's flat layered style: night sky with moon and stars, the main game's hills and scalloped water edge (moonlit), moonlight on the water, the boat pulled up on the beach with a net drying. The fire is a stone ring round a bed of black charcoal lumps with glowing seams and white ash, a few burning through, low flames, rising sparks, two fish laid on the coals and a loaf on a flat stone (John 21:9). The live coal is a charcoal lump whose heat drives the vein glow, rim and under-glow; grey ash creeps over it as the turn drains. Panels, buttons, ring timer, feedback pill and tier colours are the main game's (glass, gold accent, `--t1..--t6`). Game over: the winner's fish by a small fire and John 21:9 (KJV, checked against the pinned text). Fixed on the way: a stale Shore connection could toast "You left the room" in a new room; the coal's flight lost its centring mid-arc. e2e (4 players) and a11y pass.
-- [ ] 12.6 CI + deploy; 4-player end-to-end on the live site and Worker. Workflow ready: `coal-test` (unit + workerd tests) and `coal-deploy` (`cloudflare/wrangler-action@v3`, then checks the live `/health` protocol) run before the Pages `deploy` job; without the two secrets the Worker deploy is skipped with a warning. **Blocked on you** (see "Blocked on me").
-- [ ] 12.7 Hand-off
+- [x] 12.6 CI + deploy. Live 2026-11-20: Worker https://fishers-live-coal.fishes-595.workers.dev (`/health` protocol 1), site build 2d40ba5+ on Pages. CI run 44811443244: test, coal-test, coal-deploy (wrangler-action + live protocol check), Pages deploy all green. (First run failed for want of a workers.dev subdomain; a reconnect test was flaky on slow CI and now waits on room state.) Live checks: other origins get 403; `node tests/coal/e2e.js --site https://jimmya1400.github.io/fishers/` passes all 20 checks (4 players, live typing, clocks within 3 ms, duplicate, typo confirm, phone reconnect mid-turn, three timeouts, winner, rematch, late joiner); `--rtt 300` passes (clocks within 3 ms, an answer sent with 300 ms showing counts; the slow player loads the same build from localhost because an https page cannot open the ws:// delay proxy). Live load, 10 rooms x 16 bots, 40 s: 0 socket errors, submit -> next turn p50 59 ms / p95 86 ms including the network (Workers freeze `performance.now()` inside a request, so the server-side figure reads 0 ms and is not meaningful). Was: 4-player end-to-end on the live site and Worker. Workflow ready: `coal-test` (unit + workerd tests) and `coal-deploy` (`cloudflare/wrangler-action@v3`, then checks the live `/health` protocol) run before the Pages `deploy` job; without the two secrets the Worker deploy is skipped with a warning. **Blocked on you** (see "Blocked on me").
+- [x] 12.7 Hand-off (2026-11-20): entry point, friends' message, budget and limits given in chat.
 
 **Pool math.** 7 prompts a day with a 30-day cooldown needs 7 x 30 = 210 prompts in rotation; with at most 1 closed set a day, 6 of the 7 must be open prompts, so a 30-day cooldown needs 180 open prompts plus 30 closed sets. Before batch 1 the pool was 95: 38 open and 57 closed (38 open prompts at 6 a day come back every 6.3 days); after batch 1 it is 115, 58 open. So the 14-day hard floor with at most 1 closed set a day needs at least 84 open prompts. **The current pool cannot meet the rules in section 1**; see "Blocked on me".
 
@@ -143,7 +143,7 @@ Spec: your message of 2026-11-20 (rules, lobbies, architecture, edge cases, scre
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
-- **Live Coal deploy (12.6): register a workers.dev subdomain.** Cloudflare dashboard > Workers & Pages (or https://dash.cloudflare.com/ > Workers & Pages > onboarding): choose a subdomain, done 2026-11-20: `fishes-595.workers.dev`. Secrets are set (2026-11-20).
+- (done 2026-11-20) **Live Coal deploy (12.6): register a workers.dev subdomain.** Cloudflare dashboard > Workers & Pages (or https://dash.cloudflare.com/ > Workers & Pages > onboarding): choose a subdomain, done 2026-11-20: `fishes-595.workers.dev`. Secrets are set (2026-11-20).
 - (done 2026-11-20 except the subdomain) Earlier: wrangler here says "Not logged in. Your auth token has expired", and the repo has no Cloudflare secrets. Please:
   1. If you have no Cloudflare account yet, create a free one at https://dash.cloudflare.com/sign-up (the expired token suggests you may already have one).
   2. In a terminal: `cd "C:\Theology Game\.claude\worktrees\live-coal-multiplayer-b829fb\server"` then `npx wrangler login` and approve in the browser. If you have never used Workers, also open Workers & Pages in the dashboard once so it assigns your `<name>.workers.dev` subdomain.
