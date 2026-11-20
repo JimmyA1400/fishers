@@ -207,12 +207,19 @@
     if (!el) return;
     el.className = 'coal-net ' + s;
     el.textContent = s === 'open' ? '' : s === 'reconnecting' ? 'Reconnecting…' : s === 'connecting' ? 'Connecting…' : '';
+    // Never got in after several tries: say so instead of waiting forever.
+    if (s === 'reconnecting' && extra && extra.attempt >= 5 && !room && conn) {
+      var c = conn; conn = null; c.close();
+      stopped('Could not reach the fire. Check your connection, or try again in a minute.', true);
+      return;
+    }
     if (s === 'outdated') stopped('Live Coal has been updated. Refresh to update.', true);
     if (s === 'closed') stopped(ERRORS[extra] || 'Disconnected.', extra !== 'otherTab');
   }
 
   function stopped(text, canRetry) {
     view = 'stopped';
+    var net = $('#coal-net'); if (net) { net.textContent = ''; net.className = 'coal-net'; }
     cancelAnimationFrame(raf);
     Sound.crackle(false);
     main.innerHTML = '<div class="coal-card" role="alert"><h2>' + esc(text) + '</h2>' +

@@ -539,3 +539,11 @@ test('initial state is plain JSON', () => {
   const s = initialState('SHORE', 1, 5);
   assert.deepEqual(JSON.parse(JSON.stringify(s)), s);
 });
+
+test('wrong guesses do not change the saved state (no storage write)', () => {
+  const r = two();
+  r.startAndIntro('Hannah');
+  const res = r.as(r.holderName(), { type: 'submit', text: 'qqqqzzzz' });
+  assert.equal(res.persist, false);
+  assert.equal(r.lastMsg('answerRejected').reason, 'miss');
+});

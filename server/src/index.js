@@ -21,8 +21,12 @@ import { makeCatalog } from './catalog.js';
 import { parseClient, makeLimiter, limit, MAX_RAW } from './protocol.js';
 import { SHORE, CODE_LETTERS, validCode, originAllowed } from './rooms.js';
 
-let catalog = null;
-const getCatalog = () => (catalog ||= makeCatalog(bank, matcher));
+// Built (and every prompt compiled) once, at startup: the free plan allows
+// 1 s of startup but little CPU per message, and answer checks then cost
+// about 2 ms at worst.
+const catalog = makeCatalog(bank, matcher);
+for (const e of catalog.list) catalog.evaluate(e.id, '');
+const getCatalog = () => catalog;
 
 function cors(origin, env) {
   const h = { 'Vary': 'Origin', 'Content-Type': 'application/json' };
@@ -57,6 +61,12 @@ export default {
       return new Response('{"error":"busy"}', { status: 503, headers });
     }
 
+    // Timing numbers for the load test: no names, answers or tokens.
+    const mm = /^\/metrics\/([A-Za-z]{4,5})$/.exec(url.pathname);
+    if (mm && validCode(mm[1].toUpperCase())) {
+      const stub = env.ROOMS.get(env.ROOMS.idFromName(mm[1].toUpperCase()));
+      return stub.fetch('https://room/metrics', { headers: { 'X-Room-Code': mm[1].toUpperCase() } }).then(r => new Response(r.body, { headers }));
+    }
     const m = /^\/room\/([A-Za-z]{4,5})$/.exec(url.pathname);
     if (m) {
       const code = m[1].toUpperCase();
@@ -110,7 +120,9 @@ export class Room extends DurableObject {
       return new Response('ok');
     }
     if (url.pathname === '/metrics') {
-      return new Response(JSON.stringify({ ...this.metrics, sockets: this.ctx.getWebSockets().length }));
+      const h = this.metrics.handoffs.slice().sort((a, b) => a - b);
+      const q = (f) => (h.length ? +h[Math.min(h.length - 1, Math.floor(f * h.length))].toFixed(2) : null);
+      return new Response(JSON.stringify({ handoffs: { count: h.length, p50: q(0.5), p95: q(0.95), max: q(1) }, messages: this.metrics.messages, sockets: this.ctx.getWebSockets().length }));
     }
 
     const pair = new WebSocketPair();

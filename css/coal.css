@@ -157,7 +157,7 @@ body.coal-on #app, body.coal-on #scene, body.coal-on #hud, body.coal-on #corner 
   background: radial-gradient(circle at 50% 60%, rgba(70, 48, 28, .95), rgba(30, 22, 15, .95)); border: 2px solid rgba(255, 210, 150, .2); }
 .seat-name { margin-top: .2rem; font-size: .8125rem; font-weight: 700; color: #fff1d6; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   text-shadow: 0 1px 3px #000; }
-.seat-secs { position: absolute; top: 2px; right: 6%; font-size: .75rem; font-weight: 700; color: #ffe0a0; opacity: 0; }
+.seat-secs { position: absolute; top: -4px; right: -2%; font-size: 1rem; text-shadow: 0 1px 4px #000; font-weight: 700; color: #ffe0a0; opacity: 0; }
 .seat-count { display: flex; gap: 3px; margin-top: 2px; }
 .seat-count i { width: 6px; height: 6px; border-radius: 50%; background: rgba(255, 255, 255, .15); }
 .seat-count i.on { background: var(--ember-2); box-shadow: 0 0 4px var(--ember-1); }
@@ -286,3 +286,15 @@ html.calm .fire-glow, html.calm .fire-coals i { animation: none; }
 }
 .coal-home-btn:hover { background: linear-gradient(180deg, rgba(120, 52, 14, .7), rgba(50, 22, 8, .7)); }
 .coal-home-sub { font-weight: 400; font-size: .8125rem; color: #f1d2a4; }
+
+/* ---------- phone keyboard open (game.js sets --kb and body.kb) ---------- */
+body.kb .coal { bottom: var(--kb, 0px); }
+body.kb .coal-said, body.kb .coal-lobby-link, body.kb .coal-note.watch { display: none; }
+body.kb .coal-stage { max-width: min(34rem, 44vh); }
+body.kb .coal-head { padding-bottom: 0; }
+body.kb .coal-round { font-size: .8125rem; }
+body.kb .coal-cat { font-size: clamp(1.05rem, 4.2vw, 1.4rem); }
+@media (max-height: 560px) {
+  .coal-stage { max-width: min(34rem, 52vh); }
+  .coal-top { padding: .25rem .75rem; }
+}

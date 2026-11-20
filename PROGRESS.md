@@ -6,7 +6,7 @@
 12. Live Coal, the multiplayer mode (started 2026-11-20, branch `claude/live-coal-multiplayer-b829fb`). Section 11 is paused at 11.4 (batch 3 not drafted yet).
 
 ## Next action
-12.5: phone polish, sound and accessibility checks (axe, keyboard-only play, reduced motion), then the load script and the free-tier math.
+12.6: waiting on the Cloudflare login and the two GitHub secrets (see "Blocked on me"). Then: `cd server && npx wrangler deploy`, put the real workers.dev URL in `js/config.js` (`liveCoal.server`), merge to main, CI deploys Worker then Pages, run `node tests/coal/e2e.js --site https://jimmya1400.github.io/fishers/` (and `--rtt 300`) against live.
 
 ## Checklist
 
@@ -115,8 +115,17 @@ Spec: your message of 2026-11-20 (rules, lobbies, architecture, edge cases, scre
 - [x] 12.3 Lobby, The Shore, private rooms, names, reconnect (`js/coal-net.js`, `js/coal.js`, `css/coal.css`; "Live Coal" button on the home screen; routes `#/coal` and `#/coal/ABCD`). Name + fish colour + token in localStorage; lobby list with fish, connection dots, host/you tags, ready count, timer preset (host), Start (host, 2+), Remove with a second confirm tap, Share room, Create a private room, Join a code, change name.
 - [x] 12.4 Game screen: fire of coals with fish on it, seats in a circle, the coal flying in an arc (~300 ms) and dimming from orange-white to grey-red as the turn drains, a draining ring + seconds on the holder's seat, flicker under 3 s, live typing for watchers, feedback line (not in the net / already said by X / near miss / did you mean), "Said this round" coloured by tier, smoke + "Their coal went out" + banner, round intro with countdown, game over with recap (place, round lasted to, answers, rarest), Rematch / Back to lobby / Share result.
   - `tests/coal/e2e.js` (Playwright, 4 contexts: 2 desktop, Pixel 7, iPhone 13) passes locally against `wrangler dev`: private room, live typing, clocks in sync (spread 1 ms), duplicate, typo + Enter confirm, phone disconnect / reconnect to the same seat mid-turn, three timeouts, winner, rematch. Screenshots in `tests/coal/results/` (gitignored).
-- [ ] 12.5 Phone polish, sound, accessibility
-- [ ] 12.6 CI + deploy; 4-player end-to-end on the live site and Worker
+- [x] 12.5 Phone polish, sound, accessibility. Input bar stays above the phone keyboard (shares the solo game's `--kb`), stage shrinks while typing; 16px+ input with no autocorrect and `enterkeyhint="go"`, focus kept between attempts; vibration at 3 s; sound off by default (Web Audio crackle loop, whoosh on pass, tick under 3 s, hiss on elimination; on for one e2e player so it runs); aria-live for turns, your-turn alerts, eliminations and the winner; reduced motion stops the fire, flicker and smoke. `tests/coal/a11y.js`: keyboard-only from name to game over, axe (WCAG 2.1 AA) on setup, lobby, game and game over with no serious or critical issues. A server that cannot be reached shows "Could not reach the fire" after 5 tries; a protocol mismatch shows "Refresh to update".
+  - Load (`tests/coal/load.js`, 10 rooms x 16 bots at once against `wrangler dev`): 0 socket errors, server handoff (answer in -> next turn out, including the storage write) p95 at most 5 ms, max 5 ms; client-side submit -> next turn p95 17 ms. About 127 messages in and 1,860 out per room-minute.
+  - Worker bundle 2.5 MB raw / 455 KB gzip (Free has no compressed limit; 64 MB raw). Building the catalog and compiling all 135 prompts takes ~105 ms, so it runs at startup (1 s budget), not inside a message (the Free plan may give a message only 10 ms of CPU); the slowest answer check is ~2 ms. Wrong guesses no longer write to storage.
+  - **Free-tier budget** (Cloudflare docs read 2026-11-20: 100,000 DO requests/day incl. alarms and new WebSocket connections; incoming WebSocket messages count 20:1, outgoing are free; 13,000 GB-s/day; 100,000 SQLite rows written/day, each `setAlarm` is one; Workers 100,000 requests/day). One 8-player game, about 14 minutes, ~9 rounds, ~135 turns:
+    - incoming messages: ~9 per turn (8 typing updates + 1.3 submits) = ~1,260; time-sync pings 5 per 30 s per player = ~1,120; lobby and start ~40. Total ~2,420 / 20 = **~121 requests**
+    - WebSocket connections (8 joins + ~8 reconnects): 16; alarms (9 intros, 9 pauses, 7 timeouts, ~6 host / lobby / cleanup): ~31. **DO total ~168 requests per game**
+    - Worker requests: 16 upgrades + 1 create = ~17 per game
+    - rows written: one state write + one `setAlarm` per turn, plus round changes, suggestions and joins: ~400 per game
+    - duration: the room stays awake during play (it hibernates only when quiet): 840 s x 0.125 GB = ~105 GB-s per game
+    - **50 games a day**: DO requests ~8,400 (8% of 100,000), Worker requests ~850 (under 1%), rows written ~20,000 (20%), duration ~5,250 GB-s (40% of 13,000). Duration is the tightest; ~120 such games a day would reach the free duration limit. Idle lobbies hibernate and cost almost nothing.
+- [ ] 12.6 CI + deploy; 4-player end-to-end on the live site and Worker. Workflow ready: `coal-test` (unit + workerd tests) and `coal-deploy` (`cloudflare/wrangler-action@v3`, then checks the live `/health` protocol) run before the Pages `deploy` job; without the two secrets the Worker deploy is skipped with a warning. **Blocked on you** (see "Blocked on me").
 - [ ] 12.7 Hand-off
 
 **Pool math.** 7 prompts a day with a 30-day cooldown needs 7 x 30 = 210 prompts in rotation; with at most 1 closed set a day, 6 of the 7 must be open prompts, so a 30-day cooldown needs 180 open prompts plus 30 closed sets. Before batch 1 the pool was 95: 38 open and 57 closed (38 open prompts at 6 a day come back every 6.3 days); after batch 1 it is 115, 58 open. So the 14-day hard floor with at most 1 closed set a day needs at least 84 open prompts. **The current pool cannot meet the rules in section 1**; see "Blocked on me".
@@ -133,6 +142,11 @@ Spec: your message of 2026-11-20 (rules, lobbies, architecture, edge cases, scre
 - `robots: noindex` is on for now (friends only). Remove the meta tag in `index.html` later to be searchable.
 
 ## Blocked on me
+- **Live Coal deploy (12.6).** Wrangler here says "Not logged in. Your auth token has expired", and the repo has no Cloudflare secrets. Please:
+  1. If you have no Cloudflare account yet, create a free one at https://dash.cloudflare.com/sign-up (the expired token suggests you may already have one).
+  2. In a terminal: `cd "C:\Theology Game\.claude\worktrees\live-coal-multiplayer-b829fb\server"` then `npx wrangler login` and approve in the browser. If you have never used Workers, also open Workers & Pages in the dashboard once so it assigns your `<name>.workers.dev` subdomain.
+  3. For CI: https://dash.cloudflare.com/profile/api-tokens > Create Token > template "Edit Cloudflare Workers" > Continue > Create; copy it. Your Account ID is on the Workers & Pages overview (right side). Then `gh secret set CLOUDFLARE_API_TOKEN` and `gh secret set CLOUDFLARE_ACCOUNT_ID` (each prompts for the value; never paste them in chat).
+  4. Tell me when done. I then deploy, set the URL in `js/config.js` (currently a guess: `https://fishers-live-coal.jimmya1400.workers.dev`), merge, and run the live 4-player test.
 - **Pool size vs the freshness rules (section 11).** With 135 prompts (78 open, after batch 2) one rule still cannot hold: at most 1 closed set a day. `scripts/schedule-rules.json` allows up to 3 (was 4) and sets the cooldown to 16 days (above the 14-day floor; target 30). Everything else is as specified (pairs <= 2 per year, order, families, People/Places <= 2, 4+ categories, back-to-back). Each approved batch of open prompts lets me tighten these; the rules file is deleted once the pool reaches the target (about 180 open prompts for a 30-day cooldown).
 
 ## Waiting for my review

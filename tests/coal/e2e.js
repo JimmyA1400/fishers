@@ -143,6 +143,8 @@ function typoOf(id, said) {
   ];
   for (const p of cast) {
     p.ctx = await browser.newContext(p.opts);
+    // One player has sound on, so the Web Audio paths run too.
+    if (p.name === 'Eli') await p.ctx.addInitScript(() => { try { localStorage.setItem('fishers.coal.sound', 'on'); } catch (e) { /* */ } });
     p.page = await p.ctx.newPage();
     p.page.on('pageerror', e => { console.log('  [' + p.name + ' page error] ' + e.message); failures++; });
   }
@@ -307,6 +309,18 @@ function typoOf(id, said) {
   check(true, 'rematch started with all 4');
   await sleep(1200);
   await shot(cast[1].page, '10-rematch');
+
+  // --- a late joiner spectates the game in progress
+  const lateCtx = await browser.newContext(devices['Pixel 7']);
+  const late = await lateCtx.newPage();
+  await late.goto(url(code));
+  await sitDown(late, 'Late');
+  const ls = await until(async () => { const z = await state(late); return z && z.view === 'game' ? z : null; }, 10000, 100, 'late joiner sees the game');
+  const lateMe = ls.players.find(q => q.id === ls.me);
+  check(lateMe && !lateMe.inGame && !ls.game.order.includes(ls.me), 'late joiner watches (not in this game)');
+  check(/watching/i.test(await late.textContent('.coal-game')), 'late joiner is told they will join the next game');
+  await shot(late, '11-late-joiner-watching');
+  await lateCtx.close();
 
   for (const c of cast) await c.ctx.close();
   await browser.close();

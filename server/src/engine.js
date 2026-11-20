@@ -223,7 +223,7 @@ function startGame(s, now, fx, catalog) {
     nextHolder: order[0], used: {}, said: [], counts: {}, remaining: 0, suggestion: null,
     promptsUsed: [], elim: [], stats: {}, lastEnd: null
   };
-  for (const id of order) s.game.stats[id] = { answers: [], tries: 0 };
+  for (const id of order) s.game.stats[id] = { answers: [] };
   fx.push({ kind: 'send', to: 'all', msg: { type: 'gameStarted', order, startedAt: now, preset: s.preset } });
   startRound(s, now, fx, catalog);
 }
@@ -503,7 +503,6 @@ export function reduce(prev, ev, now, catalog) {
       const g = s.game;
       // Only the coal holder's answers count; anyone else's are dropped silently.
       if (!g || g.stage !== 'turn' || g.holderId !== ev.pid) { break; }
-      if (g.stats[ev.pid]) g.stats[ev.pid].tries += 1;
       if (ev.type === 'confirmSuggestion') {
         if (!g.suggestion || g.suggestion.pid !== ev.pid) { break; }
         accept(s, ev.pid, g.suggestion.idx, g.suggestion.answer, now, fx, catalog);
